@@ -1,0 +1,14 @@
+# Trading War Room - Git Ignore
+*.pyc
+__pycache__/
+.env
+*.log
+.DS_Store
+
+# Don't commit API keys or secrets
+**/secrets/
+**/*.key
+**/*.pem
+
+# Local overrides
+local-config.yaml
