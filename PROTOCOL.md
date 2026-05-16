@@ -1,14 +1,14 @@
-# Trading War Room — Multi-Agent Protocol
+# Trading War Room — Multi-Agent Protocol (v2: Merlin Orchestrator)
 
 ## Architecture
 
-Three Hermes agents collaborate on NAS100 trading decisions:
+Three Hermes agents collaborate on NAS100 trading decisions. **Merlin orchestrates**, Alfred has hard veto.
 
-| Agent | Machine | Role | Bot Name |
-|-------|---------|------|----------|
-| **Alfred** 🦇 | WSL (your PC) | Risk Manager + Orchestrator | `alfred-bot` |
+| Agent | Machine | Role | Discord Bot |
+|-------|---------|------|-------------|
+| **Alfred** 🦇 | WSL (your PC) | Risk Manager | `alfred-bot` |
 | **Walker** 🤖 | Ubuntu VM | Technical Analyst | `walker-bot` |
-| **Merlin** 🧙 | Mac | Researcher | `merlin-bot` |
+| **Merlin** 🧙 | Mac | **Orchestrator** + Researcher | `merlin-bot` |
 
 ## Communication Channels
 
@@ -16,10 +16,12 @@ Three Hermes agents collaborate on NAS100 trading decisions:
 
 | Channel | Purpose | Who Posts |
 |---------|---------|-----------|
-| `#daily-briefing` | Morning analysis summaries | Walker + Merlin |
+| `#daily-briefing` | Morning analysis summaries | All three |
+| `#research-context` | Merlin's macro/fundamental thesis | Merlin |
+| `#technical-setup` | Walker's chart analysis | Walker |
+| `#risk-check` | Alfred's risk assessment | Alfred |
 | `#debate-thread` | Structured debate (thread per day) | All three |
-| `#risk-dashboard` | Real-time risk metrics | Alfred |
-| `#final-call` | Go/no-go decisions | Alfred only |
+| `#final-call` | **Merlin posts final decision** | Merlin only |
 | `#trade-log` | Executed trades with outcomes | Alfred |
 | `#weekly-review` | Saturday retrospective | All three |
 | `#ops` | Agent health, config, alerts | All three |
@@ -30,15 +32,16 @@ Three Hermes agents collaborate on NAS100 trading decisions:
 signals/YYYY-MM-DD/
 ├── walker_ta.json       ← Technical analysis
 ├── merlin_research.json ← Research findings
-└── alfred_risk.json     ← Risk assessment
+└── alfred_risk.json     ← Risk assessment (with veto flag)
 
 debate/YYYY-MM-DD/
-├── round1.md            ← Opening arguments
-├── round2.md            ← Rebuttals
-└── transcript.md        ← Full debate log
+├── transcript.md        ← Full debate log
 
-decisions/YYYY-MM-DD.json ← Final go/no-go + trade params
-trade-log.json              ← All trades with P/L
+decisions/YYYY-MM-DD.json ← Merlin's final call
+
+trade-log.json              ← All trades with P/L (Alfred maintains)
+merlin_orchestrator.py      ← Orchestrator script (Mac)
+alfred_risk_agent.py        ← Risk agent script (WSL)
 ```
 
 ## Daily Schedule (HKT)
@@ -46,73 +49,106 @@ trade-log.json              ← All trades with P/L
 | Time | Event | Actor |
 |------|-------|-------|
 | **18:30** | Walker starts technical analysis | Walker cron |
-| **18:30** | Merlin starts research | Merlin cron |
-| **18:55** | Walker posts analysis to Discord + git | Walker cron |
-| **18:55** | Merlin posts research to Discord + git | Merlin cron |
-| **19:00** | Alfred orchestrator starts | Alfred cron |
-| **19:00** | Alfred checks MT5 accounts | Alfred |
-| **19:00-19:30** | Alfred waits for inputs (30 min timeout) | Alfred |
-| **19:30** | Debate Round 1: Opening arguments | All three |
-| **19:35** | Debate Round 2: Rebuttals | All three |
-| **19:40** | Alfred makes final call | Alfred |
-| **19:45** | Decision posted to `#final-call` | Alfred |
-| **20:00+** | Trade execution window begins | Alfred monitors |
+| **18:30** | Merlin starts research + orchestrator wakes up | Merlin cron |
+| **18:30** | Alfred runs MT5 balance check | Alfred cron |
+| **18:50** | Alfred posts risk assessment to `#risk-check` + git | Alfred |
+| **18:55** | Walker posts TA to `#technical-setup` + git | Walker |
+| **18:55** | Merlin posts research to `#research-context` + git | Merlin |
+| **19:00** | **Merlin orchestrates debate** — creates thread, pulls all inputs | Merlin |
+| **19:00-19:30** | Round 1: Opening arguments (TA + Risk + Research) | All three |
+| **19:30-19:40** | Round 2: Rebuttals, Alfred confirms or vetoes | All three |
+| **19:40-19:45** | **Merlin makes final call** → posts to `#final-call` | Merlin |
+| **Next day 21:30+** | Trade execution window (NY session) | Alfred monitors |
+| **Post-session** | Alfred logs trade results to `#trade-log` | Alfred |
+
+## Alfred's HARD VETO Protocol
+
+Alfred is NOT the orchestrator but retains **absolute veto power** on risk grounds:
+
+### Auto-Veto Triggers
+| Condition | Action |
+|-----------|--------|
+| Any account DD > 8% | 🛑 VETO |
+| Any account DD > 10% | 🛑 VETO (hard breach) |
+| Daily loss exceeds 2% limit | 🛑 VETO |
+| 5+ consecutive losses | 🛑 VETO (cooling off) |
+| MT5 connection/API error | 🛑 VETO (safety first — can't verify risk) |
+
+### Veto Format
+When Alfred vetoes, he posts to both `#risk-check` and the debate thread:
+```
+🛑 ALFRED VETO — [specific reason]
+Account: FTMO
+DD: 8.5% (threshold: 8.0%)
+Action: ALL trades blocked until DD reduced
+```
+
+**Merlin MUST respect the veto.** The final call becomes:
+```
+🎯 FINAL CALL: NO GO — VETOED BY ALFRED
+```
+
+The veto cannot be overridden by Merlin or Walker. Only Alfred can lift it.
 
 ## Debate Protocol
 
 ### Round 1: Opening Arguments
-Each agent posts their position with evidence:
+Each agent posts their position:
 
-**Walker format:**
+**🤖 Walker format:**
 ```
-🤖 WALKER — Technical Analysis
+WALKER — Technical Analysis
 Profile: Classic Tuesday Low
 ORB Score: 82/100
-Bias: 🟢 BULLISH
+Bias: BULLISH
 Key Levels: PDH=21,500 | PDL=21,320 | ONH=21,480 | ONL=21,350
-Reasoning: Price in D1 Discount, London session forming SSL sweep
+Reasoning: Price in D1 Discount, London SSL sweep
 Confidence: 80/100
 ```
 
-**Merlin format:**
+**🦇 Alfred format:**
 ```
-🧙 MERLIN — Research
+ALFRED — Risk Check
+FTMO: DD 4.2% | Pepperstone: DD 0%
+Daily budget: 2%
+Lot multiplier: 1.0x
+Consecutive losses: 1
+Status: GO (no veto)
+```
+
+**🧙 Merlin format (Orchestrator):**
+```
+MERLIN — Research Thesis
 Economic Calendar: FOMC minutes tomorrow 2pm ET
-Sentiment: VIX 22 (elevated) | Fear/Greed 45 (neutral)
+Sentiment: VIX 22 | Fear/Greed 45
 Cross-market: DXY bullish, bonds yielding up
-Risks: 🟡 NVDA earnings Thursday
-Summary: Caution warranted due to event risk
-Confidence in risk assessment: 70/100
+Events: NVDA earnings Thursday (high impact)
+Thesis: Morning setup likely intact but reduce size for afternoon risk
 ```
 
 ### Round 2: Rebuttals
-Alfred reads both and asks clarifying questions:
-
-**Alfred format:**
+Merlin synthesizes and asks questions:
 ```
-🦇 ALFRED — Risk Check
-Accounts: FTMO DD 4.2% | Pepperstone OK
-Budget: 2% daily max remaining
+MERLIN — Rebuttal Round
+@Walker: Does 2pm FOMC invalidate the morning ORB setup?
+@Alfred: With 4.2% DD, are we comfortable with 0.5 lot?
 
-Question to Walker: Does 2pm FOMC invalidate your morning setup?
-Question to Merlin: Is the VIX level high enough to skip entirely?
+Walker: Setup is NY AM only. FOMC is 2pm. We'd be done before then.
+Alfred: 0.5 lot = 0.35% risk. Acceptable.
 ```
 
-### Round 3: Final Decision
-Alfred synthesizes and decides:
-
-**Alfred format:**
+### Round 3: Merlin's Final Decision
 ```
-🎯 ALFRED — FINAL CALL
-Decision: ✅ GO LONG
-Instrument: NAS100
+MERLIN — FINAL CALL
+Decision: GO LONG NAS100
 Entry: ORB breakout > 21,450
-SL: 21,380 (widened per Merlin's risk input)
+SL: 21,380
 TP: 21,590 (1:2 R:R)
-Size: 0.5 lot (reduced from 1.0 due to FOMC)
+Size: 0.5 lot (reduced due to FOMC + DD proximity)
 Risk: 0.35% of FTMO equity
 Window: 09:30-11:00 ET only
 Close all before: 13:30 ET
+Alfred veto: No
 ```
 
 ## Data Format Standards
@@ -121,21 +157,12 @@ Close all before: 13:30 ET
 ```json
 {
   "timestamp": "2026-05-18T18:55:00+08:00",
-  "date": "2026-05-18",
   "bias": "bullish",
   "confidence": 80,
   "orb_score": 82,
   "ict_profile": "Classic Tuesday Low",
-  "key_levels": {
-    "pdh": 21500,
-    "pdl": 21320,
-    "onh": 21480,
-    "onl": 21350,
-    "weekly_open": 21400
-  },
-  "entry": 21450,
-  "sl": 21380,
-  "tp": 21590,
+  "key_levels": {"pdh": 21500, "pdl": 21320, "onh": 21480, "onl": 21350},
+  "entry": 21450, "sl": 21380, "tp": 21590,
   "reasoning": "D1 Discount, SSL sweep in London"
 }
 ```
@@ -144,38 +171,29 @@ Close all before: 13:30 ET
 ```json
 {
   "timestamp": "2026-05-18T18:55:00+08:00",
-  "date": "2026-05-18",
-  "economic_calendar": [
-    {"time": "14:00 ET", "event": "FOMC Minutes", "impact": "high"}
-  ],
-  "sentiment": {
-    "vix": 22,
-    "fear_greed": 45
-  },
-  "cross_market": {
-    "dxy": "bullish",
-    "bonds": "yields up"
-  },
-  "risks": [
-    {"event": "NVDA earnings", "date": "2026-05-20", "impact": "high"}
-  ],
-  "summary": "Caution warranted"
+  "economic_calendar": [{"time": "14:00 ET", "event": "FOMC Minutes", "impact": "high"}],
+  "sentiment": {"vix": 22, "fear_greed": 45},
+  "cross_market": {"dxy": "bullish", "bonds": "yields up"},
+  "risks": [{"event": "NVDA earnings", "date": "2026-05-20", "impact": "high"}],
+  "summary": "Morning setup intact but reduce size for afternoon event risk"
 }
 ```
 
 ### alfred_risk.json
 ```json
 {
-  "timestamp": "2026-05-18T19:30:00+08:00",
-  "date": "2026-05-18",
-  "accounts": {
-    "FTMO": {"balance": 200000, "equity": 191600, "dd_pct": 4.2},
-    "Pepperstone-HKD": {"balance": 50000, "equity": 50200, "dd_pct": 0}
-  },
+  "timestamp": "2026-05-18T18:50:00+08:00",
   "go_no_go": "GO",
+  "veto": false,
+  "veto_reason": "",
+  "accounts": {
+    "FTMO": {"balance": 200000, "equity": 191600, "dd_pct": 4.2, "status": "ok"},
+    "Pepperstone-HKD": {"balance": 50000, "equity": 50200, "dd_pct": 0, "status": "ok"}
+  },
+  "recommended_lot_size": 1.0,
   "max_daily_loss_pct": 2.0,
-  "lot_size": 0.5,
-  "factors": ["FTMO DD within limits", "FOMC risk reduces size"]
+  "consecutive_losses": 1,
+  "factors": ["FTMO DD 4.2% within limits", "Pepperstone OK"]
 }
 ```
 
@@ -183,74 +201,61 @@ Close all before: 13:30 ET
 
 ### Rules:
 1. **Always pull before writing**: `git pull --rebase`
-2. **One commit per agent per day**: `git commit -m "[Walker] TA for 2026-05-18"`
+2. **One commit per agent per day**
 3. **Never edit another agent's files**
 4. **Push immediately after writing**
-5. **Resolve conflicts with `git checkout --theirs` for your own files**
 
-### Alfred's orchestrator handles sync automatically:
-```bash
-# Pre-analysis:
-git pull --rebase
-
-# Post-decision:
-git add . && git commit -m "Alfred: Decision for YYYY-MM-DD" && git push
-```
+### File ownership:
+| File | Owner | Who can edit |
+|------|-------|-------------|
+| `signals/*/walker_ta.json` | Walker | Walker only |
+| `signals/*/merlin_research.json` | Merlin | Merlin only |
+| `signals/*/alfred_risk.json` | Alfred | Alfred only |
+| `debate/*/transcript.md` | Merlin | Merlin only |
+| `decisions/*.json` | Merlin | Merlin only |
+| `trade-log.json` | Alfred | Alfred only |
+| `merlin_orchestrator.py` | Merlin | Merlin only |
+| `alfred_risk_agent.py` | Alfred | Alfred only |
 
 ## Saturday Weekly Review (08:00 HKT)
 
-All three agents participate in a coordinated review:
+Merlin leads the retrospective:
 
-1. **Alfred** pulls trade-log.json and calculates:
+1. **Merlin** pulls all data, calculates week accuracy
+2. **Walker** reviews TA signal accuracy (ORB score vs outcomes)
+3. **Alfred** reviews risk compliance and account performance
+4. **Merlin** synthesizes and posts to `#weekly-review` with:
    - Weekly P/L per account
-   - Win rate
-   - Max drawdown
-   - Risk compliance (any rule violations?)
+   - Win rate and accuracy by agent
+   - Protocol improvements for next week
 
-2. **Walker** reviews:
-   - Which TA signals were correct/incorrect
-   - ORB score accuracy vs actual outcomes
-   - ICT profile classification accuracy
+## Mac-Specific Requirements for Merlin
 
-3. **Merlin** reviews:
-   - Which risk factors were predictive
-   - Missed events that impacted trades
-   - Sentiment indicator accuracy
+Since Merlin runs on a Mac and serves as orchestrator:
 
-4. **Alfred** synthesizes and posts to `#weekly-review`
+1. **Disable sleep during trading hours:**
+   ```bash
+   # Prevent sleep from 6:00 PM to 12:00 AM HKT
+   sudo pmset -c sleep 0  # While on power, never sleep
+   sudo pmset -b sleep 30  # On battery, 30 min OK
+   ```
 
-## Setup Checklist
+2. **Ensure gateway stays running:**
+   ```bash
+   # Add to crontab: restart gateway if dead
+   */5 * * * * pgrep -f "hermes" || hermes gateway start
+   ```
 
-### For Alfred (WSL):
-- [ ] Discord bot token in config.yaml
-- [ ] Clone shared repo to ~/.hermes/trading-war-room/
-- [ ] Git SSH key configured
-- [ ] MT5 balance check script verified
-- [ ] Orchestrator cron job: `30 19 * * 1-5`
-
-### For Walker (Ubuntu):
-- [ ] Discord bot token in config.yaml
-- [ ] Clone shared repo
-- [ ] Git SSH key configured
-- [ ] TA analysis cron job: `30 18 * * 1-5`
-- [ ] Skills loaded: ict-weekly-profile, orb-bias-filter
-
-### For Merlin (Mac):
-- [ ] Discord bot token in config.yaml
-- [ ] Clone shared repo
-- [ ] Git SSH key configured
-- [ ] Research cron job: `30 18 * * 1-5`
-- [ ] Web search tools enabled
+3. **Power source:** Keep plugged in during the orchestration window.
 
 ## Anti-Loop Safeguards
 
-To prevent infinite reply chains in Discord:
-
 1. **Each bot ignores other bots' messages** except in `#debate-thread`
-2. **In debate thread**, agents only respond to @mentions from Alfred
-3. **Alfred controls the debate flow** — only he can trigger Round 2 and Round 3
-4. **Max 3 rounds per day** — enforced by Alfred's orchestrator
-5. **Cooldown period** — no agent can post twice within 5 minutes in any channel
+2. **In debate thread**, agents only respond to @mentions from Merlin
+3. **Merlin controls the debate flow** — only Merlin triggers Round 2 and final call
+4. **Max 3 rounds per day** — enforced by Merlin's orchestrator
+5. **Cooldown:** No agent posts twice within 5 minutes in any channel
+6. **Veto is instant:** If Alfred posts a veto, debate ends immediately
 
 ## Emergency Stop
 
@@ -259,3 +264,20 @@ If any agent detects anomalous behavior:
 - All agents halt trading activities
 - Alfred notifies AC via Telegram DM
 - Manual review required before resuming
+
+## Cron Job Setup
+
+### Alfred (WSL) — 18:30 HKT
+```
+30 18 * * 1-5 python3 ~/.hermes/trading-war-room/alfred_risk_agent.py
+```
+
+### Walker (Ubuntu VM) — 18:30 HKT
+```
+30 18 * * 1-5 [Walker's TA analysis script that writes to signals/ + Discord]
+```
+
+### Merlin (Mac) — 19:00 HKT
+```
+0 19 * * 1-5 python3 ~/.hermes/trading-war-room/merlin_orchestrator.py
+```
