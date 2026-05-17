@@ -23,14 +23,17 @@ SIGNALS_DIR = REPO_DIR / "signals"
 DEBATE_DIR = REPO_DIR / "debate"
 DECISIONS_DIR = REPO_DIR / "decisions"
 
-# Discord channel IDs (replace with actual IDs)
+# Discord channel IDs
 DISCORD_CHANNELS = {
-    "daily_briefing": "CHANNEL_ID",
-    "research_context": "CHANNEL_ID",
-    "technical_setup": "CHANNEL_ID",
-    "risk_check": "CHANNEL_ID",
-    "debate": "CHANNEL_ID",
-    "final_call": "CHANNEL_ID",
+    "daily-briefing": "1505601530575716372",
+    "research-context": "1505601583444918423",
+    "technical-setup": "1505601621839843418",
+    "risk-check": "1505601652470583506",
+    "debate-thread": "1505601691666354402",
+    "final-call": "1505601720439406732",
+    "trade-log": "1505601751519199382",
+    "weekly-review": "1505601783416754298",
+    "ops": "1505601804178690211",
 }
 
 # Wait times (seconds)
@@ -353,14 +356,14 @@ def main():
 
     # Post to Discord
     print("\n[7/7] Posting to Discord channels...")
-    post_to_discord("final_call",
+    post_to_discord("final-call",
                     f"🎯 **FINAL CALL — {date_str}**\n"
                     f"Decision: {decision['final_decision']}\n"
                     f"Reasoning: {decision['reasoning']}")
 
     if decision.get("trade_params"):
         params = decision["trade_params"]
-        post_to_discord("final_call",
+        post_to_discord("final-call",
                         f"📊 Trade Parameters:\n"
                         f"Direction: {params['direction']}\n"
                         f"Entry: {params['entry']}\n"

@@ -46,6 +46,20 @@ Merlin cannot override a veto. This is by design.
 
 See [PROTOCOL.md](./PROTOCOL.md) for full debate format, data standards, and Discord channel structure.
 
+## Discord Channels
+
+| Channel | ID | Purpose |
+|---------|----|---------|
+| #daily-briefing | `1505601530575716372` | Daily market overview |
+| #research-context | `1505601583444918423` | Merlin's macro research |
+| #technical-setup | `1505601621839843418` | Walker's TA analysis |
+| #risk-check | `1505601652470583506` | Alfred's risk assessment |
+| #debate-thread | `1505601691666354402` | Agent debate |
+| #final-call | `1505601720439406732` | Merlin's GO/NO-GO decision |
+| #trade-log | `1505601751519199382` | Trade execution log |
+| #weekly-review | `1505601783416754298` | Weekly performance review |
+| #ops | `1505601804178690211` | Operational alerts |
+
 ## Files
 
 ```

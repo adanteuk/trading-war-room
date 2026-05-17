@@ -29,6 +29,19 @@ ACCOUNTS_FILE = Path(os.path.expanduser("~/.hermes/hermes-agent/workspace/mt5_ac
 # Windows Python for MT5 API (MT5 package has native Windows extensions)
 WINDOWS_PYTHON = "/mnt/c/Python312/python.exe"
 
+# Discord Channel IDs
+DISCORD_CHANNELS = {
+    "daily-briefing": "1505601530575716372",
+    "research-context": "1505601583444918423",
+    "technical-setup": "1505601621839843418",
+    "risk-check": "1505601652470583506",
+    "debate-thread": "1505601691666354402",
+    "final-call": "1505601720439406732",
+    "trade-log": "1505601751519199382",
+    "weekly-review": "1505601783416754298",
+    "ops": "1505601804178690211",
+}
+
 # Risk thresholds
 MAX_DAILY_LOSS_PCT = 2.0    # FTMO daily limit
 MAX_TOTAL_DD_PCT = 10.0     # FTMO max DD
@@ -106,6 +119,19 @@ import time
 
 # Windows path to accounts file (forward slashes work in Python on Windows)
 ACCOUNTS_FILE = '//wsl.localhost/Ubuntu/home/ychen/.hermes/hermes-agent/workspace/mt5_accounts.yaml'
+
+# Discord Channel IDs
+DISCORD_CHANNELS = {
+    "daily-briefing": "1505601530575716372",
+    "research-context": "1505601583444918423",
+    "technical-setup": "1505601621839843418",
+    "risk-check": "1505601652470583506",
+    "debate-thread": "1505601691666354402",
+    "final-call": "1505601720439406732",
+    "trade-log": "1505601751519199382",
+    "weekly-review": "1505601783416754298",
+    "ops": "1505601804178690211",
+}
 ACCOUNT_TIMEOUT_MS = 12000
 ACCOUNT_TIMEOUT_S = 12
 GLOBAL_DEADLINE_S = 80
@@ -408,7 +434,7 @@ def post_to_discord(message: str, channel_id: str = None):
 
     # Default to #risk-check channel if not specified
     if not channel_id:
-        channel_id = os.getenv("WAR_ROOM_RISK_CHANNEL", "1505566436775694366")
+        channel_id = DISCORD_CHANNELS.get("risk-check", "1505601652470583506")
 
     import requests
     url = f"https://discord.com/api/v10/channels/{channel_id}/messages"

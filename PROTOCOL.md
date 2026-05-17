@@ -14,17 +14,17 @@ Three Hermes agents collaborate on NAS100 trading decisions. **Merlin orchestrat
 
 ### Discord Server: "Trading War Room"
 
-| Channel | Purpose | Who Posts |
-|---------|---------|-----------|
-| `#daily-briefing` | Morning analysis summaries | All three |
-| `#research-context` | Merlin's macro/fundamental thesis | Merlin |
-| `#technical-setup` | Walker's chart analysis | Walker |
-| `#risk-check` | Alfred's risk assessment | Alfred |
-| `#debate-thread` | Structured debate (thread per day) | All three |
-| `#final-call` | **Merlin posts final decision** | Merlin only |
-| `#trade-log` | Executed trades with outcomes | Alfred |
-| `#weekly-review` | Saturday retrospective | All three |
-| `#ops` | Agent health, config, alerts | All three |
+| Channel | Purpose | Who Posts | Channel ID |
+|---------|---------|-----------|------------|
+| `#daily-briefing` | Morning analysis summaries | All three | `1505601530575716372` |
+| `#research-context` | Merlin's macro/fundamental thesis | Merlin | `1505601583444918423` |
+| `#technical-setup` | Walker's chart analysis | Walker | `1505601621839843418` |
+| `#risk-check` | Alfred's risk assessment | Alfred | `1505601652470583506` |
+| `#debate-thread` | Structured debate (thread per day) | All three | `1505601691666354402` |
+| `#final-call` | **Merlin posts final decision** | Merlin only | `1505601720439406732` |
+| `#trade-log` | Executed trades with outcomes | Alfred | `1505601751519199382` |
+| `#weekly-review` | Saturday retrospective | All three | `1505601783416754298` |
+| `#ops` | Agent health, config, alerts | All three | `1505601804178690211` |
 
 ### Shared Git Repo: `~/.hermes/trading-war-room/`
 
