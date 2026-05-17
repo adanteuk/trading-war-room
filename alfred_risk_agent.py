@@ -198,27 +198,42 @@ print(json.dumps(accounts))
 
     try:
         # Write temp script to a fixed Windows temp location
-        import tempfile
+        # Must use cmd.exe to write the file so Windows Python can read it
         import random
         import string
         script_name = f"mt5_check_{''.join(random.choices(string.ascii_lowercase, k=8))}.py"
-        win_temp_dir = "/mnt/c/Users/angus/AppData/Local/Temp"
-        temp_script = os.path.join(win_temp_dir, script_name)
-        
-        with open(temp_script, 'w') as f:
-            f.write(mt5_script)
+        win_temp_dir = "C:/Users/angus/AppData/Local/Temp"
+        win_temp_path = f"{win_temp_dir}/{script_name}"
+
+        # Write via PowerShell to ensure Windows file permissions
+        ps_cmd = f"""
+$script = @'
+{mt5_script}
+'@
+Set-Content -Path "{win_temp_path}" -Value $script -Encoding UTF8
+"""
+        ps = subprocess.run(
+            ["/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe", "-Command", ps_cmd],
+            capture_output=True, text=True, timeout=10
+        )
+        if ps.returncode != 0:
+            raise Exception(f"PowerShell write failed: {ps.stderr[:200]}")
 
         # Run via Windows Python
         result = subprocess.run(
-            [WINDOWS_PYTHON, temp_script],
+            [WINDOWS_PYTHON, win_temp_path],
             capture_output=True, text=True, timeout=120
         )
 
         # Clean up temp file
         try:
-            os.unlink(temp_script)
+            os.unlink(temp_script.replace("C:/", "/mnt/c/"))
         except:
-            pass
+            try:
+                subprocess.run(["cmd.exe", "/c", "del", win_temp_path.replace("/", "\\")],
+                             capture_output=True)
+            except:
+                pass
 
         if result.returncode == 0 and result.stdout.strip():
             accounts = json.loads(result.stdout.strip())
