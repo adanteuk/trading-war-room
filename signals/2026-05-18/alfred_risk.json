@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-05-18T00:38:02.469247+08:00",
+  "timestamp": "2026-05-18T00:38:44.674836+08:00",
   "go_no_go": "VETO",
   "veto": true,
   "veto_reason": "\u26d4 ERROR: MT5 connection error \u2014 cannot verify risk",
   "accounts": {
     "ERROR": {
       "status": "error",
-      "error": "MT5 subprocess failed: Traceback (most recent call last):\n  File \"C:\\Users\\angus\\AppData\\Local\\Temp\\mt5_check_ahgpnbug.py\", line 34, in <module>\n    result = subprocess.run(['wslpath', '-w', ACCOUNTS_FILE], capture_output=True, text=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      "error": "MT5 subprocess failed: Traceback (most recent call last):\n  File \"C:\\Users\\angus\\AppData\\Local\\Temp\\mt5_check_ejrgjxad.py\", line 33, in <module>\n    with open(ACCOUNTS_FILE, 'r') as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\angus\\\\.hermes\\\\hermes-agent\\\\worksp"
     }
   },
   "factors": [],

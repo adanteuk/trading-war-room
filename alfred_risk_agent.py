@@ -104,7 +104,8 @@ import MetaTrader5 as mt5
 import threading
 import time
 
-ACCOUNTS_FILE = r'/home/ychen/.hermes/hermes-agent/workspace/mt5_accounts.yaml'
+# Windows path to accounts file (converted from WSL path)
+ACCOUNTS_FILE = r'C:\\Users\\angus\\.hermes\\hermes-agent\\workspace\\mt5_accounts.yaml'
 ACCOUNT_TIMEOUT_MS = 12000
 ACCOUNT_TIMEOUT_S = 12
 GLOBAL_DEADLINE_S = 80
@@ -126,12 +127,7 @@ def try_login(login, password, server, timeout_ms):
         return False, result[1]
     return result[0], None
 
-# Convert WSL path to Windows path for yaml loading
-import subprocess
-result = subprocess.run(['wslpath', '-w', ACCOUNTS_FILE], capture_output=True, text=True)
-win_path = result.stdout.strip() if result.returncode == 0 else ACCOUNTS_FILE
-
-with open(win_path, 'r') as f:
+with open(ACCOUNTS_FILE, 'r') as f:
     data = yaml.safe_load(f)
 accounts_config = data.get('accounts', [])
 
