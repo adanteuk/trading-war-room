@@ -24,6 +24,10 @@ from pathlib import Path
 # ─── Config ───────────────────────────────────────────────────────────────
 REPO_DIR = Path(os.path.expanduser("~/.hermes/trading-war-room"))
 SIGNALS_DIR = REPO_DIR / "signals"
+ACCOUNTS_FILE = Path(os.path.expanduser("~/.hermes/hermes-agent/workspace/mt5_accounts.yaml"))
+
+# Windows Python for MT5 API (MT5 package has native Windows extensions)
+WINDOWS_PYTHON = "/mnt/c/Python312/python.exe"
 
 # Risk thresholds
 MAX_DAILY_LOSS_PCT = 2.0    # FTMO daily limit
@@ -62,51 +66,192 @@ def git_push(message: str):
     subprocess.run(["git", "push"], capture_output=True)
 
 
+def try_mt5_login(login, password, server, timeout_ms):
+    """Threaded MT5 login attempt with hard timeout."""
+    result = [None, None]  # [success, error]
+    def _login():
+        try:
+            ok = mt5.initialize(login=login, password=password, server=server, timeout=timeout_ms)
+            result[0] = ok
+        except Exception as e:
+            result[1] = str(e)
+    t = threading.Thread(target=_login, daemon=True)
+    t.start()
+    t.join(timeout=ACCOUNT_TIMEOUT_S + 2)  # 2s buffer
+    if t.is_alive():
+        return False, 'thread_timeout'
+    if result[1]:
+        return False, result[1]
+    return result[0], None
+
+
 def check_mt5_accounts() -> dict:
     """
     Check all MT5 account balances, equity, and drawdown.
-    Uses the existing MT5 balance check infrastructure.
+    Spawns Windows Python subprocess to use the MT5 Python API
+    (which has native Windows extensions that won't work in WSL).
 
     Returns:
         dict of account_name -> {balance, equity, dd_pct, daily_pl, status}
     """
-    accounts = {}
+    # Create a temporary Windows Python script that does the MT5 checks
+    mt5_script = """
+import sys
+sys.path.insert(0, r'C:\\Python312\\Lib\\site-packages')
+import yaml
+import json
+import MetaTrader5 as mt5
+import threading
+import time
 
-    # Try the existing MT5 balance check script
+ACCOUNTS_FILE = r'/home/ychen/.hermes/hermes-agent/workspace/mt5_accounts.yaml'
+ACCOUNT_TIMEOUT_MS = 12000
+ACCOUNT_TIMEOUT_S = 12
+GLOBAL_DEADLINE_S = 80
+
+def try_login(login, password, server, timeout_ms):
+    result = [None, None]
+    def _login():
+        try:
+            ok = mt5.initialize(login=login, password=password, server=server, timeout=timeout_ms)
+            result[0] = ok
+        except Exception as e:
+            result[1] = str(e)
+    t = threading.Thread(target=_login, daemon=True)
+    t.start()
+    t.join(timeout=ACCOUNT_TIMEOUT_S + 2)
+    if t.is_alive():
+        return False, 'thread_timeout'
+    if result[1]:
+        return False, result[1]
+    return result[0], None
+
+# Convert WSL path to Windows path for yaml loading
+import subprocess
+result = subprocess.run(['wslpath', '-w', ACCOUNTS_FILE], capture_output=True, text=True)
+win_path = result.stdout.strip() if result.returncode == 0 else ACCOUNTS_FILE
+
+with open(win_path, 'r') as f:
+    data = yaml.safe_load(f)
+accounts_config = data.get('accounts', [])
+
+accounts = {}
+global_start = time.time()
+
+for acc in accounts_config:
+    elapsed = time.time() - global_start
+    remaining = GLOBAL_DEADLINE_S - elapsed
+    if remaining < 5:
+        accounts[acc['name']] = {
+            "balance": 0, "equity": 0, "dd_pct": 0,
+            "status": "error", "error": "[Time limit reached]"
+        }
+        continue
+
+    name = acc['name']
+    login = int(acc['account_number'])
+    password = acc['password']
+    server = acc['server']
+
+    if not password:
+        accounts[name] = {
+            "balance": 0, "equity": 0, "dd_pct": 0,
+            "status": "error", "error": "[No password]"
+        }
+        continue
+
+    success = False
+    for attempt in range(2):
+        mt5.shutdown()
+        ok, error = try_login(login, password, server, ACCOUNT_TIMEOUT_MS)
+        if ok:
+            acc_info = mt5.account_info()
+            if acc_info:
+                balance = acc_info.balance
+                equity = acc_info.equity
+                dd_pct = ((balance - equity) / balance * 100) if balance > 0 else 0
+                accounts[name] = {
+                    "balance": balance,
+                    "equity": equity,
+                    "dd_pct": round(dd_pct, 2),
+                    "daily_pl": equity - balance,
+                    "status": "ok",
+                }
+                success = True
+            else:
+                error = 'no_account_info'
+            break
+        else:
+            if attempt == 0:
+                time.sleep(1)
+
+    if not success:
+        accounts[name] = {
+            "balance": 0, "equity": 0, "dd_pct": 0,
+            "status": "error",
+            "error": "[Timeout]" if 'timeout' in str(error).lower() else "[Login failed]"
+        }
+
+mt5.shutdown()
+print(json.dumps(accounts))
+"""
+
     try:
+        # Write temp script to Windows temp directory
+        import tempfile
+        with tempfile.NamedTemporaryFile(
+            mode='w', suffix='.py', delete=False,
+            dir='/mnt/c/Users/angus/AppData/Local/Temp/',
+            prefix='mt5_check_'
+        ) as f:
+            f.write(mt5_script)
+            temp_script = f.name
+
+        # Run via Windows Python
         result = subprocess.run(
-            ["/mnt/c/Python312/python.exe",
-             "/home/ychen/.hermes/skills/trading/mt5-balance-check/check_balances.py"],
+            [WINDOWS_PYTHON, temp_script],
             capture_output=True, text=True, timeout=120
         )
-        if result.stdout:
-            accounts = json.loads(result.stdout)
-    except Exception as e:
-        print(f"  ⚠️ MT5 check failed: {e}")
-        # If the check fails, return a veto — safety first
+
+        # Clean up temp file
+        try:
+            os.unlink(temp_script)
+        except:
+            pass
+
+        if result.returncode == 0 and result.stdout.strip():
+            accounts = json.loads(result.stdout.strip())
+            return accounts
+        else:
+            stderr_preview = result.stderr[:300] if result.stderr else 'no stderr'
+            stdout_preview = result.stdout[:300] if result.stdout else 'no stdout'
+            print(f"  ⚠️ MT5 subprocess failed: {result.returncode}")
+            print(f"  stdout: {stdout_preview}")
+            print(f"  stderr: {stderr_preview}")
+            return {
+                "ERROR": {
+                    "balance": 0, "equity": 0, "dd_pct": 0,
+                    "status": "error",
+                    "error": f"MT5 subprocess failed: {stderr_preview}",
+                }
+            }
+
+    except subprocess.TimeoutExpired:
         return {
             "ERROR": {
-                "balance": 0,
-                "equity": 0,
-                "dd_pct": 0,
+                "balance": 0, "equity": 0, "dd_pct": 0,
+                "status": "error",
+                "error": "MT5 check timed out after 120s",
+            }
+        }
+    except Exception as e:
+        return {
+            "ERROR": {
+                "balance": 0, "equity": 0, "dd_pct": 0,
                 "status": "error",
                 "error": str(e),
             }
         }
-
-    # If no accounts found, also return error
-    if not accounts:
-        return {
-            "ERROR": {
-                "balance": 0,
-                "equity": 0,
-                "dd_pct": 0,
-                "status": "no_accounts",
-                "error": "No accounts returned from MT5 check",
-            }
-        }
-
-    return accounts
 
 
 def load_trade_log() -> list:
@@ -233,15 +378,39 @@ def save_risk_assessment(assessment: dict, date_str: str):
         json.dump(assessment, f, indent=2)
 
 
-def post_to_discord(message: str):
-    """Post to Discord #risk-check channel."""
-    # TODO: Implement with discord.py or HTTP API
-    # bot_token = os.getenv("DISCORD_BOT_TOKEN")
-    # channel_id = "RISK_CHECK_CHANNEL_ID"
-    # requests.post(f"https://discord.com/api/channels/{channel_id}/messages",
-    #               headers={"Authorization": f"Bot {bot_token}"},
-    #               json={"content": message})
-    print(f"[DISCORD #risk-check] {message}")
+def post_to_discord(message: str, channel_id: str = None):
+    """Post to Discord channel via HTTP API."""
+    token = ""
+    env_path = Path(os.path.expanduser("~/.hermes/.env"))
+    if env_path.exists():
+        with open(env_path, 'r') as f:
+            for line in f:
+                if line.startswith("DISCORD_BOT_TOKEN="):
+                    token = line.strip().split("=", 1)[1]
+                    break
+
+    if not token:
+        print(f"[DISCORD] No token found — printing locally")
+        print(f"[DISCORD] {message}")
+        return
+
+    # Default to #risk-check channel if not specified
+    if not channel_id:
+        channel_id = os.getenv("WAR_ROOM_RISK_CHANNEL", "1505566436775694366")
+
+    import requests
+    url = f"https://discord.com/api/v10/channels/{channel_id}/messages"
+    headers = {"Authorization": f"Bot {token}"}
+    try:
+        resp = requests.post(url, headers=headers, json={"content": message}, timeout=10)
+        if resp.status_code == 200:
+            print(f"  ✅ Posted to Discord channel {channel_id}")
+        else:
+            print(f"  ⚠️ Discord API error {resp.status_code}: {resp.text[:200]}")
+            print(f"[DISCORD] {message}")
+    except Exception as e:
+        print(f"  ⚠️ Discord post failed: {e}")
+        print(f"[DISCORD] {message}")
 
 
 def main():
