@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-18T00:49:24.800961+08:00",
+  "timestamp": "2026-05-18T00:50:17.815320+08:00",
   "go_no_go": "VETO",
   "veto": true,
   "veto_reason": "\u26d4 FTMO (My Martingale): MT5 connection error \u2014 cannot verify risk; \u26d4 Pepperstone (Ian USD): Daily loss exceeds 2.0% limit; \u26d4 Pepperstone (Ian HKD): Daily loss exceeds 2.0% limit; \u26d4 Pepperstone (My USD): DD 11.2% EXCEEDS max 10.0%; \u26d4 Pepperstone (My USD): Daily loss exceeds 2.0% limit",
@@ -38,23 +38,23 @@
     },
     "Pepperstone (Ian USD)": {
       "balance": 11604.49,
-      "equity": 11012.96,
-      "dd_pct": 5.1,
-      "daily_pl": -591.5300000000007,
+      "equity": 11014.15,
+      "dd_pct": 5.09,
+      "daily_pl": -590.3400000000001,
       "status": "ok"
     },
     "Pepperstone (Ian HKD)": {
       "balance": 26092.32,
-      "equity": 24400.75,
-      "dd_pct": 6.48,
-      "daily_pl": -1691.5699999999997,
+      "equity": 24430.11,
+      "dd_pct": 6.37,
+      "daily_pl": -1662.2099999999991,
       "status": "ok"
     },
     "Pepperstone (My USD)": {
       "balance": 2295.47,
-      "equity": 2038.39,
-      "dd_pct": 11.2,
-      "daily_pl": -257.0799999999997,
+      "equity": 2039.09,
+      "dd_pct": 11.17,
+      "daily_pl": -256.3799999999999,
       "status": "ok"
     },
     "Pepperstone Demo": {
@@ -71,7 +71,7 @@
     "\u2705 FTMO (SSCF): DD 0.8% \u2014 within limits",
     "\u2705 FTMO (Ian 200k): DD 1.4% \u2014 within limits",
     "\u26a0\ufe0f Pepperstone (Ian USD): DD at 5.1% \u2014 approaching caution zone",
-    "\u26a0\ufe0f Pepperstone (Ian HKD): DD at 6.5% \u2014 approaching caution zone",
+    "\u26a0\ufe0f Pepperstone (Ian HKD): DD at 6.4% \u2014 approaching caution zone",
     "\u2705 Pepperstone Demo: DD 0.0% \u2014 within limits"
   ],
   "recommended_lot_size": 0.25,
