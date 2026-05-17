@@ -104,8 +104,8 @@ import MetaTrader5 as mt5
 import threading
 import time
 
-# Windows path to accounts file (converted from WSL path)
-ACCOUNTS_FILE = r'C:\\Users\\angus\\.hermes\\hermes-agent\\workspace\\mt5_accounts.yaml'
+# Windows path to accounts file (forward slashes work in Python on Windows)
+ACCOUNTS_FILE = '//wsl.localhost/Ubuntu/home/ychen/.hermes/hermes-agent/workspace/mt5_accounts.yaml'
 ACCOUNT_TIMEOUT_MS = 12000
 ACCOUNT_TIMEOUT_S = 12
 GLOBAL_DEADLINE_S = 80

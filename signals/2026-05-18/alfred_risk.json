@@ -1,16 +1,84 @@
 {
-  "timestamp": "2026-05-18T00:38:44.674836+08:00",
+  "timestamp": "2026-05-18T00:40:54.920852+08:00",
   "go_no_go": "VETO",
   "veto": true,
-  "veto_reason": "\u26d4 ERROR: MT5 connection error \u2014 cannot verify risk",
+  "veto_reason": "\u26d4 FTMO (My Martingale): Daily loss exceeds 2.0% limit; \u26d4 Pepperstone (Ian USD): Daily loss exceeds 2.0% limit; \u26d4 Pepperstone (Ian HKD): Daily loss exceeds 2.0% limit; \u26d4 Pepperstone (My USD): DD 11.2% EXCEEDS max 10.0%; \u26d4 Pepperstone (My USD): Daily loss exceeds 2.0% limit",
   "accounts": {
-    "ERROR": {
-      "status": "error",
-      "error": "MT5 subprocess failed: Traceback (most recent call last):\n  File \"C:\\Users\\angus\\AppData\\Local\\Temp\\mt5_check_ejrgjxad.py\", line 33, in <module>\n    with open(ACCOUNTS_FILE, 'r') as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\angus\\\\.hermes\\\\hermes-agent\\\\worksp"
+    "FTMO (Keith)": {
+      "balance": 93640.57,
+      "equity": 93640.57,
+      "dd_pct": 0.0,
+      "daily_pl": 0.0,
+      "status": "ok"
+    },
+    "FTMO (My manual)": {
+      "balance": 97928.83,
+      "equity": 97928.83,
+      "dd_pct": 0.0,
+      "daily_pl": 0.0,
+      "status": "ok"
+    },
+    "FTMO (My Martingale)": {
+      "balance": 102370.99,
+      "equity": 99503.6,
+      "dd_pct": 2.8,
+      "daily_pl": -2867.3899999999994,
+      "status": "ok"
+    },
+    "FTMO (SSCF)": {
+      "balance": 100687.79,
+      "equity": 99912.05,
+      "dd_pct": 0.77,
+      "daily_pl": -775.7399999999907,
+      "status": "ok"
+    },
+    "FTMO (Ian 200k)": {
+      "balance": 204634.33,
+      "equity": 201758.36,
+      "dd_pct": 1.41,
+      "daily_pl": -2875.970000000001,
+      "status": "ok"
+    },
+    "Pepperstone (Ian USD)": {
+      "balance": 11604.49,
+      "equity": 11014.15,
+      "dd_pct": 5.09,
+      "daily_pl": -590.3400000000001,
+      "status": "ok"
+    },
+    "Pepperstone (Ian HKD)": {
+      "balance": 26092.32,
+      "equity": 24487.03,
+      "dd_pct": 6.15,
+      "daily_pl": -1605.2900000000009,
+      "status": "ok"
+    },
+    "Pepperstone (My USD)": {
+      "balance": 2295.47,
+      "equity": 2039.09,
+      "dd_pct": 11.17,
+      "daily_pl": -256.3799999999999,
+      "status": "ok"
+    },
+    "Pepperstone Demo": {
+      "balance": 50000.0,
+      "equity": 50000.0,
+      "dd_pct": 0.0,
+      "daily_pl": 0.0,
+      "status": "ok"
     }
   },
-  "factors": [],
-  "recommended_lot_size": 1.0,
+  "factors": [
+    "\u2705 FTMO (Keith): DD 0.0% \u2014 within limits",
+    "\u2705 FTMO (My manual): DD 0.0% \u2014 within limits",
+    "\u2705 FTMO (My Martingale): DD 2.8% \u2014 within limits",
+    "\u2705 FTMO (SSCF): DD 0.8% \u2014 within limits",
+    "\u2705 FTMO (Ian 200k): DD 1.4% \u2014 within limits",
+    "\u26a0\ufe0f Pepperstone (Ian USD): DD at 5.1% \u2014 approaching caution zone",
+    "\u26a0\ufe0f Pepperstone (Ian HKD): DD at 6.2% \u2014 approaching caution zone",
+    "\u2705 Pepperstone Demo: DD 0.0% \u2014 within limits"
+  ],
+  "recommended_lot_size": 0.25,
   "max_daily_loss_pct": 2.0,
   "consecutive_losses": 0
 }
