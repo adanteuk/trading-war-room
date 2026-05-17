@@ -197,15 +197,16 @@ print(json.dumps(accounts))
 """
 
     try:
-        # Write temp script to Windows temp directory
+        # Write temp script to a fixed Windows temp location
         import tempfile
-        with tempfile.NamedTemporaryFile(
-            mode='w', suffix='.py', delete=False,
-            dir='/mnt/c/Users/angus/AppData/Local/Temp/',
-            prefix='mt5_check_'
-        ) as f:
+        import random
+        import string
+        script_name = f"mt5_check_{''.join(random.choices(string.ascii_lowercase, k=8))}.py"
+        win_temp_dir = "/mnt/c/Users/angus/AppData/Local/Temp"
+        temp_script = os.path.join(win_temp_dir, script_name)
+        
+        with open(temp_script, 'w') as f:
             f.write(mt5_script)
-            temp_script = f.name
 
         # Run via Windows Python
         result = subprocess.run(
