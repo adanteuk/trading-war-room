@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-05-18T18:30:00+08:00",
+  "bias": "bullish",
+  "confidence": 58,
+  "orb_score": 68,
+  "ict_profile": "Classic Tuesday Low",
+  "key_levels": {
+    "pdh": 29212.5,
+    "pdl": 28856.5,
+    "onh": 29150.0,
+    "onl": 28950.0,
+    "resistance_1": 29372.0,
+    "resistance_2": 29705.4,
+    "support_1": 28661.4,
+    "support_2": 28463.1
+  },
+  "entry": 28950,
+  "sl": 28800,
+  "tp": 29450,
+  "reasoning": "D1 pullback from 29705 swing high into discount zone. Friday's long lower wick at 28856 SSL rejection shows buying pressure. Overall HH/HL structure intact from May 4 lows. Bearish FVG unmitigated at 29372 acts as near-term magnet. Tuesday Classic Low profile expected — overnight SSL sweep followed by rally toward BSL at 29705. ORB expansion likely after range contraction (356pt vs 510pt avg). No high-impact US news on Tuesday."
+}
