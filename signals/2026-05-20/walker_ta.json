@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-05-19T18:30:00+08:00",
+  "asset": "PEPPERSTONE:NAS100",
+  "analysis_date": "2026-05-20",
+  "bias": "bullish",
+  "confidence": 65,
+  "orb_score": 75,
+  "ict_profile": "Wednesday Expansion — post-Tuesday Low",
+  "weighted_score": 6.05,
+  "factor_scores": {
+    "market_structure": 6,
+    "po3": 5,
+    "liquidity": 7,
+    "fvg_order_block": 6,
+    "opening_asia_range": 6
+  },
+  "key_levels": {
+    "pdh": 29348.9,
+    "pdl": 28744.6,
+    "onh": 29119.3,
+    "onl": 28771.9,
+    "resistance_1": 29348.9,
+    "resistance_2": 29486.0,
+    "resistance_3": 29705.4,
+    "support_1": 28744.6,
+    "support_2": 28661.4,
+    "support_3": 28463.1
+  },
+  "entry": 28900,
+  "sl": 28650,
+  "tp": 29350,
+  "tp2": 29700,
+  "prev_candle": {
+    "date": "2026-05-17",
+    "open": 29086.9,
+    "high": 29348.9,
+    "low": 28744.6,
+    "close": 29012.4,
+    "volume": 601354,
+    "range": 604.3,
+    "body_pct": 12.3,
+    "type": "bearish_doji"
+  },
+  "current_in_progress": {
+    "date": "2026-05-18",
+    "open": 29031.2,
+    "high": 29119.3,
+    "low": 28771.9,
+    "close": 28832.6,
+    "volume": 284973
+  },
+  "market_structure": {
+    "trend": "bullish_pullback",
+    "last_swing_high": 29705.4,
+    "last_swing_low": 28661.4,
+    "bos": false,
+    "choch": false,
+    "notes": "Uptrend from May 5 (28152) to May 13 (29705). 3-day pullback (-693pts). May 17 doji on record volume = accumulation at support. No ChoCh — still above May 11 swing low 28661.4."
+  },
+  "po3_analysis": {
+    "phase": "manipulation_complete",
+    "notes": "May 17 swept both BSL (29348.9) and SSL (28744.6), closed near open (29012.4). SSL sweep typically precedes reversal higher. Current candle (May 18) extending lower — potential London SSL sweep before NY expansion."
+  },
+  "liquidity": {
+    "bsl_levels": [29348.9, 29486.0, 29705.4],
+    "ssl_levels": [28744.6, 28661.4, 28463.1],
+    "nearest_unswept": "BSL at 29705.4 (May 13 swing high)",
+    "notes": "SSL at 28744.6 swept on May 17. Path of least resistance = toward BSL at 29705.4."
+  },
+  "fvg_analysis": {
+    "bearish_fvgs": [{"low": 29348.9, "high": 29372.0, "strength": "weak"}],
+    "bullish_fvgs": [{"low": 28853.4, "high": 29143.1, "strength": "moderate", "status": "partially_filled"}],
+    "notes": "Small bearish FVG at 29348.9-29372 may cap initial rally. Large bullish FVG 28853-29143 partially filled by May 11 low."
+  },
+  "reasoning": "D1 SSL sweep at 28744.6 on high-volume doji (May 17, vol 601K). 3-day pullback from 29705.4 ATH in broader HH/HL uptrend. Nearest unswept major liquidity = BSL at 29705.4. Wednesday profile favors weekly Low formation and expansion. Bearish FVG at 29348.9-29372 may cap initial rally. Moderate conviction pending NY confirmation. In-progress May 18 candle extends lower (28771.9) — potential London SSL re-sweep before reversal."
+}
