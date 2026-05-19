@@ -37,7 +37,7 @@ DISCORD_CHANNELS = {
 }
 
 # Wait times (seconds)
-WAIT_FOR_INPUTS = 1800  # 30 min max wait
+WAIT_FOR_INPUTS = 30  # 30 sec max wait (temporarily reduced)
 CHECK_INTERVAL = 60     # Check every 60 seconds
 
 # US Market Holidays (2026)
