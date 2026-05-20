@@ -377,7 +377,7 @@ def main():
 
     print(f"\n✅ Orchestrator complete.")
     print(f"{'='*50}")
-    if "GO" in decision["final_decision"] and "VETO" not in decision["final_decision"]:
+    if decision["final_decision"] == "GO":
         print(f"🎯 GO — {decision['trade_params'].get('direction', 'N/A')} NAS100")
     elif "VETO" in decision["final_decision"]:
         print(f"🛑 VETOED BY ALFRED — {decision.get('veto_reason', 'N/A')}")
