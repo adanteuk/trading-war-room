@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-05-20T18:30:00+08:00",
+  "target_date": "2026-05-21",
+  "bias": "bullish",
+  "confidence": 72,
+  "orb_score": 76,
+  "ict_profile": "Classic Tuesday Low",
+  "key_levels": {
+    "pdh": 29090.3,
+    "pdl": 28735.3,
+    "onh": 29100.0,
+    "onl": 28850.0,
+    "resistance_1": 29348.9,
+    "resistance_2": 29705.4,
+    "support_1": 28735.3,
+    "support_2": 28595.8
+  },
+  "entry": 28980.0,
+  "sl": 28700.0,
+  "tp": 29350.0,
+  "reasoning": "SSL sweep at 28595.8 (May 18 low) followed by strong reversal candle closing 96% near high. Classic Tuesday Low PO3 pattern formed \u2014 manipulation phase completed, distribution to upside targeting BSL at 29348-29705. May 19 bullish candle (body 60%, minimal upper wick) shows buyer control. FOMC minutes released Wed, reduced uncertainty for Thu. ChoCh from May 18 noted but reversal candle suggests sweep not true reversal. Weighted score: 7.0/10 \u2014 moderate bullish bias.",
+  "analysis": {
+    "weighted_score": 7.0,
+    "factors": {
+      "market_structure": {
+        "weight": 0.3,
+        "score": 6,
+        "note": "ChoCh confirmed May 18 but reversal candle suggests liquidity sweep"
+      },
+      "po3": {
+        "weight": 0.2,
+        "score": 8,
+        "note": "Manipulation phase completed, entering bullish distribution"
+      },
+      "liquidity": {
+        "weight": 0.25,
+        "score": 8,
+        "note": "SSL swept, BSL at 29348-29705 is magnet"
+      },
+      "fvg_ob": {
+        "weight": 0.15,
+        "score": 6,
+        "note": "Between bullish OB (28735) and bearish FVG (29348-29372)"
+      },
+      "opening_range": {
+        "weight": 0.1,
+        "score": 7,
+        "note": "Price above prior open, bullish intraday control"
+      }
+    },
+    "candle_deconstruction": {
+      "date": "2026-05-19",
+      "open": 28863.7,
+      "high": 29090.3,
+      "low": 28735.3,
+      "close": 29076.8,
+      "range": 355.0,
+      "body_size": 213.1,
+      "body_pct": 60.0,
+      "upper_wick": 13.5,
+      "lower_wick": 128.4,
+      "close_position_pct": 96.2,
+      "type": "Bullish reversal with SSL sweep"
+    },
+    "market_events": "FOMC Minutes released Wed 2pm ET (already priced for Thu), Jobless Claims + Housing data Thu 8:30am ET"
+  }
+}
