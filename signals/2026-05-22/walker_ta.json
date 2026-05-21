@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-05-21T18:30:00+08:00",
+  "asset": "PEPPERSTONE:NAS100",
+  "analysis_date": "2026-05-22",
+  "previous_trading_day": "2026-05-20",
+  "bias": "bearish",
+  "confidence": 48,
+  "orb_score": 58,
+  "ict_profile": "Classic Tuesday High → Thu Pullback Doji",
+  "weighted_score": 3.6,
+  "key_levels": {
+    "pdh": 29396.3,
+    "pdl": 29048.4,
+    "onh": 29329.8,
+    "onl": 29048.4,
+    "resistance_1": 29486.0,
+    "resistance_2": 29654.0,
+    "support_1": 28735.0,
+    "support_2": 28596.0
+  },
+  "entry": 29048,
+  "sl": 29420,
+  "tp": 28750,
+  "reasoning": "5/20 D1 Doji (body 1.5% of range, 348pts) at upper-mid after BSL sweep of 5/19 high 29329 → rejected and closed near open. ChoCh bearish from 5/13 peak 29705 (LH+LL confirmed). Price inside large bearish FVG 29012-29603. Nearest unswept SSL at 5/18 low 28596. Compression detected (65% avg range) → expansion expected. BSL sweep + doji rejection favors bearish continuation toward 28735/28596.",
+  "candle_deconstruction": {
+    "date": "2026-05-20",
+    "open": 29200.8,
+    "high": 29396.3,
+    "low": 29048.4,
+    "close": 29195.7,
+    "range": 347.9,
+    "body": 5.1,
+    "body_pct": 1.5,
+    "upper_wick": 195.5,
+    "lower_wick": 147.3,
+    "close_position_pct": 42.3,
+    "type": "Doji"
+  },
+  "market_structure": {
+    "trend": "ChoCh bearish from 5/13 peak",
+    "last_bos": "2026-05-07 to 2026-05-13 (bullish HH+HL)",
+    "last_choch": "2026-05-14 (LH at 29654, LL at 29012)",
+    "critical_level": 28595.8,
+    "note": "Must hold above 28595 for broader uptrend"
+  },
+  "po3": {
+    "accumulation": "29048-29200",
+    "manipulation": "29396 (BSL sweep)",
+    "distribution": "rejection to 29196",
+    "verdict": "Bearish - sweep + reject pattern"
+  },
+  "scoring": {
+    "market_structure": {"weight": 0.30, "score": 3},
+    "po3": {"weight": 0.20, "score": 3},
+    "liquidity": {"weight": 0.25, "score": 4},
+    "fvg_order_block": {"weight": 0.15, "score": 4},
+    "opening_asia_range": {"weight": 0.10, "score": 5},
+    "weighted_total": 3.6
+  }
+}
