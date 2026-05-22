@@ -42,7 +42,11 @@
 
 **Status**: GO
 **Veto**: ✅ No
-• DD 0.0% — within limits
+• ✅ DD 0.0% — within limits
+• ✅ Daily DD 0.0% — within limits
+• ✅ 0 consecutive losses — OK
+• ✅ 0 open positions — OK
+• ✅ Margin usage 0.0% — within limits
 
 **Lot Size**: 1.0
 **Max Daily Loss**: 2.0%
