@@ -199,56 +199,169 @@ def calculate_final_decision(walker_data: dict, alfred_data: dict) -> dict:
     return decision
 
 
-def run_debate_rounds(walker_data: dict, alfred_data: dict, decision: dict) -> str:
+def run_debate_rounds(walker_data: dict, alfred_data: dict, decision: dict, merlin_data: dict = None) -> list:
     """
-    Generate the debate transcript for the day.
-    In practice, this would be coordinated via Discord messages.
-    This function produces the structured transcript for the repo.
+    Generate debate messages for Discord channels.
+    Returns a list of (channel, message) tuples to post.
     """
-    transcript = f"# Debate Transcript — {decision['date']}\n"
-    transcript += f"# Orchestrator: Merlin 🧙\n\n"
+    messages = []
 
-    # Round 1
-    transcript += "## Round 1: Opening Arguments\n\n"
-    transcript += "### 🤖 Walker (Technical Analyst)\n"
+    # ─── Message 1: Research Context ───
+    research_msg = f"🧙 **MERLIN RESEARCH — {decision['date']}**\n\n"
+    if merlin_data:
+        bias = merlin_data.get("bias", "N/A")
+        conf = merlin_data.get("confidence", "N/A")
+        summary = merlin_data.get("summary", "N/A")
+        ict = merlin_data.get("ict_analysis", {})
+
+        research_msg += f"**Bias**: {bias} | **Confidence**: {conf}/100\n\n"
+        research_msg += f"**Thesis**: {summary}\n\n"
+        research_msg += f"📊 **3-Layer ICT/CRT Pipeline Analysis**:\n"
+        research_msg += f"• **L1 (D1)**: {ict.get('daily_bias', 'N/A')}\n"
+        research_msg += f"• **L2 (H4)**: {ict.get('h4_context', 'N/A')}\n"
+        research_msg += f"• **L3 (M15)**: {ict.get('m15_status', 'N/A')}\n\n"
+
+        risks = merlin_data.get("risks", [])
+        if risks:
+            research_msg += f"⚠️ **Today's Risks**:\n"
+            for r in risks:
+                research_msg += f"• {r.get('event', '')} @ {r.get('time', '')} [{r.get('impact', '')}]\n"
+            research_msg += "\n"
+
+        research_msg += f"💡 **Recommendation**: {merlin_data.get('recommendation', 'N/A')}"
+    else:
+        research_msg += f"*Research thesis not available.*"
+
+    messages.append(("research-context", research_msg))
+
+    # ─── Message 2: Technical Setup ───
+    ta_msg = f"🤖 **WALKER TA ANALYSIS — {decision['date']}**\n\n"
     if walker_data:
-        transcript += f"- **Bias**: {walker_data.get('bias', 'N/A')}\n"
-        transcript += f"- **ICT Profile**: {walker_data.get('ict_profile', 'N/A')}\n"
-        transcript += f"- **ORB Score**: {walker_data.get('orb_score', 'N/A')}/100\n"
-        transcript += f"- **Confidence**: {walker_data.get('confidence', 'N/A')}/100\n"
-        transcript += f"- **Reasoning**: {walker_data.get('reasoning', 'N/A')}\n"
+        ta_msg += f"**Bias**: {walker_data.get('bias', 'N/A')}\n"
+        ta_msg += f"**ICT Profile**: {walker_data.get('ict_profile', 'N/A')}\n"
+        ta_msg += f"**ORB Score**: {walker_data.get('orb_score', 'N/A')}/100\n"
+        ta_msg += f"**Confidence**: {walker_data.get('confidence', 'N/A')}/100\n\n"
+        ta_msg += f"**Analysis**: {walker_data.get('reasoning', 'N/A')}"
     else:
-        transcript += "- No input received\n"
+        ta_msg += f"*No TA input received.*"
 
-    transcript += "\n### 🦇 Alfred (Risk Manager)\n"
+    messages.append(("technical-setup", ta_msg))
+
+    # ─── Message 3: Risk Check ───
+    risk_msg = f"🦇 **ALFRED RISK ASSESSMENT — {decision['date']}**\n\n"
     if alfred_data:
-        transcript += f"- **Risk Status**: {alfred_data.get('go_no_go', 'N/A')}\n"
+        risk_msg += f"**Status**: {alfred_data.get('go_no_go', 'N/A')}\n"
+        risk_msg += f"**Veto**: {'🛑 YES' if alfred_data.get('veto') else '✅ No'}\n"
         for factor in alfred_data.get('factors', []):
-            transcript += f"- {factor}\n"
+            risk_msg += f"• {factor}\n"
+        risk_msg += f"\n**Lot Size**: {alfred_data.get('recommended_lot_size', 'TBD')}\n"
+        risk_msg += f"**Max Daily Loss**: {alfred_data.get('max_daily_loss_pct', 'N/A')}%\n"
+        risk_msg += f"**Consecutive Losses**: {alfred_data.get('consecutive_losses', 'N/A')}"
     else:
-        transcript += "- No input received\n"
+        risk_msg += f"*No risk input received.*"
 
-    transcript += "\n### 🧙 Merlin (Orchestrator — Research Thesis)\n"
-    transcript += f"- {decision['merlin_thesis']}\n"
+    messages.append(("risk-check", risk_msg))
 
-    # Round 2
-    transcript += "\n## Round 2: Rebuttals & Risk Check\n\n"
-    if alfred_data and alfred_data.get("veto", False):
-        transcript += f"🛑 **ALFRED VETO**: {alfred_data.get('veto_reason', 'N/A')}\n"
+    # ─── Message 4: Debate Thread (Round 1) ───
+    debate_r1 = f"🎙️ **DEBATE ROUND 1 — {decision['date']}**\n\n"
+    debate_r1 += f"**The Floor**:\n\n"
+
+    if walker_data:
+        debate_r1 += f"🤖 **Walker** says: {walker_data.get('bias', 'N/A')} setup, ORB {walker_data.get('orb_score', '?')}/100, Conf {walker_data.get('confidence', '?')}/100. {walker_data.get('reasoning', '')[:200]}\n\n"
+
+    if alfred_data:
+        debate_r1 += f"🦇 **Alfred** says: Risk {alfred_data.get('go_no_go', '?')}. DD safe, lot size {alfred_data.get('recommended_lot_size', '?')}. {'VETO issued.' if alfred_data.get('veto') else 'Green light.'}\n\n"
+
+    if merlin_data:
+        debate_r1 += f"🧙 **Merlin** says: {merlin_data.get('summary', 'N/A')}\n\n"
+
+    debate_r1 += f"*Waiting for Round 2 rebuttals...*"
+
+    messages.append(("debate-thread", debate_r1))
+
+    # ─── Message 5: Debate Thread (Round 2 + Advice) ───
+    debate_r2 = f"🎙️ **DEBATE ROUND 2 + MERLIN ADVICE — {decision['date']}**\n\n"
+
+    # Merlin's 3-layer synthesis and advice
+    if merlin_data and walker_data:
+        debate_r2 += f"🧙 **Merlin's 3-Layer Synthesis & Advice**:\n\n"
+
+        ict = merlin_data.get("ict_analysis", {})
+        w_conf = walker_data.get("confidence", 50)
+        w_orb = walker_data.get("orb_score", 50)
+        a_go = alfred_data.get("go_no_go", "NO_GO") if alfred_data else "NO_GO"
+
+        # Build advice based on 3-layer analysis
+        advice_parts = []
+
+        # Layer 1 advice
+        daily_bias = merlin_data.get("bias", "Neutral").lower()
+        if "bearish" in daily_bias:
+            advice_parts.append("1️⃣ **L1 (D1)** confirms bearish direction → Only look for SHORT setups today")
+        elif "bullish" in daily_bias:
+            advice_parts.append("1️⃣ **L1 (D1)** confirms bullish direction → Only look for LONG setups today")
+        else:
+            advice_parts.append("1️⃣ **L1 (D1)** is NEUTRAL → Stand aside or reduce size significantly")
+
+        # Layer 2 advice
+        h4_ctx = ict.get("h4_context", "")
+        if "fvg" in h4_ctx.lower() or "premium" in h4_ctx.lower():
+            advice_parts.append("2️⃣ **L2 (H4)** shows active FVG/Premium → Wait for price to reach key level before entry")
+        elif "discount" in h4_ctx.lower():
+            advice_parts.append("2️⃣ **L2 (H4)** in Discount → Look for buy-side reaction for long entries")
+
+        # Layer 3 advice
+        m15_status = ict.get("m15_status", "")
+        if "compression" in m15_status.lower():
+            advice_parts.append("3️⃣ **L3 (M15)** compression detected → Expansion imminent, but wait for Kill Zone confirmation")
+        elif "kill zone" in m15_status.lower() or "ob" in m15_status.lower():
+            advice_parts.append("3️⃣ **L3 (M15)** OB + Kill Zone setup forming → High probability if confirmed")
+
+        # Scoring advice
+        debate_r2 += "**3-Layer ICT/CRT Pipeline Assessment**:\n"
+        for a in advice_parts:
+            debate_r2 += f"{a}\n\n"
+
+        debate_r2 += f"**Scoring Gap Analysis**:\n"
+        debate_r2 += f"• Walker Confidence: {w_conf}/100 (needs ≥70 for GO)\n"
+        debate_r2 += f"• Walker ORB Score: {w_orb}/100 (needs ≥60 for GO)\n"
+        debate_r2 += f"• Alfred Risk: {a_go}\n\n"
+
+        # Specific advice
+        if w_conf < 70 and w_orb >= 60:
+            debate_r2 += f"💡 **Advice**: ORB structure is OK but confidence low. Check SMT divergence and Dealing Range confluence to boost confidence.\n"
+        elif w_conf >= 70 and w_orb < 60:
+            debate_r2 += f"💡 **Advice**: Confidence high but ORB quality low. Wait for clearer candle close and volume confirmation.\n"
+        elif w_conf < 70 and w_orb < 60:
+            debate_r2 += f"💡 **Advice**: Both metrics below threshold. **STAND ASIDE** — no trade today is better than a bad trade.\n"
+        else:
+            debate_r2 += f"💡 **Advice**: All metrics met. Execute with discipline. Target 3R, respect SL.\n"
+
+        risks = merlin_data.get("risks", [])
+        if risks:
+            high_risks = [r for r in risks if r.get("impact") == "high"]
+            if high_risks:
+                debate_r2 += f"\n⚠️ **High-Impact Events**: "
+                debate_r2 += ", ".join([f"{r['event']} @ {r['time']}" for r in high_risks])
+                debate_r2 += " → Consider closing positions before these times."
     else:
-        transcript += "No veto from Alfred. Risk parameters within limits.\n"
+        debate_r2 += f"*Insufficient data for debate.*"
 
-    # Final
-    transcript += f"\n## Final Decision by Merlin\n\n"
-    transcript += f"**{decision['final_decision']}**\n\n"
-    transcript += f"### Reasoning\n{decision['reasoning']}\n"
+    messages.append(("debate-thread", debate_r2))
+
+    # ─── Message 6: Final Call ───
+    final_msg = f"🎯 **FINAL CALL — {decision['date']}**\n\n"
+    final_msg += f"Decision: **{decision['final_decision']}**\n\n"
+    final_msg += f"### Reasoning\n{decision.get('reasoning', 'N/A')}\n"
 
     if decision.get("trade_params"):
-        transcript += "\n### Trade Parameters\n"
+        final_msg += f"\n### Trade Parameters\n"
         for k, v in decision["trade_params"].items():
-            transcript += f"- **{k}**: {v}\n"
+            final_msg += f"• **{k}**: {v}\n"
 
-    return transcript
+    messages.append(("final-call", final_msg))
+
+    return messages
 
 
 def save_all(decision: dict, transcript: str, date_str: str):
@@ -365,31 +478,26 @@ def main():
         for k, v in decision["trade_params"].items():
             print(f"  {k}: {v}")
 
-    # Generate debate transcript
-    print("\n[5/7] Generating debate transcript...")
-    transcript = run_debate_rounds(status["walker_data"], status["alfred_data"], decision)
+    # Generate debate messages for Discord
+    print("\n[5/7] Generating debate messages for Discord...")
+    debate_messages = run_debate_rounds(status["walker_data"], status["alfred_data"], decision, merlin_data)
+
+    # Generate local transcript for repo
+    transcript = f"# Debate Transcript — {decision['date']}\n"
+    transcript += f"# Orchestrator: Merlin 🧙\n\n"
+    for channel, msg in debate_messages:
+        transcript += f"## #{channel}\n\n```txt\n{msg}\n```\n\n"
 
     # Save everything
     print("\n[6/7] Saving to shared repo...")
     save_all(decision, transcript, date_str)
 
-    # Post to Discord
+    # Post to Discord channels with 2-second delays to avoid rate limits
     print("\n[7/7] Posting to Discord channels...")
-    post_to_discord("final-call",
-                    f"🎯 **FINAL CALL — {date_str}**\n"
-                    f"Decision: {decision['final_decision']}\n"
-                    f"Reasoning: {decision['reasoning']}")
-
-    if decision.get("trade_params"):
-        params = decision["trade_params"]
-        post_to_discord("final-call",
-                        f"📊 Trade Parameters:\n"
-                        f"Direction: {params['direction']}\n"
-                        f"Entry: {params['entry']}\n"
-                        f"SL: {params['stop_loss']}\n"
-                        f"TP: {params['take_profit']}\n"
-                        f"Size: {params['lot_size']}\n"
-                        f"Window: {params['session_window']}")
+    for i, (channel, message) in enumerate(debate_messages):
+        post_to_discord(channel, message)
+        if i < len(debate_messages) - 1:
+            time.sleep(2)
 
     # Commit and push
     git_push(f"Merlin: Decision for {date_str} — {decision['final_decision']}")
