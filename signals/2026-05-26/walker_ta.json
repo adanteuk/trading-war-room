@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-05-22T18:30:00+08:00",
+  "analysis_date": "2026-05-26",
+  "bias": "bullish",
+  "confidence": 62,
+  "orb_score": 55,
+  "ict_profile": "Classic Tuesday Low",
+  "key_levels": {
+    "pdh": 29601.2,
+    "pdl": 29385.4,
+    "onh": 29601.2,
+    "onl": 29385.4,
+    "resistance_1": 29705.4,
+    "resistance_2": 29487.1,
+    "support_1": 29320.0,
+    "support_2": 29140.5
+  },
+  "entry": 29390,
+  "sl": 29320,
+  "tp": 29540,
+  "reasoning": "D1 doji with long upper wick (212pt rejection at 29,601) signals indecision. Bullish PO3 completed May 21 (Asia accumulate → London SSL sweep to 29,108 → NY distribution to 29,487). Price recovering from May 18 LL 28,596 making HHs, but not yet BOS above May 13 swing high 29,705. SMT aligned bullish with US500 (both HH/HL from swing low). FVGs mostly mitigated — neutral zone. Classic Tuesday Low profile expected: London/early NY forms low, then rally. Long weekend (Memorial Day) reduces conviction. Entry near PDL 29,390, SL below swing low 29,320, TP mid-range 29,540."
+}
