@@ -266,16 +266,35 @@ def save_all(decision: dict, transcript: str, date_str: str):
 
 
 def post_to_discord(channel: str, message: str):
-    """Post message to Discord channel.
-    Replace with actual Discord API call using Merlin's bot token.
-    """
-    # TODO: Implement with discord.py or HTTP API
-    # bot_token = os.getenv("DISCORD_BOT_TOKEN")
-    # channel_id = DISCORD_CHANNELS[channel]
-    # requests.post(f"https://discord.com/api/channels/{channel_id}/messages",
-    #               headers={"Authorization": f"Bot {bot_token}"},
-    #               json={"content": message})
-    print(f"[DISCORD #{channel}] {message}")
+    """Post message to Discord channel using bot API."""
+    import requests
+
+    token = os.getenv("DISCORD_BOT_TOKEN")
+    if not token:
+        # Fallback: try loading from .env
+        env_path = Path.home() / ".hermes" / ".env"
+        if env_path.exists():
+            with open(env_path) as f:
+                for line in f:
+                    if line.startswith("DISCORD_BOT_TOKEN="):
+                        token = line.split("=", 1)[1].strip()
+                        break
+
+    channel_id = DISCORD_CHANNELS.get(channel)
+    if not token or not channel_id:
+        print(f"[DISCORD ⚠️] Missing token or channel ({channel}): token={'✅' if token else '❌'}, id={'✅' if channel_id else '❌'}")
+        print(f"  Content preview: {message[:80]}...")
+        return
+
+    resp = requests.post(
+        f"https://discord.com/api/channels/{channel_id}/messages",
+        headers={"Authorization": f"Bot {token}"},
+        json={"content": message}
+    )
+    if resp.status_code == 200:
+        print(f"[DISCORD ✅] Posted to #{channel}")
+    else:
+        print(f"[DISCORD ❌] Failed to post to #{channel}: {resp.status_code} {resp.text[:200]}")
 
 
 def main():
