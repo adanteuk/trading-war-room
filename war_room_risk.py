@@ -111,8 +111,39 @@ def check_via_zmq() -> dict:
 
         data = json.loads(reply)
         if data.get("status") == "ok":
-            print("  ✅ ZMQ connection successful")
-            return data
+            # Normalize ZMQ response to our expected schema
+            # ZMQ may return data for a different account — verify login matches
+            zmq_login = str(data.get("login", ""))
+            target_login = TARGET_ACCOUNT["account_number"]
+            if zmq_login != target_login:
+                print(f"  ⚠️ ZMQ returned account {zmq_login}, expected {target_login} — falling back to MT5")
+                return None
+
+            balance = data.get("balance", 0)
+            equity = data.get("equity", balance)
+            margin = data.get("margin", 0)
+            dd_pct = ((balance - equity) / balance * 100) if balance > 0 else 0
+            margin_used_pct = (margin / balance * 100) if balance > 0 else 0
+
+            result = {
+                "name": TARGET_ACCOUNT["name"],
+                "account_number": target_login,
+                "balance": round(balance, 2),
+                "equity": round(equity, 2),
+                "dd_pct": round(dd_pct, 2),
+                "daily_pl": 0,  # ZMQ doesn't provide this directly
+                "open_positions": 0,  # ZMQ doesn't provide this directly
+                "margin_used": round(margin, 2),
+                "margin_free": round(data.get("free_margin", 0), 2),
+                "margin_used_pct": round(margin_used_pct, 2),
+                "margin_level": data.get("margin_level", 0),
+                "status": "ok",
+                "source": "zmq",
+                "currency": data.get("currency", "USD"),
+                "leverage": data.get("leverage", 0),
+            }
+            print("  ✅ ZMQ connection successful — account verified")
+            return result
         else:
             print(f"  ⚠️ ZMQ returned error: {data.get('error', 'unknown')}")
             return None
