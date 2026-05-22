@@ -70,12 +70,19 @@ def git_pull():
     os.chdir(REPO_DIR)
     subprocess.run(["git", "pull", "--rebase"], capture_output=True)
 
-
-def git_push(message: str):
+def git_push(message: str) -> bool:
+    """Commit and push changes. Returns True on success, False on failure."""
     os.chdir(REPO_DIR)
     subprocess.run(["git", "add", "."], capture_output=True)
-    subprocess.run(["git", "commit", "-m", message], capture_output=True)
-    subprocess.run(["git", "push"], capture_output=True)
+    result = subprocess.run(["git", "commit", "-m", message], capture_output=True, text=True)
+    if result.returncode != 0:
+        print(f"  ⚠️ git commit failed: {result.stderr.strip()[:200]}")
+        return False
+    push_result = subprocess.run(["git", "push"], capture_output=True, text=True)
+    if push_result.returncode != 0:
+        print(f"  🚨 git push FAILED: {push_result.stderr.strip()[:500]}")
+        return False
+    return True
 
 
 def check_single_account() -> dict:
@@ -386,8 +393,11 @@ def main():
     msg = format_discord_message(assessment, date_str)
     post_to_discord(msg)
 
-    git_push(f"War Room: Risk assessment for {date_str} — {assessment['go_no_go']}")
-    print(f"\n✅ War Room risk assessment complete: {assessment['go_no_go']}")
+    if git_push(f"War Room: Risk assessment for {date_str} — {assessment['go_no_go']}"):
+        print(f"\n✅ War Room risk assessment complete: {assessment['go_no_go']}")
+    else:
+        print(f"\n⚠️ Risk assessment saved locally but GIT PUSH FAILED — Merlin may not see it!")
+        print(f"   Manual fix: cd {REPO_DIR} && git push")
 
 
 if __name__ == "__main__":
