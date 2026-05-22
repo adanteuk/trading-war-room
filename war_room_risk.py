@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 """
-Trading War Room — Alfred Risk Agent (SINGLE ACCOUNT)
+Trading War Room — Alfred Risk Agent (Merlin's Specification)
 Runs at 6:30 PM HKT on trading days.
-ONLY checks FTMO (My manual) account 510047082 — the war room strategy account.
 
-Alfred has HARD VETO power:
-- DD > 8% → VETO
-- Daily loss > 2% → VETO
-- MT5 connection error → VETO (safety first)
-- 5+ consecutive losses → VETO
+Checks FTMO account 510047082 via ZeroMQ (preferred) with MT5 fallback.
+Hard VETO power on risk breaches.
 
-The veto is communicated via the shared repo and Discord.
+Merlin's updated thresholds (stricter than FTMO limits):
+- Total DD < 5% (FTMO limit 10%)
+- Daily DD < 2% (FTMO limit 5%)
+- Consecutive losses < 3
+- Open positions ≤ 2
+- Margin usage < 30%
 """
 
 import json
@@ -33,14 +34,20 @@ TARGET_ACCOUNT = {
     "notes": "Manual trading account — war room strategy",
 }
 
-# Windows Python for MT5 API
+# ZeroMQ bridge
+ZMQ_SERVER = "tcp://192.168.11.211:5555"
+ZMQ_TIMEOUT_S = 5
+
+# Windows Python for MT5 fallback
 WINDOWS_PYTHON = "/mnt/c/Python312/python.exe"
 
-# Risk thresholds
-MAX_DAILY_LOSS_PCT = 2.0     # FTMO daily limit
-MAX_TOTAL_DD_PCT = 10.0      # FTMO max DD
-VETO_DD_THRESHOLD = 8.0      # Veto if above this
-VETO_CONSECUTIVE_LOSSES = 5  # Veto after N consecutive losses
+# Risk thresholds (Merlin's spec — stricter than FTMO)
+MAX_TOTAL_DD_PCT = 5.0       # Veto threshold (FTMO limit is 10%)
+MAX_DAILY_DD_PCT = 2.0       # Veto threshold (FTMO limit is 5%)
+MAX_DAILY_LOSS_PCT = 2.0     # Max daily loss as % of balance
+MAX_CONSECUTIVE_LOSSES = 3   # Veto at this many
+MAX_OPEN_POSITIONS = 2       # Veto at 3+
+MAX_MARGIN_USAGE_PCT = 30.0  # Veto above this
 
 # US Market Holidays (2026)
 US_HOLIDAYS = [
@@ -49,17 +56,13 @@ US_HOLIDAYS = [
     "2026-11-26", "2026-12-25",
 ]
 
-ACCOUNT_TIMEOUT_S = 12
-ACCOUNT_TIMEOUT_MS = 12000
-
 # Discord
-DISCORD_BOT_TOKEN_ENV = "DISCORD_BOT_TOKEN"
 DISCORD_RISK_CHECK_CHANNEL = "1505601652470583506"
 
 
 def is_trading_day() -> bool:
     now_hk = datetime.now(timezone(timedelta(hours=8)))
-    if now_hk.weekday() >= 5:  # Sat=5, Sun=6
+    if now_hk.weekday() >= 5:
         return False
     if now_hk.strftime("%Y-%m-%d") in US_HOLIDAYS:
         return False
@@ -70,23 +73,59 @@ def git_pull():
     os.chdir(REPO_DIR)
     subprocess.run(["git", "pull", "--rebase"], capture_output=True)
 
+
 def git_push(message: str) -> bool:
-    """Commit and push changes. Returns True on success, False on failure."""
+    """Push to git. Returns True if successful."""
     os.chdir(REPO_DIR)
     subprocess.run(["git", "add", "."], capture_output=True)
     result = subprocess.run(["git", "commit", "-m", message], capture_output=True, text=True)
-    if result.returncode != 0:
-        print(f"  ⚠️ git commit failed: {result.stderr.strip()[:200]}")
-        return False
+    if b"nothing to commit" in result.stdout.encode() or b"nothing to commit" in result.stderr.encode():
+        print("  (nothing new to commit)")
+        return True
     push_result = subprocess.run(["git", "push"], capture_output=True, text=True)
     if push_result.returncode != 0:
-        print(f"  🚨 git push FAILED: {push_result.stderr.strip()[:500]}")
+        print(f"  ⚠️ Git push failed: {push_result.stderr[:300]}")
         return False
     return True
 
 
-def check_single_account() -> dict:
-    """Check ONLY the war room target account via Windows MT5."""
+def check_via_zmq() -> dict:
+    """Try to get account info via ZeroMQ bridge."""
+    try:
+        import zmq
+        context = zmq.Context()
+        socket = context.socket(zmq.REQ)
+        socket.setsockopt(zmq.RCVTIMEO, ZMQ_TIMEOUT_S * 1000)
+        socket.setsockopt(zmq.LINGER, 0)
+        socket.connect(ZMQ_SERVER)
+
+        request = json.dumps({
+            "action": "get_account_info",
+            "account_number": TARGET_ACCOUNT["account_number"],
+        })
+        socket.send_string(request)
+
+        reply = socket.recv_string()
+        socket.close()
+        context.term()
+
+        data = json.loads(reply)
+        if data.get("status") == "ok":
+            print("  ✅ ZMQ connection successful")
+            return data
+        else:
+            print(f"  ⚠️ ZMQ returned error: {data.get('error', 'unknown')}")
+            return None
+    except ImportError:
+        print("  ⚠️ pyzmq not installed, skipping ZMQ")
+        return None
+    except Exception as e:
+        print(f"  ⚠️ ZMQ failed: {str(e)[:100]}")
+        return None
+
+
+def check_via_mt5_fallback() -> dict:
+    """Fallback: check account via Windows MT5 subprocess."""
     acc = TARGET_ACCOUNT
     mt5_script = f"""
 import sys
@@ -95,8 +134,8 @@ import json
 import MetaTrader5 as mt5
 import threading
 
-ACCOUNT_TIMEOUT_MS = {ACCOUNT_TIMEOUT_MS}
-ACCOUNT_TIMEOUT_S = {ACCOUNT_TIMEOUT_S}
+ACCOUNT_TIMEOUT_MS = 12000
+ACCOUNT_TIMEOUT_S = 12
 
 def try_login(login, password, server, timeout_ms):
     result = [None, None]
@@ -127,15 +166,48 @@ for attempt in range(2):
         if acc_info:
             balance = acc_info.balance
             equity = acc_info.equity
+            margin = acc_info.margin
+            free_margin = acc_info.margin_free
+            margin_level = acc_info.margin_level
+
+            # Count open positions
+            positions = mt5.positions_get()
+            open_positions = len(positions) if positions else 0
+
+            # Calculate DD
             dd_pct = ((balance - equity) / balance * 100) if balance > 0 else 0
+
+            # Margin usage
+            margin_used_pct = (margin / balance * 100) if balance > 0 else 0
+
+            # Daily P&L from closed positions today
+            from datetime import datetime as dt, timezone as tz, timedelta as td
+            now = dt.now(tz(td(hours=-5)))  # NY timezone for MT5 server time
+            today_start = dt(now.year, now.month, now.day, tzinfo=tz(td(hours=-5)))
+            today_start_ts = int(today_start.timestamp())
+
+            history = mt5.history_orders_get(today_start_ts, int(dt.now(tz(td(hours=8))).timestamp()))
+            daily_realized = 0.0
+            if history:
+                for order in history:
+                    daily_realized += order.profit + order.commission + order.swap
+
+            daily_pl = daily_realized + (equity - balance)
+
             result = {{
                 "name": "{acc['name']}",
                 "account_number": "{acc['account_number']}",
-                "balance": balance,
-                "equity": equity,
+                "balance": round(balance, 2),
+                "equity": round(equity, 2),
                 "dd_pct": round(dd_pct, 2),
-                "daily_pl": equity - balance,
+                "daily_pl": round(daily_pl, 2),
+                "open_positions": open_positions,
+                "margin_used": round(margin, 2),
+                "margin_free": round(free_margin, 2),
+                "margin_used_pct": round(margin_used_pct, 2),
+                "margin_level": margin_level if margin_level else 0,
                 "status": "ok",
+                "source": "mt5",
             }}
             mt5.shutdown()
             print(json.dumps(result))
@@ -149,10 +221,11 @@ mt5.shutdown()
 result = {{
     "name": "{acc['name']}",
     "account_number": "{acc['account_number']}",
-    "balance": 0, "equity": 0, "dd_pct": 0,
-    "daily_pl": 0,
+    "balance": 0, "equity": 0, "dd_pct": 0, "daily_pl": 0,
+    "open_positions": 0, "margin_used_pct": 0,
     "status": "error",
     "error": "Timeout" if 'timeout' in str(error).lower() else "Login failed",
+    "source": "mt5",
 }}
 print(json.dumps(result))
 """
@@ -192,6 +265,17 @@ Set-Content -Path "{win_temp_path}" -Value $script -Encoding UTF8
         raise Exception(f"MT5 check failed: {stderr_preview}")
 
 
+def check_account() -> dict:
+    """Try ZMQ first, fallback to MT5."""
+    print("  Trying ZeroMQ bridge...")
+    zmq_result = check_via_zmq()
+    if zmq_result:
+        return zmq_result
+
+    print("  Falling back to MT5 Windows Python...")
+    return check_via_mt5_fallback()
+
+
 def load_trade_log() -> list:
     trade_log_file = REPO_DIR / "trade-log.json"
     if trade_log_file.exists():
@@ -210,7 +294,38 @@ def check_consecutive_losses(trade_log: list) -> int:
     return consecutive
 
 
-def calculate_risk(account: dict, trade_log: list) -> dict:
+def check_walker_ta(date_str: str) -> dict:
+    """Check if Walker's TA is available for lot size calculation."""
+    ta_file = SIGNALS_DIR / date_str / "walker_ta.json"
+    if ta_file.exists():
+        with open(ta_file) as f:
+            return json.load(f)
+    return None
+
+
+def calculate_lot_size(balance: float, sl_points: float = None) -> float:
+    """
+    Lot size calculation per Merlin's spec:
+    Risk per trade = Balance × 2%
+    SL distance in points = from Walker TA
+    Point value = $10 per point for NAS100 (1.0 lot)
+    Lot size = Risk / (SL points × Point value)
+    Round to nearest 0.1
+    """
+    risk_per_trade = balance * 0.02  # 2% max risk
+    point_value = 10.0  # NAS100: $10/point per 1.0 lot
+
+    if sl_points and sl_points > 0:
+        lot_size = risk_per_trade / (sl_points * point_value)
+    else:
+        return 1.0  # Default if no SL info
+
+    # Round to nearest 0.1
+    lot_size = round(lot_size * 10) / 10
+    return max(0.1, lot_size)  # Minimum 0.1 lot
+
+
+def calculate_risk(account: dict, trade_log: list, walker_ta: dict, date_str: str) -> dict:
     now_hk = datetime.now(timezone(timedelta(hours=8)))
     assessment = {
         "timestamp": now_hk.isoformat(),
@@ -222,55 +337,126 @@ def calculate_risk(account: dict, trade_log: list) -> dict:
         "recommended_lot_size": 1.0,
         "max_daily_loss_pct": MAX_DAILY_LOSS_PCT,
         "consecutive_losses": 0,
+        "notes": "",
     }
 
+    account_name = TARGET_ACCOUNT["name"]
+
+    # Handle connection error → default to NO_GO for safety
     if account.get("status") == "error":
+        assessment["go_no_go"] = "NO_GO"
         assessment["veto"] = True
-        assessment["go_no_go"] = "VETO"
-        assessment["veto_reason"] = f"MT5 connection error — cannot verify risk for {account['name']}"
-        assessment["accounts"][account["name"]] = {"status": "error", "error": account.get("error", "Unknown")}
+        assessment["veto_reason"] = f"Cannot verify account status — MT5/ZMQ connection error for {account_name}"
+        assessment["accounts"][account_name] = {"status": "error", "error": account.get("error", "Unknown")}
+        assessment["notes"] = "Safety first: cannot verify risk status, defaulting to NO_GO"
         return assessment
 
     balance = account.get("balance", 0)
     equity = account.get("equity", balance)
     dd_pct = account.get("dd_pct", 0)
     daily_pl = account.get("daily_pl", 0)
+    open_positions = account.get("open_positions", 0)
+    margin_used_pct = account.get("margin_used_pct", 0)
 
-    assessment["accounts"][account["name"]] = {
-        "balance": balance, "equity": equity,
-        "dd_pct": dd_pct, "daily_pl": daily_pl, "status": "ok",
+    assessment["accounts"][account_name] = {
+        "balance": round(balance, 2),
+        "equity": round(equity, 2),
+        "dd_pct": round(dd_pct, 2),
+        "daily_pl": round(daily_pl, 2),
+        "open_positions": open_positions,
+        "margin_used_pct": round(margin_used_pct, 2),
+        "status": "ok",
     }
 
-    # DD checks
-    if dd_pct > MAX_TOTAL_DD_PCT:
-        assessment["veto"] = True
-        assessment["veto_reason"] = f"DD {dd_pct:.1f}% EXCEEDS max {MAX_TOTAL_DD_PCT}%"
-    elif dd_pct > VETO_DD_THRESHOLD:
-        assessment["veto"] = True
-        assessment["veto_reason"] = f"DD {dd_pct:.1f}% above veto threshold {VETO_DD_THRESHOLD}%"
-    elif dd_pct > 5:
-        assessment["factors"].append(f"DD at {dd_pct:.1f}% — approaching caution zone")
-        assessment["recommended_lot_size"] *= 0.5
+    veto_triggered = False
+    veto_reasons = []
+
+    # ─── Veto Checks ───
+
+    # 1. Total DD
+    if dd_pct >= MAX_TOTAL_DD_PCT:
+        veto_triggered = True
+        veto_reasons.append(f"Total DD {dd_pct:.1f}% ≥ {MAX_TOTAL_DD_PCT}% limit")
+    elif dd_pct >= 4.0:
+        assessment["factors"].append(f"⚠️ DD at {dd_pct:.1f}% — approaching danger zone (4-5%)")
+        assessment["notes"] = "Marginal risk — reduced lot size recommended"
     else:
-        assessment["factors"].append(f"DD {dd_pct:.1f}% — within limits")
+        assessment["factors"].append(f"✅ DD {dd_pct:.1f}% — within limits")
 
-    # Daily loss check
-    if daily_pl < -(balance * MAX_DAILY_LOSS_PCT / 100):
-        assessment["veto"] = True
-        assessment["veto_reason"] = f"Daily loss ${abs(daily_pl):.2f} exceeds {MAX_DAILY_LOSS_PCT}% limit (${balance * MAX_DAILY_LOSS_PCT / 100:.2f})"
+    # 2. Daily DD (absolute daily loss vs balance)
+    daily_dd_pct = abs(daily_pl) / balance * 100 if balance > 0 and daily_pl < 0 else 0
+    if daily_dd_pct >= MAX_DAILY_DD_PCT:
+        veto_triggered = True
+        veto_reasons.append(f"Daily DD {daily_dd_pct:.1f}% ≥ {MAX_DAILY_DD_PCT}% limit")
+    else:
+        assessment["factors"].append(f"✅ Daily DD {daily_dd_pct:.1f}% — within limits")
 
-    # Consecutive losses
+    # 3. Consecutive losses
     consecutive = check_consecutive_losses(trade_log)
     assessment["consecutive_losses"] = consecutive
-    if consecutive >= VETO_CONSECUTIVE_LOSSES:
-        assessment["veto"] = True
-        assessment["veto_reason"] = f"{consecutive} consecutive losses — cooling off required"
-    elif consecutive >= 3:
-        assessment["factors"].append(f"{consecutive} consecutive losses — reducing size")
-        assessment["recommended_lot_size"] *= 0.5
+    if consecutive >= MAX_CONSECUTIVE_LOSSES:
+        veto_triggered = True
+        veto_reasons.append(f"{consecutive} consecutive losses ≥ {MAX_CONSECUTIVE_LOSSES} limit")
+    elif consecutive >= 2:
+        assessment["factors"].append(f"⚠️ {consecutive} consecutive losses — caution advised")
+    else:
+        assessment["factors"].append(f"✅ {consecutive} consecutive losses — OK")
 
-    if assessment["veto"]:
-        assessment["go_no_go"] = "VETO"
+    # 4. Open positions
+    if open_positions > MAX_OPEN_POSITIONS:
+        veto_triggered = True
+        veto_reasons.append(f"{open_positions} open positions > {MAX_OPEN_POSITIONS} max")
+    elif open_positions == MAX_OPEN_POSITIONS:
+        assessment["factors"].append(f"⚠️ {open_positions} open positions — at limit")
+    else:
+        assessment["factors"].append(f"✅ {open_positions} open positions — OK")
+
+    # 5. Margin usage
+    if margin_used_pct >= MAX_MARGIN_USAGE_PCT:
+        veto_triggered = True
+        veto_reasons.append(f"Margin usage {margin_used_pct:.1f}% ≥ {MAX_MARGIN_USAGE_PCT}%")
+    else:
+        assessment["factors"].append(f"✅ Margin usage {margin_used_pct:.1f}% — within limits")
+
+    # 6. News event check (simple: check if within 15 min of major news times)
+    now_hk_time = now_hk
+    ny_time = now_hk_time - timedelta(hours=13)  # HKT to NY (EST/EDT approx)
+    ny_hour = ny_time.hour
+    ny_min = ny_time.minute
+    # Major news times: 08:30, 10:00, 14:00 NY
+    news_times = [(8, 30), (10, 0), (14, 0)]
+    for nh, nm in news_times:
+        diff_min = abs((ny_hour - nh) * 60 + (ny_min - nm))
+        if diff_min <= 15:
+            assessment["factors"].append(f"⚠️ News event window — {nh}:{nm:02d} NY")
+            assessment["notes"] = "News event within 15 min — temporary caution"
+
+    # ─── Lot Size Calculation ───
+    sl_points = None
+    if walker_ta and walker_ta.get("sl_points"):
+        sl_points = walker_ta["sl_points"]
+        assessment["notes"] += f" (SL from Walker TA: {sl_points} points)"
+
+    lot_size = calculate_lot_size(balance, sl_points)
+
+    # Reduce lot size if marginal conditions
+    if not veto_triggered:
+        if dd_pct >= 4.0 or consecutive >= 2:
+            lot_size = round(lot_size * 0.5 * 10) / 10  # Halve it
+            assessment["factors"].append("⚠️ Lot size reduced due to marginal risk")
+
+    assessment["recommended_lot_size"] = max(0.1, lot_size)
+
+    # ─── Final Decision ───
+    if veto_triggered:
+        assessment["veto"] = True
+        assessment["go_no_go"] = "NO_GO"
+        assessment["veto_reason"] = "; ".join(veto_reasons)
+    elif walker_ta is None:
+        assessment["go_no_go"] = "WAIT"
+        assessment["notes"] += " | Waiting for Walker TA before final GO"
+    else:
+        assessment["go_no_go"] = "GO"
 
     return assessment
 
@@ -296,7 +482,7 @@ def get_discord_token() -> str:
 def post_to_discord(message: str):
     token = get_discord_token()
     if not token:
-        print(f"[DISCORD] No token — printing locally: {message}")
+        print(f"[DISCORD] No token — printing locally")
         return
 
     import requests
@@ -313,32 +499,43 @@ def post_to_discord(message: str):
 
 
 def format_discord_message(assessment: dict, date_str: str) -> str:
-    acc = assessment["accounts"].get(TARGET_ACCOUNT["name"], {})
-    name = TARGET_ACCOUNT["name"]
+    acc_name = TARGET_ACCOUNT["name"]
+    acc = assessment["accounts"].get(acc_name, {})
 
-    if assessment["veto"]:
-        return (
-            f"🛑 **WAR ROOM RISK VETO**\n"
-            f"**{name}** — {date_str}\n"
-            f"Reason: {assessment['veto_reason']}\n"
-            f"Balance: ${acc.get('balance', 0):,.2f} | Equity: ${acc.get('equity', 0):,.2f} | DD: {acc.get('dd_pct', 0):.1f}%"
-        )
-    else:
-        lines = [
-            f"✅ **War Room Risk Check — {date_str}**",
-            f"**{name}**",
-            f"Balance: ${acc.get('balance', 0):,.2f}",
-            f"Equity: ${acc.get('equity', 0):,.2f}",
-            f"DD: {acc.get('dd_pct', 0):.1f}%",
-            f"Daily P/L: ${acc.get('daily_pl', 0):,.2f}",
-            f"Lot multiplier: {assessment['recommended_lot_size']}",
-            f"Consecutive losses: {assessment['consecutive_losses']}",
-        ]
-        if assessment["factors"]:
-            lines.append("---")
-            lines.extend(assessment["factors"])
-        lines.append(f"Status: **{assessment['go_no_go']}**")
-        return "\n".join(lines)
+    status_emoji = "✅" if assessment["go_no_go"] == "GO" else "⏸️" if assessment["go_no_go"] == "WAIT" else "🛑"
+
+    lines = [
+        f"🦇 **ALFRED RISK ASSESSMENT — {date_str}**",
+        f"",
+        f"Status: {status_emoji} {assessment['go_no_go']}",
+        f"Veto: {'Yes' if assessment['veto'] else 'No'}",
+        f"",
+        f"**Account Health:**",
+        f"• Balance: ${acc.get('balance', 0):,.2f}",
+        f"• Equity: ${acc.get('equity', 0):,.2f}",
+        f"• DD: {acc.get('dd_pct', 0):.1f}%",
+        f"• Daily P&L: ${acc.get('daily_pl', 0):,.2f}",
+        f"• Open Positions: {acc.get('open_positions', 0)}",
+        f"• Consecutive Losses: {assessment['consecutive_losses']}",
+        f"",
+        f"**Risk Factors:**",
+    ]
+    for factor in assessment.get("factors", ["No data"]):
+        lines.append(f"• {factor}")
+
+    lines.append(f"")
+    lines.append(f"Recommended Lot Size: {assessment['recommended_lot_size']}")
+    lines.append(f"Max Daily Loss: {assessment['max_daily_loss_pct']}%")
+
+    if assessment.get("veto_reason"):
+        lines.append(f"")
+        lines.append(f"🛑 **VETO REASON:** {assessment['veto_reason']}")
+
+    if assessment.get("notes"):
+        lines.append(f"")
+        lines.append(f"Notes: {assessment['notes']}")
+
+    return "\n".join(lines)
 
 
 def main():
@@ -353,51 +550,68 @@ def main():
         print("Not a trading day. Skipping.")
         return
 
-    print("\n[1/4] Pulling shared repo...")
+    print("\n[1/5] Pulling shared repo...")
     git_pull()
 
-    print("\n[2/4] Checking MT5 account...")
+    print("\n[2/5] Checking account status...")
     try:
-        account = check_single_account()
+        account = check_account()
     except Exception as e:
+        print(f"  ⛔ Account check failed: {str(e)[:200]}")
         account = {
             "name": TARGET_ACCOUNT["name"],
             "account_number": TARGET_ACCOUNT["account_number"],
             "balance": 0, "equity": 0, "dd_pct": 0, "daily_pl": 0,
+            "open_positions": 0, "margin_used_pct": 0,
             "status": "error", "error": str(e)[:200],
+            "source": "unknown",
         }
 
     if account.get("status") == "error":
         print(f"  ⛔ {account['name']}: ERROR — {account.get('error', 'Unknown')}")
     else:
-        print(f"  Balance: ${account['balance']:,.2f} | Equity: ${account['equity']:,.2f} | DD: {account['dd_pct']:.1f}% | Daily P/L: ${account['daily_pl']:.2f}")
+        source = account.get("source", "unknown")
+        print(f"  Source: {source.upper()}")
+        print(f"  Balance: ${account['balance']:,.2f} | Equity: ${account['equity']:,.2f}")
+        print(f"  DD: {account['dd_pct']:.1f}% | Daily P/L: ${account['daily_pl']:.2f}")
+        print(f"  Open positions: {account.get('open_positions', 0)} | Margin: {account.get('margin_used_pct', 0):.1f}%")
 
-    print("\n[3/4] Loading trade log...")
+    print("\n[3/5] Loading trade log and Walker TA...")
     trade_log = load_trade_log()
-    print(f"  Total trades logged: {len(trade_log)}")
+    walker_ta = check_walker_ta(date_str)
+    print(f"  Trades logged: {len(trade_log)}")
+    print(f"  Walker TA: {'✅ Found' if walker_ta else '⏳ Not yet available'}")
 
-    print("\n[4/4] Calculating risk assessment...")
-    assessment = calculate_risk(account, trade_log)
+    print("\n[4/5] Calculating risk assessment...")
+    assessment = calculate_risk(account, trade_log, walker_ta, date_str)
 
-    print(f"\n  Result: {assessment['go_no_go']}")
+    status = assessment["go_no_go"]
+    print(f"\n  Result: {status}")
     if assessment["veto"]:
         print(f"  🛑 VETO: {assessment['veto_reason']}")
     for factor in assessment["factors"]:
         print(f"  {factor}")
-    print(f"  Lot multiplier: {assessment['recommended_lot_size']}")
+    print(f"  Lot size: {assessment['recommended_lot_size']}")
     print(f"  Consecutive losses: {assessment['consecutive_losses']}")
+    if assessment.get("notes"):
+        print(f"  Notes: {assessment['notes']}")
 
+    print("\n[5/5] Saving and posting...")
     save_risk_assessment(assessment, date_str)
-    print(f"\n  Saved to signals/{date_str}/alfred_risk.json")
+    print(f"  Saved to signals/{date_str}/alfred_risk.json")
 
     msg = format_discord_message(assessment, date_str)
     post_to_discord(msg)
 
-    if git_push(f"War Room: Risk assessment for {date_str} — {assessment['go_no_go']}"):
-        print(f"\n✅ War Room risk assessment complete: {assessment['go_no_go']}")
+    pushed = git_push(f"War Room: Risk assessment for {date_str} — {status}")
+    if pushed:
+        print(f"  ✅ Git pushed")
     else:
-        print(f"\n⚠️ Risk assessment saved locally but GIT PUSH FAILED — Merlin may not see it!")
-        print(f"   Manual fix: cd {REPO_DIR} && git push")
+        print(f"  ⚠️ Git push failed — please push manually")
+
+    print(f"\n{'='*50}")
+    print(f"✅ War Room risk assessment complete: {status}")
+    print(f"{'='*50}")
 
 
 if __name__ == "__main__":
