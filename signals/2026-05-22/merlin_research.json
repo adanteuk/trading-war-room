@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-22",
+  "timestamp": "2026-05-22T11:56:18.193876+00:00",
+  "summary": "NAS100 in corrective phase from 52-week high 29,782. D1 bearish MSS developing with lower highs. H4 shows bearish FVG 29,012-29,603 still unmitigated. M15 compression detected. Walker TA correctly identifies bearish continuation toward SSL at 28,596. Alfred Risk says GO with 0% DD. Overall: bearish bias confirmed but ORB score 58/100 is borderline.",
+  "bias": "Bearish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "28,735 (SSL near-term)",
+      "28,596 (5/18 low, primary SSL target)",
+      "28,248 (daily demand zone)"
+    ],
+    "resistance": [
+      "29,012 (bearish FVG lower bound)",
+      "29,329 (5/19 BSL sweep high)",
+      "29,705 (5/13 peak)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "Bearish MSS from 29,782 ATH. Lower highs confirmed (29,705 > 29,329 rejection). D1 Doji at upper-mid shows indecision but structure favors bearish continuation. SSL draw at 28,596.",
+    "h4_context": "Price inside large bearish FVG 29,012-29,603. This gap is unmitigated and acts as resistance zone. Premium zone active.",
+    "m15_status": "Compression detected (65% avg range) \u2192 expansion expected. BSL sweep + doji rejection pattern favors bearish continuation."
+  },
+  "risks": [
+    {
+      "event": "NY Session Open",
+      "time": "09:30 ET / 21:30 HKT",
+      "impact": "high"
+    },
+    {
+      "event": "Potential news-driven reversal",
+      "time": "14:00 ET",
+      "impact": "medium"
+    }
+  ],
+  "recommendation": "NO_GO \u2014 Walker confidence 48/100 below 70 threshold. ORB score 58/100 borderline. Bearish bias is valid but entry quality insufficient. Wait for NY AM (21:30 HKT) to establish clearer M15 OB before committing."
+}
