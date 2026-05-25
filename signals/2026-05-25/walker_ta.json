@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-05-25T10:30:00Z",
+  "bias": "bullish",
+  "confidence": 55,
+  "orb_score": 59,
+  "ict_profile": "Monday Range \u2192 Classic Tuesday High (accumulation)",
+  "entry": "TBD \u2014 awaiting NY AM Kill Zone confirmation",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "29836 (overnight low / London sweep)",
+      "29684 (H4 Bullish OB)",
+      "29543 (Fib 70.5% of D1 dealing range)"
+    ],
+    "resistance": [
+      "29940 (session high / ATH)",
+      "30000 (psychological)"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 bullish marubozu (88% body, close at 89% of range). Price at 29909 \u2014 97.8% of D1 dealing range (28596\u219229939.6), DEEP in Premium. Market structure: clear HH/HL from 05/18 swing low (28596). Both NAS100 and ES made new highs \u2014 NO SMT divergence (confirmatory bullish). D1 opened at 29666.4, current price +243pts above open. No pullback yet \u2014 straight rally from weekly open. At ATH, no BSL above. Bearish risk: extreme premium pricing with no retracement; any reversal would target 70.5%-79% Fib (29543-29658).",
+    "l2_h4_context": "H4 dealing range: 28596 (05/18 SL) \u2192 29939.6 (05/25 high). Key H4 levels: Bullish FVG 29683-29848 (05/25 01:00 candle \u2014 fresh, untested), Bullish OB 29608-29684 (05/22 17:00 candle), Bullish FVG 29651-29663 (05/24 21:00). Price expanded through all resistance without pullback. The 05:00 NY H4 candle (09:00 UTC) swept down to 29835.9 then recovered \u2014 potential Judas swing forming but needs confirmation. No Bearish FVG above current price (ATH). Compression evident as price consolidates near highs.",
+    "l3_m15_entry": "M15 shows tight compression \u2014 current bar range 7.0pts vs 20-bar avg 22.3pts (31.5% compression ratio). Overnight low 29835.9 was swept during London session (07:15 UTC / 03:15 NY bar). London Kill Zone PASSED. NY AM Kill Zone NOT YET ACTIVE (~2 hours away at 08:30 NY / 12:30 UTC). No M15 OB forming yet \u2014 price is consolidating, not reversing. No purge of CRT low confirmed. Waiting for NY AM session to initiate directional move. Entry model: if price sweeps 29836 then forms M15 bullish OB \u2192 long. If price breaks 29940 and holds \u2192 breakout long (risky at ATH)."
+  },
+  "orb_scoring": {
+    "pre_market_htf_bias": {
+      "score": 23,
+      "max": 25,
+      "note": "D1 strong HH/HL uptrend, both NAS+ES made new highs, overnight H already set at 29939. No overnight L sweep yet. Gap up from weekly open (+243pts)."
+    },
+    "vwap_alignment": {
+      "score": 8,
+      "max": 15,
+      "note": "Price +243pts above daily open (+0.82%). VWAP data unavailable from MT5. Price above open = bullish alignment."
+    },
+    "volume_confirmation": {
+      "score": 10,
+      "max": 20,
+      "note": "Tick volume not available from Alfred MT5. D1 range 276pts (0.92% of price) suggests moderate volume. Monday session = thin liquidity."
+    },
+    "candle_close_timing": {
+      "score": 5,
+      "max": 15,
+      "note": "D1 candle strong (close at 89% of range), but NY AM Kill Zone NOT active yet. London KZ passed. Waiting for NY AM session (08:30-11:00 NY) for confirmation."
+    },
+    "ict_crt_confluence": {
+      "score": 4,
+      "max": 15,
+      "note": "No SMT divergence (both NAS+ES made highs). Bullish OB/FVG below price (29650-29848 zone). No Judas swing confirmed. Deep premium = reversal risk, not confluence for longs."
+    },
+    "range_width_volatility": {
+      "score": 9,
+      "max": 10,
+      "note": "D1 range 276pts = 0.92% of price. Within optimal 0.3%-1.5% band. M15 compression at 31.5% = expansion likely imminent."
+    }
+  },
+  "reasoning": "NAS100 is in a strong D1 uptrend with clear HH/HL structure from the 05/18 swing low (28596). Today's D1 candle is a bullish marubozu closing near the high (29909), and both NAS100 and ES made new highs in tandem \u2014 no SMT divergence. However, price is at 97.8% of the D1 dealing range, deep in Premium territory, which is a warning sign. The H4 shows fresh bullish FVGs at 29683-29848 that have not been tested \u2014 these would be the first pullback targets. On M15, price is compressed (31.5% of average range) and consolidating near ATH after a London session sweep of 29835. The NY AM Kill Zone is not yet active (~2 hours away), so no entry setup is confirmed. The ICT Weekly Profile suggests Monday Range \u2014 today's consolidation near the weekly open (29666) sets up for a Classic Tuesday High profile, where Tuesday would form the weekly high before a pullback into Discount. ORB score of 59/100 reflects the bullish HTF bias penalized by deep premium pricing, lack of SMT divergence, and inactive Kill Zone. Confidence 55/100 \u2014 bullish trend is clear, but entering at 97.8% premium with no pullback is high risk. Recommended approach: wait for NY AM session. If price pulls back into H4 Bullish FVG (29683-29848) and forms M15 bullish OB \u2192 long toward 29940/30000. If price breaks above 29940 without pullback \u2192 avoid chasing at ATH. Key watch: 29836 (overnight low) \u2014 a sweep + reversal there would be the highest-probability long setup."
+}
