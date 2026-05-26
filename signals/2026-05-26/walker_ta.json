@@ -1,22 +1,33 @@
 {
-  "timestamp": "2026-05-22T18:30:00+08:00",
-  "analysis_date": "2026-05-26",
-  "bias": "bullish",
-  "confidence": 62,
-  "orb_score": 55,
-  "ict_profile": "Classic Tuesday Low",
+  "timestamp": "2026-05-26T06:43:00-04:00",
+  "bias": "neutral-bearish",
+  "confidence": 40,
+  "orb_score": 42,
+  "ict_profile": "Classic Tuesday High (potential)",
+  "entry": "TBD \u2014 waiting for Kill Zone confirmation",
+  "sl": "TBD",
+  "tp": "TBD",
   "key_levels": {
-    "pdh": 29601.2,
-    "pdl": 29385.4,
-    "onh": 29601.2,
-    "onl": 29385.4,
-    "resistance_1": 29705.4,
-    "resistance_2": 29487.1,
-    "support_1": 29320.0,
-    "support_2": 29140.5
+    "support": [
+      "29267 (70.5% Fib)",
+      "29016 (62% Fib)",
+      "28596 (previous consolidation)"
+    ],
+    "resistance": [
+      "29679 (ATH / 100% Fib)",
+      "29995 (electronic sweep high)"
+    ]
   },
-  "entry": 29390,
-  "sl": 29320,
-  "tp": 29540,
-  "reasoning": "D1 doji with long upper wick (212pt rejection at 29,601) signals indecision. Bullish PO3 completed May 21 (Asia accumulate → London SSL sweep to 29,108 → NY distribution to 29,487). Price recovering from May 18 LL 28,596 making HHs, but not yet BOS above May 13 swing high 29,705. SMT aligned bullish with US500 (both HH/HL from swing low). FVGs mostly mitigated — neutral zone. Classic Tuesday Low profile expected: London/early NY forms low, then rally. Long weekend (Memorial Day) reduces conviction. Entry near PDL 29,390, SL below swing low 29,320, TP mid-range 29,540."
+  "three_layer_analysis": {
+    "l1_daily": "BULLISH structure (HH/HL from Apr 28 low 26,877.59 \u2192 May 14 high 29,678.89). Price at 93% of dealing range (DEEP Premium). May 22 D1 candle: O=29,476 H=29,664 L=29,424 C=29,482 \u2014 tiny body (5pts, 2.2%), large upper wick (182pts) indicating strong rejection at ATH. No SMT divergence: both NAS100 and ES made highs together, confirming trend but showing no reversal signal. OHLC: price closed near open, well below daily high. Sellers defended 29,600+ area. Key observation: NQ futures swept 29,995 in electronic session (above cash ATH of 29,679) \u2014 potential BSL sweep/Judas move.",
+    "l2_h4": "Dealing range: 26,877 \u2192 29,679 (2,801 pts). Price in deep Premium zone (79-100% Fib). Key levels in Premium: 29,679 (ATH/Buy-Side Liquidity), 29,500 (79% Fib), 29,267 (70.5% Fib \u2014 potential FVG zone). Electronic session already swept above ATH to 29,995 \u2014 this is a BSL purge. If price fails to hold above 29,679 on cash open, this becomes a false breakout (purge + retest). H4 candle structure unavailable without MT5/TradingView data.",
+    "l3_m15": "M15 data UNAVAILABLE (Alfred MT5 disconnected, browser automation unavailable on ARM64). Cannot confirm OB formation, compression, or purge-retest sequence. London Kill Zone (02:00-05:00 NY) already passed. NY AM Kill Zone (08:30-11:00 NY) not yet active \u2014 currently 06:43 NY. Waiting for price action during Kill Zone to assess entry."
+  },
+  "reasoning": "NAS100 is at a critical inflection point. D1 structure is bullish (HH/HL from Apr 28 low) but price is in deep Premium (93% of dealing range) at/near ATH. The May 22 D1 candle shows rejection \u2014 large upper wick (182pts) with tiny body (5pts) \u2014 sellers defended the 29,600+ area aggressively. NQ futures swept to 29,995 in electronic session (above cash ATH), which could be a BSL sweep/Judas manipulation before reversal, or genuine breakout continuation. SMT shows NO divergence \u2014 both NAS100 and ES made highs together, which confirms the trend but removes the reversal catalyst. ORB score of 42/100 reflects: (1) HTF bias bullish but exhausted at ATH (18/25), (2) no VWAP data (5/15), (3) volume below average at 46% of norm (8/20), (4) D1 rejection candle reduces timing score (6/15), (5) no SMT divergence + no M15 confirmation (5/15), (6) VIX at 16.70 shows low vol but compressed (5/10). Memorial Day holiday means thin liquidity yesterday \u2014 today's cash open (09:30 ET) will set the tone. The electronic session BSL sweep at 29,995 sets up a potential Classic Tuesday High scenario IF price sweeps higher during London/early NY then reverses. NO ENTRY until Kill Zone active and M15 structure confirms. Bias is neutral-bearish because: deep Premium + rejection candle + BSL sweep = conditions favor short setup IF price shows weakness during Kill Zone. If price breaks and holds above 29,679 with volume, bias flips to bullish breakout.",
+  "data_sources": {
+    "alfred_mt5": "offline (MT5 disconnected)",
+    "tradingview": "unavailable (no Chrome on ARM64)",
+    "fallback": "Investing.com, MarketWatch, Barron's, CNBC (NDX index data, not CFD)"
+  },
+  "notes": "PEPPERSTONE:NAS100 CFD pricing may differ from NDX index prices by 20-100+ points. Adjust key levels accordingly when executing. M15 analysis incomplete \u2014 no intraday data available. Alfred MT5 reconnection needed for future sessions."
 }
