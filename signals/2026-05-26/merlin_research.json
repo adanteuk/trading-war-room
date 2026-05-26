@@ -1,0 +1,43 @@
+{
+  "date": "2026-05-26",
+  "timestamp": "2026-05-26T11:06:14.193306+00:00",
+  "summary": "NAS100 broke above ATH 29,782, now at 29,872 (+1.06%, +313pts). D1 structure bullish with confirmed new HH. H4 breakout through previous FVG resistance. M15: No valid entry yet \u2014 not in Kill Zone, price already extended. Wait for NY AM pullback to 29,700-29,750 for long entry. Post-holiday thin volume reduces conviction.",
+  "bias": "Bullish",
+  "confidence": 65,
+  "key_levels": {
+    "support": [
+      "29,705 (old R1, now support \u2014 resistance flip)",
+      "29,559 (prev close / last price)",
+      "29,385 (PDL / session low)",
+      "29,140 (May 21 base / breakout origin)"
+    ],
+    "resistance": [
+      "29,995 (today's intraday high)",
+      "30,000 (psychological magnet)",
+      "30,200+ (new BSL \u2014 price discovery territory)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BULLISH \u2014 Price broke above ATH 29,782, now trading 29,872 (+1.06%). Daily structure shifted to bullish with confirmed new HH above prior ATH. Long-term uptrend remains intact. Price above all major MAs from prior analysis. SSL at 28,596 held as swing low. Breakout above 29,782 validates bullish continuation. Draw on Liquidity: 30,000 psychological + external BSL above. Dealing Range (28,596\u219229,782): Price at 99.4%+ (extreme premium) \u2014 old range breached, new range forming. Post-holiday thin volume (Memorial Day) may amplify moves but reduces conviction.",
+    "h4_context": "BULLISH BREAKOUT \u2014 Price broke through bearish FVG zone 29,012-29,603 that was previously resistance. Old bearish FVG mitigated on upside breakout. New dealing range forming: base ~29,108 (May 21 low) to high ~29,995 (today's intraday high). Key levels: 29,705 (old R1, now potential support), 29,559 (prev close / last price), 29,385 (PDL). CRT candle: Today's H4 breakout candle needs to close above 29,782 to confirm ATH breakout is valid. If price holds above 29,705 on retest, bullish continuation toward 30,000 is expected.",
+    "m15_status": "NO VALID ENTRY YET \u2014 Current time ~18:52 HKT (10:52 UTC). Not in active Kill Zone (London passed, NY AM starts at 21:00 HKT). Price has already moved +313 pts from prev close \u2014 entering now is chasing, not trading. Wait for NY AM Kill Zone (21:00-00:00 HKT) for potential pullback entry: If price pulls back to 29,700-29,750 (old resistance\u2192support flip) during NY Kill Zone, look for M15 bullish OB formation for long entry. SL below 29,650, TP 30,000+. If no pullback and price continues higher without Kill Zone confirmation \u2192 SKIP (chasing)."
+  },
+  "risks": [
+    {
+      "event": "Post-Memorial Day thin volume",
+      "time": "All day",
+      "impact": "high"
+    },
+    {
+      "event": "NY Session Open",
+      "time": "09:30 ET / 21:30 HKT",
+      "impact": "high"
+    },
+    {
+      "event": "Potential ATH rejection / fakeout",
+      "time": "Intraday",
+      "impact": "medium"
+    }
+  ],
+  "recommendation": "WAIT \u2014 Bias is Bullish but entry quality insufficient. Price +313pts from prev close = chasing. Need NY AM Kill Zone pullback to 29,700-29,750 for valid M15 OB long entry. Walker confidence 62 (< 70 threshold), ORB 55 (< 60 threshold). Decision matrix says NO_GO. Stand aside unless clear pullback setup emerges."
+}
