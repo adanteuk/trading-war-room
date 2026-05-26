@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-05-26T18:30:39.623859+08:00",
+  "go_no_go": "GO",
+  "veto": false,
+  "veto_reason": "",
+  "accounts": {
+    "FTMO (My manual)": {
+      "balance": 97920.56,
+      "equity": 97920.56,
+      "dd_pct": 0.0,
+      "daily_pl": 0.0,
+      "open_positions": 0,
+      "margin_used_pct": 0.0,
+      "status": "ok"
+    }
+  },
+  "factors": [
+    "\u2705 DD 0.0% \u2014 within limits",
+    "\u2705 Daily DD 0.0% \u2014 within limits",
+    "\u2705 0 consecutive losses \u2014 OK",
+    "\u2705 0 open positions \u2014 OK",
+    "\u2705 Margin usage 0.0% \u2014 within limits"
+  ],
+  "recommended_lot_size": 1.0,
+  "max_daily_loss_pct": 2.0,
+  "consecutive_losses": 0,
+  "notes": ""
+}
