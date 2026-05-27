@@ -1,0 +1,49 @@
+{
+  "date": "2026-05-27",
+  "timestamp": "2026-05-27T11:05:04.183281+00:00",
+  "summary": "NAS100 broke 30K ATH with bullish HH/HL. 5 consecutive D1 bullish candles. Price in deep PREMIUM - favors pullback entries. Bullish BB flip at 29,100-29,400 confirmed. M15 compression ahead of NY AM.",
+  "bias": "Bullish",
+  "confidence": 65,
+  "key_levels": {
+    "support": [
+      30000.0,
+      29900.0,
+      29750.0,
+      29283.0,
+      29008.0,
+      28635.0
+    ],
+    "resistance": [
+      30300.0,
+      30500.0,
+      30750.0,
+      31000.0
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 BULLISH (HH/HL). 5 consecutive bullish candles. SSL sweep at 28,596 marked low. Dealing Range 27,055-30,215. Price at 30,214 in deep PREMIUM (50% above Fib 50%). Bullish BB flip at 29,100-29,400 confirmed.",
+    "h4_context": "H4 Range 28,944-30,215. Price at range high in PREMIUM. Momentum +156 over last 3 bars. CRT: 30,215/30,124. No FVGs. 30,000 flipped to support. Wait for pullback entry.",
+    "m15_status": "M15 compression detected (avg range shrinking). Bullish OB at 30,165-30,183. Price breaking M15 highs. NY AM Kill Zone approaching. No reversal pattern yet."
+  },
+  "risks": [
+    {
+      "event": "ATH resistance / profit-taking",
+      "time": "All session",
+      "impact": "high"
+    },
+    {
+      "event": "Premium zone - poor R/R for chasing",
+      "time": "All session",
+      "impact": "high"
+    },
+    {
+      "event": "5 consecutive D1 bullish - extension",
+      "time": "D1 close",
+      "impact": "medium"
+    }
+  ],
+  "recommendation": "GO conditional: Bullish but at ATH in premium. WAIT for pullback to 30,000-30,050 during NY AM Kill Zone for longs. Target 30,300-30,500. SL below 29,900. If 30K fails, expect pullback to 29,750.",
+  "weekly_profile": "Wednesday - typically forms low during London, expands during NY AM. London session already formed higher lows. Expectation: NY AM drives continuation higher if 30,000 holds.",
+  "data_source": "Alfred MT5 ZMQ (tcp://192.168.11.211:5555) - live data",
+  "data_quality": "HIGH - MT5 connected, D1/H4/M15 all available"
+}
