@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-05-27T10:37:28Z",
+  "bias": "neutral-bearish",
+  "confidence": 35,
+  "orb_score": 40,
+  "ict_profile": "Midweek Continuation (Tuesday push)",
+  "entry": "TBD - waiting for NY Kill Zone confirmation",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "30110",
+      "30007",
+      "29909",
+      "29848",
+      "29693"
+    ],
+    "resistance": [
+      "30199",
+      "30250",
+      "30400",
+      "30500"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure is BULLISH (5 consecutive HH/HL closes). Prev candle (May 25) was hammer-like with long lower wick (221pts), rejected 29693 lows, closed at 80% of range at 29993. Current candle (May 26) gapped +25pts, trading above open at 30179, strong body (74%). Dealing Range: 28463-30199. Price at 98.9% of range = DEEP PREMIUM. No clear SMT divergence detected (only 1 swing high/low pair in last 20 bars). Premium at extreme = high reversal risk despite bullish structure.",
+    "l2_h4_context": "H4 Dealing Range: 28944-30199 (size:1256). Price at 98.4% = DEEP PREMIUM. CRT (H4 00:59) defined as 30007-30168, already PURGED to upside (price broke above 30168). Bearish OB at 29909, Bullish OB at 29693-29794. Multiple bullish FVGs below current price: 29878-29903, 30110-30124, 30161-30164. Bearish FVG at 29781-29909 already mitigated. Price has clear path above but is at range extreme.",
+    "l3_m15_entry": "Price is holding above CRT High (30168), currently at 30179-30199. M15 showing continued bullish FVGs at 30161-30164 and 30165-30179. No compression detected (normal range behavior). London KZ (02:00-05:00 NY) CLOSED. NY AM KZ (08:30-11:00 NY) PENDING - opens in ~2h. Pre-KZ analysis only; no M15 OB entry confirmed yet. Waiting for NY session open to confirm direction. Thin volume (Memorial Day holiday context)."
+  },
+  "reasoning": "D1 structure shows 5-day bullish streak with consecutive higher closes and higher highs. However, price is at 98.9% of the D1 dealing range (28463-30199) \u2014 extreme PREMIUM territory where reversal risk is elevated. The CRT (H4 30007-30168) was purged to the upside, suggesting institutional buying pressure, but this occurs at a range extreme with no pullback to discount. SMT divergence analysis is inconclusive (only 1 swing pair detected in last 20 D1 bars). Memorial Day holiday context means volume is thin (today's volume 106K vs typical 250K+), making price action less reliable. ORB score of 40/100 reflects: strong D1 trend (+10/25), no VWAP data (0/15), no breakout volume yet (0/20), strong candle close but pre-KZ timing (10/15), limited ICT confluence (10/15), range too narrow for ORB (5/10). Profile assessment: Monday formed higher low, Tuesday pushing higher = Midweek Continuation pattern, but holiday week may distort the normal profile. Recommendation: Stand aside until NY AM Kill Zone (08:30 NY) opens. Watch for either (a) continuation above 30199 with NY volume confirming, or (b) reversal/pullback from premium toward 30000-29909 area. At 06:30 NY time, we are in a PRE-KILL ZONE holding pattern."
+}
