@@ -1,0 +1,24 @@
+{
+  "date": "2026-05-28",
+  "timestamp": "2026-05-28T11:05:00Z",
+  "summary": "Bullish bias with medium confidence. Price swept BSL above 30K (30,329) then pulled back sharply into H4 discount (18.5% of range). This is classic turtle-soup/BSL sweep: smart money grabbed liquidity above 30K, now pulling back into discount for accumulation. D1 structure remains HH/HL since May 19 SSL sweep at 28,663. Expect bounce from 29,700-29,800 H4 discount zone during NY Kill Zone.",
+  "bias": "Bullish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [29718.5, 29550, 29354, 29200],
+    "resistance": [29909, 30024, 30329, 30500]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 bullish HH/HL since May 19 SSL sweep at 28,663. Price broke above 30K (30,329 H) then closed bearish at 29,831.7 — classic BSL sweep followed by pullback. Broader range 28,734-30,329: price at 68.8% = approaching equilibrium from above. D1 dealing range broken (price 111% of old range), new range forming.",
+    "h4_context": "H4 dealing range 29,718-30,329. Price at 18.5% = DEEP DISCOUNT. Bearish FVG at 29,781-29,909 being tested. Equilibrium at 30,024. H4 support at 29,718.5 (May 28 00:59 low). Expect bounce from discount during NY session. Bearish OB overhead at 30,072-30,124 caps initial retest.",
+    "m15_status": "M15 declining to 29,831.7 near session low 29,823.7. Bearish OBs detected at 29,943 and 29,894. No Kill Zone active (UTC 11:03). NY Kill Zone (13:00-16:00 UTC) upcoming — watch for M15 bullish OB formation at H4 discount level. Entry valid only if bullish OB forms in NY Kill Zone with SMT confirmation."
+  },
+  "risks": [
+    {"event": "FOMC Meeting Minutes", "time": "14:00 ET (18:00 UTC)", "impact": "high"},
+    {"event": "US GDP (Q1 Advance)", "time": "08:30 ET (12:30 UTC)", "impact": "high"},
+    {"event": "Weekly Jobless Claims", "time": "08:30 ET (12:30 UTC)", "impact": "medium"},
+    {"event": "Pending Home Sales", "time": "10:00 ET (14:00 UTC)", "impact": "low"},
+    {"event": "Fed Beige Book", "time": "14:00 ET (18:00 UTC)", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — H4 discount zone (29,700-29,800) is the area to watch. Do not chase shorts into discount. Wait for NY Kill Zone (13:00 UTC) to see if price forms a bullish M15 OB at the H4 discount level. If FOMC minutes/GDP data at 12:30-14:00 UTC causes further selloff below 29,718, bias flips to neutral. Ideal setup: long on M15 bullish OB in NY Kill Zone at 29,700-29,800, SL below 29,650, TP 3R toward 30,024."
+}
