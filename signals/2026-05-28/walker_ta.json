@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-05-28T10:30:00Z",
+  "bias": "neutral",
+  "confidence": 40,
+  "orb_score": 46,
+  "ict_profile": "Classic Tuesday High",
+  "entry": "TBD",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "pdh": "30089.6",
+    "pdl": "29718.7",
+    "onh": "30089.6",
+    "onl": "29918.2",
+    "resistance": ["30089.6", "30328.8", "30100.0"],
+    "support": ["29718.7", "29692.7", "29462.3", "29000.0"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 market structure remains bullish (HH/HL from 28,595.8 low). Dealing range 28,596-30,329. Current price 29,887 sits in Premium (above 50% at 29,462). Latest D1 candle (May 27) is bearish: O:30,069 H:30,090 L:29,719 C:29,890 with long lower wick (171 pts) showing rejection of lower prices. Three consecutive red candles after the 30,329 high suggest pullback, not reversal. Price holding above 25% Fib (29,896) — critical level being tested.",
+    "l2_h4_context": "H4 dealing range 29,693-30,329 (636 pts). Current price 29,887 is in H4 Discount (below 50% at 30,011). Price has purged below 30,000 psychological level and is approaching H4 swing low at 29,718.7. No clear FVG identified in current zone. CRT range defined by the 30,329-29,719 H4 move. Price compression visible as it consolidates near the lower boundary.",
+    "l3_m15_entry": "Price dropped 30,328->29,718 (purge) then consolidated at 29,732-29,766 (Asian accumulation). Recovery to 29,882-29,910 range. M15 compression detected (avg range 32.5 pts vs earlier 100+ pt bars). Bullish M15 OB at 29,732-29,766. Bearish M15 OB at 29,910-29,952. Price currently between OB zones. London Kill Zone closed (02:00-05:00 NY). NY AM Kill Zone not yet active (opens 08:30 NY / 12:30 UTC). No confirmed entry model yet — waiting for Kill Zone activation."
+  },
+  "reasoning": "Mixed signals across timeframes. D1 structure is bullish (HH/HL from 28,595) but 3 consecutive bearish candles suggest pullback into H4 discount. Price at 29,887 is testing the 25% Fib (29,896) — a critical level. If this breaks, next support is 29,718 (H4 swing low). ICT Weekly Profile: Classic Tuesday High — Tuesday's 30,328.8 likely formed the weekly high, with Wed/Thu distributing lower. SMT divergence cannot be confirmed (ES data unavailable from Alfred FTMO account). ORB Score 46/100 reflects low conviction: no Kill Zone active, no confirmed entry model, compressed ranges suggesting expansion imminent but direction unclear. Key decision point: hold 29,718 support = bullish retest opportunity. Break below 29,718 = deeper pullback to 29,000-29,462 OB zone likely. Waiting for NY AM Kill Zone (08:30-11:00 NY) to confirm direction."
+}
