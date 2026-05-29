@@ -1,0 +1,35 @@
+{
+  "date": "2026-05-29",
+  "timestamp": "2026-05-29T11:01:07Z",
+  "summary": "NAS100 is in extreme premium at 30,304.6 after a 5-day bullish impulse from the May 19 low (28,596). Price has broken above the D1 dealing range high (29,705) and is now in extension territory at 154% FIB. While macro structure remains BULLISH (HH/HL), the last D1 candle shows only 15% body (indecision), H4 is in tight compression (144pt range at 91.8% premium), and no M15 entry signal exists. The 5-day rally without a pullback suggests exhaustion. Daily bias history shows flip from Bearish→Bullish→Neutral-Bearish→now extended. No trade recommended until pullback into discount.",
+  "bias": "Bullish",
+  "confidence": 35,
+  "key_levels": {
+    "support": [
+      "30,172 (H4 range low)",
+      "30,001-30,047 (PDC / May 26 close)",
+      "29,705 (D1 dealing range high / breakout level)",
+      "29,436-29,550 (Bullish OB / Flipped BB zone)",
+      "29,200-29,350 (Unmitigated Bullish FVG)"
+    ],
+    "resistance": [
+      "30,316 (H4 swing high)",
+      "30,379 (May 27 high / recent 52W high)",
+      "30,500 (Extension target / psychological)",
+      "30,800-31,000 (Psychological extension)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 Structure: BULLISH (HH/HL). Dealing Range 28,596-29,705 (Bullish). Current price 30,304.6 at 154% of range = EXTREME PREMIUM, well above DR high. Last 5 D1 candles all bullish but May 28 shows only 15% body (indecision/exhaustion). Price has rallied from May 19 low without any pullback. Bias is BULLISH on macro but corrective pullback expected. Previous daily bias track: Bearish (May 20) → Neutral (May 21) → Neutral-Bearish (May 22) → Bullish (May 26) → Bullish (May 27) → Neutral-Bearish (May 28) → Now extended.",
+    "h4_context": "H4 dealing range extremely tight: 30,172-30,316 (only 144pts). Price at 91.8% = DEEP PREMIUM. 4 FVGs detected including massive 207.8pt bullish FVG on May 28. Recent candles show consolidation at highs — alternating bull/bear with no clear displacement. Compression at highs often precedes reversal. No key level in correct zone for entry — entire range is premium.",
+    "m15_status": "M15 range: 30,222-30,324 (102pts). Current 30,304 near top. 2 FVGs detected (bearish 30,258-30,278, bullish 30,274-30,293). NO Kill Zones active at current time (11:01 UTC — between London and NY). No Order Block formed in Kill Zone. No valid M15 entry setup — cannot execute without Kill Zone OB."
+  },
+  "risks": [
+    {"event": "US GDP (Q1 Final)", "time": "08:30 ET", "impact": "high"},
+    {"event": "Initial Jobless Claims", "time": "08:30 ET", "impact": "medium"},
+    {"event": "Chicago PMI", "time": "09:45 ET", "impact": "medium"},
+    {"event": "Consumer Sentiment (Final)", "time": "10:00 ET", "impact": "medium"},
+    {"event": "Fed Beige Book release", "time": "14:00 ET", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — Price in extreme premium (154% D1 FIB, 91.8% H4) with no pullback for 5 sessions. No M15 entry in Kill Zone. Macro trend is bullish but risk/reward for new longs is poor at current levels. Wait for pullback into 29,705-29,436 discount zone (D1 DR high / bullish OB) for long entries. Alternatively, if price sweeps BSL at 30,379+ and reverses with MSS + displacement, short scalps targeting 30,000 become viable. High-impact US data at 08:30 ET adds volatility risk — avoid entries before data."
+}
