@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-05-29T10:30:00Z",
+  "bias": "neutral",
+  "confidence": 40,
+  "orb_score": 46,
+  "ict_profile": "Friday Continuation (Extended Premium)",
+  "entry": "TBD - No confirmed M15 entry model",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "30171",
+      "29992",
+      "29833",
+      "29718"
+    ],
+    "resistance": [
+      "30328",
+      "30295",
+      "30066"
+    ],
+    "pdh": "30328.8",
+    "pdl": "29718.7",
+    "onh": "30273.2",
+    "onl": "30171.7"
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 uptrend intact (HH/HL from 26399 Apr 20 low). Current dealing range: 28595.8 (May 18 swing low) to 30328.8 (May 29 ATH). Price at 30284 = 97.7% Fib (deep Premium). No SMT divergence \u2014 NAS100 and US500 both making HH/HL in sync (NAS100: 30295\u219230324\u219230328; US500: 7580\u21927585). Today's D1 candle: O:30281.9, H:30324.3, L:30171.7, range=152.4 pts. Overnight sweep of 30171 recovered to open \u2014 Judas swing candidate. Candle is early, small body, near open \u2014 indecision at ATH.",
+    "l2_h4_context": "H4 dealing range: 28595.8 to 30328.8. Price interacting with extreme Premium. Recent H4 candles show compression into highs: May 27 14:00 NY (O:30011, H:30295, L:29833, C:29924) created bearish rejection candle. May 28 14:00 NY (O:29945, H:30295, C:30272) bullish expansion to new high. No clear bearish OB yet at these levels \u2014 price is in uncharted territory. CRT defined by H4 06:00-10:00 NY candles. Price has NOT been purged from current H4 range \u2014 still building.",
+    "l3_m15_entry": "No M15 entry model confirmed. Overnight session: opened 30281.9, swept low to 30171.7 (01:00 UTC / 21:00 NY), recovered to 30284 by London open. Asian range: 30171-30273 (102 pts). London session (02:00-06:00 UTC): gradual grind up from 30203 to 30273, no strong directional move. NY pre-market (06:00-10:00 UTC): pushed to 30324 then pulled back to 30284. Kill Zone status: London KZ ending (02:00-05:00 NY = 06:00-09:00 UTC), NY AM KZ starts in ~2hrs (08:30 NY = 12:30 UTC). No M15 OB formed \u2014 need MSS + FVG + OB confirmation. Compression detected: avg M15 range 30-50 pts overnight vs 200-400 pts on May 27-28 H4 candles \u2014 expansion likely on NY open."
+  },
+  "reasoning": "NEUTRAL bias with bearish lean. Price is at 97.7% of the D1 dealing range (28595\u219230328) \u2014 deep in Premium where smart money distributes. However, there is NO confirmed reversal signal: (1) No SMT divergence between NAS100 and US500 \u2014 both making HH/HL in lockstep, confirming bullish momentum. (2) No M15 bearish order block with market structure shift \u2014 the overnight sweep to 30171 was quickly recovered, suggesting buyers still active. (3) No ICT bearish reversal candle pattern on D1 yet \u2014 today's candle is still forming and looks like indecision at ATH. (4) Friday profile: after 4 days of bullish expansion (Mon-Thu rally from 29666\u219230328), Friday often sees profit-taking OR continuation. Without a clear Judas swing (fake move in opposite direction of true bias) and Kill Zone reaction, we cannot anticipate direction. Key watch: NY AM Kill Zone (08:30-11:00 NY) for MSS. If price sweeps 30328 high then drops through 30250 with displacement, that creates bearish setup targeting 30171\u219229992. If price holds above 30250 and breaks 30328, continuation to unknown levels. ORB Score 46/100 reflects: strong HTF bias (18/25) but missing VWAP (0/15), weak volume confirmation (8/20), no ICT confluence (3/15), good range width (10/10), moderate candle/timing (7/15). Confidence 40/100 \u2014 too many unknowns for a definitive call."
+}
