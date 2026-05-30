@@ -1,0 +1,417 @@
+//@version=5
+// 🔑 ICT Key Levels [Walker] v4.0 — Aligned with Ian's Multi-TF Wick Precision Methodology
+//
+// Methodology:
+//   - Swing point detection on current TF + HTF reference levels (PDH/PDL, PWH/PWL, PMH/PML)
+//   - 3-component scoring: Wick Precision (50%) + Interaction Count (30%) + Rejection Strength (20%)
+//   - Score = WP × 0.50 + IC × 0.30 + RS × 0.20
+//   - Wick rejection = wick_length / bar_range × 100 (NOT simple touch count)
+//   - Zone clustering via fixed-dollar tolerance
+//
+// For full Ian methodology (999 D1 bars, multi-TF W1×0.50 + D1×0.30 + H4×0.20),
+// use the Python key_level_analysis.py script. This indicator provides a real-time
+// visual approximation using chart-bar scoring. Best viewed on H4 chart.
+
+indicator("🔑 ICT Key Levels [Walker] v4.0", overlay=true, max_lines_count=500, max_labels_count=500, max_boxes_count=100, max_bars_back=5000)
+
+// ═══════════════════════════════════════════════════════════
+// INPUTS
+// ═══════════════════════════════════════════════════════════
+grp_analysis = "🔑 Analysis Settings"
+lookback     = input.int(500, "Lookback Bars", 100, 5000, group=grp_analysis, tooltip="Bars to scan for level interactions.")
+tol_pts      = input.float(30.0, "Tolerance (Points)", 0.1, 500.0, step=0.5, group=grp_analysis, tooltip="± tolerance around each level. Scale to instrument: ±5 for indices ~25K, ±0.5 for USOIL, ±100 for BTC.")
+swing_period = input.int(5, "Swing Detection Period", 2, 20, group=grp_analysis, tooltip="Bars on each side for swing detection. Higher = fewer, stronger swings.")
+min_score    = input.float(50.0, "Min Score to Display", 0, 100, step=5, group=grp_analysis, tooltip="Levels below this are hidden. ≥90=HIGH, 70-89=MED, <70=LOW.")
+max_levels   = input.int(8, "Max Levels Each Side", 1, 15, group=grp_analysis)
+
+grp_visual = "🎨 Visual Settings"
+show_table   = input.bool(true, "Show Info Table", group=grp_visual)
+show_labels  = input.bool(true, "Show Price Labels", group=grp_visual)
+show_boxes   = input.bool(true, "Show Zone Boxes", group=grp_visual)
+label_size   = input.string("Small", "Label Size", options=["Tiny", "Small", "Normal", "Large"], group=grp_visual)
+
+label_sz = switch label_size
+    "Tiny"   => size.tiny
+    "Small"  => size.small
+    "Normal" => size.normal
+    "Large"  => size.large
+    => size.small
+
+// ═══════════════════════════════════════════════════════════
+// SYMBOL CHANGE DETECTION — Reset arrays when user switches symbols
+// ═══════════════════════════════════════════════════════════
+var string prev_ticker = ""
+bool needs_clear = (prev_ticker != syminfo.tickerid)
+if needs_clear
+    prev_ticker := syminfo.tickerid
+
+// ═══════════════════════════════════════════════════════════
+// HTF REFERENCE LEVELS
+// ═══════════════════════════════════════════════════════════
+pdh = request.security(syminfo.tickerid, "D", high[1], lookahead=barmerge.lookahead_off, gaps=barmerge.gaps_off)
+pdl = request.security(syminfo.tickerid, "D", low[1],  lookahead=barmerge.lookahead_off, gaps=barmerge.gaps_off)
+pwh = request.security(syminfo.tickerid, "W", high[1], lookahead=barmerge.lookahead_off, gaps=barmerge.gaps_off)
+pwl = request.security(syminfo.tickerid, "W", low[1],  lookahead=barmerge.lookahead_off, gaps=barmerge.gaps_off)
+pmh = request.security(syminfo.tickerid, "M", high[1], lookahead=barmerge.lookahead_off, gaps=barmerge.gaps_off)
+pml = request.security(syminfo.tickerid, "M", low[1],  lookahead=barmerge.lookahead_off, gaps=barmerge.gaps_off)
+
+// ═══════════════════════════════════════════════════════════
+// SWING POINT DETECTION (Current TF)
+// ═══════════════════════════════════════════════════════════
+swing_high = ta.pivothigh(high, swing_period, swing_period)
+swing_low  = ta.pivotlow(low, swing_period, swing_period)
+
+var array<float> swing_highs = array.new_float()
+var array<float> swing_lows  = array.new_float()
+
+if needs_clear
+    array.clear(swing_highs)
+    array.clear(swing_lows)
+
+if not na(swing_high)
+    array.push(swing_highs, swing_high)
+    if array.size(swing_highs) > 200
+        for i = 0 to array.size(swing_highs) - 201
+            array.remove(swing_highs, 0)
+
+if not na(swing_low)
+    array.push(swing_lows, swing_low)
+    if array.size(swing_lows) > 200
+        for i = 0 to array.size(swing_lows) - 201
+            array.remove(swing_lows, 0)
+
+// ═══════════════════════════════════════════════════════════
+// HELPER: Check if price is near existing level
+// ═══════════════════════════════════════════════════════════
+f_is_near(arr, price, tol) =>
+    bool found = false
+    int n = array.size(arr)
+    if n > 0
+        for i = 0 to n - 1
+            if math.abs(array.get(arr, i) - price) <= tol
+                found := true
+                break
+    found
+
+// ═══════════════════════════════════════════════════════════
+// HELPER: Score a level using Ian's 3-component methodology
+// Returns [composite_score, total_interactions, wick_precision, rejection_strength]
+// ═══════════════════════════════════════════════════════════
+f_score_level(float level, float tolerance, bool is_res, int lb) =>
+    int total_intx = 0
+    int wick_rejections = 0
+    float sum_rej_pct = 0.0
+
+    int limit = math.min(lb, bar_index)
+    for i = 1 to limit
+        float h = high[i]
+        float l = low[i]
+        float o = open[i]
+        float c = close[i]
+        if na(h)
+            continue
+        float bar_range = h - l
+        if bar_range <= 0
+            continue
+
+        bool touched = false
+        if is_res
+            touched := (h >= level - tolerance and h <= level + tolerance)
+        else
+            touched := (l >= level - tolerance and l <= level + tolerance)
+
+        if not touched
+            continue
+
+        total_intx += 1
+
+        // Check for wick rejection
+        float wick_len = 0.0
+        bool is_wick = false
+        if is_res
+            float body_top = math.max(o, c)
+            wick_len := h - body_top
+            is_wick := (wick_len > 0 and c < h and o < h)
+        else
+            float body_bottom = math.min(o, c)
+            wick_len := body_bottom - l
+            is_wick := (wick_len > 0 and c > l and o > l)
+
+        if is_wick
+            wick_rejections += 1
+            sum_rej_pct += (wick_len / bar_range) * 100.0
+
+    // 3-component scoring
+    float wp = total_intx > 0 ? math.min((wick_rejections / total_intx) * 100.0, 100.0) : 0.0
+    float ic = total_intx >= 2 ? 100.0 : (total_intx == 1 ? 50.0 : 0.0)
+    float rs = wick_rejections > 0 ? math.min((sum_rej_pct / wick_rejections) / 30.0 * 100.0, 100.0) : 0.0
+    float composite = wp * 0.50 + ic * 0.30 + rs * 0.20
+
+    [composite, total_intx, wp, rs]
+
+// ═══════════════════════════════════════════════════════════
+// BUILD CANDIDATE LEVELS
+// ═══════════════════════════════════════════════════════════
+var array<float> cand_res = array.new_float()
+var array<float> cand_sup = array.new_float()
+
+if barstate.islast or needs_clear
+    array.clear(cand_res)
+    array.clear(cand_sup)
+
+    // Add swing highs to resistance
+    for i = 0 to array.size(swing_highs) - 1
+        float lv = array.get(swing_highs, i)
+        if not f_is_near(cand_res, lv, tol_pts)
+            array.push(cand_res, lv)
+
+    // Add swing lows to support
+    for i = 0 to array.size(swing_lows) - 1
+        float lv = array.get(swing_lows, i)
+        if not f_is_near(cand_sup, lv, tol_pts)
+            array.push(cand_sup, lv)
+
+    // Add HTF reference levels
+    if not na(pdh) and not f_is_near(cand_res, pdh, tol_pts)
+        array.push(cand_res, pdh)
+    if not na(pwh) and not f_is_near(cand_res, pwh, tol_pts)
+        array.push(cand_res, pwh)
+    if not na(pmh) and not f_is_near(cand_res, pmh, tol_pts)
+        array.push(cand_res, pmh)
+
+    if not na(pdl) and not f_is_near(cand_sup, pdl, tol_pts)
+        array.push(cand_sup, pdl)
+    if not na(pwl) and not f_is_near(cand_sup, pwl, tol_pts)
+        array.push(cand_sup, pwl)
+    if not na(pml) and not f_is_near(cand_sup, pml, tol_pts)
+        array.push(cand_sup, pml)
+
+// ═══════════════════════════════════════════════════════════
+// SCORE & SORT LEVELS
+// ═══════════════════════════════════════════════════════════
+var array<float> s_res_level = array.new_float()
+var array<float> s_res_score = array.new_float()
+var array<int>   s_res_hits  = array.new_int()
+var array<float> s_res_wp    = array.new_float()
+var array<float> s_res_rs    = array.new_float()
+
+var array<float> s_sup_level = array.new_float()
+var array<float> s_sup_score = array.new_float()
+var array<int>   s_sup_hits  = array.new_int()
+var array<float> s_sup_wp    = array.new_float()
+var array<float> s_sup_rs    = array.new_float()
+
+if barstate.islast
+    array.clear(s_res_level)
+    array.clear(s_res_score)
+    array.clear(s_res_hits)
+    array.clear(s_res_wp)
+    array.clear(s_res_rs)
+    array.clear(s_sup_level)
+    array.clear(s_sup_score)
+    array.clear(s_sup_hits)
+    array.clear(s_sup_wp)
+    array.clear(s_sup_rs)
+
+    // Score Resistance
+    int n_res = array.size(cand_res)
+    if n_res > 0
+        for i = 0 to n_res - 1
+            float lv = array.get(cand_res, i)
+            [sc, hits, wp, rs] = f_score_level(lv, tol_pts, true, lookback)
+            if sc >= min_score
+                array.push(s_res_level, lv)
+                array.push(s_res_score, sc)
+                array.push(s_res_hits, hits)
+                array.push(s_res_wp, wp)
+                array.push(s_res_rs, rs)
+
+    // Score Support
+    int n_sup = array.size(cand_sup)
+    if n_sup > 0
+        for i = 0 to n_sup - 1
+            float lv = array.get(cand_sup, i)
+            [sc, hits, wp, rs] = f_score_level(lv, tol_pts, false, lookback)
+            if sc >= min_score
+                array.push(s_sup_level, lv)
+                array.push(s_sup_score, sc)
+                array.push(s_sup_hits, hits)
+                array.push(s_sup_wp, wp)
+                array.push(s_sup_rs, rs)
+
+    // Sort Resistance by score descending
+    if array.size(s_res_level) > 1
+        int nr = array.size(s_res_level)
+        for ii = 0 to nr - 2
+            for jj = ii + 1 to nr - 1
+                if array.get(s_res_score, jj) > array.get(s_res_score, ii)
+                    float tmp_f = array.get(s_res_level, ii)
+                    array.set(s_res_level, ii, array.get(s_res_level, jj))
+                    array.set(s_res_level, jj, tmp_f)
+                    tmp_f := array.get(s_res_score, ii)
+                    array.set(s_res_score, ii, array.get(s_res_score, jj))
+                    array.set(s_res_score, jj, tmp_f)
+                    int tmp_i = array.get(s_res_hits, ii)
+                    array.set(s_res_hits, ii, array.get(s_res_hits, jj))
+                    array.set(s_res_hits, jj, tmp_i)
+                    tmp_f := array.get(s_res_wp, ii)
+                    array.set(s_res_wp, ii, array.get(s_res_wp, jj))
+                    array.set(s_res_wp, jj, tmp_f)
+                    tmp_f := array.get(s_res_rs, ii)
+                    array.set(s_res_rs, ii, array.get(s_res_rs, jj))
+                    array.set(s_res_rs, jj, tmp_f)
+
+    // Sort Support by score descending
+    if array.size(s_sup_level) > 1
+        int ns = array.size(s_sup_level)
+        for ii = 0 to ns - 2
+            for jj = ii + 1 to ns - 1
+                if array.get(s_sup_score, jj) > array.get(s_sup_score, ii)
+                    float tmp_f = array.get(s_sup_level, ii)
+                    array.set(s_sup_level, ii, array.get(s_sup_level, jj))
+                    array.set(s_sup_level, jj, tmp_f)
+                    tmp_f := array.get(s_sup_score, ii)
+                    array.set(s_sup_score, ii, array.get(s_sup_score, jj))
+                    array.set(s_sup_score, jj, tmp_f)
+                    int tmp_i = array.get(s_sup_hits, ii)
+                    array.set(s_sup_hits, ii, array.get(s_sup_hits, jj))
+                    array.set(s_sup_hits, jj, tmp_i)
+                    tmp_f := array.get(s_sup_wp, ii)
+                    array.set(s_sup_wp, ii, array.get(s_sup_wp, jj))
+                    array.set(s_sup_wp, jj, tmp_f)
+                    tmp_f := array.get(s_sup_rs, ii)
+                    array.set(s_sup_rs, ii, array.get(s_sup_rs, jj))
+                    array.set(s_sup_rs, jj, tmp_f)
+
+// ═══════════════════════════════════════════════════════════
+// DRAWING — Clear and redraw on last bar
+// ═══════════════════════════════════════════════════════════
+var array<line>   all_lines  = array.new_line()
+var array<label>  all_labels = array.new_label()
+var array<box>    all_boxes  = array.new_box()
+
+if barstate.islast
+    // Clear previous drawings
+    if array.size(all_lines) > 0
+        for i = array.size(all_lines) - 1 to 0
+            line.delete(array.get(all_lines, i))
+        array.clear(all_lines)
+    if array.size(all_labels) > 0
+        for i = array.size(all_labels) - 1 to 0
+            label.delete(array.get(all_labels, i))
+        array.clear(all_labels)
+    if array.size(all_boxes) > 0
+        for i = array.size(all_boxes) - 1 to 0
+            box.delete(array.get(all_boxes, i))
+        array.clear(all_boxes)
+
+    // ─── Draw Resistance ───
+    int r_cnt = array.size(s_res_level)
+    if r_cnt > 0
+        int limit = math.min(r_cnt, max_levels)
+        for i = 0 to limit - 1
+            float lv = array.get(s_res_level, i)
+            float sc = array.get(s_res_score, i)
+            int hits = array.get(s_res_hits, i)
+            float wp = array.get(s_res_wp, i)
+            float rs = array.get(s_res_rs, i)
+
+            color line_clr = sc >= 90 ? color.new(#E53935, 0) : sc >= 70 ? color.new(#FF9800, 0) : color.new(#9E9E9E, 0)
+            color text_clr = sc >= 90 ? #B71C1C : sc >= 70 ? #E65100 : #616161
+
+            line l = line.new(bar_index - lookback, lv, bar_index + 20, lv, color=line_clr, width=2, style=line.style_dashed, extend=extend.right)
+            array.push(all_lines, l)
+
+            if show_labels
+                string lbl = "R" + str.tostring(i+1) + ": " + str.tostring(lv, format.price)
+                lbl += "\nScore: " + str.tostring(sc, "#.0") + " [WP:" + str.tostring(wp, "#.0") + " RS:" + str.tostring(rs, "#.0") + "]"
+                lbl += "\nHits: " + str.tostring(hits)
+                label lb = label.new(bar_index, lv, text=lbl, color=color.new(color.white, 15), textcolor=text_clr, style=label.style_label_lower_left, size=label_sz)
+                array.push(all_labels, lb)
+
+            if show_boxes
+                color box_clr = sc >= 90 ? color.new(#E53935, 92) : sc >= 70 ? color.new(#FF9800, 92) : color.new(#9E9E9E, 92)
+                box b = box.new(bar_index - lookback, lv + tol_pts, bar_index + 20, lv - tol_pts, bgcolor=box_clr, border_color=color.new(line_clr, 80), border_width=1)
+                array.push(all_boxes, b)
+
+    // ─── Draw Support ───
+    int s_cnt = array.size(s_sup_level)
+    if s_cnt > 0
+        int limit = math.min(s_cnt, max_levels)
+        for i = 0 to limit - 1
+            float lv = array.get(s_sup_level, i)
+            float sc = array.get(s_sup_score, i)
+            int hits = array.get(s_sup_hits, i)
+            float wp = array.get(s_sup_wp, i)
+            float rs = array.get(s_sup_rs, i)
+
+            color line_clr = sc >= 90 ? color.new(#2E7D32, 0) : sc >= 70 ? color.new(#FFC107, 0) : color.new(#9E9E9E, 0)
+            color text_clr = sc >= 90 ? #1B5E20 : sc >= 70 ? #827717 : #616161
+
+            line l = line.new(bar_index - lookback, lv, bar_index + 20, lv, color=line_clr, width=2, style=line.style_dashed, extend=extend.right)
+            array.push(all_lines, l)
+
+            if show_labels
+                string lbl = "S" + str.tostring(i+1) + ": " + str.tostring(lv, format.price)
+                lbl += "\nScore: " + str.tostring(sc, "#.0") + " [WP:" + str.tostring(wp, "#.0") + " RS:" + str.tostring(rs, "#.0") + "]"
+                lbl += "\nHits: " + str.tostring(hits)
+                label lb = label.new(bar_index, lv, text=lbl, color=color.new(color.white, 15), textcolor=text_clr, style=label.style_label_upper_left, size=label_sz)
+                array.push(all_labels, lb)
+
+            if show_boxes
+                color box_clr = sc >= 90 ? color.new(#2E7D32, 92) : sc >= 70 ? color.new(#FFC107, 92) : color.new(#9E9E9E, 92)
+                box b = box.new(bar_index - lookback, lv + tol_pts, bar_index + 20, lv - tol_pts, bgcolor=box_clr, border_color=color.new(line_clr, 80), border_width=1)
+                array.push(all_boxes, b)
+
+    // ─── Info Table ───
+    if show_table
+        var table tbl = table.new(position.top_right, 6, 16, bgcolor=color.new(color.white, 10), border_width=1, border_color=color.new(#B0BEC5, 70), frame_color=color.new(#B0BEC5, 50), frame_width=1)
+        table.cell(tbl, 0, 0, "🔑 ICT Key Levels [Walker] v4.0", text_color=color.black, text_size=size.small)
+        table.merge_cells(tbl, 0, 0, 5, 0)
+
+        int row = 1
+        table.cell(tbl, 0, row, "Type", text_color=color.black, text_size=size.tiny)
+        table.cell(tbl, 1, row, "Price", text_color=color.black, text_size=size.tiny)
+        table.cell(tbl, 2, row, "Score", text_color=color.black, text_size=size.tiny)
+        table.cell(tbl, 3, row, "WP%", text_color=color.black, text_size=size.tiny)
+        table.cell(tbl, 4, row, "Hits", text_color=color.black, text_size=size.tiny)
+        table.cell(tbl, 5, row, "Dist%", text_color=color.black, text_size=size.tiny)
+
+        row := 2
+
+        if r_cnt > 0
+            int limit = math.min(r_cnt, max_levels)
+            for i = 0 to limit - 1
+                float lv = array.get(s_res_level, i)
+                float sc = array.get(s_res_score, i)
+                int hits = array.get(s_res_hits, i)
+                float wp = array.get(s_res_wp, i)
+                float dist = (lv - close) / close * 100.0
+                color score_clr = sc >= 90 ? #1B5E20 : sc >= 70 ? #E65100 : #757575
+                table.cell(tbl, 0, row, "R" + str.tostring(i+1), text_color=#D32F2F, text_size=size.tiny)
+                table.cell(tbl, 1, row, str.tostring(lv, format.price), text_color=color.black, text_size=size.tiny)
+                table.cell(tbl, 2, row, str.tostring(sc, "#.0"), text_color=score_clr, text_size=size.tiny)
+                table.cell(tbl, 3, row, str.tostring(wp, "#.0"), text_color=color.black, text_size=size.tiny)
+                table.cell(tbl, 4, row, str.tostring(hits), text_color=color.black, text_size=size.tiny)
+                table.cell(tbl, 5, row, "+" + str.tostring(dist, "#.00") + "%", text_color=#424242, text_size=size.tiny)
+                row += 1
+
+        if s_cnt > 0
+            int limit = math.min(s_cnt, max_levels)
+            for i = 0 to limit - 1
+                float lv = array.get(s_sup_level, i)
+                float sc = array.get(s_sup_score, i)
+                int hits = array.get(s_sup_hits, i)
+                float wp = array.get(s_sup_wp, i)
+                float dist = (close - lv) / close * 100.0
+                color score_clr = sc >= 90 ? #1B5E20 : sc >= 70 ? #E65100 : #757575
+                table.cell(tbl, 0, row, "S" + str.tostring(i+1), text_color=#2E7D32, text_size=size.tiny)
+                table.cell(tbl, 1, row, str.tostring(lv, format.price), text_color=color.black, text_size=size.tiny)
+                table.cell(tbl, 2, row, str.tostring(sc, "#.0"), text_color=score_clr, text_size=size.tiny)
+                table.cell(tbl, 3, row, str.tostring(wp, "#.0"), text_color=color.black, text_size=size.tiny)
+                table.cell(tbl, 4, row, str.tostring(hits), text_color=color.black, text_size=size.tiny)
+                table.cell(tbl, 5, row, "+" + str.tostring(dist, "#.00") + "%", text_color=#424242, text_size=size.tiny)
+                row += 1
+
+        table.cell(tbl, 0, row, "≥90=HIGH  70-89=MED  <70=LOW", text_color=#424242, text_size=size.tiny)
+        table.merge_cells(tbl, 0, row, 5, row)
