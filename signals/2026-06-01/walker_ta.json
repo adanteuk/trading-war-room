@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-06-01T10:30:00Z",
+  "bias": "neutral-bullish",
+  "confidence": 45,
+  "orb_score": 47,
+  "ict_profile": "Monday Range / Power of 3 Setup",
+  "entry": "TBD — waiting for M15 OB formation after pullback",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["30,408", "30,325", "30,226", "30,171"],
+    "resistance": ["30,558", "30,600", "30,750"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "Bullish trend intact — HH/HL from May 18 low (28,595.8). D1 dealing range: 28,595.8 to 30,558.2 (1,962.4pts). Price at 30,463 = 79%+ of range (DEEP PREMIUM). Last closed D1 (May 31 Sunday CFD): O:30,392.5 H:30,558.2 L:30,325.6 C:30,463.3 (+0.4%). No SMT divergence vs US500 — both made new highs. D1 candle: bullish body with upper wick, suggesting some rejection at highs.",
+    "l2_h4": "H4 dealing range: 29,718.7 (May 28 1st H4 low) to 30,558.2 (Jun 1 high). Price pulled back from high into 50% retrace (~30,408). H4 OB zone: 30,226-30,247 (May 29 4th H4 candle). Price approaching mid-range — potential discount entry zone forming. CRT: Jun 1 1st H4 candle defined range (30,513-30,558-30,408), price purged the low and recovering.",
+    "l3_m15": "London session (02:00-05:00 NY / ~06:00-09:00 UTC): Price dropped from 30,558 to 30,408 (150pt pullback). Currently recovering to 30,463. No confirmed M15 OB yet — price still consolidating. Kill Zone: London active (02:00 ET), NY AM not yet open (08:30 ET = 12:30 UTC). Compression detected in pre-London candles (avg range ~20pts → expansion to 150pts). Waiting for M15 displacement + OB confirmation."
+  },
+  "reasoning": "NAS100 is in a confirmed bullish trend on D1 (HH/HL from 28,595.8 low) but currently sitting in DEEP PREMIUM (79%+ of the dealing range). This is a tricky setup — the HTF trend is bullish, but buying at 79%+ premium is risky. The Monday session opened with a gap up from Sunday's close, rallied to 30,558, then pulled back 150pts during London session to 30,408. This pullback could be the 'manipulation' leg of the Power of 3 (Accumulation Asia → Manipulation London → Distribution NY). The key question: will 30,408 hold as the Monday/weekly low? If yes, expect distribution rally toward 30,558+ during NY session. If no, deeper pullback to 30,325-30,226 H4 OB zone possible. No SMT divergence detected — NAS100 and US500 both confirmed new highs together, suggesting genuine buying strength, not a trap. ORB score 47/100 reflects: (1) HTF bias +17/25 (bullish trend but deep premium reduces conviction), (2) VWAP 0/15 (not available), (3) Volume 8/20 (moderate, no RVOL confirmation), (4) Candle/Timing 6/15 (London pullback not yet confirmed), (5) ICT confluence 5/15 (premium pullback pattern but no confirmed OB yet), (6) Range 8/10 (0.49% — acceptable). Bias: neutral-bullish with low confidence — waiting for NY AM session for clearer directional confirmation."
+}
