@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-02",
+  "timestamp": "2026-06-02T11:04:00.349134+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bullish",
+  "alfred_risk_status": "WAIT",
+  "merlin_thesis": "Bullish bias at Extreme Premium \u2014 NAS100 at 30,490 holding above 30K ATH with clean HH/HL structure since May 19 SSL sweep (28,663). D1 dealing range is stale (price at 170.8% \u2192 extension territory), indicating powerful breakout. H4 shows tight range 30,284-30,656 with price at 55.4% premium. Yesterday's SSL sweep at 30,284 recovered immediately (classic ICT reversal pattern). June 1 daily candle was a tight doji (30,284-30,551, 3% body) suggesting consolidation before next move. Macro trend strongly bullish (+DI > -DI, ADX > 50). No high-impact news today. Risk-off signals emerging: BTC -4%, Gold +1.18% \u2014 watch for risk rotation. Premium position argues against chasing \u2014 wait for pullback into 30,200-30,300 support zone for long entries.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "Mixed signals \u2014 standing aside",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

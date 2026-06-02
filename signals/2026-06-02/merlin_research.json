@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-02",
+  "timestamp": "2026-06-02T11:01:00Z",
+  "summary": "Bullish bias at Extreme Premium — NAS100 at 30,490 holding above 30K ATH with clean HH/HL structure since May 19 SSL sweep (28,663). D1 dealing range is stale (price at 170.8% → extension territory), indicating powerful breakout. H4 shows tight range 30,284-30,656 with price at 55.4% premium. Yesterday's SSL sweep at 30,284 recovered immediately (classic ICT reversal pattern). June 1 daily candle was a tight doji (30,284-30,551, 3% body) suggesting consolidation before next move. Macro trend strongly bullish (+DI > -DI, ADX > 50). No high-impact news today. Risk-off signals emerging: BTC -4%, Gold +1.18% — watch for risk rotation. Premium position argues against chasing — wait for pullback into 30,200-30,300 support zone for long entries.",
+  "bias": "Bullish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [30284, 30200, 30100, 30000, 29848],
+    "resistance": [30550, 30656, 30800, 31000]
+  },
+  "ict_analysis": {
+    "daily_bias": "BULLISH structure (HH/HL) since May 19 SSL sweep at 28,663. BUT: D1 dealing range 28,596-29,705 is STALE — price at 170.8% (above 100%). Re-anchored range needed. June 1 doji candle (3% body, tight range) suggests consolidation at ATH. Macro: price >> all MAs, +DI 32.33 > -DI 18.49, ADX 51.97 = strong uptrend. Bearish BB at 30K invalidated and flipped to support.",
+    "h4_context": "Tight H4 dealing range 30,284.6-30,656.2 (371 pts). Price at 55.4% = slight Premium above equilibrium 30,470. Multiple FVGs: large bullish 30,411-30,487 (76.5 gap) active near current price. Small bearish FVG at 30,411-30,471 partially filled. Recent H4 candles mixed — strong bullish 05:00 UTC (76% body) vs bearish 09:00 UTC (38% body) = indecision at current levels.",
+    "m15_status": "M15 range 30,436-30,551. Bullish OB detected at 09:15 UTC (30,494-30,519, 24pt displacement). NO Kill Zone currently active (11:01 UTC — between London and NY sessions). NY Open Kill Zone starts 13:00 UTC. M15 entry NOT confirmed — waiting for price to reach key level during Kill Zone. SSL sweep at 30,284 (June 1) was reclaimed immediately."
+  },
+  "risks": [
+    {"event": "NY Session Open", "time": "13:00 UTC (09:00 ET)", "impact": "high"},
+    {"event": "BTC selloff (-4%) — potential risk-off spillover", "time": "ongoing", "impact": "medium"},
+    {"event": "Gold rallying (+1.18%) — safe-haven rotation", "time": "ongoing", "impact": "medium"},
+    {"event": "ISM Manufacturing PMI 54.0% beat (yesterday) — already priced in", "time": "past", "impact": "low"}
+  ],
+  "recommendation": "WAIT — Bias is Bullish but conditions not optimal for immediate entry. Price in extreme premium (no fresh dealing range), no Kill Zone active, mixed H4 signals. Best play: wait for NY Open Kill Zone (13:00 UTC). If price pulls back into 30,200-30,300 (flipped BB / 50% of H4 range) during Kill Zone and forms bullish OB → GO long targeting 30,550→30,800. If price breaks above 30,550 with displacement → continuation to 30,656→30,800. Invalidated if daily close below 30,100."
+}
