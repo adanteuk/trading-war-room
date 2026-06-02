@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-06-02T10:30:00Z",
+  "bias": "bullish",
+  "confidence": 55,
+  "orb_score": 57,
+  "ict_profile": "Classic Tuesday Low (bullish continuation in uptrend)",
+  "entry": "TBD — waiting for NY AM Kill Zone (08:30 NY / 20:30 HKT)",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["30284.6 (M15 low / London sweep)", "30256.0 (H4 Jun 1 low)", "30214.3 (D1 Fib 25%)", "30141.2 (D1 Fib 25% recalculated)"],
+    "resistance": ["30551.8 (today H)", "30656.2 (Jun 1 H / DR high)", "30800 (extension)", "31000 (psychological)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "Strong bullish trend from May 19 low 28,596.3. Dealing range: 28,596.3 → 30,656.2 (Jun 1 high) = 2,059.9 pts. Price at 30,518.7 = 93.3% of range (DEEP PREMIUM). 6 consecutive HH/HL (May 22→Jun 1), Jun 2 shows first LH but HL (LH/HL). Jun 2 candle: small body (21.3), long lower wick (212.8) — buyers defending. SMT divergence: May 26 NAS100 gapped up bullish while US500 gapped down bearish — bearish SMT warning at premium. 5 consecutive bullish D1 candles.",
+    "l2_h4_context": "Price consolidating near highs. Jun 1 21:00 HKT swept 30,256.0 (SSL) then rallied to 30,545.5 — liquidity sweep + reversal. Jun 2 05:00 HKT candle: gap down from 30,497.4, swept 30,330.2, closed 30,339.6. Jun 2 09:00 HKT: found low at 30,284.6 (session low), rallied to 30,409.8. Jun 2 13:00 HKT: strong bullish displacement 30,409.8→30,515.0, created BEAR FVG above (30,471.8→30,535.2 not fully retraced). Current H4 (17:00 HKT): small consolidation 30,492-30,551. Key H4 level: 30,256.0 (Jun 1 low / SSL sweep zone).",
+    "l3_m15_entry": "London KZ (02:00-05:00 NY) already passed. London low at 30,284.6 (11:15 HKT) swept below Asian range. Price rallied from 30,284.6 → 30,551.8 (current session range 267 pts). CRT: H4 13:00 candle defines range 30,397.3–30,535.2. Price currently ABOVE CRT mid (30,466.2) — bullish bias within CRT. M15 OB forming: 17:00-17:15 HKT bearish candles at 30,492–30,519 zone. NY AM KZ (08:30 NY / 20:30 HKT) NOT YET ACTIVE — waiting for entry signal. No confirmed entry yet."
+  },
+  "reasoning": "NAS100 is in a strong bullish trend with 6 consecutive HH/HL from May 19 low. However, price is at 93.3% of the dealing range (deep premium), which historically favors pullbacks. The first LH appeared today (30,551.8 vs Jun 1's 30,656.2), signaling potential exhaustion. SMT divergence on May 26 (NAS100 gap up vs US500 gap down) adds a bearish warning. The Jun 1 21:00 HKT candle swept 30,256.0 SSL and reversed — classic ICT liquidity sweep. Today's M15 action: London swept 30,284.6, then rallied. Currently consolidating at highs awaiting NY AM. The Classic Tuesday Low profile fits: in a bullish trend, Tuesday often forms the weekly low during London, then expands higher into NY PM. Bias remains bullish but confidence is tempered by premium pricing. Entry: wait for NY AM Kill Zone (20:30 HKT). Look for pullback to 30,400-30,450 (H4 FVG fill + M15 OB) for long entries. SL below 30,284.6 (session low). TP: retest of 30,656.2 (DR high), extension to 30,800+."
+}
