@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-03",
+  "timestamp": "2026-06-03T11:04:25.075386+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bullish",
+  "alfred_risk_status": "WAIT",
+  "merlin_thesis": "NAS100 in strong bullish extension at 30744.6 after sustained rally from May 19 low (28663). D1 structure firmly HH/HL with 5 consecutive bullish candles, but price at 193.7% of old dealing range indicates EXTREME extension. H4 range also breached (104.5%). No Kill Zone active. Bullish trend intact but chasing at these levels is dangerous. Recommend WAIT for pullback to 30400-30500 support zone or fresh session for entry.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "Mixed signals \u2014 standing aside",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

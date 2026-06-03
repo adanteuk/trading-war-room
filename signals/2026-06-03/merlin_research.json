@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-03",
+  "timestamp": "2026-06-03T11:03:00Z",
+  "summary": "NAS100 in strong bullish extension at 30744.6 after sustained rally from May 19 low (28663). D1 structure firmly HH/HL with 5 consecutive bullish candles, but price at 193.7% of old dealing range indicates EXTREME extension. H4 range also breached (104.5%). No Kill Zone active. Bullish trend intact but chasing at these levels is dangerous. Recommend WAIT for pullback to 30400-30500 support zone or fresh session for entry.",
+  "bias": "Bullish",
+  "confidence": 65,
+  "key_levels": {
+    "support": [30538, 30390, 30284, 30000],
+    "resistance": [30752, 30800, 31000]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1: BULLISH HH/HL structure confirmed. 5 consecutive bullish candles from 30069 to 30744. Old dealing range (28596-29705) is STALE — price at 193.7% indicates new impulse leg underway. Price broke above ATH 30379 with continuation. No bearish MSS on D1. Macro trend strongly bullish above all MAs. Extreme extension warns of pullback risk.",
+    "h4_context": "H4: Dealing range 30390.7-30729.2. Price at 104.5% — slightly above range. Large bullish FVG at 30400-30486.7 remains unmitigated as support. Recent H4 candles show consolidation near highs with mixed bullish/bearish closes. Key support at 30538 (today's low area). Equilibrium at 30560 being tested.",
+    "m15_status": "M15: Recent range 30643.7-30752.8. Bullish OB detected at 30658.2-30676.6 with 22.1pt displacement. Price near range top at 30744.6. NO Kill Zones active (11:03 UTC — between NY close and London open). No valid entry possible outside Kill Zone per ICT rules."
+  },
+  "risks": [
+    {"event": "Post-session thin liquidity", "time": "11:00-13:00 UTC", "impact": "medium"},
+    {"event": "ADP Employment Change", "time": "12:15 ET (16:15 UTC)", "impact": "high"},
+    {"event": "ISM Services PMI", "time": "14:00 ET (18:00 UTC)", "impact": "high"},
+    {"event": "Fed Beige Book", "time": "14:00 ET (18:00 UTC)", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — Price in extreme extension (193.7% D1, 104.5% H4) with no active Kill Zone. High-impact news at 16:15 UTC (ADP) and 18:00 UTC (ISM Services). Wait for: (a) NY Kill Zone (13:00-16:00 UTC) for potential pullback entry into 30400-30500 support, or (b) London Open tomorrow. Bias remains Bullish but entry timing is poor."
+}
