@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-06-04T10:30:00Z",
+  "bias": "bullish",
+  "near_term_bias": "bearish_pullback",
+  "confidence": 40,
+  "orb_score": 38,
+  "ict_profile": "Thursday Reversal (potential)",
+  "entry": "TBD — wait for NY AM Kill Zone (08:30 ET) confirmation",
+  "sl": "30142 (D1 38.2% Fib) or 29934 (D1 38.2% deeper)",
+  "tp": "30552 (H4 38.2% of pullback), 30664 (H4 FVG fill), 30760 (ATH retest)",
+  "key_levels": {
+    "support": ["30215 (M15 low)", "30250 (D1 23.6% Fib)", "30142 (D1 38.2% Fib)", "29934 (D1 38.2% Fib)"],
+    "resistance": ["30315-30319 (H4 BEAR FVG)", "30423 (H4 61.8% pullback)", "30552 (H4 38.2% pullback)", "30664 (H4 BEAR FVG)", "30760 (ATH)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 strongly bullish: 9 consecutive HH/HL candles from May 18 low 28596.3 to Jun 2 high 30760.2 (+7.5%). Jun 2 D1 candle: small bullish body (53.8pts, 24% of range), close at 99.6% of range (near high), long lower wick 167.3pts showing buy-side absorption. Mild bearish SMT: NAS100 held HL (29831>29693) while US500 made LL (7504<7506) on May 27 — ES showed relative weakness vs NQ. Price at 30254 = 76.6% of dealing range (deep Premium). Current pullback from ATH is -1.6%.",
+    "l2_h4_context": "H4 pullback from Jun 2 high 30760: consecutive lower highs/lows since Jun 2 17:00 NY. Price broke below H4 61.8% (30423) and H4 38.2% (30552) of pullback range (30760→30215, range 545pts). Bearish FVG at 30315-30319 (Jun 4 05:00) — price currently testing this level. Bearish FVG above at 30664-30670 (Jun 3 13:00 NY displacement). Jun 3 09:00 NY candle was the key displacement down (-110 body, swept Asian H 30766). No active bullish OB below price — nearest is Jun 1 09:00 at 30256 (already tested).",
+    "l3_m15_entry": "M15: sell-off accelerated during London KZ (04:00-05:00 NY), found low at 30215.1 at 05:15 NY. Post-low: weak bounce to 30278, then retested 30236. Current: 30254, consolidating near lows. London KZ (02:00-05:00 NY): CLOSED. NY AM KZ (08:30-11:00 NY): CLOSED, opens in ~3h. No M15 OB forming yet — waiting for NY AM displacement to confirm direction. Compression visible in 05:30-06:30 NY candles (narrow 40pt range after 300pt sell-off).",
+    "l4_orb_score": "Pre-Market/HTF Bias: 12/25 (D1 bullish but overnight sweep+sell). VWAP: N/A pre-market. Volume: 8/20 (M15 London accel visible). Candle/Timing: 5/15 (London closed, NY not open). ICT/CRT: 6/15 (bearish SMT, FVG at price). Range Width: 7/10 (1.8%, slightly wide). Total: 38/100 — LOW conviction."
+  },
+  "reasoning": "D1 trend remains strongly bullish with 9 consecutive HH/HL candles from May 18 swing low 28596.3. However, price is at 76.6% of dealing range (deep Premium), making it vulnerable to pullback. The current H4 pullback (-506pts from ATH, -1.6%) has broken below H4 38.2% and 61.8% of the pullback range. Price is currently at 30254, testing the D1 23.6% Fib (30250) and a bearish H4 FVG (30315-30319). The bearish SMT divergence (ES made LL while NAS held HL on May 27) hints at underlying weakness in the broader market relative to tech. Mild bearish SMT suggests ES weakness relative to NAS100 — but D1 bullish structure overrides this for now. Key decision point: if price holds 30215-30250 through NY AM open, look for long entries toward H4 FVG fill at 30552-30664. If 30215 breaks, target D1 38.2% at 29934. ICT Weekly Profile: Thursday Reversal potential — after Mon expansion, Tue-Wed consolidation, Thursday could set the reversal low before Fri continuation. But this is NOT confirmed — price could continue lower. Wait for NY AM Kill Zone (08:30 ET) displacement before committing to direction. Current ORB score 38/100 = low conviction, pre-market. Confidence 40/100 = honest assessment of mixed signals (bullish D1 vs bearish H4/M15 pullback)."
+}
