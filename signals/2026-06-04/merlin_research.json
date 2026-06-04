@@ -1,0 +1,46 @@
+{
+  "date": "2026-06-04",
+  "timestamp": "2026-06-04T11:03:51.204148+00:00",
+  "summary": "NAS100 showing corrective pullback from ATH within a macro bullish trend. Price at 30,207 after 2 consecutive bearish D1 candles (-1.7% from Jun 1 high of 30,714). H4 dealing range broken to downside (price 30,207 vs H4 DR low 30,391). D1 dealing range in extension territory (147%). Testing SSL at 30,171 \u2014 if swept with bullish reversal, trend resumes; if broken with displacement, targets 30,000. Bias: BEARISH short-term for pullback continuation, but macro trend remains BULLISH.",
+  "bias": "Bearish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      30171.1,
+      30000,
+      29848,
+      29676,
+      29436
+    ],
+    "resistance": [
+      30390.7,
+      30510.6,
+      30583.5,
+      30776.3,
+      30800
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 structure BULLISH (HH/HL from 28,596\u219229,705 swing) but price in EXTENSION at 147% \u2014 old DR stale. Last 5 candles: 3 bullish then 2 bearish (Jun 2: -0.8%, Jun 3: -0.8%) showing corrective momentum. Two consecutive bearish closes near lows suggest pullback from ATH (30,714 on Jun 1) is active. SSL sweep candidate at 30,171 (today's low). Macro trend bullish but short-term corrective.",
+    "h4_context": "H4 dealing range 30,391-30,776 broken to downside \u2014 price at 30,207 (-43% of range, below 0%). Last 6 H4 candles: 5 bearish with strong displacement. Bearish FVGs at 30,390-30,457 and 30,312-30,331 on H4. Price actively seeking SSL below 30,391. Next H4 support: 30,000 psychological. Bearish CRT forming on current H4 candle (09:00 UTC).",
+    "m15_status": "M15 range 30,171-30,511. Current price 30,207 near session low. 3 bearish FVGs detected (30,390-30,457, 30,312-30,331, 30,278-30,294) \u2014 none filled, confirming bearish momentum. NO Kill Zone currently active (between London and NY sessions). NY Open (13:00-16:00 UTC) approaching in ~2hrs \u2014 potential reversal or continuation zone. No valid M15 OB entry yet \u2014 wait for NY session price action."
+  },
+  "risks": [
+    {
+      "event": "NY Session Open (ADP Employment / ISM data possible)",
+      "time": "13:30 ET / 17:30 UTC",
+      "impact": "high"
+    },
+    {
+      "event": "30,171 SSL sweep \u2014 reversal risk if bullish reaction",
+      "time": "Current",
+      "impact": "high"
+    },
+    {
+      "event": "Macro trend bullish \u2014 short-term bearish vs long-term bullish conflict",
+      "time": "Ongoing",
+      "impact": "medium"
+    }
+  ],
+  "recommendation": "WAIT \u2014 No valid entry yet. Price is in corrective pullback but approaching critical SSL at 30,171. Two scenarios: (1) SSL sweep + bullish reversal at 30,171 during NY Kill Zone \u2192 Long entry targeting 30,390-30,510. (2) Break below 30,171 with displacement \u2192 Short targeting 30,000-29,848. Wait for NY Open (13:00 UTC) for M15 OB formation + Kill Zone confirmation before executing. Confidence reduced to 55 due to macro bullish trend opposing short-term bearish setup."
+}
