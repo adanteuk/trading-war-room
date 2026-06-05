@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-06-05T18:31:24.554133+08:00",
+  "go_no_go": "NO_GO",
+  "veto": true,
+  "veto_reason": "Cannot verify account status \u2014 MT5/ZMQ connection error for FTMO (My manual)",
+  "accounts": {
+    "FTMO (My manual)": {
+      "status": "error",
+      "error": "Login failed"
+    }
+  },
+  "factors": [],
+  "recommended_lot_size": 1.0,
+  "max_daily_loss_pct": 2.0,
+  "consecutive_losses": 0,
+  "notes": "Safety first: cannot verify risk status, defaulting to NO_GO"
+}
