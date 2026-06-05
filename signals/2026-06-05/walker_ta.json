@@ -1,8 +1,8 @@
 {
   "timestamp": "2026-06-05T10:33:00Z",
   "bias": "bearish",
-  "confidence": 55,
-  "orb_score": 64,
+  "confidence": 50,
+  "orb_score": 60,
   "ict_profile": "Classic Tuesday High — Midweek Continuation Lower",
   "entry": "TBD — Wait for NY AM Kill Zone (12:30 UTC)",
   "sl": "TBD",
@@ -16,9 +16,9 @@
     "support": [30119.6, 30018.5, 29983.0, 29718.7]
   },
   "three_layer_analysis": {
-    "l1_daily": "D1 bearish pullback from Jun 2 ATH (30,776). Two consecutive LH+LL (Jun 3-4). Jun 2 made new HH but US500 barely confirmed (7,624.6 vs 7,624.1 = +0.5pts) — Bearish SMT at swing high = overextension signal. Jun 3 reversed -239.9pts (73% bearish body, closed at 5% of range). Jun 4 continued lower -16.9pts (doji). Current dealing range: 30,776 (Jun 2 high) → 29,718.7 (May 29 low) = 1,057.3pts. Jun 4 close at 30,382.7 = 62.8% of range (Premium). Bearish FVG at 30,387-30,447.5 (Jun 2 low > Jun 4 high, 60.5pts, unmitigated).",
-    "l2_h4_context": "H4 price in deep discount after session drop to 30,018.5 (16.5% of dealing range). Bearish FVG at 30,387-30,447.5 acts as resistance ceiling. H4 bearish order block zone at 30,350-30,400 (Jun 4 distribution candles). Key support: 30,000 psychological + 25% Fib at 29,983. If broken, next target 29,718.7 (May 29 low / 0% Fib).",
-    "l3_m15_entry": "M15 session opened 30,367.8, dropped to 30,018.5 low, bounced to 30,569.6, then sold off again. Currently consolidating 30,150-30,200 with declining volume. Price below session open = bearish intraday control. NY AM Kill Zone NOT YET ACTIVE (current 10:33 UTC, KZ starts 12:30 UTC). No M15 OB formed yet. WAIT for Kill Zone entry — monitor 30,000 psychological level for potential purge + reversal."
+    "l1_daily": "D1 bearish pullback from Jun 2 ATH (30,776). Jun 2 made new HH with bullish close (96% position) but US500 barely confirmed (7,624.6 vs 7,624.1 = +0.5pts) — Bearish SMT at swing high = overextension signal. Jun 3 made HH+HL but closed bearish (-239.9pts, 73% bearish body, close at 5%) — ATH rejection candle. Jun 4 LH+LL continuation (-16.9pts, doji). Dealing range: 30,776 (Jun 2 high) → 29,718.7 (May 28 session low) = 1,057.3pts. Jun 4 close at 30,382.7 = 62.8% of range (Premium). Bearish FVG at 30,387-30,447.5 (Jun 2 low > Jun 4 high, 60.5pts, unmitigated).",
+    "l2_h4_context": "H4 price in discount after session drop to 30,018.5 (28.4% of dealing range). Bearish FVG at 30,387-30,447.5 acts as resistance ceiling. H4 bearish order block zone at 30,350-30,400 (Jun 4 distribution candles). Key support: 30,000 psychological + 25% Fib at 29,983. If broken, next target 29,718.7 (May 28 low / 0% Fib).",
+    "l3_m15_entry": "M15 session opened 30,367.8, dropped to 30,018.5 low, bounced to 30,569.6, then sold off again. Currently consolidating 30,150-30,200 with declining volume. Price below session open = bearish intraday control. NY AM Kill Zone NOT YET ACTIVE (current ~10:33 UTC, KZ starts 12:30 UTC). No M15 OB formed yet. WAIT for Kill Zone entry — monitor 30,000 psychological level for potential purge + reversal."
   },
-  "reasoning": "NAS100 CFD pulling back from Jun 2 ATH at 30,776 after Bearish SMT divergence (ES showed weakness at NQ's new high, classic overextension signal). Jun 3 reversal candle (-239.9pts, 73% bearish) initiated the sell-off. Jun 4 doji confirmed consolidation before further downside. Jun 5 session dropped to 30,018.5, approaching 38.2% Fib (30,122.6) and psychological 30,000. Bearish FVG at 30,387-30,447.5 caps upside. Weekly profile: Classic Tuesday High — Tue made the weekly high, Wed reversed, Thu consolidated, Fri expected to continue lower targeting May 29 low (29,718.7). Current ORB score 64/100 — moderate bearish conviction. Waiting for NY AM Kill Zone (12:30 UTC) before considering short entries. Long entries only if 30,000 purged + M15 bullish OB forms in Discount zone. Invalidation: break above 30,447.5 (bearish FVG top) flips bias to neutral."
+  "reasoning": "NAS100 CFD pulling back from Jun 2 ATH at 30,776 after Bearish SMT divergence (ES showed weakness at NQ's new high, classic overextension signal). Jun 3 made new HH but closed bearishly (-239.9pts, 73% body) — the ATH rejection candle. Jun 4 LH+LL doji confirmed distribution. Jun 5 session dropped to 30,018.5 (28.4% of dealing range), approaching 38.2% Fib (30,122.6) and psychological 30,000. Bearish FVG at 30,387-30,447.5 caps upside. Weekly profile: Classic Tuesday High — Tue made the weekly high, Wed reversed (HH+HL but bearish close), Thu consolidated (LH+LL doji), Fri expected to continue lower targeting May 28 low (29,718.7). ORB score 60/100 — moderate bearish conviction, reduced from initial 64 due to discount zone positioning. Waiting for NY AM Kill Zone (12:30 UTC) before considering short entries. Long entries only if 30,000 purged + M15 bullish OB forms. Invalidation: break above 30,447.5 (bearish FVG top) flips bias to neutral."
 }
