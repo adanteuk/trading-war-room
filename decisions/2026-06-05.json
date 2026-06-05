@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-05",
+  "timestamp": "2026-06-05T11:05:15.739427+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "NO_INPUT",
+  "alfred_risk_status": "NO_GO",
+  "merlin_thesis": "NAS100 pullback from ATH (30,776) continues into Day 3 \u2014 price at 30,154 after sweeping SSL at 30,018 on H4. D1 structure remains BULLISH (HH/HL) but price is deep in daily premium (140.5% of stale DR 28,596\u219229,705). Provisional DR (28,596\u219230,776) puts price at 71.4% \u2014 still premium. H4 is in DISCOUNT (24.7% of 30,018\u219230,569), which is where longs should be sought in a bullish trend. M15 shows no Kill Zone active (between sessions), bearish OB at 30,078-30,110, bullish OBs at 30,085-30,148. The 30,000 level is critical \u2014 if held, this pullback is a healthy discount accumulation; if broken with displacement, targets 29,848\u219229,676. Bias: NEUTRAL-BEARISH short-term (pullback active), but macro trend remains BULLISH.",
+  "final_decision": "NO_GO \u2014 VETOED BY ALFRED",
+  "trade_params": {},
+  "reasoning": "Alfred vetoed: Cannot verify account status \u2014 MT5/ZMQ connection error for FTMO (My manual)",
+  "alfred_veto": true,
+  "veto_reason": "Cannot verify account status \u2014 MT5/ZMQ connection error for FTMO (My manual)"
+}
