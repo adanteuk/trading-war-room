@@ -1,0 +1,37 @@
+{
+  "date": "2026-06-08",
+  "timestamp": "2026-06-08T11:30:00+08:00",
+  "summary": "NAS100 at 29,201 after massive Jun 4 crash (-1,552pts / -5.1%). Price deep in discount (27.7% of D1 range 28,596-30,776) following SSL sweep near May 18 low. Macro trend remains bullish (HH/HL from Apr ~22,500) but short-term structure damaged by bearish displacement. Currently testing bearish H4 FVG at 29,261-29,352 from below. M15 bullish OBs forming but no Kill Zone active. Conflicted setup favors WAIT for confirmation.",
+  "bias": "Neutral",
+  "confidence": 45,
+  "key_levels": {
+    "support": [
+      "29,149 (M15 OB2 low)",
+      "29,130 (M15 Bullish FVG low)",
+      "28,797 (Jun 7 session low / SSL sweep)",
+      "28,747 (Jun 4-5 crash low)",
+      "28,596 (May 18 swing low / D1 range 0%)"
+    ],
+    "resistance": [
+      "29,261-29,352 (Bearish H4 FVG — IMMEDIATE)",
+      "29,485 (H4 equilibrium / 50%)",
+      "29,469-30,008 (Major Bearish H4 FVG — 539pt gap)",
+      "29,686 (D1 50% equilibrium)",
+      "30,000 (Psychological / Bullish BB zone)",
+      "30,776 (Jun 2 ATH / D1 range 100%)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BULLISH structure (HH/HL) but price deep DISCOUNT at 27.7% of D1 range (28,596-30,776). Jun 4 was a 95% body bearish displacement candle (-1,552pts) — the largest single-day drop in the rally from Apr. Jun 7 recovered +316pts (68% body bull). SSL sweep at 28,747 near May 18 low (28,596) suggests potential capitulation. Per weekly review rules: SSL sweep + bullish reaction = potential bullish reversal, BUT the crash magnitude requires caution. Bearish FVGs overhead at 29,261-29,352 and 29,469-30,008 cap the bounce.",
+    "h4_context": "H4 Dealing Range: 28,747-30,224, price at 30.7% (discount). 4 FVGs detected: critical Bearish FVG at 29,261-29,352 (90.8pt gap) is IMMEDIATE overhead resistance — price at 29,201 is testing it from below. Larger Bearish FVG at 29,469-30,008 (539pt gap) is major overhead supply. H4 equilibrium at 29,485. For bullish setup, price must break and CLOSE above 29,352 (bearish FVG) with displacement. For bearish setup, rejection at 29,261-29,352 followed by break below 29,149 (M15 OB low).",
+    "m15_status": "2 Bullish OBs detected: OB1 (H:29,213 L:29,164, disp=17.7) and OB2 (H:29,201 L:29,149, disp=18.8). Bullish FVG at 29,130-29,164. Price sitting AT the OB zone. HOWEVER: No Kill Zone currently active (London closed, NY not yet open). Per ICT rules, OB outside Kill Zone = low probability entry. Next Kill Zone: NY AM (13:00-16:00 UTC / 21:00-00:00 HKT). Entry confirmation NOT YET available — must wait for Kill Zone + price reaction at bearish FVG 29,261-29,352."
+  },
+  "risks": [
+    {"event": "US Economic Data (if scheduled)", "time": "08:30 ET / 12:30 UTC", "impact": "high"},
+    {"event": "FOMC quiet period / Fed speakers", "time": "various", "impact": "medium"},
+    {"event": "Jun 4 crash aftermath — potential for continued distribution", "time": "all session", "impact": "high"},
+    {"event": "Bearish H4 FVG at 29,261-29,352 rejection risk", "time": "immediate", "impact": "high"},
+    {"event": "Weekend gap risk (if holding positions into weekend)", "time": "Friday close", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — Do not enter until one of two scenarios confirms: (1) BULLISH: Price breaks above 29,352 (bearish FVG) with displacement during NY Kill Zone, then look for M15 bullish OB retest for long entry targeting 29,485 → 29,700. (2) BEARISH: Price rejects at 29,261-29,352, breaks below 29,149 (M15 OB low), then look for bearish OB short targeting 28,747 → 28,596. Current position at the inflection point between discount support and bearish FVG resistance makes this a 50/50 zone — edge comes from waiting for the market to reveal its hand. Confidence 45/100 reflects the conflict between macro bullish structure and short-term bearish damage from Jun 4 crash."
+}
