@@ -1,0 +1,129 @@
+{
+  "timestamp": "2026-06-08T10:34:26.472040+00:00",
+  "date": "2026-06-08",
+  "current_price": 29167.3,
+  "bias": "neutral",
+  "confidence": 45,
+  "orb_score": 16,
+  "ict_profile": "Monday Range Formation \u2014 awaiting Tuesday direction",
+  "structure": "HH/HL (BULLISH) \u2014 at risk, 28747.1 must hold",
+  "dealing_range": {
+    "d1": {
+      "low": 28596.3,
+      "high": 30776.3,
+      "range": 2180.0,
+      "direction": "BULLISH",
+      "price_position_pct": 26.2,
+      "zone": "DISCOUNT"
+    },
+    "h4": {
+      "low": 28747.1,
+      "high": 30569.6,
+      "range": 1822.5,
+      "direction": "BEARISH",
+      "price_position_pct": 23.1,
+      "zone": "DISCOUNT"
+    }
+  },
+  "fibonacci": {
+    "d1": {
+      "0": 28596.3,
+      "25": 29141.3,
+      "50": 29686.3,
+      "61.8": 29943.5,
+      "70.5": 30133.2,
+      "79": 30318.5,
+      "100": 30776.3
+    }
+  },
+  "smt_divergence": "NO SMT DIVERGENCE (both aligned)",
+  "d1_candle": {
+    "date": "2026-06-04",
+    "open": 30367.8,
+    "high": 30387.1,
+    "low": 28747.1,
+    "close": 28815.9,
+    "body": 1551.9,
+    "direction": "BEAR",
+    "body_pct": 94.6,
+    "upper_wick": 19.3,
+    "lower_wick": 68.8
+  },
+  "h4_fvgs": [
+    {
+      "type": "BULLISH",
+      "top": 30364.8,
+      "bottom": 30315.2,
+      "date": "2026-06-04T09:00"
+    },
+    {
+      "type": "BEARISH",
+      "top": 30364.8,
+      "bottom": 30213.9,
+      "date": "2026-06-04T17:00"
+    },
+    {
+      "type": "BEARISH",
+      "top": 30008.8,
+      "bottom": 29469.7,
+      "date": "2026-06-05T09:00"
+    },
+    {
+      "type": "BEARISH",
+      "top": 29352.1,
+      "bottom": 29261.3,
+      "date": "2026-06-05T13:00"
+    }
+  ],
+  "h4_obs": [
+    {
+      "type": "BEARISH_OB",
+      "high": 30766.2,
+      "low": 30670.1,
+      "date": "2026-06-03T05:00"
+    },
+    {
+      "type": "BULLISH_OB",
+      "high": 30315.2,
+      "low": 30131.5,
+      "date": "2026-06-04T05:00"
+    },
+    {
+      "type": "BULLISH_OB",
+      "high": 29469.7,
+      "low": 28747.1,
+      "date": "2026-06-05T13:00"
+    }
+  ],
+  "m15_compression": {
+    "avg_20": 61.6,
+    "avg_5": 45.5,
+    "ratio": 0.74
+  },
+  "kill_zone": {
+    "active": false,
+    "london": false,
+    "ny_am": false,
+    "ny_pm": false,
+    "ny_time": "06:30"
+  },
+  "key_levels": {
+    "support": [
+      "28747.1 (Jun 5 crash low / H4 SL)",
+      "28596.3 (May 18 swing low \u2014 structure invalidation)",
+      "29141.3 (D1 25%)"
+    ],
+    "resistance": [
+      "29686.3 (D1 50%)",
+      "29943.5 (D1 61.8%)",
+      "30133.2 (D1 70.5%)",
+      "30569.6 (H4 SH / D1 79%)"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure: HH/HL (BULLISH) \u2014 at risk, 28747.1 must hold. Dealing range 28596.3-30776.3 (BULLISH, 2180pts). Price at 26.2% (Discount). Friday crash: -1551.9pts (-5.16%), 94.6% body \u2014 massive bearish displacement. No SMT divergence (NK and SP both made HH then crashed). Recovery underway: current 29167.3 vs Fri close 28815.9 (+351.4pts).",
+    "l2_h4_context": "H4 dealing range 28747.1-30569.6 (BEARISH, 1822.5pts). Price at 23.1% (extreme Discount \u2014 just 3.8% off the low). 6 unmitigated bearish FVGs above (30315-30670 zone). Bullish OB at 28747.1-29469.7 (unmitigated \u2014 crash low zone). Price bouncing off OB but facing heavy bearish FVG resistance above.",
+    "l3_m15_entry": "M15 compression ratio: 0.74 (moderate compression). London KZ passed (02:00-05:00) \u2014 recovery attempt during London session. NY AM KZ (08:30-11:00) not yet active. M15 structure: forming HL at 29118.9 after initial recovery high 29254.3. Waiting for NY AM KZ for potential entry confirmation."
+  },
+  "reasoning": "NAS100 at 29167.3 on Monday Jun 8 (06:30 NY). Friday's massive -1551.9pt crash (-5.16%) dominated the session \u2014 94.6% body candle with minimal wicks. D1 macro structure remains HH/HL (29705\u219230776 HH, 28596\u219228747 HL) but the crash has put this at risk. Price sits at 26.2% of D1 dealing range (28596.3-30776.3) \u2014 deep discount territory. H4 context shows extreme discount at 23.1% with a bullish OB at the crash low (28747-29470). Recovery from Friday close: +351.4pts (+1.22%). 6 unmitigated bearish FVGs overhead create heavy resistance from 29261 to 30670. Key test: can price reclaim D1 25% (29141.3) and build toward 50% (29686.3)? If 28747 breaks \u2192 structure flips bearish (LL below 28596). Kill Zone inactive \u2014 waiting for NY AM session (08:30-11:00) for entry signals. ORB Score: 16/100 (low \u2014 no KZ, low volume). ICT Profile: Monday Range Formation \u2014 awaiting Tuesday direction. Confidence: 45/100 (conflicting signals: macro bullish vs micro bearish displacement)."
+}
