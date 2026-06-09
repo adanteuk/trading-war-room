@@ -1,0 +1,36 @@
+{
+  "date": "2026-06-09",
+  "timestamp": "2026-06-09T11:15:00Z",
+  "summary": "NAS100 experienced a sharp -6.5% correction from ATH 30,808 (Jun 3) to SSL sweep low 28,822 today, driven by tech selloff, Iran war jitters, and rising yields. Deep SSL sweep with +632pt bounce suggests potential reversal, but short-term structure remains bearish (LH/LL, -DI > +DI). CPI report tomorrow (Jun 10) is a major risk event. Alfred MT5 offline — no H4/M15 OHLCV data available for full ICT pipeline. Recommendation: WAIT/NO_GO due to missing data layers and pre-CPI uncertainty.",
+  "bias": "Neutral",
+  "confidence": 35,
+  "key_levels": {
+    "support": [
+      "28,822 (Today SSL sweep low — major demand)",
+      "29,000-29,073 (Unmitigated bullish FVG zone from May)",
+      "28,750 (May 20 swing low / SSL cluster)",
+      "27,835 (50-day MA — macro support)",
+      "27,498 (200-day MA — last line of defense)"
+    ],
+    "resistance": [
+      "29,573 (62% FIB of 28,822-30,808 dealing range)",
+      "29,768 (20-day MA — must reclaim for bullish flip)",
+      "29,815 (50% FIB equilibrium)",
+      "30,000 (Psychological — broken down, now resistance)",
+      "30,808 (ATH / major BSL pool)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "SHORT-TERM BEARISH / MACRO BULLISH. D1 structure shows LH/LL from ATH 30,808 → 28,822. ADX(14)=32.7, -DI(25.1) > +DI(19.0) = bearish direction. Price below 5-day MA (29,852) and 20-day MA (29,768). BUT: massive SSL sweep at 28,822 swept 30,000, MA200 (29,841), May 28 low (29,763) — took out all short-term SSL. Bounce +632pts from sweep low. Price now in DISCOUNT (below 50% FIB of 28,822→30,808 range). Per ICT rules: SSL sweep + bullish reaction + discount = potential bullish reversal. However, CPI tomorrow creates extreme uncertainty. Bias: NEUTRAL (conflicting signals).",
+    "h4_context": "UNABLE TO ANALYZE — Alfred MT5 offline, no H4 OHLCV data. Provisional assessment from web data: Dealing range 28,822-30,808 (1,986pts). Price at ~29,454 = 32.8% of range (deep discount). Key discount FVG zone at 29,000-29,073 (from May rally). Bearish OB zone at 30,600-30,800 (ATH distribution). Without H4 bars, cannot confirm CRT framing, specific FVG mitigation status, or SMT divergence. Confidence reduced -15pts for missing data.",
+    "m15_status": "NO VALID ENTRY — Alfred MT5 offline, no M15 OHLCV data. Cannot confirm: (1) Order Block formation, (2) Kill Zone timing, (3) CRT purge, (4) Entry confirmation. Layer 3 is COMPLETELY BLIND. Per pipeline rules: if any layer fails → NO TRADE. Additionally, CPI report at 08:30 ET tomorrow is a HIGH IMPACT event that invalidates any setup today."
+  },
+  "risks": [
+    {"event": "CPI Report (May) — HIGH IMPACT", "time": "08:30 ET (Wed Jun 10)", "impact": "high"},
+    {"event": "Iran war escalation / oil price shock", "time": "Ongoing", "impact": "high"},
+    {"event": "Tech sector continued de-rating (AI spending skepticism)", "time": "Ongoing", "impact": "medium"},
+    {"event": "Bond yield spike (rate hike repricing)", "time": "Ongoing", "impact": "medium"},
+    {"event": "Alfred MT5 offline — no live data for H4/M15 analysis", "time": "Current", "impact": "high"}
+  ],
+  "recommendation": "NO_GO — Three compounding reasons: (1) Alfred MT5 offline — cannot complete Layer 2 (H4) or Layer 3 (M15) of ICT pipeline, making any entry blind. (2) CPI report tomorrow (Jun 10, 08:30 ET) is the highest-impact event this week — positioning before CPI is gambling, not trading. (3) Short-term structure is bearish (LH/LL, -DI > +DI) despite the SSL sweep bounce. The SSL sweep at 28,822 is noteworthy and could mark a reversal low, but confirmation requires: (a) price reclaiming 29,768 (20-day MA), (b) H4 bullish MSS with displacement, (c) M15 OB in Kill Zone. None of these can be verified without live MT5 data. STAND ASIDE until CPI passes and Alfred is back online."
+}

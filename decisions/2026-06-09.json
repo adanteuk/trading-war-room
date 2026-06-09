@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-09",
+  "timestamp": "2026-06-09T11:07:20.242585+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bullish",
+  "alfred_risk_status": "WAIT",
+  "merlin_thesis": "NAS100 experienced a sharp -6.5% correction from ATH 30,808 (Jun 3) to SSL sweep low 28,822 today, driven by tech selloff, Iran war jitters, and rising yields. Deep SSL sweep with +632pt bounce suggests potential reversal, but short-term structure remains bearish (LH/LL, -DI > +DI). CPI report tomorrow (Jun 10) is a major risk event. Alfred MT5 offline \u2014 no H4/M15 OHLCV data available for full ICT pipeline. Recommendation: WAIT/NO_GO due to missing data layers and pre-CPI uncertainty.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "Mixed signals \u2014 standing aside",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
