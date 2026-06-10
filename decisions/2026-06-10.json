@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-10",
+  "timestamp": "2026-06-10T11:05:36.200807+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "WAIT",
+  "merlin_thesis": "NAS100 dropped -671pts overnight to 28,977 ahead of CPI report at 08:30 ET. Short-term structure is bearish (-DI 26.7 >> +DI 15.6, ADX 33, price below 5/20-day MAs). Deep discount territory (7.8% of 28,822-30,808 range) with support cluster at 28,822-28,854 (Jun 9/10 lows). Alfred MT5 still offline \u2014 no H4/M15 data. CPI is the dominant catalyst: hot print = further downside to 28,500/27,900; soft print = sharp relief rally toward 29,400-29,700. Recommendation: NO_GO \u2014 do not position before CPI.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "Mixed signals \u2014 standing aside",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
