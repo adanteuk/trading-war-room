@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-06-10T10:36:21.240169+00:00",
+  "bias": "bearish",
+  "confidence": 62,
+  "orb_score": 58,
+  "ict_profile": "Classic Tuesday High \u2192 Wednesday Bearish Continuation",
+  "entry": "TBD \u2014 waiting for M15 confirmation in Kill Zone",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "28665",
+      "28206",
+      "28747",
+      "28596"
+    ],
+    "resistance": [
+      "28990",
+      "29172",
+      "29600",
+      "29823",
+      "30448"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 BEARISH. Price at 28,780.5 (13.1% of D1 dealing range \u2014 deep discount). Consecutive lower highs since Jun 3 ATH (30776\u219229822.8\u219229147.9). Jun 5 crash (-1551.9pts) created massive bearish displacement. Recovery attempts weak \u2014 Jun 8/9 failed to hold gains. Today's candle bearish (O=29057.6, C=28780.5). No bullish displacement yet.",
+    "l2_h4_context": "H4 BEARISH. Dealing range: 29822.8\u219228206.1 (1616.7pts). Price at 35.2% of H4 range. Unmitigated bearish FVG at 29172-29599 overhead. Bearish OB at 29612-29673. Breaker Block at 29700-29823. All major PD arrays above current price \u2014 any retracement faces heavy resistance.",
+    "l3_m15_entry": "M15 NEUTRAL/BEARISH. Price consolidating near session low (28664.6) after crash from 29822.8. Compression detected (avg M15 range ~95pts). No bullish displacement yet. No Kill Zone active \u2014 next is NY AM at 08:30. Watch for M15 MSS + OB entry during KZ."
+  },
+  "reasoning": "D1 bearish structure with consecutive LH since ATH. H4 shows massive unmitigated bearish FVG overhead (29172-29599). M15 compressing near lows \u2014 expansion imminent but direction uncertain. No SMT divergence (symmetric SSL sweep). Wednesday profile suggests potential low formation during NY session. Confidence limited by deep discount (snap-back risk) and no confirmed entry pattern yet. Waiting for KZ + M15 confirmation before committing to entry."
+}
