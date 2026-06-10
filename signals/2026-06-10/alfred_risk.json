@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-06-10T18:30:37.421731+08:00",
+  "go_no_go": "WAIT",
+  "veto": false,
+  "veto_reason": "",
+  "accounts": {
+    "FTMO (My manual)": {
+      "balance": 97924.8,
+      "equity": 97930.43,
+      "dd_pct": -0.01,
+      "daily_pl": 5.63,
+      "open_positions": 1,
+      "margin_used_pct": 0.2,
+      "status": "ok"
+    }
+  },
+  "factors": [
+    "\u2705 DD -0.0% \u2014 within limits",
+    "\u2705 Daily DD 0.0% \u2014 within limits",
+    "\u2705 0 consecutive losses \u2014 OK",
+    "\u2705 1 open positions \u2014 OK",
+    "\u2705 Margin usage 0.2% \u2014 within limits"
+  ],
+  "recommended_lot_size": 1.0,
+  "max_daily_loss_pct": 2.0,
+  "consecutive_losses": 0,
+  "notes": " | Waiting for Walker TA before final GO"
+}
