@@ -1,0 +1,35 @@
+{
+  "date": "2026-06-11",
+  "timestamp": "2026-06-11T11:00:00Z",
+  "summary": "NAS100 at 29,027 after -6% correction from ATH 30,808. D1 bearish: -DI(25.4) >> +DI(13.9), ADX 33, below 5/20-day MAs. Price in discount (31.6% of 28,206-30,808 range). Stochastics near oversold (25.8%). Alfred MT5 offline — no H4/M15 data. Bearish structure but deep discount limits downside. NO_GO — Layer 3 blind.",
+  "bias": "Bearish",
+  "confidence": 50,
+  "key_levels": {
+    "support": [
+      "28,857 (Fib 25%)",
+      "28,335 (today's session low)",
+      "28,206 (Jun 5 swing low)",
+      "28,010 (50-day MA)"
+    ],
+    "resistance": [
+      "29,073 (broken bullish FVG — now resistance)",
+      "29,172-29,599 (unmitigated bearish FVG)",
+      "29,507 (Fib 50% / equilibrium)",
+      "29,681 (20-day MA)",
+      "30,808 (ATH)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH short-term / MACRO BULLISH. ADX(14)=33, -DI(25.4) >> +DI(13.9) = confirmed downtrend. Price below 5-day MA (29,009) and 20-day MA (29,681). From ATH 30,808 dropped -5.7%. RSI(14)=47 neutral. Stoch(14)=25.8% near oversold. Price at 31.6% of dealing range = DISCOUNT. Above 50-day MA (28,010) and 200-day MA (26,055) = macro bullish intact.",
+    "h4_context": "PROVISIONAL — Alfred MT5 offline. Bearish FVG at 29,172-29,599 overhead (from Walker Jun 10). Bearish OB at 29,612-29,673. BB at 29,700-29,823. All PD arrays above price = heavy resistance on any rally. Dealing range 28,206-30,808. Price in discount but corrective structure intact. Broken bullish FVG at 29,000-29,073 now inverted resistance.",
+    "m15_status": "NO VALID ENTRY — Alfred MT5 offline, no M15 OHLCV. Cannot confirm OB formation, Kill Zone timing, or CRT purge. Layer 3 completely blind. Per pipeline rules: if any layer fails = NO TRADE. Confidence reduced -15pts for missing data."
+  },
+  "risks": [
+    {"event": "Post-CPI volatility / Fed rate hike speculation", "time": "Ongoing", "impact": "high"},
+    {"event": "Alfred MT5 offline — no live H4/M15 data", "time": "Current", "impact": "high"},
+    {"event": "Tech/AI sector rotation (Broadcom miss fallout)", "time": "Ongoing", "impact": "medium"},
+    {"event": "Bond yield spike (10Y repricing)", "time": "Ongoing", "impact": "high"},
+    {"event": "Oversold bounce / short squeeze from discount", "time": "If stoch crosses up", "impact": "medium"}
+  ],
+  "recommendation": "NO_GO — Three reasons: (1) Alfred MT5 offline = Layer 2/3 blind, cannot complete ICT pipeline. (2) D1 bearish structure confirmed (-DI >> +DI, below MAs) but price in deep discount with stochastics near oversold = poor R:R for shorts. (3) Post-CPI volatility + Fed rate hike speculation creating unstable macro backdrop. Wait for: Alfred MT5 restoration, H4/M15 confirmation, and either (a) rally into 29,172-29,599 bearish FVG for short entry, or (b) hold 28,206 + reclaim 29,073 for bullish reversal."
+}
