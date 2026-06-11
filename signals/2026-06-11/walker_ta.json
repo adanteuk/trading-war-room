@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-06-11T10:36:18.005961+00:00",
+  "bias": "bearish",
+  "confidence": 55,
+  "orb_score": 47,
+  "ict_profile": "Thursday Reversal (potential)",
+  "entry": "TBD \u2014 waiting for confirmation",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "28248.6",
+      "28206.1",
+      "28390.6"
+    ],
+    "resistance": [
+      "28917.2",
+      "29171.9",
+      "29228.6",
+      "29598.7",
+      "30776.0"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "Bearish trend from ATH 30,776. Price at 28,881.6 (25.9% of D1 range). Discount zone. Consecutive LH/LL since Jun 3. Jun 11 recovery from 28,248.6 low \u2014 potential Thursday reversal forming.",
+    "l2_h4_context": "H4 dealing range 28,206.1\u219229,228.6. Bearish FVG at 29,172-29,599 (unfilled). Price at 66.1% of H4 range. Recovery approaching equilibrium but major resistance overhead.",
+    "l3_m15_entry": "M15 showing gradual recovery with compression (avg range 31.6pts). No decisive displacement yet. Waiting for OB formation + Kill Zone timing."
+  },
+  "reasoning": "D1 bearish trend but discount zone + Thursday reversal potential. No SMT divergence. Bearish H4 FVG overhead. M15 compression suggests expansion imminent. Wait for confirmation before entry."
+}
