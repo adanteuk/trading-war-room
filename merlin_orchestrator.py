@@ -4,8 +4,16 @@ Merlin Orchestrator — Research-Driven Multi-Agent Trading Coordinator
 Merlin (Mac) orchestrates the daily debate between Walker (Technical Analyst)
 and Alfred (Risk Manager). Makes the final go/no-go decision.
 
-CRITICAL: Alfred retains HARD VETO power on risk grounds.
-If Alfred posts a veto, the trade is automatically NO-GO.
+DECISION TIERS (v2):
+- GO:             conf ≥ 65 AND ORB ≥ 55 AND no Alfred veto → full position
+- CONDITIONAL_GO: conf ≥ 55 AND ORB ≥ 50 AND no Alfred veto → reduced position
+- NO_GO:          everything else
+
+Alfred HARD VETO (only veto=true blocks, WAIT just reduces size):
+- Alfred GO   → lot_multiplier = 1.0 (full size)
+- Alfred WAIT → lot_multiplier = 0.5 (50% size)
+- Alfred NO_GO → lot_multiplier = 0.25 (25% size)
+- Alfred VETO → automatic NO_GO regardless of TA
 
 Run daily at 7:00 PM HKT on trading days from the Mac.
 """
@@ -102,13 +110,13 @@ def calculate_final_decision(walker_data: dict, alfred_data: dict) -> dict:
     """
     Merlin synthesizes TA + Risk into a final decision.
 
-    The orchestrator (Merlin) weighs:
-    1. Walker's TA confidence and ORB score
-    2. Alfred's risk limits and account status
-    3. Merlin's own research context (already known to self)
-    4. Any veto from Alfred
+    Decision tiers (v2 — relaxed from impossible thresholds):
+    - GO:             conf ≥ 65 AND ORB ≥ 55 AND no Alfred veto
+    - CONDITIONAL_GO: conf ≥ 55 AND ORB ≥ 50 AND no Alfred veto (reduced size)
+    - NO_GO:          everything else
 
-    Alfred has HARD VETO — if his risk assessment says NO, it's NO.
+    Alfred HARD VETO overrides everything.
+    Alfred WAIT no longer blocks — it only reduces position size.
     """
     decision = {
         "date": datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d"),
@@ -116,7 +124,7 @@ def calculate_final_decision(walker_data: dict, alfred_data: dict) -> dict:
         "orchestrator": "Merlin",
         "walker_position": "NO_INPUT",
         "alfred_risk_status": "NO_INPUT",
-        "merlin_thesis": "",  # Merlin fills this from own research
+        "merlin_thesis": "",
         "final_decision": "NO_GO",
         "trade_params": {},
         "reasoning": "",
@@ -124,7 +132,7 @@ def calculate_final_decision(walker_data: dict, alfred_data: dict) -> dict:
         "veto_reason": "",
     }
 
-    # Check for Alfred veto
+    # ── Alfred HARD VETO check (only this blocks, not WAIT) ──
     if alfred_data:
         decision["alfred_risk_status"] = alfred_data.get("go_no_go", "UNKNOWN")
         if alfred_data.get("veto", False):
@@ -134,34 +142,42 @@ def calculate_final_decision(walker_data: dict, alfred_data: dict) -> dict:
             decision["reasoning"] = f"Alfred vetoed: {decision['veto_reason']}"
             return decision
 
-    # No veto — Merlin makes the call
+    # ── Merlin makes the call ──
     if walker_data:
         decision["walker_position"] = walker_data.get("bias", "unknown")
 
-        # If both TA and risk say GO, Merlin confirms
         walker_confidence = walker_data.get("confidence", 50)
         walker_orb = walker_data.get("orb_score", 50)
-        alfred_risk = alfred_data.get("go_no_go", "NO_GO") if alfred_data else "NO_GO"
+        alfred_risk = alfred_data.get("go_no_go", "WAIT") if alfred_data else "WAIT"
 
-        # Decision matrix
-        if walker_confidence >= 70 and walker_orb >= 60 and alfred_risk == "GO":
+        # Determine tier and lot multiplier
+        # Alfred GO = full size, WAIT = 50% size, NO_GO = 25% size
+        if alfred_risk == "GO":
+            lot_multiplier = 1.0
+            alfred_note = "Alfred: full size approved"
+        elif alfred_risk == "WAIT":
+            lot_multiplier = 0.5
+            alfred_note = "Alfred: WAIT — reduced to 50% size"
+        else:
+            lot_multiplier = 0.25
+            alfred_note = "Alfred: NO_GO — minimum 25% size"
+
+        # ── Tier 1: GO (high conviction) ──
+        if walker_confidence >= 65 and walker_orb >= 55:
             decision["final_decision"] = "GO"
             bias = walker_data.get("bias", "neutral")
             direction = "LONG" if bias == "bullish" else "SHORT" if bias == "bearish" else "NONE"
 
-            # Merlin adjusts parameters based on research context
             entry = walker_data.get("entry", "TBD")
             sl = walker_data.get("sl", "TBD")
             tp = walker_data.get("tp", "TBD")
 
-            # Check if Merlin's research suggests wider SL (event risk)
-            sl_adjustment = "Standard"
-            lot_multiplier = 1.0
-
-            if alfred_data:
-                lot_size = alfred_data.get("recommended_lot_size", "TBD")
+            base_lot = alfred_data.get("recommended_lot_size", "TBD") if alfred_data else "TBD"
+            # Apply multiplier to lot size
+            if isinstance(base_lot, (int, float)):
+                adjusted_lot = round(base_lot * lot_multiplier, 2)
             else:
-                lot_size = "TBD"
+                adjusted_lot = f"{base_lot} x {lot_multiplier}"
 
             decision["trade_params"] = {
                 "direction": direction,
@@ -169,30 +185,70 @@ def calculate_final_decision(walker_data: dict, alfred_data: dict) -> dict:
                 "entry": entry,
                 "stop_loss": sl,
                 "take_profit": tp,
-                "sl_adjustment": sl_adjustment,
-                "lot_size": lot_size,
+                "tier": "GO",
+                "lot_size": adjusted_lot,
+                "lot_multiplier": lot_multiplier,
                 "risk_pct": alfred_data.get("max_daily_loss_pct", 2.0) if alfred_data else 2.0,
                 "session_window": "09:30-11:00 ET",
                 "close_before": "13:30 ET (pre-news)",
             }
 
             decision["reasoning"] = (
-                f"TA: {walker_data.get('reasoning', 'N/A')}\n"
+                f"TA: conf={walker_confidence}, ORB={walker_orb} → HIGH CONVICTION\n"
+                f"{alfred_note}\n"
                 f"Risk: {'; '.join(alfred_data.get('factors', [])) if alfred_data else 'N/A'}\n"
                 f"Merlin: {decision['merlin_thesis']}"
             )
 
-        elif walker_confidence < 40 or walker_orb < 40:
-            decision["final_decision"] = "NO_GO"
-            decision["reasoning"] = f"TA confidence too low (conf={walker_confidence}, orb={walker_orb})"
+        # ── Tier 2: CONDITIONAL_GO (moderate conviction, reduced size) ──
+        elif walker_confidence >= 55 and walker_orb >= 50:
+            decision["final_decision"] = "CONDITIONAL_GO"
+            bias = walker_data.get("bias", "neutral")
+            direction = "LONG" if bias == "bullish" else "SHORT" if bias == "bearish" else "NONE"
 
-        elif alfred_risk == "NO_GO":
-            decision["final_decision"] = "NO_GO"
-            decision["reasoning"] = "Risk parameters not met per Alfred's assessment"
+            entry = walker_data.get("entry", "TBD")
+            sl = walker_data.get("sl", "TBD")
+            tp = walker_data.get("tp", "TBD")
 
+            base_lot = alfred_data.get("recommended_lot_size", "TBD") if alfred_data else "TBD"
+            if isinstance(base_lot, (int, float)):
+                adjusted_lot = round(base_lot * lot_multiplier, 2)
+            else:
+                adjusted_lot = f"{base_lot} x {lot_multiplier}"
+
+            decision["trade_params"] = {
+                "direction": direction,
+                "instrument": "NAS100",
+                "entry": entry,
+                "stop_loss": sl,
+                "take_profit": tp,
+                "tier": "CONDITIONAL_GO",
+                "lot_size": adjusted_lot,
+                "lot_multiplier": lot_multiplier,
+                "risk_pct": alfred_data.get("max_daily_loss_pct", 1.0) if alfred_data else 1.0,
+                "session_window": "09:30-11:00 ET",
+                "close_before": "13:30 ET (pre-news)",
+                "note": "Reduced conviction — half size, tighter risk",
+            }
+
+            decision["reasoning"] = (
+                f"TA: conf={walker_confidence}, ORB={walker_orb} → MODERATE CONVICTION\n"
+                f"{alfred_note}\n"
+                f"Risk: {'; '.join(alfred_data.get('factors', [])) if alfred_data else 'N/A'}\n"
+                f"Merlin: {decision['merlin_thesis']}"
+            )
+
+        # ── Tier 3: NO_GO (below all thresholds) ──
         else:
             decision["final_decision"] = "NO_GO"
-            decision["reasoning"] = "Mixed signals — standing aside"
+            if walker_confidence < 45 and walker_orb < 45:
+                decision["reasoning"] = f"TA confidence too low (conf={walker_confidence}, orb={walker_orb}) — both below 45"
+            elif walker_confidence < 55:
+                decision["reasoning"] = f"TA confidence below GO threshold (conf={walker_confidence} < 55, orb={walker_orb})"
+            elif walker_orb < 50:
+                decision["reasoning"] = f"ORB score below GO threshold (conf={walker_confidence}, orb={walker_orb} < 50)"
+            else:
+                decision["reasoning"] = f"Mixed signals — standing aside (conf={walker_confidence}, orb={walker_orb})"
     else:
         decision["reasoning"] = "No TA input received from Walker"
 
@@ -323,19 +379,21 @@ def run_debate_rounds(walker_data: dict, alfred_data: dict, decision: dict, merl
             debate_r2 += f"{a}\n\n"
 
         debate_r2 += f"**Scoring Gap Analysis**:\n"
-        debate_r2 += f"• Walker Confidence: {w_conf}/100 (needs ≥70 for GO)\n"
-        debate_r2 += f"• Walker ORB Score: {w_orb}/100 (needs ≥60 for GO)\n"
-        debate_r2 += f"• Alfred Risk: {a_go}\n\n"
+        debate_r2 += f"• Walker Confidence: {w_conf}/100 (GO ≥65 | CONDITIONAL ≥55)\n"
+        debate_r2 += f"• Walker ORB Score: {w_orb}/100 (GO ≥55 | CONDITIONAL ≥50)\n"
+        debate_r2 += f"• Alfred Risk: {a_go} (GO=full | WAIT=50% | VETO=block)\n\n"
 
-        # Specific advice
-        if w_conf < 70 and w_orb >= 60:
+        # Specific advice based on new thresholds
+        if w_conf >= 65 and w_orb >= 55:
+            debate_r2 += f"💡 **Advice**: All metrics met for GO. Execute with discipline. Target 3R, respect SL.\n"
+        elif w_conf >= 55 and w_orb >= 50:
+            debate_r2 += f"💡 **Advice**: CONDITIONAL GO — moderate conviction. Half size, tighter risk. Still tradeable.\n"
+        elif w_conf < 55 and w_orb >= 50:
             debate_r2 += f"💡 **Advice**: ORB structure is OK but confidence low. Check SMT divergence and Dealing Range confluence to boost confidence.\n"
-        elif w_conf >= 70 and w_orb < 60:
-            debate_r2 += f"💡 **Advice**: Confidence high but ORB quality low. Wait for clearer candle close and volume confirmation.\n"
-        elif w_conf < 70 and w_orb < 60:
-            debate_r2 += f"💡 **Advice**: Both metrics below threshold. **STAND ASIDE** — no trade today is better than a bad trade.\n"
+        elif w_conf >= 55 and w_orb < 50:
+            debate_r2 += f"💡 **Advice**: Confidence acceptable but ORB quality low. Wait for clearer candle close and volume confirmation.\n"
         else:
-            debate_r2 += f"💡 **Advice**: All metrics met. Execute with discipline. Target 3R, respect SL.\n"
+            debate_r2 += f"💡 **Advice**: Both metrics below threshold. **STAND ASIDE** — no trade today is better than a bad trade.\n"
 
         risks = merlin_data.get("risks", [])
         if risks:
@@ -351,7 +409,17 @@ def run_debate_rounds(walker_data: dict, alfred_data: dict, decision: dict, merl
 
     # ─── Message 6: Final Call ───
     final_msg = f"🎯 **FINAL CALL — {decision['date']}**\n\n"
-    final_msg += f"Decision: **{decision['final_decision']}**\n\n"
+    
+    fd = decision['final_decision']
+    if fd == "GO":
+        final_msg += f"Decision: **🟢 GO**\n\n"
+    elif fd == "CONDITIONAL_GO":
+        final_msg += f"Decision: **🟡 CONDITIONAL GO** (reduced size)\n\n"
+    elif "VETOED" in fd:
+        final_msg += f"Decision: **🔴 NO GO — VETOED**\n\n"
+    else:
+        final_msg += f"Decision: **🔴 NO GO**\n\n"
+    
     final_msg += f"### Reasoning\n{decision.get('reasoning', 'N/A')}\n"
 
     if decision.get("trade_params"):
