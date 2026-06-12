@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-06-12T10:36:47.293757+00:00",
+  "server_time_ny": "2026-06-12T06:30:33-04:00",
+  "server_time_hkt": "N/A",
+  "last_price": 29597.8,
+  "bias": "neutral",
+  "confidence": 35,
+  "orb_score": 53,
+  "ict_profile": "Classic Tuesday Low \u2192 Midweek Bullish Reversal",
+  "day_of_week": "Friday",
+  "structure": "EXPANDING (HH + LL) \u2014 transitional",
+  "dealing_range": {
+    "high": 30776.3,
+    "low": 28204.7,
+    "range": 2571.6,
+    "price_position_pct": 54.2,
+    "zone": "PREMIUM"
+  },
+  "fibonacci_levels": {
+    "0% (Low)": 28204.7,
+    "25%": 28847.6,
+    "50%": 29490.5,
+    "61.8%": 29793.9,
+    "70.5%": 30017.7,
+    "79%": 30236.3,
+    "100% (High)": 30776.3
+  },
+  "d1_candle": {
+    "date": "2026-06-11",
+    "open": 29432.7,
+    "high": 29652.2,
+    "low": 29246.2,
+    "close": 29597.8,
+    "body": 165.1,
+    "direction": "BULLISH",
+    "body_pct": 40.7,
+    "range": 406.0
+  },
+  "smt_divergence": {
+    "detected": true,
+    "bias": "BEARISH for NAS100"
+  },
+  "key_support": [
+    [
+      29500.5,
+      "H4 Bull FVG 2026-06-08"
+    ],
+    [
+      29490.5,
+      "Fib 50%"
+    ],
+    [
+      29232.0,
+      "H4 Bull FVG 2026-06-11"
+    ]
+  ],
+  "key_resistance": [
+    [
+      29705.4,
+      "Swing High 2026-05-13"
+    ],
+    [
+      29793.9,
+      "Fib 61.8%"
+    ],
+    [
+      30017.7,
+      "Fib 70.5%"
+    ]
+  ],
+  "h4_active_fvgs": [
+    {
+      "type": "BULLISH",
+      "top": 29543.2,
+      "bottom": 29457.8,
+      "date": "2026-06-08T20:59"
+    },
+    {
+      "type": "BEARISH",
+      "top": 29598.8,
+      "bottom": 29171.9,
+      "date": "2026-06-09T08:59"
+    }
+  ],
+  "kill_zone_active": false,
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure: EXPANDING (HH + LL) \u2014 transitional. Price at 54.2% of dealing range (Premium). Dealing range: 28204.7\u201330776.3 (2572pts). Last candle: BULLISH body 165pts (41% of range). SMT divergence detected: BEARISH for NAS100.",
+    "l2_h4_context": "H4: 131 FVGs detected, 7 near current price. 7 H4 FVG(s) near price. Active FVGs provide key entry levels.",
+    "l3_m15_entry": "M15: No Kill Zone \u2014 waiting for KZ. No M15 OB at price currently."
+  },
+  "reasoning": "D1 bias is neutral based on market structure (EXPANDING (HH + LL) \u2014 transitional). Price is in premium at 54.2% of dealing range (28204.7\u201330776.3, 2572pts). Last D1 candle: BULLISH body 165pts (41% of 406pts range).  SMT divergence detected: BEARISH for NAS100. 7 H4 FVG(s) near price. ORB score 53/100 reflects moderate confluence. No Kill Zone \u2014 waiting for optimal entry timing. ICT weekly profile: Classic Tuesday Low \u2192 Midweek Bullish Reversal."
+}
