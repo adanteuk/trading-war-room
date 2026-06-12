@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-12",
+  "timestamp": "2026-06-12T11:04:15.972174+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "neutral",
+  "alfred_risk_status": "WAIT",
+  "merlin_thesis": "NAS100 at 29557 after -8.3% correction from ATH 30776. Recovering but stalling at H4 bearish FVG resistance (29172-29599). D1 structure MIXED. H4 at 93% premium. No valid entry setup.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "TA confidence too low (conf=35, orb=53)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

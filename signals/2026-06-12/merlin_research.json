@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-12",
+  "timestamp": "2026-06-12T11:00:00Z",
+  "summary": "NAS100 at 29557 after -8.3% correction from ATH 30776. Recovering but stalling at H4 bearish FVG resistance (29172-29599). D1 structure MIXED. H4 at 93% premium. No valid entry setup.",
+  "bias": "Neutral",
+  "confidence": 40,
+  "key_levels": {
+    "support": [
+      "29432 (H4 bullish FVG low)",
+      "29300 (H4 bullish FVG mid)",
+      "29031 (H4 bullish FVG high)",
+      "28562 (H4 dealing range low)"
+    ],
+    "resistance": [
+      "29598 (H4 bearish FVG high)",
+      "29641 (M15 bearish OB high)",
+      "29799 (D1 62% FIB)",
+      "30017 (D1 70.5% FIB)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 MIXED/CONSOLIDATION. Price at 52.6% of DR (28205-30776). Jun 9 strong bear (-74%) reversed by Jun 10 strong bull (+77%). Structure not confirmed. Macro uptrend intact but short-term corrective.",
+    "h4_context": "H4 DR 28562-29630, price at 93.2% PREMIUM. Bearish FVG 29172-29598 acts as ceiling. Bullish FVG 29031-29433 as floor. Price sandwiched between FVGs. No CRT purge confirmed.",
+    "m15_status": "Bearish OB at 29588-29642 overhead. No Kill Zone active. Multiple bullish FVGs below but no entry confirmation. WAIT for price to resolve FVG sandwich."
+  },
+  "risks": [
+    {"event": "US CPI Data (if scheduled)", "time": "08:30 ET", "impact": "high"},
+    {"event": "Friday position squaring", "time": "15:00 ET", "impact": "medium"},
+    {"event": "Fed speakers", "time": "various", "impact": "medium"}
+  ],
+  "recommendation": "WAIT. Price trapped between H4 bearish FVG (29598) and bullish FVG (29432). No valid 3-layer setup. Watch for: (1) Break above 29600 with displacement = bullish, (2) Rejection + pullback to 29300 = short, (3) Hold at 29432 = long. No trade until resolution."
+}
