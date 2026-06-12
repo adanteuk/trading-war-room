@@ -4,9 +4,9 @@ Merlin Orchestrator — Research-Driven Multi-Agent Trading Coordinator
 Merlin (Mac) orchestrates the daily debate between Walker (Technical Analyst)
 and Alfred (Risk Manager). Makes the final go/no-go decision.
 
-DECISION TIERS (v2):
+DECISION TIERS (v2.1):
 - GO:             conf ≥ 65 AND ORB ≥ 55 AND no Alfred veto → full position
-- CONDITIONAL_GO: conf ≥ 55 AND ORB ≥ 50 AND no Alfred veto → reduced position
+- CONDITIONAL_GO: conf ≥ 60 AND ORB ≥ 55 AND no Alfred veto → reduced position
 - NO_GO:          everything else
 
 Alfred HARD VETO (only veto=true blocks, WAIT just reduces size):
@@ -201,7 +201,7 @@ def calculate_final_decision(walker_data: dict, alfred_data: dict) -> dict:
             )
 
         # ── Tier 2: CONDITIONAL_GO (moderate conviction, reduced size) ──
-        elif walker_confidence >= 55 and walker_orb >= 50:
+        elif walker_confidence >= 60 and walker_orb >= 55:
             decision["final_decision"] = "CONDITIONAL_GO"
             bias = walker_data.get("bias", "neutral")
             direction = "LONG" if bias == "bullish" else "SHORT" if bias == "bearish" else "NONE"
@@ -379,18 +379,18 @@ def run_debate_rounds(walker_data: dict, alfred_data: dict, decision: dict, merl
             debate_r2 += f"{a}\n\n"
 
         debate_r2 += f"**Scoring Gap Analysis**:\n"
-        debate_r2 += f"• Walker Confidence: {w_conf}/100 (GO ≥65 | CONDITIONAL ≥55)\n"
-        debate_r2 += f"• Walker ORB Score: {w_orb}/100 (GO ≥55 | CONDITIONAL ≥50)\n"
+        debate_r2 += f"• Walker Confidence: {w_conf}/100 (GO ≥65 | CONDITIONAL ≥60)\n"
+        debate_r2 += f"• Walker ORB Score: {w_orb}/100 (GO ≥55 | CONDITIONAL ≥55)\n"
         debate_r2 += f"• Alfred Risk: {a_go} (GO=full | WAIT=50% | VETO=block)\n\n"
 
         # Specific advice based on new thresholds
         if w_conf >= 65 and w_orb >= 55:
             debate_r2 += f"💡 **Advice**: All metrics met for GO. Execute with discipline. Target 3R, respect SL.\n"
-        elif w_conf >= 55 and w_orb >= 50:
+        elif w_conf >= 60 and w_orb >= 55:
             debate_r2 += f"💡 **Advice**: CONDITIONAL GO — moderate conviction. Half size, tighter risk. Still tradeable.\n"
-        elif w_conf < 55 and w_orb >= 50:
+        elif w_conf < 60 and w_orb >= 55:
             debate_r2 += f"💡 **Advice**: ORB structure is OK but confidence low. Check SMT divergence and Dealing Range confluence to boost confidence.\n"
-        elif w_conf >= 55 and w_orb < 50:
+        elif w_conf >= 60 and w_orb < 55:
             debate_r2 += f"💡 **Advice**: Confidence acceptable but ORB quality low. Wait for clearer candle close and volume confirmation.\n"
         else:
             debate_r2 += f"💡 **Advice**: Both metrics below threshold. **STAND ASIDE** — no trade today is better than a bad trade.\n"
