@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-15",
+  "timestamp": "2026-06-15T11:04:04.810575+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "cautiously_bullish",
+  "alfred_risk_status": "WAIT",
+  "merlin_thesis": "Bullish recovery from Jun 9 SSL sweep (28,204) but price now at 80% of D1 range in deep premium approaching ATH supply at 30,776. No KZ active. Wait for pullback to 29,794-30,018 or BSL sweep+rejection at 30,776.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "Mixed signals \u2014 standing aside (conf=55, orb=56)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

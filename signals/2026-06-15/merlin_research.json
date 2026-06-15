@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-15",
+  "timestamp": "2026-06-15T11:00:00+00:00",
+  "summary": "Bullish recovery from Jun 9 SSL sweep (28,204) but price now at 80% of D1 range in deep premium approaching ATH supply at 30,776. No KZ active. Wait for pullback to 29,794-30,018 or BSL sweep+rejection at 30,776.",
+  "bias": "Bullish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "30166-30182 (M15 bullish OB London)",
+      "30018 (70.5% Fib / H4 bullish FVG top)",
+      "29957 (today gap support / D1 79% Fib)",
+      "29794 (61.8% Fib retracement)",
+      "29655 (Friday close / gap fill target)",
+      "29491 (50% Fib equilibrium)",
+      "28205 (Jun 9 SSL sweep low)"
+    ],
+    "resistance": [
+      "30318 (today session high)",
+      "30776 (Jun 3 ATH / major BSL supply)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "Bullish recovery. SSL sweep at 28,204 (Jun 9) +7.2% displacement rally. D1 structure: 2x HH+HL. But at 80.2% of DR (28,205-30,776) = deep premium. ATH 30,776 is BSL target. Macro trend still bullish.",
+    "h4_context": "H4 DR stale (price at 255%). Bullish FVGs stacked below: 30,165-30,198, 29,744-29,957. Price in extreme premium. Bullish OB at 30,166-30,182. Bearish reaction at 30,318 high. SMT bullish (NAS held, US500 swept).",
+    "m15_status": "No KZ active (09:00 UTC). Bearish FVG 30,230-30,262. Consolidating after London rally. NY AM KZ (13:00-16:00 UTC) is key window. No valid entry setup yet — wait for KZ + OB formation."
+  },
+  "risks": [
+    {"event": "Price at 80% Fib — deep premium near ATH supply", "time": "Now", "impact": "high"},
+    {"event": "Monday gap fill risk to 29,655", "time": "Intraday", "impact": "medium"},
+    {"event": "Low H4 volume (0.36x avg) — weak conviction", "time": "Now", "impact": "medium"}
+  ],
+  "recommendation": "NO_GO. Bias is bullish but entry conditions not met: (1) price in deep premium at 80% of D1 range, (2) no Kill Zone active for M15 confirmation, (3) approaching major ATH supply at 30,776. Walker conf=55 below CONDITIONAL_GO threshold (60). Wait for pullback to 29,794-30,018 (61.8-70.5% Fib) for long entry, or BSL sweep+rejection at 30,776 for short. The trade was the recovery from 28,204 — that move is done."
+}
