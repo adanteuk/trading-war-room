@@ -39,14 +39,15 @@
     "current_position": "79.4% retracement — deep premium"
   },
   "three_layer_analysis": {
-    "l1_daily": "D1 structure: 3 consecutive HH+HL days (Jun 11-15). Strong recovery from Jun 9 low (+2,043pts, +7.2%). Monday gap up +327pts from Friday close. Price at 79.4% Fib retracement of crash — deep premium approaching pre-crash ATH supply (30,776). Bullish momentum but extended.",
+    "l1_daily": "D1 structure: 2 consecutive HH+HL days (Fri Jun 12 + Mon Jun 15). Strong recovery from Jun 9 low (+2,043pts, +7.2%). Monday gap up +327pts from Friday close. Price at 79.4% Fib retracement of crash — deep premium approaching pre-crash ATH supply (30,776). Bullish momentum but extended.",
     "l2_h4": "H4: 3 of 4 candles bullish today. Strong displacement from gap open (29,982) to session high (30,318). Bullish FVG at 29,744-29,957 (today's gap) — price holding above. Bearish FVG at 30,214-30,365 from crash session — partially filled. H4 dealing range same as D1 (28,205-30,318). Price at 96.6% of range = extreme premium.",
     "l3_m15": "M15: Rally from 29,982 to 30,318 during London session, now consolidating/pulling back to 30,242. Bullish OB at 30,166-30,182 (London session). Bearish reaction at 30,318 high (4 consecutive bearish M15 candles from 30,302 high to 30,212 low before bounce). Kill Zone: London closed, NY AM KZ (08:30-11:00 NY) upcoming — key window for continuation or reversal."
   },
   "smt_divergence": {
     "detected": true,
     "direction": "bullish_for_nas100",
-    "details": "NAS100 HL (28,204.7→28,248.7) + US500 LL (7,243.1→7,229.3) at swing lows. NAS100 held its low while US500 swept — NAS100 is the stronger index."
+    "details": "NAS100 HL (28,204.7→28,248.7) + US500 LL (7,243.1→7,229.3) at swing lows. NAS100 held its low while US500 swept — NAS100 is the stronger index.",
+    "caveat": "CFD-specific: ^GSPC cash index shows HL (7,237.85→7,257.33) for same period, NOT LL. The SMT divergence exists in CFD data but is not confirmed in cash market. May reflect CFD overnight liquidity sweep not captured in cash index."
   },
   "weekly_profile": {
     "last_week": "Classic Wednesday Reversal — bearish Mon-Tue, massive bullish reversal Wed (+977.9), continuation Thu-Fri",
