@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-06-15T10:34:00+00:00",
+  "symbol": "NAS100",
+  "data_source": "Alfred MT5 (Pepperstone CFD)",
+  "bias": "cautiously_bullish",
+  "confidence": 55,
+  "orb_score": 56,
+  "ict_profile": "Monday Gap-Up → Power of 3 Setup (potential accumulation)",
+  "entry": "TBD — waiting for pullback to 61.8-70.5% retracement (29,794-30,018) or NY AM KZ confirmation",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "30018 (70.5% Fib retracement)",
+      "29957 (today's low / gap support)",
+      "29794 (61.8% Fib retracement)",
+      "29655 (Friday close / gap fill target)",
+      "29491 (50% Fib retracement)",
+      "28205 (Jun 9 swing low — crash expansion low)"
+    ],
+    "resistance": [
+      "30318 (today's high)",
+      "30776 (Jun 3 pre-crash ATH — 100% Fib / major supply)"
+    ]
+  },
+  "fibonacci_retracement": {
+    "range": "30776.3 (Jun 3 ATH) → 28204.7 (Jun 9 low)",
+    "range_size": 2571.6,
+    "levels": {
+      "0%": 28204.7,
+      "25%": 28847.6,
+      "38.2%": 29187.1,
+      "50%": 29490.5,
+      "61.8%": 29793.9,
+      "70.5%": 30017.7,
+      "79%": 30236.3,
+      "100%": 30776.3
+    },
+    "current_position": "79.4% retracement — deep premium"
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure: 3 consecutive HH+HL days (Jun 11-15). Strong recovery from Jun 9 low (+2,043pts, +7.2%). Monday gap up +327pts from Friday close. Price at 79.4% Fib retracement of crash — deep premium approaching pre-crash ATH supply (30,776). Bullish momentum but extended.",
+    "l2_h4": "H4: 3 of 4 candles bullish today. Strong displacement from gap open (29,982) to session high (30,318). Bullish FVG at 29,744-29,957 (today's gap) — price holding above. Bearish FVG at 30,214-30,365 from crash session — partially filled. H4 dealing range same as D1 (28,205-30,318). Price at 96.6% of range = extreme premium.",
+    "l3_m15": "M15: Rally from 29,982 to 30,318 during London session, now consolidating/pulling back to 30,242. Bullish OB at 30,166-30,182 (London session). Bearish reaction at 30,318 high (4 consecutive bearish M15 candles from 30,302 high to 30,212 low before bounce). Kill Zone: London closed, NY AM KZ (08:30-11:00 NY) upcoming — key window for continuation or reversal."
+  },
+  "smt_divergence": {
+    "detected": true,
+    "direction": "bullish_for_nas100",
+    "details": "NAS100 HL (28,204.7→28,248.7) + US500 LL (7,243.1→7,229.3) at swing lows. NAS100 held its low while US500 swept — NAS100 is the stronger index."
+  },
+  "weekly_profile": {
+    "last_week": "Classic Wednesday Reversal — bearish Mon-Tue, massive bullish reversal Wed (+977.9), continuation Thu-Fri",
+    "this_week": "Monday gap up +327pts. If Monday establishes weekly low → continuation bullish. If Monday establishes weekly high → Tuesday/Wednesday reversal bearish. Watch for Power of 3 pattern (Accumulation Mon → Manipulation Tue → Distribution Wed-Thu)."
+  },
+  "reasoning": "NAS100 shows strong bullish momentum with 3 consecutive HH+HL D1 candles, Monday gap up +327pts, and bullish SMT divergence at swing lows (NAS100 held while US500 swept). However, price is at 79.4% Fib retracement of the crash — deep premium territory approaching the pre-crash ATH at 30,776 (major supply). The risk/reward for new longs at current levels is poor. Preferred strategy: wait for pullback to 61.8-70.5% retracement zone (29,794-30,018) for better entry, or wait for NY AM Kill Zone (08:30-11:00 NY) to confirm direction. If price breaks above 30,318 (today's high) with volume → continuation to 30,776 ATH test. If price rejects and breaks below 30,018 (70.5% Fib) → potential double-top/reversal setup targeting gap fill at 29,655.",
+  "risk_factors": [
+    "Price at 79.4% retracement — deep premium, limited upside before major supply",
+    "Pre-crash ATH 30,776 is major resistance — smart money may distribute here",
+    "No NY AM Kill Zone confirmation yet (08:30-11:00 NY pending)",
+    "Low H4 volume (0.36x average) — rally lacks conviction",
+    "Monday gap could reverse (gap fill to 29,655 is common)"
+  ],
+  "scenarios": {
+    "bullish": "Break above 30,318 → target 30,465 (Jun 4 close supply), then 30,776 ATH. Entry on retest of 30,200-30,250 with SL below 30,018.",
+    "bearish": "Rejection at 30,318 → target gap fill 29,655, then 29,491 (50% Fib). Entry on M15 bearish displacement below 30,166 OB with SL above 30,318.",
+    "neutral": "Consolidation 30,018-30,318 until NY AM KZ provides directional catalyst."
+  }
+}

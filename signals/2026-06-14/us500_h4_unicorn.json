@@ -1,0 +1,80 @@
+{
+  "symbol": "US500",
+  "timeframe": "H4",
+  "current_price": 7423.9,
+  "bars_analyzed": 200,
+  "date_range": "2026-04-28 to 2026-06-12",
+  "order_blocks": {
+    "bullish": 10,
+    "bearish": 6,
+    "total": 16
+  },
+  "fvgs": {
+    "bullish": 33,
+    "bearish": 17,
+    "total": 50
+  },
+  "unicorn_setups": {
+    "bullish": [
+      {
+        "zone_high": 7431.3,
+        "zone_low": 7431.3,
+        "zone_mid": 7431.3,
+        "distance_pct": -0.1,
+        "active": false
+      },
+      {
+        "zone_high": 7414.5,
+        "zone_low": 7414.5,
+        "zone_mid": 7414.5,
+        "distance_pct": 0.13,
+        "active": true
+      },
+      {
+        "zone_high": 7416.7,
+        "zone_low": 7409.8,
+        "zone_mid": 7413.2,
+        "distance_pct": 0.14,
+        "active": true
+      },
+      {
+        "zone_high": 7411.7,
+        "zone_low": 7401.5,
+        "zone_mid": 7406.6,
+        "distance_pct": 0.23,
+        "active": true
+      },
+      {
+        "zone_high": 7401.8,
+        "zone_low": 7401.8,
+        "zone_mid": 7401.8,
+        "distance_pct": 0.3,
+        "active": true
+      }
+    ],
+    "bearish": [
+      {
+        "zone_high": 7431.7,
+        "zone_low": 7431.7,
+        "zone_mid": 7431.7,
+        "distance_pct": -0.1,
+        "active": true
+      },
+      {
+        "zone_high": 7369.9,
+        "zone_low": 7369.9,
+        "zone_mid": 7369.9,
+        "distance_pct": 0.73,
+        "active": false
+      },
+      {
+        "zone_high": 7591.0,
+        "zone_low": 7591.0,
+        "zone_mid": 7591.0,
+        "distance_pct": -2.2,
+        "active": true
+      }
+    ],
+    "total": 14
+  }
+}
