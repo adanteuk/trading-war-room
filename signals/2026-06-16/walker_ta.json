@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-06-16T10:33:00+00:00",
+  "bias": "bullish",
+  "confidence": 50,
+  "orb_score": 51,
+  "ict_profile": "Midweek Continuation (bullish) / Classic Tuesday High (if reversal)",
+  "entry": "TBD — waiting for NY AM Kill Zone (08:30-11:00 NY)",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "30449 (H4 swing low / session low)",
+      "30198 (H4 FVG top — Jun 15)",
+      "29794 (D1 61.8% Fib)",
+      "29491 (D1 50% Fib / equilibrium)",
+      "28205 (D1 swing low — Jun 9)"
+    ],
+    "resistance": [
+      "30595 (Mon Jun 15 high)",
+      "30776 (D1 swing high — Jun 2, major resistance)",
+      "30800 (psychological round number)"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure mixed (HH+LL overall) but last 2 sessions (Fri Jun 12 + Mon Jun 15) both HH+HL BULL — bullish momentum building. Dealing range: 28204.7 (Jun 9 low) → 30776.3 (Jun 2 high) = 2,571.6 pts. Price at 30581.3 = 92.4% of range (deep PREMIUM). Only 195 pts from D1 swing high. Recovery from Jun 9 low: +2,376.6 pts (+8.4%) in 4 sessions. SMT: NO divergence — both NAS100 and US500 made LL at Jun 8-10 lows.",
+    "l2_h4_context": "H4 structure HH+HL (bullish). Recent H4 dealing range: 30449.1 → 30605.2 (156.1 pts, tight consolidation). Price at 84.7% of H4 range (premium). Nearest H4 FVG: 30549-30557 (7.3 pts, 28pts below price — already filled). Next H4 FVG below: 30312-30507 (194 pts, 172pts below). H4 SMT: NO divergence — both indices made HL. Strong bullish momentum with 3 consecutive bullish H4 candles (Mon session through Tue early).",
+    "l3_m15_entry": "M15 structure HH+HL (bullish). Multiple M15 FVGs clustered near price (30535-30608 zone). London session produced a sweep low at 30449 then rallied to 30638 — classic Judas swing / liquidity grab. Current consolidation at 30600 area. NO Kill Zone active (06:30 NY, between London close and NY AM open). Entry model: WAIT for NY AM KZ (08:30-11:00 NY) for potential pullback to M15 FVG at 30535-30565 or H4 FVG at 30312-30507 for long entry targeting 30776+."
+  },
+  "reasoning": "NAS100 in strong recovery mode after the Jun 5 crash (-1,552pts). Four consecutive sessions of bullish momentum (Fri +221.8, Mon +599.6 with +327 gap up). Price now at 92.4% of D1 dealing range — deep premium approaching the Jun 2 swing high (30776.3). The critical question: will 30776 break for a new ATH, or will premium rejection form a Classic Tuesday High? H4 and M15 structure both bullish (HH+HL). London session already swept sell-side liquidity at 30449 before rallying — smart money positioned long. No SMT divergence detected — both NAS100 and US500 confirmed the LL at the crash lows. ICT Weekly Profile: After bullish Friday + strongly bullish Monday, Tuesday typically forms the weekly high (Classic Tuesday High) OR continues the midweek trend. Given the +599pt Monday candle and gap up, continuation is plausible BUT the deep premium zone (92.4%) and proximity to major resistance (195pts from 30776) warrant caution. Confidence reduced to 50/100 — the structure is bullish but we're at a decision point. ORB Score 51/100 reflects moderate confluence: bullish structure (+structure) offset by deep premium, no KZ active, and no SMT confirmation. Key risk: if 30776 rejects, expect a retracement to D1 61.8% (29794) or 50% (29491). Key opportunity: clean break above 30776 with volume = new bullish leg targeting 31000+.",
+  "data_notes": {
+    "cfd_date_mapping": "Pepperstone CFD bars timestamped at 22:00 UTC = next trading day. Bar labeled '2026-06-14' = Mon Jun 15 session. Bar labeled '2026-06-11' = Fri Jun 12 session.",
+    "last_price": 30581.3,
+    "server_time_ny": "2026-06-16T06:30:51-04:00",
+    "d1_range_high": 30776.3,
+    "d1_range_high_date": "2026-06-02 (Jun 3 trading day)",
+    "d1_range_low": 28204.7,
+    "d1_range_low_date": "2026-06-08 (Jun 9 trading day)",
+    "consecutive_hh_hl_count": 2,
+    "monday_body": 599.6,
+    "monday_gap": 327.2
+  }
+}
