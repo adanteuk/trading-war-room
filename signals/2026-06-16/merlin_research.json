@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-16",
+  "timestamp": "2026-06-16T11:00:00Z",
+  "summary": "Bullish trend continuation after BSL sweep above ATH 30,776. Price at 30,920 in uncharted territory. Extreme premium + contract roll risk Thu. Wait for pullback to 30,776 support flip or NY KZ entry.",
+  "bias": "Bullish",
+  "confidence": 52,
+  "key_levels": {
+    "support": [
+      "30776 (broken ATH → support flip)",
+      "30165-30198 (H4 bullish FVG)",
+      "30018 (70.5% Fib / H4 FVG top)",
+      "29794 (61.8% Fib retracement)",
+      "28204 (Jun 9 SSL sweep low)"
+    ],
+    "resistance": [
+      "30944 (today session high)",
+      "31000 (psychological)",
+      "31200 (measured move target)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "Bullish continuation. D1 HH/HL from Jun 9 SSL sweep 28,204 → 30,920 (+9.6%). BSL swept above ATH 30,776. Macro trend intact (price > all MAs). BUT: extreme premium >100% of old DR, new ATH territory with no overhead reference.",
+    "h4_context": "H4 DR stale (price at 255%+). Prior ATH 30,776 now potential support (polarity flip). Bullish FVGs stacked below: 30,165-30,198, 29,744-29,957. Need pullback to 30,776 or FVG for valid entry. No CRT purge confirmed yet.",
+    "m15_status": "No Kill Zone active (London passed, NY not started). Price in uncharted territory above ATH. No M15 OB formed at key level. Entry status: WAIT for NY KZ (13:00-16:00 UTC) + pullback to support."
+  },
+  "risks": [
+    {"event": "NQ June contract settlement", "time": "Thu Jun 18", "impact": "high"},
+    {"event": "Extreme premium positioning", "time": "all day", "impact": "medium"},
+    {"event": "No overhead reference in ATH territory", "time": "all day", "impact": "medium"}
+  ],
+  "recommendation": "WAIT. Bullish trend but no valid entry setup. Need: (1) Pullback to 30,776 support flip + M15 OB in NY KZ, OR (2) BSL sweep + rejection (Turtle Soup). Contract roll risk Thu makes positioning risky. Confidence reduced due to MT5 data unavailability."
+}
