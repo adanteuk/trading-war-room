@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-06-17T10:38:13.399850+00:00",
+  "bias": "bullish",
+  "confidence": 65,
+  "orb_score": 65,
+  "ict_profile": "Midweek Continuation",
+  "entry": 30166.0,
+  "sl": 30130.6,
+  "tp": 30181.4,
+  "key_levels": {
+    "support": [
+      "30150.6 (D1 Fib 79%)",
+      "30130.0 (H4 bullish FVG)",
+      "30099.9 (H4 bearish FVG)",
+      "29941.3 (D1 Fib 70.5%)",
+      "29727.0 (D1 Fib 61.8%)"
+    ],
+    "resistance": [
+      "30181.4 (H4 bullish FVG)",
+      "30361.8 (H4 bearish FVG)",
+      "30409.6 (H4 bullish FVG)",
+      "30667.9 (D1 Fib 100%)",
+      "30776.3 (D1 Swing High)"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 BULLISH: HH+LL. Range 28204.7\u219230667.9 (2463.2pts). Price at 79.6% (premium). Last candle: BULLISH body +82.1pts, range 218.8pts.",
+    "l2_h4_context": "H4 HH+LL. Range 29967.9\u219230667.9 (700.0pts). Price at 28.3%. 15 FVGs, 12 bull OB, 13 bear OB. SMT: bearish_smt.",
+    "l3_m15_entry": "M15 LH+LL. 11 FVGs. 14 bull OB, 14 bear OB. KZ INACTIVE."
+  },
+  "smt_divergence": "NAS100 LL (30449.1\u219229967.9) + US500 HL (7363.9\u21927513.1). Weaker: NAS100",
+  "reasoning": "D1 bias is BULLISH with HH+LL structure. Strong HH sequence (27,424\u219229,705\u219230,776) confirms bullish trend. Price at 79.6% of D1 dealing range (28204.7\u219230667.9), in premium zone. Last completed D1 candle (2026-06-15): BULLISH body +82.1pts, range 218.8pts, close at 83% of range. H4 SMT: NAS100 LL (30449.1\u219229967.9) + US500 HL (7363.9\u21927513.1). Weaker: NAS100 H4 SMT: NAS100 HH (30605.2\u219230667.9) + US500 LH (7583.4\u21927571.4). Stronger: NAS100 H4 structure: HH+LL. Price retracing from 30667.9 high, currently at 28.3% of H4 range. M15 structure: LH+LL \u2014 short-term weakness developing. Kill Zone INACTIVE (06:34 NY) \u2014 waiting for NY AM session (08:30-11:00 NY). ORB Score 65/100 indicates strong setup quality. ICT Weekly Profile: Midweek Continuation. Key confluence: Price in D1 premium (76.3%) but H4 showing retracement with bearish SMT (NAS100 weaker vs US500). Watch for NY AM session reaction at H4 61.8% (30400.5) for entry.",
+  "data_source": "Alfred MT5 (Pepperstone CFD)",
+  "last_price": 30166.0
+}
