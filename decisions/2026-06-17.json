@@ -1,0 +1,25 @@
+{
+  "date": "2026-06-17",
+  "timestamp": "2026-06-17T11:04:21.658936+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bullish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "NAS100 at 30,144 in corrective pullback from Jun 2 ATH (30,776). D1 structure mixed with LH at 30,605. Price in D1 premium (75.4%) but H4 discount (25.2%). Macro bullish but short-term corrective. No kill zone active.",
+  "final_decision": "GO",
+  "trade_params": {
+    "direction": "LONG",
+    "instrument": "NAS100",
+    "entry": "TBD \u2014 Waiting for NY AM KZ (08:30-11:00 NY)",
+    "stop_loss": 29948.0,
+    "take_profit": 30668.0,
+    "tier": "GO",
+    "lot_size": "TBD x 0.5",
+    "lot_multiplier": 0.5,
+    "risk_pct": 2.0,
+    "session_window": "09:30-11:00 ET",
+    "close_before": "13:30 ET (pre-news)"
+  },
+  "reasoning": "TA: conf=65, ORB=65 \u2192 HIGH CONVICTION\nAlfred: WAIT \u2014 reduced to 50% size\nRisk: N/A\nMerlin: \nMerlin note: High-impact events today: ['FOMC Meeting (Jun 17-18)']",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

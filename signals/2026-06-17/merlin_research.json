@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-17",
+  "timestamp": "2026-06-17T11:00:00+00:00",
+  "summary": "NAS100 at 30,144 in corrective pullback from Jun 2 ATH (30,776). D1 structure mixed with LH at 30,605. Price in D1 premium (75.4%) but H4 discount (25.2%). Macro bullish but short-term corrective. No kill zone active.",
+  "bias": "Neutral",
+  "confidence": 40,
+  "key_levels": {
+    "support": [
+      "30,098 (H4 bullish FVG)",
+      "29,968 (H4 DR low)",
+      "29,734 (larger H4 FVG)",
+      "29,500 (bullish OB zone)"
+    ],
+    "resistance": [
+      "30,213 (bearish FVG base)",
+      "30,510 (bearish FVG top)",
+      "30,605 (Jun 14 lower high)",
+      "30,776 (ATH)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "Mixed structure. LH at 30,605 after ATH 30,776. Price in premium 75.4%. Corrective within macro uptrend. No clear impulse.",
+    "h4_context": "DR 29,968-30,668, price at 25.2% discount. Bearish FVG overhead 30,213-30,510. Bullish FVG 30,098-30,161 near price as support.",
+    "m15_status": "Bullish OB 30,186-30,212 broken downside. Bearish FVG 30,160-30,182 as resistance. No kill zone active. No valid entry."
+  },
+  "risks": [
+    {"event": "FOMC Meeting (Jun 17-18)", "time": "All day", "impact": "high"},
+    {"event": "US Housing Data", "time": "08:30 ET", "impact": "medium"},
+    {"event": "Fed speakers", "time": "Various", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — D1 mixed (LH after ATH), price in premium, no kill zone, M15 OB broken. Wait for pullback to 30,098 FVG with reaction or break above 30,213 with displacement. FOMC uncertainty adds caution."
+}
