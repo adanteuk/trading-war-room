@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-18",
+  "timestamp": "2026-06-18T11:04:43.480134+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bullish bias after SSL sweep at 29,620 and V-reversal. Price recovering at 30,134 but sitting in PREMIUM (75% of D1 DR). Macro uptrend intact. Wait for KZ confirmation or discount pullback.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "TA confidence below GO threshold (conf=50 < 55, orb=41)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

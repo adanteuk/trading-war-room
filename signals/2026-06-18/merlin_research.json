@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-18",
+  "timestamp": "2026-06-18T11:30:00+08:00",
+  "summary": "Bullish bias after SSL sweep at 29,620 and V-reversal. Price recovering at 30,134 but sitting in PREMIUM (75% of D1 DR). Macro uptrend intact. Wait for KZ confirmation or discount pullback.",
+  "bias": "Bullish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "30098 (H4 Bullish FVG low)",
+      "29950 (H4 Equilibrium/50%)",
+      "29797 (Jun 17 D1 low)",
+      "29620 (Jun 17 SSL sweep low)"
+    ],
+    "resistance": [
+      "30199 (Jun 17 D1 high)",
+      "30280 (H4 DR high)",
+      "30506 (H4 Bullish FVG high)",
+      "30605 (Jun 14 high)",
+      "30776 (ATH/Jun 2 high)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "MIXED structure post-crash. Jun 4 crash -1620pts then V-recovery +2401pts to 30605. Jun 17 bullish candle (+301pts) reclaimed 30K. Price at 75% of D1 DR (28204-30776) = PREMIUM. SSL sweep at 28204 (Jun 8) confirmed bullish ICT reversal pattern. Macro trend still up.",
+    "h4_context": "SSL sweep at 29620 (Jun 17 17:00 UTC) followed by strong reversal. H4 DR: 29620-30280, price at 77.8% = PREMIUM. Bullish FVG at 30098-30161 (price sitting in it). Bearish FVG overhead at 30213-30510. 3 consecutive bullish H4 candles since sweep.",
+    "m15_status": "Bullish OBs at 30035-30081 and 30100-30129. Bearish OB at 30122-30167. Bearish M15 FVG at 30142-30169. NO Kill Zone active (11:00 UTC = between London close and NY open). Entry confirmation pending NY session."
+  },
+  "risks": [
+    {"event": "Juneteenth holiday (Jun 19)", "time": "ALL DAY", "impact": "medium"},
+    {"event": "Reduced liquidity pre-holiday", "time": "14:00 ET", "impact": "medium"},
+    {"event": "Weekly jobless claims", "time": "08:30 ET", "impact": "low"}
+  ],
+  "recommendation": "WAIT. Bullish bias but price in PREMIUM (75% D1 DR, 78% H4 DR) with no KZ active. Ideal: wait for NY KZ (13:00-16:00 UTC) for M15 OB confirmation at H4 FVG (30098-30161) targeting 30280. Alternatively, wait for pullback to H4 equilibrium (29950) for better R:R. Pre-holiday thin liquidity increases whipsaw risk. No chase in premium."
+}
