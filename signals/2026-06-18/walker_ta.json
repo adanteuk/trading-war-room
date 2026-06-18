@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-06-18T10:38:53.362592+00:00",
+  "date": "2026-06-18",
+  "current_price": 30179.9,
+  "bias": "bearish",
+  "confidence": 50,
+  "orb_score": 41,
+  "orb_details": {
+    "htf_bias": 0,
+    "vwap": 6,
+    "volume": 15,
+    "candle_timing": 5,
+    "ict": 5,
+    "range": 10
+  },
+  "ict_profile": "Potential Thursday Bullish Reversal",
+  "smt_signal": "NONE",
+  "entry": "TBD \u2014 waiting for Kill Zone confirmation",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "30052.1 (25%)",
+      "29727.0 (38.2%)",
+      "29436.3 (50%)",
+      "29145.6 (61.8%)"
+    ],
+    "resistance": [
+      "30667.9 (0%)",
+      "30409.6 (H4 FVG)",
+      "30361.8 (H4 FVG)",
+      "30667.9 (D1 SH)"
+    ]
+  },
+  "d1_dealing_range": {
+    "high": 30667.9,
+    "low": 28204.7,
+    "price_position_pct": 80.2
+  },
+  "d1_fibonacci": {
+    "0%": 30667.9,
+    "25%": 30052.1,
+    "38.2%": 29727.0,
+    "50%": 29436.3,
+    "61.8%": 29145.6,
+    "70.5%": 28931.3,
+    "79%": 28722.0,
+    "100%": 28204.7
+  },
+  "h4_dealing_range": {
+    "high": 30280.6,
+    "low": 29620.1,
+    "price_position_pct": 84.8
+  },
+  "h4_fibonacci": {
+    "0%": 30280.6,
+    "25%": 30115.5,
+    "38.2%": 30028.3,
+    "50%": 29950.3,
+    "61.8%": 29872.4,
+    "70.5%": 29814.9,
+    "79%": 29758.8,
+    "100%": 29620.1
+  },
+  "d1_candle": {
+    "date": "2026-06-18",
+    "day": "Thursday",
+    "open": 29857.3,
+    "high": 30179.9,
+    "low": 29797.0,
+    "close": 30179.9,
+    "body_pts": 322.6,
+    "direction": "BULL",
+    "body_pct": 84.3,
+    "close_position_pct": 100.0
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 BEARISH. Range 28204.7\u219230667.9. Price at 80.2% (premium). Structure: LH+LL. SMT: NONE. Last candle (2026-06-18): BULL 322.6pts, body 84.3%, close at 100.0% of range.",
+    "l2_h4_context": "H4 range 29620.1\u219230280.6. Price at 84.8% (premium). CRT: bull 80.2pts, range 106.8pts.",
+    "l3_m15_entry": "Kill Zone: INACTIVE. Compression: 0.59x (compression \u2014 expansion imminent)."
+  },
+  "reasoning": "D1 bias is BEARISH based on market structure (LH+LL). Price at 80.2% of D1 dealing range (premium \u2014 look for shorts). However, conflict: last D1 candle is strongly bullish (322.6pts, close at 100% of range) and weekly profile suggests Potential Thursday Bullish Reversal (Wed bearish \u2192 Thu bullish). SMT: NONE. H4 price at 84.8% of range (premium). M15 KZ inactive \u2014 waiting for KZ. Compression 0.59x suggests expansion imminent. ORB score 41/100 indicates moderate setup quality. Confidence lowered to 50 due to structure-momentum conflict."
+}
