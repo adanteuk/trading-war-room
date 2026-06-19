@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-06-19T10:35:00+00:00",
+  "bias": "neutral",
+  "confidence": 55,
+  "orb_score": 58,
+  "ict_profile": "Seek & Destroy (alternating BULL/BEAR days)",
+  "entry": "TBD — waiting for NY AM Kill Zone (08:30-11:00 NY)",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["30144.0 (D1 50% Fib)", "29882.0 (D1 25% Fib)", "29620.1 (D1 0% / week low)"],
+    "resistance": ["30267.6 (D1 62% Fib)", "30358.8 (D1 70.5% Fib)", "30447.9 (D1 79% Fib)", "30667.9 (D1 100% / week high)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure LH+HL (mixed). Last bar Jun 18 bearish -182.6pts, body 48%, close at 45.5% of range. Dealing range 29,620.1 (Jun 16 low) → 30,667.9 (Jun 15 high), 1,047.8pts. Price at 61.7% (slightly premium). SMT divergence: NAS100 HL (28,204.7→29,620.1) vs US500 LL (7,495.7→7,229.3) — NAS100 relatively stronger.",
+    "l2_h4_context": "H4 dealing range 29,620.1→30,483.5 (863.4pts). Price at 74.4% (premium zone). 4 bullish FVGs + 2 bearish FVGs within 200pts of price. Key bullish FVG at 30,236.5–30,345.7 (28pts below price). Bearish FVG at 30,213.5–30,510.1 overlapping current price zone.",
+    "l3_m15_entry": "M15 range 30,257.6→30,351.6 (94pts). Price at 5.1% (deep discount — just sold off). No Kill Zone active (06:34 NY, between London and NY AM). No compression detected. Waiting for NY AM session for entry confirmation."
+  },
+  "reasoning": "D1 structure is mixed (LH+HL) indicating indecision. NAS100 shows relative strength via SMT divergence (HL vs US500 LL). However, price dropped from Thursday's +564.5pts bullish candle to Friday's bearish open, suggesting profit-taking. H4 price in premium (74.4%) but M15 just dropped to deep discount (5.1%) — potential bounce zone if buyers step in at D1 50% Fib (30,144). Weekly profile is Seek & Destroy (alternating bull/bear days), typical of range-bound consolidation after the Jun 5 crash recovery. No clear directional bias until price breaks above 30,667.9 (week high) or below 29,620.1 (week low). ORB Score 58/100 reflects moderate confluence but lacks Kill Zone timing and volume confirmation. Recommendation: wait for NY AM Kill Zone (08:30-11:00 NY) for entry confirmation. Watch for M15 order block formation near 30,144 (D1 50% Fib) if selling continues, or rejection at 30,358–30,448 (D1 70.5%–79% Fib) if buying resumes."
+}
