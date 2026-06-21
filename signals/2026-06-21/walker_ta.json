@@ -1,40 +1,72 @@
 {
-  "timestamp": "2026-06-21T17:35:00+08:00",
   "date": "2026-06-21",
+  "timestamp": "2026-06-21T19:35:00+08:00",
   "symbol": "BTCUSD",
-  "current_price": 63998.6,
-  "bias": "bearish",
-  "confidence": 56,
-  "orb_score": 50,
-  "orb_details": {
-    "htf_bias": 7,
-    "vwap": 5,
-    "volume": 9,
-    "candle_timing": 7,
-    "ict": 12,
-    "range": 10
-  },
-  "signal_action": "TEST",
-  "ict_profile": "Bearish Breakdown — price below Monday range, continuation pattern",
+  "agent": "Walker",
+  "signal_type": "TEST",
+  "signal_price": 64027.44,
+  "orb_score": 48,
+  "confidence": 58,
+  "bias": "Bearish",
   "three_layer_analysis": {
-    "l1_daily": "BEARISH. Below MA200 (64,332), above MA50 (63,361). Price at MA confluence = decision zone. D1 structure: LH from $71.3K ATH. ADX trending. Bearish default.",
-    "l2_h4_context": "Falling channel intact. Mon $66.2K → Thu $62.9K → now $64K bounce. Testing resistance at MA200. Bearish order flow.",
-    "l3_m15_entry": "MT5 offline. Web indicators: overbought bounce at resistance. Need bearish MSS below $64,332 for entry."
+    "L1_D1": {
+      "bias": "Bearish",
+      "structure": "Lower highs since 82650 (Apr). Price below MA50/MA200. -DI > +DI.",
+      "key_observation": "Strong bearish trend. No D1 MSS bullish confirmed. Sell-side target = 59073 (YTD low)."
+    },
+    "L2_H4": {
+      "bias": "Bearish",
+      "structure": "Descending channel from 82650. Bounce from 63000 is corrective (bear flag).",
+      "key_levels": {
+        "bearish_ob": [69000, 74000],
+        "bearish_fvg": [67000, 68500],
+        "support": [63000, 60190, 59073]
+      },
+      "key_observation": "H4 50-SMA at 77452 = major resistance. Price needs close above 69110 (MA20) to shift bias. Currently in bearish discount."
+    },
+    "L3_M15": {
+      "bias": "Neutral-to-Bearish",
+      "structure": "TEST signal at 64027 = testing Monday Range boundary. Near 5-Day MA (64220).",
+      "patterns": {
+        "mmsm": "No clear MMSM detected yet. Watch for M15 MSS bearish + displacement below 63800.",
+        "sweep": "Potential sell-side liquidity sweep at 63000 before continuation.",
+        "unicorn": "No unicorn setup detected.",
+        "breaker": "No active breaker block at current level."
+      },
+      "key_observation": "TEST at 64027 in bearish context. If price rejects here with M15 bearish displacement → short entry. If breaks above 64220 (5D MA) with volume → wait."
+    }
+  },
+  "orb_scoring": {
+    "trend_alignment": 8,
+    "key_level_proximity": 7,
+    "liquidity_sweep": 5,
+    "displacement": 6,
+    "session_timing": 7,
+    "pattern_quality": 5,
+    "total": 48,
+    "max": 100,
+    "verdict": "BELOW THRESHOLD (<55). ORB score 48 = weak setup. Not sufficient for GO tier."
   },
   "key_levels": {
-    "support": ["63,361 (MA50)", "61,500 (swing low)", "59,108 (52wk low/SSL)"],
-    "resistance": ["64,332 (MA200)", "65,500 (Mon low)", "66,200 (Mon high)"]
+    "immediate_support": 63000,
+    "immediate_resistance": 64220,
+    "entry_zone_short": [64000, 64500],
+    "stop_loss": 65200,
+    "take_profit_1": 63000,
+    "take_profit_2": 60190,
+    "take_profit_3": 59073
   },
-  "liquidity_analysis": {
-    "bsl": ["66,200 (Mon high)", "64,500 (above MA200)"],
-    "ssl": ["63,361 (MA50)", "61,500 (swing)", "59,108 (52wk low)"]
+  "risk_reward": {
+    "entry": 64200,
+    "sl": 65200,
+    "tp1": 63000,
+    "rr_ratio_1": 1.2,
+    "tp2": 60190,
+    "rr_ratio_2": 4.0,
+    "tp3": 59073,
+    "rr_ratio_3": 5.1
   },
-  "unicorn_check": "NO — no Breaker+FVG overlap",
-  "m5_double_pattern": "NO — not confirmed",
-  "sweep_detection": "Potential BSL sweep at 64,332-64,500. If sweeps above MA200 then rejects = high-prob short.",
-  "entry": "64,200 (after bearish MSS below MA200)",
-  "sl": "64,800 (above MA200 + buffer)",
-  "tp": ["63,361 (MA50, TP1)", "61,500 (TP2)", "59,108 (52wk low, TP3)"],
-  "rr_ratio": "2.4:1 (entry 64,200, SL 64,800, TP2 61,500 = 2700pts vs 600pts)",
-  "screenshot_note": "MT5 offline + weekend = no TV MCP screenshot"
+  "smt_divergence": "No cross-asset SMT detected. BTC correlated with risk-off sentiment.",
+  "recommendation": "CONDITIONAL SHORT — wait for M15 bearish confirmation (MSS + displacement below 63800). ORB score 48 = weak. If confirmed, target 63000 → 60190. SL above 65200. Confidence reduced due to Alfred MT5 offline.",
+  "screenshot_status": "PENDING — TradingView MCP not invoked yet"
 }
