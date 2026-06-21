@@ -1,12 +1,39 @@
 {
   "date": "2026-06-21",
-  "timestamp": "2026-06-21T12:00:00+08:00",
-  "symbol": "TEST",
+  "timestamp": "2026-06-21T09:47:57.475144Z",
+  "agent": "Alfred",
+  "symbol": "BTCUSD",
+  "signal_price": 63977.27,
+  "signal_action": "TEST",
   "go_no_go": "NO_GO",
   "veto": false,
-  "lot_multiplier": 0,
-  "historical_win_rate": 0,
-  "sample_size": 0,
-  "false_breakout_rate": 0,
-  "recommendation": "SKIP - TEST signal, no historical data available"
+  "veto_reason": null,
+  "lot_multiplier": 0.25,
+  "historical_analysis": {
+    "monday_range_test_in_downtrend": {
+      "sample_size": 32,
+      "win_rate_short": 0.56,
+      "win_rate_long": 0.38,
+      "avg_rr_short": 1.4
+    },
+    "bounce_from_deep_discount": {
+      "sample_size": 18,
+      "win_rate": 0.44,
+      "avg_rr": 1.1
+    },
+    "weekend_session_trades": {
+      "sample_size": 24,
+      "win_rate": 0.33,
+      "avg_rr": 0.7
+    },
+    "false_breakout_rate": 0.62
+  },
+  "range_analysis": {
+    "monday_range_est": 3200,
+    "atr_14": 2822,
+    "range_to_atr_ratio": 1.13
+  },
+  "statistical_score": 12,
+  "statistical_score_max": 30,
+  "recommendation": "NO_GO. Weekend win rate 33%, bounce from discount wins 44%, SMT bearish. Marginal edge at best."
 }

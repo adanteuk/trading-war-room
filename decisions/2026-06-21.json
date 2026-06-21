@@ -1,94 +1,26 @@
 {
   "date": "2026-06-21",
-  "timestamp": "2026-06-21T19:45:00+08:00",
+  "timestamp": "2026-06-21T09:47:57.475248Z",
   "symbol": "BTCUSD",
-  "signal_type": "TEST",
-  "signal_price": 64027.44,
-  "orchestrator_mode": "manual (weekend — crypto active)",
-  "consensus_score": 57,
+  "signal_price": 63977.27,
+  "signal_action": "TEST",
+  "consensus_score": 52,
   "decision": "NO_GO",
-  "decision_reason": "Walker confidence (58) and ORB score (48) both below CONDITIONAL_GO thresholds (60/55). Technical setup weak despite bearish macro alignment.",
+  "lot_size_pct": "0%",
+  "reason": "Below thresholds: Walker conf=55 (<60) OR ORB=52 (<55)",
   "agent_scores": {
-    "merlin_macro": {
-      "score": 22,
-      "max": 30,
-      "bias": "Bearish",
-      "confidence": 72,
-      "key_factors": ["Below all major MAs", "-DI > +DI (ADX 38)", "ETF outflows $6.4B/30d", "Bearish dealing range"],
-      "penalty": -8,
-      "penalty_reason": "Alfred MT5 offline — data quality reduced"
-    },
-    "walker_ta": {
-      "score": 20,
-      "max": 40,
-      "orb_score": 48,
-      "confidence": 58,
-      "key_factors": ["3-layer bearish alignment", "No MMSM/unicorn/breaker", "TEST at 5D MA resistance", "Weak displacement"],
-      "verdict": "BELOW THRESHOLD — ORB 48 < 55, Confidence 58 < 60"
-    },
-    "alfred_stats": {
-      "score": 15,
-      "max": 30,
-      "go_no_go": "WAIT",
-      "veto": false,
-      "lot_multiplier": 0.5,
-      "win_rate": 0.57,
-      "expected_value": "+0.77R",
-      "key_factors": ["Marginal edge (57% WR)", "ETF outflow catalyst (73% bearish)", "Options expiry vol risk", "Sample size sufficient"]
-    }
-  },
-  "decision_matrix_v2": {
-    "GO_threshold": "Walker conf >= 65 AND ORB >= 55 AND no Alfred veto",
-    "CONDITIONAL_GO_threshold": "Walker conf >= 60 AND ORB >= 55 AND no Alfred veto",
-    "actual": {
-      "walker_confidence": 58,
-      "orb_score": 48,
-      "alfred_veto": false,
-      "result": "NO_GO (both metrics below CONDITIONAL_GO)"
-    }
+    "merlin_macro": "18/30",
+    "walker_ta": "22/40",
+    "alfred_stats": "12/30"
   },
   "trade_parameters": {
-    "direction": "SHORT (if entry triggered)",
-    "entry_zone": [64000, 64500],
-    "stop_loss": 65200,
-    "take_profit_1": 63000,
-    "take_profit_2": 60190,
-    "take_profit_3": 59073,
-    "risk_reward_tp1": 1.2,
-    "risk_reward_tp2": 4.0,
-    "risk_reward_tp3": 5.1,
-    "lot_size": "0% (NO_GO = no trade)"
+    "direction": "SHORT",
+    "entry_zone": "64,500 - 66,000",
+    "stop_loss": "66,500",
+    "take_profit_1": "62,160",
+    "take_profit_2": "60,800",
+    "take_profit_3": "59,109",
+    "risk_reward": "1.5:1 to TP1, 2.5:1 to TP2"
   },
-  "key_confluences": {
-    "bearish": [
-      "D1/H4 bearish structure (lower highs since 82650)",
-      "Price below MA50/MA200",
-      "-DI (26) > +DI (16) with ADX 38 = strong trend",
-      "ETF outflows accelerating ($6.4B in 30 days)",
-      "Death cross in options market",
-      "Capital rotation crypto → equities",
-      "Rising wedge breakdown (bearish pattern)"
-    ],
-    "missing_for_entry": [
-      "M15 MSS bearish + displacement (not confirmed)",
-      "ORB score >= 55 (currently 48)",
-      "Walker confidence >= 60 (currently 58)",
-      "Clear liquidity sweep + rejection",
-      "Unicorn/Breaker setup"
-    ]
-  },
-  "risks": [
-    {"event": "$13B BTC options expiry", "time": "This week", "impact": "high"},
-    {"event": "ETF outflow acceleration", "time": "Ongoing", "impact": "high"},
-    {"event": "Fed rate-hike expectations (40% July)", "time": "July", "impact": "medium"},
-    {"event": "Weekend low liquidity", "time": "Today", "impact": "medium"}
-  ],
-  "recommendation": "NO TRADE. Bearish macro alignment is strong, but technical setup is weak (ORB 48, confidence 58). Wait for M15 bearish confirmation (MSS + displacement below 63800) OR price rejection at 64220-64500 with clear pattern. If conditions improve, re-run pipeline for CONDITIONAL_GO assessment.",
-  "next_review": "Monitor 63800 (M15 MSS trigger) and 64500 (rejection zone). If price breaks above 65200 with volume → bias shifts neutral.",
-  "data_quality": {
-    "alfred_mt5": "OFFLINE (web fallback used)",
-    "tradingview_screenshot": "NOT CAPTURED",
-    "overall_quality": "REDUCED (-12pts confidence penalty)"
-  },
-  "git_sync": "pending"
+  "delivery_threshold": "SKIP"
 }

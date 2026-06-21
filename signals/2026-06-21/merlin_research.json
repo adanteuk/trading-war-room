@@ -1,37 +1,58 @@
 {
   "date": "2026-06-21",
-  "timestamp": "2026-06-21T17:35:00+08:00",
+  "timestamp": "2026-06-21T09:47:57.474577Z",
+  "agent": "Merlin",
   "symbol": "BTCUSD",
-  "signal_type": "TEST",
-  "signal_price": 63998.6,
-  "summary": "BTCUSD TEST @ $63,998.6. Price BELOW Monday June 15 range (~65,500-66,200) = bearish breakdown, not fade setup. Macro bearish: below MA200 (64,332), ETF outflows, death cross. Sunday = wrong day for Monday Range Fade strategy.",
+  "signal_price": 63977.27,
+  "signal_action": "TEST",
+  "summary": "BTCUSD in strong macro downtrend. -49% from ATH ($126K Oct'25), below ALL major MAs. -DI(26.1) > +DI(15.6), ADX 38 = strong bearish trend. Bouncing +8.5% from cycle low $59,109 (Jun 5). Fed rate hike odds rising. Bearish bias.",
   "bias": "Bearish",
-  "confidence": 38,
+  "confidence": 72,
+  "weekly_profile": "Bearish Continuation. Price dropped from Monday open ~66K to Friday low ~62.9K, now bouncing. Classic bearish week.",
+  "event_filter": "No FOMC Week 0. Fed held at 3.5-3.75% but dot plot shows rate HIKE projections. Hawkish for crypto.",
+  "dealing_range": {
+    "timeframe": "D1",
+    "swing_high": 126198,
+    "swing_low": 59109,
+    "equilibrium": 92654,
+    "current_position_pct": 7.4,
+    "position": "DEEP DISCOUNT (bottom 7.4% of D1 range)"
+  },
   "key_levels": {
-    "support": ["63,361 (MA50)", "61,500 (recent swing low)", "59,108 (52wk low/SSL)"],
-    "resistance": ["64,332 (MA200)", "65,500-66,200 (Mon Jun 15 range)", "71,360 (ATH)"]
+    "support": [
+      59109,
+      62160,
+      60800
+    ],
+    "resistance": [
+      66000,
+      69100,
+      74050
+    ]
   },
   "ict_analysis": {
-    "daily_bias": "BEARISH — Below MA200 (64,332), above MA50 (63,361). Death cross forming. Macro downtrend from $71.3K ATH.",
-    "h4_context": "Lower highs since Jun 2. Mon $66.2K → Thu $62.9K → now $64K. Bounce at MA confluence zone.",
-    "m15_status": "MT5 OFFLINE. Web data only. Sunday = low liquidity."
-  },
-  "event_filter": {
-    "week_classification": "Normal (no major events)",
-    "fomc_week": false,
-    "veto": false
-  },
-  "monday_range": {
-    "monday_date": "2026-06-15",
-    "estimated_high": 66200,
-    "estimated_low": 65500,
-    "current_vs_range": "BREAKDOWN — $63,998 is BELOW Monday Low ($65,500). Not a retest, a breakdown.",
-    "note": "Template vars {monday_high}/{monday_low} unresolved in webhook. Estimated from Yahoo Finance data."
+    "daily_bias": "BEARISH. Below all MAs. -DI > +DI. LH/LL since Oct'25 ATH.",
+    "h4_context": "Bounce from $59K forming higher lows but below H4 resistance 66K-67K.",
+    "m15_status": "TEST at $63,977. Testing key level. Weekend session = lower liquidity."
   },
   "risks": [
-    {"event": "Webhook template vars unresolved", "impact": "high"},
-    {"event": "MT5 bridge offline", "impact": "high"},
-    {"event": "Sunday — wrong day for strategy", "impact": "medium"}
+    {
+      "event": "Fed rate hike expectations",
+      "time": "Ongoing",
+      "impact": "high"
+    },
+    {
+      "event": "BTC ETF outflows $6.4B/30d",
+      "time": "Ongoing",
+      "impact": "high"
+    },
+    {
+      "event": "$13B options expiry",
+      "time": "This week",
+      "impact": "medium"
+    }
   ],
-  "recommendation": "NO_GO — (1) Sunday: strategy triggers Tue H1/H4. (2) Price broke BELOW Monday range = bearish continuation, not fade. (3) Template vars broken — fix webhook config. (4) MT5 offline. (5) Macro bearish but entry conditions not met."
+  "recommendation": "BEARISH bias. TEST at $63,977 in downtrend favors SHORT on rejection. Deep discount means tight stops needed.",
+  "macro_score": 18,
+  "macro_score_max": 30
 }

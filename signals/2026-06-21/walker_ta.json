@@ -1,72 +1,63 @@
 {
   "date": "2026-06-21",
-  "timestamp": "2026-06-21T19:35:00+08:00",
-  "symbol": "BTCUSD",
+  "timestamp": "2026-06-21T09:47:57.474970Z",
   "agent": "Walker",
-  "signal_type": "TEST",
-  "signal_price": 64027.44,
-  "orb_score": 48,
-  "confidence": 58,
-  "bias": "Bearish",
+  "symbol": "BTCUSD",
+  "signal_price": 63977.27,
+  "signal_action": "TEST",
+  "orb_score": 52,
+  "orb_assessment": "MODERATE. Below GO threshold (55). Bearish trend but bounce creates ambiguity.",
+  "confidence": 55,
   "three_layer_analysis": {
-    "L1_D1": {
-      "bias": "Bearish",
-      "structure": "Lower highs since 82650 (Apr). Price below MA50/MA200. -DI > +DI.",
-      "key_observation": "Strong bearish trend. No D1 MSS bullish confirmed. Sell-side target = 59073 (YTD low)."
-    },
-    "L2_H4": {
-      "bias": "Bearish",
-      "structure": "Descending channel from 82650. Bounce from 63000 is corrective (bear flag).",
+    "L1_daily": {
+      "bias": "BEARISH",
+      "structure": "LH/LL since Oct'25 ATH. Below all MAs. -DI(26.1) > +DI(15.6).",
       "key_levels": {
-        "bearish_ob": [69000, 74000],
-        "bearish_fvg": [67000, 68500],
-        "support": [63000, 60190, 59073]
-      },
-      "key_observation": "H4 50-SMA at 77452 = major resistance. Price needs close above 69110 (MA20) to shift bias. Currently in bearish discount."
+        "support": [
+          59109,
+          62160
+        ],
+        "resistance": [
+          66000,
+          69100,
+          74050
+        ]
+      }
     },
-    "L3_M15": {
-      "bias": "Neutral-to-Bearish",
-      "structure": "TEST signal at 64027 = testing Monday Range boundary. Near 5-Day MA (64220).",
-      "patterns": {
-        "mmsm": "No clear MMSM detected yet. Watch for M15 MSS bearish + displacement below 63800.",
-        "sweep": "Potential sell-side liquidity sweep at 63000 before continuation.",
-        "unicorn": "No unicorn setup detected.",
-        "breaker": "No active breaker block at current level."
-      },
-      "key_observation": "TEST at 64027 in bearish context. If price rejects here with M15 bearish displacement → short entry. If breaks above 64220 (5D MA) with volume → wait."
+    "L2_h4": {
+      "context": "Bounce from $59K. Below H4 bearish OB at 66K-67K. No bullish MSS.",
+      "key_levels": {
+        "support": [
+          62160,
+          60800
+        ],
+        "resistance": [
+          64586,
+          66000
+        ]
+      }
+    },
+    "L3_m15": {
+      "status": "TEST at $63,977. Weekend session, lower liquidity.",
+      "patterns": "No M5 double. No unicorn. No sweep+MSS combo."
     }
   },
-  "orb_scoring": {
-    "trend_alignment": 8,
-    "key_level_proximity": 7,
-    "liquidity_sweep": 5,
-    "displacement": 6,
-    "session_timing": 7,
-    "pattern_quality": 5,
-    "total": 48,
-    "max": 100,
-    "verdict": "BELOW THRESHOLD (<55). ORB score 48 = weak setup. Not sufficient for GO tier."
+  "liquidity_analysis": {
+    "bsl": [
+      66000,
+      67654,
+      69100
+    ],
+    "ssl": [
+      62160,
+      60800,
+      59109
+    ],
+    "sweep_detected": false
   },
-  "key_levels": {
-    "immediate_support": 63000,
-    "immediate_resistance": 64220,
-    "entry_zone_short": [64000, 64500],
-    "stop_loss": 65200,
-    "take_profit_1": 63000,
-    "take_profit_2": 60190,
-    "take_profit_3": 59073
-  },
-  "risk_reward": {
-    "entry": 64200,
-    "sl": 65200,
-    "tp1": 63000,
-    "rr_ratio_1": 1.2,
-    "tp2": 60190,
-    "rr_ratio_2": 4.0,
-    "tp3": 59073,
-    "rr_ratio_3": 5.1
-  },
-  "smt_divergence": "No cross-asset SMT detected. BTC correlated with risk-off sentiment.",
-  "recommendation": "CONDITIONAL SHORT — wait for M15 bearish confirmation (MSS + displacement below 63800). ORB score 48 = weak. If confirmed, target 63000 → 60190. SL above 65200. Confidence reduced due to Alfred MT5 offline.",
-  "screenshot_status": "PENDING — TradingView MCP not invoked yet"
+  "unicorn_setup": false,
+  "smt_divergence": "BTC underperforming equities. Bearish SMT.",
+  "recommendation": "SHORT on rejection near 64.5K-66K. Target 62,160 then 60,800. Stop above 66,500.",
+  "ta_score": 22,
+  "ta_score_max": 40
 }
