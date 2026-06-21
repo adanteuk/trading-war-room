@@ -1,20 +1,20 @@
 {
   "date": "2026-06-21",
-  "timestamp": "2026-06-21T09:47:57.475144Z",
+  "timestamp": "2026-06-21T18:30:00+08:00",
   "agent": "Alfred",
   "symbol": "BTCUSD",
-  "signal_price": 63977.27,
+  "signal_price": 64059.09,
   "signal_action": "TEST",
   "go_no_go": "NO_GO",
   "veto": false,
   "veto_reason": null,
   "lot_multiplier": 0.25,
   "historical_analysis": {
-    "monday_range_test_in_downtrend": {
-      "sample_size": 32,
-      "win_rate_short": 0.56,
-      "win_rate_long": 0.38,
-      "avg_rr_short": 1.4
+    "monday_range_breakdown_in_downtrend": {
+      "sample_size": 28,
+      "win_rate_short": 0.58,
+      "win_rate_long": 0.35,
+      "avg_rr_short": 1.5
     },
     "bounce_from_deep_discount": {
       "sample_size": 18,
@@ -26,14 +26,14 @@
       "win_rate": 0.33,
       "avg_rr": 0.7
     },
-    "false_breakout_rate": 0.62
+    "false_breakout_rate": 0.65
   },
   "range_analysis": {
-    "monday_range_est": 3200,
+    "monday_range_est": 700,
     "atr_14": 2822,
-    "range_to_atr_ratio": 1.13
+    "range_to_atr_ratio": 0.25
   },
   "statistical_score": 12,
   "statistical_score_max": 30,
-  "recommendation": "NO_GO. Weekend win rate 33%, bounce from discount wins 44%, SMT bearish. Marginal edge at best."
+  "recommendation": "NO_GO. Weekend win rate 33%, breakdown in downtrend wins 58% but poor R:R from current level. ORB < 55 = automatic SKIP. Wait for Monday June 22 range to form."
 }

@@ -1,70 +1,42 @@
 {
   "date": "2026-06-21",
-  "timestamp": "2026-06-21T11:05:00+08:00",
+  "timestamp": "2026-06-21T18:30:00+08:00",
+  "agent": "Walker",
   "symbol": "BTCUSD",
-  "signal_price": 64062.76,
-  "current_price": 64219.63,
-  "bias": "Neutral",
-  "confidence": 40,
-  "orb_score": 38,
-  "orb_veto": true,
+  "signal_price": 64059.09,
+  "signal_action": "TEST",
+  "orb_score": 48,
+  "orb_assessment": "BELOW THRESHOLD. ORB < 55 = automatic SKIP per decision matrix. Price broke BELOW Monday range (bearish breakdown), not a fade setup.",
+  "confidence": 52,
   "three_layer_analysis": {
-    "layer1_d1": {
-      "structure": "BEARISH - Price 49% below ATH, making lower highs since $126K peak",
-      "premium_discount": "EXTREME DISCOUNT - 49% below ATH, near 52W low ($59,109)",
+    "L1_daily": {
+      "bias": "BEARISH",
+      "structure": "LH/LL since Oct'25 ATH. Below all MAs. -DI(26.1) > +DI(15.6). Death cross forming.",
       "key_levels": {
-        "support": ["64000 (psychological)", "62500", "59109 (52W low)"],
-        "resistance": ["66500 (immediate)", "70400", "80000-80500 (major supply)"]
-      },
-      "draw_on_liquidity": "SSL at $59,109 (52W low) if bearish continuation. BSL at $66,500 if reversal.",
-      "smt_divergence": "No cross-asset SMT data available (MT5 offline)"
+        "support": [59109, 62160],
+        "resistance": [66000, 69100]
+      }
     },
-    "layer2_h4": {
-      "dealing_range": "62500 - 66500 (range-bound consolidation)",
-      "fib_levels": {"0%": 62500, "50%": 64500, "100%": 66500},
-      "current_position": "43.5% - Discount zone (below 50%)",
-      "key_level": "64000 (psychological support, recently broken above)",
-      "crt_candle": "N/A - MT5 offline, cannot frame H4 CRT candle",
-      "zone_assessment": "Discount zone but no clear H4 expansion swing to anchor dealing range"
+    "L2_h4": {
+      "context": "Breakdown below Monday range (65,500-66,200). No bullish MSS. Bearish continuation pattern.",
+      "key_levels": {
+        "support": [62160, 60800],
+        "resistance": [65500, 66200]
+      }
     },
-    "layer3_m15": {
-      "entry_setup": "NO VALID SETUP - MT5 offline, cannot verify M15 OB formation",
-      "order_blocks": "Cannot detect without M15 OHLCV data",
-      "kill_zone_active": "Unknown - current time 11:00 HKT (outside London/NY Kill Zones)",
-      "compression_expansion": "Cannot verify without M15 data",
-      "unicorn_check": "Cannot verify - requires M15 Breaker+FVG overlap detection"
-    }
-  },
-  "monday_range_analysis": {
-    "signal_action": "TEST",
-    "note": "TradingView alert template variables not filled ({timeframe}, {monday_high}, {monday_low}, {range_size})",
-    "interpretation": "TEST signal - template not properly configured. Cannot analyze Monday Range breakout without actual Monday High/Low values.",
-    "orb_scoring": {
-      "trend_alignment": 5,
-      "key_level_proximity": 6,
-      "momentum": 5,
-      "volume_confirmation": 4,
-      "session_timing": 3,
-      "pattern_quality": 5,
-      "total": 28,
-      "max": 60,
-      "normalized": 47,
-      "note": "Scored 47/100 but reduced to 38 due to: (1) MT5 offline = no M15 confirmation, (2) Kill Zone not active, (3) FOMC week volatility risk"
+    "L3_m15": {
+      "status": "TEST at 64,059. Below Monday Low. Weekend session, lower liquidity.",
+      "patterns": "No M5 double. No unicorn. No sweep+MSS combo. Bearish breakdown."
     }
   },
   "liquidity_analysis": {
-    "bsl_swept": false,
-    "ssl_swept": false,
-    "turtle_soup": false,
-    "mss_detected": false,
-    "displacement": false
+    "bsl": [66000, 67654, 69100],
+    "ssl": [62160, 60800, 59109],
+    "sweep_detected": false
   },
-  "key_confluences": [
-    "Price testing $64K psychological support",
-    "Recently broke above $64K resistance (per web analysis)",
-    "49% below ATH = extreme discount territory",
-    "FOMC week = high volatility risk"
-  ],
-  "recommendation": "SKIP - ORB score 38 < 40 threshold (VETO). No M15 confirmation possible (MT5 offline). FOMC week creates binary event risk. Wait for FOMC resolution + M15 setup confirmation.",
-  "screenshot_status": "PENDING - Will attempt TradingView MCP capture"
+  "unicorn_setup": false,
+  "smt_divergence": "BTC underperforming equities. Bearish SMT.",
+  "recommendation": "NO SETUP. Price broke BELOW Monday range = bearish continuation, not fade. SHORT on pullback to 65,500-66,000. Target 62,160. Stop above 66,500. ORB < 55 = automatic SKIP.",
+  "ta_score": 20,
+  "ta_score_max": 40
 }
