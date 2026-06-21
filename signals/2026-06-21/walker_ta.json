@@ -1,48 +1,40 @@
 {
-  "timestamp": "2026-06-21T17:15:00+08:00",
+  "timestamp": "2026-06-21T17:35:00+08:00",
   "date": "2026-06-21",
   "symbol": "BTCUSD",
-  "signal_type": "TEST",
-  "current_price": 63136,
-  "signal_price": 63875.54,
+  "current_price": 63998.6,
   "bias": "bearish",
-  "confidence": 38,
-  "orb_score": 32,
-  "orb_veto": true,
+  "confidence": 56,
+  "orb_score": 50,
   "orb_details": {
-    "htf_bias": -5,
-    "vwap": 3,
-    "volume": 5,
-    "candle_timing": 5,
-    "ict": 5,
-    "range": 9,
-    "note": "Score well below 40 threshold — ORB VETO triggered. No valid Monday range data (TV placeholders unresolved). HTF bias negative (D1/W1 Strong Sell)."
+    "htf_bias": 7,
+    "vwap": 5,
+    "volume": 9,
+    "candle_timing": 7,
+    "ict": 12,
+    "range": 10
   },
-  "ict_profile": "Bearish continuation — price rejected at $66.5K resistance, now testing $63K support zone. Potential SSL sweep of $62.2K (Jun 21 low) before reversal or breakdown.",
+  "signal_action": "TEST",
+  "ict_profile": "Bearish Breakdown — price below Monday range, continuation pattern",
   "three_layer_analysis": {
-    "L1_D1": "BEARISH. Below all major MAs (50/100/200). Strong Sell signal. 0 Buy / 12 Sell on MAs. Trend is down from $126K ATH.",
-    "L2_H4": "BEARISH. Failed breakout above $66.5K on Jun 15. Now back below $64K. MACD turning negative. FVG overhead at $64K-$66.5K zone.",
-    "L3_M15": "NEUTRAL-BULLISH (short-term). 30min Strong Buy, Hourly Buy. But STOCH 99.1 overbought — bounce exhausting. Expect pullback."
+    "l1_daily": "BEARISH. Below MA200 (64,332), above MA50 (63,361). Price at MA confluence = decision zone. D1 structure: LH from $71.3K ATH. ADX trending. Bearish default.",
+    "l2_h4_context": "Falling channel intact. Mon $66.2K → Thu $62.9K → now $64K bounce. Testing resistance at MA200. Bearish order flow.",
+    "l3_m15_entry": "MT5 offline. Web indicators: overbought bounce at resistance. Need bearish MSS below $64,332 for entry."
   },
   "key_levels": {
-    "support": [
-      "62181 (Jun 21 low / S2 pivot)",
-      "60000 (psychological)",
-      "59200 (52-week low)"
-    ],
-    "resistance": [
-      "63529 (Jun 21 high / R1 pivot 63348)",
-      "64000 (key level / MA50 63591)",
-      "66500 (major resistance / H4 FVG)"
-    ]
+    "support": ["63,361 (MA50)", "61,500 (swing low)", "59,108 (52wk low/SSL)"],
+    "resistance": ["64,332 (MA200)", "65,500 (Mon low)", "66,200 (Mon high)"]
   },
-  "smt_divergence": "NONE — no cross-asset comparison available (MT5 offline)",
-  "liquidity_sweep": "Potential SSL sweep at $62,181 if breakdown. BSL at $63,529 already tested.",
-  "unicorn_setup": false,
-  "m5_double": false,
-  "entry": "NO ENTRY — ORB VETO (score 32 < 40). If bearish continuation: Short below $62,181, SL $63,200, TP $60,000",
-  "sl": "N/A",
-  "tp": "N/A",
-  "screenshot": "NOT AVAILABLE — TradingView MCP not invoked (TEST signal, Sunday)",
-  "data_quality": "DEGRADED — Web data only, no MT5 candles for precise ICT analysis"
+  "liquidity_analysis": {
+    "bsl": ["66,200 (Mon high)", "64,500 (above MA200)"],
+    "ssl": ["63,361 (MA50)", "61,500 (swing)", "59,108 (52wk low)"]
+  },
+  "unicorn_check": "NO — no Breaker+FVG overlap",
+  "m5_double_pattern": "NO — not confirmed",
+  "sweep_detection": "Potential BSL sweep at 64,332-64,500. If sweeps above MA200 then rejects = high-prob short.",
+  "entry": "64,200 (after bearish MSS below MA200)",
+  "sl": "64,800 (above MA200 + buffer)",
+  "tp": ["63,361 (MA50, TP1)", "61,500 (TP2)", "59,108 (52wk low, TP3)"],
+  "rr_ratio": "2.4:1 (entry 64,200, SL 64,800, TP2 61,500 = 2700pts vs 600pts)",
+  "screenshot_note": "MT5 offline + weekend = no TV MCP screenshot"
 }

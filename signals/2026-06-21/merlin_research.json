@@ -1,28 +1,37 @@
 {
   "date": "2026-06-21",
-  "timestamp": "2026-06-21T17:15:00+08:00",
+  "timestamp": "2026-06-21T17:35:00+08:00",
   "symbol": "BTCUSD",
   "signal_type": "TEST",
-  "summary": "BTCUSD macro bearish (below MA50/100/200), short-term oversold bounce. FOMC+2 (post-event). Price ~$63.1K in discount zone of weekly range. STOCH overbought on bounce suggests limited upside.",
+  "signal_price": 63998.6,
+  "summary": "BTCUSD TEST @ $63,998.6. Price BELOW Monday June 15 range (~65,500-66,200) = bearish breakdown, not fade setup. Macro bearish: below MA200 (64,332), ETF outflows, death cross. Sunday = wrong day for Monday Range Fade strategy.",
   "bias": "Bearish",
-  "confidence": 45,
+  "confidence": 38,
   "key_levels": {
-    "support": [62181, 60000, 59200],
-    "resistance": [63529, 64000, 66500]
+    "support": ["63,361 (MA50)", "61,500 (recent swing low)", "59,108 (52wk low/SSL)"],
+    "resistance": ["64,332 (MA200)", "65,500-66,200 (Mon Jun 15 range)", "71,360 (ATH)"]
   },
   "ict_analysis": {
-    "daily_bias": "Bearish. Price below MA50(63591)/MA100(64780)/MA200(64402). D1 Strong Sell signal. 52-wk range $59.2K-$126.1K, price in bottom quartile.",
-    "h4_context": "Recovering from Jun sell-off. Broke above $64K on Jun 14-15 but failed at $66.5K resistance. Now back below $64K. MACD turning negative.",
-    "m15_status": "Short-term bounce (30min Strong Buy, Hourly Buy). STOCH 99.1 overbought. Bounce may be exhausting near $63.5K resistance."
+    "daily_bias": "BEARISH — Below MA200 (64,332), above MA50 (63,361). Death cross forming. Macro downtrend from $71.3K ATH.",
+    "h4_context": "Lower highs since Jun 2. Mon $66.2K → Thu $62.9K → now $64K. Bounce at MA confluence zone.",
+    "m15_status": "MT5 OFFLINE. Web data only. Sunday = low liquidity."
   },
-  "weekly_profile": "Uncertain — need Mon/Tue data. Possible Profile 3 (Classic Reversal) if Mon high formed and price reversed post-FOMC. Or Profile 7 (Range Expansion) if both extremes formed.",
-  "event_filter": "FOMC Week +2 (FOMC was Jun 17). NOT Week 0 — no VETO. Post-FOMC volatility settling. Historical: FOMC+2 is favorable for Monday Range strategy.",
+  "event_filter": {
+    "week_classification": "Normal (no major events)",
+    "fomc_week": false,
+    "veto": false
+  },
+  "monday_range": {
+    "monday_date": "2026-06-15",
+    "estimated_high": 66200,
+    "estimated_low": 65500,
+    "current_vs_range": "BREAKDOWN — $63,998 is BELOW Monday Low ($65,500). Not a retest, a breakdown.",
+    "note": "Template vars {monday_high}/{monday_low} unresolved in webhook. Estimated from Yahoo Finance data."
+  },
   "risks": [
-    {"event": "Weekend low liquidity", "time": "Now (Sunday)", "impact": "high"},
-    {"event": "ETF outflows resuming", "time": "This week", "impact": "medium"},
-    {"event": "$60K psychological support test", "time": "If breakdown", "impact": "high"}
+    {"event": "Webhook template vars unresolved", "impact": "high"},
+    {"event": "MT5 bridge offline", "impact": "high"},
+    {"event": "Sunday — wrong day for strategy", "impact": "medium"}
   ],
-  "recommendation": "NO_GO — TEST signal with unresolved TV placeholders. Macro bearish, short-term bounce overbought. Sunday = low liquidity. Wait for real signal on trading day with resolved Monday range data.",
-  "data_sources": ["Investing.com (Jun 19-21)", "RoboForex (Jun 15)", "Barchart (Jun 20)"],
-  "data_quality": "DEGRADED — Alfred MT5 offline (both IPs timed out). Web data only. Confidence reduced 15pts."
+  "recommendation": "NO_GO — (1) Sunday: strategy triggers Tue H1/H4. (2) Price broke BELOW Monday range = bearish continuation, not fade. (3) Template vars broken — fix webhook config. (4) MT5 offline. (5) Macro bearish but entry conditions not met."
 }

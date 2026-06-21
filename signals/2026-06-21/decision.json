@@ -1,0 +1,66 @@
+{
+  "date": "2026-06-21",
+  "timestamp": "2026-06-21T17:40:00+08:00",
+  "symbol": "BTCUSD",
+  "signal_action": "TEST",
+  "signal_price": 63998.6,
+  "consensus_score": 48,
+  "delivery_tier": "SKIP",
+  "decision": "NO_GO",
+  "decision_reason": "Walker confidence (56) below CONDITIONAL_GO threshold (60). ORB score (50) below threshold (55). Both fail decision matrix v2. Additionally: Sunday (wrong day for strategy), price broke BELOW Monday range (bearish breakdown, not fade setup), webhook template variables unresolved.",
+  "agent_scores": {
+    "merlin_macro": {
+      "score": 12,
+      "max": 30,
+      "bias": "Bearish",
+      "confidence": 38,
+      "notes": "Below MA200, death cross, ETF outflows. Low confidence due to MT5 offline + template vars broken."
+    },
+    "walker_ta": {
+      "score": 21,
+      "max": 40,
+      "bias": "Bearish",
+      "confidence": 56,
+      "orb_score": 50,
+      "notes": "Bearish breakdown below Monday range. MA confluence resistance. No unicorn/M5 double confirmed."
+    },
+    "alfred_stats": {
+      "score": 15,
+      "max": 30,
+      "go_no_go": "WAIT",
+      "veto": false,
+      "lot_multiplier": 0.5,
+      "notes": "Historical data limited for BTC Monday Range. Sunday = low liquidity. False breakout rate estimated 65-75%."
+    }
+  },
+  "trade_parameters": {
+    "direction": "SHORT (if entry triggered)",
+    "entry": 64200,
+    "sl": 64800,
+    "tp1": 63361,
+    "tp2": 61500,
+    "tp3": 59108,
+    "rr_ratio": "2.4:1",
+    "lot_size": "0.5x (Alfred WAIT multiplier)",
+    "note": "HYPOTHETICAL — strategy conditions not met"
+  },
+  "key_confluences": [
+    "Bearish macro: below MA200 (64,332), death cross forming",
+    "Price broke BELOW Monday June 15 range (~65,500-66,200) = breakdown, not retest",
+    "MA confluence resistance at 64,332 (MA200) — key ICT resistance array",
+    "Sunday = lowest liquidity day, spreads widen, false moves common",
+    "Webhook template vars unresolved — cannot validate Monday Range parameters"
+  ],
+  "critical_issues": [
+    "⚠️ WEBHOOK CONFIG BROKEN: {timeframe}, {monday_high}, {monday_low}, {range_size} sent as literal text",
+    "⚠️ WRONG DAY: Monday Range Fade triggers Tue H1/H4, not Sunday",
+    "⚠️ MT5 OFFLINE: Alfred Windows PC unreachable (both IPs timed out)",
+    "⚠️ WRONG PATTERN: Price broke BELOW Monday range = bearish continuation, not fade setup"
+  ],
+  "action_items": [
+    "Fix TradingView webhook: replace literal {monday_high}/{monday_low}/{range_size} with actual TV variables",
+    "Wait for Monday June 22 range to form → Tuesday June 23 H1/H4 for real entry signal",
+    "Start Alfred MT5 on Windows PC before Monday open",
+    "If real BTC setup wanted: wait for bearish MSS below 64,332 (MA200) with displacement"
+  ]
+}

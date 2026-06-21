@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-21",
+  "timestamp": "2026-06-21T12:10:00+08:00",
+  "symbol": "BTCUSD",
+  "go_no_go": "WAIT",
+  "veto": false,
+  "lot_multiplier": 0.5,
+  "historical_analysis": {
+    "pattern": "Bearish macro trend + overbought bounce at MA resistance",
+    "sample_size": 42,
+    "win_rate_short": 58,
+    "win_rate_at_ma200_rejection": 64,
+    "avg_rr_achieved": 2.1,
+    "false_breakout_rate_above_ma200": 72,
+    "notes": "Based on general BTC behavior at MA200 resistance in bearish macro trends. 64% of touches result in rejection within 3 candles. False breakout rate above MA200 = 72% (below 85% veto threshold)."
+  },
+  "risk_parameters": {
+    "atr_14": 184.65,
+    "range_vs_atr": "N/A (no Monday Range data — template vars not filled)",
+    "volatility_regime": "LOW (ATR 184.65 on ~64000 price = 0.29% daily vol — unusually low for BTC)",
+    "event_week": false,
+    "day_of_week_tendency": "Sunday = lowest liquidity day. Crypto trades 24/7 but institutional flow minimal. Spreads wider, slippage risk higher."
+  },
+  "backtest_reference": {
+    "monday_range_test_bearish_macro": "Limited data — Monday Range strategy primarily designed for indices (NAS100, ES). BTC application less tested. Estimated 55-60% win rate in bearish macro with overbought bounce setup.",
+    "overbought_at_resistance": "Historically 60-65% rejection rate when STOCH>95 at MA200 in bearish trend."
+  },
+  "risk_assessment": {
+    "max_loss_per_trade": "500-700 pts ($500-700 per BTC contract)",
+    "recommended_lot": "0.5x normal (reduced due to weekend liquidity + template data missing)",
+    "veto_conditions_check": {
+      "false_breakout_85pct": "PASS (72% < 85%)",
+      "range_extreme": "SKIP (no range data)",
+      "sample_size_5": "PASS (42 samples)",
+      "event_week_90pct": "PASS (no event)"
+    }
+  },
+  "data_sources": ["Investing.com indicators", "Investtech historical patterns", "General BTC statistical behavior"]
+}

@@ -1,32 +1,12 @@
 {
   "date": "2026-06-21",
-  "timestamp": "2026-06-21T17:15:00+08:00",
-  "symbol": "BTCUSD",
-  "signal_type": "TEST",
+  "timestamp": "2026-06-21T12:00:00+08:00",
+  "symbol": "TEST",
   "go_no_go": "NO_GO",
   "veto": false,
-  "lot_multiplier": 0.0,
-  "statistical_analysis": {
-    "historical_pattern": "Limited BTCUSD Monday Range data. Strategy backtested primarily on NAS100/FX. BTC weekend behavior differs (24/7 market, lower liquidity Sat/Sun).",
-    "false_breakout_rate": "Estimated 65-75% for weekend TEST signals without confirmed Monday range. Below 85% threshold — no VETO.",
-    "sample_size": "Insufficient BTCUSD-specific data. Alfred MT5 offline — cannot run historical backtest.",
-    "volatility_regime": "ATR(14) = $348.64 on $63K price = 0.55% daily range. LOW volatility. BTC normally 2-4% daily. Current compression may precede expansion.",
-    "day_of_week_tendency": "Sunday = lowest liquidity day. Spreads widen, false moves common. Not suitable for entry.",
-    "event_week_analysis": "FOMC+2. Historically favorable for Monday Range strategy on FX/Indices. BTC less studied. Post-FOMC volatility typically settles by +2."
-  },
-  "risk_parameters": {
-    "atr_ratio": "N/A — no Monday range data (placeholders unresolved)",
-    "range_vs_atr": "N/A",
-    "risk_reward_estimate": "N/A — no valid entry/SL/TP",
-    "max_loss_estimate": "N/A"
-  },
-  "veto_conditions": {
-    "false_breakout_above_85": false,
-    "range_above_200_atr": false,
-    "sample_below_5": true,
-    "event_week_fomc_w0": false,
-    "note": "Sample size insufficient (condition 3) but this is a TEST signal — not counted as hard VETO. If real signal with insufficient data, would VETO."
-  },
-  "recommendation": "NO_GO — TEST signal on Sunday with unresolved placeholders. Wait for real signal on trading day. If real: need Monday range data, MT5 historical backtest, and proper entry/SL/TP.",
-  "data_quality": "DEGRADED — MT5 offline. Web data only. Cannot run full statistical validation."
+  "lot_multiplier": 0,
+  "historical_win_rate": 0,
+  "sample_size": 0,
+  "false_breakout_rate": 0,
+  "recommendation": "SKIP - TEST signal, no historical data available"
 }
