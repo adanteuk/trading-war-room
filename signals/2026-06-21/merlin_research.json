@@ -1,58 +1,32 @@
 {
   "date": "2026-06-21",
-  "timestamp": "2026-06-21T09:47:57.474577Z",
-  "agent": "Merlin",
+  "timestamp": "2026-06-21T11:00:00+08:00",
   "symbol": "BTCUSD",
-  "signal_price": 63977.27,
-  "signal_action": "TEST",
-  "summary": "BTCUSD in strong macro downtrend. -49% from ATH ($126K Oct'25), below ALL major MAs. -DI(26.1) > +DI(15.6), ADX 38 = strong bearish trend. Bouncing +8.5% from cycle low $59,109 (Jun 5). Fed rate hike odds rising. Bearish bias.",
-  "bias": "Bearish",
-  "confidence": 72,
-  "weekly_profile": "Bearish Continuation. Price dropped from Monday open ~66K to Friday low ~62.9K, now bouncing. Classic bearish week.",
-  "event_filter": "No FOMC Week 0. Fed held at 3.5-3.75% but dot plot shows rate HIKE projections. Hawkish for crypto.",
-  "dealing_range": {
-    "timeframe": "D1",
-    "swing_high": 126198,
-    "swing_low": 59109,
-    "equilibrium": 92654,
-    "current_position_pct": 7.4,
-    "position": "DEEP DISCOUNT (bottom 7.4% of D1 range)"
-  },
+  "summary": "BTCUSD testing $64K support after 26% YTD decline. Price 49% below ATH ($126K). FOMC week creates volatility risk. Macro bias neutral-bearish until $66.5K reclaimed.",
+  "bias": "Neutral",
+  "confidence": 45,
   "key_levels": {
-    "support": [
-      59109,
-      62160,
-      60800
-    ],
-    "resistance": [
-      66000,
-      69100,
-      74050
-    ]
+    "support": ["64000", "62500", "59100 (52W low)"],
+    "resistance": ["66500", "70400", "80000-80500"]
   },
   "ict_analysis": {
-    "daily_bias": "BEARISH. Below all MAs. -DI > +DI. LH/LL since Oct'25 ATH.",
-    "h4_context": "Bounce from $59K forming higher lows but below H4 resistance 66K-67K.",
-    "m15_status": "TEST at $63,977. Testing key level. Weekend session = lower liquidity."
+    "daily_bias": "Neutral-Bearish. Price in discount zone (49% below ATH). No clear D1 structure. Testing $64K support.",
+    "h4_context": "Consolidation around $64K. Range-bound between $62.5K-$66.5K. No clear H4 expansion swing.",
+    "m15_status": "MT5 offline - cannot verify M15 structure. Web data shows intraday range $64,129-$64,461."
   },
+  "event_filter": {
+    "week_classification": "FOMC Week (June 17 meeting)",
+    "impact": "HIGH - Fed rate decision creates volatility risk",
+    "veto_status": false
+  },
+  "weekly_profile": "Mid-week reversal potential. FOMC Wednesday likely sets weekly high/low.",
   "risks": [
-    {
-      "event": "Fed rate hike expectations",
-      "time": "Ongoing",
-      "impact": "high"
-    },
-    {
-      "event": "BTC ETF outflows $6.4B/30d",
-      "time": "Ongoing",
-      "impact": "high"
-    },
-    {
-      "event": "$13B options expiry",
-      "time": "This week",
-      "impact": "medium"
-    }
+    {"event": "FOMC Rate Decision", "time": "Wed 19:00 HKT", "impact": "high"},
+    {"event": "Fed Press Conference", "time": "Wed 19:30 HKT", "impact": "high"},
+    {"event": "Crypto weekend volatility", "time": "Sat-Sun", "impact": "medium"}
   ],
-  "recommendation": "BEARISH bias. TEST at $63,977 in downtrend favors SHORT on rejection. Deep discount means tight stops needed.",
-  "macro_score": 18,
-  "macro_score_max": 30
+  "recommendation": "WAIT - FOMC week creates binary event risk. Price at key $64K support but no clear ICT setup. Wait for FOMC resolution Thursday before committing. MT5 data unavailable reduces confidence.",
+  "data_sources": ["Yahoo Finance", "Web Search"],
+  "mt5_status": "OFFLINE - Alfred unreachable at both 192.168.11.172 and 192.168.11.211",
+  "confidence_adjustment": -15
 }

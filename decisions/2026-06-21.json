@@ -1,26 +1,74 @@
 {
   "date": "2026-06-21",
-  "timestamp": "2026-06-21T09:47:57.475248Z",
+  "timestamp": "2026-06-21T11:15:00+08:00",
   "symbol": "BTCUSD",
-  "signal_price": 63977.27,
-  "signal_action": "TEST",
-  "consensus_score": 52,
+  "signal_price": 64062.76,
+  "current_price": 64219.63,
+  
+  "consensus_score": 28,
+  "score_breakdown": {
+    "merlin_macro": {"score": 8, "max": 30, "reason": "Neutral bias, FOMC week risk, MT5 offline (-15 confidence)"},
+    "walker_technical": {"score": 12, "max": 40, "reason": "ORB score 38 (VETO <40), no M15 confirmation, Kill Zone inactive"},
+    "alfred_statistical": {"score": 8, "max": 30, "reason": "Insufficient data (MT5 offline), estimated 65% false breakout rate"}
+  },
+  
   "decision": "NO_GO",
-  "lot_size_pct": "0%",
-  "reason": "Below thresholds: Walker conf=55 (<60) OR ORB=52 (<55)",
-  "agent_scores": {
-    "merlin_macro": "18/30",
-    "walker_ta": "22/40",
-    "alfred_stats": "12/30"
+  "decision_reason": "Multiple veto conditions triggered: (1) Walker ORB score 38 < 40 threshold (hard VETO), (2) Consensus score 28 < 60 delivery threshold, (3) MT5 data unavailable for all agents, (4) FOMC week volatility risk, (5) Saturday = low liquidity",
+  
+  "veto_conditions": {
+    "walker_orb_veto": true,
+    "walker_orb_score": 38,
+    "walker_orb_threshold": 40,
+    "alfred_veto": false,
+    "merlin_veto": false,
+    "total_vetos": 1
   },
+  
+  "lot_size": 0,
+  "lot_multiplier": 0.0,
+  
   "trade_parameters": {
-    "direction": "SHORT",
-    "entry_zone": "64,500 - 66,000",
-    "stop_loss": "66,500",
-    "take_profit_1": "62,160",
-    "take_profit_2": "60,800",
-    "take_profit_3": "59,109",
-    "risk_reward": "1.5:1 to TP1, 2.5:1 to TP2"
+    "entry": null,
+    "stop_loss": null,
+    "take_profit": null,
+    "risk_reward": null,
+    "reason": "NO_GO decision - no trade parameters generated"
   },
-  "delivery_threshold": "SKIP"
+  
+  "agent_recommendations": {
+    "merlin": "WAIT - FOMC week creates binary event risk. Wait for FOMC resolution.",
+    "walker": "SKIP - ORB veto triggered. No M15 setup confirmation possible.",
+    "alfred": "NO_GO - Insufficient data for statistical validation."
+  },
+  
+  "key_levels": {
+    "support": ["64000 (psychological)", "62500", "59109 (52W low)"],
+    "resistance": ["66500 (immediate)", "70400", "80000-80500 (major supply)"]
+  },
+  
+  "risks": [
+    {"event": "FOMC Week (post-meeting)", "impact": "high", "note": "Fed decision already occurred Wed, but weekend drift possible"},
+    {"event": "MT5 Infrastructure Offline", "impact": "high", "note": "Alfred unreachable at both IPs, TradingView MCP unresponsive"},
+    {"event": "Weekend Low Liquidity", "impact": "medium", "note": "Saturday = reduced crypto liquidity, wider spreads"},
+    {"event": "Signal Template Variables Unfilled", "impact": "medium", "note": "TradingView alert did not populate {timeframe}, {monday_high}, {monday_low}, {range_size}"}
+  ],
+  
+  "infrastructure_status": {
+    "alfred_mt5": "OFFLINE - 192.168.11.172 and 192.168.11.211 both unreachable",
+    "tradingview_mcp": "UNRESPONSIVE - CDP connection timeout",
+    "data_sources_used": ["Yahoo Finance", "Web Search"],
+    "confidence_adjustment": -25
+  },
+  
+  "action_items": [
+    "Verify Alfred MT5 server is running on Windows PC (check 192.168.11.172:5555)",
+    "Restart TradingView Desktop with CDP flag if screenshot needed",
+    "Fix TradingView alert template to populate Monday Range variables",
+    "Wait for weekday (Mon-Fri) with full MT5 data before attempting BTCUSD analysis",
+    "Monitor $64K support level - break below targets $62.5K, hold + break above $66.5K = bullish"
+  ],
+  
+  "next_review": "2026-06-23T19:00:00+08:00 (Monday 19:00 HKT - next cron job)",
+  
+  "transcript": "Sequential multi-agent pipeline executed for BTCUSD TEST signal at $64,062.76. All three agents (Merlin, Walker, Alfred) completed analysis with reduced confidence due to MT5 infrastructure offline. Walker triggered ORB VETO (score 38 < 40). Consensus score 28/100. Decision: NO_GO. No trade recommended. Infrastructure issues must be resolved before next analysis attempt."
 }
