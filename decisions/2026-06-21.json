@@ -1,0 +1,59 @@
+{
+  "date": "2026-06-21",
+  "timestamp": "2026-06-21T17:16:00+08:00",
+  "symbol": "BTCUSD",
+  "signal_type": "TEST",
+  "decision": "NO_GO",
+  "tier": "NO_GO",
+  "lot_size_pct": 0,
+  "consensus_score": 28,
+  "agent_scores": {
+    "merlin_macro": {"score": 12, "max": 30, "confidence": 45, "bias": "Bearish"},
+    "walker_ta": {"score": 10, "max": 40, "confidence": 38, "orb_score": 32, "orb_veto": true},
+    "alfred_stats": {"score": 6, "max": 30, "go_no_go": "NO_GO", "veto": false, "lot_multiplier": 0.0}
+  },
+  "veto_summary": {
+    "walker_orb_veto": "TRIGGERED — ORB score 32 < 40 threshold",
+    "alfred_veto": "NOT triggered (but NO_GO recommendation due to insufficient data)",
+    "merlin_veto": "NOT triggered (FOMC+2, not Week 0)"
+  },
+  "trade_parameters": {
+    "direction": "N/A",
+    "entry": "N/A",
+    "stop_loss": "N/A",
+    "take_profit": "N/A",
+    "risk_reward": "N/A",
+    "lot_size": "N/A"
+  },
+  "reasoning": "TEST signal with unresolved TradingView placeholders ({timeframe}, {monday_high}, {monday_low}, {range_size}). Sunday = lowest liquidity day. Walker ORB VETO triggered (score 32 < 40). Macro bearish (price below MA50/100/200). Short-term bounce overbought (STOCH 99.1). Alfred MT5 offline — degraded data quality. All three agents recommend NO_GO.",
+  "confluences": {
+    "bearish": [
+      "D1/W1/M1 Strong Sell signals",
+      "Price below MA50(63,591)/MA100(64,780)/MA200(64,402)",
+      "Failed breakout at $66.5K resistance (Jun 15)",
+      "MACD negative on daily",
+      "52-week range: $59.2K-$126.1K — price in bottom quartile",
+      "Sunday low liquidity"
+    ],
+    "bullish": [
+      "Short-term bounce (30min Strong Buy, Hourly Buy)",
+      "Above MA5/10/20 (short-term support)",
+      "FOMC+2 historically favorable for range strategies",
+      "ATR low (0.55%) — compression may precede expansion"
+    ]
+  },
+  "data_quality": "DEGRADED",
+  "data_issues": [
+    "Alfred MT5 offline (both 192.168.11.172 and 192.168.11.211 timed out)",
+    "TradingView alert placeholders unresolved — no Monday range data",
+    "Sunday = non-standard trading day for Monday Range strategy",
+    "Web data only (Investing.com, RoboForex, Barchart) — no live candle data"
+  ],
+  "action_items": [
+    "Fix TradingView alert template — ensure {{timeframe}}, {{monday_high}}, {{monday_low}}, {{range_size}} are properly configured",
+    "Check Alfred MT5 server status on Windows PC",
+    "Wait for real signal on trading day (Mon-Fri)",
+    "When real signal fires: re-run full pipeline with complete data"
+  ],
+  "next_review": "2026-06-22T19:00:00+08:00 (Monday cron job)"
+}

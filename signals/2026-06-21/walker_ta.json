@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-06-21T17:15:00+08:00",
+  "date": "2026-06-21",
+  "symbol": "BTCUSD",
+  "signal_type": "TEST",
+  "current_price": 63136,
+  "signal_price": 63875.54,
+  "bias": "bearish",
+  "confidence": 38,
+  "orb_score": 32,
+  "orb_veto": true,
+  "orb_details": {
+    "htf_bias": -5,
+    "vwap": 3,
+    "volume": 5,
+    "candle_timing": 5,
+    "ict": 5,
+    "range": 9,
+    "note": "Score well below 40 threshold — ORB VETO triggered. No valid Monday range data (TV placeholders unresolved). HTF bias negative (D1/W1 Strong Sell)."
+  },
+  "ict_profile": "Bearish continuation — price rejected at $66.5K resistance, now testing $63K support zone. Potential SSL sweep of $62.2K (Jun 21 low) before reversal or breakdown.",
+  "three_layer_analysis": {
+    "L1_D1": "BEARISH. Below all major MAs (50/100/200). Strong Sell signal. 0 Buy / 12 Sell on MAs. Trend is down from $126K ATH.",
+    "L2_H4": "BEARISH. Failed breakout above $66.5K on Jun 15. Now back below $64K. MACD turning negative. FVG overhead at $64K-$66.5K zone.",
+    "L3_M15": "NEUTRAL-BULLISH (short-term). 30min Strong Buy, Hourly Buy. But STOCH 99.1 overbought — bounce exhausting. Expect pullback."
+  },
+  "key_levels": {
+    "support": [
+      "62181 (Jun 21 low / S2 pivot)",
+      "60000 (psychological)",
+      "59200 (52-week low)"
+    ],
+    "resistance": [
+      "63529 (Jun 21 high / R1 pivot 63348)",
+      "64000 (key level / MA50 63591)",
+      "66500 (major resistance / H4 FVG)"
+    ]
+  },
+  "smt_divergence": "NONE — no cross-asset comparison available (MT5 offline)",
+  "liquidity_sweep": "Potential SSL sweep at $62,181 if breakdown. BSL at $63,529 already tested.",
+  "unicorn_setup": false,
+  "m5_double": false,
+  "entry": "NO ENTRY — ORB VETO (score 32 < 40). If bearish continuation: Short below $62,181, SL $63,200, TP $60,000",
+  "sl": "N/A",
+  "tp": "N/A",
+  "screenshot": "NOT AVAILABLE — TradingView MCP not invoked (TEST signal, Sunday)",
+  "data_quality": "DEGRADED — Web data only, no MT5 candles for precise ICT analysis"
+}
