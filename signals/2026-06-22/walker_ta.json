@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-06-22T10:36:52.866294+00:00",
+  "bias": "neutral",
+  "confidence": 55,
+  "orb_score": 52,
+  "ict_profile": "Classic Thursday Bullish Reversal (last week) \u2192 Monday range formation",
+  "entry": "TBD \u2014 waiting for Kill Zone + H4 level purge",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "30051",
+      "29967",
+      "29620"
+    ],
+    "resistance": [
+      "30495",
+      "30606",
+      "30776"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 NEUTRAL/TRANSITIONAL (HH+HL from Jun 11 crash recovery). Price at 30,435 in premium (82.6% of dealing range 28,206\u219230,776). Latest candle: small bullish body, close at 85% of range.",
+    "l2_h4_context": "H4 range: 30051.2\u219230494.9 (443.7pts). Price at 86.5% of H4 range. No FVGs within 500pts. Key H4 support: 30,051-30,094.",
+    "l3_m15_entry": "Waiting for Kill Zone. No M15 OB confirmed yet. Monitor London open (07:00 UTC) for Judas swing possibility."
+  },
+  "reasoning": "D1 bullish structure intact after Jun 10-11 crash recovery. Price in premium zone limits aggressive long entries. Last week's Thursday reversal pattern suggests potential for Monday range establishment today. Gap-down open recovered, showing buying interest. SMT aligned (no divergence). Wait for KZ + level purge for entry."
+}
