@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-22",
+  "timestamp": "2026-06-22T11:05:40.615649+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "neutral",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bullish macro trend intact post-Jun9 recovery. Price in premium near 52wk high resistance. MT5 offline limits H4/M15 confirmation. WAIT for pullback or breakout confirmation.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "Mixed signals \u2014 standing aside (conf=55, orb=52)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

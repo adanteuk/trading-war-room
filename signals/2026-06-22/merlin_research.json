@@ -1,0 +1,40 @@
+{
+  "date": "2026-06-22",
+  "timestamp": "2026-06-22T11:00:00+08:00",
+  "summary": "Bullish macro trend intact post-Jun9 recovery. Price in premium near 52wk high resistance. MT5 offline limits H4/M15 confirmation. WAIT for pullback or breakout confirmation.",
+  "bias": "Bullish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "30,033 (5-day MA)",
+      "29,918 (Barchart S1)",
+      "29,901 (20-day MA)",
+      "29,572 (Barchart S2)",
+      "29,386 (Barchart S3)",
+      "28,580 (50-day MA)",
+      "28,228 (Jun 9 swing low)"
+    ],
+    "resistance": [
+      "30,449 (Barchart R1)",
+      "30,635 (Barchart R2 / Jun 3 ATH zone)",
+      "30,808 (52-week high / ATH)",
+      "30,981 (Barchart R3)",
+      "31,000 (psychological)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BULLISH structure: HH/HL from Apr low. Recovery from Jun9 low (28,228) to 30,263 (+7.2%). Above all MAs. +DI 20.4 > -DI 18.9. ADX 24.5 moderate. RSI 57.6 neutral-bullish. PREMIUM zone (79% of Jun3-9 range). Near 52wk high resistance.",
+    "h4_context": "Inferred: Bullish FVGs likely at 29,000-29,500 from Jun9 rally. Key support 29,900-30,000 (20dMA). Premium above 30,400. No MT5 data for exact H4 DR/OB/FVG. US-Iran deal + lower yields supportive.",
+    "m15_status": "NO DATA - Alfred MT5 offline at both IPs. Cannot confirm OB formation, Kill Zone timing, or entry setup. Layer 3 incomplete = no validated entry."
+  },
+  "risks": [
+    {"event": "FedEx earnings (Jun 23)", "time": "After close", "impact": "medium"},
+    {"event": "MT5 infrastructure offline", "time": "Ongoing", "impact": "high"},
+    {"event": "Price near 52wk high resistance", "time": "Session", "impact": "medium"},
+    {"event": "Stochastic approaching overbought", "time": "Ongoing", "impact": "low"}
+  ],
+  "recommendation": "WAIT - Macro bullish but premium positioning near ATH with no M15 confirmation. Ideal: pullback to 29,900-30,000 discount for long entry, or breakout above 30,450 with M15 OB confirmation. No chase at premium without Layer 3 validation.",
+  "data_source_note": "Alfred MT5 offline (both 192.168.11.211 and 192.168.11.172 unreachable). Analysis based on Barchart technicals (20-min delayed) and daily_bias.json history. Confidence reduced -15pts from estimated ~70.",
+  "macro_catalysts": "US-Iran peace deal signed (Strait of Hormuz reopening), Intel +10% (Apple chip partnership), crude at 3.5mo low, 10Y yield -4bp to 4.45%. Risk-on environment supportive for tech/growth.",
+  "weekly_profile_context": "Monday after strong Thursday (+2.48%). Friday was Juneteenth holiday. Typical Monday profile: seek liquidity from weekend, establish weekly range. Expect initial probe of Thursday high/low before direction."
+}
