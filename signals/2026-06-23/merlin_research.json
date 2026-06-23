@@ -1,0 +1,37 @@
+{
+  "date": "2026-06-23",
+  "timestamp": "2026-06-23T11:00:00+08:00",
+  "summary": "BEARISH shift confirmed. D1 printed massive bearish displacement candle (86% body, -815pts) on Jun 22, breaking H4 structure. Market structure now BEARISH (LH/LL). Fresh bearish FVG at 29,650-29,948 acts as overhead resistance. Price deep discount on H4 (-78.8%) may attract short-term bounce, but macro direction favors shorts on retracements into premium.",
+  "bias": "Bearish",
+  "confidence": 65,
+  "key_levels": {
+    "support": [
+      "29,469 (Jun 23 session low / M15 swing low)",
+      "29,386 (Barchart S3 / psychological)",
+      "28,596 (May 18 swing low / SSL target)",
+      "28,204 (Jun 8 swing low / major SSL)"
+    ],
+    "resistance": [
+      "29,650-29,948 (Fresh H4 bearish FVG / primary resistance)",
+      "30,051 (H4 DR low, now flipped to resistance)",
+      "30,178 (Bearish FVG upper bound)",
+      "30,449 (Jun 22 high / Barchart R1)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH (High conviction). Jun 22 D1 candle: O:30,370 H:30,416 L:29,469 C:29,556 — massive 86% body bearish displacement (-815pts). Market structure confirmed BEARISH (LH/LL): Swing Highs declining (30,776→30,667→30,416), Swing Lows declining (28,596→28,204→29,469). Price at 54.9% of D1 dealing range (28,204-30,667) — barely in premium, near equilibrium. This is a regime shift from yesterday's bullish bias. The bearish displacement candle is the strongest signal in ICT methodology.",
+    "h4_context": "BEARISH MSS confirmed. Price broke below H4 dealing range low (30,051.2) with strong displacement. Two consecutive bearish H4 candles (94% and 84% body) created fresh bearish FVGs: (1) 29,985-30,178 (gap=193pts), (2) 29,650-29,948 (gap=298pts). Price now at -78.8% of H4 range (30,051-30,679) — DEEP DISCOUNT. This discount position suggests potential short-term bounce, but the bearish FVGs overhead act as resistance. CRT: Last H4 candle (09:00-13:00 UTC) shows weak bullish body (5%) at 29,555 — indecision/reversal attempt. Expected behavior: Price may bounce into 29,650-29,948 bearish FVG, then reject and expand lower.",
+    "m15_status": "NO VALID ENTRY YET. M15 shows bullish OB at 29,498-29,571 (formed 08:45 UTC) and bearish OB at 29,599-29,650 (formed 09:15 UTC). Price at 29,556 is between these OBs. Kill Zones: NONE currently active (London closed, NY not yet open). M15 FVGs: Bearish FVG at 29,576-29,607 and 29,636-29,657 overhead. Bullish FVG at 29,571-29,599 below. No entry confirmation — wait for NY Kill Zone (13:00-16:00 UTC) for potential short entry on retracement into bearish FVG."
+  },
+  "risks": [
+    {"event": "Price deep discount on H4 (-78.8%)", "time": "Ongoing", "impact": "medium"},
+    {"event": "M15 bullish OB at 29,498-29,571 may attract bounce", "time": "Session", "impact": "medium"},
+    {"event": "No Kill Zone active for entry confirmation", "time": "Until 13:00 UTC", "impact": "high"},
+    {"event": "Yesterday's bullish bias may cause lag in positioning", "time": "Session", "impact": "low"},
+    {"event": "FedEx earnings after close (Jun 23)", "time": "After close", "impact": "medium"}
+  ],
+  "recommendation": "GO SHORT on retracement into 29,650-29,948 bearish FVG during NY Kill Zone (13:00-16:00 UTC). Entry: Limit sell at 29,700-29,800 (within bearish FVG). Stop Loss: 29,950 (above FVG upper bound, 150-250pts risk). Take Profit: 29,469 (today's low, 230-330pts) → 29,386 (S3) → 28,596 (May 18 SSL). Risk/Reward: 1:1.5 to 1:2.5. Alternative: Wait for M15 bearish OB retest at 29,599-29,650 with displacement confirmation. DO NOT chase shorts at current price (29,556) — too deep in discount. Wait for bounce into premium FVG zone.",
+  "data_source_note": "Alfred MT5 online at 192.168.11.173. Full D1/H4/M15 data retrieved. Analysis based on ICT/CRT 3-layer pipeline. Confidence reduced from ~75 to 65 due to: (1) deep H4 discount may attract bounce, (2) no Kill Zone active yet, (3) M15 bullish OB could provide short-term support.",
+  "macro_context": "Yesterday's massive selloff (-815pts) represents a regime shift from the bullish trend that held since Jun 9 recovery. The bearish displacement candle is the strongest ICT signal — smart money distribution confirmed. However, the speed and magnitude of the move suggests potential exhaustion. Deep discount on H4 (-78.8%) creates conditions for a technical bounce before continuation. Ideal scenario: bounce into 29,650-29,948 bearish FVG during NY session, rejection with M15 bearish OB formation, then expansion to 29,469 → 29,386 → 28,596.",
+  "weekly_profile_context": "Tuesday following Monday's bullish session (Jun 22 close 30,383). Today's massive selloff (Jun 22 close 29,556) represents a sharp reversal. Typical Tuesday profile: continuation of Monday's direction OR reversal if Monday was a liquidity grab. Given the bearish displacement, this looks like a Tuesday reversal profile — Monday's rally to 30,679 was a BSL sweep, followed by bearish expansion. Expect follow-through to downside unless price reclaims 30,051 (H4 DR low) with displacement."
+}

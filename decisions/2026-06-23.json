@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-23",
+  "timestamp": "2026-06-23T11:04:18.704433+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "BEARISH shift confirmed. D1 printed massive bearish displacement candle (86% body, -815pts) on Jun 22, breaking H4 structure. Market structure now BEARISH (LH/LL). Fresh bearish FVG at 29,650-29,948 acts as overhead resistance. Price deep discount on H4 (-78.8%) may attract short-term bounce, but macro direction favors shorts on retracements into premium.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "ORB score below GO threshold (conf=60, orb=42 < 50)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
