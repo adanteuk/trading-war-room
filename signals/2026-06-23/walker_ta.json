@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-06-23T10:37:00+00:00",
+  "symbol": "PEPPERSTONE:NAS100",
+  "bias": "bearish",
+  "confidence": 60,
+  "orb_score": 42,
+  "ict_profile": "Classic Tuesday High",
+  "entry": "TBD — waiting for M15 retracement into bearish OB during NY AM Kill Zone (08:30-11:00 NY)",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["29494.5 (today low)", "29000-29200 (H4 FVG zone)", "28747.0 (Jun 5 crash low)", "28206.1 (Jun 9 swing low)"],
+    "resistance": ["29810.5 (H4 bar high)", "30051.2 (Monday low)", "30383.2 (Monday close)", "30679.6 (Monday high)"]
+  },
+  "dealing_range_d1": {
+    "low": 28206.1,
+    "low_date": "2026-06-09",
+    "high": 30679.6,
+    "high_date": "2026-06-22",
+    "range_pts": 2473.5,
+    "fib_50": 29442.9,
+    "fib_61_8": 29741.1,
+    "price_position_pct": 53.5
+  },
+  "dealing_range_h4": {
+    "low": 29494.5,
+    "low_date": "2026-06-23 06:00 UTC",
+    "high": 30679.6,
+    "high_date": "2026-06-22 14:00 UTC",
+    "range_pts": 1185.1,
+    "price_position_pct": 2.3
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 bias shifted bearish. Today (Jun 23) massive reversal: O:30,370.8 → C:29,524.3 (-846.5pts). Broke below Monday low (30,051.2). D1 structure was HH+HL from Jun 12→16 but Jun 17 broke with LH+LL. Jun 18 recovered HH+HL, Jun 19 LH+HL, Jun 22 HH+LL. Today threatens LH+LL. Price at 53.5% of D1 dealing range (28,206.1→30,679.6) = just above equilibrium (29,442.9). Bearish marubozu (91.8% body) with 921pt range.",
+    "l2_h4_context": "H4 showing 4 consecutive bearish candles (Tue 22:00 → now). 3 are bearish marubozu (-193.6, -354.0, -223.2). Price at 2.3% of H4 range = deep discount at the bottom. No H4 bullish OB holding. Next H4 support is the Jun 15-16 expansion FVG zone ~29,000-29,200. CRT defined by Tue 22:00 UTC bar. Price has purged below CRT and continues lower.",
+    "l3_m15_entry": "M15 selloff showing signs of exhaustion — last 3 bars are smaller range with mixed direction. Low at 29,494.5 at 08:15 NY. Some bullish M15 candles appearing (08:30 +54.4, 09:00 +71.2) but no confirmed bullish displacement or MSS. No Kill Zone active (06:30 NY). WAIT for NY AM KZ (08:30-11:00 NY) for potential retracement into M15 bearish OB (~29,800-29,900 zone) for short entry."
+  },
+  "smt_divergence": "None detected — both NAS100 and US500 made HL at recent swing lows",
+  "weekly_profile": "Classic Tuesday High — Monday bullish (+94.5pts), Tuesday reversing below Monday low (swept 30,051.2). This profile typically sees Tuesday set the weekly high followed by bearish continuation Wed-Thu.",
+  "reasoning": "NAS100 experiencing significant reversal on Jun 23 after a 10-day rally from Jun 9 low (28,206.1) to Jun 22 high (30,679.6). Today's -846pt drop broke Monday's low and H4 structure. D1 structure that was HH+HL is now threatened — today is forming LH+LL which would confirm bearish shift. H4 shows relentless selling with 4 consecutive bearish candles (3 marubozu). M15 showing early exhaustion signs but no reversal confirmation. Key question: is this a healthy retracement to D1 equilibrium (29,443) or a full reversal? Price is right at equilibrium (53.5%) — a bounce from here is technically valid. But the speed and magnitude of selling suggest institutional distribution. Classic Tuesday High profile supports bearish continuation Wed-Thu. Watch 29,494.5 (today's low) — a sweep + reclaim would be bullish SMT signal. Failure to hold opens 29,000-29,200 FVG zone. No entry until M15 shows displacement or NY KZ provides a setup. Confidence at 60 because: (1) broader trend was bullish until today, (2) at D1 equilibrium = natural bounce zone, (3) M15 showing early exhaustion, (4) no SMT divergence to confirm bearish shift."
+}
