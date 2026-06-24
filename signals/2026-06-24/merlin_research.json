@@ -1,0 +1,31 @@
+{
+  "date": "2026-06-24",
+  "timestamp": "2026-06-24T11:00:16Z",
+  "summary": "D1 bearish structure confirmed (LH/LL) after Jun 22 massive displacement (-815pts). Price at D1 equilibrium (52%) with H4 deep discount (13.8%). Bearish FVG 29,650-29,948 overhead = key resistance. Wait for rally into FVG for shorts.",
+  "bias": "Bearish",
+  "confidence": 60,
+  "key_levels": {
+    "support": [
+      "29,295 (H4 DR low / Jun 23 low)",
+      "28,596 (May 18 swing low)",
+      "28,204 (Jun 8 swing low / D1 DR low)"
+    ],
+    "resistance": [
+      "29,650-29,948 (Bearish H4 FVG - key resistance)",
+      "29,985-30,178 (Bearish H4 FVG upper)",
+      "30,000 (Psychological)",
+      "30,667 (D1 swing high / Jun 15)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH (LH/LL). Jun 22 massive bearish displacement (80% body, -815pts). Jun 23-24 consolidation at lows. Price at 52% D1 DR = equilibrium zone. Bearish structure intact: LH 30,667<30,776, LL 28,204<28,596.",
+    "h4_context": "Deep discount (13.8% of H4 DR 29,295-30,679). Bearish FVG 29,650-29,948 overhead (gap=298pts) = key resistance. Price consolidating after selloff. Rally into FVG = short opportunity.",
+    "m15_status": "No kill zone active (11:00 UTC, between sessions). Small range 29,475-29,587. Bullish OB 29,484-29,556, Bearish OB 29,532-29,572. No clear entry setup yet."
+  },
+  "risks": [
+    {"event": "Midweek consolidation", "time": "All day", "impact": "medium"},
+    {"event": "H4 deep discount bounce risk", "time": "Any time", "impact": "medium"},
+    {"event": "D1 equilibrium decision zone", "time": "All day", "impact": "medium"}
+  ],
+  "recommendation": "WAIT. D1 bearish confirmed but H4 deep discount (13.8%) may produce bounce before continuation lower. Wait for price to rally into bearish FVG 29,650-29,948 for short entries. No kill zone active = no entry timing. If price breaks above 29,948 with displacement, bearish thesis weakens."
+}

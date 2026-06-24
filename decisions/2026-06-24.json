@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-24",
+  "timestamp": "2026-06-24T11:04:19.575540+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "D1 bearish structure confirmed (LH/LL) after Jun 22 massive displacement (-815pts). Price at D1 equilibrium (52%) with H4 deep discount (13.8%). Bearish FVG 29,650-29,948 overhead = key resistance. Wait for rally into FVG for shorts.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "ORB score below GO threshold (conf=60, orb=35 < 50)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
