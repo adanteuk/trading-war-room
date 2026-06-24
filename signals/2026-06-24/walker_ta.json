@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-06-24T18:43:36.869453",
+  "bias": "bearish",
+  "confidence": 60,
+  "orb_score": 35,
+  "ict_profile": "Wednesday Continuation Bearish / Seek & Destroy",
+  "entry": "TBD \u2014 Waiting for M15 bearish OB in NY AM KZ (29,700-29,900 zone)",
+  "sl": "TBD \u2014 Above 30,000",
+  "tp": "TP1: 29,131 (D1 61.8%) | TP2: 28,922 (D1 70.5%)",
+  "key_levels": {
+    "support": [
+      "29,277 (Jun 23 low)",
+      "29,131 (D1 61.8% Fib)",
+      "28,922 (D1 70.5% Fib)",
+      "28,197 (Jun 9 crash low)"
+    ],
+    "resistance": [
+      "29,420 (D1 50% Fib)",
+      "29,605 (Jun 17 low \u2014 broken)",
+      "29,709 (D1 38.2% Fib)",
+      "30,097 (D1 23.6% Fib)"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "Bearish. Jun 23 gap-down crash (-978pt gap, -999pts c2c = -3.29%). Candle: gap-down doji with bearish rejection (upper wick 379pts, close at 15% of range). D1 structure: LH+LL on Jun 22\u219223. Price broke below ST dealing range (Jun 17 low 29,605). At 47.0% of major range (Jun 9 28,197 \u2192 Jun 22 30,643).",
+    "l2_h4_context": "H4 data unavailable (Alfred/TV MCP offline). D1 proxy: Major bearish displacement on Jun 23. FVG likely between Jun 22 close (30,347) and Jun 23 gap-down open (29,369). Key resistance: D1 50% Fib (29,420), D1 38.2% (29,709). Support: D1 61.8% (29,131), D1 70.5% (28,922).",
+    "l3_m15_entry": "M15 data unavailable. No entry confirmed. Jun 24 CFD +0.26% mild bounce \u2014 potential Judas swing. Wait for NY AM KZ for M15 OB at 29,700-29,900 resistance zone."
+  },
+  "reasoning": "Bearish: (1) Jun 23 gap-down crash -3.29%, (2) LH+LL structure break, (3) Price broke ST dealing range, (4) NDX SMT bearish vs GSPC (-3.29% vs -1.44%), (5) Both indices failed ATH at Jun 22. Confidence 60/100 \u2014 reduced because: price in discount (47%), Jun 24 bouncing, approaching D1 61.8% support (29,131). ORB 35/100 \u2014 no entry yet.",
+  "data_sources": "Yahoo Finance (^NDX, ^GSPC), TradingView (PEPPERSTONE:NAS100 quote)",
+  "cfd_offset": "+121.5pts (CFD Jun 23 close 29,468.8 vs ^NDX 29,347.27)",
+  "data_limitations": "H4 and M15 data unavailable \u2014 Alfred MT5 and TradingView MCP both offline. Analysis based on D1 structure + CFD current quote only."
+}
