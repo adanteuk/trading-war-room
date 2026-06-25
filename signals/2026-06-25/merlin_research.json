@@ -1,0 +1,22 @@
+{
+  "date": "2026-06-25",
+  "timestamp": "2026-06-25T11:30:00+08:00",
+  "summary": "D1 bearish structure (LH/LL) with price in premium zone (69% of dealing range). Corrective bounce from Jun 22 drop approaching key bearish FVG resistance at 29985-30178. Wait for rejection + Kill Zone timing before entry.",
+  "bias": "Bearish",
+  "confidence": 60,
+  "key_levels": {
+    "support": [29787, 29837, 29626, 29661, 29295, 28987],
+    "resistance": [29985, 30178, 30391, 30412, 30667, 30776]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH structure (LH/LL). Price at 69% of D1 range (30667-28204) = PREMIUM. Jun 22 massive bearish candle (80% body) broke structure. Recent bounce is corrective retracement. Weekly Profile: Thursday typically reversal day.",
+    "h4_context": "H4 range 30679-28987, price at 54% (neutral). Approaching bearish FVG resistance 29985-30178 (78 pts away). Bullish FVG support at 29787-29837. Strong recovery momentum from 28987 low but approaching key resistance zone.",
+    "m15_status": "No Kill Zone active (current ~11:00 UTC, between London/NY sessions). No valid entry setup yet. Wait for NY AM Kill Zone (13:00-16:00 UTC) for M15 OB formation at key level."
+  },
+  "risks": [
+    {"event": "US Initial Jobless Claims", "time": "08:30 ET", "impact": "medium"},
+    {"event": "US Pending Home Sales", "time": "10:00 ET", "impact": "low"},
+    {"event": "Thursday Reversal Pattern", "time": "All day", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - Price approaching critical bearish FVG resistance (29985-30178). If rejected with M15 bearish OB in NY Kill Zone → SHORT entry. If breaks above 30178 → bearish bias invalidated, no trade. Confidence 60/100 due to corrective bounce momentum vs structural bearishness."
+}

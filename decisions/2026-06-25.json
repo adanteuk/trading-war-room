@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-25",
+  "timestamp": "2026-06-25T11:04:38.393933+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "D1 bearish structure (LH/LL) with price in premium zone (69% of dealing range). Corrective bounce from Jun 22 drop approaching key bearish FVG resistance at 29985-30178. Wait for rejection + Kill Zone timing before entry.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "Mixed signals \u2014 standing aside (conf=55, orb=55)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
