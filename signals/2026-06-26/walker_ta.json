@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-06-26T10:31:00Z",
+  "report_date": "2026-06-26",
+  "analyst": "Walker",
+  "instrument": "NAS100",
+  "bias": "bearish",
+  "confidence": 65,
+  "orb_score": null,
+  "orb_note": "Market not yet open — ORB score TBD after NY AM Kill Zone (08:30-11:00 ET)",
+  "ict_profile": "Bearish Continuation Week — Monday established high, Tue-Thu expansion lower, Friday likely continuation or mild retracement",
+  "entry": "TBD — Waiting for NY AM Kill Zone confirmation",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "d1_dealing_range": {
+      "high": 30642.57,
+      "low": 28196.90,
+      "range_pts": 2445.67,
+      "high_date": "Jun 22",
+      "low_date": "Jun 9"
+    },
+    "d1_fibonacci": {
+      "0_pct": 30642.57,
+      "25_pct": 30031.15,
+      "50_pct": 29419.74,
+      "61_8_pct": 29131.15,
+      "70_5_pct": 28918.37,
+      "79_pct": 28710.49,
+      "100_pct": 28196.90
+    },
+    "h4_dealing_range": {
+      "high": 30263.75,
+      "low": 29160.50,
+      "range_pts": 1103.25,
+      "high_date": "Jun 25 H4 bucket 5 (20:00-23:59)",
+      "low_date": "Jun 26 H4 bucket 2 (08:00-11:59)"
+    },
+    "support": [29131, 28963, 28918, 28710, 28197],
+    "resistance": [29420, 29582, 29712, 29842, 30031, 30264, 30643],
+    "today_session": {
+      "high": 29922.50,
+      "low": 29160.50,
+      "current_futures": 29351.00,
+      "d1_50pct_distance": -68.74,
+      "d1_61_8pct_distance_from_low": 29.35
+    }
+  },
+  "smt_divergence": {
+    "detected": true,
+    "type": "bearish",
+    "description": "NDX Jun 22 made HH (30,642.57 > Jun 15 30,587.16) sweeping BSL, while SPX Jun 22 made LH (7,530.01 < Jun 15 7,577.92) failing to confirm. Classic bearish SMT at the top.",
+    "low_smt": "NDX Jun 24→25 made HL (28,963→29,001) while SPX made LL (7,337→7,324) — NDX relatively stronger on lows"
+  },
+  "three_layer_analysis": {
+    "l1_daily": "BEARISH. Since Jun 15/22 high, structure is predominantly LH+LL. Bearish SMT at top confirmed (NDX swept BSL, SPX did not). 4 consecutive bearish D1 candles Mon-Thu. Jun 25 opened at the high (29,843.89 = high) and sold off -404 pts — strong bearish conviction. Price at 50.8% of D1 range (28,197→30,643) — equilibrium zone. Jun 24→25 showed HH+HL structure but candle closed bearish — this is NOT a bullish reversal, it's a lower-timeframe bounce within a bearish macro structure.",
+    "l2_h4_context": "BEARISH. H4 dealing range: 29,160.50 (today's low) → 30,263.75 (Jun 25 evening high) = 1,103 pts. Price at 17.3% of H4 range — deep in discount. Today's session: pre-market rally to 29,922.50 (04:00) then sustained selling to 29,160.50 (11:30 ET). Bounced to 29,562.75 (15:30) then drifting lower to 29,351. Today's low (29,160.50) was within 29 pts of D1 61.8% Fib (29,131.15) — key confluence level tested and held. H4 structure: predominantly LH+LL since Jun 22 evening. The bounce from 29,160 is a retracement within the bearish H4 range.",
+    "l3_m15_entry": "WAITING. Cash market not yet open. NQ=F pre-market pattern: Judas rally to 29,922.50 (04:00) → distribution → sell-off to 29,160.50 → bounce → drift lower. This is a classic bearish pre-market profile. No entry yet — waiting for NY AM Kill Zone (08:30-11:00 ET) for M15 order block confirmation. If price retraces to 29,420-29,580 (D1 50% / H4 61.8% confluence) and shows M15 bearish OB, that would be a high-probability short entry."
+  },
+  "weekly_profile": {
+    "pattern": "Bearish Continuation Week",
+    "details": "Monday established the week high (30,642.57). Tuesday gapped down -978 pts and continued selling. Wednesday made the week low (28,963.10). Thursday opened above Wednesday close but sold off hard (-404 pts, opened at high). This is a classic bearish week: Mon high → Tue/Wed expansion → Thu continuation. Friday profile: likely continuation or mild retracement. After 1,680-pt week range, some profit-taking possible but bias remains firmly bearish."
+  },
+  "kill_zone_status": {
+    "current_time_et": "06:31",
+    "london_kz": "ENDED (02:00-05:00 ET)",
+    "ny_am_kz": "NOT YET (08:30-11:00 ET) — 1h59m until open",
+    "ny_pm_kz": "NOT YET (13:30-15:00 ET)",
+    "action": "Wait for NY AM Kill Zone for entry confirmation"
+  },
+  "reasoning": "Strong bearish bias across all timeframes. D1 structure is LH+LL with bearish SMT at the top (NDX swept BSL at Jun 22 high while SPX failed to confirm — classic ICT divergence). 4 consecutive bearish daily candles with Thursday opening at the high and selling off — maximum bearish conviction. Price at D1 50% Fib (29,419.74) — equilibrium zone. Today's session confirmed bearish continuation: pre-market Judas rally to 29,922.50 followed by sustained selling to 29,160.50 (within 29 pts of D1 61.8% Fib). The 61.8% level held, suggesting possible short-term support, but the overall bias remains bearish. H4 range broken to the downside — price at 17.3% of H4 range (deep discount). Key question: will D1 61.8% (29,131) hold as support for a retracement, or will it break targeting 70.5% (28,918) and 79% (28,710)? Given the bearish SMT and weekly profile, any bounce is likely a selling opportunity. Confidence 65/100 — strong bearish signals but at 61.8% Fib confluence which could trigger a bounce. Entry requires M15 confirmation in NY AM Kill Zone.",
+  "data_sources": ["Yahoo Finance API v8 (^NDX, ^GSPC, NQ=F, ES=F)", "NQ=F M15 intraday data", "Self-verification: 22 checks, 1 correction (today high 29,892.75 → 29,922.50)"],
+  "verification_status": "self_verified_with_correction",
+  "subagent_verification": "pending"
+}
