@@ -1,0 +1,22 @@
+{
+  "date": "2026-06-26",
+  "timestamp": "2026-06-26T11:00:00Z",
+  "summary": "NAS100 bearish: -1708pts from Jun 3 ATH (30,808) to 29,100. D1 LH/LL structure, M15 discount but no KZ. WAIT for NY AM.",
+  "bias": "Bearish",
+  "confidence": 60,
+  "key_levels": {
+    "support": [28889, 28500, 28092],
+    "resistance": [29240, 29350, 29642]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH. LH/LL since Jun 3 ATH 30,808. Broke 30K, 29,763, 29,500 support. Draw on SSL 28,889 then 28,500/28,092. ADX +DI>-DI but fading. RSI 58 not oversold.",
+    "h4_context": "Inferred bearish from M15. Multiple bearish FVGs overhead 29,092-29,347. M15 DR: 28,889-29,642, price at 28%=discount. Discount in downtrend = trap zone.",
+    "m15_status": "BEARISH. LH 29,290, LL 28,889. Bearish FVGs at 29,092-29,240 and 29,171-29,347 act as resistance. No KZ active (07:00 EDT). NY AM starts 09:30 EDT."
+  },
+  "risks": [
+    {"event": "Monthly OpEx (last Fri Jun)", "time": "ALL DAY", "impact": "high"},
+    {"event": "End-of-quarter rebalancing", "time": "ALL DAY", "impact": "medium"},
+    {"event": "D1/H4 MT5 data unavailable", "time": "N/A", "impact": "medium"}
+  ],
+  "recommendation": "WAIT. Bearish structure clear but no KZ active. Wait for NY AM (13:00-16:00 UTC). Short setup: retracement to 29,200-29,350 bearish FVG + M15 OB. SL above 29,400. TP 28,889 then 28,500. Alternative: break below 28,889 = chase short to 28,500."
+}

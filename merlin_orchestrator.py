@@ -146,8 +146,8 @@ def calculate_final_decision(walker_data: dict, alfred_data: dict) -> dict:
     if walker_data:
         decision["walker_position"] = walker_data.get("bias", "unknown")
 
-        walker_confidence = walker_data.get("confidence", 50)
-        walker_orb = walker_data.get("orb_score", 50)
+        walker_confidence = walker_data.get("confidence", 50) or 50
+        walker_orb = walker_data.get("orb_score", 50) or 50
         alfred_risk = alfred_data.get("go_no_go", "WAIT") if alfred_data else "WAIT"
 
         # Determine tier and lot multiplier
@@ -343,8 +343,8 @@ def run_debate_rounds(walker_data: dict, alfred_data: dict, decision: dict, merl
         debate_r2 += f"🧙 **Merlin's 3-Layer Synthesis & Advice**:\n\n"
 
         ict = merlin_data.get("ict_analysis", {})
-        w_conf = walker_data.get("confidence", 50)
-        w_orb = walker_data.get("orb_score", 50)
+        w_conf = walker_data.get("confidence", 50) or 50
+        w_orb = walker_data.get("orb_score", 50) or 50
         a_go = alfred_data.get("go_no_go", "NO_GO") if alfred_data else "NO_GO"
 
         # Build advice based on 3-layer analysis
