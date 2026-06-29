@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-06-29T12:00:00+08:00",
+  "bias": "bearish",
+  "confidence": 55,
+  "orb_score": 35,
+  "ict_profile": "Bearish Week — Tuesday gap-down, 4/5 bearish, Friday weak relief",
+  "entry": "TBD — waiting for Monday reaction at 28,890-29,000 support",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["28890.74 (Jun 26 low)", "28548.50 (Jun 11 low)", "28196.90 (Jun 9 swing low)"],
+    "resistance": ["29131.15 (61.8% Fib)", "29604.93 (Jun 17 HL — resistance)", "30642.57 (Jun 22 high)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "Structure HH+HL at swing points BUT Jun 17 HL violated. Price at 37.7% of range (discount). Jun 26 weak bullish (+78.12, 14.9% body). SMT bullish at highs (NDX HH vs GSPC LH).",
+    "l2_h4": "H4 unavailable. D1 proxy: 4/5 bearish transitions. Weekly -1,411.75pts (-4.62%). Thursday capitulation, Friday weak relief.",
+    "l3_m15": "M15 unavailable. No Kill Zone (Sunday). Waiting for Monday open."
+  },
+  "reasoning": "Conflicted: macro HH+HL but HL violated. Discount zone + bullish SMT vs bearish weekly profile. Bias bearish until price reclaims 29,604.93. Confidence 55 due to conflicts.",
+  "data_source": "Yahoo Finance browser extraction (^NDX, ^GSPC). Alfred MT5 + TradingView MCP offline."
+}
