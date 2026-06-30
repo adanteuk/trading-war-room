@@ -1,0 +1,26 @@
+{
+  "date": "2026-06-30",
+  "timestamp": "2026-06-30T11:07:52.826107+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "cautiously_bullish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "NAS100 at 29,874 in D1 PREMIUM (67.5%) of bearish DR (30,679\u219228,204). Strong 2-day bounce from Jun25 low but weak trend (ADX 24.5). Shortened week with Friday holiday + jobs report Thu. Bias Bearish in premium zone but WAIT for Thu NFP clarity.",
+  "final_decision": "CONDITIONAL_GO",
+  "trade_params": {
+    "direction": "NONE",
+    "instrument": "NAS100",
+    "entry": "TBD \u2014 waiting for NY AM Kill Zone (08:30-11:00 ET)",
+    "stop_loss": "TBD",
+    "take_profit": "TBD",
+    "tier": "CONDITIONAL_GO",
+    "lot_size": "TBD x 0.5",
+    "lot_multiplier": 0.5,
+    "risk_pct": 1.0,
+    "session_window": "09:30-11:00 ET",
+    "close_before": "13:30 ET (pre-news)",
+    "note": "Reduced conviction \u2014 half size, tighter risk"
+  },
+  "reasoning": "TA: conf=60, ORB=55 \u2192 MODERATE CONVICTION\nAlfred: WAIT \u2014 reduced to 50% size\nRisk: N/A\nMerlin: ",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

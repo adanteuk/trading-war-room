@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-30",
+  "timestamp": "2026-06-30T11:05:00Z",
+  "summary": "NAS100 at 29,874 in D1 PREMIUM (67.5%) of bearish DR (30,679→28,204). Strong 2-day bounce from Jun25 low but weak trend (ADX 24.5). Shortened week with Friday holiday + jobs report Thu. Bias Bearish in premium zone but WAIT for Thu NFP clarity.",
+  "bias": "Bearish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [28889, 28548, 28204, 29442],
+    "resistance": [29950, 30160, 30680, 29823]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 Bearish DR (30,679→28,204). Price 67.5%=PREMIUM, favors shorts. Jun25 low 28,889 swept SSL, 2-day bounce strong (Jun28 87% body). Structure MIXED. +DI barely > -DI (20.4 vs 18.9), ADX 24.5=weak trend. Price below MA5/10/20/50, only MA100/200 support.",
+    "h4_context": "H4 DR stale (price broke above 200.5%). Bearish FVG at 29,642-29,823 tested/resisted. Price above all H4 FVGs but momentum weakening. Need to construct new H4 range from Jun25 low 29,013 to Jun30 high 29,958. Key KL: 29,642-29,823 bearish FVG zone.",
+    "m15_status": "No M15 OB valid entry. Kill Zones NONE active (pre-London). Bearish OB at 29,868-29,809, Bullish OB at 29,858-29,828. Price between OBs. NO VALID ENTRY until KZ activation."
+  },
+  "risks": [
+    {"event": "Jobs Report (NFP)", "time": "08:30 ET Thu", "impact": "high"},
+    {"event": "Jul 3 Market Holiday", "time": "All day Fri", "impact": "high"},
+    {"event": "Shortened Week Liquidity", "time": "All week", "impact": "medium"},
+    {"event": "Month/Quarter End Flow", "time": "Intraday", "impact": "medium"}
+  ],
+  "recommendation": "WAIT. Bearish bias in premium but high-impact NFP Thu + shortened week makes entry timing poor. If trading, short into 29,950-30,000 resistance targeting 29,442 (50% Fib), but reduce size 50% due to event risk. Best play: wait for post-NFP clarity."
+}
