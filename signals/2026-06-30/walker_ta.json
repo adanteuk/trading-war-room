@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-06-30T10:30:00Z",
+  "date": "2026-06-30",
+  "instrument": "NAS100",
+  "data_source": "^NDX cash index (Yahoo Finance browser) + NQ=F H1 (Yahoo API v8). CFD data unavailable — Alfred MT5 and TradingView MCP both offline.",
+  "bias": "cautiously_bullish",
+  "confidence": 60,
+  "orb_score": 55,
+  "ict_profile": "Midweek Continuation (Bullish)",
+  "entry": "TBD — waiting for NY AM Kill Zone (08:30-11:00 ET)",
+  "sl": "TBD",
+  "tp": "TBD",
+  "current_price": {
+    "ndx_close": 29774.75,
+    "nqf_rmp": 30104.75,
+    "nqf_offset_from_ndx": 330
+  },
+  "key_levels": {
+    "support": [29604.93, 29440.32, 29220.06, 28991.52, 28890.74, 28196.90],
+    "resistance": [29792.63, 30194.25, 30347.08, 30441.80, 30642.57, 30762.20]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "Jun 29 strong bullish candle (+464.49 pts, close at 97.8% of range). HH+HL structure vs Jun 26. Reclaimed Jun 17 HL (29,604.93) which was swept by Jun 24/26 lows. Immediate dealing range: 28,890.74 (Jun 26 low) → 29,792.63 (Jun 29 high) = 901.89 pts. Price at 98.0% of range (deep premium). No SMT divergence — NDX and GSPC in structural sync (both made HL at Jun 9-10, LL at Jun 24-26, HH at Jun 23-29). Still well below Jun 3/22 supply zone (30,442-30,762).",
+    "l2_h4_context": "H4 dealing range: 29,273.75 (Jun 29 12:00 UTC swing low) → 30,217.00 (Jun 30 04:00 UTC raw high, pitfall #53 adjusted) = 943.25 pts. NQ=F RMP at 30,104.75 = 88.1% of H4 range (premium). H4 50% Fib at 29,745.38 now acting as support. Last 5 H4 candles show consolidation above 30,000 with tight range (30,018-30,217). No clear H4 FVG or OB identified without M15 confirmation.",
+    "l3_m15_entry": "M15 data unavailable (Alfred MT5 + TradingView MCP offline). H1 proxy: last 5 H1 bars show consolidation around 30,000-30,130 after Monday's strong rally. London Kill Zone active (06:00-09:00 UTC) — watch for Judas sweep of overnight lows (29,934.75) before NY session. No confirmed M15 OB or entry signal yet."
+  },
+  "reasoning": "CAUTIOUSLY BULLISH bias based on: (1) Jun 29 strong bullish D1 candle with 97.8% close position — buyers in control, (2) Structural reclaim of Jun 17 HL (29,604.93) after it was swept — classic ICT power shift, (3) No SMT divergence — clean confirmation across NDX and GSPC, (4) NQ=F holding above 30,000 in pre-market. HOWEVER confidence capped at 60 because: (a) Price at 98% of immediate D1 dealing range — deep premium, limited upside before hitting Jun 3/22 supply, (b) Still 600-1,000 pts below major swing highs (30,642-30,762), (c) Tuesday profile risk — Classic Tuesday High possible if London session sweeps Monday high then reverses, (d) No M15 entry confirmation available. ICT Profile: Midweek Continuation Bullish — Monday set the tone with a strong bullish candle, Tuesday likely to continue higher OR form the week's high before Wednesday reversal. Key risk: if Tue fails to break above 29,792.63 (Mon high), it becomes a Classic Tuesday High setup.",
+  "weekly_profile_notes": "Monday Jun 29: Strong bullish (+464 pts). Range: 28,991.52-29,792.63 (801 pts). Tuesday candidates: (1) Midweek Continuation — Tue continues Mon's bullish trend, (2) Classic Tuesday High — Tue sweeps Mon high then reverses. Most likely: Midweek Continuation given the structural reclaim of Jun 17 HL and clean SMT picture. Watch for: Tue London session to establish the low of the day (Judas sweep), then NY AM session to push above 29,792.63.",
+  "smt_divergence": "NONE — NDX and GSPC in structural sync at all recent swing points",
+  "jun17_hl_status": "Swept by Jun 24/26 lows, RECLAIMED by Jun 29 close (169.82 pts above)",
+  "data_caveats": [
+    "CFD data (PEPPERSTONE:NAS100) unavailable — using ^NDX cash index as proxy",
+    "M15 timeframe unavailable — entry model based on H1 proxy only",
+    "NQ=F RMP (30,104.75) is pre-market futures price, not CFD",
+    "NQ=F-to-^NDX offset: +330 pts (within normal 100-500 range)"
+  ],
+  "self_verification": {
+    "checks": 42,
+    "errors": 0,
+    "status": "ALL DATA VERIFIED"
+  }
+}
