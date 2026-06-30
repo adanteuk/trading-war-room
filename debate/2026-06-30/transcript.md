@@ -8,20 +8,19 @@
 
 **Bias**: Bearish | **Confidence**: 55/100
 
-**Thesis**: NAS100 at 29,874 in D1 PREMIUM (67.5%) of bearish DR (30,679→28,204). Strong 2-day bounce from Jun25 low but weak trend (ADX 24.5). Shortened week with Friday holiday + jobs report Thu. Bias Bearish in premium zone but WAIT for Thu NFP clarity.
+**Thesis**: Bearish bias in D1 PREMIUM of bearish DR (30,680→28,205). Strong bounce from Jun25 low but structure MIXED, weak ADX (24.5). Price at 67.5% of DR favors shorts. Shortened week (NFP Thu, holiday Fri) increases risk.
 
 📊 **3-Layer ICT/CRT Pipeline Analysis**:
-• **L1 (D1)**: D1 Bearish DR (30,679→28,204). Price 67.5%=PREMIUM, favors shorts. Jun25 low 28,889 swept SSL, 2-day bounce strong (Jun28 87% body). Structure MIXED. +DI barely > -DI (20.4 vs 18.9), ADX 24.5=weak trend. Price below MA5/10/20/50, only MA100/200 support.
-• **L2 (H4)**: H4 DR stale (price broke above 200.5%). Bearish FVG at 29,642-29,823 tested/resisted. Price above all H4 FVGs but momentum weakening. Need to construct new H4 range from Jun25 low 29,013 to Jun30 high 29,958. Key KL: 29,642-29,823 bearish FVG zone.
-• **L3 (M15)**: No M15 OB valid entry. Kill Zones NONE active (pre-London). Bearish OB at 29,868-29,809, Bullish OB at 29,858-29,828. Price between OBs. NO VALID ENTRY until KZ activation.
+• **L1 (D1)**: D1 Bearish DR: High=30,680 (Jun21), Low=28,205 (Jun8). Price 29,875 at 67.5% = PREMIUM → favors shorts. Structure MIXED (HH cluster at 30,667-30,776, but strong bounce from 28,889). +DI barely > -DI (19.2 vs 18.3), ADX 24.5 = weak trend. Jun25 low 28,889 likely SSL sweep. Jun28 candle 87% body (strong buy), Jun29 47% body (bullish but weakening). Price below MA5/10/20/50 on Barchart. Inversion FVG at 29,216 acting as support.
+• **L2 (H4)**: H4 DR stale (price 200.5% → above 100%). Bearish FVG at 29,642-29,823 (gap 181pts) — price broke through this. Bullish FVG at 29,496-29,655 providing support. Price above 29,642 FVG = bullish break. Need new H4 DR from Jun25 low. Last H4 candles show consolidation above 29,761 with weakening momentum (bearish 59% body at 05:00 UTC). Key KL: 29,642-29,823 FVG zone as new support if pullback.
+• **L3 (M15)**: NO VALID ENTRY. Bearish OB at 29,868-29,809 (disp 21.7), Bullish OB at 29,858-29,828 (disp 23.4). Price at 29,875 BETWEEN OBs — indecision zone. Kill Zones: NONE active (07:05 ET, pre-London). Need London or NY AM KZ activation with M15 displacement for valid entry.
 
 ⚠️ **Today's Risks**:
-• Jobs Report (NFP) @ 08:30 ET Thu [high]
-• Jul 3 Market Holiday @ All day Fri [high]
-• Shortened Week Liquidity @ All week [medium]
-• Month/Quarter End Flow @ Intraday [medium]
+• NFP Jobs Report @ 08:30 ET Thu [high]
+• Market Holiday (Jul4) @ Fri Jul 3 [high]
+• Month-end flows @ Intraday [medium]
 
-💡 **Recommendation**: WAIT. Bearish bias in premium but high-impact NFP Thu + shortened week makes entry timing poor. If trading, short into 29,950-30,000 resistance targeting 29,442 (50% Fib), but reduce size 50% due to event risk. Best play: wait for post-NFP clarity.
+💡 **Recommendation**: WAIT/CONDITIONAL. Bearish bias but high-impact NFP Thursday + shortened week. If trading: short into 29,950-30,000 resistance targeting 29,442 (50% FIB). Close all before Thu 08:30 ET. Reduce size 50% due to event risk.
 ```
 
 ## #technical-setup
@@ -54,7 +53,7 @@
 
 🤖 **Walker** says: cautiously_bullish setup, ORB 55/100, Conf 60/100. CAUTIOUSLY BULLISH bias based on: (1) Jun 29 strong bullish D1 candle with 97.8% close position — buyers in control, (2) Structural reclaim of Jun 17 HL (29,604.93) after it was swept — classic ICT po
 
-🧙 **Merlin** says: NAS100 at 29,874 in D1 PREMIUM (67.5%) of bearish DR (30,679→28,204). Strong 2-day bounce from Jun25 low but weak trend (ADX 24.5). Shortened week with Friday holiday + jobs report Thu. Bias Bearish in premium zone but WAIT for Thu NFP clarity.
+🧙 **Merlin** says: Bearish bias in D1 PREMIUM of bearish DR (30,680→28,205). Strong bounce from Jun25 low but structure MIXED, weak ADX (24.5). Price at 67.5% of DR favors shorts. Shortened week (NFP Thu, holiday Fri) increases risk.
 
 *Waiting for Round 2 rebuttals...*
 ```
@@ -80,7 +79,7 @@
 
 💡 **Advice**: CONDITIONAL GO — moderate conviction. Half size, tighter risk. Still tradeable.
 
-⚠️ **High-Impact Events**: Jobs Report (NFP) @ 08:30 ET Thu, Jul 3 Market Holiday @ All day Fri → Consider closing positions before these times.
+⚠️ **High-Impact Events**: NFP Jobs Report @ 08:30 ET Thu, Market Holiday (Jul4) @ Fri Jul 3 → Consider closing positions before these times.
 ```
 
 ## #final-call

@@ -1,10 +1,10 @@
 {
   "date": "2026-06-30",
-  "timestamp": "2026-06-30T11:07:52.826107+00:00",
+  "timestamp": "2026-06-30T11:10:51.539189+00:00",
   "orchestrator": "Merlin",
   "walker_position": "cautiously_bullish",
   "alfred_risk_status": "NO_INPUT",
-  "merlin_thesis": "NAS100 at 29,874 in D1 PREMIUM (67.5%) of bearish DR (30,679\u219228,204). Strong 2-day bounce from Jun25 low but weak trend (ADX 24.5). Shortened week with Friday holiday + jobs report Thu. Bias Bearish in premium zone but WAIT for Thu NFP clarity.",
+  "merlin_thesis": "Bearish bias in D1 PREMIUM of bearish DR (30,680\u219228,205). Strong bounce from Jun25 low but structure MIXED, weak ADX (24.5). Price at 67.5% of DR favors shorts. Shortened week (NFP Thu, holiday Fri) increases risk.",
   "final_decision": "CONDITIONAL_GO",
   "trade_params": {
     "direction": "NONE",
