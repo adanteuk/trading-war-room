@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-01",
+  "timestamp": "2026-07-01T11:00:00Z",
+  "summary": "Neutral-Bullish. NAS100 bounced from Jun 29 SSL sweep at 28,992, broke Inversion FVG resistance at 29,872. Futures at 30,396 above key resistance. However, ADX weakening (24.5), HMM still bearish, and price below MA100/MA200 on spot. Conflicting signals limit conviction.",
+  "bias": "Bullish",
+  "confidence": 52,
+  "key_levels": {
+    "support": [28992, 29277, 29592, 29848],
+    "resistance": [29896, 30089, 30464, 30642, 30975]
+  },
+  "ict_analysis": {
+    "daily_bias": "Bearish MSS from ATH 30,975 to 28,992. Jun 29 SSL sweep triggered reversal (+2.25%). Futures at 30,396 broke Inversion FVG confluence 29,872. DR 28,992-30,762, equilibrium 29,877. Price ~at equilibrium. ADX 24.5 weakening, +DI>-DI. Macro MAs bullish but spot below MA100/MA200. Control: Demand showing control post-SSL sweep.",
+    "h4_context": "New H4 dealing range forming post-28,992 low. Key support: 29,848-29,896 (broken Inversion FVG, now support). Key resistance: 30,089 (REL), 30,642 (REQ high). Price in H4 premium targeting BSL at 30,642-30,975. CRT framing needed on H4 close.",
+    "m15_status": "NO VALID ENTRY. Alfred MT5 offline - no M15 OHLCV bars available. Cannot confirm OB formation, CRT purge, or Kill Zone timing. Data source: web (20-min delayed). Default to NO GO for Layer 3."
+  },
+  "risks": [
+    {"event": "ADP Employment Change", "time": "08:15 ET", "impact": "high"},
+    {"event": "ISM Manufacturing PMI", "time": "10:00 ET", "impact": "high"},
+    {"event": "JOLTS Job Openings", "time": "10:00 ET", "impact": "medium"},
+    {"event": "MT5 offline - no live M15 data", "time": "all session", "impact": "high"}
+  ],
+  "recommendation": "WAIT. Bias is bullish post-SSL sweep reversal and Inversion FVG break, but confidence is low (52). MT5 offline prevents M15 entry confirmation. Key levels to watch: 29,848-29,896 must hold as support for longs. Target BSL at 30,089 then 30,642. Invalidated if price breaks below 29,592."
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-01",
+  "timestamp": "2026-07-01T11:05:10.938710+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "NO_INPUT",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Neutral-Bullish. NAS100 bounced from Jun 29 SSL sweep at 28,992, broke Inversion FVG resistance at 29,872. Futures at 30,396 above key resistance. However, ADX weakening (24.5), HMM still bearish, and price below MA100/MA200 on spot. Conflicting signals limit conviction.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "No TA input received from Walker",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
