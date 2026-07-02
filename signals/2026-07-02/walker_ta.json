@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-07-02T10:44:20.724025+00:00",
+  "bias": "bearish",
+  "confidence": 55,
+  "orb_score": 63,
+  "ict_profile": "Wednesday High \u2192 Thursday Bearish Continuation",
+  "entry": "TBD \u2014 waiting for NY AM Kill Zone (12:30-15:00 UTC)",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "29779.45",
+      "29609.76",
+      "29440.08"
+    ],
+    "resistance": [
+      "29969.28",
+      "30328.79",
+      "30599.75"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure: LH + HL (descending triangle). Since Jun 22, consecutive LH at highs (30,642\u219230,328\u219230,084). HL at lows since Jun 26 (28,890\u219228,991\u219229,767\u219229,787). Descending triangle. Jul 1 candle bearish (-105pts), closed at 7.3% of range. Dealing range: 28890.74\u219230328.79. Price at 63.9% = PREMIUM. SMT bearish divergence: ^NDX made LH (30,328\u219230,084) while ^GSPC made HH (7,508\u21927,521) on Jun 30\u2192Jul 1.",
+    "l2_h4": "H4 dealing range: 30008.50\u219230599.75 (591pts). NQ=F RMP at 29945.50, H4 position -10.7%. Offset +136pts vs ^NDX (normal). Today sold off from session high 30239.50 to 29945.50.",
+    "l3_m15": "M15 approximated from H1 proxy. Today's session: H=30239.50, L=29826.25, range=413pts. No Kill Zone currently active. Waiting for NY AM KZ (12:30-15:00 UTC)."
+  },
+  "reasoning": "D1 shows bearish-leaning descending triangle: 3 consecutive lower highs since Jun 22 (30,642\u219230,328\u219230,084) while making higher lows (28,890\u219228,991\u219229,787). SMT divergence confirms NAS100 weakness vs S&P: ^NDX made LH while ^GSPC made HH on the same Jun 30\u2192Jul 1 transition. Jul 1 D1 candle closed bearish at 7.3% of range (strong selling into close). ICT Weekly Profile: Mon-Tue bullish \u2192 Wed reversal = Classic Wednesday High, pointing to Thursday bearish continuation. Price in PREMIUM zone (63.9%) of D1 dealing range \u2014 ideal for short entries. NQ=F pre-market at 29,945 showing continued weakness from today's open (~30,046). Key risk: HL sequence at lows means buyers still defending \u2014 break below 29,787 (Jul 1 low) confirms bearish continuation; break above 30,084 (Jul 1 high) invalidates. Confidence 55/100 \u2014 SMT and weekly profile support bearish, but HL sequence and no KZ active yet temper conviction."
+}
