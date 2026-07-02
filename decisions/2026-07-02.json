@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-02",
+  "timestamp": "2026-07-02T11:11:54.633606+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bullish bias post-recovery from 6/26 low (29,160), with clean HH/HL and +DI>-DI confirmation. Price in extreme premium of DR (29,160-30,599) at 30,000, near equilibrium of pullback. MT5 offline prevents M15 validation. Inversion FVG confluence at 29,247 provides strong demand.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "Mixed signals \u2014 standing aside (conf=55, orb=63)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
