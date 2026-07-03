@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-07-03T12:00:00Z",
+  "bias": "bearish",
+  "confidence": 65,
+  "orb_score": null,
+  "ict_profile": "Classic Wednesday High → Bearish Reversal",
+  "entry": "TBD (awaiting Monday Kill Zone)",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["29087.33", "28890.74", "28196.90"],
+    "resistance": ["29774.75", "30084.78", "30328.79"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 bearish: LH sequence (30,762→30,329→30,085). Jul 2 bearish candle (-449pts), close at 25.3% of range. Price in discount of broad range (44.1%). SMT divergence: NDX LH vs SPX HH at highs.",
+    "l2_h4_context": "H4 range: 29,273.75→30,599.75 (1,326pts). NQ=F RMP 29,878.00 at 45.6% of range. Last H4 bars show selling pressure with Jul 2 session bearish continuation.",
+    "l3_m15_entry": "M15 data unavailable (Alfred+TV offline). H1 proxy shows continued selling. No Kill Zone active (holiday). Next KZ: Monday Jul 6 07:00-10:00 UTC."
+  },
+  "reasoning": "Bearish bias based on: (1) D1 LH structure with 3 consecutive lower highs since Jun 3 ATH, (2) bearish SMT divergence — NDX making LH while SPX making HH at highs, (3) Classic Wednesday High weekly profile with Tue→Wed/Thu reversal, (4) Jul 2 candle closed bearish at 25.3% of range showing weakness. Mitigating: price in discount of broad range (44.1%), holding above Jun 26 SL (28,891). NQ=F futures +549pts vs Jul 2 close suggest potential Monday gap-up, but structural bearishness dominates. No entry until Kill Zone confirms direction Monday.",
+  "data_notes": "CFD data unavailable (Alfred MT5 + TradingView MCP offline). Using ^NDX cash index via Yahoo Finance browser extraction. NQ=F RMP for pre-market reference. H1→H4 aggregation for L2 context. M15 approximated from H1 bars. US markets closed Jul 3 (July 4 holiday observed).",
+  "last_trading_day": "2026-07-02",
+  "next_session": "2026-07-06 (Monday)",
+  "holiday": "July 4 Independence Day (observed)",
+  "ndx_close": 29329.21,
+  "nqf_rmp": 29878.0
+}
