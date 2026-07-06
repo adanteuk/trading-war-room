@@ -1,0 +1,34 @@
+{
+  "date": "2026-07-03",
+  "timestamp": "2026-07-03T13:30:00+08:00",
+  "summary": "NAS100 bouncing from discount zone (+317pts from settlement) on Independence Day early-close session with only 8% average volume. Price at 39.4% of D1 dealing range (29,160-30,968) = Discount. ADX below 20 = no strong trend. Technical consensus mixed — Strong Sell on indicators but bullish price action bounce. Holiday liquidity makes signals unreliable.",
+  "bias": "Neutral-Bullish",
+  "confidence": 38,
+  "key_levels": {
+    "support": [
+      "29,522 (intraday low / 7/3 session low)",
+      "29,497 (MA50 - medium-term support confluence)",
+      "29,276 (Relative Equal Low - deep SSL target)",
+      "29,160 (6/26 swing low - major support)"
+    ],
+    "resistance": [
+      "29,888 (intraday high / 7/3 session high)",
+      "30,064 (50% equilibrium of 6/26-6/22 dealing range)",
+      "30,194 (Relative Equal Low flipped to resistance)",
+      "30,500-30,975 (7/1 rejection zone / fresh Bearish OB)",
+      "30,560 (Relative Equal High - BSL target)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 Structure: Bearish from ATH 30,975 but recovering from 6/26 swing low 29,160. Dealing Range 29,160-30,968 (1,808pts). Price at 29,873 = 39.4% = DISCOUNT zone (favors longs). Equilibrium at 30,064. ADX(14)=16.82 < 20 = NO STRONG TREND (range-bound). +DI(17.33) < -DI(21.70) = slight bearish lean. RSI(14)=40.76 = neutral-bearish. MACD=-80.87 = negative. Technical consensus: Strong Sell (7 sell indicators) but price action shows bounce +317pts from settlement. Price sits between bullish OB 29,497-29,600 and bearish OB 30,500-30,975. Control: TRANSITIONAL — neither supply nor demand clearly dominant. Price in discount but momentum ambiguous.",
+    "h4_context": "H4 Dealing Range: 29,160 (6/26 low) to 30,599 (6/30 high) = 1,439pts. Price at 29,873 = 49.5% ≈ EQUILIBRIUM. Key inverted FVG zones: 29,733-29,962 (CE=29,848) acting as resistance; confluence at 29,870-29,872 (HIGH strength, 3 overlapping inversions). Price currently testing this confluence zone. BSL at 30,194, 30,560, 30,643. SSL at 29,748, 29,276. Expected: Price at equilibrium in holiday session — expect choppy, range-bound behavior. CRT framing unreliable due to low volume. SMT divergence cannot be confirmed without H4 OHLCV bars from Alfred.",
+    "m15_status": "M15 data UNAVAILABLE (Alfred MT5 unreachable on all IPs: 192.168.11.211/173/172 all timed out). Web fallback shows intraday bounce from 29,522 low to 29,888 high (+366pts) but no M15 candle structure available. Cannot confirm: OB formation, compression patterns, CRT purge, Kill Zone timing. Holiday volume at 8% of normal makes any M15 signals unreliable even if data were available. STATUS: NO VALID ENTRY — insufficient data + low conviction environment."
+  },
+  "risks": [
+    {"event": "Independence Day Holiday — Early Close (12:00 CT / 13:00 ET)", "time": "13:00 ET", "impact": "high"},
+    {"event": "Light Volume Session (8% of average)", "time": "All day", "impact": "high"},
+    {"event": "CME Globex Early Close Risk — wider spreads, slippage", "time": "All session", "impact": "medium"},
+    {"event": "Price at Equilibrium — no directional edge", "time": "Current", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — Holiday session with 8% volume, price at equilibrium (49.5% of DR), no strong trend (ADX<20), Alfred MT5 offline so no M15 entry confirmation. Even if bounce continues, the risk/reward is poor due to thin liquidity and early close at 13:00 ET. Wait for Monday 7/6 when full session resumes with proper volume and Alfred data online."
+}
