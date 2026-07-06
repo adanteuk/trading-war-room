@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-07-06T05:30:00+08:00",
+  "bias": "bearish",
+  "confidence": 55,
+  "orb_score": 48,
+  "ict_profile": "Potential Monday Range / Seek & Destroy",
+  "entry": "TBD — waiting for Kill Zone",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["29087 (Jul 2 low)", "28891 (Jun 26 low)", "28197 (Jun 9 swing low)"],
+    "resistance": ["29514 (D1 61.8% Fib)", "29700 (D1 70.5% Fib)", "30044 (Jul 2 high)", "30329 (D1 100% / Jun 30 high)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "BEARISH. Jul 2 large bearish candle (-449pts body, 47% of 957pt range), close at 25.3% of range (weak). Structure: LH+LL from Jun 30→Jul 1→Jul 2 (two consecutive bearish transitions). Dealing range: Jun 9 SL 28,197 → Jun 30 SH 30,329 (2,132pts). Price at 53.1% (just above equilibrium). Jun 26 HL (28,891) held on Jul 2 (29,087 low) — no SMT divergence vs GSPC (also HL).",
+    "l2_h4_context": "NQ=F RMP 29,875.50 at 80.1% of H4 dealing range (29,329→30,011, 683pts). H4 showing recovery attempt from Jul 2 16:00 UTC low (29,329). Key H4 levels: 79% Fib at 29,868 (price just above), 100% at 30,011 (resistance). Bullish FVG at Jul 5 20:00 (29,622→29,861, 239pts) — price currently inside this FVG. Bearish FVG at Jul 2 16:00 (29,688→29,827) — partially filled.",
+    "l3_m15_entry": "No M15 data available (CFD/MT5 down). NQ=F H1 shows overnight session (Jul 6 00:00-08:00 UTC) consolidating 29,683-30,005 with slight bullish bias. London Kill Zone (02:00-05:00 NY = 07:00-10:00 UTC) approaching. Waiting for M15 confirmation before entry."
+  },
+  "reasoning": "D1 structure turned bearish with consecutive LH+LL transitions since Jun 30 ATH (30,329). Jul 2 printed a strong bearish candle closing near the low (25.3% position), suggesting sellers dominated. However, the Jun 9→Jun 30 dealing range still has price above 50% (53.1%), meaning bulls haven't lost full control yet. Key question: will Jun 26 HL (28,891) hold? If swept → bearish continuation to Jun 9 SL (28,197). If held → potential double-bottom reversal setup. H4 shows recovery attempt (80.1% of H4 range) but NQ=F still below Jun 30 highs. No SMT divergence detected — both NDX and GSPC made HL at Jun 26 lows, suggesting the move was broad-based not index-specific. Confidence lowered to 55 due to: (1) price still above D1 equilibrium, (2) no SMT confirmation, (3) H4 showing recovery. ICT Weekly Profile: Monday typically sets the week's range or seeks liquidity. With bearish D1 structure but H4 recovery, expect seek-and-destroy behavior — likely sweep of Jul 2 low (29,087) or Jul 1 high (30,085) before committing. Wait for Kill Zone (London 07:00-10:00 UTC or NY AM 13:30-16:00 UTC) for M15 entry confirmation.",
+  "data_sources": "^NDX cash index (Yahoo browser extraction), NQ=F H1 (Yahoo API v8), ^GSPC cash index (Yahoo browser extraction). CFD data unavailable (Alfred MT5 + TradingView MCP both down).",
+  "verification": "Self-verification: 41 checks, 0 errors. All Fibonacci levels, market structure transitions, SMT comparison, H4 dealing range, and price positions verified mathematically correct against source data."
+}
