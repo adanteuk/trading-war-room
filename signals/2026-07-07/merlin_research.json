@@ -1,0 +1,52 @@
+{
+  "date": "2026-07-07",
+  "timestamp": "2026-07-07T11:06:45.015503+00:00",
+  "summary": "NAS100 gapped down -296 pts (-0.99%) at open, breaking below MA5/MA20. Previous bearish bias from Jul 6 validated as price rejected from bearish Inversion FVG confluence zone (29,848-29,900). Price now in discount territory (28% of dealing range) sandwiched between bearish ceiling (29,734-29,963) and bullish floor (29,212-29,294). Macro trend remains bullish (price +3.7% above MA50). Mixed signals with no M15 data prevent a clean directional call.",
+  "bias": "Neutral-Bearish",
+  "confidence": 35,
+  "key_levels": {
+    "support": [
+      29253,
+      29212,
+      28992,
+      28891
+    ],
+    "resistance": [
+      29734,
+      29848,
+      29871,
+      30045
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "NEUTRAL-BEARISH (Confidence 45). Short-term bearish MSS confirmed by gap down below MA5 (30,033) and MA20 (29,901). Jul 6 bearish bias validated. Price in DISCOUNT (28.2% of DR 28,891-30,643) which contradicts bearish bias. Macro bullish (price >> MA50/200). +DI > -DI across all periods. ADX 24.48 = borderline trend. Control: Supply short-term, Demand macro.",
+    "h4_context": "INCOMPLETE \u2014 no H4 OHLCV data available (Alfred MT5 unreachable). Inferred from D1: price sandwiched between bearish inv FVG (29,734-29,963) and bullish inv FVG (29,212-29,294). Key resistance at 29,871 (HIGH confluence). Key support at 29,253 (bullish CE). Draw on liquidity: SSL at 28,992 \u2192 28,891.",
+    "m15_status": "NO VALID ENTRY \u2014 M15 data unavailable. Alfred MT5 bridge down on both IPs. Cannot confirm OB formation, CRT purge, or Kill Zone timing. Per pipeline rules: Layer 3 failure = NO TRADE."
+  },
+  "risks": [
+    {
+      "event": "NY Stock Market Open",
+      "time": "09:30 ET",
+      "impact": "high"
+    },
+    {
+      "event": "Post-holiday volume (Independence Day observed July 3)",
+      "time": "all day",
+      "impact": "medium"
+    },
+    {
+      "event": "Potential Fed speaker / economic data",
+      "time": "TBD",
+      "impact": "medium"
+    }
+  ],
+  "recommendation": "WAIT \u2014 Layer 3 (M15) fails due to MT5 data unavailability. Price in discount territory contradicts bearish bias for new shorts. Mixed signals across timeframes. If MT5 comes online: watch for M15 bearish OB at 29,734-29,848 resistance zone during NY Kill Zone (09:30-12:00 ET) for shorts. If price reaches 29,253 support, watch for bullish reversal setup.",
+  "mt5_status": "UNREACHABLE \u2014 tried both 192.168.11.211:5555 and 192.168.11.172:5555. All analysis based on fallback web data (Barchart, Yahoo Finance, WSJ). Confidence reduced accordingly.",
+  "fallback_sources": [
+    "Barchart NQM26 Technical Analysis",
+    "Yahoo Finance NQ=F",
+    "WSJ NQ Futures",
+    "MarketWatch NQ00",
+    "daily_bias.json (Jul 6 entry)"
+  ]
+}
