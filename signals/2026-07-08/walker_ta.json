@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-07-08T19:00:00+08:00",
+  "instrument": "NAS100 (PEPPERSTONE:NAS100 CFD)",
+  "bias": "bearish",
+  "confidence": 75,
+  "orb_score": 65,
+  "ict_profile": "Wednesday Continuation Bearish",
+  "entry": "TBD — waiting for M15 confirmation at key level",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["28678.1 (D1/H4 range low)", "28500 (psychological)"],
+    "resistance": ["28971.9 (H4 25% Fib)", "29127.0 (H4 38.2% Fib)", "29265.7 (H4 50% Fib)", "29404.4 (H4 61.8% Fib)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure: LH+LL (bearish) for 2 consecutive days (Jul 7-8). Price broke below Jun 29 swing low (29,014.2) and swept to 28,678.1. Dealing range: 28,678.1 → 30,341.1 (1,663.0 pts). Current price at 5.9% of range = deep discount. Jul 8 candle: bearish body -344.5 pts, close at 14.4% of range, body/range 0.53. SMT divergence: NAS100 swept Jun 29 low (28,678.1 < 29,014.2) while US500 held (7,420.5 > 7,348.1) — NAS100 is the weaker index.",
+    "l2_h4_context": "H4 dealing range: 28,678 → 29,853 (1,175 pts). Price at 8.1% = deep discount zone. 2 bearish FVGs identified: 29,583-29,656 and 29,344-29,387. CRT candle: Jul 9 06:00 UTC bar with -390.5 pt bearish body. Key resistance at 25% Fib (28,972), 38.2% Fib (29,127), 50% Fib (29,266). Price is BELOW all H4 Fib levels — extreme weakness.",
+    "l3_m15_entry": "M15 data unavailable (TradingView MCP limitation). Entry model: wait for M15 bullish reversal pattern (Order Block, FVG fill) near 28,678 support OR bearish continuation break below 28,678 targeting 28,500. Kill Zone: NY AM session (08:30-11:00 NY) not yet active. Current session: Asian close."
+  },
+  "reasoning": "Bearish bias confirmed by: (1) D1 LH+LL structure for 2 consecutive days, (2) price broke Jun 27 swing low creating new selling pressure, (3) SMT divergence shows NAS100 weaker than US500, (4) price at 5.9% of D1 range and 8.1% of H4 range = deep discount but no reversal signal yet. Confidence 75/100 because: structure is clearly bearish, but price is in deep discount zone where reversals can occur. ORB score 65/100: strong HTF bias (-25 pts for bearish), but no volume confirmation or M15 entry signal yet. ICT Weekly Profile: Wednesday Continuation Bearish — Tue was bearish, Wed likely continues lower before potential Thu/Fri reversal. Key risk: if price reclaims 28,972 (H4 25% Fib), bias shifts neutral. If breaks below 28,678, targets 28,500 then 28,200.",
+  "weekly_profile": "Wednesday Continuation Bearish — Tue bearish, Wed continuation expected. Watch for Thu Bullish Reversal if Wed makes new low.",
+  "data_source": "TradingView MCP (PEPPERSTONE:NAS100, PEPPERSTONE:US500)",
+  "verification_status": "pending_subagent"
+}
