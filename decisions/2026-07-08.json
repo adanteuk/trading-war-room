@@ -1,0 +1,25 @@
+{
+  "date": "2026-07-08",
+  "timestamp": "2026-07-08T11:10:31.739339+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Neutral-Bearish bias. Price correcting from ATH 30,975 with lower highs since 6/22 (30,643\u219230,464\u219230,045\u219229,847). Currently in deep discount (25-43% of swing range). Oversold stochastics suggest bounce potential, but -DI > +DI and price below all short-term MAs. Key confluence: price squeezed between inverted bullish FVG support (29,253) and inverted bearish FVG resistance (29,848-29,872). Jul 7 closed 29,697, Jul 8 pre-market ~29,373 \u2014 gap down suggests distribution continues.",
+  "final_decision": "GO",
+  "trade_params": {
+    "direction": "SHORT",
+    "instrument": "NAS100",
+    "entry": "TBD \u2014 waiting for M15 confirmation at key level",
+    "stop_loss": "TBD",
+    "take_profit": "TBD",
+    "tier": "GO",
+    "lot_size": "TBD x 0.5",
+    "lot_multiplier": 0.5,
+    "risk_pct": 2.0,
+    "session_window": "09:30-11:00 ET",
+    "close_before": "13:30 ET (pre-news)"
+  },
+  "reasoning": "TA: conf=75, ORB=65 \u2192 HIGH CONVICTION\nAlfred: WAIT \u2014 reduced to 50% size\nRisk: N/A\nMerlin: \nMerlin note: High-impact events today: ['MT5 offline', 'Gap down continuation']",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

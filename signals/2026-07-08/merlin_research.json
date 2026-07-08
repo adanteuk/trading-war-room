@@ -1,0 +1,22 @@
+{
+  "date": "2026-07-08",
+  "timestamp": "2026-07-08T11:15:00Z",
+  "summary": "Neutral-Bearish bias. Price correcting from ATH 30,975 with lower highs since 6/22 (30,643→30,464→30,045→29,847). Currently in deep discount (25-43% of swing range). Oversold stochastics suggest bounce potential, but -DI > +DI and price below all short-term MAs. Key confluence: price squeezed between inverted bullish FVG support (29,253) and inverted bearish FVG resistance (29,848-29,872). Jul 7 closed 29,697, Jul 8 pre-market ~29,373 — gap down suggests distribution continues.",
+  "bias": "Neutral-Bearish",
+  "confidence": 50,
+  "key_levels": {
+    "support": [29253, 29212, 28992, 28891],
+    "resistance": [29591, 29848, 29872, 30024]
+  },
+  "ict_analysis": {
+    "daily_bias": "Bearish structure from ATH 30,975. LH sequence confirmed (30,643→30,464→30,045→29,847). Price below MA5/MA10/MA20. ADX 17 (ranging), -DI 22 > +DI 15. Jul 2 gap-down -480pts broke uptrend. Jul 6-7 bounce to 29,697 failed at 29,847 (REL Eq High + bearish inversion zone). Jul 8 pre-market ~29,373 = renewed weakness. In deep discount of 28,891-30,643 range (25-43%).",
+    "h4_context": "Price sandwiched between inverted FVGs: bullish support at 29,212-29,294 (CE 29,253) and bearish resistance at 29,734-29,963 (CE 29,848). Bearish BB at 29,733-30,085 active as resistance. Bullish BB at 28,891-29,220 as deep support. No clear H4 displacement candle yet — ranging between these two inversion zones.",
+    "m15_status": "NO VALID ENTRY — MT5 offline, cannot verify M15 OB formation, CRT purge, or Kill Zone timing. Jul 8 pre-market gap down to 29,373 suggests bearish continuation but requires M15 confirmation. Oversold 9D stochastic (27%) may trigger bounce into 29,591 resistance."
+  },
+  "risks": [
+    {"event": "MT5 offline", "time": "all session", "impact": "high"},
+    {"event": "Gap down continuation", "time": "09:30 ET", "impact": "high"},
+    {"event": "Oversold bounce to resistance", "time": "13:30 ET", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — M15 Layer 3 cannot be validated without MT5 data. Bias is Neutral-Bearish with low-medium confidence. If price holds 29,253 support and bounces, watch for short entry at 29,591-29,848 resistance zone. If 29,253 breaks with displacement, target 28,992 → 28,891. Do not chase at current levels — wait for London/NY session price action to establish direction."
+}
