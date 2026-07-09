@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-07-09T10:38:00+00:00",
+  "bias": "bearish",
+  "confidence": 55,
+  "orb_score": 50,
+  "ict_profile": "Midweek Continuation Bearish — Potential Thursday Bullish Reversal",
+  "entry": "TBD — waiting for M15 confirmation near H4 100% (29,505) or D1 38.2% (29,443)",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["28678.1 (Jul 8 low / D1 0% Fib)", "29178.5 (D1 25% Fib)", "28206.1 (Jun 9 crash low)"],
+    "resistance": ["29442.7 (D1 38.2% Fib)", "29505.5 (H4 100%)", "29678.9 (D1 50% Fib)", "30679.6 (Jun 22 ATH)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 broader structure bearish — LH sequence since Jun 22 ATH (30,679.6 → 30,341.1 → 29,853.3 → 29,736.8). Jul 8 made LL at 28,678.1. Today (Jul 9) is first HH+HL transition since the selloff — a counter-trend recovery attempt. Price at 36.7% of D1 dealing range (28,678.1–30,679.6), still in discount. Today's candle: bullish marubozu (+221 body, 65.1% of range, close at 71.3%).",
+    "l2_h4_context": "H4 dealing range: 28,678.1 (Jul 9 low) → 29,505.5 (Jul 10 high) = 827.4 pts. Price at 88.7% of H4 range — PREMIUM, approaching H4 100% level. Strong bounce of 5 consecutive bullish H4 candles (Jul 9 10:00 → Jul 10 06:00), now interrupted by 1 bearish candle (-6.3). H4 61.8% Fib at 29,189.4 was reclaimed. Key resistance: H4 100% at 29,505.5.",
+    "l3_m15_entry": "M15 data unavailable (TradingView MCP H4 feed used as proxy). No Kill Zone active (10:38 UTC — between London and NY AM). No clear entry trigger yet. Watching for price reaction at H4 100% (29,505.5) and D1 38.2% Fib (29,442.7)."
+  },
+  "smt_divergence": "BEARISH SMT detected: NAS100 made LH at swing highs (30,341.1 → 29,853.3) while US500 made HH (7,541.0 → 7,552.1). NAS100 showing relative weakness. At swing lows: both made LL (correlated weakness, no SMT).",
+  "reasoning": "D1 structure is bearish with LH sequence since Jun 22 ATH rejection. Price dropped from 30,679.6 to 28,678.1 (Jul 8 low, -2,001.5 pts). Today marks the first HH+HL transition — a counter-trend recovery attempt with 2 consecutive bullish D1 bars. However, price faces significant resistance: D1 38.2% Fib at 29,442.7 (30.9 pts above) and H4 100% at 29,505.5 (93.7 pts above). H4 is at 88.7% of its range — the bounce is nearly complete. Bearish SMT confirms NAS100 relative weakness vs US500. Thursday is a potential reversal day per ICT weekly profile. Confidence lowered to 55 due to structure vs momentum conflict (bearish structure but bullish recovery candles). No entry trigger — waiting for M15 confirmation and Kill Zone timing (NY AM 12:30 UTC)."
+}
