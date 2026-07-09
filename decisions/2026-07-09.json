@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-09",
+  "timestamp": "2026-07-09T11:09:46.636703+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bearish bias with Medium confidence. Price in deep discount (28% of D1 DR) but lower-highs since ATH 30,975 confirm bearish structure. Price below MA50/100/200, RSI neutral 51, MACD negative. Heavy FVG inversion (79%) signals extreme choppiness. US-Iran geopolitical risk elevated. Key bearish inversion ceiling at 29,235-29,848 caps bounces.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "Mixed signals \u2014 standing aside (conf=55, orb=50)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

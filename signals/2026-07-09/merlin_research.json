@@ -1,0 +1,25 @@
+{
+  "date": "2026-07-09",
+  "timestamp": "2026-07-09T11:00:00Z",
+  "summary": "Bearish bias with Medium confidence. Price in deep discount (28% of D1 DR) but lower-highs since ATH 30,975 confirm bearish structure. Price below MA50/100/200, RSI neutral 51, MACD negative. Heavy FVG inversion (79%) signals extreme choppiness. US-Iran geopolitical risk elevated. Key bearish inversion ceiling at 29,235-29,848 caps bounces.",
+  "bias": "Bearish",
+  "confidence": 45,
+  "key_levels": {
+    "support": ["29,287 (MA20 / MA10 confluence)", "29,173 (Jul 7 close)", "28,992 (REL Equal Low / SSL)", "28,891 (Jun 26 swing low / deep SSL)"],
+    "resistance": ["29,398 (MA5 / Pivot)", "29,451-29,497 (MA50 zone)", "29,591 (Inverted Bearish FVG CE)", "29,806-29,808 (MA200)"]
+  },
+  "ict_analysis": {
+    "daily_bias": "LH/LL since ATH 30,975 (Jun 22). Price 29,388 in deep discount (28% of DR 28,891-30,975). Bearish structure but discount zone limits downside. ADX 27 rising, MACD -31. Bias: Bearish, 45/100.",
+    "h4_context": "MT5 offline — no live H4 bars. Fallback: price sandwiched between bearish inversion ceiling 29,235-29,848 and bullish floor 28,891-29,220. No clear H4 key level without bars.",
+    "m15_status": "NO VALID ENTRY — MT5 offline, cannot verify OB/CRT/KZ. Mandatory Layer 3 failure per ICT pipeline rules."
+  },
+  "risks": [
+    {"event": "US-Iran military strikes", "time": "ongoing", "impact": "high"},
+    {"event": "Initial Jobless Claims", "time": "08:30 ET", "impact": "medium"},
+    {"event": "Existing Home Sales", "time": "10:00 ET", "impact": "medium"},
+    {"event": "Fed Williams Speech", "time": "09:00 ET", "impact": "medium"},
+    {"event": "Fed Logan Speech", "time": "13:30 ET", "impact": "medium"},
+    {"event": "MT5 offline — no live OHLCV", "time": "all session", "impact": "high"}
+  ],
+  "recommendation": "WAIT — Layer 3 (M15 entry) cannot be validated without live MT5 data. Bias is Bearish but discount positioning (28% of DR) creates poor R:R for shorts. Recommend waiting for either: (a) MT5 connectivity restored to verify M15 OB + Kill Zone, or (b) price action confirms direction with reclaim of 29,446 Pivot (bullish) or break of 29,287 support (bearish continuation)."
+}
