@@ -1,0 +1,22 @@
+{
+  "date": "2026-07-10",
+  "timestamp": "2026-07-10T11:00:00Z",
+  "summary": "Bullish reversal confirmed. Price rallied ~1,440 pts from Jul 9 close (29,388) to current ~30,831. Full bullish MA stack (+DI > -DI, RSI 57-59). Strong momentum but overbought stochastics warn of pullback. Look for long entries on pullback to 30,000-30,200.",
+  "bias": "Bullish",
+  "confidence": 60,
+  "key_levels": {
+    "support": [30033, 29901, 29591, 29253, 29235],
+    "resistance": [30975, 31100]
+  },
+  "ict_analysis": {
+    "daily_bias": "Strong bullish reversal. Price ~30,831, above all MAs (MA5 30,033, MA20 29,901, MA50 28,580). +DI(20.41) > -DI(18.87). ADX 24.48. RSI 57-59 neutral-bullish. SToch 67-72% overbought warning. Last bias (Jul 9) was Bearish Medium — fully reversed. Draw on liquidity: BSL at 31,000+.",
+    "h4_context": "Price in extreme premium of Jul 26 low to current high dealing range. Expect pullback to MA5 (30,033) or MA20 (29,901) for long entries. Inversion FVG at 29,591 now below price = support. Key level: 30,033 (MA5 confluence).",
+    "m15_status": "NO VALID ENTRY — MT5 offline (both IPs unreachable). Cannot confirm M15 OB formation, CRT purge, or Kill Zone timing. Layer 3 failure = mandatory WAIT per pipeline rules."
+  },
+  "risks": [
+    {"event": "MT5 offline", "time": "all session", "impact": "high"},
+    {"event": "Overbought stochastics", "time": "current", "impact": "medium"},
+    {"event": "Tariff policy shift reversal risk", "time": "NY session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — Layer 1 (D1) is clearly bullish with strong technicals. However, MT5 is offline on both 192.168.11.211 and 192.168.11.173 so Layer 3 (M15 entry confirmation) cannot be validated. Per ICT/CRT pipeline rules: if any layer fails → NO TRADE. WAIT for MT5 to come back online before considering entries. If MT5 recovers, look for M15 bullish OB at H4 key level 30,033 during NY Kill Zone."
+}
