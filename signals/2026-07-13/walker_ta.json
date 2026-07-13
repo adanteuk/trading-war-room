@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-07-13T10:31:00Z",
+  "bias": "bearish",
+  "confidence": 55,
+  "orb_score": 44,
+  "ict_profile": "Potential Classic Tuesday Low",
+  "entry": "TBD",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "29333",
+      "29166",
+      "28974",
+      "28678"
+    ],
+    "resistance": [
+      "29563",
+      "29720",
+      "29850",
+      "30680"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure shifted bearish. Recovery HH+HL (Jul 9-10) now violated \u2014 today swept below Jul 10 HL (29453) making 29333. Bearish gap at Sunday open. Price at 42.3% of ATH\u2192crash range (discount). D1 candle bearish -195pts, close at 19.5% of range (weak).",
+    "l2_h4_context": "H4 range 29333\u219229826 (493pts). Price at 39.1% (discount). Clear bearish trend since Sunday open: lower highs, lower lows. London bounce (06:00 bar +119pts) already fading. No clear H4 FVG \u2014 overlapping price action.",
+    "l3_m15_entry": "M15 data unavailable (Alfred MT5 down). Between Kill Zones \u2014 London closed, NY AM not yet active. Waiting for NY AM KZ (13:30-16:00 UTC) for entry confirmation. No entry signal yet."
+  },
+  "smt": "Bearish SMT (NAS100 weaker)",
+  "reasoning": "NAS100 showing relative weakness vs US500 (bearish SMT: NAS100 swept Jul 10 low, US500 held). D1 recovery structure from Jul 8 crash low is breaking down \u2014 today's selling violated the HH+HL established Jul 9-10. Sunday night gap down confirmed bearish intent. Price at 42.3% of broad range (between 38.2% and 50% Fib) \u2014 key decision zone. H4 trend is clearly bearish with lower highs since the open. However, confidence limited at 55 because: (1) between Kill Zones, (2) NY session could reverse, (3) 38.2% broader Fib (~29443) may provide support, (4) no M15 entry confirmation available. Watch NY AM session for either continuation bearish or reversal signal."
+}
