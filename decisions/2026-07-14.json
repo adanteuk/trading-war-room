@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-14",
+  "timestamp": "2026-07-14T11:06:19.776453+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "NO_INPUT",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bearish bias. D1 structure shifted bearish (LH/LL) with price in discount (42% of DR). Today's CPI at 08:30 ET creates extreme pre-event risk. H4 and M15 show consolidation in tight range with no clear entry signal yet. WAIT for CPI reaction before any entry.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "No TA input received from Walker",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
