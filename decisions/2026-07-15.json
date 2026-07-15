@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-15",
+  "timestamp": "2026-07-15T11:05:47.208861+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "NO_INPUT",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bearish bias: D1 structure LH/LL with price in premium (63.6%). Bounce from 28678 low has recovered to premium zone near 29700-29850. H4 at 104.2% (above range). Bearish OBs/FVGs overhead. M15 bearish OBs at 29800-29855. No Kill Zone active now \u2014 wait for NY session.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "No TA input received from Walker",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

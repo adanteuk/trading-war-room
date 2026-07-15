@@ -1,0 +1,44 @@
+{
+  "date": "2026-07-15",
+  "timestamp": "2026-07-15T11:04:41.135162+00:00",
+  "summary": "Bearish bias: D1 structure LH/LL with price in premium (63.6%). Bounce from 28678 low has recovered to premium zone near 29700-29850. H4 at 104.2% (above range). Bearish OBs/FVGs overhead. M15 bearish OBs at 29800-29855. No Kill Zone active now \u2014 wait for NY session.",
+  "bias": "Bearish",
+  "confidence": 60,
+  "key_levels": {
+    "support": [
+      29509,
+      29401,
+      29093,
+      28678
+    ],
+    "resistance": [
+      29709,
+      29850,
+      29992,
+      30341
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 BEARISH (LH/LL). DR 28678-30341, price at 63.6% PREMIUM. Last 5 candles: Jul8 bull(+), Jul9 bull(+), Jul12 bear(-1.88%), Jul13 bull(+1.33%), Jul14 bull(+0.50%). Bounce from 28678 SSL sweep bringing price back to premium. Bearish structure but recovery shows demand.",
+    "h4_context": "H4 DR 29093-29709, price at 104.2% (above range). Bearish FVGs at 29539-29594 and 29366-29442. Price above H4 swing high = extension territory. Key level for shorts: H4 bearish FVG 29636-29772 (Jul10). CRT frame: Jul15 01:00 candle H:29815 L:29653.",
+    "m15_status": "Bearish OBs at 29800-29855 and 29764-29798. Bearish FVGs at 29782-29801 and 29718-29764. No Kill Zone active (gap between London/NY). Entry would require NY AM session (21:30 HKT). WAIT for CRT purge + KZ confirmation."
+  },
+  "risks": [
+    {
+      "event": "US Retail Sales",
+      "time": "08:30 ET",
+      "impact": "high"
+    },
+    {
+      "event": "Fed Beige Book",
+      "time": "14:00 ET",
+      "impact": "medium"
+    },
+    {
+      "event": "Earnings Season (Banks)",
+      "time": "all session",
+      "impact": "medium"
+    }
+  ],
+  "recommendation": "WAIT \u2014 Bias is bearish (premium + LH/LL structure) but no Kill Zone active and M15 shows no confirmed entry. Wait for NY AM session (21:30+ HKT) to see if price rejects from premium with CRT purge + OB formation in Kill Zone. If price breaks above 29854 (ATH of bounce) with displacement, bias invalidated."
+}
