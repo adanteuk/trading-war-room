@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-07-14T11:00:00+08:00",
+  "symbol": "PEPPERSTONE:NAS100",
+  "bias": "bearish",
+  "confidence": 55,
+  "orb_score": 45,
+  "ict_profile": "Tuesday continuation (potential Tuesday Low forming)",
+  "entry": "TBD — waiting for Kill Zone confirmation",
+  "sl": "TBD",
+  "tp": "TBD",
+  "current_price": 29400.9,
+  "key_levels": {
+    "support": [
+      "29264 (D1 50% Fib)",
+      "29126 (D1 38.2% Fib)",
+      "29093 (H4 0%)",
+      "28678 (D1 0%)"
+    ],
+    "resistance": [
+      "29403 (D1 61.8% Fib)",
+      "29504 (D1 70.5% Fib)",
+      "29604 (D1 79% Fib)",
+      "29850 (D1 100%)"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "BEARISH structure (LH+LL on Jul 13-14). Price at 60.2% of D1 dealing range (28,678.1→29,850.2 = 1,172.1 pts). Bearish SMT confirmed: NAS100 made LL (29,166→29,093) while US500 held HL (7,469→7,488). D1 candle bullish (+152pts, 43.9% body, close at 84.3% of range) but structure remains bearish. 2 consecutive LH+LL days.",
+    "l2_h4_context": "Price at 84.3% of H4 range (29,093→29,438 = 345.6 pts). H4 structure mixed — recent bars show HH+HL (bullish) but interrupted by LH. Price approaching D1 61.8% Fib (29,403) from below. H4 swing low at 29,093 (Jul 14 02:00 UTC), swing high at 29,438 (Jul 14 06:00 UTC).",
+    "l3_m15_entry": "No M15 data available (Alfred MT5 offline). Entry context unavailable. Waiting for Kill Zone (NY AM 08:30-11:00 NY) for entry confirmation."
+  },
+  "reasoning": "D1 structure is bearish (2 consecutive LH+LL days) despite today's bullish candle. Bearish SMT divergence confirms NAS100 weakness vs US500 — NAS100 swept Jul 9 low (29,166→29,093) while US500 held above Jul 9 low (7,469→7,488). Price in premium (60.2% of D1 range) but approaching key D1 61.8% Fib resistance (29,403). H4 shows recovery attempt but structure interrupted. Confidence lowered to 55 due to structure vs momentum conflict (D1 bearish but today's candle bullish with strong close at 84.3% of range). ORB score 45 reflects missing M15 entry context and no Kill Zone confirmation yet.",
+  "risk_management": "If price reclaims D1 61.8% Fib (29,403) with strong momentum, bias shifts neutral. If Jul 9 low (28,678) is swept, bearish continuation targets 28,200 area (Jun 9 crash low).",
+  "data_sources": {
+    "nas100": "PEPPERSTONE:NAS100 via TradingView MCP",
+    "us500": "PEPPERSTONE:US500 via TradingView MCP",
+    "timeframes": ["D1", "H4"],
+    "m15_available": false
+  },
+  "verification_status": "pending_subagent"
+}
