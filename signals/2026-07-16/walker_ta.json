@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-07-16T10:35:25.683982Z",
+  "bias": "BEARISH",
+  "confidence": 45,
+  "orb_score": 38,
+  "ict_profile": "Seek & Destroy / Waiting",
+  "entry": "TBD",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "29335.75",
+      "29212.76",
+      "29192.89"
+    ],
+    "resistance": [
+      "29458.75",
+      "29549.44",
+      "29856.94"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure: LH+HL (CONTRACTING). Dealing range: 28814.57 \u2192 29856.94 (1042.37 pts). Price at 66.0% of range (PREMIUM zone). Last swing high: 29856.94 (2026-07-10), last swing low: 29189.21 (2026-07-13). No SMT divergence detected.",
+    "l2_h4_context": "H4 dealing range: 29397.00 \u2192 30062.50 (665.50 pts). Recent H4 candles mixed: bearish-bullish-bearish pattern. Price at 20.8% of H4 range. H4 61.8% Fib: 29808.28.",
+    "l3_m15_entry": "M15 data approximated from H1 bars. Recent H4 candles show bearish momentum (last completed H4: -165 pts). Current H4 in progress: -28 pts. No clear M15 OB forming yet. Waiting for Kill Zone (NY AM session 13:30-16:00 UTC)."
+  },
+  "reasoning": "D1 structure is LH+HL (contracting pattern) with slight bearish bias due to lower high. Price in premium zone (59.8%) but approaching 61.8% Fib resistance at 29458.75. H4 shows mixed signals with recent bearish candles. No SMT divergence between ^NDX and ^GSPC. Low ORB score (33/100) indicates weak setup. Waiting for clearer signals \u2014 potential short if price rejects at 61.8% Fib and breaks below 50% Fib (29335.75), or long if price reclaims 61.8% Fib and holds. Kill Zone not currently active.",
+  "current_prices": {
+    "ndx_rmp": 29502.596,
+    "gspc_rmp": 7572.4,
+    "nqf_rmp": 29535.25
+  }
+}
