@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-16",
+  "timestamp": "2026-07-16T11:04:46.418326+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "BEARISH",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Neutral-Bearish bias. Price swept BSL at 30,045 on Jul 15 then faded back to 29,722 (below prior day's 29,931 close). MACD histogram still negative, -DI > +DI, and price is in premium territory (81% of recent dealing range). ICT model expects pullback after BSL sweep. MT5 offline \u2014 no H4/M15 verification possible.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "TA confidence below GO threshold (conf=45 < 55, orb=38)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

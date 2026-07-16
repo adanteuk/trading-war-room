@@ -1,0 +1,22 @@
+{
+  "date": "2026-07-16",
+  "timestamp": "2026-07-16T18:20:00-04:00",
+  "summary": "Neutral-Bearish bias. Price swept BSL at 30,045 on Jul 15 then faded back to 29,722 (below prior day's 29,931 close). MACD histogram still negative, -DI > +DI, and price is in premium territory (81% of recent dealing range). ICT model expects pullback after BSL sweep. MT5 offline — no H4/M15 verification possible.",
+  "bias": "Bearish",
+  "confidence": 45,
+  "key_levels": {
+    "support": ["29,683 (equilibrium)", "29,500 (bullish OB / MA50)", "29,277 (SSL REL equal low)", "28,992 (deep SSL target)"],
+    "resistance": ["30,045 (BSL pool — swept)", "30,063 (Jul 15 high)", "30,200-30,400 (mid-June consolidation)"]
+  },
+  "ict_analysis": {
+    "daily_bias": "BSL swept at 30,045 Jul 15 → price faded to 29,722. MACD histogram negative (-42), -DI(21.8) > +DI(18.2). Price in premium (81% of DR 29,303-30,063). ICT expects pullback after BSL sweep. HMM regime: NEUTRAL-BEARISH.",
+    "h4_context": "H4 data unavailable (MT5 offline). Barchart ADX(14)=24.48 weak, +DI(20.4) slightly > -DI(18.9). RSI 57-59 neutral. Stochastic %K 68 trending up but %D 70. ATR(14)=706. Cannot verify H4 structure or key levels without OHLCV bars.",
+    "m15_status": "NO VALID ENTRY — MT5 offline. Cannot confirm OB formation, CRT purge, or Kill Zone timing. Mandatory Layer 3 veto per pipeline rules."
+  },
+  "risks": [
+    {"event": "MT5 offline", "time": "all session", "impact": "high"},
+    {"event": "BSL sweep reversal risk", "time": "NY session", "impact": "medium"},
+    {"event": "Inversion FVG chop (87.5% inverted)", "time": "ongoing", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — Layer 3 (M15) cannot be validated without MT5 data. This is a mandatory veto per ICT/CRT pipeline rules. If forced to trade, bias favors shorts on rallies into 30,000-30,200 with targets 29,500 → 29,277, but entry confirmation is impossible without live M15 bars."
+}
