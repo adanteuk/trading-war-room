@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-17",
+  "timestamp": "2026-07-17T11:05:40.924473+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "NO_INPUT",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bearish bias as NAS100 breaks below Jul 7 swing low (28678) to 28608, confirming bearish LH/LL structure. Failed rally from 29303 rejected at BSL 30045, now in steep distribution. D1 and H4 both showing price below dealing range lows. Confidence moderate due to deep oversold conditions and extreme FVG choppiness (87.5% inversion rate).",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "No TA input received from Walker",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

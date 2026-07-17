@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-17",
+  "timestamp": "2026-07-17T00:00:00Z",
+  "summary": "Bearish bias as NAS100 breaks below Jul 7 swing low (28678) to 28608, confirming bearish LH/LL structure. Failed rally from 29303 rejected at BSL 30045, now in steep distribution. D1 and H4 both showing price below dealing range lows. Confidence moderate due to deep oversold conditions and extreme FVG choppiness (87.5% inversion rate).",
+  "bias": "Bearish",
+  "confidence": 62,
+  "key_levels": {
+    "support": [28357.0, 28204.7, 28000.0],
+    "resistance": [28625.0, 28906.0, 29190.0]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 BEARISH (LH/LL). DR: 28678-30341, price at 28608 (-4.2% = below DR low). Jul 16 candle -3.3% bearish displacement. Broke Jul 7 swing low = potential MSS to downside. 4 of last 5 D1 candles bearish. Failed rally from 29303 rejected at 30045 BSL.",
+    "h4_context": "H4 deeply bearish. Price at -144.8% of DR (29190-29592) = DR broken to downside. 4 bearish FVGs detected. Jul 17 H4 candles continue selling with min low 28357. Key level: bearish FVG 28625-28796 acts as overhead resistance.",
+    "m15_status": "M15 bearish FVG at 28417-28468. Range 28357-28625. No Kill Zones currently active (analysis run outside KZ windows). M15 confirms distribution but cannot validate entry timing without KZ activity."
+  },
+  "risks": [
+    {"event": "Import/Export Price Indexes", "time": "08:30 ET", "impact": "medium"},
+    {"event": "MT5 data only (no live session)", "time": "all session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - Bearish structure confirmed on D1 and H4, but price is deeply extended below dealing range and M15 Kill Zones are not active. Cannot validate Layer 3 entry. If London/NY KZ activates and bearish OB forms with displacement, consider shorts targeting 28205 with SL above 28796 (bearish FVG high)."
+}
