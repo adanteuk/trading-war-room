@@ -1,0 +1,26 @@
+{
+  "date": "2026-07-20",
+  "timestamp": "2026-07-20T11:03:57.498425+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bearish bias with reduced confidence due to conflicting timeframe signals. D1 structure is bearish (LH/LL) but price sits at extreme discount (9.4% of dealing range), suggesting potential bounce. H4 shows premium positioning (91%) with overhead bearish FVG resistance at 28,624-28,795. No Kill Zone active = no valid entry per ICT rules. Recommend WAIT for Kill Zone timing or clearer setup.",
+  "final_decision": "CONDITIONAL_GO",
+  "trade_params": {
+    "direction": "SHORT",
+    "instrument": "NAS100",
+    "entry": "TBD \u2014 waiting for rejection at 28,840-28,850 zone",
+    "stop_loss": "29,050 (above D1 50% Fib)",
+    "take_profit": "28,200 (retest of Fri Jul 17 low)",
+    "tier": "CONDITIONAL_GO",
+    "lot_size": "TBD x 0.5",
+    "lot_multiplier": 0.5,
+    "risk_pct": 1.0,
+    "session_window": "09:30-11:00 ET",
+    "close_before": "13:30 ET (pre-news)",
+    "note": "Reduced conviction \u2014 half size, tighter risk"
+  },
+  "reasoning": "TA: conf=60, ORB=55 \u2192 MODERATE CONVICTION\nAlfred: WAIT \u2014 reduced to 50% size\nRisk: N/A\nMerlin: ",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

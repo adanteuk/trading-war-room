@@ -1,0 +1,31 @@
+{
+  "date": "2026-07-20",
+  "timestamp": "2026-07-20T00:00:00Z",
+  "summary": "Bearish bias with reduced confidence due to conflicting timeframe signals. D1 structure is bearish (LH/LL) but price sits at extreme discount (9.4% of dealing range), suggesting potential bounce. H4 shows premium positioning (91%) with overhead bearish FVG resistance at 28,624-28,795. No Kill Zone active = no valid entry per ICT rules. Recommend WAIT for Kill Zone timing or clearer setup.",
+  "bias": "Bearish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "28,678 (D1 Dealing Range low)",
+      "28,521 (recent swing low)",
+      "28,209 (H4 Dealing Range low)"
+    ],
+    "resistance": [
+      "28,845 (H4 Dealing Range high)",
+      "28,624-28,795 (bearish FVG overhead resistance)",
+      "29,018-29,056 (bearish FVG)",
+      "29,266 (D1 50% Fibonacci)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH structure (LH/LL) but price at 9.4% of D1 dealing range = extreme DISCOUNT. Last 5 candles: 3 bearish followed by small bullish recovery. Bearish momentum intact but oversold conditions suggest potential bounce. Control: Supply in control (recent bearish displacement). Confidence reduced due to discount positioning.",
+    "h4_context": "H4 Dealing Range: 28,209-28,845. Price at 91% = PREMIUM zone (correct for bearish bias). 4 bearish FVGs detected, largest at 28,624-28,795 (171pt gap) acting as overhead resistance. CRT framing: Recent H4 candles show rejection at premium. Expected behavior: Price may test 28,845 resistance, fail, then expand lower toward 28,209 support. Invalidation: If price closes above 28,845 with displacement.",
+    "m15_status": "Bullish OB detected at 09:00 UTC (H:28700.4, L:28666.9) with 2 bullish FVGs. However, NO KILL ZONE currently active. Price at 28,788.5 is above the OB. Per ICT rules: OB outside Kill Zone = low probability entry. Layer 3 fails = NO TRADE until Kill Zone timing aligns."
+  },
+  "risks": [
+    {"event": "No major economic releases scheduled", "time": "N/A", "impact": "low"},
+    {"event": "Summer low liquidity period", "time": "All day", "impact": "medium"},
+    {"event": "Conflicting D1/H4 signals (discount vs premium)", "time": "N/A", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - No Kill Zone active, conflicting timeframe signals (D1 discount vs H4 premium). M15 bullish OB present but invalid without KZ timing. Wait for London Open (06:00-09:00 UTC) or NY Open (13:30-16:00 UTC) for valid entry. If price reaches 28,845 resistance and shows rejection with bearish MSS, short setup forms with targets at 28,209. If price breaks above 28,845 with displacement, bearish thesis invalidated."
+}
