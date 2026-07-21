@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-21",
+  "timestamp": "2026-07-21T10:15:00Z",
+  "summary": "D1 bearish structure (LH/LL) but price deep in discount (25.8%) after 4-day selloff from 29855 to 28517. Yesterday's strong bullish D1 candle (75% body) suggests demand at discount. H4 shows extreme premium (95.5%) at bearish FVG resistance 29018-29056. Conflicting signals: D1 discount favors longs, H4 premium favors shorts. No Kill Zone active for M15 entry.",
+  "bias": "Neutral",
+  "confidence": 45,
+  "key_levels": {
+    "support": [
+      "28904-28966 (H4 bullish FVG)",
+      "28711-28832 (H4 bullish FVG)",
+      "28678 (D1 DR low)",
+      "28516 (H4 DR low)"
+    ],
+    "resistance": [
+      "29018-29056 (H4 bearish FVG - KEY)",
+      "29140-29158 (H4 bearish FVG)",
+      "29266 (D1 50% FIB)",
+      "29407 (D1 62% FIB)",
+      "29854 (D1 DR high)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH structure (LH/LL from 30776→29855) but DEEP DISCOUNT (25.8% of D1 DR). Yesterday's 75% body bullish candle reversed from 28517 low, suggesting demand at discount. Price at 28982 is 25.8% of D1 DR (29855→28678). Discount zone favors LONGS in ICT framework, but D1 structure is bearish. CONFLICT: bearish structure vs discount positioning. Control check: Demand stepped in yesterday at discount, but structure remains bearish. Confidence reduced due to conflict.",
+    "h4_context": "H4 DR: 29004→28517. Price at 28982 = 95.5% = EXTREME PREMIUM. Bearish FVG at 29018-29056 is KEY RESISTANCE right at current price. Last 3 H4 candles all bullish (strong rally from 28517 to 28982), but current H4 candle is doji (1% body) = indecision at resistance. Bullish FVG at 28904-28966 provides support below. Expected behavior: Price will test 29018-29056 bearish FVG. If rejected → short toward 28904-28966 bullish FVG. If broken with displacement → long toward 29140-29158. Invalidation: If price closes above 29056 with strong body, setup shifts bullish.",
+    "m15_status": "M15 range: 29018→28903. Price at 28982 (near top). Bullish FVG at 28935-28956 (support). KILL ZONES: NONE ACTIVE (10:15 UTC = between London close and NY open). No valid M15 entry setup without Kill Zone. Must wait for London (already closed) or NY AM (13:30-16:00 UTC) for valid entry. Current status: WAIT for Kill Zone + price reaction at 29018-29056 resistance."
+  },
+  "risks": [
+    {"event": "MT5 connectivity", "time": "all session", "impact": "low"},
+    {"event": "No Kill Zone active", "time": "current", "impact": "medium"},
+    {"event": "D1/H4 conflict", "time": "all session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT. Conflicting signals: D1 bearish structure but deep discount (favors longs), H4 extreme premium at bearish FVG resistance (favors shorts). No Kill Zone active for M15 entry. Decision point: 29018-29056 bearish FVG. If price rejects here during NY Kill Zone (13:30-16:00 UTC) → short setup toward 28904-28966. If price breaks above 29056 with displacement → long setup toward 29140-29158. Do not enter without Kill Zone + clear reaction at key level. Confidence 45/100 due to conflict."
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-21",
+  "timestamp": "2026-07-21T11:04:56.167570+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "NO_INPUT",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "D1 bearish structure (LH/LL) but price deep in discount (25.8%) after 4-day selloff from 29855 to 28517. Yesterday's strong bullish D1 candle (75% body) suggests demand at discount. H4 shows extreme premium (95.5%) at bearish FVG resistance 29018-29056. Conflicting signals: D1 discount favors longs, H4 premium favors shorts. No Kill Zone active for M15 entry.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "No TA input received from Walker",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
