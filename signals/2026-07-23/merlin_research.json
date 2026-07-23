@@ -1,0 +1,31 @@
+{
+  "date": "2026-07-23",
+  "timestamp": "2026-07-23T10:30:00Z",
+  "summary": "NAS100 at 28905 after SSL sweep reversal lost momentum. D1 bearish (LH/LL) but deep discount (42%). H4 indecision in discount. No KZ active, no valid M15 entry. WAIT.",
+  "bias": "Neutral",
+  "confidence": 40,
+  "key_levels": {
+    "support": [
+      "28,745 (H4 DR low / today's session low)",
+      "28,663 (May 19 macro swing low / critical structural floor)",
+      "28,550 (Jul 17-20 crash low / deep SSL)"
+    ],
+    "resistance": [
+      "29,030 (Inverted Bullish FVG CE — key support/resistance flip)",
+      "29,161 (H4 DR high / yesterday's rejection zone)",
+      "29,280-29,382 (Bearish Inversion FVG zone / ultra-strong resistance)",
+      "29,399-29,417 (Confluence Zone: HIGH strength — 2 inversions overlapping)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 BEARISH (LH/LL). Price at 42.3% of DR = discount. Swing highs declining: 30776→29855. Jul 20-21 SSL sweep reversal (+551pts) but failed to break 29,280 bearish inversion zone. Yesterday closed bearish (-14% body). Control: Supply dominant — bearish structure intact.",
+    "h4_context": "H4 DR: 28785-29161. Price at 32% = discount. Bullish FVG at 28712-28832 (120pt gap) is key support. Bearish FVGs at 29044-29072 overhead. Last 3 H4 candles show indecision (8%, 20% bodies). No clear displacement. CRT not yet purged.",
+    "m15_status": "Bearish OBs at 06:45/07:15 UTC, Bullish OB at 08:30 UTC. No Kill Zone active (Asian session). No CRT purge confirmed. No valid entry setup — Layer 3 fails. Must wait for London KZ (13:30-16:00 UTC) or NY KZ (18:30-21:00 UTC)."
+  },
+  "risks": [
+    {"event": "No major news scheduled", "time": "all session", "impact": "low"},
+    {"event": "H4 indecision candles", "time": "ongoing", "impact": "medium"},
+    {"event": "Bearish inversion zone 29280-29382 overhead", "time": "all session", "impact": "high"}
+  ],
+  "recommendation": "WAIT. Layer 1 bearish but discount zone limits shorts. Layer 2 no clear key level reaction. Layer 3 no KZ active, no entry. Wait for London KZ (13:30 UTC) to see if price tests 28745 support or rejects at 29030. If bullish MSS + displacement above 29030 in KZ → conditional long. If bearish rejection at 29030 → short toward 28745. No setup = no trade."
+}

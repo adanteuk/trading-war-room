@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-23",
+  "timestamp": "2026-07-23T11:04:57.973595+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "NO_INPUT",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "NAS100 at 28905 after SSL sweep reversal lost momentum. D1 bearish (LH/LL) but deep discount (42%). H4 indecision in discount. No KZ active, no valid M15 entry. WAIT.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "No TA input received from Walker",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
