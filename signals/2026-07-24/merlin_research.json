@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-24",
+  "timestamp": "2026-07-24T11:05:16.555743+00:00",
+  "summary": "BEARISH bias (Medium confidence). NAS100 in clear downtrend with lower highs since ATH 30,808. Jul 21 bullish reversal FAILED \u2014 price gave back all gains and broke below bullish Inversion FVG CE 29,030, confirming distribution. Price now at ~28,480 targeting SSL at 28,255 (Jul 22 low). However, price is in deep discount of macro range (20% of 28,663-30,808), limiting bearish conviction. Oil at $100+, GOOGL -7% post-earnings, and tech selloff are bearish catalysts. Recommendation: WAIT for confirmation \u2014 either break below 28,255 for shorts or bullish MSS for counter-trend longs.",
+  "bias": "Bearish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "28,255 (Jul 22 low / immediate SSL target)",
+      "28,208 (Jul 17 low / major SSL)",
+      "28,000 (Psychological + macro demand zone)",
+      "27,749 (MA100 / deep structural support)"
+    ],
+    "resistance": [
+      "28,559 (Jul 23 high / immediate overhead)",
+      "28,974 (Relative Equal Low cluster / flipped resistance)",
+      "29,030 (Bullish Inversion FVG CE \u2014 now resistance)",
+      "29,177 (Relative Equal High / BSL pool)",
+      "29,383 (Bearish Inversion FVG CE / Confluence Zone)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH structure confirmed. Lower highs: 30,808 (Jun 3 ATH) \u2192 30,341 (Jun 30) \u2192 29,854 (Jul 9) \u2192 29,177 (Jul 21) \u2192 28,559 (Jul 23). Jul 21 bullish reversal (+551 pts) FAILED \u2014 Jul 22-23 gave back all gains. Price broke below bullish Inversion FVG CE 29,030, confirming the reversal was distribution not accumulation. ADX 15.93 < 25 = ranging market, but -DI (20.36) > +DI (15.72) = bearish directional bias. RSI 47 = neutral-bearish momentum. Price below all short-term MAs (MA5/10/20/50) but above long-term MAs (MA100 27,749, MA200 26,855).",
+    "h4_context": "H4 dealing range: Jul 22 high 29,104 \u2192 Jul 23 low 28,292 (range = 812 pts). Equilibrium at 28,698. Current price 28,480 = 28% of range = DISCOUNT territory. However, in a bearish trend, discount is where shorts look for entries (pullback to premium for shorts, not discount). Key H4 levels: Bearish FVG likely at 28,800-28,900 (from Jul 22 displacement down). Bearish OB at 28,950-29,100 (Jul 22 open zone). No valid H4 setup yet \u2014 price needs to pull back to premium (28,698+) for shorts. Current position in discount means: (a) wait for pullback to 28,700-28,900 for shorts, OR (b) if price breaks below 28,255 with displacement, that's a bearish continuation signal targeting 28,000.",
+    "m15_status": "NO VALID ENTRY. Without live M15 data from Alfred (MT5 offline), cannot confirm OB formation, CRT purge, or Kill Zone timing. Layer 3 failure = mandatory veto per ICT/CRT pipeline rules. Recommendation: WAIT until M15 data available or price action confirms direction."
+  },
+  "risks": [
+    {
+      "event": "ECB Rate Decision (expected hold at 2.25%)",
+      "time": "07:45 ET",
+      "impact": "medium"
+    },
+    {
+      "event": "US Initial Jobless Claims",
+      "time": "08:30 ET",
+      "impact": "medium"
+    },
+    {
+      "event": "Intel Earnings (after close)",
+      "time": "16:00 ET",
+      "impact": "medium"
+    },
+    {
+      "event": "Oil price volatility (Brent at $100+)",
+      "time": "all day",
+      "impact": "high"
+    },
+    {
+      "event": "Post-Alphabet/Tesla earnings reaction",
+      "time": "all day",
+      "impact": "high"
+    }
+  ],
+  "recommendation": "WAIT. Bearish structure confirmed but price is in deep discount of macro range (20% of 28,663-30,808), which limits bearish conviction. M15 data unavailable (Alfred MT5 offline) = Layer 3 failure = no valid entry. Two scenarios to watch: (1) BEARISH CONTINUATION: If price breaks below 28,255 (Jul 22 low) with displacement \u2192 short with targets 28,000 \u2192 27,749. (2) BULLISH REVERSAL: If price reclaims 29,030 (bullish Inversion FVG CE) with bullish MSS \u2192 long with targets 29,177 \u2192 29,383. Until one scenario confirms, stay flat. Oil at $100+ and tech earnings disappointment (GOOGL -7%) are bearish catalysts, but deep discount position and potential support at 28,200-28,255 could trigger reversal. Risk management: No trade until Layer 3 (M15) confirms entry."
+}
