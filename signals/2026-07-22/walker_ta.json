@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-07-22T10:33:00+08:00",
+  "bias": "bearish",
+  "confidence": 55,
+  "orb_score": 46,
+  "ict_profile": "Wednesday Low Potential / Midweek Continuation",
+  "entry": "TBD",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["28835 (D1 61.8% Fib)", "28208 (D1 0% / swing low)"],
+    "resistance": ["29030 (D1 50% Fib)", "29178 (H4 100% / swing high)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "Bearish structure (LH+LL pattern). Price at 28,972.5 in DISCOUNT zone (37.6% of D1 range). D1 dealing range: 28,208.9 (Jul 10 low) → 29,850.2 (Jul 15 high). Key support: D1 61.8% Fib at 28,835.5. Today's candle: bearish body -149.5pts, range 310.1pts.",
+    "l2_h4_context": "Price bounced from 28,208.9 low to 29,177.7 high, now pulling back. H4 dealing range: 28,208.9 → 29,177.7 (968.8 pts). Price at 50.2% of H4 range (neutral zone). Recent H4 bars show consolidation after bounce.",
+    "l3_m15_entry": "Entry context shows indecision. Price between Kill Zones (London ended, NY AM not yet active). Waiting for NY AM session (13:30-16:00 UTC) for clearer entry signal."
+  },
+  "reasoning": "D1 structure is bearish with lower highs and lower lows since the Jul 15 high at 29,850. Price dropped -1,641pts to Jul 21 low of 28,208, then bounced +969pts. Current pullback suggests the bounce may be exhausting. Price is in D1 discount zone but approaching H4 50% Fib resistance. Between Kill Zones — waiting for NY AM session for clearer directional bias. Wednesday Low profile possible if price prints a low in NY session then reversals. Confidence moderate (55) due to conflicting signals: bearish D1 structure but price in discount zone with bounce momentum.",
+  "data_source": "TradingView CFD (PEPPERSTONE:NAS100)",
+  "fibonacci_levels": {
+    "d1_range": {"low": 28208.9, "high": 29850.2, "size": 1641.3},
+    "fib_0": 28208.9,
+    "fib_25": 28618.6,
+    "fib_50": 29029.6,
+    "fib_61_8": 28835.5,
+    "fib_70_5": 28693.5,
+    "fib_79": 28553.1,
+    "fib_100": 29850.2,
+    "h4_range": {"low": 28208.9, "high": 29177.7, "size": 968.8}
+  }
+}

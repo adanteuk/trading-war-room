@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-07-21T10:52:14.161504+00:00",
+  "bias": "bearish",
+  "confidence": 48,
+  "orb_score": 35,
+  "ict_profile": "Classic Tuesday High (potential)",
+  "current_price": 28986.0,
+  "d1_structure": "HH+LL (expansion/conflict)",
+  "dealing_range": {
+    "low": 28208.9,
+    "high": 30679.6,
+    "range": 2470.699999999997
+  },
+  "price_position_pct": 31.5,
+  "pd_zone": "Discount",
+  "smt": "No SMT divergence detected",
+  "kill_zone": "No Kill Zone active",
+  "supports": [
+    "28826.6",
+    "28792.0",
+    "28208.9"
+  ],
+  "resistances": [
+    "29152.7",
+    "29444.2",
+    "29735.8"
+  ],
+  "fib_levels": {
+    "0%": 28208.9,
+    "23.6%": 28792.0,
+    "25%": 28826.6,
+    "38.2%": 29152.7,
+    "50%": 29444.2,
+    "61.8%": 29735.8,
+    "70.5%": 29950.7,
+    "79%": 30160.8,
+    "100%": 30679.6
+  },
+  "h4_range": {
+    "low": 28208.9,
+    "high": 29013.0,
+    "range": 804.0999999999985
+  },
+  "h4_fibs": {
+    "0%": 28208.9,
+    "38.2%": 28516.1,
+    "50%": 28611.0,
+    "61.8%": 28705.8,
+    "100%": 29013.0
+  },
+  "entry": "TBD \u2014 waiting for Kill Zone (NY AM 12:00-16:00 UTC)",
+  "sl": "TBD",
+  "tp": "TBD",
+  "three_layer_analysis": {
+    "l1_daily": "Bearish bias (4/5 D1 bars bearish). D1 structure HH+LL (conflict). Dealing range 28208.9\u219230679.6 (2470.7pts). Price at 31.5% (Discount). Current bar strong bullish marubozu +379pts \u2014 counter-trend recovery from Jul 17 crash low.",
+    "l2_h4_context": "H4 range 28208.9\u219229013.0 (804pts). Price at 96.6% of H4 range (near top). 4 consecutive bullish H4 bars. 2 bullish FVGs below price (28735-28903, 28919-28970). Recovery momentum strong but approaching H4 100% Fib.",
+    "l3_m15_entry": "M15 unavailable \u2014 H4 proxy shows 4 consecutive bullish bars. No Kill Zone active (10:52 UTC). Entry model: wait for NY AM KZ (12:00-16:00 UTC) for potential short entry if price rejects at H4 100% / D1 38.2% Fib zone (29013-29153)."
+  },
+  "reasoning": "D1 bearish structure (LH+LL dominant since Jun 22 ATH). Jul 17 printed major crash low at 28208.9. Mon Jul 20 doji (-10pts) at the lows. Tue Jul 21 rallying strongly (+379pts, 76% body) \u2014 potential Classic Tuesday High (manipulation before continuation lower). Price recovering into D1 38.2% Fib (29152.7) and H4 100% Fib (29013.0) \u2014 key resistance zone. No SMT divergence. No Kill Zone active. Low confidence (48) due to counter-trend recovery and no KZ. Wait for NY AM KZ for potential short entry if rejection forms at 29000-29150 zone."
+}

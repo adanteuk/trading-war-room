@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-07-24T18:44:00Z",
+  "bias": "bearish",
+  "confidence": 45,
+  "orb_score": 49,
+  "ict_profile": "Classic Tuesday HIGH (Tue made weekly high +493.7pts, then Wed-Fri decline)",
+  "entry": "TBD — waiting for Kill Zone + M15 OB confirmation",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["28208.9 (D1 0% / Jul 17 swing low)", "28255.6 (Jul 23 low — near double bottom)", "28826.6 (D1 25% Fib)"],
+    "resistance": ["28607.6 (H4 50% Fib)", "28690.7 (H4 61.8% Fib)", "29152.7 (D1 38.2% Fib)", "29444.2 (D1 50% Fib)", "30679.6 (D1 100% / Jun 22 ATH)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 bearish structure (LH+LL) since Jun 22 ATH 30679.6. Dealing range: 30679.6 (Jun 22) → 28208.9 (Jul 17) = 2470.7 pts. Price at 28495.4 = 11.6% of range (deep discount). Last completed D1: Thu Jul 23 -389.6pts (LH+LL bearish continuation). Today Fri Jul 24 in-progress: -30.5pts small bearish doji (11.4% body, 203.1pt lower wick = buying at lows). Structure: LH+HL compression on last transition — potential reversal signal.",
+    "l2_h4_context": "H4 dealing range: 28959.6 → 28255.6 = 704.0 pts. Price at 28499.4 = 34.6% of H4 range (discount). H4 61.8% Fib at 28690.7 is immediate resistance. Recent H4 bars show recovery attempt from 28255.6 low with mixed candles. H4 50% Fib (28607.6) and 61.8% Fib (28690.7) are key resistance levels to watch.",
+    "l3_m15_entry": "Alfred MT5 unavailable — no M15 CFD data. Entry model TBD pending Kill Zone activation. London KZ (07:00-10:00 UTC) active. NY AM KZ (13:30-16:00 UTC) upcoming. Watching for M15 OB formation at H4 key levels."
+  },
+  "reasoning": "D1 structure bearish (LH+LL since Jun 22 ATH). Price in extreme discount at 11.6% of dealing range. Jul 17 crash low 28208.9 tested again on Jul 23 (28255.6) — only 46.7pts difference, potential double bottom / SSL sweep area. Weekly profile: Classic Tuesday HIGH (Tue +493.7pts was weekly high, then Wed-Fri decline). Last D1 candle shows 203.1pt lower wick — buyers defending lows. H4 showing recovery but still below 61.8% Fib. No SMT divergence (both NAS100 and US500 swept prior lows = aligned weakness). Confidence low (45) due to: (1) extreme discount zone suggests reversal potential, (2) but bearish structure intact, (3) lower wick on last D1 shows buying interest, (4) weekly profile bearish. Waiting for Kill Zone confirmation before entry.",
+  "dealing_range": {
+    "high": 30679.6,
+    "low": 28208.9,
+    "size": 2470.7,
+    "high_date": "2026-06-22",
+    "low_date": "2026-07-17"
+  },
+  "fibonacci_levels": {
+    "0%": 28208.9,
+    "25%": 28826.6,
+    "38.2%": 29152.7,
+    "50%": 29444.2,
+    "61.8%": 29735.8,
+    "70.5%": 29950.7,
+    "79%": 30160.8,
+    "100%": 30679.6
+  },
+  "price_position_pct": 11.6,
+  "h4_range": {"high": 28959.6, "low": 28255.6, "size": 704.0},
+  "weekly_profile": {
+    "mon": -10.0,
+    "tue": 493.7,
+    "wed": -122.0,
+    "thu": -389.6,
+    "fri": -30.5,
+    "pattern": "Classic Tuesday HIGH"
+  },
+  "market_structure": {
+    "last_5_transitions": [
+      "07-20→07-21: HH+LL (expansion)",
+      "07-21→07-22: LH+HL (inside/compression)",
+      "07-22→07-23: LH+LL (bearish)",
+      "07-23→07-24: LH+HL (inside/compression)"
+    ],
+    "effective_bias": "bearish (LH+LL dominant)"
+  },
+  "smt_divergence": "None — both NAS100 and US500 swept prior lows (aligned weakness)"
+}

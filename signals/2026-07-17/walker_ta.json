@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-07-17T18:31:00+08:00",
+  "instrument": "NAS100",
+  "data_source": "TradingView MCP (PEPPERSTONE:NAS100 CFD)",
+  "bias": "bearish",
+  "confidence": 65,
+  "orb_score": 64,
+  "ict_profile": "Wednesday High (bearish continuation Thu→Fri)",
+  "entry": "TBD — waiting for NY AM Kill Zone (08:30-11:00 NY)",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["28357 (today low / D1 0% Fib)", "28206 (Jun 30 low)", "28248 (Jul 1 low)"],
+    "resistance": ["28875 (yesterday low)", "29092 (Jul 14 low)", "29190 (Jul 15 low)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure: LH+LL (bearish) for 2 consecutive days (Jul 16-17). Dealing range: 28,357→30,679.6 (2,322.6 pts). Price at 9.3% of range — deep discount. Today's candle: bearish, body -432.4 (65.4% of range), swept yesterday's low (28,875.8). Lower wick 216.7 pts shows some buying at lows. D1 61.8% Fib at 29,244 was lost on Jul 16; price now approaching D1 0% (28,357).",
+    "l2_h4_context": "H4 structure: 7 consecutive LH+LL bars (Jul 16 06:00 → Jul 17 06:00), then LH+HL (inside bar/compression) on latest bar (Jul 17 10:00). H4 dealing range: 28,357→29,854.8 (1,497.8 pts). Price at 14.5% of H4 range — deep discount. H4 79% Fib at 28,671 was swept; price now near H4 100% (28,357). The LH+HL on latest H4 bar after 7 consecutive LH+LL bars signals potential compression before next expansion.",
+    "l3_m15_entry": "M15 data not available (TradingView D1 chart). No Kill Zone active at report time (06:31 NY). NY AM Kill Zone (08:30-11:00 NY) is the next window for potential entry. Watch for: (a) bearish continuation — M15 LH+LL into new low, or (b) bullish reversal — M15 HL + sweep of today's low with rejection."
+  },
+  "smt_analysis": "Bearish SMT for NAS100 detected on Jul 17: NAS100 made LL (28,357 < 28,875.8) while US500 made HL (7,465.4 > 7,450.1). NAS100 is the weaker index. Additional SMT on Jul 7: NAS100 LL while US500 HL. SMT on Jul 9 reversed: US500 LL while NAS100 HL (NAS100 was relatively stronger that day).",
+  "weekly_profile": "Wednesday High pattern: Mon bearish (-503.9) → Tue bullish (+355.8, false recovery/Judas) → Wed made weekly high (29,854.8, slightly bearish close -77.8) → Thu bearish (-536.2) → Fri bearish (-432.4, in-progress). The Tue bullish move was a false rally that set up the bearish continuation. Weekly high formed Wed, now distributing lower.",
+  "reasoning": "Strong bearish structure across D1 and H4 (both LH+LL). Price at extreme discount (9.3% D1, 14.5% H4) — approaching the Jun 22 ATH→Jul 17 selloff target (D1 0% Fib = 28,357). SMT confirms NAS100 weaker than US500. However, confidence capped at 65 because: (1) price at extreme discount invites bounce, (2) latest H4 bar shows LH+HL (compression) after 7 consecutive bearish bars — possible exhaustion, (3) today's lower wick (216.7 pts) shows buying interest at lows. Key risk: if 28,357 holds and M15 forms bullish structure during NY AM KZ, a relief bounce to 28,875-29,092 is plausible. Bias remains bearish unless D1 reclaims 29,244 (61.8% Fib).",
+  "fibonacci": {
+    "d1_range": {"high": 30679.6, "low": 28357.0, "range": 2322.6},
+    "d1_levels": {"0%": 30679.6, "25%": 30098.9, "50%": 29518.3, "61.8%": 29244.2, "70.5%": 29042.2, "79%": 28844.7, "100%": 28357.0},
+    "h4_range": {"high": 29854.8, "low": 28357.0, "range": 1497.8},
+    "h4_levels": {"0%": 29854.8, "25%": 29480.3, "50%": 29105.9, "61.8%": 28929.2, "70.5%": 28798.9, "79%": 28671.5, "100%": 28357.0},
+    "price_position_d1": "9.3%",
+    "price_position_h4": "14.5%"
+  },
+  "version": "3.47.0"
+}
