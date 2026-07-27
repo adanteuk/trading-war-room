@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-07-27T10:41:38.421971Z",
+  "date": "2026-07-27",
+  "bias": "bearish",
+  "confidence": 55,
+  "orb_score": 46,
+  "ict_profile": "Monday Accumulation / Potential Bullish Reversal",
+  "entry": "TBD \u2014 waiting for NY AM Kill Zone confirmation",
+  "sl": "TBD",
+  "tp": "TBD",
+  "current_price": 28575.9,
+  "key_levels": {
+    "d1_support": [
+      "28038.5 (Jul 24 swing low)",
+      "28208.9 (Jul 17 swing low)",
+      "28363.0 (today low)"
+    ],
+    "d1_resistance": [
+      "28698.8 (D1 25% Fib)",
+      "29359.1 (D1 50% Fib)",
+      "29670.7 (D1 61.8% Fib)"
+    ],
+    "h4_support": [
+      "28038.5 (H4 0% Fib)",
+      "28323.3 (H4 25% Fib)"
+    ],
+    "h4_resistance": [
+      "28608.1 (H4 50% Fib)",
+      "28742.5 (H4 61.8% Fib)",
+      "29177.7 (H4 100% Fib)"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "BEARISH structure (LH+LL since Jun 22 ATH 30,679.6). Price at 28575.9 in deep discount (20.3% of D1 range 28,038.5\u219230,679.6). Today bullish HH+HL, body +156.8, close at 90.5% of range. Key: 28,038.5 swing low intact.",
+    "l2_h4_context": "3 consecutive bullish H4 candles from 28,038.5 low. Price testing H4 50% Fib at 28,608.1. Recovery +537.4 pts (+1.91%). H4 range: 28,038.5\u219229,177.7 (1,139.2 pts). Price at 47.2% of H4 range.",
+    "l3_m15_entry": "M15 data unavailable (Alfred MT5 offline). Using H4 as entry context proxy. London KZ just ended, NY AM KZ pending (13:30 UTC)."
+  },
+  "reasoning": "D1 bearish structure intact but deep discount zone attracting buyers. H4 recovery momentum building (3 consecutive bullish candles). Price approaching H4 50% Fib \u2014 key decision point. No SMT divergence at recent lows (both NAS100 and US500 swept prior lows). Wait for NY AM session for confirmation. Bias remains bearish until H4 closes above 61.8% Fib (28,742.5).",
+  "data_source": "PEPPERSTONE:NAS100 CFD via TradingView MCP",
+  "smt_status": "No active SMT \u2014 both NAS100 and US500 made LL at recent swings",
+  "fibonacci": {
+    "d1_range": "28038.5 \u2192 30679.6",
+    "d1_fibs": {
+      "0%": 28038.5,
+      "25%": 28698.8,
+      "50%": 29359.0,
+      "61.8%": 29670.7,
+      "70.5%": 29900.5,
+      "79%": 30125.0,
+      "100%": 30679.6
+    },
+    "h4_range": "28038.5 \u2192 29177.7",
+    "h4_fibs": {
+      "0%": 28038.5,
+      "25%": 28323.3,
+      "50%": 28608.1,
+      "61.8%": 28742.5,
+      "70.5%": 28841.6,
+      "79%": 28938.5,
+      "100%": 29177.7
+    }
+  }
+}
