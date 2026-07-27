@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-27",
+  "timestamp": "2026-07-27T11:06:24.402848+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bearish bias based on confirmed LH/LL structure and inversion FVG resistance at 28,879. MT5 offline prevents Layer 3 validation - mandatory WAIT.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "ORB score below GO threshold (conf=55, orb=46 < 50)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

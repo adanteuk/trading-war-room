@@ -1,0 +1,31 @@
+{
+  "date": "2026-07-27",
+  "timestamp": "2026-07-27T11:00:00+08:00",
+  "summary": "Bearish bias based on confirmed LH/LL structure and inversion FVG resistance at 28,879. MT5 offline prevents Layer 3 validation - mandatory WAIT.",
+  "bias": "Bearish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "28,231 (Jul 17 swing low)",
+      "28,000 (Psychological)",
+      "27,800 (Prior consolidation)"
+    ],
+    "resistance": [
+      "28,879 (Inversion FVG CE)",
+      "28,998-29,177 (Bearish OB zone)",
+      "29,330 (MA20)",
+      "29,539 (MA50)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH (LH/LL). Price below all MAs. Inversion FVG at 28,879 acts as KEY resistance. HMM BEARISH HIGH confidence. -DI >> +DI.",
+    "h4_context": "Dealing range 29,857→28,231. Price at 13.7% = deep discount. Bearish structure overrides discount signal. Bearish OB at 28,998-29,177 overhead.",
+    "m15_status": "NO VALID ENTRY - MT5 offline. Cannot validate OB formation, CRT purge, or Kill Zone timing. Layer 3 mandatory veto triggered."
+  },
+  "risks": [
+    {"event": "MT5 offline", "time": "all session", "impact": "high"},
+    {"event": "Deep discount bounce", "time": "any", "impact": "medium"},
+    {"event": "SSL test 28,231", "time": "NY session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - Bearish structure confirmed but MT5 offline prevents Layer 3 entry validation. Per ICT/CRT pipeline rules, missing M15 data is a mandatory veto. Cannot confirm OB formation, CRT purge, or Kill Zone timing. Re-run when MT5 reconnects."
+}
