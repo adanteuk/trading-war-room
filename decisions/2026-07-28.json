@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-28",
+  "timestamp": "2026-07-28T11:04:44.179897+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "NO_INPUT",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "NAS100 in SSL sweep reversal mode after -8.7% crash from ATH 30,808 to Jul 24 low 28,128. Monday Jul 27 saw massive +2.17% gap up (bullish displacement), reclaiming MA5/10/20/50. Now approaching critical REL resistance cluster at 28,881-28,974 (inverted FVG zone) and MA100 (28,914). Stochastics extremely overbought (99.7) suggests short-term pullback risk before continuation. Alfred MT5 unavailable \u2014 no live H4/M15 data for entry confirmation.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "No TA input received from Walker",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
