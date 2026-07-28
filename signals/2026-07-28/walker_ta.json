@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-07-28T10:30:00Z",
+  "instrument": "NAS100 (PEPPERSTONE CFD)",
+  "bias": "bearish",
+  "confidence": 65,
+  "orb_score": 66,
+  "ict_profile": "Classic Tuesday High (potential bearish continuation)",
+  "entry": "TBD — waiting for NY AM Kill Zone retracement to 28,050-28,284 (H4 50-61.8% Fib zone)",
+  "sl": "28,400 (above H4 70.5% Fib + psychological level)",
+  "tp": "27,500 (psychological level below today's low)",
+  "key_levels": {
+    "d1_fibonacci": {
+      "range": "30,776.0 (ATH Jun 03) → 27,678.6 (Jul 28 low)",
+      "range_pts": 3097.4,
+      "levels": {
+        "0%": 27678.6,
+        "25%": 28452.9,
+        "38.2%": 28861.8,
+        "50%": 29227.3,
+        "61.8%": 29592.8,
+        "70.5%": 29862.3,
+        "79%": 30125.5,
+        "100%": 30776.0
+      }
+    },
+    "h4_fibonacci": {
+      "range": "28,598.7 (Jul 27 06:00UTC high) → 27,775.8 (Jul 27 14:00UTC low)",
+      "range_pts": 822.9,
+      "levels": {
+        "0%": 27775.8,
+        "50%": 28187.2,
+        "61.8%": 28284.4,
+        "70.5%": 28355.9,
+        "100%": 28598.7
+      }
+    },
+    "support": [27678.6, 27775.8, 28038.5],
+    "resistance": [28063.6, 28187.2, 28284.4, 28598.7]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure BEARISH: LH+LL on Jul 28 (H:28,063.6 < Mon H:28,598.7; L:27,678.6 < Mon L:27,775.8). 5th consecutive bearish D1 candle (Jul 22-28). Price at 1.7% of ATH→current dealing range (deep discount). Monday's candle: -383.8pts body (47% of 822.9pt range). Today's candle in-progress: -333.5pts body (87% of 385.0pt range so far). No D1 bullish reversal signal — lower highs and lower lows persist since Jun 03 ATH.",
+    "l2_h4_context": "H4 dealing range: 28,598.7→27,775.8 (822.9pts). Price has BROKEN BELOW H4 0% Fib (27,775.8) — now at -5.5% of range, indicating expansion beyond the initial H4 swing. H4 50% Fib at 28,187.2 and 61.8% at 28,284.4 are the key resistance zone for a retracement entry. Price has NOT reclaimed these levels — bearish continuation until H4 closes above 27,775.8 (former range low, now resistance).",
+    "l3_m15_entry": "No M15 entry signal yet. Pre-market session (06:30 ET). Price has broken below Monday's low and is extending lower. Waiting for NY AM Kill Zone (08:30-11:00 ET) for potential retracement into H4 50-61.8% zone (28,050-28,284) to form bearish entry model. Compression observed in recent H4 bars — expansion underway to the downside."
+  },
+  "smt_divergence": {
+    "detected": true,
+    "direction": "bearish_for_NAS100",
+    "detail": "NAS100 swept Monday low (27,775.8→27,678.6 = new low), US500 held (7,382.8→7,386.1 = higher low). NAS100 is the weaker index — bearish SMT confirmed.",
+    "note": "CFD-specific data (PEPPERSTONE:NAS100 vs PEPPERSTONE:US500)."
+  },
+  "weekly_profile": {
+    "pattern": "Classic Tuesday High (potential)",
+    "reasoning": "Monday printed a strong bearish candle (-383.8pts, 47% body). Tuesday continuing lower with new lows. If Tuesday forms the weekly low, expect a Wednesday retracement. If Tuesday retraces into Monday range high (28,598.7) and rejects, that forms the Classic Tuesday High — bearish continuation.",
+    "monday_data": "O:28,419.1 H:28,598.7 L:27,775.8 C:28,035.3 (body:-383.8, range:822.9)"
+  },
+  "reasoning": "Strong bearish alignment across all timeframes. D1 structure is LH+LL with 5 consecutive bearish candles (Jul 22-28). Price has broken below Monday's low and is now at 1.7% of the ATH→current dealing range — extremely oversold but no reversal signal yet. Bearish SMT divergence: NAS100 made new low while US500 held, indicating relative weakness in tech. H4 structure confirms bearish continuation — price has broken below the H4 dealing range low (27,775.8), signaling expansion. No M15 entry model has formed yet — waiting for NY AM Kill Zone retracement into the H4 50-61.8% zone (28,050-28,284) for a potential short entry. Risk: price is extremely oversold and any positive catalyst could trigger a sharp squeeze. Confidence reduced from 75 to 65 due to: (1) extreme oversold conditions, (2) no entry signal yet, (3) waiting for KZ timing.",
+  "data_source": "TradingView MCP — PEPPERSTONE:NAS100, PEPPERSTONE:US500",
+  "analysis_time_utc": "2026-07-28T10:30:00Z",
+  "price_at_analysis": 27730.7,
+  "next_review": "After NY AM Kill Zone (15:00 UTC)"
+}
