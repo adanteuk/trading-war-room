@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-07-29T10:40:56Z",
+  "bias": "bearish",
+  "confidence": 50,
+  "orb_score": 49,
+  "ict_profile": "Classic Tuesday Low",
+  "entry": "TBD \u2014 waiting for NY AM Kill Zone + H4 OB rejection",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "27443.6",
+      "27483.9"
+    ],
+    "resistance": [
+      "28018",
+      "28046",
+      "28649"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 BEARISH (LH+LL). Dealing range 27443.6\u219229854.8 (2411pts). Price at 16.3% (discount). Last 3 D1 candles all bearish. Tuesday weekly low at 27,443.6 with Wednesday forming higher low at 27,483.9.",
+    "l2_h4_context": "H4 dealing range 27443.6\u219228598.7 (1155pts). Price at 34.1%. Bearish OB at 27,818-28,018 being tested. Bearish FVG at 28,091-28,179 above. Compression detected (avg H4 range 339pts).",
+    "l3_m15_entry": "No confirmed entry yet. Bounce from 27,443.6 showing early reversal signs (3 consecutive H4 higher closes). Waiting for NY AM KZ (08:30-11:00 NY) for potential entry. Watch for H4 OB rejection at 28,018."
+  },
+  "smt": "bearish_smt_nas100_weak",
+  "reasoning": "D1 structure firmly bearish with LH+LL pattern since ATH 30,679.6. Price has declined -3,236pts (-10.6%) to weekly low 27,443.6. Bearish SMT divergence confirmed (NAS100 LL vs US500 HL). However, Wednesday forming higher low (27,483.9 > 27,443.6) and H4 showing compression with 3 consecutive higher closes \u2014 potential bounce underway. Price currently testing H4 bearish OB (27,818-28,018). Key decision point: if price rejects at OB and fails to hold 27,483.9, bearish continuation targets 27,000 psychological. If price breaks above OB with volume, counter-trend long targets D1 25% Fib at 28,046. Bias remains bearish per ICT structure rules, but confidence reduced to 50 due to counter-trend signals at range low. Waiting for NY AM Kill Zone for confirmation.",
+  "data_source": "PEPPERSTONE:NAS100 via TradingView MCP",
+  "current_price": 27837.6,
+  "d1_dealing_range": {
+    "high": 29854.8,
+    "low": 27443.6,
+    "range": 2411.2000000000007
+  },
+  "h4_dealing_range": {
+    "high": 28598.7,
+    "low": 27443.6,
+    "range": 1155.1000000000022
+  }
+}
