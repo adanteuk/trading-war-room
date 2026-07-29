@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-29",
+  "timestamp": "2026-07-29T11:04:10.589410+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "D1 bearish structure (LH/LL) with price at -24% below dealing range (extension). Bounce from 27,484 low underway but overhead resistance at H4 bearish FVG 28,091-28,466. Wait for retracement into premium for short entry.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "TA confidence below GO threshold (conf=50 < 55, orb=49)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
