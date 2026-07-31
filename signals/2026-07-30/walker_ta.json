@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-07-30T10:39:56.915611+00:00",
+  "bias": "bullish",
+  "confidence": 55,
+  "orb_score": 67,
+  "ict_profile": "Potential Thursday Reversal",
+  "entry": "TBD",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "27049.9",
+      "27292.0",
+      "27534.1",
+      "27750.0"
+    ],
+    "resistance": [
+      "27732.6",
+      "29024.1",
+      "29262.1",
+      "29850.2"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure: LH+HL (compression). Dealing range: 27049.9→29850.2 (2800.3pts). Price at 15.3% (deep discount). Last candle: bullish Marubozu, body 389.8pts (86.1%), close at 86.1% of range. Range: 452.9pts.",
+    "l2_h4_context": "H4 structure: HH+HL (bullish). H4 range: 27049.9→28018.2. H4 position: 44.4%. Last H4: bullish, body 112.5pts.",
+    "l3_m15_entry": "Kill Zone: Waiting for Kill Zone. Waiting for M15 confirmation."
+  },
+  "smt": "Bullish SMT (NAS100 stronger) — NAS100 made HL while US500 made LL",
+  "reasoning": "D1 shows LH+HL (compression) with price at 15.3% of dealing range (27049.9→29850.2). Bearish structure with compression suggests potential continuation lower, but last D1 candle was strong bullish Marubozu closing at 86.1% of range, creating a structure-momentum conflict. However, Bullish SMT detected: NAS100 made HL (27049.9→27089.7) while US500 made LL (7417.6→7306.4), indicating NAS100 relative strength. This bullish divergence supports a bullish bias despite the bearish D1 structure. Confidence increased to 55 due to SMT confirmation. ORB score 67/100. Waiting for Kill Zone for entry confirmation."
+}

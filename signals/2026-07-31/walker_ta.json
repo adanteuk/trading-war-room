@@ -1,0 +1,81 @@
+{
+  "timestamp": "2026-07-31T06:30:00+00:00",
+  "symbol": "PEPPERSTONE:NAS100",
+  "bias": "bullish",
+  "confidence": 55,
+  "orb_score": 42,
+  "ict_profile": "Wednesday Low → Thursday Recovery (Potential Midweek Continuation)",
+  "entry": "TBD — waiting for M15 pullback to H4 61.8% or OB",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["27954", "27789", "27050"],
+    "resistance": ["28489", "28750", "29000"]
+  },
+  "d1_dealing_range": {
+    "low": 27049.9,
+    "high": 28488.6,
+    "range": 1438.7,
+    "swing_low_date": "2026-07-29",
+    "swing_high_date": "2026-07-31"
+  },
+  "h4_dealing_range": {
+    "low": 27089.7,
+    "high": 28488.6,
+    "range": 1398.9
+  },
+  "fibonacci": {
+    "0%": 27049.9,
+    "25%": 27409.6,
+    "38.2%": 27599.5,
+    "50%": 27769.3,
+    "61.8%": 27939.0,
+    "70.5%": 28064.2,
+    "79%": 28186.5,
+    "100%": 28488.6
+  },
+  "h4_fibonacci": {
+    "0%": 27089.7,
+    "50%": 27789.2,
+    "61.8%": 27954.2,
+    "100%": 28488.6
+  },
+  "current_price": 28421.1,
+  "price_position_pct": {
+    "d1": 95.0,
+    "h4": 95.2
+  },
+  "d1_structure": {
+    "recent_transitions": [
+      {"from": "2026-07-29", "to": "2026-07-30", "structure": "HH+HL", "bias": "bullish"},
+      {"from": "2026-07-30", "to": "2026-07-31", "structure": "HH+HL", "bias": "bullish"}
+    ],
+    "trend": "bearish with strong recovery bounce"
+  },
+  "h4_structure": {
+    "consecutive_bullish_candles": 7,
+    "last_transition": "HH+HL (bullish)"
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 bearish trend (LH+LL Jul 22-29 crash from 29,178→27,050) but strong 2-day recovery (Jul 30-31, +1,335pts combined). Jul 30 printed +1,093pts bullish candle (69.5% body). Jul 31 in-progress +243pts (73.2% body, strong bull). Price reclaimed D1 61.8% Fib at 27,939. Structure transitioning from bearish (LH+LL) to bullish (HH+HL). Dealing range: 27,049.9→28,488.6 (1,439 pts).",
+    "l2_h4_context": "H4 strong bullish momentum — 7 consecutive HH+HL transitions. Price at 95.2% of H4 range (deep premium zone). H4 dealing range: 27,089.7→28,488.6 (1,399 pts). No significant FVG/OB in immediate vicinity — price has expanded through all levels. H4 61.8% Fib at 27,954 now acts as support.",
+    "l3_m15_entry": "M15 consolidating in tight 120pt range (28,368-28,489) over last 90 min. 3 bearish candles followed by stabilization. No clear entry model forming yet. NY AM Kill Zone active but no setup. Waiting for pullback to H4 key level or M15 OB formation."
+  },
+  "reasoning": "Counter-trend recovery after 4-day selloff (-2,133pts, Jul 24-29). Jul 30-31 printed 2 strong bullish D1 candles (+1,335pts combined) reclaiming all D1 Fib levels through 79%. H4 momentum is strongly bullish with 7 consecutive HH+HL transitions. However, price is now at 95% of both D1 and H4 ranges (deep premium), limiting immediate upside without pullback. M15 consolidation suggests market is digesting the move. Bias is cautiously bullish for continuation but confidence is moderate (55) due to: (1) D1 trend still technically bearish overall (below pre-crash levels at 29,838), (2) extreme premium positioning (95%), (3) no clear M15 entry model yet. Watch for: pullback to 27,939-28,064 (D1 61.8%-70.5%) as buy zone, or break above 28,489 for continuation to 28,750-29,000.",
+  "verification": {
+    "status": "verified",
+    "method": "TradingView MCP subagent",
+    "corrections_applied": [
+      "Fibonacci 50%: 27,769.2 → 27,769.3 (0.1pt rounding)"
+    ],
+    "verified_items": [
+      "Current price: 28,421.1 (within 6.5pts of live)",
+      "D1 dealing range: 27,049.9 → 28,488.6 (exact match)",
+      "H4 dealing range: 27,089.7 → 28,488.6 (exact match)",
+      "All Fibonacci levels within 1pt tolerance",
+      "Market structure transitions: HH+HL verified",
+      "Price position %: D1=95.0%, H4=95.2% (within 0.5% tolerance)",
+      "Weekly profile dates: Mon Jul 27 - Fri Jul 31 verified"
+    ]
+  }
+}
