@@ -1,0 +1,32 @@
+{
+  "date": "2026-07-31",
+  "timestamp": "2026-07-31T11:00:00Z",
+  "summary": "D1 bearish structure (LH/LL) but deep discount (14.1%). 2-day rally from 27,050 to 28,440 is corrective bounce within larger downtrend. H4 extreme premium (156%) = overextended. Expect rejection at 28,460-28,881 resistance zone. No KZ active for entry.",
+  "bias": "Bearish",
+  "confidence": 60,
+  "key_levels": {
+    "support": [
+      "28,209 (D1 DR low / FIB 0%)",
+      "27,500 (Broken bullish FVG - now inverted resistance)",
+      "27,050 (Jul 28 low / recent structural low)",
+      "26,855 (MA200 / macro structural support)"
+    ],
+    "resistance": [
+      "28,460 (Relative Equal High / nearest BSL target)",
+      "28,881-28,974 (REL cluster / inverted resistance)",
+      "29,032 (D1 FIB 50% / equilibrium)",
+      "29,382-29,417 (Confluence Zone / inverted FVG CE - ultra-strong resistance)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH (LH/LL structure). Price at 14.1% of D1 DR = DEEP DISCOUNT. Last 2 D1 candles strong bullish (94%, 80% body) but within larger downtrend. 82.6% FVG inversion rate = extreme bearish regime. All REL swept and now overhead resistance. Bias: corrective bounce within bear trend.",
+    "h4_context": "H4 DR: 27,050-27,941. Price at 156% = EXTREME PREMIUM (broken above H4 DR). 3 bullish FVGs from Jul 30 rally. Price overextended on H4. Expect retracement toward H4 equilibrium (27,496) or D1 equilibrium (29,032) before next leg.",
+    "m15_status": "2 bearish FVGs detected (28,357-28,430, 28,418-28,433). No Kill Zones currently active. Price at 28,440 within M15 range. No valid entry setup - wait for KZ (London 06:00-09:00 UTC or NY 13:30-16:00 UTC)."
+  },
+  "risks": [
+    {"event": "FOMC Week (Jul 30-31)", "time": "All session", "impact": "high"},
+    {"event": "H4 overextended (156% premium)", "time": "Current", "impact": "medium"},
+    {"event": "82.6% FVG inversion rate", "time": "Ongoing", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - No KZ active for entry. H4 extreme premium suggests rally overextended. D1 deep discount suggests bounce has room but structure is bearish. Wait for price to reach D1 premium zone (29,000+) or H4 retracement to equilibrium (27,496) before considering short entry. FOMC week adds volatility risk."
+}

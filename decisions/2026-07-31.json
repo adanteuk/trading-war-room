@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-31",
+  "timestamp": "2026-07-31T11:07:02.945114+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bullish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "D1 bearish structure (LH/LL) but deep discount (14.1%). 2-day rally from 27,050 to 28,440 is corrective bounce within larger downtrend. H4 extreme premium (156%) = overextended. Expect rejection at 28,460-28,881 resistance zone. No KZ active for entry.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "ORB score below GO threshold (conf=55, orb=42 < 50)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
