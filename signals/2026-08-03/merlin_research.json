@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-03",
+  "timestamp": "2026-08-03T11:10:00+00:00",
+  "summary": "Bullish recovery thesis: NAS100 swept SSL at 27,050 (Jul 28), displaced +914pts, and is building HH/HL (27,930 -> 28,557). Price at 28,349 is just below D1 EQ (46.3% = DISCOUNT). Today's pullback from 28,557 is a healthy retracement; draw on liquidity is BSL above (28,557 -> 28,881). Macro structure still LH/LL, so expect pullback-buy setups, not breakout chases.",
+  "bias": "Bullish",
+  "confidence": 62,
+  "key_levels": {
+    "support": [28332, 28244, 28156, 27930],
+    "resistance": [28424, 28557, 28881, 29193]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 BEARISH (LH/LL from 30,776) but recovery structure bullish: SSL sweep 27,050 -> +914pt displacement -> HH/HL. Price 46.3% of DR (27,050-29,855) = DISCOUNT. Demand in control short-term (origin: 27,926-28,053 inverted FVG). Draw on BSL.",
+    "h4_context": "H4 DR 27,930-28,557, EQ 28,244. Price at 66.7% = PREMIUM after rejection at 28,557. Bullish FVGs: 28,090-28,156 (discount long zone), 28,372-28,424 (overhead, testing). Expect pullback to EQ/62% (28,244-28,319) or FVG, then expansion up. Invalidation: close below 27,930.",
+    "m15_status": "NO VALID ENTRY. Price 28,349 near M15 range low (28,332-28,511). Fresh bearish OB 28,375-28,405 overhead (10:45 UTC). No Kill Zone active (11:10 UTC = London/NY gap). Wait for NY AM KZ (13:30-16:00 UTC) pullback entry."
+  },
+  "risks": [
+    {"event": "ISM Manufacturing PMI + Prices Paid", "time": "10:00 ET", "impact": "medium"},
+    {"event": "NFP Friday Aug 7 - avoid holding into it", "time": "Fri", "impact": "medium"},
+    {"event": "Whipsaw regime: 3 of last 5 daily bias calls failed", "time": "all session", "impact": "high"}
+  ],
+  "recommendation": "WAIT - bullish bias but Layer 3 unconfirmed. No active Kill Zone and price at H4 premium mid-pullback; chasing here is poor R:R. GO setup: long on pullback into 28,090-28,244 discount during NY AM KZ (after 10:00 ET ISM), SL below 27,930. Break-and-retest above 28,424 also valid."
+}
