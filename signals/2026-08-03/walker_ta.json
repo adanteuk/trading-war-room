@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-08-03T10:33:00Z",
+  "symbol": "NAS100",
+  "source": "Carson MT5 Bridge (Pepperstone CFD)",
+  "bias": "bearish",
+  "confidence": 60,
+  "orb_score": 60,
+  "ict_profile": "Monday Range",
+  "entry": "TBD - Waiting for Kill Zone (NY AM 08:30 ET)",
+  "sl": "28574 (D1 0% Fib / Jul 31 high)",
+  "tp": "27930 (Jul 31 swing low / HL)",
+  "key_levels": {
+    "support": ["28318 (H4 38.2%)", "28244 (H4 50%)", "28193 (D1 25% Fib)", "27930 (Jul 31 HL)", "27812 (D1 50% Fib)", "27050 (Jul 29 crash low)"],
+    "resistance": ["28557 (Aug 3 session high)", "28574 (D1 0% Fib / Jul 31 high)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure bearish (4 LH+LL vs 2 HH+HL in last 10 bars). Broad downtrend from Jul 10 high (29,855) to Jul 29 crash low (27,050) = -9.4%. Post-crash recovery Jul 29-31 (+5.6%) now stalling. Today (Aug 3) is inside bar (LH+HL compression) with bearish close (12% of range). Dealing range: 27,050->28,574 (1,524pts). Price at 85.9% PREMIUM = ICT sell zone. No SMT divergence (both NAS100/US500 made LL).",
+    "l2_h4_context": "H4 dealing range: 27,930->28,558 (628pts). Price at 68.5% of H4 range (premium). 10 FVGs within 300pts of price. Bearish FVG at 28,369-28,414 directly above price (potential resistance). Bullish FVG at 28,372-28,424 recently formed (potential support). Last 3 H4 bars showing declining highs (28,558->28,527->28,460) = bearish H4 structure.",
+    "l3_m15_entry": "M15 compression detected (ratio 0.19 - last bar range 9.4pts vs avg 50.4pts). Expansion imminent. No Kill Zone active (06:33 NY, next NY AM KZ at 08:30 NY in ~2h). Price grinding lower from 28,557 session high toward 28,359. No M15 order block confirmed. Waiting for Kill Zone activation for entry signal."
+  },
+  "reasoning": "Broad D1 structure remains bearish following the Jul 10-29 crash (-9.4%). The Jul 29-31 bounce (+5.6%) recovered to 85.9% of the post-crash dealing range, placing price deep in PREMIUM (ICT sell zone). Today's D1 bar is an inside day (LH+HL) with a bearish close at 12% of range, suggesting the bounce is stalling. No SMT divergence between NAS100 and US500 (both made LL), confirming bearish correlation. M15 shows extreme compression (ratio 0.19), indicating an expansion move is imminent. However, no Kill Zone is active and the inside-bar structure means direction is not yet confirmed. Bias is bearish with 60% confidence - reduced from 65% due to the recent 2-day bounce momentum and the compression pattern which could break either direction. Entry should wait for NY AM Kill Zone (08:30 ET) to confirm direction. If price rejects 28,574 (D1 0% Fib) and breaks below 28,332 (today's low), bearish continuation toward 27,930 (Jul 31 HL) is the primary scenario. Bullish invalidation: close above 28,574."
+}
