@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-04",
+  "timestamp": "2026-08-04T11:15:00Z",
+  "summary": "Bullish: NAS100 confirmed bullish CHoCH (SSL sweep 27,176 +914pt displacement). HH/HL sequence 27,954->28,698->28,963; price broke above H4 range high 28,574 and REL cluster 28,881-28,974. At D1 equilibrium (51.4%) of 27,050-30,776 DR; demand in control. Draw on BSL 29,178->29,845. MT5 bridge offline -> Layer 3 unvalidated, WAIT for KZ.",
+  "bias": "Bullish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [28913, 28574, 28473, 28209, 28193],
+    "resistance": [29178, 29845, 29850, 29855, 30776]
+  },
+  "ict_analysis": {
+    "daily_bias": "Bullish CHoCH confirmed (SSL sweep 27,176 -> +914 displacement Jul 30). HH/HL 27,954->28,698->28,963. 4B/1B bullish transitions. Price 51.4% = EQ of D1 DR 27,050-30,776. Demand in control. BSL draw 29,178 -> 29,845-29,855.",
+    "h4_context": "H4 range 27,050-28,574 stale (price 125.6%, broke above). 5 bull FVGs / 0 bear. Compression detected. Flipped support 28,574 / 28,460-473. Resistance 29,178 then 29,845-29,855 supply. Bullish imbalance favors continuation.",
+    "m15_status": "NO VALID ENTRY - MT5 bridge offline (get_rates fails both IPs), no live M15 bars. Walker: KZ inactive, entry TBD (next NY AM KZ ~13:30 UTC). Mandatory Layer 3 veto -> WAIT."
+  },
+  "risks": [
+    {"event": "MT5 data bridge offline", "time": "all session", "impact": "high"},
+    {"event": "JOLTS Job Openings", "time": "10:00 ET", "impact": "medium"},
+    {"event": "US Trade Balance", "time": "08:30 ET", "impact": "low"}
+  ],
+  "recommendation": "WAIT - bullish thesis intact but Layer 3 (M15) unvalidated: MT5 bridge down + KZ inactive. Walker conf 55 / ORB 66 below GO tier (>=65/55). Re-assess at NY AM KZ (09:30 ET) with live M15; pullback-buy bias 28,913 / 28,574."
+}

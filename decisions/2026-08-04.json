@@ -1,0 +1,13 @@
+{
+  "date": "2026-08-04",
+  "timestamp": "2026-08-04T11:11:27.483961+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bullish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bullish: NAS100 confirmed bullish CHoCH (SSL sweep 27,176 +914pt displacement). HH/HL sequence 27,954->28,698->28,963; price broke above H4 range high 28,574 and REL cluster 28,881-28,974. At D1 equilibrium (51.4%) of 27,050-30,776 DR; demand in control. Draw on BSL 29,178->29,845. MT5 bridge offline -> Layer 3 unvalidated, WAIT for KZ.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "Mixed signals \u2014 standing aside (conf=55, orb=66)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
