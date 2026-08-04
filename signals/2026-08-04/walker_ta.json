@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-08-04T18:36:04.672546+08:00",
+  "symbol": "NAS100",
+  "data_source": "Carson MT5 (Pepperstone CFD)",
+  "current_price": 28963.6,
+  "bias": "bullish",
+  "confidence": 55,
+  "orb_score": 66,
+  "ict_profile": "Midweek Continuation (bullish) - Mon+Tue both bullish",
+  "entry": "TBD - Waiting for next KZ",
+  "sl": "Below 27050",
+  "tp": "D1 100% Fib 30776",
+  "key_levels": {
+    "support": [
+      "28913",
+      "28574",
+      "28473",
+      "28209",
+      "28193"
+    ],
+    "resistance": [
+      "29178",
+      "29845",
+      "29850",
+      "29855",
+      "30776"
+    ]
+  },
+  "dealing_range": {
+    "d1": {
+      "low": 27050.0,
+      "high": 30776.3,
+      "size": 3726.2999999999993
+    },
+    "h4": {
+      "low": 27050.0,
+      "high": 28574.0,
+      "size": 1524.0
+    }
+  },
+  "three_layer_analysis": {
+    "l1_daily": "Range 27050-30776 (3726pts), price at 51.4% (EQUILIBRIUM). Structure: 4B/1B transitions. Last candle bullish body 58%. SMT: No SMT divergence at highs - both LH. No SMT divergence at lows - both LL",
+    "l2_h4_context": "H4 range 27050-28574 (1524pts), position 125.6%. 5 bull FVGs, 0 bear FVGs. Compression: detected",
+    "l3_m15_entry": "KZ: None (INACTIVE). Entry: TBD - waiting KZ. Last H4 range 107pts vs avg 212pts"
+  },
+  "smt_analysis": "No SMT divergence at highs - both LH. No SMT divergence at lows - both LL",
+  "reasoning": "D1 structure shows 4 bullish vs 1 bearish transitions in recent bars. Price at 51.4% of dealing range (EQUILIBRIUM). Last D1 candle (2026-08-04) was bullish with 57.6% body. No SMT divergence at highs - both LH. No SMT divergence at lows - both LL. H4 context shows 125.6% position with compression. Kill Zone None is inactive - waiting for next KZ. ICT weekly profile: Midweek Continuation (bullish) - Mon+Tue both bullish."
+}
