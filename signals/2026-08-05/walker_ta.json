@@ -1,0 +1,113 @@
+{
+  "timestamp": "2026-08-05T18:31:00+08:00",
+  "symbol": "NAS100",
+  "data_source": "Carson MT5 (Pepperstone CFD)",
+  "current_price": 29729.1,
+  "bias": "bullish",
+  "confidence": 50,
+  "orb_score": 53,
+  "ict_profile": "Monday-Tuesday Continuation (bullish) - Wed consolidation at premium",
+  "entry": "TBD - Waiting for NY AM Kill Zone (08:30 ET / 20:30 HKT)",
+  "sl": "29644.9 (today's low) - structural invalidation below 29,600",
+  "tp": "29857.0 (today's high / D1 0% Fib) - then 29,854.9 (Jul 15 swing high)",
+  "key_levels": {
+    "support": [
+      "29644.9 (Today's Low)",
+      "29191.0 (H4 38.2% Fib)",
+      "29155.3 (D1 25% Fib)",
+      "28996.8 (H4 50% Fib)",
+      "28453.5 (D1 50% Fib / Equilibrium)"
+    ],
+    "resistance": [
+      "29819.8 (Prev Day High / H4 0% Fib)",
+      "29854.9 (Jul 15 Swing High)",
+      "29857.0 (Today's High)"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure: HH+HL (bullish) - 5 consecutive bullish transitions since Jul 29 crash low (27,050). Dealing range: 27,050.0 (Jul 29) -> 29,857.0 (Aug 5) = 2,807 pts. Price at 95.4% of range = EXTREME PREMIUM. V-shaped recovery: +10.4% in 5 trading days from crash low. Today's candle: small doji (+63pts, 0.21%, body/range 30%) - exhaustion signal at premium. SMT: No divergence (both NAS100 and US500 made LH at highs, LL at lows) - no SMT signal. Bias: bullish structure but extreme premium warns against chasing. Await pullback to discount (D1 25% Fib ~29,155 or equilibrium ~28,454).",
+    "l2_h4_context": "H4 dealing range: 28,173.7 (Aug 3) -> 29,819.8 (Aug 5) = 1,646 pts. Price at 94.5% of H4 range = premium. 2 bullish FVGs below price: 29,108.8-29,602.8 (large, Aug 4) and 29,607.8-29,644.9 (small, Aug 5). CRT: Price has PURGED the H4 CRT high (29,607.8) - now at 121.9% of CRT range. H4 structure: mostly HH+HL with recent LH+HL compression - momentum fading at highs. No H4 OBs near current price (nearest are >500pts away). Key: large bullish FVG at 29,108-29,603 is the primary discount target if pullback occurs.",
+    "l3_m15_entry": "Kill Zone: INACTIVE (current 06:31 ET, next KZ: NY AM 08:30 ET). M15 structure: mixed - LH+HL compression in last 3 bars after earlier HH+HL. COMPRESSION DETECTED: last 3 bars avg 26.1pts vs older 3 avg 47.4pts (ratio 0.55) - expansion imminent. M15 OBs near price: Bearish OB at 29,828-29,857 (today's high zone), Bearish OB at 29,752-29,780, Bullish OB at 29,690-29,720. Entry plan: Wait for NY AM KZ. If price purges 29,857 (today's high) with displacement -> bullish continuation. If price rejects 29,828-29,857 bearish OB zone -> short toward 29,602 FVG fill."
+  },
+  "reasoning": "Bullish bias based on 5 consecutive D1 HH+HL transitions and V-shaped recovery from Jul 29 crash low (27,050). However, confidence is capped at 50/100 due to three factors: (1) Price is at 95.4% of the D1 dealing range = extreme premium - chasing longs here is low probability. (2) Kill Zone is inactive - no institutional time-based confirmation. (3) Today's doji candle (+63pts, 0.21%) after two strong bullish days suggests exhaustion at premium levels. M15 compression (ratio 0.55) indicates expansion is imminent, but direction unclear without KZ confirmation. SMT shows no divergence between NAS100 and US500 - both indices moving in sync. Primary scenario: bullish continuation toward 29,857 (today's high) and 29,855 (Jul 15 swing high) in NY AM KZ. Alternative: bearish rejection at 29,828-29,857 OB zone -> pullback to fill H4 FVG at 29,108-29,603. The large bullish FVG (29,108-29,603, 494pts) from Aug 4 is the key discount zone for higher-probability longs.",
+  "dealing_range": {
+    "d1_low": 27050.0,
+    "d1_low_date": "2026-07-29",
+    "d1_high": 29857.0,
+    "d1_high_date": "2026-08-05",
+    "d1_range_pts": 2807.0,
+    "d1_price_position_pct": 95.4
+  },
+  "fibonacci_levels": {
+    "d1": {
+      "0": 29857.0,
+      "25": 29155.2,
+      "50": 28453.5,
+      "61.8": 28122.3,
+      "70.5": 27878.1,
+      "79": 27639.5,
+      "100": 27050.0
+    },
+    "h4": {
+      "0": 29819.8,
+      "38.2": 29191.0,
+      "50": 28996.8,
+      "61.8": 28802.5,
+      "78.6": 28526.0,
+      "100": 28173.7
+    }
+  },
+  "smt": {
+    "at_highs": "No divergence (both LH)",
+    "at_lows": "No divergence (both LL)",
+    "signal": "None"
+  },
+  "kill_zone": {
+    "active": false,
+    "current": "06:31 ET",
+    "next": "NY AM (08:30 ET / 20:30 HKT)"
+  },
+  "weekly_bars": [
+    {
+      "day": "Mon Aug 3",
+      "open": 28467.1,
+      "high": 28823.6,
+      "low": 28173.7,
+      "close": 28783.1,
+      "body_pts": 316.0,
+      "body_pct": 1.11
+    },
+    {
+      "day": "Tue Aug 4",
+      "open": 28790.7,
+      "high": 29819.8,
+      "low": 28694.8,
+      "close": 29682.9,
+      "body_pts": 892.2,
+      "body_pct": 3.1
+    },
+    {
+      "day": "Wed Aug 5",
+      "open": 29666.1,
+      "high": 29857.0,
+      "low": 29644.9,
+      "close": 29729.1,
+      "body_pts": 63.0,
+      "body_pct": 0.21
+    }
+  ],
+  "today_d1": {
+    "open": 29666.1,
+    "high": 29857.0,
+    "low": 29644.9,
+    "close": 29729.1,
+    "body_pct": 0.21,
+    "range_pts": 212.1
+  },
+  "prev_d1": {
+    "open": 28790.7,
+    "high": 29819.8,
+    "low": 28694.8,
+    "close": 29682.9
+  }
+}
