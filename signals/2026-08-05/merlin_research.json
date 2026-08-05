@@ -1,0 +1,32 @@
+{
+  "date": "2026-08-05",
+  "timestamp": "2026-08-05T11:10:10Z",
+  "summary": "Bullish V-recovery intact (+10.4% from Jul 29 low 27,050) but price at ~96% D1 premium with doji exhaustion. Bullish bias; entry only in NY AM KZ on pullback (29,603 FVG / 29,191) or 29,857 breakout. Chasing premium = poor R:R.",
+  "bias": "Bullish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "29644.9 (today's low)",
+      "29603 (H4 FVG top 29,108-29,603)",
+      "29191 (H4 38.2% Fib)",
+      "28997 (H4 equilibrium)",
+      "28453 (D1 50% Fib)"
+    ],
+    "resistance": [
+      "29857 (today's high / Jul 15 swing high 29,855)",
+      "30000 (psychological)",
+      "30341 (Jun 29 swing high)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1: V-shaped recovery 27,050 -> 29,857 (+10.4%, 5 bullish days) but price at 96.9% of DR = EXTREME PREMIUM. Today's doji (0.21% body, +63pts) = exhaustion at premium. SMT: no divergence (NAS100/US500 in sync). Control: Demand (fresh zone below). Bullish but do NOT chase.",
+    "h4_context": "H4 DR 28,174 -> 29,820; price 96.8% = premium. CRT purged (121.9% of range). No H4 OB near price; large bullish FVG 29,108-29,603 is the primary discount target. For longs, price must first pull back to 29,603 / 29,191.",
+    "m15_status": "NO VALID ENTRY NOW: Kill Zone inactive (07:10 ET; next NY AM 08:30 ET). M15 compression (ratio 0.55) = expansion imminent but direction unconfirmed. Bearish OB 29,752-29,780 + bearish FVG 29,786-29,804 overhead. Entry only in NY AM KZ after purge/rejection."
+  },
+  "risks": [
+    {"event": "ADP Employment (Jul)", "time": "08:15 ET", "impact": "high"},
+    {"event": "ISM Services PMI (Jul)", "time": "10:00 ET", "impact": "high"},
+    {"event": "MT5 partial outage (IP 211 down; D1/H4 retry needed)", "time": "all session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT: Layer 3 has no valid entry (KZ inactive) + high-impact ADP/ISM inside NY AM KZ + extreme premium. GO only in NY AM KZ on: (a) purge 29,857 with displacement -> long, SL below 29,750, TP 30,341; or (b) pullback to 29,603 FVG with bullish MSS -> long, SL below 29,600. Skip on ISM surprise."
+}
