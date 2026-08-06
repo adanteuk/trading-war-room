@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-08-06T10:37:40Z",
+  "symbol": "NAS100",
+  "current_price": 29381.3,
+  "bias": "bearish",
+  "confidence": 50,
+  "orb_score": 48,
+  "ict_profile": "Midweek Continuation (Tue high -> Wed/Thu pullback)",
+  "entry": "TBD - Waiting for NY AM Kill Zone (08:30 NY). Monitor M15 compression breakout direction.",
+  "sl": "TBD - Below 29,309 (today's low) for bearish; above 29,940 (Aug 5 high) for bullish invalidation",
+  "tp": "Bearish: 29,166 (D1 23.6% Fib) -> 28,824 (D1 38.2%). Bullish: 29,820 (Aug 4 high) -> 29,940 (Aug 5 high)",
+  "key_levels": {
+    "support": ["29309", "29166", "28824", "28445", "28173", "27050"],
+    "resistance": ["29549", "29820", "29940", "29855", "30341"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure LH+LL (bearish since Jun 22 ATH 30,679.6). Price at 80.7% of recovery range (27,050->29,939.5) = PREMIUM. Today LH+LL vs yesterday, bearish body -62pts. Recovery was +10.7% in 5 days but now pulling back. SMT at lows: no divergence (both HL). SMT at highs: inconclusive (US500 lacks confirmed recovery-period swing highs).",
+    "l2_h4_context": "H4 structure HH+HL (bullish recovery) - conflicts with D1 bearish. H4 range 27,050->29,939.5. Price at 80.7%. Large bullish FVG at 29,109-29,603 (Aug 4 displacement). Bearish FVG at 29,549-29,569 (Aug 6). Price interacting with D1 23.6% Fib (29,258).",
+    "l3_m15_entry": "M15 compression: YES (29.6pts avg vs 46.4pts avg, 64% of normal). Kill Zone: NY AM NOT yet active (06:36 NY, starts 08:30). Waiting for KZ. Expansion direction TBD. Key SSL: 29,309 (today's low). Key BSL: 29,549 (today's high)."
+  },
+  "reasoning": "D1 LH+LL bearish structure + PREMIUM zone (80.7%) = bearish expectation. Recovery from Jul 29 crash (+10.7% in 5 days) created H4 HH+HL bullish momentum = structure-momentum conflict. SMT inconclusive at highs (data mismatch), no divergence at lows. M15 compression suggests expansion imminent. Confidence capped at 50 due to conflict. Waiting for NY AM KZ (08:30 NY) for entry signals. Key invalidation: close above 29,940 (Aug 5 high) would shift bias to bullish."
+}
