@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-06",
+  "timestamp": "2026-08-06T11:00:00+00:00",
+  "summary": "Bearish LH/LL structure intact. Price at 29280 is in D1 premium (79.5% of range) after 2 consecutive bearish closes. H4 shows bearish momentum with FVG overhead at 29548-29569. Bias: Bearish.",
+  "bias": "Bearish",
+  "confidence": 65,
+  "key_levels": {
+    "support": [
+      "28842-29109 (bullish FVG from 08/04 displacement)",
+      "28460-28674 (H4 bullish FVG 08/03)",
+      "28452 (D1 50% equilibrium)",
+      "28173 (H4 dealing range low)"
+    ],
+    "resistance": [
+      "29266-29289 (D1 79% FIB / H4 62% FIB overlap)",
+      "29338-29394 (M15 bearish OBs)",
+      "29445-29491 (H4 resistance)",
+      "29548-29569 (H4 bearish FVG)",
+      "29772-29856 (sell-side liquidity shelf)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "Bearish LH/LL structure. Price at 79.5% premium of D1 dealing range (27050-29854). Two bearish closes from 29939 high. Draw on SSL at 28842-29109. Confidence Medium.",
+    "h4_context": "H4 bearish momentum with 2 bearish closes. Dealing range 28173-29939, price at 62.7% premium. Bearish FVG at 29548-29569. Bearish OBs forming on M15 at 29338-29394.",
+    "m15_status": "Bearish OBs at 29338-29394 with displacement. No kill zone active (11:00 UTC). Price at 29280 testing 62% FIB. Waiting for London/NY KZ for entry confirmation."
+  },
+  "risks": [
+    {"event": "US Initial Jobless Claims", "time": "08:30 ET", "impact": "medium"},
+    {"event": "10Y Treasury Auction", "time": "13:00 ET", "impact": "medium"},
+    {"event": "FOMC Member Speeches", "time": "various", "impact": "low"}
+  ],
+  "recommendation": "WAIT - Bearish bias confirmed but no valid M15 entry yet. Price in premium but M15 OBs are above current price. Need London/NY Kill Zone entry confirmation. Wait for sweep of 29338-29394 OBs then short."
+}
