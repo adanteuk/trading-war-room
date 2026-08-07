@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-07",
+  "timestamp": "2026-08-07T11:01:00Z",
+  "summary": "D1 structure bearish (LH/LL) but price deep in premium (87.6%) after 8/6 bullish close; short-term corrective within macro downtrend. Bias Neutral-Bearish, Medium confidence.",
+  "bias": "Neutral-Bearish",
+  "confidence": 45,
+  "key_levels": {
+    "support": [29466.7, 29428.5, 29330.4, 29265.9],
+    "resistance": [29523.2, 29557.1, 29854.9]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 BEARISH (LH/LL). DR 27050-29854, price 29506 at 87.6% PREMIUM. 8/4 bullish FVG 28994-29602 partially filled; 8/5 bearish FVG 29548-29569 overhead. Weekly profile: consolidation within larger downtrend.",
+    "h4_context": "H4 DR 29330-29557, price 29506 at 77.8% PREMIUM. Bullish FVG 29455-29466 below current price; bearish FVG 29548-29569 above. CRT candle 09:00 UTC: H=29523 L=29466. Expected: purge CRT high, test 29548-29569 bearish FVG, reject, expand lower.",
+    "m15_status": "M15 range 29406-29523, current 29506. Bullish FVG 29428-29449 below. Kill Zones: NONE active. No valid M15 OB entry yet."
+  },
+  "risks": [
+    {"event": "MT5 data gap risk", "time": "all session", "impact": "medium"},
+    {"event": "US pre-market data", "time": "08:30 ET", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — No Kill Zone active, M15 entry not confirmed. Monitor NY AM KZ (13:30-16:00 UTC) for bearish reaction at 29548-29569 FVG."
+}
