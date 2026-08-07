@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-08-07T18:30:00+08:00",
+  "date": "2026-08-07",
+  "day": "Friday",
+  "symbol": "NAS100",
+  "data_source": "Carson MT5 (Pepperstone CFD)",
+  "bias": "neutral",
+  "confidence": 45,
+  "orb_score": 46,
+  "ict_profile": "Classic Wednesday Low (Mon-Tue rally, Wed-Thu pullback, Fri recovery)",
+  "entry": "TBD - Waiting for NY AM Kill Zone (20:30 HKT)",
+  "sl": "29330 (today's D1 low) for longs; 29557 (Thu H4 high) for shorts",
+  "tp": "Longs: 29557 then 29940 | Shorts: 29330 then 29113",
+  "current_price": 29490.0,
+  "key_levels": {
+    "support": ["29330", "29113", "28495"],
+    "resistance": ["29557", "29940"]
+  },
+  "d1_dealing_range": {
+    "low": 27050.0,
+    "high": 29939.5,
+    "range": 2889.5,
+    "low_date": "2026-07-29",
+    "high_date": "2026-08-05"
+  },
+  "d1_fibonacci": {
+    "0%": 27050.0,
+    "25%": 29217.1,
+    "38.2%": 28835.7,
+    "50%": 28494.8,
+    "61.8%": 28153.8,
+    "70.5%": 27902.4,
+    "79%": 27656.8,
+    "100%": 29939.5
+  },
+  "price_position_pct": 84.4,
+  "zone": "PREMIUM",
+  "smt_divergence": "None - both NAS100 and US500 made LL at lows and HH at highs (aligned)",
+  "today_candle": {
+    "open": 29391.4,
+    "high": 29523.2,
+    "low": 29330.4,
+    "close": 29490.0,
+    "body": 98.6,
+    "body_pct": 51.1,
+    "close_position_pct": 82.8,
+    "type": "BULLISH",
+    "structure_vs_prev": "LH+HL (inside bar/compression)"
+  },
+  "three_layer_analysis": {
+    "l1_daily": "Price at 84.4% of D1 dealing range (27050->29940) = PREMIUM zone. After 2890pt rally from Jul 29 crash low, price pulled back Wed-Thu (-262pts) and is recovering today with an inside bar. Structure: HH+HL from Jul 30 to Aug 5, then LH+LL on Aug 6 (pullback), LH+HL today (compression). No SMT divergence. Weekly net: +1023pts (+3.59%).",
+    "l2_h4_context": "H4 showing choppy structure - alternating HH/HL and LH/LL in last 10 bars (no clear directional momentum). Multiple FVGs near price: bearish FVG at 29390-29559 (testing), bullish FVG at 29456-29467 (just above price, unmitigated). H4 range (last 20 bars): 28842-29940. Price at 59% of H4 range. Key OB: bullish OB at 29330-29456 (Aug 7 09:00, displacement +122.5). Bearish OB at 29682-29813 (Aug 5, displacement -107).",
+    "l3_m15_entry": "M15 showing tight compression (avg range 27.9pts, last bar 6.3pts). Price oscillating 29467-29523 in last 2 hours. No clear M15 OB or displacement. Kill Zone NOT active (inter-session gap between London close and NY open). Waiting for NY AM KZ at 20:30 HKT."
+  },
+  "reasoning": "Price is in PREMIUM (84.4%) of the D1 dealing range after a massive 2890pt rally from Jul 29 crash low. Today's inside bar (LH+HL) with significantly reduced volume (131K vs avg ~280K) signals indecision and compression rather than directional conviction. The weekly profile shows Mon-Tue explosive rally (+1208pts), Wed-Thu mild pullback (-262pts), Fri inside bar - consistent with a late-week consolidation after expansion. No SMT divergence between NAS100 and US500 (both made LL at lows and HH at highs - fully aligned). H4 structure is choppy with alternating transitions. Multiple FVGs near current price create a complex PD array environment. The key levels to watch: 29557 (Thu H4 high) as resistance above, 29330 (today's D1 low) as support below. Bias is NEUTRAL because: (1) premium zone after large rally = distribution risk, (2) but bullish close position (83%) and inside bar = potential continuation, (3) no SMT to signal reversal, (4) no KZ active. Strategy: wait for NY AM Kill Zone (20:30 HKT) to see if price breaks the inside bar range. Bullish above 29557, bearish below 29330.",
+  "orb_breakdown": {
+    "htf_bias": 12,
+    "vwap": 7,
+    "volume": 10,
+    "candle_timing": 5,
+    "ict_confluence": 7,
+    "range_width": 5,
+    "total": 46
+  }
+}
