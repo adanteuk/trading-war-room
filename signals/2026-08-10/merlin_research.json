@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-10",
+  "timestamp": "2026-08-10T11:05:00+08:00",
+  "summary": "NAS100 at 29,789 in extreme premium (94.8% DR). D1 structure MIXED with LH forming (29,867 < 29,939). Approaching BSL at 29,939-29,946 equal highs. H4 in extension territory (111.8%). No KZ active. Wait for BSL sweep before action.",
+  "bias": "Neutral",
+  "confidence": 40,
+  "key_levels": {
+    "support": [29672, 29455, 29350, 29112],
+    "resistance": [29867, 29939, 29946, 30000]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 MIXED/CONSOLIDATION. Price 94.8% DR (extreme premium). Rally from 27,050 (Jul 28) to 29,939 (Aug 4). LH forming: 29,867 < 29,939. HL intact: 29,672 > 29,112. Counter-trend rally within larger bearish structure from June highs (30,667).",
+    "h4_context": "H4 DR 29,330-29,740 broken to upside (111.8% = extension/stale). Bearish FVG 29,548-29,569 mitigated. Bullish FVG 29,455-29,466 mitigated. Last H4 candle bearish (66% body) showing rejection near 29,867 high. No fresh H4 key level in correct zone.",
+    "m15_status": "M15 range 29,766-29,867. Bullish FVG 29,805-29,830 unmitigated above price. NO kill zone active (Sunday/early Mon). No OB formation. No entry confirmation possible."
+  },
+  "risks": [
+    {"event": "BSL sweep at 29,939-29,946 (equal highs)", "time": "TBD", "impact": "high"},
+    {"event": "Low liquidity Sunday/Monday session", "time": "all session", "impact": "medium"},
+    {"event": "No KZ active for entry", "time": "current", "impact": "high"}
+  ],
+  "recommendation": "WAIT. D1 mixed structure + extreme premium + no KZ = no valid setup. Watch for BSL sweep at 29,939-29,946 then rejection for short entry in London/NY KZ. If price breaks and holds above 29,946 with displacement, flip to bullish targeting 30,000+. Do not chase at current levels."
+}
