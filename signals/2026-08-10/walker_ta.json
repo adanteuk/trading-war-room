@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-08-10T18:39:16.859301+08:00",
+  "date": "2026-08-10",
+  "day": "Monday",
+  "symbol": "NAS100",
+  "data_source": "Carson MT5 (Pepperstone CFD)",
+  "bias": "bullish",
+  "confidence": 55,
+  "orb_score": 51,
+  "ict_profile": "Monday Expansion / Friday Continuation (testing D1 range high)",
+  "entry": "TBD - Waiting for NY AM Kill Zone (21:30-23:00 HKT)",
+  "sl": "Longs: below 29672.5 (today's low) | Shorts: above 29940 (range high, only on rejection)",
+  "tp": "Longs: 29940 then 30776 (Jun ATH) | Shorts: 29495 (D1 50% Fib) then 29217 (D1 25% Fib)",
+  "current_price": 29815.2,
+  "key_levels": {
+    "support": [
+      "29672",
+      "29330",
+      "28495"
+    ],
+    "resistance": [
+      "29940",
+      "30776"
+    ]
+  },
+  "d1_dealing_range": {
+    "low": 27050.0,
+    "high": 29939.5,
+    "range": 2889.5,
+    "low_date": "2026-07-29",
+    "high_date": "2026-08-05"
+  },
+  "d1_fibonacci": {
+    "0%": 29939.5,
+    "25%": 29217.1,
+    "38.2%": 28835.7,
+    "50%": 28494.8,
+    "61.8%": 28153.8,
+    "70.5%": 27902.4,
+    "79%": 27656.8,
+    "100%": 27050.0
+  },
+  "price_position_pct": 95.7,
+  "zone": "PREMIUM",
+  "smt_divergence": "None - both NAS100 and US500 made HH at highs and LL at lows (fully aligned)",
+  "today_candle": {
+    "open": 29754.5,
+    "high": 29867.0,
+    "low": 29672.5,
+    "close": 29815.2,
+    "body": 60.7,
+    "body_pct": 31.2,
+    "close_position_pct": 73.4,
+    "type": "BULLISH",
+    "structure_vs_prev": "HH+HL (higher high + higher low, bullish continuation)"
+  },
+  "three_layer_analysis": {
+    "l1_daily": "Price at 95.7% of D1 dealing range (27050->29940) = DEEP PREMIUM, just 124pts below the range high (Aug 5 high 29,939.5). D1 structure BULLISH: 7/10 transitions HH+HL, only 3 LH+LL (Aug 5-6 pullback + pre-crash Jul 28-29). Today gapped up from Fri close (29,695) to open 29,754, made new recovery high 29,867, holding above D1 open. After +2,765pt recovery from Jul 29 crash low (27,050), price is testing the top of the recovery range. No SMT divergence (both indices aligned HH at highs, LL at lows). Key decision: 29,939.5 (100% Fib) - break = range extension toward Jun ATH 30,776; rejection = premium reversal.",
+    "l2_h4_context": "H4 range (last 30 bars): 28,173.7->29,939.5 (1,765.8pts), price at 93.0% = premium. H4 structure bullish-leaning: last 6 transitions mostly HH+HL (Aug 7 05:00/09:00 HH+HL displacement +211, Aug 10 05:00 HH+HL +89). Recent H4 swing low 29,330.4 (Aug 7 01:00), swing high 29,939.5 (Aug 5 13:00). Price approaching the Aug 5 H4 swing high = resistance. Multiple FVGs below (bullish FVGs formed Aug 7). No H4 purge of the range high yet - price is approaching it for the first time since Aug 5.",
+    "l3_m15_entry": "M15 in tight compression: avg range 29.1pts (last 24 bars), last bar 16.9pts. Price oscillating 29,799-29,867 in last 3 hours - building under the range high. Kill Zone NOT active (NY 06:35, inter-session gap between London and NY). No M15 purge/retest yet. Waiting for NY AM KZ (09:30-11:00 NY / 21:30-23:00 HKT) for a potential purge of 29,939.5 or displacement from current consolidation."
+  },
+  "reasoning": "BULLISH bias with 55% confidence. D1 structure is clearly bullish (7/10 HH+HL transitions, higher highs + higher lows into today). Today gapped up, made a new recovery high (29,867), and holds above the D1 open - classic bullish continuation. The weekly profile shows Friday's strong close (+304pts) carrying into Monday expansion, testing the top of the recovery range. HOWEVER, price sits at 95.7% of the dealing range = deep premium, only 124pts below the Aug 5 range high (29,939.5). This is a critical decision zone: a break above 29,939.5 opens the path to the Jun ATH 30,776, while rejection here risks a premium reversal toward the 50% Fib (28,495). No SMT divergence (both indices fully aligned) removes a key reversal confirmator. M15 compression under the range high suggests energy building for a directional move. Confidence capped at 55 (not higher) because: (1) deep premium = distribution risk, (2) no Kill Zone active yet, (3) no confirmation of a range-high break. Strategy: wait for NY AM KZ. Bullish above 29,939.5 (with M15 MSS + displacement), bearish invalidation only on a clean rejection of the range high with M15 structure shift.",
+  "orb_breakdown": {
+    "htf_bias": 18,
+    "vwap": 8,
+    "volume": 8,
+    "candle_timing": 6,
+    "ict_confluence": 6,
+    "range_width": 5
+  }
+}
