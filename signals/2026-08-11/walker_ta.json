@@ -1,27 +1,33 @@
 {
-  "timestamp": "2026-08-11T18:35:00+08:00",
+  "timestamp": "2026-08-11T18:45:00+08:00",
   "date": "2026-08-11",
-  "bias": "bullish",
-  "confidence": 55,
-  "orb_score": 52,
+  "bias": "neutral",
+  "confidence": 50,
+  "orb_score": 48,
   "ict_profile": "Classic Tuesday Low (Power of 3 Accumulation variant)",
   "entry": "TBD",
   "sl": "TBD",
   "tp": "TBD",
   "key_levels": {
-    "support": ["29553.4 (today low)", "29489.9 (H4 50%)", "29330.4 (Aug 7 low)", "29112.8 (Aug 6 low / H4 0%)"],
-    "resistance": ["29748.4 (today high)", "29867.0 (Aug 10 high)", "29939.5 (Aug 5 swing high - primary BSL)", "30679.6 (Jun 22 ATH)"]
+    "support": ["29553.4 (today low / CFD overnight)", "29489.9 (H4 50% Fib)", "29330.4 (Aug 7 low)", "29112.8 (Aug 6 low / H4 0%)"],
+    "resistance": ["29748.4 (today high)", "29867.0 (Aug 10 lower high)", "29939.5 (Aug 5 swing high - primary BSL)", "30679.6 (Jun 22 pre-crash high)", "30776.3 (Jun 3 ATH / CFD)"]
   },
   "three_layer_analysis": {
-    "l1_daily": "D1 BULLISH: Post-crash V-recovery from Jul 29 low (27050.0) to Aug 5 high (29939.5). HH+HL structure intact (higher lows: 28173.7 -> 29112.8 -> 29330.4). Price consolidating in premium - 91.7% of D1 dealing range (27050.0-29939.5). Monday Aug 10 rejected at 29867 (just below Aug 5 high), closed bearish near its low (-107.5 body, 41% of range) - first supply signal at the resistance zone. Today swept Monday's low (29553.4 < 29602.5) then recovered above open (+35.4). SMT: no divergence - both NAS100 & US500 made HH on recovery. But NAS100 is relatively WEAKER: US500 made new highs Aug 5 (7793.7) while NAS100 remains ~740pts below its Jun 22 ATH (30679.6) - more overhead supply for NAS100.",
-    "l2_h4_context": "H4 BULLISH but premium: Dealing range 29112.8 (Aug 6 low) -> 29867.0 (Aug 10 high). Price at 77.8% of H4 range (premium). H4 structure HH+HL (swing lows: 29330.4 -> 29553.4; swing highs: 29740.9 -> 29867.0). Key resistance zone 29867-29939.5 (double-top area, second test of Aug 5 high). Key supports: 29553.4 (today's low), 29489.9 (H4 50% Fib), 29330.4 (Aug 7 low), 29112.8 (H4 0%). Price mid-range after overnight low sweep + Asia rally to 29748.4 + London pullback to 29605, now recovering at 29699.9. No clean H4 OB/FVG entry yet - price between levels.",
-    "l3_m15_entry": "M15: bounced off 29605 floor (08:15-09:00 UTC) to 29708.5 (10:15 UTC), now 29699.9. No decisive M15 displacement or OB/FVG formed yet. Kill Zone NOT ACTIVE (currently 06:30 NY; London KZ ended 10:00 UTC, NY AM KZ 13:30-15:00 UTC pending). Entry TBD - waiting for NY AM Kill Zone and displacement through 29748-29867 or a retest of the premium zone."
+    "l1_daily": "D1 NEUTRAL-BIASED: V-recovery from Jul 29 crash low (27050.0) to Aug 5 high (29939.5) intact, but structure is HL+LH COMPRESSION, not HH+HL: higher lows confirmed (27050.0 -> 29112.8 -> 29553.4) but Aug 10 high (29867.0) is a LOWER HIGH vs Aug 5 (29939.5). Price deep in premium - 91.7% of D1 dealing range (27050.0-29939.5). Monday Aug 10 rejected at 29867 (just below Aug 5 high), closed bearish near its low (-107.5 body, 41% of range) - supply at the resistance zone. Today swept Monday's low (29553.4 < 29602.5) then recovered above open (+35.4) - minor SSL sweep + reclaim. SMT: no divergence - both NAS100 & US500 made HH on recovery. But NAS100 is relatively WEAKER: US500 set new record high Aug 5 (7793.7, confirmed by S&P record close 7757.64 on Aug 7) while NAS100 remains ~840pts below its Jun 3 ATH (30776.3 CFD) - more overhead supply for NAS100. NOTE: Jun 22 (30679.6) was the pre-crash secondary high, NOT the ATH.",
+    "l2_h4_context": "H4 BULLISH but premium: Dealing range 29112.8 (Aug 6 low) -> 29867.0 (Aug 10 high). Price at 77.8% of H4 range (premium). H4 structure HH+HL within the leg (swing lows: 29330.4 -> 29553.4; swing highs: 29740.9 -> 29867.0), but H4 highs also capped below D1 Aug 5 high. Key resistance zone 29867-29939.5 (second test of Aug 5 high area, double-top-like). Key supports: 29553.4 (today low), 29489.9 (H4 50% Fib), 29330.4 (Aug 7 low), 29112.8 (H4 0%). Price mid-range after overnight low sweep + Asia rally to 29748.4 + London pullback to 29605, now recovering at 29699.9. No clean H4 OB/FVG entry yet - price between levels in premium.",
+    "l3_m15_entry": "M15: bounced off 29605 floor (08:15-09:00 UTC) to 29708.5 (10:15 UTC), now 29699.9. No decisive M15 displacement or OB/FVG formed yet. Kill Zone NOT ACTIVE (currently 06:30 NY; London KZ ended 10:00 UTC, NY AM KZ 13:30-15:00 UTC pending). Entry TBD - waiting for NY AM Kill Zone and either displacement through 29748-29867 (bullish trigger) or a premium rejection at 29867-29939.5 (bearish trigger). NOTE: July CPI due Wed Aug 12 08:30 ET is the next major catalyst - expect pre-CPI positioning."
   },
-  "reasoning": "NAS100 completed a sharp V-recovery from the Jul 29 crash low (27050) to the Aug 5 swing high (29939.5), then consolidated Aug 6-11 in a 29112.8-29867 range. HTF structure is bullish (HH+HL on D1 and H4), but price is deep in premium (91.7% of D1 range, 77.8% of H4 range) which elevates distribution risk. Monday's bearish rejection at 29867 (second test of the Aug 5 high zone) shows supply near 29867-29939.5. Today's session swept Monday's low (29553.4) and recovered - a Classic Tuesday Low pattern suggesting 29553.4 may hold as the weekly low. No SMT divergence (both indices in sync), but NAS100 is relatively weaker than US500 (has NOT reclaimed its pre-crash ATH, more overhead supply). Kill Zone inactive at time of analysis (06:30 NY) - entry remains TBD pending NY AM session. Bullish continuation scenario: hold above 29553.4, NY-open displacement through 29748-29867 targets BSL at 29939.5+. Invalidation: H4 close below 29489.9 (50% Fib) opens path to 29330/29112.8. Bearish alternative: rejection at 29867-29939.5 again = distribution toward H4 equilibrium 29489.9. Confidence 55 (bullish structure vs premium-position distribution risk + relative NAS100 weakness). ORB 52 (no KZ active, no breakout volume, price mid-range).",
+  "reasoning": "NAS100 completed a sharp V-recovery from the Jul 29 crash low (27050) to the Aug 5 swing high (29939.5), then consolidated Aug 6-11 in a 29112.8-29867 range. VERIFIED structure: D1 is HL+LH (compression in premium) - higher lows intact but Aug 10 made a LOWER high (29867) vs Aug 5 (29939.5), so bullish HH is NOT confirmed. Price is deep in premium (91.7% of D1 range, 77.8% of H4 range) - distribution risk elevated. Monday's bearish rejection at 29867 (second test of the Aug 5 high zone) confirms supply near 29867-29939.5. Today swept Monday's low (29553.4) and recovered - Classic Tuesday Low pattern suggesting 29553.4 may hold as the weekly low. No SMT divergence (both indices in sync), but NAS100 is relatively weaker than US500 (US500 at record highs Aug 5 while NAS100 sits ~840pts below its Jun 3 ATH). Kill Zone inactive at analysis time (06:30 NY) - entry TBD pending NY AM session. July CPI (Wed Aug 12 08:30 ET) is the key near-term catalyst; market may consolidate pre-CPI. Bullish trigger: hold 29553.4 + NY displacement through 29748-29867 targets BSL at 29939.5+ (then 30679.6/30776.3). Bearish trigger: rejection at 29867-29939.5 again = distribution toward H4 equilibrium 29489.9, then 29330/29112.8. Confidence 50 (HL trend intact vs premium-position distribution risk + LH + relative NAS100 weakness + pre-CPI). ORB 48 (no KZ active, no breakout volume, price mid-range). Data source: Pepperstone MT5 CFD via Carson bridge.",
   "sources": {
     "data": "Pepperstone MT5 CFD via Carson bridge (192.168.11.173:5555)",
+    "cross_check": "Yahoo Finance ^NDX/^GSPC via verification subagent (cash basis, CFD-cash tolerance ~300pts)",
     "symbol": "NAS100",
     "fetched_at": "2026-08-11T18:30:00+08:00",
-    "last_price": 29699.9
+    "last_price": 29699.9,
+    "corrections_applied": [
+      "Jun 22 (30679.6) is NOT the ATH - actual ATH is Jun 3 (30776.3 CFD / 30762.2 cash)",
+      "D1 is HL+LH compression, NOT HH+HL (Aug 10 high 29867 < Aug 5 high 29939.5)",
+      "July CPI due Wed Aug 12 08:30 ET flagged as next major catalyst"
+    ]
   }
 }
