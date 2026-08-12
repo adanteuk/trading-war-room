@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-12",
+  "timestamp": "2026-08-12T11:00:00Z",
+  "summary": "Neutral-Bearish: NAS100 in HL+LH compression coil at 92% D1 premium. Lower highs (29939->29867->29773) + higher lows = descending triangle. July CPI at 12:30 UTC is the binary catalyst. Price testing H4 LH 29773 - rejection favors shorts toward 29644/29553; breakout targets 29867/29939 BSL.",
+  "bias": "Neutral-Bearish",
+  "confidence": 45,
+  "key_levels": {
+    "support": [29553.4, 29420.9, 29112.8, 28842],
+    "resistance": [29773.3, 29867.0, 29939.5, 30000]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 MIXED/CONSOLIDATION: HL+LH compression coil. Higher lows intact (27050->29112->29420) but lower highs rolling over (29939->29867->29773). Price at 92.3% premium of DR(27050-29939). ADX 21.28=range, +DI 22.79>-DI 20.85 slight bull. Stoch 95.83% overbought. No SMT divergence (NAS100+US500 in sync). NAS100 weaker than US500 (-1047pts vs ATH).",
+    "h4_context": "H4 bearish since Aug 10: LH(29867->29773)+LL(29553->29420). Price at 84% premium. Pivotal level 29773.3 H4 LH. Bearish FVG 29563-29605, Bullish FVG 29606-29679. Reclaim 29773->target 29867/29939 BSL. Reject->target 29644(H4 50%)->29553/29420.",
+    "m15_status": "M15 bearish OB at 29734-29722 (formed 10:30 UTC). No KZ active. CPI release 12:30 UTC = binary catalyst. NY AM KZ (13:30-15:00 UTC) pending. Entry TBD pending CPI resolution - no valid entry pre-CPI."
+  },
+  "risks": [
+    {"event": "July CPI Release", "time": "12:30 UTC (08:30 ET)", "impact": "high"},
+    {"event": "MT5 H4 partial data (100 bars only)", "time": "all session", "impact": "low"},
+    {"event": "Deep premium position (92% D1 range)", "time": "all session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - CPI binary event at 12:30 UTC makes pre-release entry gambling, not trading. Post-CPI: if price rejects H4 LH 29773 with displacement, short targeting 29644/29553. If price breaks 29773 with displacement and holds, long targeting 29867/29939 BSL. No entry until CPI resolves."
+}
