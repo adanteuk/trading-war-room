@@ -5,7 +5,7 @@
   "current_price": 29767.5,
   "bias": "neutral",
   "confidence": 50,
-  "orb_score": 50,
+  "orb_score": 48,
   "ict_profile": "Classic Tuesday Low / Wednesday Reversal - Thursday Continuation",
   "dealing_range": {
     "d1": {
@@ -59,6 +59,6 @@
   "entry": "TBD - awaiting NY AM Kill Zone (09:30-11:00 NY)",
   "sl": "TBD",
   "tp": "TBD",
-  "reasoning": "Neutral bias with slight intraday bullish lean. Structure is HL+LH compression in deep premium (94% of D1 range): lower highs since Aug 5 but higher lows since Aug 11. Wednesday's bullish reversal (+161.1) and Thursday continuation (+49.3 so far) provide intraday upside momentum, but no fresh HH and price at extreme premium elevate distribution risk. No SMT divergence - US500 structure fully aligned. H4 compression (ratio 0.17) suggests expansion imminent. Resistance 29,889.5/29,939.2 is the pivotal zone: a sweep above 29,939.2 (Aug 5 SH) with NY AM KZ would confirm bullish continuation toward 30,341.1; failure to hold 29,674.5/29,602.5 opens the H4 discount. ORB score 50 - honest: deep premium + no SMT + KZ inactive caps the score despite intraday momentum. ICT profile: Classic Tuesday Low (Tue 29,421.2 weekly low) followed by Wednesday Reversal and Thursday Continuation.",
+  "reasoning": "Neutral bias with slight intraday bullish lean. Structure is HL+LH compression in deep premium (94% of D1 range): lower highs since Aug 5 but higher lows since Aug 11. Wednesday's bullish reversal (+161.1) and Thursday continuation (+49.3 so far) provide intraday upside momentum, but no fresh HH and price at extreme premium elevate distribution risk. No SMT divergence - US500 structure fully aligned. H4 compression (ratio 0.17) suggests expansion imminent. Resistance 29,889.5/29,939.2 is the pivotal zone: a sweep above 29,939.2 (Aug 5 SH) with NY AM KZ would confirm bullish continuation toward 30,341.1; failure to hold 29,674.5/29,602.5 opens the H4 discount. ORB score 48 - honest: 12/25 HTF bias (coiling, mild bullish intraday), 8/15 VWAP, 8/20 volume (no RVOL), 6/15 candle/KZ (none active), 8/15 confluence (compression but no SMT + deep premium), 6/10 range width (0.48%, compressed). Deep premium + no SMT + KZ inactive cap the score despite intraday momentum. ICT profile: Classic Tuesday Low (Tue 29,421.2 weekly low) followed by Wednesday Reversal and Thursday Continuation.",
   "kill_zone_status": "None active (06:30 NY) - waiting for NY AM 09:30-11:00"
 }
