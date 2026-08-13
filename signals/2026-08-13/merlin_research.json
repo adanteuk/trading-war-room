@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-13",
+  "timestamp": "2026-08-13T11:05:00Z",
+  "summary": "NAS100 rallied +0.74% to 29,742 breaking above inverted bearish FVG resistance at 29,569-29,606 (now support). But ADX 21 (ranging), Stochastic 96 (overbought), deep premium (89% of range), and HMM regime flipping to BEARISH/HIGH for NAS100 specifically signal exhaustion risk. Wait for pullback to FVG support zone for long entries.",
+  "bias": "Neutral",
+  "confidence": 40,
+  "key_levels": {
+    "support": [29569, 29427, 29351, 29123],
+    "resistance": [29831, 29947, 30000, 30762]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1: Price broke above inverted bearish FVG (29569-29606) closing at 29742 - bullish displacement. But ADX 21 = ranging, Stoch 96 = overbought, deep premium 89%. LH/LL sequence since Aug 5 ATH (29947) now potentially broken with Aug 12 close above 29705. HMM NAS100 regime = BEARISH/HIGH conflicts with price action. Bias: NEUTRAL - bullish breakout signal vs overbought+regime conflict.",
+    "h4_context": "H4: Inverted bearish FVG at 29569-29606 now FLIPPED to support after Aug 12 close above it. SSL cluster at 29427-29468 (3 relative equal lows) is next magnet. Inverted bullish FVG at 29333-29369 (CE 29351) is key structural support. BSL targets overhead: 29831, 29947, 30000.",
+    "m15_status": "M15: NO VALID ENTRY - MT5 offline, cannot confirm OB formation, CRT purge, or Kill Zone timing. Layer 3 mandatory veto. Without live M15 OHLCV bars, entry model cannot be validated."
+  },
+  "risks": [
+    {"event": "MT5 offline - no live M15 data", "time": "all session", "impact": "high"},
+    {"event": "Stochastic 95.83% overbought", "time": "all session", "impact": "medium"},
+    {"event": "HMM NAS100 regime BEARISH/HIGH conflict", "time": "all session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - MT5 offline means Layer 3 (M15) cannot be validated, mandatory veto per pipeline rules. Additionally, Stochastic 95.83% overbought + ADX 21 ranging + deep premium 89% + HMM regime conflict make this a low-conviction entry. Wait for pullback to 29569-29351 support zone with live M15 OB confirmation before entering longs."
+}

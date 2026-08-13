@@ -1,0 +1,13 @@
+{
+  "date": "2026-08-13",
+  "timestamp": "2026-08-13T11:05:27.893355+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "neutral",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "NAS100 rallied +0.74% to 29,742 breaking above inverted bearish FVG resistance at 29,569-29,606 (now support). But ADX 21 (ranging), Stochastic 96 (overbought), deep premium (89% of range), and HMM regime flipping to BEARISH/HIGH for NAS100 specifically signal exhaustion risk. Wait for pullback to FVG support zone for long entries.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "TA confidence below GO threshold (conf=50 < 55, orb=48)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
