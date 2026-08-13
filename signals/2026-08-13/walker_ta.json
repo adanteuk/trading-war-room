@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-08-13T18:38:15.040781+08:00",
+  "symbol": "NAS100",
+  "data_source": "TradingView MCP (PEPPERSTONE:NAS100 CFD) - Carson MT5 bridge down",
+  "current_price": 29765.7,
+  "bias": "neutral",
+  "confidence": 50,
+  "orb_score": 50,
+  "ict_profile": "Classic Tuesday Low / Wednesday Reversal - Thursday Continuation",
+  "dealing_range": {
+    "d1": {
+      "low": 27049.9,
+      "high": 29939.2,
+      "size": 2889.3,
+      "basis": "Jul 29 crash low -> Aug 5 recovery high"
+    },
+    "h4": {
+      "low": 29421.2,
+      "high": 29889.5,
+      "size": 468.3,
+      "basis": "Aug 11 low -> Aug 12 high"
+    }
+  },
+  "fibonacci_d1": {
+    "0%": 27049.9,
+    "25%": 29216.9,
+    "38.2%": 28835.5,
+    "50%": 28494.6,
+    "61.8%": 28153.6,
+    "70.5%": 27902.2,
+    "79%": 27656.7,
+    "100%": 29939.2
+  },
+  "price_position_d1_pct": 94.0,
+  "h4_price_position_pct": 73.6,
+  "smt_analysis": "No SMT divergence. Both indices crashed to lows on Jul 29 (NQ 27,049.9 / US500 7,292.2) and have since recovered with higher lows. Post-Aug 5 both made LOWER highs (NQ Aug 12 29,889.5 < 29,939.2; US500 Aug 10 7,774.0 < 7,793.5) — aligned structure, no divergence.",
+  "three_layer_analysis": {
+    "l1_daily": "D1 coiling in PREMIUM at 94.0% of dealing range (27,049.9 Jul29 SL -> 29,939.2 Aug5 SH, 2,889.3pts). Structure HL+LH compression: lower highs since Aug 5 (29,939.2 -> 29,889.5 -> 29,817), higher lows since Aug 11 (29,421.2 -> 29,516.1 -> 29,674.5). Wed Aug 12 bullish +161, Thu Aug 13 in progress +49. No fresh HH. ATH 30,776.0 (Jun 3).",
+    "l2_h4_context": "H4 range 29,421.2 -> 29,889.5 (468.3pts), price at 73.6% premium. Recent H4 swing low 29,674.5 (Aug 12 22:00). H4 bull FVGs: 29,430.7->29,466.6 and 29,607.9->29,645.3 (below price, supporting). Compression detected: last H4 range 21.1 vs avg 125.0 (ratio 0.17).",
+    "l3_m15_entry": "Kill Zone NOT ACTIVE (06:30 NY - London KZ 02:00-05:00 passed, NY AM 09:30-11:00 not yet). Waiting for Kill Zone. M15 today high 29,817.1, low 29,690.2. No confirmed M15 entry setup yet."
+  },
+  "key_levels": {
+    "support": [
+      "29674.5 (today low)",
+      "29602.5 (Aug 10 low)",
+      "29516.1 (Aug 12 low)",
+      "29421.2 (Aug 11 swing low)",
+      "29330.4 (Aug 7 low)",
+      "29216.9 (D1 25% Fib)"
+    ],
+    "resistance": [
+      "29817.1 (today high)",
+      "29889.5 (Aug 12 high / H4 swing high)",
+      "29939.2 (Aug 5 swing high = D1 100%)",
+      "30341.1 (Jun 30 high)",
+      "30776.0 (Jun 3 ATH)"
+    ]
+  },
+  "entry": "TBD - awaiting NY AM Kill Zone (09:30-11:00 NY)",
+  "sl": "TBD",
+  "tp": "TBD",
+  "reasoning": "Neutral bias with slight intraday bullish lean. Structure is HL+LH compression in deep premium (94% of D1 range): lower highs since Aug 5 but higher lows since Aug 11. Wednesday's bullish reversal (+161.1) and Thursday continuation (+49.3 so far) provide intraday upside momentum, but no fresh HH and price at extreme premium elevate distribution risk. No SMT divergence - US500 structure fully aligned. H4 compression (ratio 0.17) suggests expansion imminent. Resistance 29,889.5/29,939.2 is the pivotal zone: a sweep above 29,939.2 (Aug 5 SH) with NY AM KZ would confirm bullish continuation toward 30,341.1; failure to hold 29,674.5/29,602.5 opens the H4 discount. ORB score 50 - honest: deep premium + no SMT + KZ inactive caps the score despite intraday momentum. ICT profile: Classic Tuesday Low (Tue 29,421.2 weekly low) followed by Wednesday Reversal and Thursday Continuation.",
+  "kill_zone_status": "None active (06:30 NY) - waiting for NY AM 09:30-11:00"
+}
