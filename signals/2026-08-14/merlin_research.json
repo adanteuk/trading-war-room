@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-14",
+  "timestamp": "2026-08-14T11:05:00Z",
+  "summary": "NAS100 bullish continuation above 30K after Aug 13 breakout invalidates prior BSL sweep bearish thesis. Price at 30,192 (+1.13%) in extreme premium. MT5 offline blocks M15 entry verification - WAIT for pullback to H4 FVG 29,788-30,039 during NY Kill Zone.",
+  "bias": "Bullish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [30200, 30077, 29940, 29788, 29421],
+    "resistance": [30776, 31000]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 HH/HL bullish. Jul 29 low 27,050 -> Aug 6 HL 29,113 -> Aug 13 HH 30,166 breakout. Price 30,192 at 98% of range = extreme premium. No SMT divergence (NAS100+ES both HH). Stochastic 96% overbought. Prior BSL sweep bearish call invalidated.",
+    "h4_context": "H4 bull FVG 29,788-30,039 from Aug 13 displacement = key demand zone. Minor FVG 30,077-30,103. Price holding above 30K psych. Jun 3 ATH 30,776 = BSL draw target above. Premium entry risk high.",
+    "m15_status": "NO VALID ENTRY - MT5 offline (both IPs down). Cannot verify OB formation, CRT purge, or KZ timing. Walker confirms KZ inactive (pre-market). Mandatory Layer 3 veto applies."
+  },
+  "risks": [
+    {"event": "MT5 offline", "time": "all session", "impact": "high"},
+    {"event": "Stochastic 96% overbought", "time": "intraday", "impact": "medium"},
+    {"event": "Friday weekend risk", "time": "close", "impact": "medium"},
+    {"event": "Jun 3 ATH 30,776 resistance", "time": "intraday", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - Bullish bias confirmed but MT5 offline blocks M15 entry verification (mandatory veto). Price at extreme premium (98% of range) with Stochastic 96% overbought. Ideal entry: pullback to H4 bull FVG 29,788-30,039 during NY AM Kill Zone with M15 OB confirmation. Do not chase at current levels."
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-08-14",
+  "timestamp": "2026-08-14T11:04:13.194649+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bullish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "NAS100 bullish continuation above 30K after Aug 13 breakout invalidates prior BSL sweep bearish thesis. Price at 30,192 (+1.13%) in extreme premium. MT5 offline blocks M15 entry verification - WAIT for pullback to H4 FVG 29,788-30,039 during NY Kill Zone.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "Mixed signals \u2014 standing aside (conf=55, orb=58)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
