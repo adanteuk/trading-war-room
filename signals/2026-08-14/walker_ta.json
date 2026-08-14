@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-08-14T18:30:00+08:00",
+  "date": "2026-08-14",
+  "bias": "bullish",
+  "confidence": 55,
+  "orb_score": 58,
+  "ict_profile": "Classic Tuesday Low → Friday Continuation (bullish continuation bias)",
+  "entry": "TBD — waiting for NY AM kill zone (13:30-15:00 UTC); look for M15 pullback into H4 bull FVG 29,788-30,039",
+  "sl": "TBD — below 29,940 (Aug 5 swing high / breakout level) on long thesis",
+  "tp": "TBD — targets 30,776 (Jun 3 ATH) / 31,000 psych",
+  "key_levels": {
+    "support": ["30020", "29940", "29790", "29421"],
+    "resistance": ["30166", "30776", "31000"],
+    "pdh": 30166.2,
+    "pdl": 29674.5,
+    "onh": 30145.1,
+    "onl": 30020.3
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 HH+HL bullish. Jul 29 low 27,050.0 → Aug 6 HL 29,112.8 → Aug 11 HL 29,420.9. Highs: Aug 5 29,939.5 → Aug 13 30,166.2 = HH breakout. Aug 13 was a +392pt strong bull candle (O 29,716 → C 30,108) breaking above the Aug 5 swing high with elevated volume (H4 13:00 UTC bar vol 60,577 vs ~35k avg). Current price 30,125.7 at 94.6% of narrow dealing range (29,420.9→30,166.2) and 98.7% of broad range (27,050→30,166.2) = EXTREME PREMIUM. Approaching Jun 3 ATH 30,776.3. No SMT divergence: both NAS100 and US500 made HH at Aug 13 highs (NAS 29,939.5→30,166.2; US500 7,793.7→7,817.4) and both made HL — indices in sync, confirming the move.",
+    "l2_h4_context": "H4 HH+HL bullish. Aug 11 17:00 low 29,420.9 → Aug 13 17:00 high 30,166.2 = expansion. The Aug 13 13:00 H4 candle was a massive +313pt displacement (O 29,773 → C 30,086) creating a 251-pt bull FVG 29,788.4→30,039.5 — the key demand zone below. Pullback since Aug 13 high has been shallow: Aug 14 01:00 low 30,020.3 (touched the top of the FVG) then reclaimed 30,000. Minor bull FVG 30,077-30,103 formed Aug 14 05:00. Price currently 30,125.7 in the upper half of the Aug 13 high→Aug 14 low range. H4 range (29,420.9→30,166.2) same as D1 — price at ~94.6% = deep premium.",
+    "l3_m15_entry": "Kill Zone NOT active (current 10:30 UTC / 06:30 EDT pre-market; NY AM 13:30-15:00 UTC). Asia range 30,020.3-30,127.9, London 30,067.0-30,135.5, price holding above 30,000. No M15 OB/fresh entry setup yet — price is extended in premium. Setup pending: watch NY AM for a pullback into H4 bull FVG 29,788-30,039 (or 30,077-30,103 minor FVG) with M15 rejection, or a clean displacement break above 30,166.2 with volume for continuation toward ATH. Waiting for Kill Zone."
+  },
+  "reasoning": "D1/H4 structure both HH+HL bullish with a confirmed breakout above the Aug 5 swing high on Aug 13 (+392pt expansion candle, elevated volume). Momentum strongly bullish; price holding above 30,000 into Friday. Weekly profile = Classic Tuesday Low (Tue low 29,420.9) → Wed reversal → Thu/Fri continuation — bullish continuation bias. HOWEVER, price sits at 94.6-98.7% of dealing range = EXTREME PREMIUM, directly below the Jun 3 ATH (30,776.3). Per confidence calibration rules, extreme premium (>90%) with bullish bias reduces confidence by 20-25pts → set at 55. No SMT divergence (both indices HH/HL in sync). Kill Zone inactive (pre-market) — no entry until NY AM. Risk: premium rejection / mean-reversion selloff if price fails to break the ATH; buy-side liquidity (BSL) above the ATH is the draw target but also the reversal zone. ORB score 58/100 — solid bullish HTF bias but extended price, weak timing, and no volume confirmation on today's push cap the score.",
+  "data_source": "Carson MT5 ZMQ bridge (192.168.11.173:5555), symbol NAS100 (CFD)"
+}
