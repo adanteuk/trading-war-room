@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-08-17T18:35:00+08:00",
+  "date": "2026-08-17",
+  "bias": "bullish",
+  "confidence": 45,
+  "orb_score": 59,
+  "ict_profile": "Monday Expansion (bullish) — gap up above Friday close, pushing toward Jun 3 ATH",
+  "entry": "TBD — waiting for NY AM KZ (13:30-16:00 UTC). Long: M15 pullback into H4 bull FVG 30,160-30,174 or 30,077-30,103 with M15 rejection; or clean displacement break above 30,246. Caution: extreme premium + emerging bearish SMT at highs — ATH rejection scenario live.",
+  "sl": "TBD — long thesis: below 30,077 (below H4 bull FVG cluster). ATH-rejection thesis: above 30,776 (Jun 3 ATH) if swept.",
+  "tp": "TBD — long: 30,776 (Jun 3 ATH) / 31,000 psych. Rejection: mean-reversion to 30,174/30,077 FVGs.",
+  "key_levels": {
+    "support": ["30174", "30077", "30040", "29788"],
+    "resistance": ["30246", "30776", "31000"],
+    "pdh": 30176.6,
+    "pdl": 29925.7,
+    "onh": 30246.2,
+    "onl": 30071.6
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 HH+HL bullish. Lows: Jul 29 27,050.0 → Aug 6 29,112.8 → Aug 11 29,420.9 = HL. Highs: Aug 5 29,939.5 → Aug 13 30,166.2 = HH; Monday Aug 17 extending to 30,246.2 (new local high above Aug 13/14 highs). Monday candle: O 30,089.3 (gap up +49.2 vs Fri close 30,040.1), H 30,246.2, L 30,071.6, C 30,203.5 — bullish, +114.2 body (65% of range), close at 76% of range. Price 30,203.5 at 94.8% of narrow dealing range (29,420.9→30,246.2) and 98.7% of broad range (27,050→30,246.2) = EXTREME PREMIUM. **Bearish SMT at highs (confirmed in cash data, originated Fri Aug 14): NAS100 HH (30,166.2→30,246.2) vs US500 LH (7,817.4→7,802.0) — NDX made HH (30,168→30,180 cash) while GSPC made LH (7,816.7→7,810.0 cash) since Friday; NAS100 pushing to new highs while US500 fails to confirm = narrowing breadth, leading bearish signal. BSL above at Jun 3 ATH 30,776.3 (cash ATH 30,762.20).",
+    "l2_h4_context": "H4 HH+HL bullish. H4 lows: Aug 11 17:00 29,420.9 → Aug 14 13:00 29,925.7 (Fri purge of 30,020.3, then recovery) = HL. H4 highs: Aug 13 17:00 30,166.2 → Aug 14 13:00 30,176.6 = HH, Monday to 30,246.2. H4 bull FVGs below: 30,160.2→30,174.1 (Aug 17 05:00), 30,134.2→30,137.2 (minor), 30,077.0→30,103.0 (Aug 14 05:00), and the major Aug 13 13:00 demand 29,788.4→30,039.5. Price 30,203.5 sits in the upper 5% of the H4 dealing range (29,420.9→30,246.2) = deep premium, directly below the Jun 3 ATH — no purge of ATH yet. The nearest support is the fresh H4 bull FVG 30,160-30,174.",
+    "l3_m15_entry": "Kill Zone NOT active (current 10:31 UTC / 06:31 EDT; London KZ 07:00-10:00 UTC just ended, NY AM 13:30-16:00 UTC not yet). Monday range: Asia 30,092.3-30,233.2, London pushed to 30,246.2 (10:15 UTC), pullback to 30,203.5. M15 structure bullish HH+HL into the London high, then LH+LL pullback from 30,246.2. No purge/CRT at key level yet — price extended in premium with no fresh M15 OB at a demand zone. Waiting for NY AM KZ: either a pullback into H4 bull FVG 30,160-30,174 with M15 rejection (long continuation), or a sweep of 30,246/ATH with rejection (reversal). Waiting for Kill Zone."
+  },
+  "reasoning": "D1/H4 structure both HH+HL bullish. Monday gapped up +49.2 above Friday close, pushed to new local highs 30,246.2 (above Aug 13/14 highs), with price holding above the daily open — clear bullish continuation intent toward the Jun 3 ATH (30,776.3), which is the major BSL draw. HOWEVER, per confidence calibration rules: (1) price is at 94.8-98.7% of dealing range = EXTREME PREMIUM, which with a bullish bias mandates -20 to -25 confidence; (2) a bearish SMT at the highs (NAS100 HH vs US500 LH) is CONFIRMED in cash data and originated Friday Aug 14 (NDX HH 30,168→30,180 vs GSPC LH 7,816.7→7,810.0) — narrowing breadth is a leading bearish warning per ICT, and Monday's CFD push extends the same pattern; (3) NY AM KZ not active — no entry confirmation yet. Base structure confidence ~70 reduced to 45. Bias remains bullish (continuation toward ATH) but with high caution: if NY AM fails to displace above 30,246 or price sweeps 30,776 and rejects, the extreme-premium + SMT divergence combo favors a mean-reversion back to the 30,174/30,077 FVG cluster. ORB 59/100 — solid HTF bullish setup but light volume (Monday avg M15 vol 1,561 vs 2,183 baseline), no KZ timing, and no volume-confirmed breakout yet.",
+  "data_source": "Carson MT5 ZMQ bridge (192.168.11.173:5555), symbol NAS100 (CFD)"
+}
