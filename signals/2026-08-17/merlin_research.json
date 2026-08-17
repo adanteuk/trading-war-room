@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-17",
+  "timestamp": "2026-08-17T09:30:00+08:00",
+  "summary": "NAS100 at 30206 in extension territory above all dealing ranges. Bullish structure (broke above 29939 swing high) but extended at 109% of D1 DR. Wait for pullback to H4 FVG support or rejection at 30246 high.",
+  "bias": "Bullish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [30160, 30103, 30077, 29926],
+    "resistance": [30246, 30341, 30668]
+  },
+  "ict_analysis": {
+    "daily_bias": "BULLISH (Med conf). Price broke above prior swing high 29939 to 30206. Aug 12 strong bullish displacement (+400pts). Structure: new HH forming. BUT at 109% of D1 DR = extension/stale DR. Provisional DR: 29926-30246. HMM bearish divergence from prior session.",
+    "h4_context": "H4 DR 29926-30176 also broken (111.8%). Bullish FVGs at 30077-30103 and 30160-30174 are key support. Last H4 candle is doji (3% body) at highs = indecision. Need pullback to FVG zone for valid long entry. Bearish OB on M15 at 30218-30232 overhead.",
+    "m15_status": "NO VALID ENTRY. Bearish OB at 30218-30232 (above price). Overlapping FVGs at 30187-30218 (confluence). Kill Zones: NONE active (09:00 UTC, between Asian close and London). Layer 3 veto: no KZ + no confirmed setup at key level."
+  },
+  "risks": [
+    {"event": "Monday low volume/range-setting", "time": "All session", "impact": "medium"},
+    {"event": "Price in extension (above all DRs)", "time": "All session", "impact": "high"},
+    {"event": "HMM regime bearish divergence", "time": "All session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT. Price extended above all dealing ranges with no valid M15 entry setup. No Kill Zone active. Wait for: (a) pullback to 30077-30160 FVG zone + bullish OB in London/NY KZ, or (b) rejection at 30246 + bearish MSS confirmation. Layer 3 failure = mandatory WAIT per pipeline rules."
+}
