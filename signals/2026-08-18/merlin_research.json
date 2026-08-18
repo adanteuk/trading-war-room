@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-18",
+  "timestamp": "2026-08-18T09:00:00+08:00",
+  "summary": "NAS100 in sharp pullback after BSL sweep at 30,246 on Aug 17. Price dropped 649 points to 29,597, now testing key support at 29,588 (inverted FVG CE). D1 structure mixed with 3 consecutive bearish candles. H4 in extreme discount (-83.3%) suggests potential bounce zone but bearish momentum dominant. No kill zones active on M15 - wait for reaction at support before entry.",
+  "bias": "Bearish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "29588 (Inverted FVG CE / critical support)",
+      "29427-29468 (SSL cluster / relative equal lows)",
+      "29123 (Aug 6 swing low / major SSL)",
+      "28934 (Jul 22 low / deep SSL target)"
+    ],
+    "resistance": [
+      "29732 (Bullish FVG CE / first resistance)",
+      "29935 (Aug 14 PDL / intraday resistance)",
+      "30000 (Psychological level)",
+      "30180 (BSL sweep high / major resistance)",
+      "30246 (Aug 17 high / extension high)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 structure MIXED/CONSOLIDATION. Price at 90.3% of dealing range (27050-29939) = PREMIUM. Last 3 D1 candles bearish with strong displacement: Aug 16 (-112 pts, 39% body), Aug 17 (-319 pts, 76% body). Price broke below bullish OB at 29716-29882. Macro structure since Jul 28 low (27050) was bullish but now correcting. Aug 12-17 rally to 30246 was extension above D1 DR, now retracing. Bearish momentum dominant but approaching key support at 29588.",
+    "h4_context": "H4 dealing range 29925-30246. Price at -83.3% = EXTREME DISCOUNT. Multiple bearish FVGs formed Aug 17-18: 30030-30063, 29828-29973 (144pt gap), 29687-29763 (75pt gap). Strong bearish displacement on H4 with 82% body candle at 05:00 UTC. Price in extreme discount suggests potential bounce zone but bearish FVGs overhead act as resistance. CRT purge not yet complete - need to see if price holds 29588 or breaks lower.",
+    "m15_status": "M15 range 29597-29806. Only 1 bearish FVG detected at 29695-29718. NO KILL ZONES currently active (London closed, NY not yet open). No order blocks formed yet. Price consolidating near lows after sharp decline. Entry confirmation NOT available - must wait for KZ (London 14:00-17:00 HKT or NY 21:30-00:00 HKT) and OB formation."
+  },
+  "risks": [
+    {"event": "No major economic releases scheduled", "time": "N/A", "impact": "low"},
+    {"event": "Price at critical support (29588) - binary outcome", "time": "Current", "impact": "high"},
+    {"event": "Extended bearish move may trigger short squeeze if support holds", "time": "Intraday", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - No kill zones active, price at critical support (29588), need to see reaction before entry. If price rejects 29588 with bullish displacement and OB forms in London KZ (14:00-17:00 HKT), consider long with tight SL below 29588, targets 29732 -> 29935. If price breaks below 29588 with displacement, short targeting 29427 -> 29123. Do NOT anticipate - wait for confirmation in KZ."
+}
