@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-19",
+  "timestamp": "2026-08-19T19:02:00+08:00",
+  "summary": "Bearish bias (Medium confidence). D1 shows 4/5 bearish candles with declining swing highs. Price at 83.5% of D1 bearish DR (Premium zone). H4 DR stale (price broke below). No M15 entry setup — no OB formed, no Kill Zone active (between sessions). WAIT for NY session.",
+  "bias": "Bearish",
+  "confidence": 45,
+  "key_levels": {
+    "support": [29344, 29050, 28800, 28500],
+    "resistance": [29554, 29700, 29940, 30100]
+  },
+  "ict_analysis": {
+    "daily_bias": "Bearish. D1 structure MIXED but 4/5 recent candles bearish. Swing highs declining (30679→29939). Price at 83.5% of bearish DR (27050-29939) = Premium. Aug 18 doji (8% body) after 3 strong bearish candles = potential exhaustion but no reversal confirmed yet.",
+    "h4_context": "H4 DR stale — price at -144.6% (below range 29925-30246). Provisional DR: 29344-30246. 6 bearish FVGs detected (29570-29591 nearest overhead resistance). Strong displacement 30108→29344 over 2 days. Current H4 candle small bullish (49% body) = minor retracement within bearish trend.",
+    "m15_status": "NO VALID ENTRY. M15 range 29348-29554. 1 bullish FVG at 29407-29434 (below current price). No OB formed. Kill Zones: NONE active (11:00 UTC = between London close and NY open). NY KZ starts 13:30 UTC (21:30 HKT). Wait for NY session for potential entry."
+  },
+  "risks": [
+    {"event": "NY Open volatility", "time": "13:30 UTC", "impact": "high"},
+    {"event": "Aug 18 doji exhaustion", "time": "all session", "impact": "medium"},
+    {"event": "H4 DR stale (no anchor)", "time": "all session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT. Bearish bias confirmed on D1 but no M15 entry setup. No OB formed, no Kill Zone active. Wait for NY session (13:30-16:00 UTC) for potential M15 OB formation at H4 bearish FVG (29570-29591) or discount level. If price rallies into 29550-29700 and forms bearish OB with displacement in NY KZ, that becomes the short entry. Target: 29344 (recent low) → 29050 (next SSL). SL above OB high."
+}

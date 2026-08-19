@@ -1,0 +1,13 @@
+{
+  "date": "2026-08-19",
+  "timestamp": "2026-08-19T11:04:32.119108+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bearish bias (Medium confidence). D1 shows 4/5 bearish candles with declining swing highs. Price at 83.5% of D1 bearish DR (Premium zone). H4 DR stale (price broke below). No M15 entry setup \u2014 no OB formed, no Kill Zone active (between sessions). WAIT for NY session.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "Mixed signals \u2014 standing aside (conf=55, orb=55)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
