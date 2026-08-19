@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-08-19T18:30:00+08:00",
+  "bias": "bearish",
+  "confidence": 55,
+  "orb_score": 55,
+  "ict_profile": "Seek & Destroy (bearish) — Monday swept BSL at 30,246.2 (near ATH 30,776.3), now destroying sell-side: Aug 11 SSL 29,420.9 swept in London KZ to 29,344.3. Wednesday Reversal watch if NY AM reclaims.",
+  "entry": "TBD",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "29344.3",
+      "29025.3",
+      "28994.9-29054.8",
+      "28648.1"
+    ],
+    "resistance": [
+      "29553.9",
+      "29570.9-29591.5",
+      "29695.6-29763.4",
+      "29828.6-29973.0",
+      "30030.6-30063.9",
+      "30246.2"
+    ],
+    "pdh": 30246.2,
+    "pdl": 29961.8,
+    "onh": 30030.6,
+    "onl": 29424.2
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 LH+LL bearish (2 consecutive transitions after Aug 17 swing high 30,246.2, a lower high vs ATH 30,776.3). Aug 18 was a -517.7pt bearish marubozu-style impulse (body -85%, close at 8% of range). Dealing range 27,050.0 (Jul 29 low) → 30,246.2 (Aug 17 high) = 3,196.2 pts. Price 29,449.5 = 75.1% = PREMIUM, sitting exactly on D1 25% Fib (29,447.2) which is being tested. No SMT divergence: both NAS100 and US500 swept their Aug 11 lows (29,420.9 → 29,344.3; 7,716.9 → 7,680.1), both making LL — aligned bearish. Timing nuance: US500 swept on Aug 18, NAS100 on Aug 19 (one day apart).",
+    "l2_h4_context": "H4 LH+LL bearish through Aug 18, displacement candles Aug 18 01:00 (body 71%, 256pt) and 05:00 (body 82%, 183pt) = institutional distribution during NY session. H4 swing range (29,674.5 → 30,246.2) is SWEPT (price 29,449.5 below 29,674.5) — D1 range is structural reference. Overhead bearish FVG stack: 29,570.9-29,591.5, 29,695.6-29,763.4, 29,828.6-29,973.0, 30,030.6-30,063.9. Price currently INSIDE Aug 4 BULL FVG 29,108.8-29,602.8 (support cluster below).",
+    "l3_m15_entry": "London KZ (06:00-09:00 UTC) swept the Aug 11 SSL 29,420.9 → low 29,344.3, then reclaimed to 29,553.9 and pulled back. M15 compression: avg range 30.3 pts (ranges 26-48). No M15 OB confirmed yet. Kill Zone NOT active (pre-market 06:30 ET, NY AM KZ 12:30 UTC). Waiting for NY AM KZ: bearish continuation if 29,344.3 breaks below after rejection at 25% Fib/overhead FVGs; reversal watch if NY AM holds above swept SSL and reclaims 29,553.9."
+  },
+  "reasoning": "ORB 55 = 18/25 HTF bias (D1 LH+LL, overnight SSL sweep, flat open) + 7/15 VWAP (no data) + 10/20 volume (yesterday's impulse on elevated RVOL 0.94, no live breakout volume) + 4/15 candle-close/KZ (in-progress candle, KZ inactive) + 8/15 confluence (25% Fib + Aug 4 FVG support cluster, overhead H4 FVG stack, no SMT) + 8/10 range width (0.71%, in 0.3-1.5% band). Structure (LH+LL) and momentum (bearish marubozu) AGREE → no conflict penalty. Price in premium (75.1%) with room to 50% (28,648.1). Honest confidence 55: bearish bias clear but price at a support confluence (25% Fib + BULL FVG + swept SSL), so no entry until NY AM KZ confirms direction.",
+  "data_source": "Carson MT5 bridge (PEPPERSTONE:NAS100/US500 CFD), fetched 2026-08-19T10:31Z",
+  "current_price": 29449.5,
+  "dealing_range": {"low": 27050.0, "high": 30246.2, "range_pts": 3196.2, "price_position_pct": 75.1}
+}
