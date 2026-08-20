@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-08-20T18:35:00+08:00",
+  "bias": "neutral",
+  "confidence": 50,
+  "orb_score": 47,
+  "ict_profile": "Classic Wednesday Low (watch Thursday reversal)",
+  "entry": "TBD - Waiting for NY AM Kill Zone (12:30-15:00 UTC / 08:30-11:00 ET)",
+  "sl": "TBD - Structural: below 29290.8 for longs / above 29670.0 for shorts",
+  "tp": "TBD - Long: 29670.0 then 29828.6. Short: 29290.8 sweep target",
+  "key_levels": {
+    "support": ["29290.8", "29368.8", "28889.9", "28648.1"],
+    "resistance": ["29474.7-29509.1", "29570.9-29591.5", "29670.0", "29695.6-29763.4", "30246.2"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure BULLISH at swing level (HH+HL): swing high Aug 5 29,939.5 -> Aug 17 30,246.2 (HH); swing low Jul 29 27,050.0 -> Aug 19 29,290.8 (HL). Pullback from ATH -955pts (-3.16%). Dealing range: Aug 17 SH 30,246.2 -> Aug 19 low 29,290.8 = 955.4pts. Price at 15.9% of range (deep discount). Aug 19 doji at lows (upper wick 191.8, lower wick 179.1) = potential reversal candle after 2 bearish days. Current price 29,442.6 BELOW daily open 29,483.0 (-40.4).",
+    "l2_h4_context": "H4 structure BEARISH LH+LL: swing high Aug 17 09:00 30,246.2 -> Aug 19 09:00 29,670.0 (LH); swing low Aug 14 13:00 29,925.7 -> Aug 19 13:00 29,290.8 (LL). 3 consecutive LH+LL transitions = bearish momentum. H4 bearish FVG overhead 29,474.7-29,509.1 (immediate resistance), then 29,570.9-29,591.5, 29,695.6-29,763.4, major 29,828.6-29,973.0. Price in discount of H4 dealing range (15.9%). No SMT divergence: both NAS100 and US500 made LH+LL in sync; NAS100 relatively weaker (pullback -3.16% vs US500 -1.76%).",
+    "l3_m15_entry": "M15: session range 29,368.8-29,599.3 (230.5pts). Price BELOW session VWAP 29,519.3 with VWAP slope DOWN = bearish intraday. Structure mixed after 08:45 low (29,368.8): recovery to 29,474.7, now consolidating 29,440-29,475. No CRT purge of 29,290.8 yet - sell-side liquidity below at weekly low. Kill Zone NOT active (between London 07-10 UTC and NY AM 12:30-15:00 UTC). Compression forming: today's range 0.78% of price within 0.3-1.5% ideal band."
+  },
+  "reasoning": "D1 structure is BULLISH at swing level (HH+HL: Aug 17 ATH 30,246.2 on HH, Aug 19 low 29,290.8 well above Jul 29 swing low 27,050.0). However, short-term momentum is BEARISH: 3 consecutive H4 LH+LL transitions since the Aug 17 ATH, price below session VWAP (29,519.3) with downward slope, and a stack of bearish H4 FVGs overhead (29,474.7-29,509.1 primary). This is a structure-vs-momentum conflict - per confidence calibration rules, confidence capped at 50. Price sits at 15.9% of the recent dealing range (deep discount) with a doji reversal candle on Aug 19 at the weekly low (29,290.8). Key event: sell-side liquidity rests below at 29,290.8 (weekly low + equal lows). Two scenarios for NY AM KZ (12:30-15:00 UTC): (A) bearish continuation - sweep 29,290.8 and continue lower toward 28,890/28,648 (major range 50% Fib); (B) bullish CRT reversal - purge of 29,290.8 then displacement up toward 29,670.0 / 29,828.6. No SMT divergence exists (both indices aligned LH+LL). No entry until Kill Zone confirms direction. ICT profile: Classic Wednesday Low - Mon ATH reversal, Tue bearish expansion, Wed doji at weekly low => watch for Thursday reversal, requires confirmation.",
+  "data_source": "Alfred MT5 bridge (Carson 192.168.11.173:5555), PEPPERSTONE NAS100 CFD. Fetched 2026-08-20 10:35 UTC. Current price 29,442.6."
+}
