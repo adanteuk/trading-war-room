@@ -1,0 +1,13 @@
+{
+  "date": "2026-08-20",
+  "timestamp": "2026-08-20T11:05:36.335491+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "neutral",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "BEARISH bias (55/100 confidence) following massive Aug 17 displacement from 30,246 liquidity sweep. D1 in premium of bearish DR (74.4%), but H4 in discount (36%) creates conflict. All H4 FVGs bearish with overhead resistance at 29,495-29,509. No Kill Zone active - WAIT for price to rally into FVG resistance and show rejection before short entry.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "TA confidence below GO threshold (conf=50 < 55, orb=47)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

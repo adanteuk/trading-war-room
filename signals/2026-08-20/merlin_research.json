@@ -1,0 +1,50 @@
+{
+  "date": "2026-08-20",
+  "timestamp": "2026-08-20T11:00:00+08:00",
+  "summary": "BEARISH bias (55/100 confidence) following massive Aug 17 displacement from 30,246 liquidity sweep. D1 in premium of bearish DR (74.4%), but H4 in discount (36%) creates conflict. All H4 FVGs bearish with overhead resistance at 29,495-29,509. No Kill Zone active - WAIT for price to rally into FVG resistance and show rejection before short entry.",
+  "bias": "Bearish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "29,290.8 (H4 DR low / Aug 19 low)",
+      "29,050 (psychological / next SSL)",
+      "28,800 (psychological / prior consolidation)",
+      "28,678 (Jul 7 swing low)"
+    ],
+    "resistance": [
+      "29,495-29,509 (H4 bearish FVG - nearest overhead)",
+      "29,570-29,591 (H4 bearish FVG)",
+      "29,670 (H4 DR high / Aug 19 high)",
+      "29,828-29,973 (H4 bearish FVG / major resistance)",
+      "30,246 (Aug 16 swing high / BSL sweep level)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH (Medium-Low Confidence). D1 structure MIXED/CONSOLIDATION but recent action shows failed breakout at 30,246 (Aug 16) followed by massive displacement down (Aug 17: 85% body bearish candle). Price at 29,427 is in PREMIUM (74.4%) of bearish DR (30,246→27,050). Premium in bearish DR favors shorts. However, structure is mixed - swing highs show 29,854→29,939→30,246 (higher high) but swing lows show 28,678→28,209→27,050 (much lower low). The 30,246 high appears to be a liquidity sweep/failed breakout. Last 3 D1 candles: massive bearish (Aug 17) → doji/exhaustion (Aug 18) → small bearish (Aug 19). Selling pressure evident but showing signs of exhaustion. Draw on liquidity: SSL at 29,290 (H4 low) → 28,800 → 27,050 (D1 DR low).",
+    "h4_context": "BEARISH context with DISCOUNT positioning (conflict). H4 DR: 29,670→29,290.8, price at 36% = DISCOUNT. All 5 H4 FVGs are bearish: 30,030-30,063, 29,828-29,973, 29,695-29,763, 29,570-29,591, 29,495-29,509. Nearest overhead resistance: 29,495-29,509 FVG (14pt gap). Price dropped from 29,670 to 29,290.8, then bounced slightly. Current H4 candle (09:00 UTC) showing small bullish recovery (32% body). CRT framing: The H4 candle at 05:00-09:00 UTC (H:29,599.3, L:29,368.8) is the CRT candle. EXPECTED BEHAVIOR: Price will purge CRT (break above 29,599.3), test overhead FVG resistance (29,495-29,509 or 29,570-29,591), show rejection, then expand lower toward 29,290.8. Invalidation: If price closes above 29,670 (H4 DR high) with displacement, setup dead.",
+    "m15_status": "NO VALID ENTRY - No Kill Zone active. M15 shows bullish OBs forming at lows: OB1 at 29,368.8-29,416.9 (08:45 UTC), OB2 at 29,429.0-29,461.7 (10:30 UTC). Price at 29,427 is at lower edge of OB2. Bearish FVG overhead at 29,461.5-29,506.1 (44.6pt gap) acts as resistance. Bearish OB at 29,580-29,599.3 (06:45 UTC) marks the recent high. Kill Zones: NONE active (current time 11:00 HKT = 03:00 UTC, between London close and NY open). M15 structure shows potential for bounce from bullish OBs, but no valid entry without Kill Zone timing and without price reaching overhead resistance first."
+  },
+  "risks": [
+    {
+      "event": "Economic calendar check required",
+      "time": "Unknown",
+      "impact": "medium",
+      "note": "No economic calendar checked - verify if any high-impact USD news scheduled for today (Aug 20, Thursday). Typical Thursday news: jobless claims (8:30 ET), existing home sales (10:00 ET)."
+    },
+    {
+      "event": "H4 discount conflict",
+      "time": "Ongoing",
+      "impact": "medium",
+      "note": "H4 in discount (36%) conflicts with bearish D1 bias. Discount is where longs look for entries. This reduces confidence in bearish continuation and increases probability of bounce/reversal."
+    },
+    {
+      "event": "Exhaustion signals",
+      "time": "Ongoing",
+      "impact": "low",
+      "note": "Aug 18 doji (2% body) after massive Aug 17 selloff suggests potential exhaustion. Price has dropped ~800 points in 3 days (30,246→29,427). Mean reversion bounce possible."
+    }
+  ],
+  "recommendation": "WAIT - No valid entry setup. Reasons: (1) No Kill Zone active (current time 11:00 HKT = 03:00 UTC, between London and NY sessions). (2) H4 in discount conflicts with bearish D1 bias - setup not clean. (3) M15 showing bullish OBs at lows suggesting potential bounce, not short entry. (4) Price needs to rally into overhead FVG resistance (29,495-29,509 or 29,570-29,591) and show rejection before considering short. IDEAL SCENARIO: Wait for London or NY Kill Zone (14:00-17:00 HKT or 21:30-00:00 HKT). If price rallies to 29,495-29,509 FVG during KZ and forms bearish OB with liquidity function (fill FVG or purge swing high), then short with SL above 29,509, TP at 29,290 (H4 DR low) or 29,050. Risk: ~80pts, Reward: ~140-380pts, RR 1:2 to 1:5. DO NOT chase shorts at current level (29,427) - too close to support (29,290) and in H4 discount.",
+  "walker_status": "pending",
+  "alfred_status": "pending"
+}
