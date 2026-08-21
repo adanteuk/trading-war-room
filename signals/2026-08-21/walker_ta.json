@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-08-21T18:35:00+08:00",
+  "bias": "bullish",
+  "confidence": 62,
+  "orb_score": 64,
+  "ict_profile": "Classic Thursday Low (Friday Reversal)",
+  "entry": "TBD - Waiting for NY AM Kill Zone (12:30-15:00 UTC / 08:30-11:00 ET)",
+  "sl": "TBD - Structural long invalidation: below 29115.8 (Thursday/weekly low)",
+  "tp": "TBD - Long: 29575.0 (D1 79%) then 29670.0 (H4 swing high)",
+  "key_levels": {
+    "support": ["29188.0", "29115.8", "29025.3", "28648.1"],
+    "resistance": ["29495.1-29509.1", "29575.0", "29670.0", "30030.6", "30246.2"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure BULLISH at swing level (HH+HL): swing high Aug 5 29,939.5 -> Aug 17 30,246.2 (HH); swing low Jul 29 27,050.0 -> pullback low Aug 20 29,115.8 (HL intact, 2,065pts above prior low). Major dealing range: Jul 29 SL 27,050.0 -> Aug 17 SH 30,246.2 = 3,196.2pts. Fib: 50%=28,648.1, 61.8%=29,025.3, 70.5%=29,303.3, 79%=29,575.0. Pullback low 29,115.8 held just above 61.8% (29,025.3, +90.5pts) = support zone 61.8-70.5%. Price 29,403.4 = 73.6% of range (PREMIUM). Friday candle so far bullish (O=29,255.9, +147.5), gap-up open +36.7 vs Thu close, higher low 29,188 vs Thu 29,115.8. SMT: NO divergence - both NAS100 and US500 made HH then LL in sync; NAS100 relatively weaker during pullback (-3.74% from ATH vs US500 -2.27%).",
+    "l2_h4_context": "H4 structure SHIFTED BULLISH: LH+LL sequence ended at Thu 17:00 low 29,115.8 (weekly low purge), then HH+HL transitions Thu 21:00 (HL 29,188.0), Fri 01:00 (HH 29,311.8), Fri 05:00 (HH 29,380.8), Fri 09:00 (HH 29,428.0) = bullish displacement. H4 dealing range: Aug 19 09:00 SH 29,670.0 -> Aug 20 17:00 SL 29,115.8 = 554.2pts. Price 29,403.4 = 51.9% of range (equilibrium). Bullish OB formed Thu 21:00 candle (29,188.0-29,278.1) - Friday session low 29,188.0 sits exactly on OB low. Immediate resistance: H4 bearish FVG 29,495.1-29,509.1 overhead (~95pts above). No SMT divergence confirmed.",
+    "l3_m15_entry": "M15: CRT purge complete - Thu 17:00 H4 swept sell-side liquidity below 29,290.8/29,115.8 (weekly low), then bullish displacement. Friday session O=29,255.9 H=29,428.0 L=29,188.0 C=29,403.4 (range 240.0pts, +147.5 vs open). Higher lows since 29,188.0, price consolidating just below session high 29,428.0. No compression (M15 range ratio 1.03). Kill Zone NOT active (06:31 ET - London KZ ended, NY AM KZ 08:30-11:00 ET starts in ~2hrs). Waiting for NY AM KZ for entry confirmation."
+  },
+  "reasoning": "D1 structure is BULLISH (HH+HL) with the Aug 18-20 pullback holding above the 61.8-70.5% Fib zone of the major dealing range (27,050->30,246). Thursday's low 29,115.8 swept the weekly low / prior support, then H4 printed a clean bullish market structure shift (LH+LL -> HH+HL) with displacement through Friday pre-market - classic CRT purge-and-retest. Price is now at 51.9% of the H4 range (equilibrium) and above Thursday's close with a higher low - buyers in control so far. Friday gap-up open (+36.7) and bullish daily candle in progress. Confidence 62 (not higher) because: (1) price is in PREMIUM of the major D1 range (73.6%) - mean-reversion risk; (2) no SMT divergence to confirm (both indices aligned, NAS100 relatively weaker during the pullback); (3) NY AM Kill Zone not yet active - the pre-market move may get swept at NY open; (4) M15 shows no compression, so no expansion trigger yet. ICT profile: Classic Thursday Low - Mon set ATH, Tue-Wed bearish expansion, Thu printed weekly low, Friday reversing up. Entry reserved for NY AM KZ confirmation: long continuation toward H4 bearish FVG 29,495-29,509 then 29,575 (D1 79%) / 29,670 (H4 SH); invalidation below 29,115.8 (weekly low). Do NOT chase pre-market; wait for KZ displacement.",
+  "data_source": "Alfred MT5 bridge (Carson 192.168.11.173:5555), PEPPERSTONE NAS100 CFD. Fetched 2026-08-21 10:35 UTC. Current price 29,403.4."
+}
