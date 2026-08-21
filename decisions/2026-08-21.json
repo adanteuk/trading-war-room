@@ -1,0 +1,26 @@
+{
+  "date": "2026-08-21",
+  "timestamp": "2026-08-21T11:06:04.478376+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bullish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "SSL sweep at 29,115 completed Aug 20. H4/M15 recovering with 3 consecutive bullish H4 candles. D1 structure still bearish (LH/LL). Counter-trend bounce possible but overhead resistance at inverted FVGs (29,570-29,660) caps upside. No Kill Zone active for entry.",
+  "final_decision": "CONDITIONAL_GO",
+  "trade_params": {
+    "direction": "LONG",
+    "instrument": "NAS100",
+    "entry": "TBD - Waiting for NY AM Kill Zone (12:30-15:00 UTC / 08:30-11:00 ET)",
+    "stop_loss": "TBD - Structural long invalidation: below 29115.8 (Thursday/weekly low)",
+    "take_profit": "TBD - Long: 29575.0 (D1 79%) then 29670.0 (H4 swing high)",
+    "tier": "CONDITIONAL_GO",
+    "lot_size": "TBD x 0.5",
+    "lot_multiplier": 0.5,
+    "risk_pct": 1.0,
+    "session_window": "09:30-11:00 ET",
+    "close_before": "13:30 ET (pre-news)",
+    "note": "Reduced conviction \u2014 half size, tighter risk"
+  },
+  "reasoning": "TA: conf=62, ORB=64 \u2192 MODERATE CONVICTION\nAlfred: WAIT \u2014 reduced to 50% size\nRisk: N/A\nMerlin: ",
+  "alfred_veto": false,
+  "veto_reason": ""
+}

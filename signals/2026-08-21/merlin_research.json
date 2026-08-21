@@ -1,0 +1,32 @@
+{
+  "date": "2026-08-21",
+  "timestamp": "2026-08-21T17:45:00+08:00",
+  "summary": "SSL sweep at 29,115 completed Aug 20. H4/M15 recovering with 3 consecutive bullish H4 candles. D1 structure still bearish (LH/LL). Counter-trend bounce possible but overhead resistance at inverted FVGs (29,570-29,660) caps upside. No Kill Zone active for entry.",
+  "bias": "Neutral",
+  "confidence": 45,
+  "key_levels": {
+    "support": [
+      "29,311-29,324 (H4 Bullish FVG)",
+      "29,343-29,358 (M15 Bullish OB)",
+      "29,115 (SSL sweep low / invalidation)",
+      "28,970 (20-Day MA)"
+    ],
+    "resistance": [
+      "29,428 (M15 range high / PDH)",
+      "29,495-29,509 (H4 Bearish FVG)",
+      "29,570-29,660 (Inverted FVG confluence zone)",
+      "29,882-29,935 (Inverted FVG #3)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH structure (LH/LL since 30,679). Price at 72.5% of bearish DR (premium). Last D1 candle bullish (+148pts) but 4 of last 5 bearish. FIB 70.5%=29,303 support, FIB 79%=29,575 resistance. Control: Supply dominant but SSL sweep suggests liquidity collected.",
+    "h4_context": "H4 DR: 29,115-29,670. Price at 45.5% (discount). 3 consecutive bullish H4 candles. Bullish FVG at 29,311-29,324 acting as support. Bearish FVGs overhead at 29,495-29,509 and 29,570-29,591. CRT purge not yet confirmed - price recovering within range.",
+    "m15_status": "Bullish OB at 29,343-29,358 (formed 09:15 UTC). Bullish FVGs at 29,302-29,378. Bearish OB at 29,387-29,400 (10:45 UTC). NO Kill Zone active (09:30 UTC = between London close and NY open). Entry not valid without KZ confirmation."
+  },
+  "risks": [
+    {"event": "NY Open session", "time": "21:30 HKT", "impact": "high"},
+    {"event": "Jackson Hole symposium", "time": "TBD", "impact": "medium"},
+    {"event": "D1 bearish structure intact", "time": "all session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - SSL sweep recovery forming but no Kill Zone for entry. D1 bearish structure conflicts with H4/M15 bullish recovery. Wait for NY Kill Zone (21:30-00:00 HKT) to confirm direction. If price holds above 29,311 (H4 FVG) during NY KZ with M15 bullish OB + displacement, consider LONG toward 29,495-29,570. If price breaks below 29,311, bearish continuation to 29,115."
+}
