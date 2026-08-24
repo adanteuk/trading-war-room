@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-08-24T18:35:00+08:00",
+  "bias": "bullish",
+  "confidence": 50,
+  "orb_score": 51,
+  "ict_profile": "Monday Low / Power of 3 Accumulation (SSL sweep of prior week low)",
+  "entry": "TBD - Waiting for NY AM Kill Zone (09:30-11:00 ET). Trigger: M15 CHoCH with close above H4 bearish FVG 29174-29188, retest hold",
+  "sl": "TBD - structural invalidation below Monday low 29041.1 (D1 61.8% Fib 29025.3 zone)",
+  "tp": "TBD - R1: 29290 (Fri close) / 29303 (D1 70.5% Fib), R2: 29451 (Fri high)",
+  "key_levels": {
+    "support": ["29041.1 (Mon low / invalidation)", "29025.3 (D1 61.8% Fib)", "28648.1 (D1 50% Fib)"],
+    "resistance": ["29173.6-29187.8 (H4 bearish FVG)", "29290.1 (Fri close)", "29303.3 (D1 70.5% Fib)", "29451.3 (Fri high)", "29575.0 (D1 79% Fib)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure BEARISH LH+LL since Aug 17 ATH (30246.2): lower highs (29670/29601/29451) and lower lows (29424/29291/29116/29041). Major dealing range Jul 29 low 27050 -> Aug 17 ATH 30246.2 (3196 pts). Price 29134.8 = 65.2% of range (premium zone, below 70.5% Fib 29303). Monday low 29041.1 swept prior week low (29115.8) and tagged D1 61.8% Fib (29025.3, only 15.8pts above) = key confluence. BULLISH SMT: NAS100 made LL (29041.1<29115.8) while US500 made HL (7653.7>7644.0) at Monday lows. Monday candle (in-progress): bearish body -193.5 but long lower wick 93.7pts (rejection of lows), gap-up open +38.2 vs Fri close.",
+    "l2_h4_context": "H4 structure bearish LH+LL (highs 30246->29670->29451; lows 29291->29116->29041). H4 dealing range Aug 17 ATH 30246.2 -> Aug 20 low 29115.8 = 1130.4 pts; price at 1.7% of range (deep discount). Unmitigated bearish FVGs above: 29173.6-29187.8 and 29221.3-29227.7 (formed by Monday displacement) = immediate resistance. CRT: Mon 01:00 H4 candle range 29187.8-29371.9 - price purged below its low at 29041.1. H4 OBs far above at 29509-29597 and 29973-30030.",
+    "l3_m15_entry": "London Open KZ (07:00-10:00 UTC) sweep: low 29041.1 at 08:00 UTC, purged SSL below Thu/Fri lows. Post-sweep M15 higher lows (29096->29105->29126->29130), consolidating 29130-29174. M15 CHoCH NOT yet confirmed - price below post-sweep high 29173.6. No M15 OB formed yet (basing). Kill Zone: London KZ closed, awaiting NY AM (09:30-11:00 ET = 14:30-16:00 UTC)."
+  },
+  "reasoning": "HTF (D1/H4) structure is bearish LH+LL after the Aug 17 ATH rejection, driven by bond-market stress (30Y yields at multi-decade highs) and a -2% tech week. HOWEVER, Monday's London Open sweep took sell-side liquidity below the prior week's low (29115.8) while US500 held its lows (7653.7 HL vs NAS100's 29041.1 LL) = BULLISH SMT divergence. The sweep tagged the D1 61.8% Fib (29025.3) with only 15.8pts to spare - a high-quality confluence. M15 is basing with higher lows post-sweep. This is a counter-trend intraday reversal setup vs a bearish HTF: confidence capped at 50 (structure vs momentum conflict rule). Bullish invalidation: M15/D1 close below 29041.1 opens 28648 (D1 50% Fib). Resistance path if confirmed: 29174-29188 H4 FVG -> 29290 Fri close -> 29303 D1 70.5% -> 29451 Fri high. MAJOR EVENT WEEK: Nvidia earnings Wed 8/26 (post-market), PCE + GDP 2nd est + Durable Goods Wed 8/26 08:30 ET, Jackson Hole Thu-Sat 8/27-29 (Fed Chair Warsh first speech). Expect pre-event consolidation/positioning; entries should be sized down and closed ahead of Wed's catalyst stack.",
+  "macro_context": "Big event week: Jackson Hole Symposium Aug 27-29 (Fed Chair Warsh's first Jackson Hole speech), Nvidia earnings Wed Aug 26, PCE Price Index Wed Aug 26 08:30 ET, GDP Q2 2nd est Wed, Durable Goods Wed. Mon Aug 24: Chicago Fed National Activity Index 08:30 ET, Treasury Sec Bessent speaking. Bond market stress: 30Y yield at multi-decade highs last week; Nasdaq Composite -2% week, SMH -5% week (per CNBC)."
+}
