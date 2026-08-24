@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-24",
+  "timestamp": "2026-08-24T09:30:00Z",
+  "summary": "NAS100 shows BEARISH bias with medium confidence. D1 structure is mixed/consolidation but price sits in premium (64%) with recent bearish closes. H4 approaching bearish FVG at 29173.6-29187.8 as resistance. No active kill zone or M15 OB formation yet — wait for London/NY session confirmation before entry.",
+  "bias": "Bearish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "29041.1 (M15 session low)",
+      "28648.1 (D1 50% equilibrium)",
+      "28204.7 (D1 swing low Jun 8)",
+      "27050.0 (D1 dealing range low)"
+    ],
+    "resistance": [
+      "29173.6-29187.8 (H4 bearish FVG - KEY LEVEL)",
+      "29311.8-29324.9 (H4 bullish FVG)",
+      "29451.3 (H4 dealing range high)",
+      "29495.1-29509.1 (H4 bearish FVG)",
+      "30246.2 (D1 dealing range high)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 structure MIXED/CONSOLIDATION. Price at 64% of bearish dealing range (30246.2-27050.0) = PREMIUM zone. Recent candles: Aug 17 bearish (-517pts), Aug 19 bearish (-250pts), Aug 23 bearish (-195pts). Last 5 D1 shows 4 bearish closes. Swing structure: lower highs forming (30679.6 → 30341.1 → 29854.9 → 30246.2 → current 29094.9). Draw on liquidity: SSL at 28648 (D1 equilibrium) and 27050 (DR low). Bias: BEARISH but confidence reduced by mixed structure.",
+    "h4_context": "H4 dealing range: 29451.3-29133.8. Price at -12.3% = DISCOUNT. Three FVGs detected: bearish FVG at 29173.6-29187.8 (KEY LEVEL - just above current price), bullish FVG at 29311.8-29324.9, bearish FVG at 29495.1-29509.1. Last 3 H4 candles all bearish (Aug 24 01:00 -87% body, 05:00 -29% body, 09:00 -55% body). Expected behavior: price may test bearish FVG at 29173.6-29187.8 as resistance, show rejection (wick/engulfing), then expand lower toward 28648 (D1 equilibrium). Invalidation: if price closes above 29324.9 (bullish FVG) with displacement, setup dead.",
+    "m15_status": "M15 range: 29173.6-29041.1. Current price 29094.9. Kill Zones: NONE active (current time ~09:30 UTC = outside London KZ 02:00-05:00 and before NY KZ 13:00-16:00). No OB formation detected yet. Status: WAIT for price to reach key level (29173.6-29187.8) and form M15 OB during active kill zone. Layer 3 failure = NO TRADE until confirmation."
+  },
+  "risks": [
+    {"event": "Mixed D1 structure reduces conviction", "time": "N/A", "impact": "medium"},
+    {"event": "No active kill zone for entry", "time": "09:30 UTC", "impact": "high"},
+    {"event": "Price in H4 discount but bearish bias — conflicting signals", "time": "N/A", "impact": "medium"},
+    {"event": "Jackson Hole Symposium (Aug 21-24) — potential volatility", "time": "All day", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — Layer 3 (M15) has no active kill zone and no OB formation. Mandatory veto per Layer 3 failure rule. Wait for London KZ (02:00-05:00 UTC) or NY KZ (13:00-16:00 UTC) for entry confirmation. If price reaches 29173.6-29187.8 (bearish FVG) during kill zone and forms bearish OB with liquidity function (fill FVG or purge swing high), then GO SHORT with entry at OB high, SL above OB, TP at 28648 (D1 equilibrium) or 3R whichever closer. If no setup forms during kill zones, NO TRADE today."
+}
