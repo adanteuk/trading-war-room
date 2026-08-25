@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-25",
+  "timestamp": "2026-08-25T11:00:00Z",
+  "summary": "D1 structure mixed/consolidation with price in premium (69.3%). H4 showing bullish recovery (3 consecutive bullish candles) but still in premium (67.7%). No clear directional bias - wait for Kill Zone entry confirmation.",
+  "bias": "Neutral",
+  "confidence": 45,
+  "key_levels": {
+    "support": ["29144 (H4 bullish FVG low)", "29076 (H4 bullish FVG)", "28872 (H4 DR low)"],
+    "resistance": ["29343 (D1 recent high)", "29451 (H4 DR high)", "29575 (D1 FIB 79%)"]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 structure MIXED/CONSOLIDATION. Price at 69.3% of bearish DR (30246-27050) = PREMIUM. Last 5 candles alternating bear/bull. No clear HH/HL or LH/LL pattern. Recent bias history: Aug 20 Bearish, Aug 21-24 Bullish. Control: Neutral - no fresh HTF supply/demand zone dominating.",
+    "h4_context": "H4 DR: 29451-28872, price at 67.7% PREMIUM. 3 bullish FVGs detected (29311, 29076, 29144). Last 3 H4 candles bullish (recovery from 28872 low). Expected behavior: Price may retest 29343 resistance before deciding direction. Invalidation: If price closes above 29451 with displacement, bullish continuation.",
+    "m15_status": "2 bullish OBs detected (29181, 29262). 1 bullish FVG at 29262-29283. Kill Zones: NONE active (current time 11:00 UTC between London/NY). No valid entry yet - must wait for London (13:00-16:00 UTC) or NY (18:00-21:00 UTC) Kill Zone for M15 confirmation."
+  },
+  "risks": [
+    {"event": "No Kill Zone active", "time": "Current", "impact": "high"},
+    {"event": "Mixed D1 structure", "time": "All session", "impact": "medium"},
+    {"event": "Premium positioning both TFs", "time": "All session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - D1 structure mixed (no clear bias), price in premium on both D1 and H4, no Kill Zone active for M15 entry. Wait for London or NY Kill Zone. If price rejects at 29343-29451 resistance with bearish MSS, look for short setup. If price breaks above 29451 with displacement, flip to bullish. No trade until Layer 3 confirmation in Kill Zone."
+}
