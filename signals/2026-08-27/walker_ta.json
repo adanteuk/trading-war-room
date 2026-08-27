@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-27T18:35:00+08:00",
+  "timestamp": "2026-08-27T18:40:00+08:00",
   "bias": "bullish",
   "confidence": 60,
   "orb_score": 61,
@@ -9,13 +9,13 @@
   "tp": "29,722 (D1 61.8%) / 29,840 (D1 70.5%) / 30,246 (Aug 17 high)",
   "key_levels": {
     "support": ["29500", "29397", "29216", "29028", "28872"],
-    "resistance": ["29560", "29722", "29840", "30246", "30680"]
+    "resistance": ["29560", "29722", "29840", "30246", "30776"]
   },
   "three_layer_analysis": {
-    "l1_daily": "D1 HH+HL bullish (HL 27,050→28,872.7 Aug 24; HH 29,939.5→30,246.2 Aug 17). Dealing range 28,872.7→30,246.2 (1,373.5 pts). Price 29,513.8 = 46.7% (discount, just below 50% Fib 29,559.5). Aug 17 high is LH vs Jun 22 ATH 30,679.6. Gap-up day, price above daily open. Candle: bullish body +70.6, close in upper half (68% of range), but upper wick rejection at 29,596.",
+    "l1_daily": "D1 HH+HL bullish (HL 27,050 Jul 29→28,872.7 Aug 24; HH 29,939.5 Aug 5→30,246.2 Aug 17). Dealing range 28,872.7→30,246.2 (1,373.5 pts). Price 29,513.8 = 46.7% (discount, just below 50% Fib 29,559.5). Aug 17 high is LH vs Jun 3 ATH 30,776.3 (CFD). Gap-up day, price above daily open (+70.6). Candle: bullish body, close in upper half (~68% of range), but upper wick rejection at 29,596.",
     "l2_h4_context": "H4 HH+HL bullish since Aug 24 low (HL 28,872.7→29,028; HH 29,343→29,596). Price in premium of H4 recovery range (88.6%). Bullish FVGs below: 29,263.9-29,373.9 (Aug 26), 29,354-29,368.1 (Aug 26), 29,076.6-29,117.9 (Aug 25). Mixed FVG zone 29,495-29,509 just below price acting as support.",
     "l3_m15_entry": "M15 pullback from 29,596 high holding above 29,500 FVG support (lows 29,502-29,513). No fresh displacement. Kill Zone NOT active (London KZ ended 09:00 UTC; NY AM opens 13:30 UTC). Waiting for NY KZ to confirm M15 MSS for long entry."
   },
-  "reasoning": "Bullish SMT at Aug 20-24 lows: NAS100 swept lower (29,116→28,873) while US500 held (7,639.7→7,640.3 HL) — liquidity grab unconfirmed by correlated index, supporting the recovery. D1 and H4 both HH+HL since the Aug 24 sweep low. 3 consecutive bullish D1 closes (Aug 25/26/27). Price gap-up today above daily open, holding above 29,500. Main caution: price at D1 50% Fib equilibrium (29,559.5) — decision point; today's candle shows upper wick rejection at 29,596; Aug 17 high 30,246 is a LH vs ATH so upside capped structurally until broken. No active kill zone (London ended, NY AM 13:30 UTC). Confidence 60: structure aligned but equilibrium price + no KZ + overhead LH. Do NOT anticipate — wait for NY KZ M15 confirmation.",
-  "data_source": "Pepperstone MT5 CFD via Carson bridge (192.168.11.173:5555), fetched 2026-08-27 10:30 UTC"
+  "reasoning": "Bullish SMT at Aug 20-24 lows: NAS100 swept lower (29,116→28,873) while US500 held its Aug 20 low (CFD HL 7,639.7→7,640.3) — liquidity grab unconfirmed by correlated index, supporting the recovery. D1 and H4 both HH+HL since the Aug 24 sweep low. 3 consecutive bullish D1 closes (Aug 24 low, then Aug 25 +161.5, Aug 26 +141.3, Aug 27 +160.0 so far). Price gap-up today above daily open, holding above 29,500. Main cautions: (1) price at D1 50% Fib equilibrium (29,559.5) — decision point; (2) today's candle shows upper wick rejection at 29,596; (3) Aug 17 high 30,246 is a LH vs Jun 3 ATH 30,776.3, capping upside until broken; (4) no active kill zone (London ended 09:00 UTC, NY AM opens 13:30 UTC). Confidence 60: structure aligned but equilibrium price + no KZ + overhead LH. Do NOT anticipate — wait for NY KZ M15 confirmation. Verified: all Fib levels exact, dates/directions confirmed vs ^NDX cash, ATH corrected to Jun 3 30,776.3 (CFD).",
+  "data_source": "Pepperstone MT5 CFD via Carson bridge (192.168.11.173:5555), fetched 2026-08-27 10:30 UTC; verified vs Yahoo ^NDX/^GSPC cash by subagent"
 }
