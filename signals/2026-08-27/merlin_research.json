@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-27",
+  "timestamp": "2026-08-27T11:03:56.632876+00:00",
+  "summary": "Neutral-Bearish bias. NQ remains in a strong macro uptrend but is trading near 52-week highs in premium territory. MT5 offline prevents M15 entry validation; web data shows ADX weakening and overbought stochastics near ATH, suggesting pullback risk.",
+  "bias": "Neutral-Bearish",
+  "confidence": 45,
+  "key_levels": {
+    "support": [
+      29917.9,
+      29572.45,
+      29386.4
+    ],
+    "resistance": [
+      30449.4,
+      30635.45,
+      30807.75
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "Bullish macro structure (price above all major MAs) but short-term momentum weakening. ADX 24.48 (declining), +DI 20.41 vs -DI 18.87. Stochastic overbought (83.53%). Price near 52-week high 30,807.75 in premium territory.",
+    "h4_context": "No live H4 data available (MT5 offline). Based on daily structure: dealing range 29,917-30,807. Current ~30,263 near equilibrium. Bullish BB likely at 29,900-30,000 zone. Bearish FVG risk if rejection at 30,449-30,635.",
+    "m15_status": "NO VALID ENTRY \u2014 MT5 offline, cannot validate M15 order blocks, kill zones, or entry confirmation."
+  },
+  "risks": [
+    {
+      "event": "MT5 offline",
+      "time": "all session",
+      "impact": "high"
+    },
+    {
+      "event": "Nvidia earnings aftermath",
+      "time": "post-market Aug 27",
+      "impact": "medium"
+    },
+    {
+      "event": "PCE inflation data",
+      "time": "08:30 ET Aug 29",
+      "impact": "high"
+    }
+  ],
+  "recommendation": "WAIT \u2014 MT5 offline blocks Layer 3 validation. Price near ATH in premium with weakening momentum. Wait for MT5 connectivity or clear H4 rejection/confirmation at 30,449 resistance or 29,917 support."
+}

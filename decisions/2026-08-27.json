@@ -1,0 +1,26 @@
+{
+  "date": "2026-08-27",
+  "timestamp": "2026-08-27T11:05:17.911056+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bullish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Neutral-Bearish bias. NQ remains in a strong macro uptrend but is trading near 52-week highs in premium territory. MT5 offline prevents M15 entry validation; web data shows ADX weakening and overbought stochastics near ATH, suggesting pullback risk.",
+  "final_decision": "CONDITIONAL_GO",
+  "trade_params": {
+    "direction": "LONG",
+    "instrument": "NAS100",
+    "entry": "TBD \u2014 waiting for NY AM Kill Zone (13:30 UTC). Long only on M15 MSS above 29,500 support (FVG 29,495-29,509).",
+    "stop_loss": "Below H4 swing low 29,028 (structural invalidation)",
+    "take_profit": "29,722 (D1 61.8%) / 29,840 (D1 70.5%) / 30,246 (Aug 17 high)",
+    "tier": "CONDITIONAL_GO",
+    "lot_size": "TBD x 0.5",
+    "lot_multiplier": 0.5,
+    "risk_pct": 1.0,
+    "session_window": "09:30-11:00 ET",
+    "close_before": "13:30 ET (pre-news)",
+    "note": "Reduced conviction \u2014 half size, tighter risk"
+  },
+  "reasoning": "TA: conf=60, ORB=61 \u2192 MODERATE CONVICTION\nAlfred: WAIT \u2014 reduced to 50% size\nRisk: N/A\nMerlin: ",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
