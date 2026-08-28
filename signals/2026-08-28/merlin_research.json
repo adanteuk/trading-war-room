@@ -1,0 +1,48 @@
+{
+  "date": "2026-08-28",
+  "timestamp": "2026-08-28T11:00:30+00:00",
+  "summary": "NAS100 daily structure remains bullish (HH/HL) after a 3-day rally off the Aug 23 swing low at 28,872. However, price is sitting at 50.2% of the D1 dealing range and 73.3% of the H4 range (premium), and yesterday's D1 candle closed as a weak bearish bar (6% body) at the FIB 50% (29,559). Yesterday's bias call was Bearish Medium-High; the rally has stalled at equilibrium with a fresh bearish M15 FVG forming overhead. Neutral-bearish lean into Friday — weekend risk and premium positioning argue against fresh longs, but the bullish D1 structure argues against aggressive shorts.",
+  "bias": "Neutral-Bearish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "29515 (Aug 27 low / M15 range low)",
+      "29491 (H4 equilibrium)",
+      "29450-29462 (H4 FVG / intraday demand)",
+      "29337 (Aug 26 low / H4 dealing range low)",
+      "29263-29373 (H4 bullish FVG CE ~29318)",
+      "28872 (Aug 23 swing low / D1 dealing range low)"
+    ],
+    "resistance": [
+      "29563-29574 (fresh bearish M15 FVG)",
+      "29642-29644 (Aug 27 high / H4 range high)",
+      "29724 (D1 FIB 62%)",
+      "29854 (Jul 14 swing high)",
+      "29939 (Aug 4 swing high)",
+      "30246 (Aug 16 swing high / D1 dealing range high)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 structure BULLISH (HH/HL): sequence of higher highs and higher lows from the Jul 28 low at 27,050. Current dealing range 28,872.7 -> 30,246.2. Price 29,562 sits at 50.2% — right at equilibrium/FIB 50 (29,559). Yesterday's candle: weak bearish close (6% body, O 29,570 C 29,562) after 3 straight bullish days — rally stalling at the 50% level. SMT: none confirmed. Position: equilibrium, no edge at market.",
+    "h4_context": "H4 dealing range 29,337.9 -> 29,644.1, price at 73.3% (premium). Two bullish FVGs below: 29,263.9-29,373.9 (CE ~29,318, major) and 29,354.0-29,368.1 (minor). The Aug 26 17:00 H4 candle was a 97% body bull candle — displacement confirming bullish intent — but subsequent candles show momentum decay with overlapping bodies and lower follow-through. CRT: price consolidating in upper half of range; no clean H4 sweep yet.",
+    "m15_status": "M15 range 29,515.9-29,590.7, price 29,562 mid-range. Fresh small BEARISH FVG at 29,563.2-29,573.9 directly overhead from the 05:00 UTC sell-off — first sign of M15 bearish order flow. No kill zone currently active. No confirmed order block entry setup; awaiting London/NY open for a sweep of 29,515 or 29,644 for directional clarity."
+  },
+  "bias_history": {
+    "recent_calls": [
+      {"date": "2026-08-20", "bias": "Bearish", "confidence": "Medium"},
+      {"date": "2026-08-21", "bias": "Bullish", "confidence": "Medium"},
+      {"date": "2026-08-24", "bias": "Bullish", "confidence": "Medium"},
+      {"date": "2026-08-25", "bias": "Neutral-Bearish", "confidence": "Low"},
+      {"date": "2026-08-26", "bias": "Neutral-Bullish", "confidence": "Medium"},
+      {"date": "2026-08-27", "bias": "Bearish", "confidence": "Medium-High"}
+    ],
+    "note": "Yesterday's Bearish call was roughly flat-to-correct — price closed marginally lower at 29,562 after tagging 29,644. Mixed record this week; confidence moderate."
+  },
+  "risks": [
+    {"event": "US Core PCE Price Index (Fed's preferred inflation gauge)", "time": "08:30 ET", "impact": "high"},
+    {"event": "US Personal Income / Spending", "time": "08:30 ET", "impact": "medium"},
+    {"event": "Friday session — weekend gap risk, position squaring into close", "time": "16:00 ET", "impact": "medium"},
+    {"event": "End-of-month flows (Aug month-end Monday)", "time": "15:00 ET", "impact": "low"}
+  ],
+  "recommendation": "WAIT — Price is at D1 equilibrium (50.2%) and H4 premium (73.3%) with a weak stalling candle after a 3-day rally. High-impact Core PCE at 08:30 ET is the day's catalyst. No edge initiating at market in either direction. GO only post-PCE on: (a) sweep of 29,515 SSL followed by M15 bullish CHoCH + reclaim of 29,574 FVG for longs toward 29,644/29,724, or (b) sweep of 29,644 BSL with bearish M15 CHoCH for shorts toward H4 equilibrium 29,491 then FVG CE 29,318. No trade if price chops mid-range."
+}

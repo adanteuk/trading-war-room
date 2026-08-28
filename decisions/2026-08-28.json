@@ -1,0 +1,26 @@
+{
+  "date": "2026-08-28",
+  "timestamp": "2026-08-28T11:04:09.075705+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bullish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "NAS100 daily structure remains bullish (HH/HL) after a 3-day rally off the Aug 23 swing low at 28,872. However, price is sitting at 50.2% of the D1 dealing range and 73.3% of the H4 range (premium), and yesterday's D1 candle closed as a weak bearish bar (6% body) at the FIB 50% (29,559). Yesterday's bias call was Bearish Medium-High; the rally has stalled at equilibrium with a fresh bearish M15 FVG forming overhead. Neutral-bearish lean into Friday \u2014 weekend risk and premium positioning argue against fresh longs, but the bullish D1 structure argues against aggressive shorts.",
+  "final_decision": "CONDITIONAL_GO",
+  "trade_params": {
+    "direction": "LONG",
+    "instrument": "NAS100",
+    "entry": "TBD \u2014 wait for NY AM Kill Zone confirmation",
+    "stop_loss": "TBD \u2014 below Aug 27 low 29,366",
+    "take_profit": "TBD \u2014 targeting 29,752 (D1 25% Fib)",
+    "tier": "CONDITIONAL_GO",
+    "lot_size": "TBD x 0.5",
+    "lot_multiplier": 0.5,
+    "risk_pct": 1.0,
+    "session_window": "09:30-11:00 ET",
+    "close_before": "13:30 ET (pre-news)",
+    "note": "Reduced conviction \u2014 half size, tighter risk"
+  },
+  "reasoning": "TA: conf=60, ORB=62 \u2192 MODERATE CONVICTION\nAlfred: WAIT \u2014 reduced to 50% size\nRisk: N/A\nMerlin: ",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
