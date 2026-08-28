@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-08-28T10:30:00Z",
+  "bias": "bullish",
+  "confidence": 60,
+  "orb_score": 62,
+  "ict_profile": "Thursday Reversal (bullish)",
+  "entry": "TBD — wait for NY AM Kill Zone confirmation",
+  "sl": "TBD — below Aug 27 low 29,366",
+  "tp": "TBD — targeting 29,752 (D1 25% Fib)",
+  "key_levels": {
+    "support": ["29,624.0 (D1 38.2% Fib)", "29,509.3 (D1 50% Fib)", "29,392.6 (D1 62% Fib)", "29,023.2 (Aug 24 swing low)"],
+    "resistance": ["29,677.3 (Aug 18 high)", "29,752.3 (D1 25% Fib)", "29,995.4 (Aug 17 ATH)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure: LH+LL bearish sequence from Aug 17 ATH (29,995.4) through Aug 24 low (29,023.2). Aug 27 printed a STRONG bullish reversal candle (O=29,481.0, H=29,643.5, L=29,366.4, C=29,641.6) — body +160.6, close at 99.3% of daily range (near-high close), +417.0pts (+1.43%) close-to-close. Dealing range: 29,995.4 → 29,023.2 (972.2 pts). Price at 63.6% of range — above midpoint. Price reclaimed D1 50% Fib (29,509.3) and pierced 38.2% Fib (29,624.0) — nearly closed at 38.2% level.",
+    "l2_h4_context": "CFD data unavailable. Cash index: recovery rally from Aug 24 low with consecutive bullish closes. Price approaching Aug 18 high resistance zone (29,677.3). Aug 27 high (29,643.5) within 34pts of that level.",
+    "l3_m15_entry": "M15 data unavailable. Entry models TBD pending NY AM Kill Zone (13:30-16:00 UTC). Watch for M15 OB formation at retest of 29,509-29,624 zone."
+  },
+  "reasoning": "Thursday ICT profile historically favors reversal. Aug 27's near-high close (99.3% of range, +160.6 body, +417.0pts C2C) signals extreme buyer conviction after the Aug 17→24 selloff. Price reclaimed D1 50% Fib (29,509.3) and closed just below 38.2% Fib (29,624.0 at 29,641.6). SMT analysis: NAS100 (+1.43%) outpaced SPX (+0.72%), showing NAS100 strength. NVDA Q2 FY27 earnings beat acted as catalyst. Jackson Hole symposium (Aug 27-29) with Warsh keynote Friday adds event risk — bullish positioning ahead of potential dovish signals. Caveat: CFD data (MT5/TradingView) both unavailable — analysis uses ^NDX cash index as proxy. LH+LL structure technically still intact on D1 (Aug 27 high 29,643.5 < Aug 18 high 29,677.3), but the near-high close suggests strong momentum toward that resistance. Confidence 60 (up from 55 on corrected data) due to: (a) near-high close = strong momentum, (b) pierced 38.2% Fib, (c) still LH+LL not broken = capped confidence, (d) no CFD data for SMT precision, (e) Friday Warsh speech = event risk.",
+  "data_note": "CFD data unavailable — using ^NDX cash index. Alfred MT5 offline, TradingView MCP crashed. Self-verified: corrected Aug 27 close from 29,559.0→29,641.6, high from 29,610.6→29,643.5, 62% Fib from 29,394.6→29,392.6. Close-to-close +417.0pts (+1.43%). Candle body +160.6. Close at 99.3% of daily range. Price at 63.6% of D1 dealing range."
+}
