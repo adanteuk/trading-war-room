@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-31",
+  "timestamp": "2026-08-31T11:00:00+08:00",
+  "summary": "Bullish bias (Medium confidence) based on Aug 28 SSL sweep + reclaim pattern at 29,425-29,427, close above CE 29,402. Price at 29,509 is in slight discount relative to equilibrium 29,645. However, MT5 offline prevents Layer 2/3 validation. WAIT for M15 confirmation.",
+  "bias": "Bullish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "29402 (Inverted FVG CE / flip zone)",
+      "29378-29425 (Bullish OB zone)",
+      "29155 (Inverted FVG CE / deeper support)",
+      "28876 (Aug 24 swing low / SSL pool)"
+    ],
+    "resistance": [
+      "29588 (Inverted bearish FVG CE / key resistance)",
+      "29660 (HIGH-strength confluence zone, 2 inverted FVGs)",
+      "29732 (Inverted bearish FVG CE)",
+      "30196 (Relative equal highs BSL pool)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BULLISH (Medium). Aug 28 SSL sweep at 29,425-29,427 + close at 29,628 above MA20/MA50 and CE 29,402. Price at 29,509 maintains structure above 29,402. Dealing range 28,946-30,343, equilibrium 29,645, price in slight discount. Control: Demand (SSL sweep + reclaim). BSL targets: 29,588 → 29,660 → 29,732.",
+    "h4_context": "INCOMPLETE - MT5 offline. Key level at 29,588 (inverted FVG CE) is immediate resistance. Confluence zone 29,660 (HIGH strength) is major battleground. Price approaching from below = expect reaction. Cannot validate CRT framing or H4 dealing range without OHLCV bars.",
+    "m15_status": "NO VALID ENTRY - MT5 offline. Cannot confirm OB formation, CRT purge, or Kill Zone timing. Layer 3 failure = mandatory veto per ICT/CRT pipeline rules. Recommendation: WAIT for MT5 restoration and M15 confirmation."
+  },
+  "risks": [
+    {
+      "event": "MT5 offline (Alfred unreachable)",
+      "time": "all session",
+      "impact": "high"
+    },
+    {
+      "event": "Overbought stochastic (83-93%)",
+      "time": "current",
+      "impact": "medium"
+    },
+    {
+      "event": "Weak ADX (24.48 < 25 = ranging)",
+      "time": "current",
+      "impact": "medium"
+    },
+    {
+      "event": "Price approaching 29,588-29,660 resistance",
+      "time": "current",
+      "impact": "high"
+    }
+  ],
+  "recommendation": "WAIT - Layer 3 (M15) cannot be validated without MT5 data. Per ICT/CRT pipeline rules, missing Layer 3 is a mandatory veto. Bullish bias is valid based on Aug 28 SSL sweep pattern, but entry confirmation requires M15 OB formation at key level (29,588 or pullback to 29,402) during Kill Zone. Reduce confidence by 10-15pts due to MT5 offline. Monitor for MT5 restoration and M15 setup."
+}
