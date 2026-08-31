@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-08-31T10:30:00Z",
+  "bias": "bearish",
+  "confidence": 55,
+  "orb_score": 35,
+  "ict_profile": "Monday Range",
+  "entry": "TBD - Wait for NY AM Kill Zone confirmation",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "29381.9",
+      "29155.4",
+      "28878.9"
+    ],
+    "resistance": [
+      "29724.1-29726.7",
+      "30195.7"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure BEARISH since Aug 18 ATH (30,195.7). Dealing Range: 27,176.0 (Jul 30) \u2192 30,195.7 (Aug 18) = 3,019.7 pts. Price in Premium at 81.6%. Aug 28: +417.0pts (+1.43%), close at 99.3% of daily range. SMT: NDX swept Jul 30 LL, ES held.",
+    "l2_h4_context": "H4 Range: 28,878.9 \u2192 30,195.7 = 1,316.8 pts. Price at 57.9%. Aug 28 H4: 04:00 +339.9, 08:00 -68.3, 12:00 +247.4, 16:00 -282.6. H4 Bearish OB: 29,724.1-29,726.7. H4 61.8% Fib: 29,381.9.",
+    "l3_m15_entry": "M15 approximated from H1. Aug 28 16:00 ET reversal -292.5pts. Consolidation at 29,418-29,441. NY AM KZ active at 08:30 ET."
+  },
+  "reasoning": "D1 bearish structure + Premium price + SMT divergence = bearish bias. Aug 28 bullish candle creates conflict. Confidence 55 due to structure/momentum conflict."
+}
