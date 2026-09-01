@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-01",
+  "timestamp": "2026-09-01T11:00:00+08:00",
+  "summary": "NAS100 at 29145 in deep D1 discount (19.8%) after strong bearish displacement (83% body). Macro HH/HL intact but H4/M15 show aggressive selling. Price below H4 DR with bearish FVG overhead. Conflicting signals: deep discount favors longs but no M15 reversal confirmed.",
+  "bias": "Neutral",
+  "confidence": 45,
+  "key_levels": {
+    "support": [
+      "29136 (today low / M15 range low)",
+      "28872 (D1 DR low / major SSL)",
+      "28678 (Jul swing low / deeper SSL)"
+    ],
+    "resistance": [
+      "29209-29387 (H4 bearish FVG)",
+      "29430-29479 (M15 bearish FVG)",
+      "29559 (D1 50% equilibrium)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 BULLISH structure (HH/HL) but last candle strong bearish displacement (83% body). Price at 19.8% of D1 DR (28872-30246) = DEEP DISCOUNT. Macro trend intact but momentum bearish. No D1 MSS yet.",
+    "h4_context": "H4 DR 29304-29486 broken downside. Price at -87.7% = extension below range. Fresh bearish FVG 29209-29387 overhead. Last 3 H4 candles all bearish (71%, 57% bodies). Bearish short-term.",
+    "m15_status": "4 bearish FVGs from today. No KZ active. Price near M15 low (29136). No bullish OB or reversal. NO VALID ENTRY - Layer 3 fails."
+  },
+  "risks": [
+    {"event": "Strong bearish displacement", "time": "ongoing", "impact": "high"},
+    {"event": "Price below H4 dealing range", "time": "ongoing", "impact": "medium"},
+    {"event": "NY session open", "time": "09:30 ET", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - Layer 3 (M15) has no valid entry. Bearish displacement is strong but price is in deep D1 discount with macro HH/HL intact. Need to see: (a) bullish OB + KZ reversal for long, or (b) break of 28872 D1 DR low for bearish continuation. No trade until Layer 3 confirms."
+}
