@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-09-01T10:00:00+00:00",
+  "bias": "bearish",
+  "confidence": 45,
+  "orb_score": 45,
+  "ict_profile": "Classic Tuesday Low",
+  "entry": "TBD",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "27049.9",
+      "29021.8",
+      "29222.3"
+    ],
+    "resistance": [
+      "29407.1",
+      "30246.2"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 mixed (3B/2S last 5D). Last completed (2026-08-31): bearish, body -57.6pts (22% of range). D1 dealing range: 27049.9\u219230246.2 (3196.3pts).",
+    "l2_h4_context": "H4 range: 29021.8\u219229748.6 (726.8pts). Price at 25% (Discount). Sharp selloff in 06:00 UTC H4 bar: 29512.8\u219229136.1 (-377pts). Price currently holding above CRT low (29202.5 > 29136.1) \u2014 06:00 bar closed bearish at 29164.3.",
+    "l3_m15_entry": "M15 N/A (H4 proxy). NY AM KZ pending. Waiting for entry confirmation."
+  },
+  "reasoning": "NAS100 at 29202.5, below daily open (29407.1) by -204.6pts. Price in deep H4 discount (25%). Approaching D1 38.2% Fib (29025.2) and H4 range low (29021.8). No SMT divergence \u2014 both NAS100 and US500 making lower lows (bearish alignment)."
+}
