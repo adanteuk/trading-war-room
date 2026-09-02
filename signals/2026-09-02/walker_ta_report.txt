@@ -9,7 +9,7 @@
 
 **3-Layer Analysis:**
 
-• **L1 (D1)**: Bearish continuation. Sep 1 printed HH+LL structure (H 29,522.5 swept Mon high, L 28,953.8 broke below Aug 24 swing low 28,872.5 — close 29,088.5, large bearish body -376.1pts). Today (Sep 2) extending lower: O 29,088.8, currently 28,933, testing 28,895.9 low — just 23pts above Aug 24 swing low. Price at 7.1% of D1 dealing range (28,872.5→29,748.6 = 876pts) = DEEP DISCOUNT. No SMT divergence — both NAS100 and US500 swept prior swings in sync.
+• **L1 (D1)**: Bearish continuation. Sep 1 printed HH+LL structure vs Mon (H 29,522.5 > Mon H 29,489.6, L 28,953.8 < Mon L 29,222.3 — close 29,088.5, large bearish body -376.1pts). Sep 1 low (28,953.8) held 81pts above Aug 24 swing low (28,872.5) — not yet broken. Today (Sep 2) extending lower: O 29,088.8, currently 28,933, testing 28,895.9 low — just 23pts above Aug 24 swing low. Price at 7.1% of D1 dealing range (28,872.5→29,748.6 = 876pts) = DEEP DISCOUNT. No SMT divergence — both NAS100 and US500 swept prior swings in sync.
 
 • **L2 (H4)**: Price broke below entire H4 dealing range (29,222.3→29,522.5, 300pts). All H4 Fib levels lost. Current price ~288pts below H4 100% (29,222.3). Last 6 consecutive H4 candles bearish (Sep 1 02:00 → Sep 2 10:00 UTC). H4 structure: clear LH+LL sequence from Aug 28 high. Next key level to watch: Aug 24 D1 swing low 28,872.5.
 

@@ -12,7 +12,7 @@
     "resistance": ["28,953.8", "29,056.5", "29,130.9", "29,310.5"]
   },
   "three_layer_analysis": {
-    "l1_daily": "Bearish. Sep 1 HH+LL broke below Aug 24 SL 28,872.5. Current bar extending lower, 17% of D1 range (deep discount). Price below daily open. D1 dealing range: 28,872.5 -> 29,748.6 (876pts).",
+    "l1_daily": "Bearish. Sep 1 HH+LL vs Mon (H 29,522.5 > Mon H, L 28,953.8 < Mon L 29,222.3). Sep 1 low held 81pts above Aug 24 SL 28,872.5 — not yet broken. Current bar extending lower, 17% of D1 range (deep discount). Price below daily open. D1 dealing range: 28,872.5 -> 29,748.6 (876pts).",
     "l2_h4_context": "Price broke below entire H4 dealing range (29,222.3 -> 29,522.5, 300pts). 6 consecutive bearish H4 candles. All H4 Fib levels lost. Next support: D1 100% at 28,872.5.",
     "l3_m15_entry": "Selling ongoing. Low 28,895.9 made at 06:00 UTC. Currently consolidating near lows 28,920-28,940. No M15 bullish OB yet. NY AM Kill Zone opens ~12:30 UTC — waiting for displacement."
   },
