@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-02",
+  "timestamp": "2026-09-02T09:30:00+08:00",
+  "summary": "Bearish bias. Price broke below inversion CE 29,401.95 and H4 DR low 28,953.9. 3x D1 bearish closes. Deep discount (3.2%) but bearish structure intact. Wait for KZ entry.",
+  "bias": "Bearish",
+  "confidence": 65,
+  "key_levels": {
+    "support": ["28,872.7", "28,678.1", "28,209.3"],
+    "resistance": ["29,209-29,388 (H4 FVG)", "29,467-29,531 (H4 FVG)", "29,748.7"]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH Medium. 3x bearish D1 closes. Broke below CE 29,401.95. DR 28,872-29,748, price at 3.2%. LH sequence since Jun 29.",
+    "h4_context": "BEARISH displacement. Broke H4 DR low to 28,901. 8x bearish H4 candles. Bearish FVGs at 29,209-29,388 and 29,467-29,531 overhead.",
+    "m15_status": "NO VALID ENTRY. No KZ active. Bullish OB at 29,010-28,976 but no engulfment in KZ. Layer 3 fails. Wait for London/NY KZ."
+  },
+  "risks": [
+    {"event": "Deep discount bounce risk", "time": "All session", "impact": "medium"},
+    {"event": "No Kill Zone active now", "time": "Current", "impact": "high"}
+  ],
+  "recommendation": "WAIT. Layer 3 fails (no KZ, no valid entry). Deep discount may trigger bounce to 29,200-29,400 H4 FVG. Strategy: Wait London KZ 14-17 HKT or NY KZ 21:30-00 HKT. If bounce to 29,200-29,400 + bearish OB → short SL>29,531 TP 28,872. If break <28,872 → short SL>29,000 TP 28,678. Invalidation: close >29,531."
+}
