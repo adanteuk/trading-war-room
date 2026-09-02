@@ -1,0 +1,30 @@
+🤖 **WALKER TA ANALYSIS — 2026-09-02 (Wed)**
+
+**Bias**: Bearish | **Confidence**: 45/100
+**ICT Profile**: Classic Tuesday Low → Wednesday Reversal Watch
+**ORB Score**: 45/100
+
+**Current Price (PEPPERSTONE:NAS100 CFD)**: 28,933
+**D1 Range**: 28,896 – 29,125 | Body: -154.2 | Position: 17% of range
+
+**3-Layer Analysis:**
+
+• **L1 (D1)**: Bearish continuation. Sep 1 printed HH+LL structure (H 29,522.5 swept Mon high, L 28,953.8 broke below Aug 24 swing low 28,872.5 — close 29,088.5, large bearish body -376.1pts). Today (Sep 2) extending lower: O 29,088.8, currently 28,933, testing 28,895.9 low — just 23pts above Aug 24 swing low. Price at 7.1% of D1 dealing range (28,872.5→29,748.6 = 876pts) = DEEP DISCOUNT. No SMT divergence — both NAS100 and US500 swept prior swings in sync.
+
+• **L2 (H4)**: Price broke below entire H4 dealing range (29,222.3→29,522.5, 300pts). All H4 Fib levels lost. Current price ~288pts below H4 100% (29,222.3). Last 6 consecutive H4 candles bearish (Sep 1 02:00 → Sep 2 10:00 UTC). H4 structure: clear LH+LL sequence from Aug 28 high. Next key level to watch: Aug 24 D1 swing low 28,872.5.
+
+• **L3 (M15)**: Selling pressure ongoing. Price made new low 28,895.9 at 06:00 UTC (London close), briefly recovered to 29,075 before fading again. Currently consolidating near lows (28,920–28,940). No clear M15 bullish OB forming yet — waiting for displacement + reversal candle. NY AM Kill Zone (08:30-11:00 NY = 12:30-15:00 UTC) NOT YET ACTIVE — 2 hours away.
+
+**Key Levels:**
+Support: 28,895.9 (today's low), 28,872.5 (Aug 24 swing low), 28,800 (psychological)
+Resistance: 28,953.8 (Sep 1 low), 29,056.5 (D1 79%), 29,130.9 (D1 70.5%), 29,310.5 (D1 50%)
+
+**D1 Fib Levels (28,872.5 → 29,748.6):**
+0%: 29,748.6 | 25%: 29,529.6 | 50%: 29,310.5 | 62%: 29,205.4
+70.5%: 29,130.9 | 79%: 29,056.5 | 100%: 28,872.5
+
+**Reasoning**: Classic Tuesday Low confirmed (Tue 28,953.8 = weekly low). Wednesday has potential for reversal IF price holds above Aug 24 swing low (28,872.5) and NY AM Kill Zone delivers bullish displacement. Current bias remains bearish — price below daily open, in deep discount, 6 consecutive bearish H4 candles. But confidence is limited (45) because: (1) Classic Tue Low → Wed Reversal is the most common ICT profile, (2) price approaching major D1 support at 28,872.5, (3) selling momentum showing signs of compression on M15. ORB 45/100 reflects bearish structure but reversal setup risk. **Key trigger**: Hold 28,872.5 + NY AM bullish displacement = reversal long. Break 28,872.5 = bearish continuation toward 28,700-28,600.
+
+**Kill Zone**: London inactive. NY AM opens in ~2 hrs (12:30 UTC).
+
+📁 `walker_ta.json` saved & pushed to git
