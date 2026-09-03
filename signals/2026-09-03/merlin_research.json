@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-03",
+  "timestamp": "2026-09-03T11:30:00+08:00",
+  "summary": "Bearish continuation bias after yesterday's breakdown below key inversion CE levels. Price in deep discount (23.2% D1, 30.3% H4) but bearish FVG overhead at 29,209-29,387 caps upside. Mixed structure limits conviction.",
+  "bias": "Bearish",
+  "confidence": 45,
+  "key_levels": {
+    "support": ["28,875 (Aug 24 swing low / major SSL)", "28,800 (psychological)", "28,500 (deep macro support)"],
+    "resistance": ["29,073 (MA100)", "29,155 (inversion CE)", "29,209-29,387 (bearish FVG)", "29,402 (bullish inversion CE now resistance)"]
+  },
+  "ict_analysis": {
+    "daily_bias": "Mixed structure, deep discount (23.2%). Yesterday broke below inversion CE 29,402, confirming bearish. Price below all MAs except MA100. Bearish continuation favored but oversold conditions limit downside.",
+    "h4_context": "Discount zone (30.3%). Bearish FVG at 29,209-29,387 acts as overhead resistance. No bullish key levels in discount to support longs. Wait for price to test resistance before shorting.",
+    "m15_status": "Bearish OB formed at 09:00 UTC (H:29,181.8 L:29,168.3). No Kill Zone active. Entry confirmation missing. Layer 3 fails = NO TRADE per pipeline rules."
+  },
+  "risks": [
+    {"event": "Oversold bounce", "time": "any", "impact": "medium"},
+    {"event": "No Kill Zone active", "time": "current", "impact": "high"},
+    {"event": "Mixed D1 structure", "time": "all session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - Layer 3 (M15) fails: no Kill Zone active, no entry confirmation. Bearish bias but cannot execute without M15 OB in Kill Zone. Wait for London (14:00-17:00 HKT) or NY (21:30-00:00 HKT) Kill Zone for potential short entry if price rallies into 29,155-29,209 resistance."
+}
