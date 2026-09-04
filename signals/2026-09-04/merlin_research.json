@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-04",
+  "timestamp": "2026-09-04T11:00:00Z",
+  "summary": "Bullish short-term momentum: 3 consecutive D1 bullish candles, price at 29618 approaching D1 BSL at 29748. H4 extended at 119.6% (above dealing range). Wait for NY KZ pullback to H4 FVG for entry.",
+  "bias": "Bullish",
+  "confidence": 60,
+  "key_levels": {
+    "support": ["29556-29571 (H4 FVG)", "29497-29529 (H4 FVG)", "29433 (H4 FVG base)", "29310 (D1 50% FIB eq)"],
+    "resistance": ["29653 (today high)", "29748 (D1 swing high / BSL)", "29854 (Jul swing high)"]
+  },
+  "ict_analysis": {
+    "daily_bias": "Bullish momentum. 3 consecutive D1 bull candles from 29032 low. Price at 85.1% PREMIUM of D1 DR (28872-29748). Draw on BSL at 29748. Mixed structure but momentum favors upside.",
+    "h4_context": "Strong impulse 29032→29653. Price at 119.6% = extension above H4 DR. 3 bullish FVGs stacked below (29215, 29497, 29556). Nearest key level for pullback entry: H4 FVG 29556-29571.",
+    "m15_status": "Bullish OB at 29529-29559 (06:45 UTC). Bearish FVG at 29559-29577. No Kill Zone active (between London close and NY open). Entry confirmation pending NY session."
+  },
+  "risks": [
+    {"event": "US Jobless Claims (Thu)", "time": "08:30 ET", "impact": "medium"},
+    {"event": "D1 premium extension", "time": "all session", "impact": "medium"},
+    {"event": "Friday profit-taking risk", "time": "PM session", "impact": "low"}
+  ],
+  "recommendation": "WAIT for NY Kill Zone (13:30-16:00 UTC). Look for pullback to H4 FVG 29556-29571 with M15 bullish OB formation. Target BSL at 29748. No entry in current premium extension without pullback."
+}
