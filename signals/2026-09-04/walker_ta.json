@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-09-04T18:30:00+08:00",
+  "symbol": "NAS100",
+  "source": "Carson MT5 ZMQ (Pepperstone CFD)",
+  "current_price": 29632.8,
+  "bias": "bullish",
+  "confidence": 55,
+  "orb_score": 56,
+  "ict_profile": "Classic Wednesday Low (Friday continuation)",
+  "entry": "TBD - Waiting for NY AM Kill Zone (09:30-11:00 ET / 13:30-15:00 UTC) after NFP 08:30 ET",
+  "sl": "TBD - structural: long invalidation below 29437 (today low); thesis broken below 28882 double-bottom",
+  "tp": "TBD - 30246 (Aug 17 swing high) on LH break; pullback target 29315 (50% Fib)",
+  "key_levels": {
+    "support": [
+      "29556-29572 (H4 bullish FVG, Fri 01:00)",
+      "29497-29529 (H4 bullish FVG, Thu 21:00)",
+      "29437 (today low / Thu close area)",
+      "29315.6 (50% Fib of 28882-29749)",
+      "28882.4 (Sep 2 double-bottom low - structural invalidation)"
+    ],
+    "resistance": [
+      "29748.7 (Aug 28 LH / 100% Fib of dealing range - KEY decision)",
+      "30246.2 (Aug 17 D1 swing high)",
+      "30679.6 (Jun 22 secondary pre-crash high)",
+      "30776.3 (Jun 3 true ATH)"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 strong recovery off Sep 2 double-bottom (28882.4). Price 29632.8 at 86.6% of dealing range (28882.4 Sep2 low -> 29748.7 Aug28 LH, 866.3pts) = PREMIUM, testing the range top. Macro D1 structure LH+HL: LH from Aug 17 (30246.2) to Aug 28 (29748.7), HL double-bottom 28872.7 (Aug24) -> 28882.4 (Sep2). True ATH = Jun 3 30776.3 (CFD), NOT Aug 28. Bullish SMT at lows: NAS double-bottom HL (28872.7->28882.4) vs US500 LL (7640.3->7612.0->7610.2) = NAS relative strength. Classic Wednesday Low: Mon doji -> Tue bearish expansion (28953.9) -> Wed new low 28882.4 + reversal -> Thu bullish expansion (+334.6) -> Fri continuation.",
+    "l2_h4_context": "H4 bullish displacement Thu 09-03 13:00 UTC (+283pts, vol 61575) breaking above prior H4 swing highs. Stacked bullish FVGs below price: 29556.2-29571.7 (Fri 01:00), 29497.0-29529.1 (Thu 21:00), 29215.4-29433.2 (Thu 09:00). H4 grinding higher through Asia/London. Key overhead resistance: Aug 28 LH 29748.7 (100% Fib of dealing range).",
+    "l3_m15_entry": "M15 steady higher-low grind since Thu; today session 29437.6-29640.7 (range 203.1 pts, 0.69%). No liquidity purge yet - price pushing straight into premium toward the LH. No kill zone active (06:30 ET - between London Open end and NY AM). NFP today 08:30 ET (12:30 UTC) is the primary catalyst inside/preceding NY AM KZ - expect manipulation before data, true move after. Do NOT anticipate entry."
+  },
+  "reasoning": "ICT Weekly Profile = Classic Wednesday Low: Mon doji (range 267) -> Tue bearish expansion (Sep1 -376, low 28953.9) -> Wed hammer reversal (new weekly low 28882.4) -> Thu bullish expansion (+334.6) -> Fri continuation (today +171.6 so far, above Thu high 29540.7). Bullish confluence: (1) double-bottom 28872-28882 held, (2) bullish SMT at lows (NAS HL vs US500 LL), (3) Classic Wed-Low reversal in progress, (4) price above all H4 bullish FVGs. COUNTER: price now at 86.6% premium of the dealing range, testing the Aug 28 LH (29748.7) = key decision level. D1 macro structure still LH (not yet flipped to HH+HL) - a break above 29748.7 confirms bullish shift targeting 30246; rejection risks pullback to 29315 (50% Fib) / 29437. NFP today (08:30 ET, first Friday) + Labor Day 3-day weekend = elevated event risk; the NY AM KZ will likely print the true direction after initial manipulation. Confidence 55 (premium + LH test + NFP binary event caps conviction despite strong momentum). ORB 56: strong HTF momentum + bullish SMT, but no active KZ, no RVOL/CVD confirmation, premium position, no purge yet. Key invalidation: daily close below 28882 breaks double-bottom -> bearish continuation toward 28678 (Jul 8 low). FUNDAMENTAL: NFP + Unemployment Rate + Avg Hourly Earnings today 08:30 ET (12:30 UTC) = primary NAS100 catalyst; US holiday Monday (Labor Day) = short trading week.",
+  "orb_breakdown": {
+    "htf_bias_25": 17,
+    "vwap_15": 8,
+    "volume_20": 9,
+    "candle_close_timing_15": 6,
+    "ict_crt_confluence_15": 9,
+    "range_width_10": 7,
+    "total": 56
+  }
+}
