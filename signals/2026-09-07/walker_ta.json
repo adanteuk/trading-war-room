@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-09-07T18:30:47+08:00",
+  "symbol": "PEPPERSTONE:NAS100",
+  "data_source": "TradingView MCP (Carson MT5 bridge offline)",
+  "current_price": 29576.7,
+  "current_price_note": "29,576.7 at 10:30 UTC fetch; 29,540.8 at 10:37 UTC re-fetch (in-progress bar drifting)",
+  "bias": "neutral",
+  "confidence": 50,
+  "orb_score": 43,
+  "orb_breakdown": {
+    "htf_bias": "13/25 - HH+HL recovery Thu/Fri + above daily open, but no ON sweep (Mon high -3.7 below Fri high, Mon low +75.9 above Fri low) and macro LH sequence since Aug 17",
+    "vwap": "7/15 - no VWAP on CFD; price above daily open as proxy",
+    "volume": "5/20 - no RVOL/CVD available; Monday session incomplete",
+    "candle_timing": "3/15 - NO Kill Zone active at analysis time (NY AM KZ opens 20:30 HKT); no close outside any range",
+    "ict_crt_confluence": "8/15 - bullish SMT confirmed in CFD + cash, but price at 90% of H4 range (deep premium), no Judas swing completed",
+    "range_width": "7/10 - Monday range 150pts (0.51%) within 0.3-1.5% band"
+  },
+  "ict_profile": "Monday Range (coiling under supply - expansion pending)",
+  "entry": "TBD - no confirmed entry. Two scenarios: (a) long: NY AM KZ (20:30 HKT) purge of 29,500 into H4 bull FVG 29,331-29,455 with M15 OB/rejection; (b) displacement close above 29,653.6 then retest. Do NOT anticipate.",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "pdh": 29653.6,
+    "pdl": 29424.0,
+    "onh": 29649.9,
+    "onl": 29499.9,
+    "support": ["29499.9 (Mon ON low)", "29455-29331 (H4 bull FVG, Sep 3)", "29403.4 (61.8% pullback fib)", "28882.4 (Sep 2 swing low)"],
+    "resistance": ["29653.6 (Fri high / Sep-4 supply)", "29725.2 (38.2% pullback fib)", "29748.6 (Aug 28 swing high)", "29939.2 (Aug 5 swing high)", "30246.2 (Aug 17 swing high)"]
+  },
+  "dealing_ranges": {
+    "primary": "27049.9 (Jul 29 crash low) -> 30246.2 (Aug 17 swing high) = 3196.3 pts; price at 79.1% PREMIUM",
+    "pullback": "30246.2 (Aug 17) -> 28882.4 (Sep 2) = 1363.8 pts; price at 50.9% (equilibrium)",
+    "h4": "28882.4 -> 29653.6 = 771.2 pts; price at 90.0% (deep premium)"
+  },
+  "fibonacci_primary": {
+    "25pct": 29447.1,
+    "38.2pct": 29025.2,
+    "50pct": 28648.0,
+    "61.8pct": 28270.9,
+    "70.5pct": 27992.8,
+    "79pct": 27721.1
+  },
+  "fibonacci_pullback": {
+    "38.2pct": 29725.2,
+    "50pct": 29564.3,
+    "61.8pct": 29403.4
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 recovery intact (Thu +334.6 HH+HL, Fri +22.8 HH+HL) but Monday prints LH+HL inside bar: high 29,649.9 sits 3.7pts BELOW Friday high 29,653.6, low 29,499.9 holds 75.9 above Friday low 29,424 - compression, no sweep either side. Price above daily open 29,510.7 (+66). Macro structure still LH/LL sequence off Aug 17 high 30,246.2 (Aug 28 LH 29,748.6). Primary dealing range 27,049.9->30,246.2: price at 79.1% PREMIUM. Pullback range equilibrium test: price oscillating exactly at 50% (29,564.3). Bullish SMT at swing lows: NAS100 HL (28,872.5 Aug 24 -> 28,882.4 Sep 2) vs US500 LL (7,639.7 -> 7,610.2) - confirmed in cash (^NDX HL 28,876->28,953 vs ^GSPC LL 7,638->7,611).",
+    "l2_h4_context": "H4 dealing range 28,882.4 (Sep 2 low) -> 29,653.6 (Sep 4 high) = 771.2pts; price at 90% = deep premium. Price coiling beneath the Sep-4 supply cluster (H4 highs 29,628/29,645.7/29,649.9/29,653.6). Romeo CRT: Sep 4 14:00 UTC bearish displacement bar (body 89%, 222pt range, 29,645.7->29,424) with 2nd candle contained - absorption. Monday marginally purged that displacement high by 4.2pts (29,649.9 vs 29,645.7) but failed to hold above and could NOT reach Friday's 29,653.6 - micro Judas rejection, not a breakout. Unmitigated bullish FVG 29,331.4-29,455.6 (Sep 3, 124pts) sits below as first draw on liquidity; smaller bull FVGs 29,503.8-29,529.0 and 29,561.5-29,568.3 in the immediate zone. Price has NOT purged the CRT range (low held 75.9 above) and has NOT displaced through supply - waiting.",
+    "l3_m15_entry": "NO Kill Zone active at 18:30 HKT (06:30 NY) - NY AM KZ opens 20:30 HKT (08:30 NY), 2h away. London KZ already passed without a sweep. M15 compression: last 10 bars avg range 17.3pts vs prior 20 avg 26.9pts (ratio 0.64) - expansion pending but not triggered. Monday session so far: open 29,510.7, high 29,649.9, low 29,499.9 - a 150pt coil between ON low and Sep-4 supply. No M15 Order Block formed at the H4 key level; no rejection wick into 29,331-29,455 FVG yet. M15 drifting lower since 08:45 UTC high (29,620 -> 29,577). No entry confirmation - do not anticipate."
+  },
+  "reasoning": "Neutral with bullish lean, capped at 50. Bullish evidence: (1) bullish SMT divergence NAS100 HL vs US500 LL at D1 swing lows - independently confirmed in cash indices, genuine NQ relative strength; (2) D1 recovery structure HH+HL Thu/Fri off the Sep 2 higher low; (3) price above daily open. Against it: (1) price compressed at 90% of the H4 dealing range (deep premium - poor R:R for fresh longs); (2) capped beneath the Sep-4 supply cluster 29,596-29,654 with Monday's high failing 3.7pts below Friday's - an inside bar under resistance; (3) price sits exactly at 50% (equilibrium) of the Aug-17->Sep-2 pullback range - no premium/discount edge; (4) no Kill Zone active, no sweep, no displacement - the ICT entry model has zero confirmations so far. Confidence reflects structure (recovering) vs momentum (compressing under supply) conflict - capped at 50 per calibration rule. ORB 43/100: the two score-killers (no active KZ, deep premium without SMT at the level being tested) hold it down despite the SMT divergence. Plan: wait for NY AM KZ (20:30 HKT). Bullish trigger: purge of 29,499.9/29,424 into the 29,331-29,455 H4 bull FVG with SMT intact -> M15 OB + rejection = long toward 29,653.6/29,725.2. Bearish trigger: failure swing - rejection at 29,596-29,654 supply forming LH -> short toward 29,403.4 (61.8% fib) then 29,331. Do not front-run either side."
+}
