@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-08",
+  "timestamp": "2026-09-08T11:05:00Z",
+  "summary": "NAS100 tested key inverted bearish FVG resistance at 29,732 and rejected, now pulling back to 29,524. HMM regime bullish but price action shows exhaustion at major resistance. MT5 offline - Layer 3 cannot be validated.",
+  "bias": "Neutral",
+  "confidence": 45,
+  "key_levels": {
+    "support": [29402, 29377, 29340, 28953],
+    "resistance": [29588, 29660, 29732, 30195]
+  },
+  "ict_analysis": {
+    "daily_bias": "Mixed structure: LH (29,764 vs 30,195) bearish, HL (28,953 vs 28,875) bullish. Price rejected at 29,732 inv. FVG CE. HMM BULLISH (HIGH conf) but price at resistance. ADX 21-24 ranging.",
+    "h4_context": "Price in premium zone of dealing range (28,875-30,195). Key resistance 29,732 tested and rejected. Bearish confluence zone 29,660 overhead. No clear H4 key level for entry without MT5 data.",
+    "m15_status": "NO VALID ENTRY - MT5 offline (both 192.168.11.211 and 192.168.11.173 failed ZMQ). Cannot confirm OB formation, CRT purge, or Kill Zone timing. Mandatory Layer 3 veto."
+  },
+  "risks": [
+    {"event": "MT5 offline - no live OHLCV", "time": "all session", "impact": "high"},
+    {"event": "Post-Labor Day low volume", "time": "all session", "impact": "medium"},
+    {"event": "Rejection at 29,732 resistance", "time": "09:30 ET", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - MT5 data unavailable prevents Layer 3 validation. Price rejected at major resistance 29,732 (inverted bearish FVG CE). HMM regime bullish but price action shows exhaustion. No valid entry without M15 confirmation. Wait for MT5 restoration or clearer setup."
+}

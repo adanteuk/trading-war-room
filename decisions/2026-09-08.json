@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-08",
+  "timestamp": "2026-09-08T11:05:42.034552+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "NO_INPUT",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "NAS100 tested key inverted bearish FVG resistance at 29,732 and rejected, now pulling back to 29,524. HMM regime bullish but price action shows exhaustion at major resistance. MT5 offline - Layer 3 cannot be validated.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "No TA input received from Walker",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
