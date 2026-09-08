@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-09-08T18:50:00+08:00",
+  "symbol": "NAS100 (PEPPERSTONE CFD)",
+  "data_source": "TradingView MCP (Carson MT5 bridge unreachable — timeout)",
+  "current_price": 29564.9,
+  "bias": "neutral",
+  "confidence": 40,
+  "orb_score": 42,
+  "ict_profile": "Monday Range -> Tuesday two-sided liquidity purge (Seek & Destroy leaning; Classic Tuesday Low candidate pending NY displacement)",
+  "entry": "TBD - awaiting NY AM kill zone confirmation",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["29424-29448 (today's London sweep low + Sep 4 low, reclaimed SSL)", "29331-29455 (H4 bullish FVG zone Sep 3, mitigated)", "29207 (H4 61.8% of 28872.5-29748.6)", "28882 (Sep 2 HL, key macro low)"],
+    "resistance": ["29650-29750 (Mon high 29649.9 / today high 29734.1 / Aug 28 high 29748.6 - BSL cluster)", "29939 (Aug 5 recovery high)", "30246 (Aug 17 dealing range high)"]
+  },
+  "d1_fibonacci": {
+    "range_low": 27049.9,
+    "range_high": 30246.2,
+    "levels": {"0%": 27049.9, "25%": 29447.1, "50%": 28648.1, "61.8%": 28270.9, "70.5%": 27992.8, "79%": 27721.1, "100%": 30246.2},
+    "price_position_pct": 78.7,
+    "zone": "PREMIUM"
+  },
+  "h4_context": {
+    "range_low": 28872.5,
+    "range_high": 29748.6,
+    "range_size": 876.1,
+    "price_position_pct": 79.0,
+    "fib_61.8": 29207.2,
+    "unmitigated_fvgs": "none in last 40 bars",
+    "crt_setup": "none active (no 2nd candle, no KOD)",
+    "compression": "last H4 bar 74 pts vs 6-bar avg 125"
+  },
+  "smt": {
+    "lows": "Bullish SMT (marginal): NAS HL +9.9 (28872.5->28882.4) vs US500 LL -29.5 (7639.7->7610.2)",
+    "highs": "No SMT: both indices made LH (NAS 30246.2->29748.6, US500 7770.5->7758.1)"
+  },
+  "orb_breakdown": {"htf_bias": "10/25", "vwap": "6/15 (no VWAP feed)", "volume": "7/20 (no RVOL spike, holiday-thinned Monday)", "candle_close_kz": "5/15 (no close outside range, NY AM KZ not yet active)", "ict_confluence": "7/15 (bullish SMT at lows but none at highs, no unmitigated PD array at price)", "range_width": "7/10 (today 285.6 pts = 0.97%)" },
+  "three_layer_analysis": {
+    "l1_daily": "D1 macro: HL+LH compression in premium. Last swing high LH 30246.2->29748.6; last swing low HL 28872.5->28882.4. Dealing range 27049.9 (Jul 29 crash low) -> 30246.2 (Aug 17 swing high) = 3196.3 pts; price at 78.7% (premium). Recent 8 transitions mixed/choppy (3x HH+HL, 2x LH+LL, 3x mixed). Today's in-progress bar: HH+LL vs Sep 7 - swept both sides of Monday's range (high 29734.1 > 29649.9; low 29448.5 < 29499.9) = external range expansion, body nearly doji (-20.1). Sep 7 was US Labor Day: thin 150-pt CFD session, NY cash closed.",
+    "l2_h4_context": "H4 dealing range 28872.5 -> 29748.6 (876.1 pts), price 79.0%. H4 61.8% = 29207.2. No unmitigated H4 FVGs in last 40 bars (all 5 detected gaps already traded through). No active Romeo CRT setup (no 2nd-candle containment, no KOD wick rejection). Today's session purged both liquidity pools: Asia/NY-eve swept BSL above Mon high to 29734.1, London swept SSL below Mon low to 29448.5 then reclaimed mid-range. Compression: last H4 bar 74 pts vs 6-bar avg 125 - expansion pending.",
+    "l3_m15_entry": "Kill Zone: London KZ complete (did the SSL sweep at 29448.5, 14:40 HKT). NY AM KZ NOT active at 06:31 NY - opens 08:30 NY (20:30 HKT); US cash reopens 09:30 NY after Labor Day. Waiting for NY AM displacement: bullish trigger = acceptance above 29650 then purge of 29734-29750 BSL cluster; bearish trigger = loss of 29448 reopens 29207. No M15 OB confirmation yet - do NOT anticipate."
+  },
+  "reasoning": "Neutral bias, 40% confidence. Macro D1 is compression in premium (LH at swing highs + marginal HL at lows) - neither bullish HH+HL nor bearish LH+LL (pitfall 5b discipline: no bullish label without fresh HH). Today purged BOTH sides of Monday's range (29734.1 BSL sweep rejected, 29448.5 SSL sweep reclaimed) - classic two-sided liquidity run with no displacement yet. The bull case: bullish SMT at lows (NAS HL vs US500 LL), NAS outperforming US500 C2C all week, price holding above the 29447 D1 25% level. The bear case: LH intact at 29748 vs 30246 macro (US500 also LH 7770.5->7758.1 - both indices aligned), Asia BSL sweep rejected back below 29700, premium position 78.7%, doji D1 body. No edge until NY AM shows displacement. ORB 42/100 honestly decomposed: HTF 10/25 (compression, no overnight direction), VWAP 6/15 (feed unavailable), Volume 7/20 (no RVOL, holiday-thinned), Close/KZ 5/15 (NY AM not active), Confluence 7/15 (SMT at lows only, no PD array at price), Range 7/10 (0.97%). Profile: Monday Range -> Tuesday Seek & Destroy leaning; resolves to Classic Tuesday Low (bullish continuation) only if NY holds 29448+ and displaces through 29734-29750; loss of 29448 targets 29207 (H4 61.8%) then 28882. Pre-FOMC week (FOMC Sep 15-16, blackout active; CPI Fri Sep 11) - expect position-sizing caution, event-week levels sweep-prone.",
+  "disclaimer": "Analysis only, not financial advice. CFD data via TradingView MCP; CFD daily candles include 23h sessions and may differ from cash index direction."
+}
