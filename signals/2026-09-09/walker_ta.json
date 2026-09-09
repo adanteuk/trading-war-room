@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-09-09T11:11:47Z",
+  "data_source": "TradingView MCP \u2014 PEPPERSTONE:NAS100 CFD (D1/H4/M15) + PEPPERSTONE:US500 H4 for SMT; Alfred MT5 ZMQ down",
+  "as_of": "09 Sep 10:45 UTC",
+  "bias": "neutral",
+  "confidence": 45,
+  "orb_score": 49,
+  "ict_profile": "Classic Wednesday Low (forming, unconfirmed) \u2014 alt: Midweek Continuation if 29345.9 breaks",
+  "entry": "TBD \u2014 awaiting NY AM Kill Zone (12:30-15:00 UTC) price action",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "29345.9 (Wed low \u2014 SSL sweep of Tue 29394.8 + Fri 29374.9)",
+      "29222.3 (Mon Aug 31 low)",
+      "28953.8 (Tue Sep 1 low)",
+      "28872.5-28882.4 (Aug 24/Sep 2 equal lows \u2014 major SSL pool)"
+    ],
+    "resistance": [
+      "29405.6 (post-sweep bounce high, minor)",
+      "29494 (38.2% of down-leg)",
+      "29540 (50%)",
+      "29567-29595 (H4 bearish OB body + 61.8% cluster)",
+      "29607.5 (Wed high)",
+      "29734.1 (Tue high \u2014 LH)"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 range-bound 28872-29749 since Aug 24; Tue Sep 8 printed intraday HH vs Mon but closed bearish at 29.8% of range (upper wick 155.5). Wed Sep 9 in progress: LH (29607.5) + LL (29345.9 \u2014 swept Tue low) and trading below daily open. Most recent expansion 28882.4->29734.1 (851.7 pts); price at ~56% (equilibrium, marginal premium). Structure: compressing triangle \u2014 HL 2887x intact + LH 2974x. Effective D1 bias: neutral.",
+    "l2_h4_context": "H4 LH+LL sequence from 29734.1 (Tue London) -> 29607.5 (Wed London) -> 29345.9 (current): short-term bearish. Down-leg 29734.1->29345.9 = 388.2 pts; price at deep discount (3.7%). H4 bearish OB 29567-29595 (confluent with 61.8% retrace 29586). CRT candle = Wed London dump bar (L 29362.9): price purged below CRT low to 29345.9 and is coiled AT the CRT low boundary (29360 vs 29362.9).",
+    "l3_m15_entry": "London KZ delivered Judas swing: Asia accumulation 29464-29599 (modest 135-pt range) -> 06:15 UTC push to 29607.5 -> dump to 29345.9 (10:00 UTC). Swept Tue SSL (29394.8, by 49 pts) and Fri Aug 28 SSL (29374.9). Brief reclaim to 29405.6 failed; last 4 M15 bars compressing 52->22.6 pts range at the lows. NY AM KZ not yet active \u2014 WAITING FOR KILL ZONE. No M15 entry confirmed."
+  },
+  "smt": "No SMT divergence: NAS100 (-0.17%) and US500 (-0.22%) both swept Tuesday lows in the same London window \u2014 correlated downside.",
+  "weekly_profile_note": "Mon Sep 7 = Labor Day (US cash closed; CFD traded Asia/London only, volume -40%). Week so far: holiday-Monday range, Tue London HH rejection + bearish close, Wed pre-NY sweep of week's lows.",
+  "reasoning": "D1 is in a 3-week compression between 28.87k-28.88k equal lows (major SSL pool) and 29.73k-29.75k LH pair. H4 momentum is bearish (LH+LL), but price just purged sell-side at the equilibrium (56%) of the D1 range and the deep discount (3.7%) of the H4 down-leg \u2014 the fuel for a Classic Wednesday Low reversal IF buyers defend. However: no SMT divergence (US500 swept in lockstep), no reclaim of the CRT low yet, and NY AM KZ has not opened. Structure (H4 bearish) and reversal context (sweep at discount) conflict -> neutral bias, confidence capped at 45, ORB 49/100. Scenarios: (A) Bullish \u2014 M15 reclaims and closes back above 29363 (CRT low) then 29405.6; targets 29494 (38.2%) -> 29567-29595 OB cluster; invalidation = acceptance below 29345.9. (B) Bearish \u2014 acceptance below 29345.9 opens 29222.3 (Aug 31 low) then 28953.8/2887x SSL pool. Do NOT anticipate entries; wait for NY AM KZ confirmation. Not financial advice \u2014 analysis only."
+}
