@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-09",
+  "timestamp": "2026-09-09T11:02:32Z",
+  "summary": "BEARISH (Medium Confidence). Price broke below D1 equilibrium (29,315) and is now at 29,360 in bearish displacement. H4 is deep discount (-10%) with bearish FVGs. M15 shows bearish OB at 29,540-29,567 with active bearish FVGs. Control: Supply in control.",
+  "bias": "Bearish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "29,343 (today's low / SSL sweep level)",
+      "29,235 (HIGH confluence bullish inversion CE)",
+      "29,200 (psychological / deep SSL)",
+      "28,882 (D1 DR low / major SSL pool)"
+    ],
+    "resistance": [
+      "29,419 (D1 FIB 62%)",
+      "29,493 (D1 FIB 70.5%)",
+      "29,540 (M15 bearish OB low)",
+      "29,567 (M15 bearish OB high / key invalidation)",
+      "29,605 (H4 FIB 62%)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH (Medium). D1 structure MIXED/CONSOLIDATION. Price at 29,360 is 55% of DR (28,882-29,748) = slight premium. But price broke below equilibrium (29,315) on 9/8 with bearish displacement (55% body). Last 2 D1 candles bearish. Control: Supply in control after rejection from 29,734.",
+    "h4_context": "H4 DISCOUNT (-10%). Dealing range 29,394-29,734. Price broke below DR low at 29,394 with strong bearish candle (86% body). Bearish FVG at 29,458-29,489 and 29,397-29,445 overhead. Key level: 29,458-29,489 bearish FVG = resistance. Expected: Price rejected from 29,734, displaced lower, now targeting SSL at 29,343 and below.",
+    "m15_status": "BEARISH OB formed at 29,540-29,567 (08:15 UTC) with displacement 24.9. Two bearish FVGs at 29,458-29,489 and 29,397-29,445. Price has broken below both FVGs. Kill Zone: NONE active (current time 11:02 UTC = post-London). Entry confirmation: BEARISH OB is valid but KZ has passed. Wait for NY KZ (13:30-16:00 UTC) for potential short entry on retracement to 29,458-29,540."
+  },
+  "risks": [
+    {"event": "NY AM Session Open", "time": "13:30 UTC", "impact": "high"},
+    {"event": "Post-London drift", "time": "11:00-13:00 UTC", "impact": "medium"},
+    {"event": "29,343 SSL sweep", "time": "any", "impact": "high"}
+  ],
+  "recommendation": "WAIT. Bearish structure confirmed but Kill Zone not active. M15 bearish OB formed post-London (08:15 UTC) which is outside optimal KZ. Wait for NY AM KZ (13:30-16:00 UTC) for potential short entry on retracement to 29,458-29,540 (bearish FVG zone). If price breaks below 29,343 with displacement, setup invalidated (too late to enter). Target SSL at 29,235 (inversion CE) and 28,882 (D1 DR low)."
+}
