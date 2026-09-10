@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-09-10T18:40:00+08:00",
+  "symbol": "NAS100",
+  "data_source": "Carson MT5 (Pepperstone CFD) — D1 999 bars, H4 994 bars, M15 200 bars",
+  "current_price": 29349.3,
+  "as_of_ny": "2026-09-10 06:31 ET (pre-market)",
+  "bias": "bearish",
+  "confidence": 45,
+  "orb_score": 37,
+  "orb_note": "PROVISIONAL pre-market score (no ORB formed until 09:30 ET open). Breakdown: HTF bias 8/25 (compressive premium, no clean trend, no overnight sweep, flat open); VWAP 5/15 (no VWAP feed, price below daily open as weak proxy); Volume 5/20 (on pace, no RVOL possible pre-market); Candle/Timing 3/15 (no breakout close, KZ inactive); ICT confluence 8/15 (bullish SMT at lows contradicts, but London Judas down + price inside FVG context); Range width 8/10 (overnight 148pts = 0.50%, optimal).",
+  "ict_profile": "Classic Tuesday High — midweek bearish continuation (weekly high Tue 29734.2, Wed/Thu declining)",
+  "entry": "TBD",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "29334.5 — overnight/session low (today)",
+      "29215.0 — bottom of unmitigated H4 bullish FVG (29215-29433); bearish trigger below",
+      "28953.9 — Sep 1 low",
+      "28882.4 / 28872.7 — Sep 2 / Aug 24 near-equal lows (SSL pool)"
+    ],
+    "resistance": [
+      "29482.5 — overnight high (London KZ push)",
+      "29607.6 — Sep 9 high (LH)",
+      "29734.2 — Sep 8 weekly high",
+      "29748.7 — Aug 28 high (LH cluster; BSL above)",
+      "30246.2 — Aug 17 swing high (D1 range high, major BSL)"
+    ]
+  },
+  "dealing_range": {
+    "d1": {"low": 27050.0, "high": 30246.2, "size": 3196.2, "low_date": "2026-07-29", "high_date": "2026-08-17", "price_position_pct": 71.9, "zone": "PREMIUM"},
+    "h4": {"low": 28882.4, "high": 29734.2, "size": 851.8, "low_date": "2026-09-02", "high_date": "2026-09-08", "price_position_pct": 54.8, "zone": "equilibrium"}
+  },
+  "d1_fibonacci": {
+    "0%": 30246.2, "25%": 29447.2, "38.2%": 29025.3, "50%": 28648.1,
+    "61.8%": 28270.9, "70.5%": 27992.9, "79%": 27721.2, "100%": 27050.0,
+    "convention": "ICT: 0%=range high, 100%=range low (retracement from high)"
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 compression in PREMIUM (71.9% of 3196pt range 27050→30246). LH chain intact at highs: 30246.2 (Aug 17) → 29748.7 (Aug 28) → 29734.2 (Sep 8) → 29607.6 (Sep 9). HL chain intact at lows: 28872.7 (Aug 24) → 28882.4 (Sep 2) → 29334.5 (today, in-progress). Three consecutive bearish D1 closes (Sep 8 -82.7, Sep 9 -75.7, Sep 10 live -80). Price below daily open. SMT: no divergence at highs (both LH); BULLISH SMT at lows (NAS100 HL vs US500 LL — NAS100 relative strength, both lows intact). 20-day avg volume 248K, today on pace.",
+    "l2_h4_context": "H4 bearish micro-structure: LH series since Sep 8 01:00 high (29734.2 → 29607.6 → 29482.5); last confirmed swing low 29307.5 (Sep 9 09:00 UTC). H4 dealing range 28882.4→29734.2 (852pts), price at 54.8% (equilibrium). Price currently INSIDE unmitigated H4 bullish FVG 29215-29433 (formed Sep 3 13:00 UTC) — standing on support while leaning short is poor ICT practice; below 29215 the bearish continuation activates. CRT: bearish displacement candle Sep 9 09:00 UTC (241pts, 72% body) defines the leg; no clean 2nd-candle containment since. Recent H4 ranges compressing (70-103pts vs ~240 avg) — coiling. No bearish FVGs on H4.",
+    "l3_m15_entry": "Kill Zone: NONE active at 06:31 ET (London KZ ended 05:00; NY AM KZ starts 08:30). Waiting for NY AM Kill Zone. Overnight (since 17:00 NY): opened 29429.3, London pushed to 29482.5 then sold to 29334.5 — Judas-style up-fake into premium, real move down. M15 mild compression (last range 21 vs 27.8 avg). No confirmed M15 OB yet. Session plan: watch NY AM reaction at 29334.5 (session low) / 29215 (FVG bottom) — hold + reclaim 29482.5 = bounce scenario toward 29607/29734; M15 close below 29215 = bearish continuation toward 28953/28882 SSL."
+  },
+  "smt_analysis": "Highs: NAS100 LH vs US500 LH — aligned, no SMT. Lows: NAS100 HL (28872.7→28882.4) vs US500 LL (7639.7→7610.2) — BULLISH SMT (NAS100 relative strength). Both lows intact since Sep 2 (no sweep below). This bullish SMT directly contradicts the bearish lean — a key reason confidence is capped at 45.",
+  "calendar_context": "ECB rate decision today (Sep 10, ~8:15 ET per skill notes — 25bp hike fully priced per Reuters poll); US CPI tomorrow (Sep 11) 08:30 ET. Event risk elevated into Thursday close / Friday open.",
+  "reasoning": "Bias BEARISH (lean, not conviction) at 45% confidence. Bearish case: premium position (71.9%) after clean LH rejection at 29734.2; three consecutive bearish daily closes; price below daily open; H4 lower-high series; London Judas up-fake then sell-off; Classic Tuesday High weekly profile tracks midweek decline. Bullish counter-evidence (why not higher conviction): D1 HL chain intact; BULLISH SMT at lows (NAS100 stronger than ES — verified both instruments); price sitting INSIDE unmitigated H4 bullish FVG 29215-29433. Structure-momentum conflict caps confidence per ICT rules. Conditional triggers: (1) M15/H1 close below 29215 → bearish continuation active, targets 28953.9 then 28882/28872 SSL pool; (2) hold FVG + reclaim 29482.5 → bearish setup invalidated for the session, bounce targets 29607.6 / 29734.2. No entry anticipated — waiting for NY AM Kill Zone (08:30-11:00 ET) to confirm. ORB provisional 37/100 (no-tr zone until open confirms)."
+}
