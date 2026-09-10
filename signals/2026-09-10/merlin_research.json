@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-10",
+  "timestamp": "2026-09-10T11:02:27.618582+00:00",
+  "summary": "Bearish bias after 3 consecutive D1 bearish candles (last 62% body). Price broke below D1 50% FIB (29315). H4 deep discount (10%) suggests short-term exhaustion. No M15 entry - wait for NY KZ.",
+  "bias": "Bearish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      29315,
+      29099,
+      28882
+    ],
+    "resistance": [
+      29493,
+      29570,
+      29749
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "Bearish. 3 consecutive D1 bearish candles. Structure mixed/consolidation. Price at 52.5% (barely premium) of DR 28882-29749. Last candle 62% body bearish = strong selling.",
+    "h4_context": "H4 DR 29308-29608. Price at 10% = deep discount. Bullish FVG overhead at 29570-29583 (resistance). Bearish momentum with 3 of last 4 H4 candles red.",
+    "m15_status": "No kill zone active (11:00 UTC). M15 range 29334-29466. No OB formation. No entry - wait for NY AM KZ (13:30-16:00 UTC)."
+  },
+  "risks": [
+    {
+      "event": "US CPI data (Aug)",
+      "time": "08:30 ET",
+      "impact": "high"
+    },
+    {
+      "event": "No M15 setup yet",
+      "time": "all session",
+      "impact": "medium"
+    }
+  ],
+  "recommendation": "WAIT. Bias bearish but no M15 entry. Wait for NY KZ (13:30 UTC). Watch for M15 bearish OB at H4 premium level (29493-29570) if price retraces. If price breaks below 29315 with displacement, short setup forms targeting 29099."
+}

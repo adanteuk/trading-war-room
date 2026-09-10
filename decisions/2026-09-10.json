@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-10",
+  "timestamp": "2026-09-10T11:03:55.517280+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bearish bias after 3 consecutive D1 bearish candles (last 62% body). Price broke below D1 50% FIB (29315). H4 deep discount (10%) suggests short-term exhaustion. No M15 entry - wait for NY KZ.",
+  "final_decision": "NO_GO",
+  "trade_params": {},
+  "reasoning": "TA confidence below GO threshold (conf=45 < 55, orb=37)",
+  "alfred_veto": false,
+  "veto_reason": ""
+}
