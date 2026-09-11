@@ -31,10 +31,21 @@ REPO_DIR = Path(r"C:/Users/hkvid/trading-war-room")
 DECISIONS_DIR = REPO_DIR / "decisions"
 SIGNALS_DIR = REPO_DIR / "signals"
 ORDER_KEY_FILE = Path(r"C:/Users/hkvid/zmq/.order_key")
-ALLOWED_IPS = {"192.168.11.173", "192.168.11.211"}  # Mac IPs (Merlin's IPs)
+# Merlin's Mac LAN IP (verified 2026-09-11 via ifconfig: en1 = 192.168.11.172).
+# NOTE: .173/.211 are Carson's own dual IPs — never whitelist those.
+ALLOWED_IPS = {"192.168.11.172"}
 VERIFIED_SYMBOLS = {"NAS100", "US500", "XAUUSD", "EURUSD", "GBPUSD", "USDJPY"}  # Carson §13
 MAX_LOT = 2.0
 MAX_RISK_PCT = 0.01  # 1%
+# $ value per 1.0 price-unit move per 1.0 lot (verify against broker specs on demo!)
+POINT_VALUE = {
+    "NAS100": 10.0,   # $10 per index point per lot
+    "US500": 10.0,    # verify — broker-dependent
+    "XAUUSD": 100.0,  # 100 oz/lot → $100 per $1 move
+    "EURUSD": 100000.0,  # 100k/lot → $100k per 1.0000 move; use price-delta directly
+    "GBPUSD": 100000.0,
+    "USDJPY": 100000.0,  # JPY quote: divide by USDJPY rate for $ — see check_risk
+}
 
 
 def load_order_key() -> str | None:
@@ -120,15 +131,22 @@ def check_sl(payload: dict) -> tuple[bool, str]:
 
 
 def check_risk(payload: dict, equity: float) -> tuple[bool, str]:
-    """Check 6: risk ≤ 1% equity."""
+    """Check 6: risk ≤ 1% equity — per-symbol point value."""
     entry = payload.get("entry", 0)
     sl = payload.get("sl", 0)
     lot = payload.get("lot", 0)
+    symbol = payload.get("symbol", "")
     if not (entry and sl and lot):
         return False, f"INVALID_RISK_PARAMS: entry={entry} sl={sl} lot={lot}"
-    sl_points = abs(entry - sl)
-    # NAS100 point value = $10 per point per lot (CFD)
-    risk_amount = lot * sl_points * 10.0
+    if symbol not in POINT_VALUE:
+        return False, f"SYMBOL_NOT_VERIFIED: {symbol} has no point-value mapping"
+    sl_distance = abs(entry - sl)
+    pv = POINT_VALUE[symbol]
+    risk_amount = lot * sl_distance * pv
+    # USDJPY caveat: contract is in JPY; exact $ risk = risk_amount / USDJPY rate.
+    # Conservative floor: divide by a high rate (150) so risk is never UNDERSTATED.
+    if symbol == "USDJPY":
+        risk_amount = risk_amount / 150.0
     risk_pct = risk_amount / equity if equity > 0 else 1.0
     if risk_pct > MAX_RISK_PCT:
         return False, f"RISK_EXCEEDS_1PCT: {risk_pct:.2%} > {MAX_RISK_PCT:.0%}"
