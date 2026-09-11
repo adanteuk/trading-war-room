@@ -1,0 +1,75 @@
+{
+  "agent_name": "Walker",
+  "role": "技術分析 (ICT & Romeo CRT Specialist)",
+  "machine": {
+    "type": "Mac",
+    "hostname": "ychendexunijiqi.local",
+    "ip": "192.168.64.12",
+    "hermes_profile": "default"
+  },
+  "hermes_version": "v0.21.1 (2026.9.7)",
+  "run_mode": ["cron", "gateway", "manual"],
+  "cron_jobs": [
+    "NAS100 Daily Bias (Mon-Fri 19:30 HKT)",
+    "Weekly Bias Accuracy Review (Sat 8am)"
+  ],
+  "trading_skills": {
+    "每次運行都用": [
+      {"name": "ict-methodology", "version": "1.0.0"},
+      {"name": "key-level-analysis", "version": "1.5.0"},
+      {"name": "carson-mt5-bridge", "version": "2.4.0"},
+      {"name": "regime-risk-filter", "version": "1.0.0"}
+    ],
+    "偶爾用": [
+      {"name": "tradingview-tools", "version": "1.0.0"},
+      {"name": "market-data-verification", "version": "1.0.0"},
+      {"name": "nas100-daily-bias-cfd", "version": "1.0.0"}
+    ],
+    "已失效": [
+      {"name": "alfred-mt5-bridge", "reason": "Migrated to Carson"},
+      {"name": "ml-trading-pipeline", "reason": "RL failed, regime detection only"}
+    ]
+  },
+  "data_sources": {
+    "carson_mt5_bridge": {
+      "status": "ONLINE",
+      "endpoint": "192.168.11.173:5555",
+      "availability": "~95%",
+      "last_success": "2026-09-10 19:55 HKT"
+    },
+    "tradingview_mcp": {
+      "status": "ONLINE",
+      "tools": 84,
+      "availability": "~98%",
+      "last_success": "2026-09-10 19:55 HKT"
+    }
+  },
+  "last_output": {
+    "report_type": "NAS100_Daily_Bias",
+    "date": "2026-09-10",
+    "bias": "Bearish",
+    "confidence_pct": 55,
+    "current_price": 29276.8,
+    "ml_regime": "RANGE",
+    "regime_confidence_pct": 56.3
+  },
+  "veto_rules": {
+    "orb_below_40": true,
+    "high_vol_regime_gt_70": true,
+    "fomc_blackout_15min": true,
+    "mt5_offline": true,
+    "d1_structure_ambiguous": true,
+    "price_extreme_position": true
+  },
+  "schedule": {
+    "cron_time": "19:30 HKT",
+    "runtime_minutes": 3,
+    "latest_delivery": "20:00 HKT"
+  },
+  "should_be_scripted": [
+    "Fibonacci calculation",
+    "ORB veto check",
+    "ML regime risk filter",
+    "Key level clustering"
+  ]
+}
