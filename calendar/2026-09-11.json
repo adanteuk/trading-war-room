@@ -1,0 +1,82 @@
+{
+  "hkt_date": "2026-09-11",
+  "fetched_at": "2026-09-11T06:16:10.314264+00:00",
+  "sources": [
+    "2026-09-10:investing.com",
+    "2026-09-11:investing.com"
+  ],
+  "event_count": 10,
+  "times_available": false,
+  "events": [
+    {
+      "utc_date": "2026-09-10",
+      "currency": "USD",
+      "impact": "high",
+      "name": "CPI (MoM) (Aug)",
+      "time_site": null
+    },
+    {
+      "utc_date": "2026-09-10",
+      "currency": "USD",
+      "impact": "high",
+      "name": "CPI (YoY) (Aug)",
+      "time_site": null
+    },
+    {
+      "utc_date": "2026-09-10",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Core CPI (MoM) (Aug)",
+      "time_site": null
+    },
+    {
+      "utc_date": "2026-09-10",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Core CPI (YoY) (Aug)",
+      "time_site": null
+    },
+    {
+      "utc_date": "2026-09-10",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Core CPI Index (Aug)",
+      "time_site": null
+    },
+    {
+      "utc_date": "2026-09-11",
+      "currency": "USD",
+      "impact": "high",
+      "name": "CPI (MoM) (Aug)",
+      "time_site": null
+    },
+    {
+      "utc_date": "2026-09-11",
+      "currency": "USD",
+      "impact": "high",
+      "name": "CPI (YoY) (Aug)",
+      "time_site": null
+    },
+    {
+      "utc_date": "2026-09-11",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Core CPI (MoM) (Aug)",
+      "time_site": null
+    },
+    {
+      "utc_date": "2026-09-11",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Core CPI (YoY) (Aug)",
+      "time_site": null
+    },
+    {
+      "utc_date": "2026-09-11",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Core CPI Index (Aug)",
+      "time_site": null
+    }
+  ]
+}

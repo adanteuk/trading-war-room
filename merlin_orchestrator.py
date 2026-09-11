@@ -662,8 +662,16 @@ def main():
     else:
         print("  ⚠️ Merlin research file not found")
 
-    # ── v3 Stage 4+5: deterministic gates (BEFORE decision matrix) ──
-    print(f"\n[4/8] Running deterministic gates (quant → compliance)...")
+    # ── v3 Stage 4+5: signal contract validation, then deterministic gates ──
+    print(f"\n[4/8] Validating signal contracts...")
+    vr = subprocess.run([str(VENV_PYTHON), str(REPO_DIR / "validate_signals.py"),
+                         "--date", date_str], capture_output=True, text=True, timeout=60)
+    print("  " + vr.stdout.replace("\n", "\n  ").rstrip())
+    if vr.returncode == 3:
+        print("  ⚠️ Contract failures detected — gates will likely veto "
+              "(validation report saved)")
+
+    print(f"  Running deterministic gates (quant → compliance)...")
     gates = run_all_gates(date_str)
     for name, result in (("quant", gates["quant"]), ("compliance", gates["compliance"])):
         w = result.get("warnings") or []
