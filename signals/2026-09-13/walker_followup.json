@@ -1,0 +1,163 @@
+{
+  "agent": "Walker",
+  "timestamp": "2026-09-13T12:00:00+08:00",
+  "followup_answers": {
+    "1_regime_filter": {
+      "internal_mechanism": {
+        "features": "25 standardized features including MA(5/20/50), RSI-14, ATR-14, Bollinger %B, volume ratio, returns (1/5/10/20-bar), volatility-20, skew-20, kurt-20, time features (hour/day/session), ICT swing distances, dealing range position",
+        "model": "Per-asset Transformer (64-bar sequence input, 3-layer encoder, 4-head attention, softmax output)",
+        "thresholds": {
+          "TREND": "ADX >= 25 (strong directional movement)",
+          "RANGE": "ADX <= 20 (weak directional movement)",
+          "HIGH_VOL": "ATR percentile >= 0.80 (top 20% volatility)"
+        },
+        "accuracy": "77-80% validation accuracy across 5 assets (NAS100, GER40, XAUUSD, BTCUSD, US500)"
+      },
+      "is_deterministic_script": true,
+      "script_path": "~/trading-ml/scripts/walker_regime_filter.py",
+      "can_merlin_run_directly": "Yes, if Merlin has Python access and the trained models at ~/trading-ml/models/regime_transformer_{SYMBOL}.pt",
+      "required_dependencies": ["Python 3.11", "torch", "numpy", "pandas", "zmq"],
+      "can_be_required_field": true,
+      "json_schema": {
+        "ml_regime": "TREND | RANGE | HIGH_VOL",
+        "regime_confidence": "float 0.0-1.0 (softmax probability of argmax class)",
+        "regime_probs": {
+          "TREND": "float",
+          "RANGE": "float",
+          "HIGH_VOL": "float"
+        }
+      }
+    },
+    "2_orb_scoring": {
+      "current_methodology": "Using orb-bias-filter skill (6-category checklist, 0-100 points)",
+      "scoring_categories": {
+        "pre_market_htf_bias": "25 pts (D1 trend + overnight sweep + gap direction)",
+        "vwap_alignment": "15 pts (price vs VWAP + slope)",
+        "volume_confirmation": "20 pts (RVOL on breakout + CVD)",
+        "candle_close_timing": "15 pts (full close outside range + body strength + Kill Zone)",
+        "ict_crt_confluence": "15 pts (SMT divergence + OB/FVG clear path + Judas swing)",
+        "range_width_volatility": "10 pts (0.3%-1.5% of price optimal)"
+      },
+      "recent_output_analysis": {
+        "date": "2026-09-10",
+        "orb_score": 58,
+        "interpretation": "🟠 Low conviction (40-59 range) — watch only or scale-in",
+        "scoring_breakdown": "Not explicitly shown in output, but score=58 suggests moderate pre-market bias + weak volume confirmation"
+      },
+      "scoring_is_llm_judgment": true,
+      "notes": "ORB score is currently LLM-judged based on the checklist. No deterministic script exists yet. The score is included in walker_ta.json output but the detailed breakdown is not machine-readable."
+    },
+    "3_macro_analysis_scope": {
+      "does_walker_do_macro": "Limited — only FOMC blackout windows and economic calendar awareness",
+      "current_macro_fields": {
+        "calendar_context": "Not explicitly output in walker_ta.json",
+        "event_awareness": "Mentioned in narrative (e.g., 'FOMC blackout week Sep 5-17')",
+        "narrative_analysis": "No — Walker focuses on price action, structure, and key levels"
+      },
+      "scope_boundary": {
+        "walker_responsibility": "Technical analysis (ICT structure, key levels, regime, ORB, SMT divergence)",
+        "walker_not_responsible_for": [
+          "Bond yields analysis",
+          "DXY correlation analysis",
+          "COT positioning data",
+          "Central bank policy interpretation",
+          "Macro narrative construction"
+        ],
+        "walker_includes_when_relevant": [
+          "FOMC blackout windows (risk management)",
+          "Major economic events (CPI, NFP) if they affect volatility expectations"
+        ]
+      },
+      "recent_example": {
+        "date": "2026-09-10",
+        "macro_mention": "FOMC blackout week noted in risk section, but no yield/DXY/macro analysis",
+        "verdict": "Walker is NOT doing macro analysis beyond event awareness. Merlin should own macro."
+      }
+    },
+    "4_timing": {
+      "current_schedule": "19:30 HKT cron, typically delivers by 19:45-20:00 HKT",
+      "can_deliver_by_1845": false,
+      "bottleneck_analysis": {
+        "carson_data_availability": "Not a bottleneck — Carson MT5 bridge is available 24/7",
+        "analysis_depth": "3-layer ICT analysis (D1/H4/M15) takes ~5-10 minutes",
+        "verification_subagent": "Major bottleneck — verification subagent takes 3-5 minutes (spawns delegate_task, fact-checks all numerical data)",
+        "total_runtime": "~15-20 minutes from cron trigger to delivery"
+      },
+      "proposed_solution": {
+        "option_a": {
+          "description": "Walker moves to 18:30 HKT, Merlin stays at 19:00 HKT",
+          "feasibility": "Feasible — Walker can deliver by 18:45-19:00",
+          "tradeoff": "Walker runs earlier, may miss some late-session price action"
+        },
+        "option_b": {
+          "description": "Walker stays at 19:30 HKT, Merlin moves to 20:05 HKT",
+          "feasibility": "Feasible — gives Walker 35 minutes to deliver",
+          "tradeoff": "Merlin runs later, compresses the overall pipeline timeline"
+        },
+        "recommendation": "Option A — Walker at 18:30, Merlin at 19:00. This gives Walker enough time without pushing Merlin too late."
+      }
+    },
+    "5_conditional_triggers": {
+      "willing_to_output_machine_readable": true,
+      "recent_example_from_sep_10": {
+        "narrative_format": "If M15/H1 close below 29215 → bearish active, targets 28953.9, 28882.0. If reclaim above 29482.5 → bearish invalidated, targets 29607.6, 29734.2",
+        "proposed_json_schema": [
+          {
+            "condition": "close_below",
+            "timeframe": "M15/H1",
+            "level": 29215.0,
+            "action": "bearish_active",
+            "targets": [28953.9, 28882.0],
+            "invalidates": null
+          },
+          {
+            "condition": "reclaim_above",
+            "timeframe": "H1",
+            "level": 29482.5,
+            "action": "bearish_invalidated",
+            "targets": [29607.6, 29734.2],
+            "invalidates": "bearish_active"
+          }
+        ]
+      },
+      "implementation_notes": {
+        "precision": "All levels will be exact floats (no rounding to integers)",
+        "timeframe_clarity": "Will specify M15/H1/H4/D1 explicitly",
+        "trigger_count": "Typically 2-4 conditional triggers per analysis",
+        "can_compliance_consume": true,
+        "can_carson_consume": true
+      }
+    },
+    "6_veto_list": {
+      "current_vetos": [
+        {"id": 1, "rule": "ORB < 40", "type": "technical", "keep_with_walker": true},
+        {"id": 2, "rule": "ML regime HIGH_VOL confidence > 70%", "type": "technical", "keep_with_walker": true},
+        {"id": 3, "rule": "FOMC blackout < 15 min", "type": "deterministic", "move_to_compliance": true},
+        {"id": 4, "rule": "MT5 bridge offline", "type": "deterministic", "move_to_compliance": true},
+        {"id": 5, "rule": "D1 structure ambiguous (no clear HH+HL or LH+LL)", "type": "technical", "keep_with_walker": true},
+        {"id": 6, "rule": "Price at extreme discount/premium (>90% or <10% of range)", "type": "technical", "keep_with_walker": true}
+      ],
+      "agreement_to_move_deterministic_rules": true,
+      "proposed_compliance_gate_rules": {
+        "fomc_blackout_check": "Python script checks FOMC calendar, vetoes if within 15 min of event",
+        "mt5_bridge_health_check": "Python script pings Carson MT5 bridge, vetoes if unreachable"
+      },
+      "walker_keeps": [
+        "ORB < 40 (requires LLM judgment of ORB setup quality)",
+        "ML regime HIGH_VOL > 70% (requires Transformer inference)",
+        "D1 structure ambiguous (requires LLM judgment of HH/HL/LH/LL clarity)",
+        "Price at extreme discount/premium (requires LLM judgment of dealing range significance)"
+      ],
+      "additional_vetos_to_add": null,
+      "veto_rationale": "Technical vetos require LLM judgment of market context. Deterministic vetos (FOMC, MT5) can be enforced by compliance_gate.py without LLM involvement."
+    }
+  },
+  "summary": {
+    "regime_filter": "Deterministic script available, can be required field in walker_ta.json",
+    "orb_scoring": "LLM-judged using orb-bias-filter checklist, no deterministic script yet",
+    "macro_scope": "Walker does NOT do macro analysis beyond event awareness — Merlin should own macro",
+    "timing": "Cannot deliver by 18:45 with current setup. Recommend Walker moves to 18:30, Merlin stays at 19:00",
+    "conditional_triggers": "Willing to output machine-readable JSON with exact levels and timeframes",
+    "veto_list": "Agree to move FOMC blackout and MT5 offline checks to compliance_gate.py"
+  }
+}
