@@ -48,6 +48,19 @@ DISCORD_CHANNELS = {
 WAIT_FOR_INPUTS = 30  # 30 sec max wait (temporarily reduced)
 CHECK_INTERVAL = 60     # Check every 60 seconds
 
+# ─── v3 Five-Stage Pipeline config (AC decisions 2026-09-14) ─────────────
+VENV_PYTHON = Path.home() / ".hermes/hermes-agent/venv/bin/python3"
+QUANT_GATE = REPO_DIR / "quant_gate.py"
+COMPLIANCE_GATE = REPO_DIR / "compliance_gate.py"
+CALENDAR_FILE = REPO_DIR / "calendar" / f"{datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d')}.json"
+
+PAPER_MODE = True          # True = log payloads, never send orders (flip after Phase 5 sign-off)
+RISK_PER_TRADE = 0.005     # 0.5% of equity per trade (sizing target)
+CARSON_MAX_LOT = 2.0       # Carson-side hard cap (AC decision: 1% risk cap / 2.0 lots)
+MAX_RISK_PCT = 0.01        # 1% — Carson-side reject threshold, mirrored here
+POINT_VALUE_NAS100 = 10.0  # $ per point per lot (NAS100 CFD)
+SYMBOL = "NAS100"
+
 # US Market Holidays (2026)
 US_HOLIDAYS = [
     "2026-01-01", "2026-01-19", "2026-02-16", "2026-04-03",
@@ -78,6 +91,127 @@ def git_push(message: str):
     subprocess.run(["git", "add", "."], capture_output=True)
     subprocess.run(["git", "commit", "-m", message], capture_output=True)
     subprocess.run(["git", "push"], capture_output=True)
+
+
+# ─── v3: deterministic gates (Stage 4 + 5) ────────────────────────────────
+
+def run_gate(gate_path: Path, args: list, label: str, date_str: str = "") -> dict:
+    """Run a deterministic gate script via the venv python (zmq ABI requirement).
+    Returns gate result dict; missing/broken gate → VETO (fail-safe)."""
+    if not gate_path.exists():
+        return {"gate": label, "status": "VETO",
+                "vetoes": [f"GATE_MISSING: {gate_path.name} not found"], "warnings": []}
+    cmd = [str(VENV_PYTHON), str(gate_path)] + args
+    try:
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+        out_file = SIGNALS_DIR / (date_str or date_str_safe()) / f"{label}_gate.json"
+        if out_file.exists():
+            with open(out_file) as f:
+                return json.load(f)
+        # Gate didn't write its output file — parse stdout as fallback
+        return json.loads(r.stdout)
+    except subprocess.TimeoutExpired:
+        return {"gate": label, "status": "VETO",
+                "vetoes": [f"GATE_TIMEOUT: {label} exceeded 120s"], "warnings": []}
+    except (json.JSONDecodeError, OSError) as e:
+        return {"gate": label, "status": "VETO",
+                "vetoes": [f"GATE_ERROR: {label} failed: {e}"], "warnings": []}
+
+
+def date_str_safe() -> str:
+    return datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d")
+
+
+def run_all_gates(date_str: str) -> dict:
+    """Run quant → compliance gates. Returns combined gate summary."""
+    print("  [gates] Running quant_gate.py...")
+    quant = run_gate(QUANT_GATE, ["--date", date_str], "quant", date_str)
+
+    print("  [gates] Running compliance_gate.py...")
+    cg_args = ["--date", date_str, "--symbol", SYMBOL]
+    if CALENDAR_FILE.exists():
+        cg_args += ["--calendar", str(CALENDAR_FILE)]
+    else:
+        print(f"  [gates] ⚠️ No calendar file at {CALENDAR_FILE} — "
+              f"news blackout check will be skipped (warning, not silent)")
+    compliance = run_gate(COMPLIANCE_GATE, cg_args, "compliance", date_str)
+
+    gate_vetoes = []
+    if quant.get("status") == "VETO":
+        gate_vetoes.append(("quant_gate", quant.get("vetoes", [])))
+    if compliance.get("status") == "VETO":
+        gate_vetoes.append(("compliance_gate", compliance.get("vetoes", [])))
+
+    return {
+        "quant": quant,
+        "compliance": compliance,
+        "any_veto": bool(gate_vetoes),
+        "veto_sources": gate_vetoes,
+    }
+
+
+def compute_lot_size(alfred_data: dict, sl: float, entry: float) -> tuple:
+    """Deterministic position sizing (replaces Alfred's LLM prompt calculation).
+    lot = (equity × risk%) / (SL points × point value), capped at Carson max.
+    Returns (lot: float|None, detail: dict)."""
+    equity = 0.0
+    if alfred_data:
+        for acct in (alfred_data.get("accounts") or {}).values():
+            if isinstance(acct, dict) and isinstance(acct.get("equity"), (int, float)):
+                equity = max(equity, acct["equity"])
+    if equity <= 0:
+        return None, {"error": "no equity available from alfred_risk.json — sizing refused"}
+    if not isinstance(sl, (int, float)) or not isinstance(entry, (int, float)) \
+            or sl <= 0 or entry <= 0 or sl == entry:
+        return None, {"error": f"invalid entry/SL for sizing (entry={entry}, sl={sl})"}
+    sl_points = abs(entry - sl)
+    risk_amount = equity * RISK_PER_TRADE
+    lot = round(risk_amount / (sl_points * POINT_VALUE_NAS100), 2)
+    capped = False
+    if lot > CARSON_MAX_LOT:
+        lot, capped = CARSON_MAX_LOT, True
+    # Risk sanity: if capped lot still risks > 1%, refuse (Carson would reject)
+    actual_risk_pct = lot * sl_points * POINT_VALUE_NAS100 / equity
+    if actual_risk_pct > MAX_RISK_PCT:
+        return None, {"error": f"even capped lot risks {actual_risk_pct:.2%} > {MAX_RISK_PCT:.0%} — refuse",
+                      "lot_capped": True, "computed_lot": lot}
+    return lot, {
+        "equity": equity, "risk_pct_target": RISK_PER_TRADE,
+        "risk_amount": round(risk_amount, 2), "sl_points": round(sl_points, 1),
+        "computed_lot": lot, "capped_at_max": capped,
+        "actual_risk_pct": round(actual_risk_pct, 4),
+    }
+
+
+def build_execution_payload(decision: dict, alfred_data: dict) -> dict | None:
+    """Stage 7: build execution payload from an approved decision.
+    Returns None if parameters are insufficient (paper-mode logs the reason)."""
+    tp_ = decision.get("trade_params") or {}
+    entry, sl = tp_.get("entry"), tp_.get("stop_loss")
+    if not isinstance(entry, (int, float)) or not isinstance(sl, (int, float)):
+        return None
+    lot, sizing = compute_lot_size(alfred_data, sl, entry)
+    if lot is None:
+        return {"payload_error": sizing}
+    now = datetime.now(timezone.utc)
+    return {
+        "decision_id": decision.get("decision_id"),
+        "decision_file": f"decisions/{decision.get('date')}.json",
+        "symbol": SYMBOL,
+        "direction": tp_.get("direction", "").lower(),
+        "entry_type": "limit",
+        "entry": float(entry),
+        "sl": float(sl),
+        "tp": float(tp_["take_profit"]) if isinstance(tp_.get("take_profit"), (int, float)) else None,
+        "lot": lot,
+        "risk_pct": sizing.get("actual_risk_pct"),
+        "risk_amount": sizing.get("risk_amount"),
+        "sizing_detail": sizing,
+        "valid_until": (now + timedelta(hours=4)).isoformat(),
+        "issued_by": "merlin_orchestrator",
+        "paper_mode": PAPER_MODE,
+        "gates": decision.get("gates_summary"),
+    }
 
 
 def check_input_ready(date_str: str) -> dict:
@@ -517,7 +651,7 @@ def main():
         print(f"  Alfred: {'✅' if status['alfred'] else '❌'}")
 
     # Load research context (Merlin already has this from own analysis)
-    print("\n[3/7] Loading Merlin's research thesis...")
+    print("\n[3/8] Loading Merlin's research thesis...")
     # Merlin should have already written their research to the signals dir
     merlin_file = SIGNALS_DIR / date_str / "merlin_research.json"
     merlin_data = None
@@ -528,9 +662,39 @@ def main():
     else:
         print("  ⚠️ Merlin research file not found")
 
+    # ── v3 Stage 4+5: deterministic gates (BEFORE decision matrix) ──
+    print(f"\n[4/8] Running deterministic gates (quant → compliance)...")
+    gates = run_all_gates(date_str)
+    for name, result in (("quant", gates["quant"]), ("compliance", gates["compliance"])):
+        w = result.get("warnings") or []
+        print(f"  {name}: {result.get('status')}"
+              + (f" | warnings: {len(w)}" if w else ""))
+        for v in result.get("vetoes", []):
+            print(f"    🚫 {v}")
+
     # Calculate final decision
-    print("\n[4/7] Synthesizing final decision...")
+    print(f"\n[5/8] Synthesizing final decision...")
     decision = calculate_final_decision(status["walker_data"], status["alfred_data"])
+
+    # ── v3: gate vetoes override everything (LLMs propose, scripts dispose) ──
+    decision["decision_id"] = f"{date_str}-{SYMBOL}-1"
+    decision["gates_summary"] = {
+        "quant": gates["quant"].get("status"),
+        "compliance": gates["compliance"].get("status"),
+        "alfred": (status["alfred_data"] or {}).get("go_no_go", "NO_INPUT")
+                  if status["alfred_data"] else "NO_INPUT",
+    }
+    if gates["any_veto"]:
+        reasons = "; ".join(f"{src}: {'; '.join(vlist)}"
+                            for src, vlist in gates["veto_sources"])
+        decision["final_decision"] = "NO_GO — GATE VETO"
+        decision["veto_source"] = [s for s, _ in gates["veto_sources"]]
+        decision["gate_vetoes"] = gates["veto_sources"]
+        prev = decision.get("reasoning", "")
+        decision["reasoning"] = (
+            f"DETERMINISTIC GATE VETO (overrides all LLM analysis): {reasons}"
+            + (f"\nPrior reasoning: {prev}" if prev else ""))
+        print(f"  🚫 Gate veto → forced NO_GO")
 
     # Add Merlin's thesis
     if merlin_data:
@@ -547,7 +711,7 @@ def main():
             print(f"  {k}: {v}")
 
     # Generate debate messages for Discord
-    print("\n[5/7] Generating debate messages for Discord...")
+    print(f"\n[6/8] Generating debate messages for Discord...")
     debate_messages = run_debate_rounds(status["walker_data"], status["alfred_data"], decision, merlin_data)
 
     # Generate local transcript for repo
@@ -557,23 +721,53 @@ def main():
         transcript += f"## #{channel}\n\n```txt\n{msg}\n```\n\n"
 
     # Save everything
-    print("\n[6/7] Saving to shared repo...")
+    print("\n[7/8] Saving to shared repo...")
     save_all(decision, transcript, date_str)
 
+    # ── v3 Stage 7: execution payload (paper-mode: log only, never send) ──
+    execution_payload = None
+    if decision["final_decision"] in ("GO", "CONDITIONAL_GO") and not gates["any_veto"]:
+        print("  Building execution payload (Stage 7)...")
+        execution_payload = build_execution_payload(decision, status["alfred_data"])
+        if execution_payload and "payload_error" not in execution_payload:
+            payload_file = SIGNALS_DIR / date_str / "execution_payload.json"
+            with open(payload_file, "w") as f:
+                json.dump(execution_payload, f, indent=2, ensure_ascii=False)
+            mode = "PAPER (logged, NOT sent)" if PAPER_MODE else "LIVE"
+            print(f"  📋 Payload saved: {payload_file.name} — lot={execution_payload['lot']} "
+                  f"risk={execution_payload['risk_pct']}% — mode: {mode}")
+            if PAPER_MODE:
+                post_to_discord("ops",
+                    f"📋 **PAPER TRADE** {decision['decision_id']}: "
+                    f"{execution_payload['direction'].upper()} {SYMBOL} @ {execution_payload['entry']} "
+                    f"SL {execution_payload['sl']} TP {execution_payload['tp']} "
+                    f"lot {execution_payload['lot']} (risk {execution_payload['risk_pct']}%) — "
+                    f"logged only, PAPER_MODE active")
+        else:
+            err = (execution_payload or {}).get("payload_error",
+                   {"error": "entry/SL not numeric in trade_params"})
+            print(f"  ⚠️ Payload NOT built: {err.get('error')}")
+            decision["payload_error"] = err
+    elif gates["any_veto"]:
+        print("  ⏭️ Gate veto — no payload (trade terminated)")
+
     # Post to Discord channels with 2-second delays to avoid rate limits
-    print("\n[7/7] Posting to Discord channels...")
+    print(f"\n[8/8] Posting to Discord channels...")
     for i, (channel, message) in enumerate(debate_messages):
         post_to_discord(channel, message)
         if i < len(debate_messages) - 1:
             time.sleep(2)
 
     # Commit and push
-    git_push(f"Merlin: Decision for {date_str} — {decision['final_decision']}")
+    git_push(f"Merlin: Decision for {date_str} — {decision['final_decision']} "
+             f"[gates: q={decision['gates_summary']['quant']}, c={decision['gates_summary']['compliance']}]")
 
     print(f"\n✅ Orchestrator complete.")
     print(f"{'='*50}")
     if decision["final_decision"] == "GO":
         print(f"🎯 GO — {decision['trade_params'].get('direction', 'N/A')} NAS100")
+    elif "GATE VETO" in decision["final_decision"]:
+        print(f"🚧 GATE VETO — {[s for s, _ in decision.get('gate_vetoes', [])]}")
     elif "VETO" in decision["final_decision"]:
         print(f"🛑 VETOED BY ALFRED — {decision.get('veto_reason', 'N/A')}")
     else:
