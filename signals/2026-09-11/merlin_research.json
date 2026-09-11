@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-11",
+  "timestamp": "2026-09-11T19:10:00+08:00",
+  "summary": "Neutral. D1 LH/LL compression at equilibrium (47.3% of 28,882-29,734 range) vs Friday equal-low purge-and-reclaim. Price pinned inside bearish H4 FVG (29,249-29,380, CE 29,314) — decision zone. CPI 08:30 NY decides direction.",
+  "bias": "Neutral",
+  "confidence": 45,
+  "key_levels": {
+    "support": [
+      "29,265.0 (bullish H4 FVG top — tapped & held Fri)",
+      "29,147.5 (bullish H4 FVG bottom)",
+      "29,017.9-29,018.2 (Thu/Fri equal lows — SSL purged Fri)",
+      "28,882.4 (Sep 2 swing low / SMT anchor)"
+    ],
+    "resistance": [
+      "29,314.4 (bearish H4 FVG CE — price inside gap)",
+      "29,376.1 (50% retrace of downswing)",
+      "29,482.5 (Thu LH)",
+      "29,607.6 (Wed LH)",
+      "29,734.2 (Sep 8 swing high)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "L1 Neutral-Medium: LH sequence 29,749->29,734 but HL intact 28,873->28,882; bearish DR 28,882-29,734, price 47.3% = equilibrium/discount edge. Fri candle reclaiming above open. Control: Neutral.",
+    "h4_context": "L2: H4 bearish LH structure; price INSIDE bearish FVG 29,249.1-29,379.7 testing CE 29,314.4. Bullish FVG 29,147.5-29,265.0 below exact-tapped Fri 10:00Z and held. CRT: Fri purged equal-low CRT low, trading back through Thu range = purge-and-reclaim.",
+    "m15_status": "L3 NO VALID ENTRY: no KZ active (NY AM opens 08:30 NY / 20:30 HKT); M15 coiling 29,265-29,316 under bearish FVG CE; no OB confirmed — requires CPI displacement. Data source: MT5 live (OK)."
+  },
+  "risks": [
+    {"event": "US CPI 08:30 NY (20:30 HKT)", "time": "08:30 ET", "impact": "high"},
+    {"event": "FOMC Sep 15-16 next week", "time": "Sep 16 14:00 ET", "impact": "medium"},
+    {"event": "Friday weekend gap risk", "time": "close", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — CPI in 90 min, price mid-FVG decision zone, Walker ORB 36 (<40 veto line). Reassess after CPI displacement: accept above 29,376 targets 29,482/29,608; rejection below 29,249 targets 29,148/29,018.",
+  "walker_status": "received",
+  "alfred_status": "pending",
+  "mt5_status": "online via 192.168.11.173",
+  "data_source": "Alfred MT5 ZMQ (D1 200, H4 500, M15 200 bars) + daily_bias.json history + Walker TA"
+}

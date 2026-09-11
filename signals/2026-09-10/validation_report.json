@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-10",
+  "timestamp": "2026-09-11T06:09:15.408514+00:00",
+  "files": {
+    "merlin_research.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [],
+      "warns": [],
+      "oks": [
+        "merlin: contract ok"
+      ]
+    },
+    "walker_ta.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [],
+      "warns": [
+        "walker: orb_breakdown missing while orb_score>0 (warning 1 of 3 before quant-gate veto)",
+        "walker: ml_regime missing (contract-mandatory from Phase 2)",
+        "walker: conditional_triggers missing (contract-mandatory)"
+      ],
+      "oks": []
+    },
+    "alfred_risk.json": {
+      "exists": false,
+      "status": "MISSING",
+      "fails": [],
+      "warns": [],
+      "oks": []
+    }
+  },
+  "totals": {
+    "fails": 0,
+    "warns": 3
+  }
+}

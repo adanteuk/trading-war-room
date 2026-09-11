@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-11",
+  "timestamp": "2026-09-11T11:06:50.816275+00:00",
+  "files": {
+    "merlin_research.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [],
+      "warns": [
+        "merlin: summary 225 chars > 200 (Discord 2000-char risk — v2.4 lesson)"
+      ],
+      "oks": [
+        "merlin: contract ok"
+      ]
+    },
+    "walker_ta.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [
+        "walker: entry='TBD — do not anticipate; requires bearish-FVG rejection or CPI displacement confirmation' must be exact float or 'TBD'/omitted"
+      ],
+      "warns": [
+        "walker: orb_breakdown invalid categories: pre_market_htf_bias=None, vwap_alignment=None, volume_confirmation=None, candle_close_timing=None, ict_crt_confluence=None, range_width_volatility=None",
+        "walker: ml_regime missing (contract-mandatory from Phase 2)",
+        "walker: conditional_triggers missing (contract-mandatory)"
+      ],
+      "oks": []
+    },
+    "alfred_risk.json": {
+      "exists": false,
+      "status": "MISSING",
+      "fails": [],
+      "warns": [],
+      "oks": []
+    }
+  },
+  "totals": {
+    "fails": 1,
+    "warns": 4
+  }
+}

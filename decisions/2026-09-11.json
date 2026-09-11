@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-11",
+  "timestamp": "2026-09-11T11:06:50.930092+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "neutral",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Neutral. D1 LH/LL compression at equilibrium (47.3% of 28,882-29,734 range) vs Friday equal-low purge-and-reclaim. Price pinned inside bearish H4 FVG (29,249-29,380, CE 29,314) \u2014 decision zone. CPI 08:30 NY decides direction.",
+  "final_decision": "NO_GO \u2014 GATE VETO",
+  "trade_params": {},
+  "reasoning": "DETERMINISTIC GATE VETO (overrides all LLM analysis): quant_gate: INPUT_FAILURE: missing file: alfred_risk.json; compliance_gate: KILL_ZONE: outside western kill zones\nPrior reasoning: TA confidence too low (conf=40, orb=36) \u2014 both below 45",
+  "alfred_veto": false,
+  "veto_reason": "",
+  "decision_id": "2026-09-11-NAS100-1",
+  "gates_summary": {
+    "quant": "VETO",
+    "compliance": "VETO",
+    "alfred": "NO_INPUT"
+  },
+  "veto_source": [
+    "quant_gate",
+    "compliance_gate"
+  ],
+  "gate_vetoes": [
+    [
+      "quant_gate",
+      [
+        "INPUT_FAILURE: missing file: alfred_risk.json"
+      ]
+    ],
+    [
+      "compliance_gate",
+      [
+        "KILL_ZONE: outside western kill zones"
+      ]
+    ]
+  ]
+}
