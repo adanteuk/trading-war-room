@@ -1,0 +1,81 @@
+---
+config:
+  theme: hand-drawn
+  themeVariables:
+    primaryColor: "#e1f5fe"
+    primaryTextColor: "#01579b"
+    primaryBorderColor: "#0288d1"
+    lineColor: "#546e7a"
+    secondaryColor: "#fff3e0"
+    tertiaryColor: "#e8f5e9"
+---
+flowchart TD
+    subgraph TRIGGERS["⏰ Triggers"]
+        CRON["Cron 19:00 HKT<br/>Mon-Fri"]
+        WEBHOOK["TV Webhook<br/>tv-monday-range"]
+        MANUAL["Manual request"]
+    end
+
+    subgraph MAC1["🖥 MAC — Analysis (no trade credentials)"]
+        MERLIN["① MERLIN — Research<br/>merlin_research.json<br/>Macro thesis · ICT profile<br/>Event filter · Control check"]
+        WALKER["② WALKER — Stage 1.5<br/>walker_ta.json<br/>TA · ORB + breakdown<br/>ml_regime · conditional_triggers"]
+        QG["④ QUANT_GATE.PY<br/>deterministic<br/>sample ≥5 · FB ≤60%<br/>range ≤2×ATR · ORB arithmetic"]
+        CG["⑤ COMPLIANCE_GATE.PY<br/>deterministic<br/>news ±30min · kill zone<br/>loss caps · cooldown · Carson ping"]
+        ORCH["⑥ ORCHESTRATOR<br/>merlin_orchestrator.py<br/>GO ≥75 / COND 60-74 / NO_GO<br/>lot = equity×0.5% ÷ SL"]
+    end
+
+    subgraph WIN["🖥 WINDOWS — Data + Execution"]
+        ALFRED["③ ALFRED (WSL2)<br/>alfred_risk.json<br/>FTMO account state<br/>veto flags · stats"]
+        CARSONV["⚙ CARSON — ZMQ v2.4<br/>MT5_server.py :5555<br/>read-only today"]
+    end
+
+    subgraph EXEC["🔒 Stage 5+8 — Execution (planned, gated)"]
+        PAYLOAD["⑦ Execution payload<br/>decision_id · symbol · direction<br/>entry/SL/TP · lot · valid_until"]
+        CARSONX["⑧ CARSON order action<br/>whitelist + API key<br/>decision_id = GO check<br/>1% cap · SL mandatory<br/>max 2.0 lots · verified symbols"]
+        MT5[("MT5 Terminal<br/>order_send LIMIT/STOP<br/>hedging account")]
+        ELOG["execution_log.json<br/>fill · slippage · timestamps"]
+    end
+
+    GIT[("Shared Git Repo<br/>adanteuk/trading-war-room<br/>signals/ · decisions/ · gates output")]
+    DISCORD["Discord<br/>#research-context · #technical-setup<br/>#risk-check · #debate · #final-call"]
+    REVIEW["⑨ Feedback loop<br/>weekly accuracy review<br/>updates SOP lookups"]
+
+    CRON --> MERLIN
+    WEBHOOK --> MERLIN
+    MANUAL --> MERLIN
+
+    MERLIN -->|git push| GIT
+    MERLIN -->|"run 18:30 (plan)"| WALKER
+    WALKER -->|git push| GIT
+    WALKER -.->|"needs Walker numbers first"| ALFRED
+    ALFRED -->|git push 18:45| GIT
+
+    GIT -->|"pull all three signals"| QG
+    QG -->|"VETO → terminate"| STOP1["🚫 NO_GO<br/>reason logged"]
+    QG -->|pass| CG
+    CG -->|"VETO → terminate"| STOP2["🚫 NO_GO<br/>reason logged"]
+    CG -->|pass| ORCH
+    ALFRED -.->|"veto = hard block<br/>WAIT = 0.5× size"| ORCH
+
+    ORCH -->|decision| GIT
+    ORCH -->|post debate| DISCORD
+    ORCH -->|"GO: payload (paper-trade first)"| PAYLOAD
+    PAYLOAD ==>|"ZMQ order action<br/>NOT YET LIVE"| CARSONX
+    CARSONX --> MT5
+    CARSONX --> ELOG
+    ELOG -->|git push| GIT
+    ELOG --> REVIEW
+    GIT --> REVIEW
+    REVIEW -.->|"updates thresholds + SOP"| QG
+
+    style MERLIN fill:#e1f5fe,stroke:#0288d1
+    style WALKER fill:#e1f5fe,stroke:#0288d1
+    style ALFRED fill:#fff3e0,stroke:#f57f17
+    style QG fill:#f3e5f5,stroke:#7b1fa2
+    style CG fill:#f3e5f5,stroke:#7b1fa2
+    style ORCH fill:#e8f5e9,stroke:#388e3c
+    style STOP1 fill:#ffcdd2,stroke:#d32f2f
+    style STOP2 fill:#ffcdd2,stroke:#d32f2f
+    style CARSONX fill:#ffcdd2,stroke:#d32f2f
+    style PAYLOAD fill:#fff9c4,stroke:#f57f17
+    style MT5 fill:#e8f5e9,stroke:#388e3c
