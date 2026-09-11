@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-09-11T18:40:00+08:00",
+  "analysis_time_ny": "2026-09-11 06:40 EDT (pre-market, London KZ closed, NY AM opens 08:30)",
+  "symbol": "NAS100",
+  "data_source": "Carson MT5 (Pepperstone CFD) via ZMQ 192.168.11.173:5555",
+  "current_price": 29293.4,
+  "bias": "neutral",
+  "confidence": 40,
+  "orb_score": 36,
+  "orb_breakdown": {
+    "htf_bias_25": 8,
+    "vwap_15": 4,
+    "volume_20": 6,
+    "candle_close_timing_15": 5,
+    "ict_crt_confluence_15": 8,
+    "range_width_10": 5
+  },
+  "ict_profile": "Tuesday High + Midweek Continuation (Tue 29,734 -> Thu 29,018) with Friday equal-low purge & reversal attempt — CPI (08:30 NY) decides",
+  "entry": "TBD — do not anticipate; requires bearish-FVG rejection or CPI displacement confirmation",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "29,265.0 (bullish H4 FVG top — exact tap & bounce at 10:00Z)",
+      "29,147.5 (bullish H4 FVG bottom / unfilled gap)",
+      "29,017.9-29,018.2 (Thu/Fri equal lows — SSL already purged Fri)",
+      "28,882.4 (Sep 2 swing low / Aug 24 HL — SMT anchor)",
+      "28,648.1 (50% of macro range 27,050 -> 30,246)"
+    ],
+    "resistance": [
+      "29,314.4 (bearish H4 FVG consequent encroachment — price inside gap now)",
+      "29,376.1 (50% retrace of 29,734 -> 29,018 downswing)",
+      "29,460.6 (61.8% retrace)",
+      "29,482.5 (Thu 9/10 lower high)",
+      "29,607.6 (Wed 9/9 lower high)",
+      "29,734.2 (Sep 8 swing high / LH)",
+      "30,246.2 (Aug 17 recovery high; true ATH 30,679.6 Jun 22)"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure: LH+LL x3 (Sep 9/10/11) short-term bearish, but swing lows HL intact (28,872.7 -> 28,882.4) = compression range 28,872.7-29,734.2 (861.5pts), price at 48.8% (equilibrium). Macro range 27,050 (Jul 29 crash low) -> 30,246.2 (Aug 17 high), price 70.2% (premium). Swing-high SMT context: NAS100 LH 29,748.7->29,734.2 (-14.5) while US500 also LH 7,770.5->7,758.1 (-12.4) = no divergence at highs, both confirming lower highs. Thu 9/10 candle: -320.5 body (69% of range), close at 19.5% = strong bearish. Fri in-progress: +176.7 body, close 93% of range, price above day open 29,118.1.",
+    "l2_h4_context": "H4 structure bearish: swing highs 29,734.2 -> 29,607.6 -> 29,482.5 (LH sequence); lows 29,307.5 -> 29,018.2 -> 29,017.9 (LL then equal low). Bearish H4 FVG 29,249.1-29,379.7 (from Sep 10 05:00Z displacement) — price 29,293.4 is INSIDE the gap, testing CE 29,314.4. Bullish H4 FVG 29,147.5-29,265.0 below price, exact-tapped at 10:00Z (low 29,265.0) and held. CRT: Thursday H4 range 29,018.2-29,482.5; Friday purged the CRT low (equal lows -0.3pt) and is trading back up through the range = purge-and-reclaim. Thursday H4-range position 59.3%.",
+    "l3_m15_entry": "M15: London grind of HH+HLs from 29,018 low: 29,218 -> 29,299 -> 29,310 -> pullback to 29,265 (FVG tap) -> 29,316.3 high. Last 6 bars coiling 29,265-29,316 (~50pt range) directly under the bearish FVG CE — compression pre-event. Kill Zone: London CLOSED (05:00 NY); NY AM opens 08:30 NY. CPI drops 08:30 NY (20:30 HKT). Waiting for Kill Zone + CPI displacement. No M15 OB confirmed yet — entry TBD."
+  },
+  "smt_analysis": "Bullish SMT at lows (confirmed swings): NAS100 HL 28,872.7 (Aug 24) -> 28,882.4 (Sep 2) = +9.7 vs US500 LL 7,639.7 (Aug 20) -> 7,610.2 (Sep 2) = -29.5. Intra-week: NAS100 swept its Thu equal low Fri (-0.3pt) while US500 held above its Thu low (7,590.3 vs 7,581.1) — NQ purged SSL, SPX did not. No SMT at highs (both LH). Note: the swing-based bullish SMT is from the Aug/Sep-2 window, ~9 days apart — supporting context, not a fresh trigger.",
+  "reasoning": "Genuine structure-momentum conflict: D1 LH+LL x3 (bearish) vs Friday intraday reclaim (above open, above the 38.2% retrace 29,291.5, equal-low SSL purged and held, bullish SMT context, exact FVG tap). Price is pinned mid-range at 48.8% of the working range and inside the bearish H4 FVG — the decision zone. Honest ORB 36/100: 8/25 HTF (D1 bearish structure vs intraday bullish, flat open), 4/15 VWAP (no VWAP in CFD feed, price > day open), 6/20 volume (no RVOL/CVD in CFD feed, pre-event coil), 5/15 close/timing (no KZ active at 06:40 NY, no ORB yet — pre-09:30), 8/15 confluence (bullish SMT at lows + equal-low sweep-and-reclaim + bearish-FVG reaction pending, no Judas confirmed), 5/10 range width (Thu 464pts ~1.6%). CPI 08:30 NY is the catalyst: accept above CE 29,314/50% 29,376 targets 29,482 LH then 29,608; rejection back below 29,249 targets 29,148 FVG fill then equal lows 29,018, break opens 28,882 (SMT anchor). FOMC Sep 15-16 next week. Confidence 40 (neutral base, structure-momentum conflict, no KZ active). Do NOT anticipate entries — wait for NY AM Kill Zone reaction at the FVG + CPI displacement."
+}
