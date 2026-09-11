@@ -1,82 +1,179 @@
 {
   "hkt_date": "2026-09-11",
-  "fetched_at": "2026-09-11T06:16:10.314264+00:00",
+  "fetched_at": "2026-09-11T06:34:21.087804+00:00",
   "sources": [
-    "2026-09-10:investing.com",
-    "2026-09-11:investing.com"
+    "tradingview-internal:https://economic-calendar.tradingview.com/events?from=2026-09-10T00%3A00%3A00Z&t"
   ],
-  "event_count": 10,
-  "times_available": false,
+  "times_available": true,
+  "event_count": 21,
   "events": [
     {
-      "utc_date": "2026-09-10",
-      "currency": "USD",
+      "time_utc": "2026-09-10T01:30:00.000Z",
+      "currency": "JPY",
       "impact": "high",
-      "name": "CPI (MoM) (Aug)",
-      "time_site": null
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "JP"
     },
     {
-      "utc_date": "2026-09-10",
-      "currency": "USD",
+      "time_utc": "2026-09-10T06:00:00.000Z",
+      "currency": "EUR",
       "impact": "high",
-      "name": "CPI (YoY) (Aug)",
-      "time_site": null
+      "name": "Harmonised Inflation Rate YoY",
+      "importance": -1,
+      "country": "DE"
     },
     {
-      "utc_date": "2026-09-10",
-      "currency": "USD",
+      "time_utc": "2026-09-10T06:00:00.000Z",
+      "currency": "EUR",
       "impact": "high",
-      "name": "Core CPI (MoM) (Aug)",
-      "time_site": null
+      "name": "Inflation Rate",
+      "importance": -1,
+      "country": "DE"
     },
     {
-      "utc_date": "2026-09-10",
-      "currency": "USD",
+      "time_utc": "2026-09-10T06:00:00.000Z",
+      "currency": "EUR",
       "impact": "high",
-      "name": "Core CPI (YoY) (Aug)",
-      "time_site": null
+      "name": "Inflation Rate Mom",
+      "importance": -1,
+      "country": "DE"
     },
     {
-      "utc_date": "2026-09-10",
-      "currency": "USD",
+      "time_utc": "2026-09-10T06:00:00.000Z",
+      "currency": "EUR",
       "impact": "high",
-      "name": "Core CPI Index (Aug)",
-      "time_site": null
+      "name": "Harmonised Inflation Rate MoM",
+      "importance": -1,
+      "country": "DE"
     },
     {
-      "utc_date": "2026-09-11",
-      "currency": "USD",
+      "time_utc": "2026-09-10T12:15:00.000Z",
+      "currency": "EUR",
       "impact": "high",
-      "name": "CPI (MoM) (Aug)",
-      "time_site": null
+      "name": "Deposit Interest Rate",
+      "importance": 1,
+      "country": "EU"
     },
     {
-      "utc_date": "2026-09-11",
-      "currency": "USD",
+      "time_utc": "2026-09-10T12:15:00.000Z",
+      "currency": "EUR",
       "impact": "high",
-      "name": "CPI (YoY) (Aug)",
-      "time_site": null
+      "name": "Interest Rate",
+      "importance": 1,
+      "country": "EU"
     },
     {
-      "utc_date": "2026-09-11",
+      "time_utc": "2026-09-10T12:30:00.000Z",
       "currency": "USD",
       "impact": "high",
-      "name": "Core CPI (MoM) (Aug)",
-      "time_site": null
+      "name": "Producer Price Inflation MoM",
+      "importance": 1,
+      "country": "US"
     },
     {
-      "utc_date": "2026-09-11",
-      "currency": "USD",
+      "time_utc": "2026-09-10T12:45:00.000Z",
+      "currency": "EUR",
       "impact": "high",
-      "name": "Core CPI (YoY) (Aug)",
-      "time_site": null
+      "name": "Interest Rate",
+      "importance": 1,
+      "country": "EU"
     },
     {
-      "utc_date": "2026-09-11",
+      "time_utc": "2026-09-10T14:00:00.000Z",
       "currency": "USD",
       "impact": "high",
-      "name": "Core CPI Index (Aug)",
-      "time_site": null
+      "name": "Existing Home Sales",
+      "importance": 1,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-09-10T23:50:00.000Z",
+      "currency": "JPY",
+      "impact": "high",
+      "name": "Producer Price Inflation MoM",
+      "importance": -1,
+      "country": "JP"
+    },
+    {
+      "time_utc": "2026-09-11T06:00:00.000Z",
+      "currency": "GBP",
+      "impact": "high",
+      "name": "Monthly GDP MoM",
+      "importance": 1,
+      "country": "GB"
+    },
+    {
+      "time_utc": "2026-09-11T12:30:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "CPI seasonally adjusted",
+      "importance": 0,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-09-11T12:30:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Consumer Price Index CPI",
+      "importance": 0,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-09-11T12:30:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Core Inflation Rate MoM",
+      "importance": 1,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-09-11T12:30:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Inflation Rate Mom",
+      "importance": 1,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-09-11T12:30:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Inflation Rate",
+      "importance": 1,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-09-11T12:30:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Core Inflation Rate",
+      "importance": 1,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-09-11T14:00:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Consumer Confidence",
+      "importance": 1,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-09-11T14:00:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": 0,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-09-11T17:00:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
     }
   ]
 }

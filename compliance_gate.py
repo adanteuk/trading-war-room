@@ -243,6 +243,13 @@ def main():
         calendar, err = load_json(Path(args.calendar))
         if err:
             warnings.append(f"calendar load failed: {err}")
+        # Accept both bare-list format and {events: [...]} wrapper (fetch_calendar.py)
+        if isinstance(calendar, dict):
+            times_ok = calendar.get("times_available", True)
+            if not times_ok:
+                warnings.append("calendar has times_available=false — event times "
+                                "missing, blackout check degraded")
+            calendar = calendar.get("events", [])
     v, n = check_news_blackout(calendar if isinstance(calendar, list) else [],
                                entry_at)
     vetoes += v
