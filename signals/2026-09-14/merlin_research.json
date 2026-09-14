@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-14",
+  "timestamp": "2026-09-14T19:20:00+08:00",
+  "summary": "Bearish continuation day: gap-down Monday open traded through the Sep 2 range low (28,882) into 28,804 — a liquidity purge into prior support, not yet confirmed displacement. D1 LH/LL intact below SMA20/50 and VWAP; but FOMC begins tomorrow (Sep 15-16), capping conviction.",
+  "bias": "Bearish",
+  "confidence": 50,
+  "key_levels": {
+    "support": ["28,804.5 (Monday session low)", "28,596 (May swing low cluster)", "28,209 (Jul 17 swing low)"],
+    "resistance": ["28,930-28,970 (M15 bearish OB + H4 FVG mid)", "28,978 (session VWAP)", "29,020-29,098 (Monday open / session high supply)", "29,134 (micro Fib 70.5%)", "29,308 (micro EQ)"]
+  },
+  "ict_analysis": {
+    "daily_bias": "L1 Bearish: D1 LH sequence since Sep 8 high 29,734 (9/9-9/11 LH+LL); close 28,920 below SMA20 29,329 / SMA50 29,182, above SMA200 27,231. Gap-down open purged micro range low — Power of 3 manipulation leg, continuation needs displacement proof.",
+    "h4_context": "L2 Bearish: Friday bounce rejected inside macro 50-62% supply (29,401-29,564); open bearish FVGs 28,899-28,989 (fresh), 29,069-29,353 overhead. Price 28,919 pressing FVG bottom, below VWAP 28,978. CRT Friday range fully purged down.",
+    "m15_status": "L3 NO VALID ENTRY yet: session low 28,804.5 hit 17:15 HKT after London KZ close; weak drift up on lighter volume, no M15 OB/confirmation. NY AM KZ opens 20:30 HKT — decision window. MT5 live via 192.168.11.173."
+  },
+  "risks": [
+    {"event": "FOMC meeting Sep 15-16 (starts tomorrow)", "time": "Sep 16 14:00 ET", "impact": "high"},
+    {"event": "FOMC-week positioning / de-risking", "time": "all session", "impact": "medium"},
+    {"event": "Range-low purge may reverse (bull trap risk)", "time": "NY AM KZ", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — FOMC starts tomorrow (Week 0 de-risking), the break of 28,882 is a purge-into-support not confirmed displacement, and no NY KZ confirmation yet. Bears need rejection at 28,930-28,978 to target 28,804/28,596; bulls need sweep-and-reclaim of 28,805 back above 28,990 FVG. No entry before confirmation.",
+  "walker_status": "received",
+  "alfred_status": "pending",
+  "mt5_status": "online via 192.168.11.173",
+  "data_source": "Alfred MT5 ZMQ (D1 200, H4 500, M15 200 bars) + daily_bias.json history (69 entries, last 9/11) + Walker TA"
+}

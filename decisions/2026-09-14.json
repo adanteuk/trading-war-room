@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-14",
+  "timestamp": "2026-09-14T11:08:11.558451+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bearish continuation day: gap-down Monday open traded through the Sep 2 range low (28,882) into 28,804 \u2014 a liquidity purge into prior support, not yet confirmed displacement. D1 LH/LL intact below SMA20/50 and VWAP; but FOMC begins tomorrow (Sep 15-16), capping conviction.",
+  "final_decision": "NO_GO \u2014 GATE VETO",
+  "trade_params": {},
+  "reasoning": "DETERMINISTIC GATE VETO (overrides all LLM analysis): quant_gate: INPUT_FAILURE: missing file: alfred_risk.json; compliance_gate: KILL_ZONE: outside western kill zones\nPrior reasoning: TA confidence below GO threshold (conf=50 < 55, orb=53)",
+  "alfred_veto": false,
+  "veto_reason": "",
+  "decision_id": "2026-09-14-NAS100-1",
+  "gates_summary": {
+    "quant": "VETO",
+    "compliance": "VETO",
+    "alfred": "NO_INPUT"
+  },
+  "veto_source": [
+    "quant_gate",
+    "compliance_gate"
+  ],
+  "gate_vetoes": [
+    [
+      "quant_gate",
+      [
+        "INPUT_FAILURE: missing file: alfred_risk.json"
+      ]
+    ],
+    [
+      "compliance_gate",
+      [
+        "KILL_ZONE: outside western kill zones"
+      ]
+    ]
+  ]
+}
