@@ -1,33 +1,34 @@
 {
-  "timestamp": "2026-09-14T19:05:00+08:00",
+  "timestamp": "2026-09-14T19:55:00+08:00",
   "date_hkt": "2026-09-14",
-  "data_source": "Alfred/Carson MT5 bridge (tcp://192.168.11.173:5555) — Pepperstone CFD NAS100/US500; D1 stamps +1 day corrected (pitfall #49); H4/M15 raw UTC->HKT",
+  "data_source": "Alfred/Carson MT5 bridge (tcp://192.168.11.173:5555) — Pepperstone CFD NAS100/US500; D1 stamps +1 day corrected (pitfall #49); H4/M15 raw UTC->HKT; volume field = 'volume' (v2.2 feed)",
   "bias": "bearish",
   "confidence": 50,
-  "orb_score": 32,
+  "orb_score": 53,
   "orb_breakdown": {
-    "htf_bias": "20/25 — D1 bearish LH+LL, gap-down open -316.4pts aligned, SSL sweep below Sep 2 low (no overnight high sweep)",
-    "vwap": "0/15 — no tick/volume data from feed, not estimated",
-    "volume": "0/20 — MT5 tick_volume=0 across all bars (feed limitation)",
-    "close_timing": "3/15 — session low OUTSIDE Kill Zones (17:15 HKT, post-London pre-NY); no confirmed close yet",
-    "ict_confluence": "4/15 — no SMT divergence (synchronized sweep); FVG/OB path defined but untested; no Judas observed at open",
-    "range_width": "5/10 — Monday range 293.2pts = 1.01% of price (in 0.3-1.5% band, upper half)"
+    "htf_bias": "20/25 — D1 bearish LH+LL, gap-down open -316.4pts aligned, SSL sweep below Sep 2 low; no overnight high sweep",
+    "vwap": "11/15 — session VWAP 28978.3, price 28896 below by 82pts (-0.28%), aligned with bearish bias",
+    "volume": "10/20 — Monday M15 cumulative 144,530 vs Friday same-clock-time 135,451 = RVOL ~1.07; breakdown carried volume but bounce so-far lighter (2,669/bar vs 2,856/bar into the low)",
+    "close_timing": "3/15 — session low at 17:15 HKT, just after London KZ close; no NY KZ confirmation yet; no confirming close",
+    "ict_confluence": "4/15 — no SMT divergence (synchronized sweep with US500); H4 bearish FVG 28899-28989 overhead provides path but untested; no Judas-style open rejection confirmed",
+    "range_width": "5/10 — Monday range 293.2pts = 1.01% of price (inside 0.3-1.5% band, upper half)"
   },
   "ict_profile": "Seek & Destroy / Monday Range — potential Power of 3 'manipulation' leg (down)",
-  "entry": "TBD — waiting for pullback into 28930-28970 supply (M15 OB + H4 bearish FVG mid) that rejects, OR H4 close back above 29020 to reassess",
+  "entry": "TBD — waiting for pullback into 28930-28970 supply (M15 bearish OB + H4 FVG mid) that rejects, OR H4 close back above 29020 to reassess",
   "sl": "TBD",
   "tp": "TBD",
   "key_levels": {
-    "support": ["28804 (Monday session low — purged level)", "28596 (May 19 swing low cluster)", "28209 (July 17 swing low)"],
-    "resistance": ["28930-28970 (M15 bearish OB + H4 FVG 28899-28989 mid)", "29020-29070 (Monday open / upper supply)", "29134 (micro-range Fib 70.5%)", "29308 (micro EQ / Fib 50%)"]
+    "support": ["28804 (Monday session low — purged level)", "28596 (May swing low cluster)", "28209 (Jul 17 swing low)"],
+    "resistance": ["28930-28970 (M15 bearish OB + H4 FVG 28899-28989 mid)", "28978 (session VWAP)", "29020-29098 (Monday open / session high supply)", "29134 (micro-range Fib 70.5%)", "29308 (micro EQ / Fib 50%)"]
   },
   "three_layer_analysis": {
-    "l1_daily": "D1 bearish LH sequence intact since Sep 8 high 29734.2 (Sep 9/10/11 all LH+LL). Micro dealing range 28882.4 (Sep 2) - 29734.2 (Sep 8): Fib 25%=29521, 50%=29308, 62%=29206, 70.5%=29134, 79%=29061. Macro range Aug 17 high 30246.2 - Sep 2 low 28882.4 = 1363.8pts: Friday's bounce stalled at 29476 = 56.5% retracement (50-62% supply zone 29401-29564), then rejected — bearish continuation Monday. Today opened -316.4pts below Friday close (29054, INSIDE micro range) then traded THROUGH the range low: current 28896 sits at 1.6% from range low, -412pts (-1.41%) below micro EQ. The move below the range low is a liquidity PURGE into prior support (28804 low, -78pts below Sep 2 low; May cluster 28596 below), NOT displacement-grade continuation — bears must prove continuation; bulls watch for discount reversal leg. US500 same-day sweep of its Sep 2 low (7592.3 vs 7610.2) in confluence.",
-    "l2_h4_context": "H4: Friday recovery (close 29370) rejected at the 50-62% macro supply; bearish FVGs 29069-29311 and 29098-29353 from Friday's late-session churn remain open overhead; today sold from 29054 through London into 28804. Fresh H4 bearish FVG 28899-28989 sits directly above price. CRT frame: Friday's H4 candle range (L 29018 / H 29476) fully purged to the downside. Price stabilizing 28804-28990 (last: 28896).",
-    "l3_m15_entry": "M15: sold from 29070 (06:00 HKT Asia high) through Asia and London in stair-step bearish structure; session low 28804.5 at 17:15 HKT — AFTER London KZ, BEFORE NY AM KZ (reduces KZ-quality conviction in the sweep). No M15 bullish OB yet; last 5 bars drifting up on light ticks — weakest form of reaction. No confirmation = entry TBD, not anticipated."
+    "l1_daily": "D1 bearish LH sequence intact since Sep 8 high 29734.2 (Sep 9/10/11 all LH+LL — Sep 11 LL by just 0.3pt: L 29017.9 vs 29018.2). Micro dealing range 28882.4 (Sep 2) - 29734.2 (Sep 8): Fib 25%=29521, 50%=29308, 62%=29206, 70.5%=29134, 79%=29061, EQ=29308. Macro range Aug 17 high 30246.2 - Sep 2 low 28882.4 = 1363.8pts: Friday's bounce stalled at 29476 = 56.5% retracement (inside 50-62% supply zone 29401-29564), rejected — bearish continuation Monday. Today opened -316.4pts below Friday close (29054, inside micro range), then traded THROUGH the range low: current 28896 sits 1.6% above the range low, -412pts (-1.41%) below micro EQ. The move below the range low is a liquidity PURGE into prior support (Monday low 28804.5 = -78pts below Sep 2 low; May cluster 28596 and Jul 17 low 28209 below), NOT displacement-grade continuation — bears must prove continuation; bulls watch for a discount reversal leg. US500 swept its Sep 2 low (7592.3 vs 7610.2) same-day in confluence.",
+    "l2_h4_context": "H4: Friday recovery (close 29370) rejected inside the macro 50-62% supply; open bearish-side FVGs overhead from Fri-Mon: 29098-29311 and 29069-29353 (Fri churn) plus fresh 28899-28989 (Monday's 09:00 HKT bar) sitting directly above price. CRT frame: Friday's H4 candle range (L 29018 / H 29476) fully purged to the downside today. Price stabilizing 28804-28990 (last: 28896), below session VWAP 28978.",
+    "l3_m15_entry": "M15: capped at 29098 (06:00 HKT session high, first hour of CFD session) then sold in stair-step bearish structure through Asia and London; session low 28804.5 at 17:15 HKT — immediately AFTER London KZ close, BEFORE NY AM KZ (weakens KZ-quality conviction in the sweep). No M15 bullish OB yet; last 6 bars drifting up on lighter volume (avg 2,669/bar vs 2,856/bar into the low) — weakest form of reaction. No confirmation = entry TBD, not anticipated."
   },
   "smt": "Both NAS100 and US500 swept their respective Sep 2 swing lows today — synchronized sweep, NO SMT divergence. Relative strength: NAS100 -1.61% vs US500 -0.72% C2C — NAS is the weaker index (higher-beta selling), mild bearish signal for tech.",
-  "kill_zone_status": "London KZ closed (17:00 HKT). NY AM KZ opens 20:30 HKT — decision window for bearish continuation or discount-reversal confirmation.",
-  "reasoning": "Trend continuation favors bears (D1 LH+LL, price below EQ and 79% Fib, Friday rejected at macro 50-62% supply). Execution risk is elevated: the drop through the range low is a purge into prior support rather than displacement — classic Monday manipulation leg is plausible before a decision. Plan: bears need a pullback into 28930-28970 supply that rejects to continue toward 28804 retest then 28596; bulls need a NY KZ sweep-and-reclaim of 28805 with displacement back above the 28990 FVG (mid ~28944) to target 29020 then 29134. No entry until one side confirms in Kill Zone. ORB 32/100 reflects missing volume data and no KZ-timed confirmation — deliberately low, conditions favor seek-&-destroy behavior. Data note: MT5 tick_volume=0 for all bars (feed limitation) — volume/VWAP legs scored 0, never estimated.",
+  "kill_zone_status": "London KZ closed (17:00 HKT; session low hit 17:15, just outside). NY AM KZ opens 20:30 HKT — decision window for bearish continuation or discount-reversal confirmation.",
+  "reasoning": "Trend continuation favors bears (D1 LH+LL, price below VWAP/EQ and 79% Fib, Friday rejected at macro 50-62% supply). Execution risk remains elevated: the drop through the range low is a purge into prior support rather than displacement — classic Monday manipulation leg is plausible before a decision. Plan: bears need a pullback into 28930-28970 supply (or VWAP 28978) that rejects to continue toward 28804 retest then 28596; bulls need a NY KZ sweep-and-reclaim of 28805 with displacement back above the 28990 FVG (mid ~28944) to target 29020 then 29134. No entry until one side confirms in Kill Zone. ORB 53/100: real volume shows mild RVOL and VWAP alignment for bears, but no KZ-timed confirmation and no SMT — kept mid-low deliberately. Confidence 50: bearish structure intact but purge-into-support geometry and pre-KZ timing block higher conviction.",
+  "verification_note": "Editor subagent timed out at 600s after finding the volume-key discrepancy (raw feed carries non-zero 'volume'; original draft wrongly reported tick_volume=0). Fallback self-verification completed per skill rules: all OHLC, dates, swings, Fibs, structure tags, FVG zones, VWAP, RVOL, SMT and git state re-derived from raw JSON.",
   "disclaimer": "Analysis only, not financial advice. No entry/SL/TP until price confirms."
 }
