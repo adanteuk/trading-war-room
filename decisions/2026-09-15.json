@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-15",
+  "timestamp": "2026-09-15T11:07:52.049687+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "neutral",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "D1 is range-bound consolidation (28804-29749) after Aug-Sep correction; price at 29100 sits in DISCOUNT of the short-term dealing range but below EQ of the macro range. H4 basing above 28804 with two consecutive higher closes into 29102; M15 printing clean HLs into the NY open. Bias Bullish-Neutral: longs only from discount with NY KZ confirmation; no chase above EQ 29276.",
+  "final_decision": "NO_GO \u2014 GATE VETO",
+  "trade_params": {},
+  "reasoning": "DETERMINISTIC GATE VETO (overrides all LLM analysis): quant_gate: INPUT_FAILURE: missing file: alfred_risk.json; ORB_BREAKDOWN: orb_breakdown[pre_market_htf_bias]=-1 outside 0-25 \u2014 3 consecutive warnings; compliance_gate: KILL_ZONE: outside western kill zones\nPrior reasoning: TA confidence below GO threshold (conf=48 < 55, orb=49)",
+  "alfred_veto": false,
+  "veto_reason": "",
+  "decision_id": "2026-09-15-NAS100-1",
+  "gates_summary": {
+    "quant": "VETO",
+    "compliance": "VETO",
+    "alfred": "NO_INPUT"
+  },
+  "veto_source": [
+    "quant_gate",
+    "compliance_gate"
+  ],
+  "gate_vetoes": [
+    [
+      "quant_gate",
+      [
+        "INPUT_FAILURE: missing file: alfred_risk.json",
+        "ORB_BREAKDOWN: orb_breakdown[pre_market_htf_bias]=-1 outside 0-25 \u2014 3 consecutive warnings"
+      ]
+    ],
+    [
+      "compliance_gate",
+      [
+        "KILL_ZONE: outside western kill zones"
+      ]
+    ]
+  ]
+}

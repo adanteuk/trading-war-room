@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-15",
+  "timestamp": "2026-09-15T11:06:35.269955+00:00",
+  "summary": "D1 is range-bound consolidation (28804-29749) after Aug-Sep correction; price at 29100 sits in DISCOUNT of the short-term dealing range but below EQ of the macro range. H4 basing above 28804 with two consecutive higher closes into 29102; M15 printing clean HLs into the NY open. Bias Bullish-Neutral: longs only from discount with NY KZ confirmation; no chase above EQ 29276.",
+  "bias": "Neutral-Bullish",
+  "confidence": 52,
+  "key_levels": {
+    "support": [
+      28925,
+      28804,
+      28650
+    ],
+    "resistance": [
+      29189,
+      29276,
+      29476,
+      29749
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 ranging 28804-29749; last close 29100 = 31% of range (discount). Two D1 BOS-down since Sep 7 but no displacement expansion; ATR(14) ~350 with shrinking daily ranges = compression. Bias Neutral-Bullish while 28804 holds.",
+    "h4_context": "H4 swept SSL at 28804 (Sep 14) then displaced up +380pts to 29291, rejecting the low. Now basing 28925-29189 with higher closes; EQ 29140. Above EQ = mild bullish control; below 28804 = bearish continuation.",
+    "m15_status": "M15 forming HLs off 28925 into 07:00 ET (London close); unfilled bull FVGs 28967-28988 and 28994-29025; bear FVG 29128-29136 overhead. NO VALID ENTRY yet - waiting for NY KZ (08:30-11:00 ET) sweep of 28925-28965 or BSL run on 29189 with rejection.",
+    "control_check": "Control vs bias: SSL sweep at 28804 + bullish displacement = demand in control short-term (aligns with Neutral-Bullish). Equal highs 29165-29189 are resting BSL; draw-on-liquidity likely toward 29189 before any deeper move."
+  },
+  "risks": [
+    {
+      "event": "FOMC meeting Sep 15-16, decision Wed 14:00 ET",
+      "time": "14:00 ET Wed",
+      "impact": "high"
+    },
+    {
+      "event": "US CPI print risk this week (pre-FOMC blackout)",
+      "time": "TBA",
+      "impact": "medium"
+    },
+    {
+      "event": "Thin pre-FOMC liquidity, range may hold into Wed",
+      "time": "all session",
+      "impact": "medium"
+    }
+  ],
+  "recommendation": "WAIT - pre-FOMC day one with compressed ranges and no Layer-3 confirmation. Only take longs on NY KZ sweep of 28925-28965 with M15 MSS + displacement; skip if price runs 29189 BSL first without structure. No positions held through Wed FOMC.",
+  "bias_history": {
+    "note": "From daily_bias.json: recent 8 scored calls 4/8 correct (50%). Last 3: Bullish 9/9 OK, Bearish 9/10 OK, Neutral 9/14 untested. Mixed accuracy supports moderate confidence."
+  }
+}
