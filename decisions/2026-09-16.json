@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-16",
+  "timestamp": "2026-09-16T11:09:52.057130+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "neutral",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "FOMC DECISION DAY (Sep 15-16 meeting, rate decision 14:00 ET today) - Merlin automatic VETO. NAS100 in a tight range (29280-29440) with extremely low ADX (~12), price 29372 mid-range. Bias Neutral: mild overnight bullish momentum (+0.43%) but no trend, FOMC uncertainty dominates.",
+  "final_decision": "NO_GO \u2014 GATE VETO",
+  "trade_params": {},
+  "reasoning": "DETERMINISTIC GATE VETO (overrides all LLM analysis): quant_gate: INPUT_FAILURE: missing file: alfred_risk.json; compliance_gate: MT5_OFFLINE: carson 192.168.11.211 ZMQ error: Resource temporarily unavailable; KILL_ZONE: outside western kill zones\nPrior reasoning: TA confidence below GO threshold (conf=45 < 55, orb=52)",
+  "alfred_veto": false,
+  "veto_reason": "",
+  "decision_id": "2026-09-16-NAS100-1",
+  "gates_summary": {
+    "quant": "VETO",
+    "compliance": "VETO",
+    "alfred": "NO_INPUT"
+  },
+  "veto_source": [
+    "quant_gate",
+    "compliance_gate"
+  ],
+  "gate_vetoes": [
+    [
+      "quant_gate",
+      [
+        "INPUT_FAILURE: missing file: alfred_risk.json"
+      ]
+    ],
+    [
+      "compliance_gate",
+      [
+        "MT5_OFFLINE: carson 192.168.11.211 ZMQ error: Resource temporarily unavailable",
+        "KILL_ZONE: outside western kill zones"
+      ]
+    ]
+  ]
+}

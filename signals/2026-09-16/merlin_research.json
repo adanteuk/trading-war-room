@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-16",
+  "timestamp": "2026-09-16T11:10:00+08:00",
+  "summary": "FOMC DECISION DAY (Sep 15-16 meeting, rate decision 14:00 ET today) - Merlin automatic VETO. NAS100 in a tight range (29280-29440) with extremely low ADX (~12), price 29372 mid-range. Bias Neutral: mild overnight bullish momentum (+0.43%) but no trend, FOMC uncertainty dominates.",
+  "bias": "Neutral",
+  "confidence": 30,
+  "key_levels": {
+    "support": [29325, 29280, 29160, 28868],
+    "resistance": [29440, 29473, 29563, 29655]
+  },
+  "ict_analysis": {
+    "daily_bias": "Layer 1 (D1): NEUTRAL. Ranging market ADX 12 (Barchart), +DI 17.3 < -DI 22.5, price 29372 below MA5/MA20/MA50, above MA100/MA200. LHs from 30196 but lows basing 28867-28953. Draw unclear; FOMC dictates direction today.",
+    "h4_context": "Layer 2 (H4): MT5 OFFLINE - no H4 OHLCV. From daily_bias history: dense inversion FVG confluence 29280-29440 brackets price. Below 29280 CE confluence = bearish risk to 29160/28868; above 29440 = bullish to BSL 29473/29563.",
+    "m15_status": "NO VALID ENTRY - MT5 offline on both IPs (211/173), no M15 bars for OB/CRT/Kill Zone validation. Missing Layer 3 = mandatory veto per pipeline rules."
+  },
+  "risks": [
+    {"event": "FOMC rate decision + press conf", "time": "14:00 ET", "impact": "high"},
+    {"event": "MT5 offline (no OHLCV data)", "time": "all session", "impact": "high"},
+    {"event": "Post-FOMC volatility expansion", "time": "14:00-16:00 ET", "impact": "high"}
+  ],
+  "recommendation": "NO_GO - FOMC Week 0 automatic Merlin VETO (decision day). Compounding: MT5 offline blocks Layer 3 validation. Re-assess post-FOMC statement and Powell presser; do not carry intraday positions into 14:00 ET."
+}
