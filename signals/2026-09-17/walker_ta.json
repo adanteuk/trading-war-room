@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-17T18:55:00+08:00",
+  "date_hkt": "2026-09-17",
+  "symbol": "PEPPERSTONE:NAS100",
+  "data_source": "TradingView MCP CFD (Alfred MT5 192.168.11.172 AND Carson MT5 192.168.11.173 both unreachable via ZMQ)",
+  "bias": "bullish",
+  "confidence": 45,
+  "orb_score": 57,
+  "ict_profile": "Mid-Week Reversal / Seek & Destroy variant — Wed sweep of week's low, Thu reversal expansion",
+  "entry": "TBD — waiting for retracement into 29,178–29,226 zone (fresh H4 FVG × D1 62% Fib) during an active Kill Zone; confirmation = M15 CHoCH up after tap",
+  "sl": "TBD — structural: below 29,078 (H4 bullish OB low) for retracement entries; below 28,955 (Asia low) for continuation longs",
+  "tp": "TBD — first: 29,337–29,374 (Wed NY reaction zone / D1 25% Fib); second: 29,518 (D1 25% Fib region per range math, 29,518.7); extended: 29,649.9 (Sep 7 swing high)",
+  "key_levels": {
+    "support": ["29226 (62% Fib confluence)", "29178-29266 (fresh H4 FVG)", "29126 (70.5% Fib + converted bearish FVG 29101-29122)", "29053 (79% Fib)", "28955 (Asia low)", "28757 (Wed purge low)"],
+    "resistance": ["29300 (today's high)", "29303 (50% Fib)", "29337-29374 (Wed NY reaction highs)", "29518 (25% Fib)", "29650 (Sep 7 swing high)", "29734 (Sep 8 LH — dealing range high)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 technically LH+LL since Sep 8 high (29,734.1). BUT Sep 16 printed a purge: low 28,757 swept below the contraction dealing range (28,872.5-29,734.1) to -13.4% and closed back at 28,971 (below-range close, doji-like), then TODAY Sep 17 is a strong bullish displacement candle: O=29,983? No — O=28,983.4, H=29,299.5, C=29,272.9 (live), +301.5 C2C (+1.04%), body 84% of range, close at 92% of day's range. HH+HL transition vs Wednesday. Price back INSIDE the range at 46.5% (equilibrium). D1 last-4 transitions: LH+HL (Mon), HH+LL (Tue), doji (Wed), HH+HL (Thu, in progress). SMT vs US500 (both CFD): no classic divergence — Sep 17 both rallied, NAS100 +1.00% vs US500 +0.84%; Sep 16 both made HLs. Relative sweep depth Sep 16: NAS100 260pts vs US500 55pts below prior day's low — NAS100 is the higher-beta instrument. Weekly profile: Mon small range (-187), Tue bearish (-199), Wed sweep of week low + close flat (-12) = manipulation day, Thu strong bullish expansion. This maps to Mid-Week Reversal with Wednesday low — Thu/Fri continuation of reversal direction per ICT Classic Wednesday Low logic. Do NOT label 'Classic Tuesday Low' — the weekly low came Wednesday.",
+    "l2_h4_context": "H4 structure shifted intraday-bullish: after Wed 18:00Z sweep bar (28,757 low), lows sequence 28,955 → 29,078 → 29,076 → 29,265 (clean HL staircase); highs: LH 29,184 → LH 29,178 → HH 29,299.5 today 06:00Z. Fresh bullish FVG 29,178.4-29,265.6 (Thu 02:00-10:00Z displacement) — unmitigated, sits exactly at D1 62% Fib (29,199.9). Bullish OB 29,078.6-29,126.1 (last down-close candle 02:00Z before 06:00Z displacement). Old bearish FVGs 29,088.3-29,124.9 and 29,089.0-29,102.6? No — 28,989.0-29,025.7 are now converted support (price traded through and held above). Resistance overhead: 50% Fib 29,303.3 confluences with today's high 29,299.5 — price stalling there right now (in-progress 10:00Z bar H=29,298). Above: Wed NY reaction zone 29,337-29,374, then 25% Fib 29,518.7.",
+    "l3_m15_entry": "Kill Zone status at analysis time (18:55 HKT = 06:55 NY): London KZ CLOSED (ended 05:00 NY). NY AM KZ NOT yet active — opens 08:30 NY (20:30 HKT). Overnight/London: price consolidated 28,955-29,184, then displaced up in 06:00Z H4 bar (02:00-06:00 NY) reaching 29,299.5. NY AM KZ active window 20:30-23:00 HKT. M15 since 12:00Z: HH sequence into 29,299.5, then 3+ bars of compression 29,253-29,298 right under the 50% Fib — avg M15 range compressed to 28.2 from 41.1 (prior 10 bars) → expansion imminent. NO M15 OB/FVG entry confirmed yet at current price — waiting for either (a) retracement into 29,178-29,226 (FVG×Fib) with M15 CHoCH up, or (b) M15 close above 29,300 with retest holding. Per KZ-aware rule: no concrete entry/SL/TP until KZ active and price confirms."
+  },
+  "reasoning": "Bearish-to-bullish structural transition in progress. D1 weekly structure remains LH+LL (lower high 29,734.1 from Sep 8, and the whole Aug-Sep slide from 30,246), but Wednesday's purge below the 861-pt contraction range (28,757 = -13.4% of range) failed to hold — the textbook stop-hunt below equilibrium range followed by today's strong bullish displacement (+1.04%, 84% body, HH+HL) is a failed-continuation signature. Price reclaimed the range and sits at equilibrium (46.5%). The reclaim of the fresh H4 FVG structure with HL staircase gives intraday bullish context. Why only 45 confidence: (1) higher-TF D1 structure is still objectively bearish — today is one displacement candle, not yet a structural shift; reclaiming 29,518 then 29,734 would confirm; (2) no SMT divergence confirmation from US500; (3) price is stalling directly at the 50% Fib / today's high 29,300 at analysis time — a rejection here re-opens 28,955; (4) 06:00Z displacement happened OUTSIDE a formal Kill Zone (02:00-06:00 NY window boundary), so the move lacks classic KZ displacement timing. Bullish while above 29,078 (OB low); bias invalidated below 28,955 (Asia low). ORB 57/100 — decent HTF bias (+17/25) and timing (+11/15) but no SMT, no volume confirmation data, and range width penalty.",
+  "orb_breakdown": {
+    "premarket_htf_bias": {"score": 17, "max": 25, "note": "D1 LH+LL but failed purge + strong reclaim; overnight Asia held 28,955, no SSL sweep below"},
+    "vwap_alignment": {"score": 7, "max": 15, "note": "no VWAP data available — neutral mid credit"},
+    "volume_confirmation": {"score": 10, "max": 20, "note": "no RVOL/CVD live; today D1 vol 244,855 vs yesterday full-day 485,850 at ~19:00 HKT (incomplete bar)"},
+    "candle_close_timing": {"score": 11, "max": 15, "note": "D1 candle strong but INCOMPLETE; London KZ ended, NY AM KZ pending"},
+    "ict_crt_confluence": {"score": 9, "max": 15, "note": "H4 FVG×Fib confluence strong; no SMT divergence; displacement outside formal KZ"},
+    "range_width_volatility": {"score": 3, "max": 10, "note": "daily ATR elevated (~400+ pts recent); contraction range 861 pts = 2.9% — wide"}
+  },
+  "kill_zone_status": "London KZ ended (05:00 NY / 17:00 HKT). NY AM KZ opens 20:30 HKT (08:30 NY). At analysis time 18:55 HKT: WAITING FOR KILL ZONE.",
+  "weekly_context": "FOMC decision was Wed Sep 16 (2026 meeting dates Sep 15-16) — Wednesday's sweep-and-flat-close pattern is consistent with pre-FOMC positioning; Thu expansion is the post-FOMC direction day. Verify against actual outcome if citing."
+}
