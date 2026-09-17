@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-17",
+  "timestamp": "2026-09-17T19:15:00+08:00",
+  "summary": "Post-FOMC risk-on: NQ +1.06% to ~29,566, reclaiming MA5/20/50/100. Bias Bullish (Medium) but ADX 12 = ranging regime and D1 LH 29,748 unbroken. Price rallied to DR equilibrium - no discount entry left; MT5 offline blocks Layer 3.",
+  "bias": "Bullish",
+  "confidence": 45,
+  "key_levels": {
+    "support": [
+      29352,
+      29230,
+      29107,
+      28930,
+      28804
+    ],
+    "resistance": [
+      29563,
+      29748,
+      30246
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "L1 (D1): BULLISH medium conf. Post-FOMC displacement +300pts, price above MA5/20/50/100 (Barchart). But ADX 12.3 ranging, -DI 22.5 > +DI 17.3, LH 29748 (Aug 27) unbroken. Draw: BSL 29748 then 30246.",
+    "h4_context": "L2 (H4): NO MT5 OHLCV - inferred from levels. DR 28804-30246 (equil 29525): price rode from 19% discount to ~equilibrium. No discount KL remaining to buy; premium chase = poor R:R. Bullish only on pullback to 29352/29230 holding.",
+    "m15_status": "NO VALID ENTRY - MT5 offline both IPs (211/173 ZMQ timeout), no M15 bars for OB/CRT/Kill Zone validation. Missing Layer 3 = mandatory veto per pipeline rules."
+  },
+  "risks": [
+    {
+      "event": "MT5 offline (no OHLCV data)",
+      "time": "all session",
+      "impact": "high"
+    },
+    {
+      "event": "Post-FOMC day-2 volatility/chop",
+      "time": "09:30-16:00 ET",
+      "impact": "medium"
+    },
+    {
+      "event": "Weekly jobless claims",
+      "time": "08:30 ET",
+      "impact": "medium"
+    }
+  ],
+  "recommendation": "WAIT - MT5 offline blocks Layer 3 M15 validation (mandatory veto); confidence cut to 45. Price at DR equilibrium = premium chase zone. Re-assess on pullback into 29230-29352 discount shelf with M15 OB confirmation once Carson MT5 is back."
+}

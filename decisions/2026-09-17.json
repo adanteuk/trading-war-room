@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-17",
+  "timestamp": "2026-09-17T11:07:08.526179+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "NO_INPUT",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Post-FOMC risk-on: NQ +1.06% to ~29,566, reclaiming MA5/20/50/100. Bias Bullish (Medium) but ADX 12 = ranging regime and D1 LH 29,748 unbroken. Price rallied to DR equilibrium - no discount entry left; MT5 offline blocks Layer 3.",
+  "final_decision": "NO_GO \u2014 GATE VETO",
+  "trade_params": {},
+  "reasoning": "DETERMINISTIC GATE VETO (overrides all LLM analysis): quant_gate: INPUT_FAILURE: missing file: walker_ta.json; INPUT_FAILURE: missing file: alfred_risk.json; compliance_gate: MT5_OFFLINE: carson 192.168.11.211 ZMQ error: Resource temporarily unavailable; KILL_ZONE: outside western kill zones\nPrior reasoning: No TA input received from Walker",
+  "alfred_veto": false,
+  "veto_reason": "",
+  "decision_id": "2026-09-17-NAS100-1",
+  "gates_summary": {
+    "quant": "VETO",
+    "compliance": "VETO",
+    "alfred": "NO_INPUT"
+  },
+  "veto_source": [
+    "quant_gate",
+    "compliance_gate"
+  ],
+  "gate_vetoes": [
+    [
+      "quant_gate",
+      [
+        "INPUT_FAILURE: missing file: walker_ta.json",
+        "INPUT_FAILURE: missing file: alfred_risk.json"
+      ]
+    ],
+    [
+      "compliance_gate",
+      [
+        "MT5_OFFLINE: carson 192.168.11.211 ZMQ error: Resource temporarily unavailable",
+        "KILL_ZONE: outside western kill zones"
+      ]
+    ]
+  ]
+}
