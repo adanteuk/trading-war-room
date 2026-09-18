@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-18",
+  "timestamp": "2026-09-18T11:20:00Z",
+  "summary": "Bullish continuation day: Wed SSL sweep (28,757) -> Thu bullish displacement -> Fri follow-through toward EQH BSL 29,734-29,749 (Sep 7 + Aug 27 equal highs). Caveats: price at 86% of the Sept dealing range = deep premium, D1 structure MIXED, and NY AM Kill Zone not yet active. Note: Carson MT5 bridge offline; data via Walker's TradingView MCP OHLCV pull, pipeline run on real bars.",
+  "bias": "Bullish",
+  "confidence": 50,
+  "key_levels": {
+    "support": ["29587-29570 (M15 FVG)", "29550 (M15 bull OB low)", "29446 (70.5% Fib)", "29359 (H4 FVG top / today low)", "29252-29359 (H4 bull FVG)"],
+    "resistance": ["29677 (today high)", "29734-29749 (EQH BSL pool)", "29962 (Aug 18 bear FVG upper)", "30246 (Aug 16 swing high)"]
+  },
+  "ict_analysis": {
+    "daily_bias": "L1: Short-term structure turning bullish - Sep 15 doji swept SSL at 28,757, then 82%-body bull day + 53% follow-through. DR 28,882-29,734, price 84% PREMIUM. Draw on liquidity: EQH 29,734/29,749. Bias Bullish (Medium) - premium entry risk.",
+    "h4_context": "L2: DR 28,757-29,734 (eq 29,246), price 86% premium. Open bull FVG 29,252-29,359 below (unfilled support). Overhead Aug-18 bear FVG 29,670-29,962 contains the EQH target = supply/liquidity confluence 29,670-29,750. Expected: tap BSL 29,734-49 then react.",
+    "m15_status": "L3: Bullish OB 29,550-29,570 (05:45 UTC, displacement 24pts) + bull FVG 29,570-29,587 = OB+FVG confluence. Price 29,600 between OB and day high 29,677. Kill Zones NONE active - NY AM KZ opens ~13:30 UTC (21:30 HKT). WAIT FOR KZ; no entry confirmed."
+  },
+  "risks": [
+    {"event": "Quad witching Friday - elevated vol", "time": "16:00 ET", "impact": "high"},
+    {"event": "Deep premium 86% - chase risk", "time": "all session", "impact": "medium"},
+    {"event": "EQH sweep inside bear FVG = reversal risk", "time": "NY AM", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - bias bullish but three filters unmet: (1) NY AM Kill Zone not active yet, (2) price at 86% premium = no discount entry, (3) D1 structure MIXED not confirmed. Plan A: pullback into 29,550-29,587 OB+FVG during NY AM KZ, long toward 29,734-29,749. Plan B: acceptance above 29,677 with displacement = continuation. Plan C: EQH 29,734-49 sweep + rejection inside bear FVG = short scenario back to 29,446.",
+  "data_sources": ["TradingView MCP NAS100 OHLCV via Walker (Carson MT5 offline)", "ict_analysis.py pipeline run on real bars", "daily_bias.json (through 2026-09-17)"]
+}
