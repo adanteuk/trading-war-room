@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-09-21T13:50:00+00:00",
+  "report_date": "2026-09-21",
+  "data_source": "TradingView CFD (PEPPERSTONE:NAS100) via MCP — Carson MT5 unreachable (192.168.11.173: 100% packet loss, ZMQ timeout)",
+  "bias": "bullish",
+  "confidence": 55,
+  "orb_score": 64,
+  "ict_profile": "Power of 3 continuation (Monday: Accumulation Asia -> Manipulation London sweep up -> Distribution into NY)",
+  "entry": "TBD — no anticipation. Watch for: (a) ORB breakout close above 29994 (today's high) during NY AM KZ, or (b) retracement into H4 bull FVG 29830.7-29937.9 / Asian high 29863 held as support for long continuation. Bearish invalidation: close below 29783 (Asia low area) shifts bias neutral.",
+  "sl": "TBD — set only on confirmed entry; structural reference below 29809 (H4 06:00 open / FVG mid) for longs",
+  "tp": "TBD — logical draw: BSL rest at 30246.2 (Aug-16 dealing range high); interim 30166.1 (Aug-13 high) and 30066.9 (Jul-2 high / May-26 high)",
+  "key_levels": {
+    "support": ["29937.9", "29863.1", "29830.7", "29783.4", "29623.7"],
+    "resistance": ["29994.0", "30066.9", "30166.1", "30246.2"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure turned bullish: last 3 transitions HH+HL (09-16, 09-17, and Sun-open CFD bar 09-20/21). Last completed regular D1 close: Fri Sep 18 = 29670.4 (+0.82% C2C vs Thu 29430.5). Dealing range: low 28757.0 (Sep 16) to ATH 30246.2 (Aug 16) = 1489 pts. Price 29939.4 = 79.4% of range = PREMIUM. Fibs: 25% = 29873.9, 50% = 29501.6, 62% = 29322.9. Price above 25% level, pressing toward range high. SMT: no divergence — NAS100 and US500 both made LL into Sep-16 then HH+HL into Sep-21; aligned strength, no divergence signal.",
+    "l2_h4_context": "H4 range 28757.0 (Sep-16 18:00) -> 29994.0 (today 10:00 UTC) = 1237 pts; price at 95.6% = deep premium, testing range high. Stacked bull FVGs below price: 29830.7-29937.9 (today 06:00), 29704.3-29783.4 (Sun 22:00), 29494.5-29623.7 (Fri 18:00) — bullish PD array ladder. H4 CRT: Sun 22:00 candle range 29623.7-29847.1 (223 pts) was the CRT; Mon 02:00 and 06:00 candles expanded above it — purge complete, distribution leg in progress. BEAR FVG 29494.5-29546.6 (Fri 10:00) reclaimed by Fri 18:00 candle = breaker-style support.",
+    "l3_m15_entry": "NY AM Kill Zone ACTIVE (analysis ~09:14 NY / 13:14 UTC; cash open 09:30 NY = 13:30 UTC). London swept Asia high 29863.1 and ran to 29984.8; pre-market pushed to 29994.0 new session high. Asia low 29736.9 never swept. No M15 OB formed yet at range highs — first pullback into 29937.9-29863 zone is the watch area. M15 avg range 27.0 vs prior 24 bars 25.9 = no compression, mild expansion. ORB breakout NOT yet confirmed (cash open pending). Live quote at verification: 29939.4."
+  },
+  "weekly_profile_note": "Classic Monday would be range; today shows Po3 expansion. If NY sustains above 29994, profile leans midweek continuation; if NY rejects back inside 29783-29994, expect classic Monday range into Tue.",
+  "reasoning": "Bias bullish (confidence 55 — honest: structure bullish but price is deep premium at 79.4% of D1 range / 95.6% of H4 range, chasing longs here has poor R:R; no SMT divergence to add conviction). Primary scenario: continuation into 30066.9/30166.1/30246.2 liquidity after ORB confirmation; alternative: premium rejection -> mean revert to H4 FVG stack 29830-29937 then 29783. Data caveat: Carson MT5 (192.168.11.173) unreachable (100% packet loss, ZMQ timeout) — used TradingView CFD data instead; the Sun 09-20 D1 bar is a CFD session-open bar (Pepperstone opens Sunday 22:00 UTC), so Fri 09-18 close 29670.4 is the last regular close. Kill Zone: NY AM active; entry decisions wait for actual price action — no anticipation. This is analysis, not financial advice."
+}
