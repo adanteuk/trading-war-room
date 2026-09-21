@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-21",
+  "timestamp": "2026-09-21T19:05:00+08:00",
+  "summary": "Bullish gap-and-go: NQ gapped +416pts to 30,029, swept the 8/17 range high (30,196), held above it on the retest (low 30,018), and expanded to 30,266 — an upside MSS. But price is at extreme premium above a 353pt unfilled gap, and HMM regime flipped BEARISH/HIGH, contradicting the tape.",
+  "bias": "Bullish",
+  "confidence": 50,
+  "key_levels": {
+    "support": [
+      "30196 (8/17 swing high, swept -> flipped support)",
+      "30018 (Monday session low / retest low)",
+      "29938 (Monday gap open)",
+      "29665-30018 (unfilled weekend gap zone)"
+    ],
+    "resistance": [
+      "30266 (Monday high / session BSL)",
+      "30343 (Aug 17 swing high BSL)",
+      "30500 (psychological)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1: Ranging LH structure from 30196 BROKEN by Monday gap displacement; sweep of 30196 + hold above on retest = bullish MSS. Draw on liquidity: 30343 BSL, then 30500. Conflict: HMM regime BEARISH/HIGH, consolidated 68% bearish. Data: Yahoo D1 (MT5 offline).",
+    "h4_context": "H4: gap expansion in progress, price ~100%+ of the old Sept dealing range (28753-29734) = stale DR, new range forming 30018-30266+. Unfilled gap 29665-30018 below is the dominant draw if expansion fails. No M15/H4 MT5 bars to confirm FVG/OB structure. Data: Yahoo.",
+    "m15_status": "NO VALID ENTRY - Carson MT5 offline on both IPs (211/173). Layer 3 OB formation, CRT purge and Kill Zone engulfment cannot be validated on live M15 bars; Yahoo M15 is delayed and insufficient for entry modeling. Mandatory Layer 3 veto."
+  },
+  "risks": [
+    {"event": "MT5 offline (Carson ZMQ down both IPs)", "time": "all session", "impact": "high"},
+    {"event": "HMM regime BEARISH/HIGH vs bullish tape", "time": "all session", "impact": "high"},
+    {"event": "Alphabet + Tesla earnings this week", "time": "midweek", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - Gap-and-go bullish structure (sweep+hold above 30196, draw to 30343) but MT5 offline invalidates Layer 3 entry validation, price is at extreme premium above a 353pt unfilled gap, and the HMM regime contradicts the tape. Re-evaluate at NY AM Kill Zone (21:30 HKT) once MT5 is restored; prefer longs only on pullback into 30196/30018 support, not chase at 30250+.",
+  "walker_status": "pending",
+  "alfred_risk_status": "pending",
+  "data_sources": [
+    "Yahoo Finance NQ=F D1 + M15 (fallback, Carson MT5 offline)",
+    "~/.hermes/trading/regime-detection/bias_state.json (HMM 2026-09-21T19:01)",
+    "~/.hermes/trading/nas100_bias/daily_bias.json (9/15-9/18 context)"
+  ]
+}
