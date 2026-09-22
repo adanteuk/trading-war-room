@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-22",
+  "timestamp": "2026-09-22T11:05:00Z",
+  "summary": "Strongly bullish: Monday's +848pt displacement candle (958pt range, 227% of ATR) broke to a fresh 20-day high at 30640 with a full bullish MA stack (close +3.6% above MA20, +4.5% above MA50). However, price sits at 94% of the dealing range (28757-30640, eq 29698) in extreme premium - chasing longs here carries poor R:R. Watch for retracement into 30049-30103 (H4 FVG + Monday range equilibrium) before continuation toward 30640+ BSL.",
+  "bias": "Bullish",
+  "confidence": 62,
+  "key_levels": {
+    "support": ["30103 (Monday range equilibrium)", "30049-30072 (H4 bullish FVG)", "29940 (prior swing high / BSL flipped)", "29698 (dealing range equilibrium)", "29359-29374 (Fri low + H4 FVG)"],
+    "resistance": ["30640 (20-day high / fresh BSL)", "30750 (psychological)", "30800-31000 (extension BSL pools)", "31100 (52-wk high area)"]
+  },
+  "ict_analysis": {
+    "daily_bias": "BULLISH. Monday 9/21: +848pt bullish displacement body, 958pt range (227% of ATR14=422), closed near highs at 30524. Price above MA5/10/20/50/100/200. Sep 15 SSL sweep at 28757 followed by 4 straight bullish candles = classic sweep-and-reverse. Control: demand (fresh displacement origin).",
+    "h4_context": "BULLISH structure (HH 29678->30640, HL 29359->29371). Monday's 09:00 H4 candle displaced +456pt through 30000-30400 with no pullback - strong buy-side control. Open BEAR FVG 29098-29353 below is deep; near-term demand at 30049-30072 (mitigated bull FVG) and 30103 (Mon range 50%). Tue overnight: consolidation 30394-30640 above Monday close - bullish acceptance, no supply rejection.",
+    "m15_status": "WAITING FOR NY SESSION. M15 in tight 30394-30640 compression after overnight run. Current 30528, hovering mid-overnight range. No clean OB+displacement entry yet at 19:00 HKT (07:00 ET, 3h before NY open). London Open KZ active now; NY AM KZ 09:30-11:00 ET is the next window. Expect either purge of overnight lows (30394-30478) into the 30103/30049 discount zone for longs, or direct break above 30640 BSL."
+  },
+  "risks": [
+    {"event": "Extreme premium 94% of dealing range - poor R:R chasing", "time": "all session", "impact": "high"},
+    {"event": "Monday range 227% of ATR - extension/pullback risk", "time": "all session", "impact": "medium"},
+    {"event": "Fed speakers / pre-FOMC blackout positioning", "time": "check econ cal", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - bias is firmly bullish but price is in extreme premium (94% of range, new 20-day high) with no completed Layer 3 entry pattern at analysis time. Optimal play: long on retracement into 30103-30049 (Mon range EQ + H4 FVG confluence) with M15 MSS confirmation, targets 30640 -> 30800 -> 31000. Invalidation: H4 close below 29940 (BSL flip) turns Neutral-Bearish. Do not chase longs above 30500."
+}

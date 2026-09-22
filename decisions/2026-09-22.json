@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-22",
+  "timestamp": "2026-09-22T11:08:34.274343+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bullish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Strongly bullish: Monday's +848pt displacement candle (958pt range, 227% of ATR) broke to a fresh 20-day high at 30640 with a full bullish MA stack (close +3.6% above MA20, +4.5% above MA50). However, price sits at 94% of the dealing range (28757-30640, eq 29698) in extreme premium - chasing longs here carries poor R:R. Watch for retracement into 30049-30103 (H4 FVG + Monday range equilibrium) before continuation toward 30640+ BSL.",
+  "final_decision": "NO_GO \u2014 GATE VETO",
+  "trade_params": {
+    "direction": "LONG",
+    "instrument": "NAS100",
+    "entry": "TBD \u2014 waiting for NY AM Kill Zone (08:30-11:00 NY / 20:30-23:00 HKT). Candidate: discount entries at 30464 (FVG CE) or 30394 (overnight low) if tested and reclaimed with M15 displacement; do NOT chase at 97.3% premium.",
+    "stop_loss": "TBD \u2014 below 30394.2 (overnight/Tue low) for longs; below 30189 (FVG CE) for swing longs",
+    "take_profit": "TBD \u2014 30581.9 (Mon high/Fib 0%), 30639.6 (Tue high/CRT high); extension only after close above 30639.6",
+    "tier": "CONDITIONAL_GO",
+    "lot_size": "TBD x 0.5",
+    "lot_multiplier": 0.5,
+    "risk_pct": 1.0,
+    "session_window": "09:30-11:00 ET",
+    "close_before": "13:30 ET (pre-news)",
+    "note": "Reduced conviction \u2014 half size, tighter risk"
+  },
+  "reasoning": "DETERMINISTIC GATE VETO (overrides all LLM analysis): quant_gate: INPUT_FAILURE: missing file: alfred_risk.json; compliance_gate: KILL_ZONE: outside western kill zones\nPrior reasoning: TA: conf=60, ORB=62 \u2192 MODERATE CONVICTION\nAlfred: WAIT \u2014 reduced to 50% size\nRisk: N/A\nMerlin: ",
+  "alfred_veto": false,
+  "veto_reason": "",
+  "decision_id": "2026-09-22-NAS100-1",
+  "gates_summary": {
+    "quant": "VETO",
+    "compliance": "VETO",
+    "alfred": "NO_INPUT"
+  },
+  "veto_source": [
+    "quant_gate",
+    "compliance_gate"
+  ],
+  "gate_vetoes": [
+    [
+      "quant_gate",
+      [
+        "INPUT_FAILURE: missing file: alfred_risk.json"
+      ]
+    ],
+    [
+      "compliance_gate",
+      [
+        "KILL_ZONE: outside western kill zones"
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-22",
+  "timestamp": "2026-09-22T11:08:34.161265+00:00",
+  "files": {
+    "merlin_research.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [],
+      "warns": [
+        "merlin: summary 435 chars > 200 (Discord 2000-char risk — v2.4 lesson)"
+      ],
+      "oks": [
+        "merlin: contract ok"
+      ]
+    },
+    "walker_ta.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [
+        "walker: entry='TBD — waiting for NY AM Kill Zone (08:30-11:00 NY / 20:30-23:00 HKT). Candidate: discount entries at 30464 (FVG CE) or 30394 (overnight low) if tested and reclaimed with M15 displacement; do NOT chase at 97.3% premium.' must be exact float or 'TBD'/omitted",
+        "walker: sl='TBD — below 30394.2 (overnight/Tue low) for longs; below 30189 (FVG CE) for swing longs' must be exact float or 'TBD'/omitted",
+        "walker: tp='TBD — 30581.9 (Mon high/Fib 0%), 30639.6 (Tue high/CRT high); extension only after close above 30639.6' must be exact float or 'TBD'/omitted"
+      ],
+      "warns": [
+        "walker: orb_breakdown missing while orb_score>0 (warning 1 of 3 before quant-gate veto)",
+        "walker: ml_regime missing (contract-mandatory from Phase 2)",
+        "walker: conditional_triggers missing (contract-mandatory)"
+      ],
+      "oks": []
+    },
+    "alfred_risk.json": {
+      "exists": false,
+      "status": "MISSING",
+      "fails": [],
+      "warns": [],
+      "oks": []
+    }
+  },
+  "totals": {
+    "fails": 3,
+    "warns": 4
+  }
+}
