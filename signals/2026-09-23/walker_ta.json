@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-09-23T18:45:00+08:00",
+  "data_source": "Carson MT5 ZMQ bridge (tcp://192.168.11.173:5555) — NAS100 D1/H4/M15, US500 D1 (Pepperstone CFD)",
+  "analysis_time_note": "2026-09-23 18:45 HKT / 06:45 NY — NY AM Kill Zone opening; M15 data through 10:30 UTC (London session)",
+  "symbol": "NAS100",
+  "bias": "bullish",
+  "confidence": 55,
+  "orb_score": 58,
+  "orb_score_note": "Live ORB at 18:45 HKT; break of Asia range not yet confirmed — scores re-checkable after 21:30 HKT open",
+  "ict_profile": "Midweek Continuation (Mon expansion +848pts, Tue continuation, Wed consolidation in upper premium)",
+  "entry": "TBD — wait for NY AM KZ confirmation (M15 MSS up on Asia-low sweep = long; M15 close below 30709.7 = bias invalidated)",
+  "sl": "TBD — structural: below session low 30709.7 for longs (not set pre-KZ)",
+  "tp": "TBD — BSL resting above 30820.4 (Tue high); extension targets 30950-31050 (measured move of Sep 21-22 expansion)",
+  "key_levels": {
+    "support": ["30709.7 (Wed session low — invalidation)", "30724.3 (London low)", "30571.5-30645.0 (H4 bull FVG)", "30394.2 (Sep 22 low)", "30384.0 top of unmitigated 29994-30384 FVG"],
+    "resistance": ["30820.4 (Tue high / Wed high — BSL above)", "30950-31050 (measured-move extension zone)", "31011.4 (Sep 23 high 30820.4 + 191.7 = -74% post-expansion projection, secondary)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1: 5 consecutive bullish closes (Sep 16 doji low 28756.7 -> Sep 23). Sep 21 +848pt marubozu (88% body) CONFIRMED BULLISH RANGE BREAK — closed 747 pts above prior dealing-range high (Aug 28 swing high 29748.7). Old range Fibs obsolete; NEW range 28756.7 -> 30820.4 (2063.7 pts), price at 97% (deep premium — trend continuation context, not mean-reversion). Structure: swing highs/lows BOTH stepping up as of Sep 21 (range break supersedes stale LH+LL count). Note: swing-high series Aug 28 29748.7 -> Sep 8 29734.2 was LH while US500 made LH too (no divergence); sweep check deferred — needs live H4/L4 granularity (see smt_status). Sep 23 candle: 26% body, close@44% of range — consolidation after expansion, holding above prior close (up-open-up-close).",
+    "l2_h4_context": "H4: Sep 21 13:00 UTC displacement leg (O 29942.9 -> C 30399.4, 91% body, 501 pts) left unmitigated BULL FVG 29994.1-30384.0 (institutional demand zone). Nearest reactive FVG to price: 30571.5-30645.0 (Sep 22 13:00, 187-187 pts below). Sep 22 NY session re-accumulation: dip to 30394.2 (10.2 pts above FVG top — purged partially) then rally to 30788.3. Sep 23 Asia+London: tight 110.7-pt compression (30709.7-30820.4, 0.36% of price) — volatility compression below the highs; expansion imminent, direction pending NY confirmation. CRT: Wed candle ranging INSIDE Tue's range (no purge of either extreme yet).",
+    "l3_m15_entry": "M15 (through 10:30 UTC): London drift slightly lower — LH sequence 30820.4 -> 30787.9 -> 30777.9 -> 30760.6 vs LL 30755.7 -> 30745.2 -> 30730.7 -> 30724.3 (four M15 down-legs = shallow bearish drift, no displacement; largest down-candle only ~20-30 pts). No M15 OB formed (no displacement in either direction). Kill Zone: London KZ closed at 10:00 UTC; NY AM KZ opens 14:30 UTC (22:30 HKT) — currently 4 hours out. RVOL 0.67 (compression confirmed). Entry model: DO NOT anticipate — wait for either (a) M15 MSS up + FVG/OB retrace for longs in NY AM KZ, or (b) close below 30709.7 invalidating the bullish bias."
+  },
+  "smt_status": "NAS100 vs US500 (D1, lookback=2, matching method): no classic divergence — both made LH at highs (29748.7->29734.2 vs 7770.5->7758.1) and LL at lows (28882.4->28756.7 vs 7581.1->7507.2). Post-range-break both indices stepped up together. US500 slightly stronger into Sep 22 close (7772.4 vs NAS +0.04% day). No actionable SMT signal at current swing; re-check at next H4 swing high (above 30820.4) vs US500 equivalent.",
+  "kill_zone": "NY AM Kill Zone opens 14:30 UTC (22:30 HKT). London KZ complete — produced compression, not expansion.",
+  "reasoning": "Bullish continuation bias, moderate confidence. (1) D1 range break confirmed: Sep 21 closed +747 pts above the Aug 28 swing high — old bearish LH+LL structure is superseded; the range break is the dominant structural fact. (2) Four consecutive H4 displacement legs up with stacked unmitigated bullish FVGs below (29994-30384 the key demand shelf) — pullbacks into these zones are buy-side opportunities per ICT. (3) BUT price is at 97% of the new dealing range (extreme premium) — the rule 'extreme premium + bullish bias -> reduce confidence 20-25 pts' applies. (4) Sep 23 is compressing 0.36% below the highs with RVOL 0.67 — classic pre-expansion coil, but direction is not yet confirmed; a Wednesday in a Midweek Continuation profile can also reverse (Wed Reversal profile risk). (5) No SMT support, no M15 OB yet, London KZ produced no displacement. Net: bullish bias carried from confirmed structure, but the entry requires NY AM KZ to show either Asia-low sweep + MSS up (long) or a break-and-hold below 30709.7 (stand down). Honest ORB Score at 18:45 HKT: 58/100 (pre-market/HTF context strong, timing + volume confirmation still missing).",
+  "orb_breakdown": {
+    "premarket_htf_bias_25": "18/25 — D1 range break bullish, up-open day, but extreme premium and Wed-reversal profile risk",
+    "vwap_15": "10/15 — price above session VWAP (30756.8) and London VWAP (30762.5), but slope flat (compression)",
+    "volume_20": "6/20 — RVOL 0.67 on last 8 M15 bars; no breakout volume yet (breakout not attempted)",
+    "candle_close_timing_15": "7/15 — inside-day compression, no close outside range yet; NY AM KZ opens in ~4h",
+    "ict_crt_confluence_15": "12/15 — stacked unmitigated bull FVGs below, clear path to BSL above 30820.4; no SMT, no Judas sweep yet",
+    "range_width_volatility_10": "5/10 — overnight range 0.36% = below the 0.3-1.5% ideal band's midpoint (compression = pending expansion, low immediate confidence)"
+  }
+}
