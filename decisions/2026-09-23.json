@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-23",
+  "timestamp": "2026-09-23T11:07:49.693659+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bullish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bullish continuation day after 9/21 BOS displacement broke the 3-week range; price 30,733 in price discovery above all prior highs with 4 straight bullish D1 candles. However today is printing small-bodied consolidation candles (3%-23% bodies) in H4/M15 \u2014 premium, extended, and no fresh pullback yet. Neutral-Bullish lean: do not chase; long only on discount retracement into 30,571-30,645 FVG or 30,394-30,517 zone.",
+  "final_decision": "NO_GO \u2014 GATE VETO",
+  "trade_params": {},
+  "reasoning": "DETERMINISTIC GATE VETO (overrides all LLM analysis): quant_gate: INPUT_FAILURE: missing file: alfred_risk.json; compliance_gate: KILL_ZONE: outside western kill zones\nPrior reasoning: TA confidence below GO threshold (conf=50 < 55, orb=55)",
+  "alfred_veto": false,
+  "veto_reason": "",
+  "decision_id": "2026-09-23-NAS100-1",
+  "gates_summary": {
+    "quant": "VETO",
+    "compliance": "VETO",
+    "alfred": "NO_INPUT"
+  },
+  "veto_source": [
+    "quant_gate",
+    "compliance_gate"
+  ],
+  "gate_vetoes": [
+    [
+      "quant_gate",
+      [
+        "INPUT_FAILURE: missing file: alfred_risk.json"
+      ]
+    ],
+    [
+      "compliance_gate",
+      [
+        "KILL_ZONE: outside western kill zones"
+      ]
+    ]
+  ]
+}

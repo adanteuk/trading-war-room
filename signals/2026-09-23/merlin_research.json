@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-23",
+  "timestamp": "2026-09-23T11:05:00Z",
+  "summary": "Bullish continuation day after 9/21 BOS displacement broke the 3-week range; price 30,733 in price discovery above all prior highs with 4 straight bullish D1 candles. However today is printing small-bodied consolidation candles (3%-23% bodies) in H4/M15 — premium, extended, and no fresh pullback yet. Neutral-Bullish lean: do not chase; long only on discount retracement into 30,571-30,645 FVG or 30,394-30,517 zone.",
+  "bias": "Bullish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [30571.5, 30506.3, 30394.2, 29933.2],
+    "resistance": [30796.9, 30820.4, 30900.0, 31000.0]
+  },
+  "ict_analysis": {
+    "daily_bias": "Bullish structure: 4 consecutive bull D1 candles, BOS above 30557 range high on 9/21 displacement. Price in extreme premium (202% of stale D1 DR) = price discovery. Today D1 candle nearly flat (3% body) - consolidation, not reversal.",
+    "h4_context": "H4 premium (138% of 30394-30640 DR). Stacked bullish FVGs below: 30720-30730, 30572-30645, 30423-30506. Last 3 H4 candles bearish small-bodied - pullback phase. Demand at discount FVGs is entry zone, not chase.",
+    "m15_status": "M15 shows consolidation 30724-30820 with one bullish OB at 30766-30787. NO Kill Zone active at analysis time (07:00 ET pre-market). No CRT purge + KL test sequence yet - entry NOT confirmed. Wait for London/NY KZ with retest of 30720-30787 demand."
+  },
+  "risks": [
+    {"event": "US Flash Mfg+Services PMI", "time": "09:45 ET", "impact": "medium"},
+    {"event": "Fed Barr speech", "time": "10:05 ET", "impact": "medium"},
+    {"event": "Extended premium after +838pt 9/21 move", "time": "all session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - Bias is bullish but price is in deep premium with no discount retracement yet and Layer 3 entry conditions (CRT purge + OB + Kill Zone) unconfirmed pre-market. Valid long setup: pullback into 30572-30645 FVG with M15 bullish OB engulfment in NY KZ targeting 30820 then 31000. Invalidation: D1 close below 30394 (H4 DR low). No chase at 30733+. Control: Demand in control (bullish FVG stack + BOS), aligns with bias."
+}

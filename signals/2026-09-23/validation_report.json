@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-23",
+  "timestamp": "2026-09-23T11:07:49.576197+00:00",
+  "files": {
+    "merlin_research.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [],
+      "warns": [
+        "merlin: summary 417 chars > 200 (Discord 2000-char risk — v2.4 lesson)"
+      ],
+      "oks": [
+        "merlin: contract ok"
+      ]
+    },
+    "walker_ta.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [
+        "walker: entry='TBD — wait for NY AM KZ (22:30 HKT): M15 MSS up on sweep of 30709.7 = long trigger; M15 close below 30709.7 = bullish bias invalidated' must be exact float or 'TBD'/omitted",
+        "walker: sl='TBD — structural: below session low 30709.7 for longs (not set pre-KZ)' must be exact float or 'TBD'/omitted",
+        "walker: tp='TBD — BSL above 30820.4 (Tue high, already swept once Wed); extension targets 30950-31050 if reclaimed' must be exact float or 'TBD'/omitted"
+      ],
+      "warns": [
+        "walker: orb_breakdown invalid categories: pre_market_htf_bias=None, vwap_alignment=None, volume_confirmation=None, candle_close_timing=None, ict_crt_confluence=None, range_width_volatility=None",
+        "walker: ml_regime missing (contract-mandatory from Phase 2)",
+        "walker: conditional_triggers missing (contract-mandatory)"
+      ],
+      "oks": []
+    },
+    "alfred_risk.json": {
+      "exists": false,
+      "status": "MISSING",
+      "fails": [],
+      "warns": [],
+      "oks": []
+    }
+  },
+  "totals": {
+    "fails": 3,
+    "warns": 4
+  }
+}
