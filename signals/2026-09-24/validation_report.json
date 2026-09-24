@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-24",
+  "timestamp": "2026-09-24T11:07:18.580147+00:00",
+  "files": {
+    "merlin_research.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [],
+      "warns": [
+        "merlin: summary 325 chars > 200 (Discord 2000-char risk — v2.4 lesson)"
+      ],
+      "oks": [
+        "merlin: contract ok"
+      ]
+    },
+    "walker_ta.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [
+        "walker: entry='TBD - waiting NY AM Kill Zone (20:30-23:00 HKT): watch rejection at H4 bear FVG 30193-30381 (shallow) or 30508-30638 (deep)' must be exact float or 'TBD'/omitted",
+        "walker: sl='TBD - above FVG reclaim / above 30542 if short from deep FVG' must be exact float or 'TBD'/omitted",
+        "walker: tp='TBD - 29788 (50% of 28756-30820 swing), then 29541 (62%)' must be exact float or 'TBD'/omitted"
+      ],
+      "warns": [
+        "walker: orb_breakdown missing while orb_score>0 (warning 1 of 3 before quant-gate veto)",
+        "walker: ml_regime missing (contract-mandatory from Phase 2)",
+        "walker: conditional_triggers missing (contract-mandatory)"
+      ],
+      "oks": []
+    },
+    "alfred_risk.json": {
+      "exists": false,
+      "status": "MISSING",
+      "fails": [],
+      "warns": [],
+      "oks": []
+    }
+  },
+  "totals": {
+    "fails": 3,
+    "warns": 4
+  }
+}

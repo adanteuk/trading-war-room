@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-24",
+  "timestamp": "2026-09-24T19:05:00+08:00",
+  "summary": "Bearish continuation setup: Wednesday High profile confirmed with bearish SMT vs US500, Thursday purged SSL (Tue/Wed lows) and displaced -2% with H4 bearish FVG 30193-30381 overhead. Price compressing just below the FVG awaiting NY AM Kill Zone. Prefer shorts on shallow FVG rejection, targeting 29788 (50%) then 29541 (62%).",
+  "bias": "Bearish",
+  "confidence": 58,
+  "key_levels": {
+    "support": ["30101", "29788 (50% Fib)", "29541 (62%)", "29365 (70.5%)", "28756.7"],
+    "resistance": ["30381 (H4 bear FVG top)", "30508-30638 (H4 bear FVG)", "30820.4 (week high)"]
+  },
+  "ict_analysis": {
+    "daily_bias": "L1: D1 bearish short-term structure - Thu swept below Sep 23 HL (30369) to 30101, closed -1.08% below open. Wednesday High profile + bearish SMT vs US500 confirmed. Bias bearish, medium confidence.",
+    "h4_context": "L2: Strong bearish displacement broke Sep 22/23 lows (SSL purged). Two unfilled bearish FVGs: 30193-30381 (price just below) and 30508-30638. Expect pullback into FVG, rejection, expansion to 29788.",
+    "m15_status": "L3: M15 compression at lows (range 30101-30189), swing low 30101 holding, small HL forming. No confirmed OB rejection yet. NY AM KZ (20:30-23:00 HKT) = decision window. Entry NOT triggered - WAIT."
+  },
+  "risks": [
+    {"event": "Extended move already -2%, M15 basing possible", "time": "all session", "impact": "medium"},
+    {"event": "H4 close above 30381 = CRT reversal invalidation", "time": "any", "impact": "high"},
+    {"event": "Thursday PM reversal profile risk", "time": "NY session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - bias bearish with SMT confluence but move is extended and Layer 3 confirmation (OB rejection in KZ) has not triggered. Do not chase; wait for NY AM Kill Zone rejection at H4 FVG 30193-30381 for short entry. Invalidation: H4 close above 30381."
+}

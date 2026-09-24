@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-24",
+  "timestamp": "2026-09-24T11:07:18.690672+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bearish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bearish continuation setup: Wednesday High profile confirmed with bearish SMT vs US500, Thursday purged SSL (Tue/Wed lows) and displaced -2% with H4 bearish FVG 30193-30381 overhead. Price compressing just below the FVG awaiting NY AM Kill Zone. Prefer shorts on shallow FVG rejection, targeting 29788 (50%) then 29541 (62%).",
+  "final_decision": "NO_GO \u2014 GATE VETO",
+  "trade_params": {},
+  "reasoning": "DETERMINISTIC GATE VETO (overrides all LLM analysis): quant_gate: INPUT_FAILURE: missing file: alfred_risk.json; ORB_BREAKDOWN: orb_breakdown missing (orb_score=54) \u2014 3 consecutive warnings; compliance_gate: KILL_ZONE: outside western kill zones\nPrior reasoning: Mixed signals \u2014 standing aside (conf=55, orb=54)",
+  "alfred_veto": false,
+  "veto_reason": "",
+  "decision_id": "2026-09-24-NAS100-1",
+  "gates_summary": {
+    "quant": "VETO",
+    "compliance": "VETO",
+    "alfred": "NO_INPUT"
+  },
+  "veto_source": [
+    "quant_gate",
+    "compliance_gate"
+  ],
+  "gate_vetoes": [
+    [
+      "quant_gate",
+      [
+        "INPUT_FAILURE: missing file: alfred_risk.json",
+        "ORB_BREAKDOWN: orb_breakdown missing (orb_score=54) \u2014 3 consecutive warnings"
+      ]
+    ],
+    [
+      "compliance_gate",
+      [
+        "KILL_ZONE: outside western kill zones"
+      ]
+    ]
+  ]
+}
