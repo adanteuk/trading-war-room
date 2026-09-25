@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-09-25T18:31:49.464263",
+  "date": "2026-09-25",
+  "bias": "neutral (expanding)",
+  "confidence": 35,
+  "orb_score": 49,
+  "ict_profile": "Friday Continuation",
+  "structure": "HH+LL",
+  "entry": "TBD",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": [
+      "30100.9",
+      "29272.6",
+      "28756.7"
+    ],
+    "resistance": [
+      "30738.3",
+      "30820.4"
+    ]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 HH+LL, Range 2064pts, Position 92.7% (PREMIUM)",
+    "l2_h4_context": "H4 Range 637pts, 7 FVGs near price, CRT 30693.9-30634.0",
+    "l3_m15_entry": "KZ INACTIVE, M15 Range 7pts, Compression Yes"
+  },
+  "dealing_range": {
+    "high": 30820.4,
+    "low": 28756.7,
+    "range": 2063.7000000000007
+  },
+  "fibonacci": {
+    "0": 28756.7,
+    "25": 29272.625,
+    "50": 29788.550000000003,
+    "62": 30032.066600000002,
+    "70.5": 30211.608500000002,
+    "79": 30387.023,
+    "100": 30820.4
+  },
+  "current_price": 30669.2,
+  "reasoning": "D1 structure HH+LL with neutral (expanding) bias. Price at 92.7% of 2064pt range. Kill Zone INACTIVE."
+}
