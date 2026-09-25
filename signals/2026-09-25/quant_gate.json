@@ -1,0 +1,44 @@
+{
+  "gate": "quant",
+  "date": "2026-09-25",
+  "timestamp": "2026-09-25T11:05:17.976807+00:00",
+  "status": "VETO",
+  "vetoes": [
+    "INPUT_FAILURE: missing file: walker_ta.json",
+    "INPUT_FAILURE: missing file: alfred_risk.json"
+  ],
+  "warnings": [
+    "ml_regime missing from walker_ta.json (regime filter not run?)"
+  ],
+  "checks": [
+    {
+      "check": "sample_size",
+      "value": 0,
+      "threshold": ">= 5",
+      "status": "pass"
+    },
+    {
+      "check": "event_week_false_breakout",
+      "value": 0.0,
+      "threshold": "<= 60.0%",
+      "status": "pass"
+    },
+    {
+      "check": "range_vs_atr",
+      "value": 0.0,
+      "threshold": "<= 2.0x",
+      "status": "pass"
+    },
+    {
+      "check": "orb_breakdown",
+      "status": "ok",
+      "detail": "orb_breakdown missing (orb_score=0)"
+    }
+  ],
+  "thresholds": {
+    "min_sample_size": 5,
+    "fb_event_week_max_pct": 60.0,
+    "range_atr_ratio_max": 2.0,
+    "orb_warn_streak_limit": 3
+  }
+}

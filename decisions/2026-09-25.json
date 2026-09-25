@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-25",
+  "timestamp": "2026-09-25T11:05:18.045880+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "NO_INPUT",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "BULLISH continuation bias after Sep 21 breakout above 29752 consolidation. Price at 30658 is extended above stale D1 DR (194.6%). Wait for pullback to H4 FVG support 30547-30634 before entry.",
+  "final_decision": "NO_GO \u2014 GATE VETO",
+  "trade_params": {},
+  "reasoning": "DETERMINISTIC GATE VETO (overrides all LLM analysis): quant_gate: INPUT_FAILURE: missing file: walker_ta.json; INPUT_FAILURE: missing file: alfred_risk.json; compliance_gate: KILL_ZONE: outside western kill zones\nPrior reasoning: No TA input received from Walker",
+  "alfred_veto": false,
+  "veto_reason": "",
+  "decision_id": "2026-09-25-NAS100-1",
+  "gates_summary": {
+    "quant": "VETO",
+    "compliance": "VETO",
+    "alfred": "NO_INPUT"
+  },
+  "veto_source": [
+    "quant_gate",
+    "compliance_gate"
+  ],
+  "gate_vetoes": [
+    [
+      "quant_gate",
+      [
+        "INPUT_FAILURE: missing file: walker_ta.json",
+        "INPUT_FAILURE: missing file: alfred_risk.json"
+      ]
+    ],
+    [
+      "compliance_gate",
+      [
+        "KILL_ZONE: outside western kill zones"
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-25",
+  "timestamp": "2026-09-25T11:05:00Z",
+  "summary": "BULLISH continuation bias after Sep 21 breakout above 29752 consolidation. Price at 30658 is extended above stale D1 DR (194.6%). Wait for pullback to H4 FVG support 30547-30634 before entry.",
+  "bias": "Bullish",
+  "confidence": 65,
+  "key_levels": {
+    "support": [
+      "30547-30634 (H4 bullish FVG)",
+      "30400-30500 (prior consolidation)",
+      "30100 (H4 DR low)"
+    ],
+    "resistance": [
+      "30693.9 (today high)",
+      "30820 (Sep 22 high)",
+      "31000 (psychological)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BULLISH (Med-High). Sep 21 displacement broke 3-wk consolidation (29143-29752). Price in new territory above all recent swing highs. 5 consecutive bullish bias calls. D1 DR stale at 194.6%.",
+    "h4_context": "H4 DR 30100-30556, price at 122.4% (extended premium). Bullish FVG at 30547-30634 is key support. Bearish FVGs at 30508-30637 and 30252-30381 overhead. Wait for pullback to discount.",
+    "m15_status": "M15 range 30571-30693. Bullish FVG 30623-30644. No Kill Zone active (11:00 UTC between sessions). No valid OB entry yet — wait for London/NY KZ."
+  },
+  "risks": [
+    {"event": "Price extended in premium", "time": "all session", "impact": "high"},
+    {"event": "No Kill Zone active", "time": "11:00 UTC", "impact": "medium"},
+    {"event": "Stale dealing ranges", "time": "all session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — Price extended above D1/H4 dealing ranges. No valid entry until pullback to H4 FVG 30547-30634 or new DR forms. Monitor London/NY KZ for OB formation at support."
+}
