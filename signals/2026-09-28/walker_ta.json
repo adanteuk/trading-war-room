@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-09-28T18:35:00+08:00",
+  "symbol": "NAS100 (Pepperstone CFD via Carson MT5)",
+  "trading_day": "2026-09-28 (Monday)",
+  "bias": "bearish",
+  "confidence": 55,
+  "orb_score": 61,
+  "ict_profile": "Power of 3 — bearish AMD in progress (Asia accumulation 30382-30664, London manipulation swept PDL, NY distribution pending)",
+  "entry": "TBD — Waiting for NY AM Kill Zone (08:30-11:00 NY / 20:30-23:00 HKT). Bearish trigger: retrace into 30350-30450 bear-FVG cluster + swept PDL zone inside KZ with M15 LH rejection. Bullish alternative (SMT-divergence play): M15 HH+HL shift + H4 reclaim of 30449 targets 30664/30728.",
+  "sl": "Structural (KZ inactive): bearish thesis invalid above 30528 (bear FVG high); hard invalidation above 30664 (Asia high). Bullish-alt SL below 30280 (session low).",
+  "tp": "Bearish: TP1 30100.9 (Sep 24 SSL), TP2 29623.6 (weekly SSL, only if Tuesday confirms continuation). Bullish alt: 30664.3 then 30728.1 (PDH).",
+  "key_levels": {
+    "support": ["30304.5", "30100.9", "29623.6"],
+    "resistance": ["30382.4", "30415.6", "30449.1", "30528.2", "30664.3"]
+  },
+  "current_price": 30318.6,
+  "three_layer_analysis": {
+    "l1_daily": "D1 swing structure: LL Sep 16 (28756.7) then HH Sep 23 (30820.4) — HH-dominant expanding range, macro trend bullish, price at 75.7% of 30-day range (premium). But Monday prints strong bearish displacement: O 30646 (flat gap vs Fri close 30650.5), early high 30664.3, sell-off to 30280.3, now 30318.6 — 85.3% bearish body, close at 10% of range. Swept PDL 30415.6 and D1 25% Fib 30304.5 (wick-sweep, currently back above 25% Fib). No D1 SMT divergence (both indices HH at highs, LL at lows at swing level). Draw on liquidity: Sep 24 low 30100.9, then weekly SSL 29623.6. Last week was +3.38% (Mon low -> Wed high); this week sets up potential inverted mirror (Mon high -> Wed low).",
+    "l2_h4_context": "Monday H4 sequence: 3 consecutive LH+LL bars (01:00, 05:00, 09:00 UTC) — sustained bearish momentum, no reversal sign yet. H4 5-day dealing range 30100.9-30820.4: price at 30.3% — entering discount. Two UNMITIGATED bearish FVGs above price: 30350.9-30382.4 and 30449.1-30528.2 (short zones on retrace). Bear OB 30578.5-30668.2 (Sep 25 17:00 UTC) unmitigated, overlapping Monday Asia high. Friday bull FVG 30547.5-30604.6 already swept. BSL above intact (PDH 30728.1, range high 30820.4); SSL below at 30100.9.",
+    "l3_m15_entry": "Session low 30280.3 tagged 05:15 NY (London KZ tail). Since then M15 chop: bounce to 30350.9, pullback 30292.9, now ~30318 — no M15 HH+HL bullish shift, no confirmed M15 OB (bounce displacement only 70 pts, weak). No compression (avg range ratio 0.92). Currently BETWEEN kill zones (London ended 05:00 NY; NY AM starts 08:30 NY = 20:30 HKT). Waiting for Kill Zone."
+  },
+  "reasoning": "Bias bearish for remainder of Monday with honest caveats. FOR: (1) Monday = textbook bearish PO3 — flat open at top of 3-day range, early push to 30664.3 (Asia), sustained London sell-off sweeping PDL 30415.6 + D1 25% Fib 30304.5, close sitting at 10% of range; (2) 3 consecutive LH+LL H4 bars, price below falling session VWAP (30432.8) by 114 pts; (3) two unmitigated bear FVGs above give clean short path on any KZ retrace; (4) RVOL 1.17-1.28x on the sell-off; (5) draw on liquidity clearly 30100.9 SSL. AGAINST (caps confidence at 55): (1) intraday SMT divergence — NAS100 swept its Friday low but US500 HELD (7699.5 vs 7687.9), NAS100 -1.08% vs US500 -0.54%: NAS100 is the weaker index but the unconfirmed sweep raises fakeout risk; if US500 sweeps later, bearish confirmed — if NAS100 reclaims 30449, the sweep was a liquidity grab; (2) D1 macro structure still bullish (HH Sep 23) and BSL at 30728/30820 unswept; (3) price entering H4 discount (30.3% of H4 range) and 25% Fib already swept-and-reclaimed intraday — chasing shorts here is poor R:R, better to short a retrace into 30350-30450 inside NY AM KZ or wait for the 30100.9 break-and-retest. Confidence calibrated for structure-momentum agreement but HTF/SMT conflict. ORB 61/100: HTF bias 13/25 (D1 bull vs overnight bear), VWAP 12/15, volume 12/20, candle+timing 9/15 (outside KZ), ICT confluence 7/15 (SMT divergence against shorts), range width 8/10.",
+  "data_source": "Carson MT5 ZMQ bridge (192.168.11.173:5555), Pepperstone CFD, fetched 2026-09-28 18:31 HKT"
+}
