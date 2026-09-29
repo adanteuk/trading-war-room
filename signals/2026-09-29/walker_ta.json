@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-09-29T18:55:00+08:00",
+  "symbol": "NAS100 (Pepperstone CFD via Carson MT5)",
+  "trading_day": "2026-09-29 (Tuesday)",
+  "bias": "bullish",
+  "confidence": 55,
+  "orb_score": 62,
+  "ict_profile": "Classic Tuesday Low — reversal off Monday's terminal-equal SSL purge (30100.8 vs Sep-24 30100.9)",
+  "entry": "TBD — waiting for NY AM Kill Zone (08:30-11:00 NY / 20:30-23:00 HKT). Bullish trigger: M15 pullback into 30285-30320 flag+FVG confluence inside KZ, then M15 close above 30382 (ONH) on RVOL>1x. Bearish alternative: NY AM sweep of 30100.8 that fails to reclaim = double-bottom failure.",
+  "sl": "Bullish: below 30119.8 (ONL); hard invalidation below 30100.8 (swept SSL — breaks the terminal-equal double bottom).",
+  "tp": "Bullish: TP1 30449.1 (Mon bear-FVG low), TP2 30528.2 (Mon bear-FVG high), runner 30664.3 (Mon high BSL). Bearish alt: 29788.6 (D1 50% Fib).",
+  "key_levels": {
+    "support": ["30285.7", "30119.8", "30100.8", "29788.6"],
+    "resistance": ["30381.9", "30449.1", "30528.2", "30578.5", "30664.3"]
+  },
+  "current_price": 30360.2,
+  "three_layer_analysis": {
+    "l1_daily": "Monday completed the bearish draw: swept Sep-24 SSL at 30100.8 (0.1pt below 30100.9 = terminal-equal double bottom) at 10:45 NY inside NY AM KZ, closed +209.5 off low at 30310.3 (-1.11% c2c vs Fri 30650.5). D1 still premium: 77.4% of Sep-16 LL 28756.7 -> Sep-23 HH 30820.4 dealing range; 25% Fib 30304.5 reclaimed. Tuesday so far inside bar (H 30381.9 / L 30119.8). Draw on liquidity flipped to BSL above: Mon high 30664.3 -> Sep 22/23 highs 30788.3/30820.4. Prior week +3.30%; WTD -0.95%.",
+    "l2_h4_context": "5-day dealing range 30100.8-30820.4, price ~35% = discount. London KZ 06:00 UTC bullish displacement +168.2 pts (O 30180.1 -> C 30348.3, close at 87% of range, ~1.95x avg H4 body, vol ~1.0-1.2x avg) after holding 19pts above Monday's low (30119.8). Overhead supply: ONH 30381.9 (H4 62% Fib 30374.2 + Sep-21 bull-FVG top 30384 zone) -> Mon bear FVG 30449.1-30528.2 (top 30502-30528 untested) -> fresh Mon-Asia bear FVG 30569.0-30578.5 (unmitigated). Below: flag low 30285.7 sitting on London M15 FVG stack 30253-30284 — tested 09:30 UTC, held.",
+    "l3_m15_entry": "M15 HH+HL shift since 05:30 UTC low: 30119.8 -> 30373.0@07:30 -> 30317.3@08:00 -> 30381.9@08:15 -> deep flag 30285.7@09:30 (held 1.4pts above 06:30 FVG top) -> 30360s now. Compression mild (0.92). Above session VWAP 30271.0 (+89). Volume soft: RVOL 0.89x vs Monday same-window; London displacement vol ~1.0-1.2x avg. NY AM KZ NOT yet active (starts 20:30 HKT). Caution: Monday's London rally was sold in NY AM."
+  },
+  "reasoning": "Yesterday's bearish TP1 30100.9 was hit to the tick (draw delivered); bias for further downside unconfirmed. Today's evidence flips intraday bias bullish: (1) sell-side liquidity taken with a terminal-equal double bottom + close 209.5 off the low = classic purge; (2) bullish SMT divergence — US500 swept its Monday low (Tue 7659.3 < Mon 7668.4, yet held Sep-24 SSL 7650.3 by 9pts) while NAS100 HELD (30119.8 > 30100.8); US500 05:00U H4 closed 77% off its low; (3) London KZ H4 bullish displacement at H4 discount with price back above VWAP; (4) M15 HH+HL + flag on FVG stack = classic continuation structure. AGAINST (caps confidence at 55): D1 macro still premium 77.4%; Monday bearish displacement was real (-1.11%); RVOL 0.89x soft — rally is liquidity-driven, not volume-driven; London rallies sold in NY AM twice recently; NY AM KZ not yet active. ORB 62/100: HTF 16/25 (D1 premium vs intraday repair), VWAP 12/15, Volume 9/20 (0.89x RVOL), Candle+Timing 7/15 (KZ pending, inside bar), ICT confluence 11/15 (SMT + FVG path clean, Judas done), Range width 7/10. Playbook: long pullback 30285-30320 in NY AM KZ -> trigger 30382 reclaim on RVOL>1x, TP 30449/30528, runner 30664; hard invalidation below 30100.8 (double-bottom failure -> 29788.6). No entry anticipation — confirm inside KZ. Calibration: Mon bearish conf 55 -> TP1 hit, continuation wrong so far (Tue holding inside).",
+  "editor_verification": {
+    "verdict": "18 checks: 15 verified by independent editor re-fetch; 2 editor flags resolved by parent raw-data cross-check — (a) 'Mon-Asia bear FVG 30569.0-30578.5 does not exist' REJECTED: editor session-label error (checked Tue-Asia bar 09-28 21:00U instead of Mon-Asia pattern 09-27 21:00U; parent data confirms FVG exactly, unmitigated); (b) displacement vol '1.16x' vs draft '1.05x' = window-choice difference (parent prior-20-bar avg 46303 -> 1.06x) — softened to '~1.0-1.2x avg'. Editor's 2 UNSURE items (Mon low timing, RVOL) verified from parent M15 raw: 14:45 UTC = 10:45 NY inside NY AM KZ; RVOL 0.89x. Live drift 30355.0 -> 30360.2 during verification (expected, <0.2%).",
+    "verified_via": "Independent editor subagent re-fetch from Carson MT5 ZMQ (24 tool calls) + parent raw-data cross-check"
+  },
+  "data_source": "Carson MT5 ZMQ bridge (192.168.11.173:5555), Pepperstone CFD, fetched 2026-09-29 18:31-18:41 HKT"
+}
