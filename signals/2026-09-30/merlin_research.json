@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-30",
+  "timestamp": "2026-09-30T19:06:30+08:00",
+  "summary": "Neutral. Distribution since 9/23 ATH (3 lower daily highs) vs defended SSL 30100 equal lows; price mid-range premium. Direction only after NY AM KZ + PCE reaction.",
+  "bias": "Neutral",
+  "confidence": 45,
+  "key_levels": {
+    "support": [
+      30303,
+      "30285-30162 (H4 Bull OB)",
+      30100.8
+    ],
+    "resistance": [
+      "30449-30528 (H4 Bear FVG)",
+      30472,
+      30664
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "MIXED/CONSOLIDATION. Bearish distribution from ATH 30820.4 vs defended SSL 30100.8. D1 DR 28756.7-30820.4, price 75.7% PREMIUM. No SMT. Control: supply short-term.",
+    "h4_context": "H4 range 30119.8-30486.9, price 54.3% mid-range. EQ 30303 defended. Ceiling: unmitigated Bear FVG 30449-30528. Floor: Bull OB 30162-30285. No valid KZ position yet.",
+    "m15_status": "NO VALID ENTRY. Chop 30322-30340, compression 0.87 mild, 3 bearish OBs, Kill Zones inactive. NY AM KZ opens 20:30 HKT coinciding with PCE release."
+  },
+  "risks": [
+    {
+      "event": "US Core PCE + GDP block",
+      "time": "08:30 ET",
+      "impact": "high"
+    },
+    {
+      "event": "Walker ORB veto (38<40)",
+      "time": "all session",
+      "impact": "medium"
+    },
+    {
+      "event": "Alfred risk input missing",
+      "time": "all session",
+      "impact": "medium"
+    }
+  ],
+  "recommendation": "WAIT. No entry before NY AM KZ. PCE+GDP drop at KZ open (20:30 HKT) - do not trade the print. Post-news: bearish on 30290 break w/ displacement toward 30303/30285-30162/30100; bullish only on hold above 30449 FVG base.",
+  "walker_status": "received (bias=neutral, conf=40, ORB=38, no entry yet)",
+  "alfred_status": "pending",
+  "data_sources": [
+    "Carson MT5 ZMQ 192.168.11.173 (D1 200 / H4 500 / M15 200 bars)",
+    "nas100_bias/daily_bias.json (79 entries, last 9/25)",
+    "calendar/2026-09-30.json (TradingView econ calendar)",
+    "walker_ta.json (git pull)"
+  ]
+}
