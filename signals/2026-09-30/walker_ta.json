@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-09-30T18:36:00+08:00",
+  "symbol": "NAS100",
+  "data_source": "Carson MT5 bridge (Pepperstone CFD), last bar 2026-09-30 10:30 UTC",
+  "bias": "neutral",
+  "confidence": 40,
+  "orb_score": 38,
+  "ict_profile": "Seek & Destroy (weekly both-side raids: SSL Mon, PDH/BSL Wed); Wednesday Reversal attempt forming, pending NY AM KZ confirmation",
+  "entry": "TBD — no confirmed entry; waiting for NY AM Kill Zone (20:30-23:00 HKT)",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["30303", "30285-30162", "30100.8"],
+    "resistance": ["30472", "30528-30449", "30664"],
+    "notes": "30303 = H4 EQ (confluent with D1 25% Fib 30304.5); 30285-30162 = H4 Bull OB; 30100.8 = equal-lows SSL (9/24 30100.9, 9/28 30100.8); 30472 = PDH (purged by ONH 30486.9); 30528-30449 = H4 Bear FVG (9/28); 30664 = Mon/week high"
+  },
+  "three_layer_analysis": {
+    "l1_daily": "Macro leg 28756.7 (9/16) -> ATH 30820.4 (9/23, 250-bar max) = +2063.7 pts. Distribution since ATH: every session high below it, three consecutive lower daily highs 30728 (9/25) -> 30664 (9/28) -> 30472 (9/29). Equal lows 30100.9/30100.8 (9/24, 9/28) SSL; 9/29 true inside bar, bullish, close 81% of range, low 30119.8 held above SSL. Price 30340.7 = 76.8% of dealing range = PREMIUM, 36 pts above D1 25% Fib (30304.5); D1 EQ 29788.6. No SMT divergence: NAS100 & US500 both HL vs 9/16 lows; NAS100 -2.34% from high at 9/28 low vs US500 -1.73% at 9/24 low (currently -1.56% vs -1.37%) — mild NAS underperformance, not divergence.",
+    "l2_h4_context": "H4 dealing range 30119.8 (9/29 05:00 UTC) -> 30486.9 (ONH) = 367 pts; price 60.2% = mild premium. H4 EQ 30303.3 defended (today low 30290.2 dipped 13 pts below, recovered). Ceiling: unmitigated BEAR FVG 30449.1-30528.2 (9/28) — ONH 30486.9 rejected inside it. Floor: BULL OB 30161.8-30285.2 (9/29 01:00 UTC bearish candle before +168.2 impulse) — today's low tested its top within 5 pts. Price inside 9/21 BULL FVG 29994.1-30384.0 upper third.",
+    "l3_m15_entry": "Judas swing at Asia open: ONH 30486.9 purged PDH 30472.3 by 14.6 pts (05:00 HKT), then 196.7-pt fade to 30290.2 (06:45 UTC, London KZ), bounce to 30457.2 (08:00 UTC), now chopping 30322-30340. M15 compression ratio 0.87 (avg 30.0 vs 34.3) — mild, no strong compression. NY AM Kill Zone NOT yet active (starts 20:30 HKT, ~2h away). Waiting for Kill Zone."
+  },
+  "reasoning": "Two-sided tape; honest NEUTRAL. Bulls own macro structure: HL intact, SSL 30100 triple-zone defended, premium positioning, H4 bull OB + 9/21 bull FVG beneath. Bears own momentum: distribution after 9/23 ATH, Asia-open PDH purge rejected inside 9/28 bear FVG (classic Judas), price below daily open (-71.9), NAS100 lagging US500. Both-side liquidity raids this week (Mon SSL 30100.8, Wed BSL/PDH) = Seek & Destroy profile. Tradeable read only after NY AM KZ: (a) bearish continuation on 30290 break with displacement -> H4 EQ 30303 -> OB 30162-30285 -> SSL 30100; (b) bullish reclaim on hold above 30449 (bear FVG base) -> 30528/30664. No entry confirmed. Confidence capped 40 for structure/momentum conflict (calibration rule). ORB breakdown: HTF 12/25, VWAP 0/15 (N/A on MT5 feed), Volume 6/20 (partial 137923 vs 9/29 full-day 281389, ~0.8x pace), Candle/timing 5/15, ICT confluence 8/15, Range width 7/10 (day range 0.65%)."
+}
