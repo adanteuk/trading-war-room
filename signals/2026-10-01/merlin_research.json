@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-01",
+  "timestamp": "2026-10-01T11:05:00+00:00",
+  "summary": "Macro bullish (HH/HL, >MA50) but deep premium 91.6% + BSL sweep 30,904 w/ bearish SMT vs US500 = Thursday reversal risk. Intraday bearish; no entry until NY AM KZ confirms.",
+  "bias": "Bearish",
+  "confidence": 55,
+  "key_levels": {
+    "support": ["30511", "30439", "30263", "30081"],
+    "resistance": ["30708-30779", "30823-30863", "30904"]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 structure bullish HH/HL; price 78.6-91.6% of DR = premium. BSL sweep at 30,820/30,904 rejected. Intraday bearish in bullish macro. Conf 55 (conflict rule).",
+    "h4_context": "H4 DR stale (102.8%). 3 bear M15 FVGs overhead: 30,632-30,708 (price inside), 30,722-30,779, 30,823-30,863. London KZ swept BSL then distributed.",
+    "m15_status": "No OB confirmed; pre-market, no KZ active. NY AM KZ 20:30-23:00 HKT will confirm. Watch bear-FVG retest 30,722-30,779 (short) or reclaim 30,708+ (bull)."
+  },
+  "risks": [
+    {"event": "ISM Manufacturing PMI", "time": "10:00 ET", "impact": "high"},
+    {"event": "Fed speakers 09:05/15:30 ET", "time": "09:05 ET", "impact": "medium"},
+    {"event": "BSL sweep may extend; reclaim 30904 = bear invalid", "time": "all session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - Layer 3 unconfirmed pre-market. Short-onset watch: NY AM KZ rejection at 30,722-30,779 FVG retest. Long invalidation risk if 30,904 reclaimed. No trade until M15 OB forms in KZ.",
+  "other_agents": {"walker": "received (conf 58, ORB 55, bearish)", "alfred": "pending"},
+  "data_sources": ["Alfred MT5 ZMQ 192.168.11.173 (D1 200 / H4 500 / M15 200 bars)", "ict_analysis.py 3-layer pipeline", "walker_ta.json", "daily_bias.json (last: 09-30 Bullish Medium-High, 30,529 BSL target hit at 30,904)", "TradingView economic calendar"]
+}
