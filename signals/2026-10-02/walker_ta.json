@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-10-02T10:31:00Z",
+  "symbol": "NAS100",
+  "data_source": "Carson MT5 (Pepperstone CFD)",
+  "bias": "bullish",
+  "confidence": 52,
+  "orb_score": 53,
+  "ict_profile": "Friday Continuation (Monday-Low week) — BSL draw at 30,903.8",
+  "entry": "TBD - no confirmed entry; watch (a) pullback into H4 bull FVG 30,676-30,695 hold for continuation long, or (b) sweep of 30,903.8 BSL with M15 rejection for reversal short. NY AM KZ 20:30-23:00 HKT decides.",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["30676", "30595", "30285", "30101"],
+    "resistance": ["30728", "30790", "30823-30863", "30904"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "Macro D1 structure BULLISH: HH 30,820.4 (Sep 23) + HL 30,100.8 (Sep 28), with equal lows 30,100.8/30,100.9 = SSL pool. Oct 1 swept Sep-23 BSL (ONH 30,903.8 > 30,820.4) then closed 30,527.1 mid-low (39.1% of range) with 376.7-pt upper wick, body only 10.4% of 618.4 range — distribution warning at deep premium. Dealing range 28,756.7 -> 30,903.8 (2,147.1 pts); price 30,728 = 91.8% = DEEP PREMIUM. Fibs: 50% EQ 29,830.3 / 62% 30,086.2 / 70.5% 30,269.3 / 79% 30,452.9 / OTE -0.5% 30,914.5. SMT (Oct 1): bearish vs US500 — NAS100 swept its Sep-23 swing high while US500 high 7,711.7 failed vs Sep-22 swing high 7,785.0 AND PDH 7,725.2; unresolved into today. Today: flat gap (open 30,520.6 vs Oct-1 close 30,527.1 = -6.5), price +207.4 above daily open, +0.66%.",
+    "l2_h4_context": "H4 dealing range = Oct 1 expansion day 30,285.4 -> 30,903.8 (618.4 pts). Price 30,728 = 71.6% = premium, holding above range EQ 30,594.6. Overnight low 30,520.6 probed below EQ in Asia; London reclaimed it and left a BULL H4 FVG 30,675.8-30,695.1 (formed 05:00 UTC, London KZ) — now support directly under price. Current price 30,728.0 is testing the Sep-25 H4 swing high 30,728.1 to the tick. Overhead: today's session high 30,790.5, then unmitigated bear M15 FVG 30,823.1-30,863.1 (formed Oct 1 06:30 UTC), then the 30,903.8 BSL draw. CRT frame = Oct 1 daily range; price in upper half = bullish disposition.",
+    "l3_m15_entry": "M15 compression ratio 0.62 (last-6 avg range 30.9 vs prior-6 50.1) — compression present, expansion pending. Session VWAP 30,661.7, price +66.3 above = bullish intraday. RVOL proxy 0.94 (today 131,380 vs yesterday 139,174 to 10:30 UTC) — soft, no volume confirmation. M15 sequence: ascending lows all session (30,546.6 -> 30,595.5 -> 30,695.1), pre-market thrust 07:45-08:45 UTC 30,630 -> 30,785.4, then 2-hour consolidation 30,695-30,790. No M15 OB confirmed yet. Kill Zone: London KZ closed; NY AM KZ (08:30-11:00 NY = 12:30-15:00 UTC = 20:30-23:00 HKT) NOT yet started at snapshot 06:31 NY — Waiting for Kill Zone."
+  },
+  "orb_breakdown": {
+    "htf_bias": "13/25 — macro D1 bullish but Oct-1 BSL rejection + SMT + deep premium offset",
+    "vwap": "11/15 — +66 above rising VWAP",
+    "volume": "8/20 — RVOL 0.94, no CVD",
+    "candle_timing": "5/15 — no breakout close yet, NY AM KZ not started",
+    "ict_confluence": "8/15 — clear BSL draw + bull FVG support vs bear FVG overhead + SMT against",
+    "range_volatility": "8/10 — session range 269.9 pts = 0.88% of price"
+  },
+  "reasoning": "CORE READ: Friday Continuation toward the BSL draw. This week printed a Monday Low (30,100.8) with recovery Tue-Thu; Thursday ran the Sep-23 BSL (30,820.4) up to 30,903.8 in London KZ and got rejected 376.7 pts into the close — but Friday is grinding higher again (+0.66%, above open, above VWAP, ascending M15 lows, compression 0.62 pre-expansion). ICT read: the 30,903.8 ONH is the remaining draw on liquidity above; Friday sessions favor continuation into that raid before the weekend. Price structure today is constructive: overnight dipped below the Oct-1 range EQ (30,594.6), London reclaimed it and left a bull H4 FVG (30,676-30,695) that has since held as support; current price is pinned exactly at the Sep-25 H4 swing high (30,728.1). COUNTERWEIGHTS cap confidence at 52/100: (1) price sits at 91.8% of the D1 dealing range = deep premium where ICT sells, not buys; (2) the Oct-1 bearish SMT vs US500 (NAS100 swept, US500 refused) remains unresolved — if US500 continues to refuse, the BSL raid scenario flips into a double-top rejection; (3) RVOL 0.94 shows no institutional urgency; (4) bear M15 FVG 30,823-30,863 sits between price and the draw. Judgment: intraday bias BULLISH for a run into 30,823-30,863 then the 30,903.8 BSL, but this is a low-conviction continuation long, not a fresh swing — honest confidence 52 (structure and today's momentum agree directionally, but premium + SMT conflict). ENTRY NOT ANTICIPATED per war-room protocol. Two confirmed-setup watch paths for NY AM KZ (20:30-23:00 HKT): (a) pullback into 30,676-30,695 bull FVG that holds with M15 displacement up = continuation long toward the draw; (b) sweep of 30,903.8 with M15 rejection (SMT check vs US500 at its own PDH 7,725.2) = reversal short, magnets 30,594.6 EQ then 30,285.4 PDL. Invalidation of bullish bias: M15 close below 30,594.6 puts 30,285.4 and the 30,101 equal-lows SSL pool in play. Waiting for Kill Zone.",
+  "editor_notes": "pending editor verification"
+}
