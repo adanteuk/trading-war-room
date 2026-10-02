@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-02",
+  "timestamp": "2026-10-02T11:13:44.621227+00:00",
+  "files": {
+    "merlin_research.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [],
+      "warns": [],
+      "oks": [
+        "merlin: contract ok"
+      ]
+    },
+    "walker_ta.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [
+        "walker: entry='TBD - no confirmed entry; watch (a) pullback into H4 bull FVG 30,676-30,695 hold for continuation long, or (b) sweep of 30,903.8 BSL with M15 rejection for reversal short. NY AM KZ 20:30-23:00 HKT decides.' must be exact float or 'TBD'/omitted"
+      ],
+      "warns": [
+        "walker: orb_breakdown invalid categories: pre_market_htf_bias=None, vwap_alignment=None, volume_confirmation=None, candle_close_timing=None, ict_crt_confluence=None, range_width_volatility=None",
+        "walker: ml_regime missing (contract-mandatory from Phase 2)",
+        "walker: conditional_triggers missing (contract-mandatory)"
+      ],
+      "oks": []
+    },
+    "alfred_risk.json": {
+      "exists": false,
+      "status": "MISSING",
+      "fails": [],
+      "warns": [],
+      "oks": []
+    }
+  },
+  "totals": {
+    "fails": 1,
+    "warns": 3
+  }
+}

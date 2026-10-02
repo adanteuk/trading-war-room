@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-02",
+  "timestamp": "2026-10-02T11:07:41Z",
+  "summary": "Bullish HH/HL intact but price 30,744 sits at 89% premium directly under 30,770-30,820 supply/BSL. NFP today 08:30 ET. No valid M15 entry - wait for post-NFP reaction.",
+  "bias": "Bullish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [
+      "30,695 (M15 bull FVG top)",
+      "30,676-30,695 (H4 bull FVG)",
+      "30,547 (FIB 62%)",
+      "30,460 (FIB 50% / D1 EQ)",
+      "30,285 (H4 range low)"
+    ],
+    "resistance": [
+      "30,750 (M15 bearish FVG)",
+      "30,770-30,820 (supply / 9-22 swing high BSL)",
+      "30,903 (9-30 spike-rejection high)",
+      "31,000 (psychological)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BULLISH structure (HH/HL from 30,101 low). Price 89% of range 30,101-30,820 = deep premium. Draw: BSL 30,820/30,903. Control: demand (Oct 1 83% bull body) but testing supply.",
+    "h4_context": "H4 range 30,285-30,904, price 74% premium. Fresh bull FVG 30,676-30,695 below; supply 30,770-30,820 overhead (9-22 swing high + 9-30 spike rejection). CRT: purging 30,790.",
+    "m15_status": "NO VALID ENTRY. No Kill Zone active (pre-NFP lunch), price inside fresh bearish M15 FVG 30,734-30,750. Next window: NY AM KZ after NFP - requires post-NFP MSS confirmation."
+  },
+  "risks": [
+    {"event": "NFP (Sep) release", "time": "08:30 ET", "impact": "high"},
+    {"event": "Friday profit-taking into weekend", "time": "15:00 ET", "impact": "medium"},
+    {"event": "MT5 .211 endpoint degraded (using .173)", "time": "all session", "impact": "low"}
+  ],
+  "recommendation": "WAIT - bullish bias but deep premium at supply 30,770-30,820, no active KZ, NFP 08:30 ET mid-session. Post-NFP: longs at 30,547-30,695 confluence (FIB62+H4/M15 FVG) on MSS; shorts only on rejection at 30,770-30,820 -> 30,594/30,460. No entries before the print.",
+  "data_sources": [
+    "Alfred MT5 via ZMQ tcp://192.168.11.173:5555 (NAS100 D1/H4/M15, live)",
+    "ict-crt-pipeline scripts/ict_analysis.py 3-layer run",
+    "~/.hermes/trading/nas100_bias/daily_bias.json (Oct 1 entry: Bullish Medium-High)",
+    "Investing.com / ForexFactory / TradingEconomics NFP calendar"
+  ]
+}
