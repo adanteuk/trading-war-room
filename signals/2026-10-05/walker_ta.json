@@ -4,29 +4,30 @@
   "bias": "neutral",
   "confidence": 40,
   "orb_score": 44,
-  "ict_profile": "Power of 3 Monday (gap-up open -> Judas swing up to 30987 -> distribution lower); D1 structure remains bullish HH+HL",
+  "ict_profile": "Power of 3 Monday (gap-up open +48 -> Judas swing up to 30987.1 -> distribution lower); D1 structure: 3 consecutive HH+HL days (Sep 29->Oct 2) remains bullish",
   "entry": "TBD",
   "sl": "TBD",
   "tp": "TBD",
   "kill_zone_status": "London KZ closed (06:34 NY). NY AM KZ 08:30-11:00 NY (20:30-23:00 HKT) — waiting. US cash open 21:30 HKT.",
   "key_levels": {
     "support": [
-      "30726 (session low)",
-      "30569 (range EQ 50%)",
-      "30645-30571 (unmitigated H4 bullish FVG)",
-      "30459 (61.8% retrace)",
-      "30377 (70.5%)",
-      "30298 (79% OTE)",
-      "30101 (range low Sep 28)"
+      "30726.1 (session low)",
+      "30569.4 (range EQ 50%)",
+      "30458.8 (61.8% retrace)",
+      "30377.3 (70.5%)",
+      "30297.6 (79% OTE)",
+      "30314.9-30449.1 / 30290.2-30457.2 (discount H4 OB cluster)",
+      "30100.8 (range low Sep 28)"
     ],
     "resistance": [
-      "30783-30785 (M15 bearish FVG)",
-      "30856-30960 (H4 bearish OB / Monday open zone)",
-      "30987 (session high)",
-      "31038 (Friday high / range high)"
+      "30750.3-30825.9 (violated Fri bullish OB -> breaker ref)",
+      "30782.7-30785.2 / 30809.4-30824.6 / 30854.6-30874.0 (M15 bearish FVG stack)",
+      "30856.4-30960.0 (H4 bearish OB)",
+      "30987.1 (session high)",
+      "31038.0 (Friday high / range high)"
     ],
-    "pdh": 30987.1,
-    "pdl": 30726.1,
+    "pdh": 31038.0,
+    "pdl": 30520.6,
     "onh": 30987.1,
     "onl": 30726.1,
     "range_high": 31038.0,
@@ -34,9 +35,9 @@
     "eq": 30569.4
   },
   "three_layer_analysis": {
-    "l1_daily": "D1 structure bullish: 4 consecutive HH+HL days (Sep 28 low 30100.8 -> Oct 2 high 31038.0, 937-pt expansion). Structural dealing range 30100.8-31038.0, EQ 30569.4. Current 30737.6 sits at 67.9% of range = PREMIUM (above EQ, below OTE). Friday was a strong trend-up day (open = low, +288 pts, close 56% of range). Monday opened ABOVE Friday close (+48 gap) but is trading -118.8 below its own open with close-at-4%-of-range so far — intraday momentum bearish inside bullish structure. No PDH/PDL sweep today (31038 / 30520 both intact). SMT vs US500: none — both indices held below prior structural highs (NAS 30987.1<31038.0, SPX 7740.2<7758.1).",
-    "l2_h4_context": "Three consecutive bearish H4 closes from the 09:30 HKT session high: 30987.1 -> 30866.0 -> 30807.4 highs; lows 30802.4 -> 30740.4 -> 30726.1 — clean short-term bearish sequence. Overhead: bearish OB 30856.4-30960.0 (Mon 05:00 bar), stack of bearish M15 FVGs 30783-30942. Below: unmitigated H4 bullish FVG 30571.5-30645.0 straddling EQ, then OTE retracement zone 30458.8-30297.6 (61.8-79%). NOTE: the Oct-2 bullish OB (30750.3-30864.1) has been violated — session low 30726.1 traded through its low; if price stays below at cash open it is compromised (breaker risk). CRT: current H4 candle range 30726.1-30807.4 and shrinking (184.7 -> 125.6 -> 81.3 pts) — compression into the cash open.",
-    "l3_m15_entry": "Session: open 30856.4, rally to 30987.1 by 09:30 HKT (Judas swing up), then steady all-session sell-off to 30726.1 (17:30 HKT). Current 30737.6, consolidating 10-26 pt M15 bars just above session low. No strong range compression detected (first-half avg 33.2 vs second-half 36.1). Bearish FVG stack overhead resists any retrace: 30782.7-30785.2 / 30809.4-30824.6 / 30854.6-30874.0. No M15 bullish OB formed yet. Kill Zone: London KZ CLOSED; NY AM KZ not yet active — NO entry confirmation available. Overnight range 261 pts (0.85% of price) = within 0.3-1.5% ORB width band."
+    "l1_daily": "D1 structure bullish: 3 consecutive HH+HL days (Sep 29->30->Oct 1->Oct 2; Sep 28 printed the LH+HL base). Structural dealing range 30100.8 (Sep 28) -> 31038.0 (Oct 2), 937.2 pts, EQ 30569.4. Current 30737.6 at 67.9% of range = PREMIUM (above EQ, below OTE). Friday: open = low (30520.6), body +287.7, close-to-close +281.2, close at 56% of range. Monday opened ABOVE Friday close (+48.1 gap) but is trading -118.8 below its own open with close at 4.4% of range so far — intraday momentum bearish inside bullish structure. Monday = LH+HL inside day. No PDH/PDL sweep today: Monday H 30987.1 < PDH 31038.0, Monday L 30726.1 > PDL 30520.6. SMT vs US500 (D1, lookback 2, matching): NAS100 swept its prior swing high (31038.0 > 30820.4, Sep 23) while US500 FAILED (Fri 7754.8 and Mon 7740.2 both < 7785.0, Sep 22 swing) -> SMT non-confirmation divergence = bearish warning at NAS highs.",
+    "l2_h4_context": "Three consecutive bearish H4 closes from the 09:30 HKT session high: highs 30987.1 -> 30866.0 -> 30807.4; lows 30802.4 -> 30740.4 -> 30726.1 — clean short-term bearish sequence. Overhead: bearish OB 30856.4-30960.0 (Mon 05:00 HKT bull bar, low broken by 09:00 close 30830.6); Friday-PM bullish OB 30750.3-30825.9 (10-03 01:00 HKT bar) has been VIOLATED by session low 30726.1 -> breaker risk if price stays below at cash open. Support structure below: EQ 30569.4, then discount OB cluster 30314.9-30449.1 / 30290.2-30457.2 overlapping OTE zone 30458.8-30297.6 (61.8-79% retrace). NOTE: the Sep-22 H4 bullish FVGs (30571.5-30645.0, 30719.9-30729.9) are ALREADY FULLY MITIGATED (Sep 23 21:00 HKT bar L=30369.5 / Sep 23 09:00 bar L=30709.7) — not live levels. CRT: current H4 candle range 30726.1-30807.4 and shrinking (184.7 -> 125.6 -> 81.3 pts) — compression into the cash open.",
+    "l3_m15_entry": "Session: open 30856.4, rally to 30987.1 by 09:30 HKT (Judas swing up), then steady all-session sell-off to 30726.1 (17:30 HKT). Current 30737.6, consolidating 10-26 pt M15 bars just above session low. No strong range compression (first-half avg 33.2 vs second-half 36.1). Bearish M15 FVG stack overhead (re-derived from raw session bars): 30782.7-30785.2 (17:15), 30809.4-30824.6 (16:30), 30854.6-30874.0 (11:45), plus 30876.9-30906.1 (10:45) and 30917.9-30942.4 (10:30). No M15 bullish OB formed yet. Kill Zone: London KZ CLOSED; NY AM KZ 08:30-11:00 NY (20:30-23:00 HKT) not yet active — NO entry confirmation available. Overnight range 261.0 pts (0.85% of price) = within 0.3-1.5% ORB width band. Oct 5 is a normal US trading day (no holiday)."
   },
   "orb_breakdown": {
     "premarket_htf_bias_25": 15,
@@ -47,5 +48,10 @@
     "range_width_volatility_10": 8,
     "note": "VWAP/RVOL/CVD unavailable from MT5 feed — scored conservatively. No close outside overnight range, NY AM KZ inactive, no SMT."
   },
-  "reasoning": "Structure vs momentum CONFLICT: D1 is bullish (HH+HL, price premium) but today's intraday is bearish (below open, 3 bearish H4 closes, close at 4% of day range). Per bias-rigidity discipline this scores NEUTRAL with reduced confidence (40). Two scenarios: (1) BEARISH continuation — acceptance below 30726.1 targets EQ 30569.4 / unmitigated bullish FVG 30571-30645, then OTE zone 30459-30298; Monday Po3 profile favors this while price stays under the 30856-30960 bearish OB. (2) BULLISH continuation — a NY AM sweep of 30726.1 that reclaims it (or a discount tap of the FVG/EQ) with bullish structure intact re-opens longs toward 30987/31038. Waiting for NY AM Kill Zone (20:30-23:00 HKT); no entry until confirmation. Entries/SL/TP deliberately TBD — do not anticipate."
+  "reasoning": "Structure vs momentum CONFLICT: D1 is bullish (HH+HL run, price premium) but today's intraday is bearish (below open, 3 bearish H4 closes, close at 4.4% of day range) AND SMT non-confirmation from US500 warns at highs. Per bias-rigidity discipline this scores NEUTRAL with reduced confidence (40). Two scenarios: (1) BEARISH continuation — acceptance below 30726.1 targets EQ 30569.4, then discount OB cluster/OTE zone 30458.8-30297.6; Monday Po3 profile favors this while price stays under the 30856.4-30960.0 bearish OB and the M15 FVG stack. (2) BULLISH continuation — a NY AM sweep of 30726.1 that reclaims it (or a discount tap of EQ/OTE) with bullish structure intact re-opens longs toward 30987.1/31038.0. Waiting for NY AM Kill Zone (20:30-23:00 HKT); no entry until confirmation. Entries/SL/TP deliberately TBD — do not anticipate.",
+  "verification": {
+    "editor": "delegate_task subagent (glm-5), 2026-10-05 18:47 HKT",
+    "result": "21 checks: 11 verified, 6 corrected (structure count 4->3, Fri +288->+281.2 C2C, PDL 30726.1->30520.6, SPX 7758.1->7754.8, OB attribution->Fri PM 10-03 01:00 bar, FVG unmitigated->mitigated), 2 uncertain",
+    "parent_crosscheck": "FVG mitigation confirmed via raw H4 scan (full fill Sep 23 21:00 HKT); M15 FVG bounds re-derived and match exactly; SMT reframed: NAS swept 30820.4, US500 failed 7785.0 -> divergence EXISTS (draft's 'no SMT' was wrong)"
+  }
 }
