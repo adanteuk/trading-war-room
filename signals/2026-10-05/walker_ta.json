@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-10-05T18:36:54.124700+08:00",
+  "instrument": "NAS100 (Pepperstone CFD via Carson MT5)",
+  "bias": "neutral",
+  "confidence": 40,
+  "orb_score": 44,
+  "ict_profile": "Power of 3 Monday (gap-up open -> Judas swing up to 30987 -> distribution lower); D1 structure remains bullish HH+HL",
+  "entry": "TBD",
+  "sl": "TBD",
+  "tp": "TBD",
+  "kill_zone_status": "London KZ closed (06:34 NY). NY AM KZ 08:30-11:00 NY (20:30-23:00 HKT) — waiting. US cash open 21:30 HKT.",
+  "key_levels": {
+    "support": [
+      "30726 (session low)",
+      "30569 (range EQ 50%)",
+      "30645-30571 (unmitigated H4 bullish FVG)",
+      "30459 (61.8% retrace)",
+      "30377 (70.5%)",
+      "30298 (79% OTE)",
+      "30101 (range low Sep 28)"
+    ],
+    "resistance": [
+      "30783-30785 (M15 bearish FVG)",
+      "30856-30960 (H4 bearish OB / Monday open zone)",
+      "30987 (session high)",
+      "31038 (Friday high / range high)"
+    ],
+    "pdh": 30987.1,
+    "pdl": 30726.1,
+    "onh": 30987.1,
+    "onl": 30726.1,
+    "range_high": 31038.0,
+    "range_low": 30100.8,
+    "eq": 30569.4
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 structure bullish: 4 consecutive HH+HL days (Sep 28 low 30100.8 -> Oct 2 high 31038.0, 937-pt expansion). Structural dealing range 30100.8-31038.0, EQ 30569.4. Current 30737.6 sits at 67.9% of range = PREMIUM (above EQ, below OTE). Friday was a strong trend-up day (open = low, +288 pts, close 56% of range). Monday opened ABOVE Friday close (+48 gap) but is trading -118.8 below its own open with close-at-4%-of-range so far — intraday momentum bearish inside bullish structure. No PDH/PDL sweep today (31038 / 30520 both intact). SMT vs US500: none — both indices held below prior structural highs (NAS 30987.1<31038.0, SPX 7740.2<7758.1).",
+    "l2_h4_context": "Three consecutive bearish H4 closes from the 09:30 HKT session high: 30987.1 -> 30866.0 -> 30807.4 highs; lows 30802.4 -> 30740.4 -> 30726.1 — clean short-term bearish sequence. Overhead: bearish OB 30856.4-30960.0 (Mon 05:00 bar), stack of bearish M15 FVGs 30783-30942. Below: unmitigated H4 bullish FVG 30571.5-30645.0 straddling EQ, then OTE retracement zone 30458.8-30297.6 (61.8-79%). NOTE: the Oct-2 bullish OB (30750.3-30864.1) has been violated — session low 30726.1 traded through its low; if price stays below at cash open it is compromised (breaker risk). CRT: current H4 candle range 30726.1-30807.4 and shrinking (184.7 -> 125.6 -> 81.3 pts) — compression into the cash open.",
+    "l3_m15_entry": "Session: open 30856.4, rally to 30987.1 by 09:30 HKT (Judas swing up), then steady all-session sell-off to 30726.1 (17:30 HKT). Current 30737.6, consolidating 10-26 pt M15 bars just above session low. No strong range compression detected (first-half avg 33.2 vs second-half 36.1). Bearish FVG stack overhead resists any retrace: 30782.7-30785.2 / 30809.4-30824.6 / 30854.6-30874.0. No M15 bullish OB formed yet. Kill Zone: London KZ CLOSED; NY AM KZ not yet active — NO entry confirmation available. Overnight range 261 pts (0.85% of price) = within 0.3-1.5% ORB width band."
+  },
+  "orb_breakdown": {
+    "premarket_htf_bias_25": 15,
+    "vwap_alignment_15": 5,
+    "volume_confirmation_20": 5,
+    "candle_close_timing_15": 5,
+    "ict_crt_confluence_15": 6,
+    "range_width_volatility_10": 8,
+    "note": "VWAP/RVOL/CVD unavailable from MT5 feed — scored conservatively. No close outside overnight range, NY AM KZ inactive, no SMT."
+  },
+  "reasoning": "Structure vs momentum CONFLICT: D1 is bullish (HH+HL, price premium) but today's intraday is bearish (below open, 3 bearish H4 closes, close at 4% of day range). Per bias-rigidity discipline this scores NEUTRAL with reduced confidence (40). Two scenarios: (1) BEARISH continuation — acceptance below 30726.1 targets EQ 30569.4 / unmitigated bullish FVG 30571-30645, then OTE zone 30459-30298; Monday Po3 profile favors this while price stays under the 30856-30960 bearish OB. (2) BULLISH continuation — a NY AM sweep of 30726.1 that reclaims it (or a discount tap of the FVG/EQ) with bullish structure intact re-opens longs toward 30987/31038. Waiting for NY AM Kill Zone (20:30-23:00 HKT); no entry until confirmation. Entries/SL/TP deliberately TBD — do not anticipate."
+}
