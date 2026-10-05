@@ -1,0 +1,67 @@
+{
+  "hkt_date": "2026-10-05",
+  "fetched_at": "2026-10-05T09:00:26.406080+00:00",
+  "sources": [
+    "tradingview-internal:https://economic-calendar.tradingview.com/events?from=2026-10-04T00%3A00%3A00Z&t"
+  ],
+  "times_available": true,
+  "event_count": 7,
+  "events": [
+    {
+      "time_utc": "2026-10-05T05:00:00.000Z",
+      "currency": "JPY",
+      "impact": "high",
+      "name": "Consumer Confidence",
+      "importance": 1,
+      "country": "JP"
+    },
+    {
+      "time_utc": "2026-10-05T08:00:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-05T09:00:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-05T09:00:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Producer Price Inflation MoM",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-05T11:45:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-05T14:00:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Non Manufacturing PMI",
+      "importance": 1,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-10-05T14:15:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    }
+  ]
+}

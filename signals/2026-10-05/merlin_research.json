@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-05",
+  "timestamp": "2026-10-05T19:05:00+08:00",
+  "summary": "Bullish D1 structure (HH/HL, ATH 31,038) + HMM bullish, but price at H4 premium after Monday swept 30,987 in Asia then sold off in London. Corrective pullback in uptrend; longs only from discount.",
+  "bias": "Bullish",
+  "confidence": 62,
+  "key_levels": {
+    "support": ["30726 Mon low / H4 62%", "30636 H4 EQ", "30547 D1 62%", "30529 9/24 REL", "30285 H4 DR low", "30101 9/27 swing"],
+    "resistance": ["30813-30825 CRT hi + M15 FVG", "30856 Mon open", "30933-30987 Mon high", "31038 ATH BSL"]
+  },
+  "ict_analysis": {
+    "daily_bias": "BULLISH HH/HL (30,081 HL held, ATH 31,038). Today bearish candle off 30,987 Asia high = pullback within uptrend. No MSS below 30,529. D1 close <30,081 kills thesis.",
+    "h4_context": "DR 30,285-30,987, EQ 30,636; price 70.6% premium. Mon low 30,726 tagged 62% fib (30,720). Wait for dip to 30,636-30,547 or reclaim 30,825 FVG. Invalid: H4 close <30,529.",
+    "m15_status": "NO VALID ENTRY yet - no Kill Zone active (NY AM KZ 13:30-16:00 UTC). M15 bearish FVG 30,809-30,825 overhead. Need CRT purge + OB formation inside NY AM KZ."
+  },
+  "risks": [
+    {"event": "ISM Services PMI", "time": "14:00 UTC / 10:00 ET", "impact": "high"},
+    {"event": "Premium entry risk (H4 70.5%)", "time": "all session", "impact": "medium"},
+    {"event": "Monday range chop, ADX ~14", "time": "all session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - bullish bias but premium entry + no Kill Zone active. Longs: NY AM KZ dip into 30,636-30,547 discount with M15 OB (SL below OB, TP 30,825 -> 30,987), or displacement reclaim of 30,825. Skip if H4 closes <30,529.",
+  "walker_ta_status": "pending",
+  "alfred_risk_status": "pending",
+  "weekly_profile": "Monday (range-setting day); non-FOMC week (next FOMC Oct 27-28); recent 4 bias calls all Bullish and all roughly correct",
+  "data_sources": ["Alfred MT5 ZMQ 192.168.11.173:5555 (D1 200/H4 500/M15 200 bars)", "ict_analysis.py 3-layer pipeline", "daily_bias.json (10/02 entry)", "war-room calendar 2026-10-05"]
+}
