@@ -1,55 +1,41 @@
 {
-  "generated": "2026-10-06T18:40:07.647776+08:00",
+  "timestamp": "2026-10-06T18:55:00+08:00",
   "symbol": "NAS100",
-  "data_source": "Carson MT5 ZMQ (Pepperstone CFD)",
+  "data_source": "Carson MT5 ZMQ (192.168.11.173:5555), Pepperstone CFD NAS100 + US500 + US2000, fetched 2026-10-06 18:31-18:50 HKT. D1 bars stamp 21:00 UTC (17:00 NY session open); all dates = US session dates.",
   "current_price": 31212.5,
-  "bias": "Bullish",
-  "confidence": 65,
+  "bias": "bullish",
+  "confidence": 60,
+  "orb_score": 63,
+  "ict_profile": "Midweek Continuation (bullish) - Mon displacement rally, Tue continuation; watch Wed/Thu reversal window",
+  "entry": "TBD - no active Kill Zone (06:30 NY, between London close and NY AM open); do NOT anticipate",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["31096 (H4 FVG 31041-31096, upper half tested at 31079)", "31041 (FVG lower bound - invalidation trigger)", "30976 (recent-leg EQ 50%)", "30836-30726 (H4 bull OB + 79% fib)", "30820 (D1 prior range high / breakout retest)", "30663 (recent-leg expansion EQ)", "30240/29630/29138 (macro-range fibs 23.6%/38.2%/50%)"],
+    "resistance": ["31225 (today's high / fresh 200-bar high)", "31250/31300 (psych) - above: price discovery, no structural resistance in lookback window"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "D1 bullish HH+HL: SH 29734.2 (Sep 8 session) -> 30820.4 (Sep 23 session) = HH; SL 28756.7 (Sep 16 session) -> 30100.8 (Sep 28 session) = HL, intact (3-bar low 30520.6 > 30100.8). Price 31212.5 has broken ABOVE the prior dealing range high 30820.4 -> expansion/price discovery; today's 31225.3 high is a fresh 200-bar high (prior max 31137.7 Mon Oct 5 session). Two range views: (a) recent expansion leg 30100.8 -> 31225.3 = 1124.5 pts, price at 98.4%; (b) macro cycle range 27050.0 (Jul 29 session) -> 31225.3 = 4175.3 pts, price at 99.7% - deep premium on both. 6 consecutive up closes. Today's live bar: O 31117.9, H 31225.3, L 31079.0, C 31212.5, body ~65% of range, close upper third - bullish. Monday (Oct 5 session): +253 body marubozu-type, close 93% of range. Volume caution: Mon tick_volume 264,778 = lowest of last 5 sessions (281,389-305,198) despite biggest body.",
+    "l2_h4_context": "H4 up-leg 30726.1 (Oct 5 09:00 UTC) -> 31225.3 (Oct 6 09:00 UTC) = 499.2 pts, price at 96.6% premium. H4 CRT: consolidation box 31079.0-31181.1 (Oct 6 01:00/05:00 UTC candles) - box HIGH swept today at 09:00 UTC (31225.3), box low intact = bullish CRT resolution. Bullish FVGs below: 31041.2-31095.8 (UPPER HALF TESTED - Oct 6 01:00Z bar low 31079.0 entered the zone; lower half to 31041.2 still open) and 30835.8-31001.8 (wick-tested at 31001.8, unfilled). Bull OB 30726.1-30835.8 confluent with recent-leg 79% fib 30831. H4 swing structure printed LH 30987.1 vs 31038.0 but that LH is already swept by current price - structure effectively bullish.",
+    "l3_m15_entry": "M15 bullish micro-structure: HLs 31102.8->31109.8->31131.1, HHs 31141.3->31169.6->31178.5. Asia range (00-06 UTC) 31079-31181; London session swept above the Asia high (31225.3) while the Asia low held (London low 31109.8 > Asia low 31079.0) = bullish London behavior. NOTE: the intraday SSL sweep 31109.8->31131.1 occurred DURING Asia, before the London KZ (02:00-05:00 NY); the London KZ itself opened with a dip to 31109.8 then expanded up. No compression (last-10 M15 avg range 24.2 vs prior-20 23.6 = 103%). NY AM KZ starts 08:30 NY (20:30 HKT) - next decision window. No entry confirmed: price in premium, NOT at a discount H4 key level. Two valid scenarios: (a) retracement into 31041-31096 FVG with M15 bullish reaction during NY AM KZ = long continuation; (b) acceptance above 31225.3 = breakout continuation. Wait for confirmation."
+  },
   "d1_structure": "HH+HL",
-  "structure_detail": "recent swing high HH (29734.2 2026-09-08 -> 30820.4 2026-09-23), recent swing low HL (28756.7 2026-09-16 -> 30100.8 2026-09-28)",
-  "recent_transitions": [
-    {
-      "date": "2026-09-23",
-      "type": "HH+LL"
-    },
-    {
-      "date": "2026-09-24",
-      "type": "LH+LL"
-    },
-    {
-      "date": "2026-09-25",
-      "type": "HH+HL"
-    },
-    {
-      "date": "2026-09-28",
-      "type": "LH+LL"
-    },
-    {
-      "date": "2026-09-29",
-      "type": "LH+HL"
-    },
-    {
-      "date": "2026-09-30",
-      "type": "HH+HL"
-    },
-    {
-      "date": "2026-10-01",
-      "type": "HH+HL"
-    },
-    {
-      "date": "2026-10-02",
-      "type": "HH+HL"
-    },
-    {
-      "date": "2026-10-05",
-      "type": "HH+HL"
-    },
-    {
-      "date": "2026-10-06",
-      "type": "HH+HL"
-    }
-  ],
+  "structure_detail": "recent swing high HH (29734.2 Sep 8 session -> 30820.4 Sep 23 session), recent swing low HL (28756.7 Sep 16 session -> 30100.8 Sep 28 session)",
   "momentum_last3": "▲▲▲",
+  "recent_expansion_range": {
+    "low": 30100.8,
+    "high": 31225.3,
+    "size": 1124.5,
+    "low_session": "2026-09-28",
+    "high_session": "2026-10-06 (live high)",
+    "price_position_pct": 98.4,
+    "equilibrium": 30663.0,
+    "fib_25": 30944.2,
+    "fib_50": 30663.0,
+    "fib_62": 30528.1,
+    "fib_70.5": 30432.5,
+    "fib_79": 30336.9
+  },
   "dealing_range": {
     "low": 27050.0,
     "high": 31225.3,
@@ -77,218 +63,33 @@
     "78.6%": 27943.5,
     "100%": 27050.0
   },
-  "last10": [
-    {
-      "date": "2026-09-23",
-      "dow": "Wed",
-      "o": 30729.9,
-      "h": 30820.4,
-      "l": 30369.5,
-      "c": 30497.8,
-      "range": 450.9,
-      "body_pct": 51.5,
-      "dir": "bear",
-      "in_progress": false,
-      "raw_ts_utc": "09-22 21:00Z"
-    },
-    {
-      "date": "2026-09-24",
-      "dow": "Thu",
-      "o": 30511.8,
-      "h": 30556.6,
-      "l": 30100.9,
-      "c": 30465.7,
-      "range": 455.7,
-      "body_pct": 10.1,
-      "dir": "bear",
-      "in_progress": false,
-      "raw_ts_utc": "09-23 21:00Z"
-    },
-    {
-      "date": "2026-09-25",
-      "dow": "Fri",
-      "o": 30461.0,
-      "h": 30728.1,
-      "l": 30415.6,
-      "c": 30650.5,
-      "range": 312.5,
-      "body_pct": 60.6,
-      "dir": "bull",
-      "in_progress": false,
-      "raw_ts_utc": "09-24 21:00Z"
-    },
-    {
-      "date": "2026-09-28",
-      "dow": "Mon",
-      "o": 30646.0,
-      "h": 30664.3,
-      "l": 30100.8,
-      "c": 30310.3,
-      "range": 563.5,
-      "body_pct": 59.6,
-      "dir": "bear",
-      "in_progress": false,
-      "raw_ts_utc": "09-27 21:00Z"
-    },
-    {
-      "date": "2026-09-29",
-      "dow": "Tue",
-      "o": 30315.9,
-      "h": 30472.3,
-      "l": 30119.8,
-      "c": 30404.1,
-      "range": 352.5,
-      "body_pct": 25.0,
-      "dir": "bull",
-      "in_progress": false,
-      "raw_ts_utc": "09-28 21:00Z"
-    },
-    {
-      "date": "2026-09-30",
-      "dow": "Wed",
-      "o": 30412.6,
-      "h": 30655.5,
-      "l": 30262.6,
-      "c": 30469.2,
-      "range": 392.9,
-      "body_pct": 14.4,
-      "dir": "bull",
-      "in_progress": false,
-      "raw_ts_utc": "09-29 21:00Z"
-    },
-    {
-      "date": "2026-10-01",
-      "dow": "Thu",
-      "o": 30462.6,
-      "h": 30903.8,
-      "l": 30285.4,
-      "c": 30527.1,
-      "range": 618.4,
-      "body_pct": 10.4,
-      "dir": "bull",
-      "in_progress": false,
-      "raw_ts_utc": "09-30 21:00Z"
-    },
-    {
-      "date": "2026-10-02",
-      "dow": "Fri",
-      "o": 30520.6,
-      "h": 31038.0,
-      "l": 30520.6,
-      "c": 30808.3,
-      "range": 517.4,
-      "body_pct": 55.6,
-      "dir": "bull",
-      "in_progress": false,
-      "raw_ts_utc": "10-01 21:00Z"
-    },
-    {
-      "date": "2026-10-05",
-      "dow": "Mon",
-      "o": 30856.4,
-      "h": 31137.7,
-      "l": 30726.1,
-      "c": 31109.9,
-      "range": 411.6,
-      "body_pct": 61.6,
-      "dir": "bull",
-      "in_progress": false,
-      "raw_ts_utc": "10-04 21:00Z"
-    },
-    {
-      "date": "2026-10-06",
-      "dow": "Tue",
-      "o": 31117.9,
-      "h": 31225.3,
-      "l": 31079.0,
-      "c": 31212.5,
-      "range": 146.3,
-      "body_pct": 64.7,
-      "dir": "bull",
-      "in_progress": true,
-      "raw_ts_utc": "10-05 21:00Z"
-    }
-  ],
   "h4": {
-    "structure": "swing high LH (31038.0->30987.1), swing low HL (30285.4->30726.1)",
-    "second_candle": null,
-    "kod": null,
+    "structure": "swing high LH (31038.0->30987.1), swing low HL (30285.4->30726.1); LH already swept by current price -> effectively bullish",
     "near_zones": [
-      {
-        "kind": "bullish FVG",
-        "bot": 31041.2,
-        "top": 31095.8,
-        "size": 54.599999999998545,
-        "created": "10-05 17:00Z",
-        "disp_body": 95.5,
-        "status": "tested"
-      },
-      {
-        "kind": "bullish FVG",
-        "bot": 30835.8,
-        "top": 31001.8,
-        "size": 166.0,
-        "created": "10-05 13:00Z",
-        "disp_body": 252.0,
-        "status": "tested"
-      },
-      {
-        "kind": "bullish OB",
-        "bot": 30726.1,
-        "top": 30835.8,
-        "created": "10-05 09:00Z",
-        "status": "tested"
-      }
+      {"kind": "bullish FVG", "bot": 31041.2, "top": 31095.8, "size": 54.6, "created": "10-05 17:00Z", "disp_body": 95.5, "status": "tested - upper half mitigated by Oct 6 01:00Z low 31079.0"},
+      {"kind": "bullish FVG", "bot": 30835.8, "top": 31001.8, "size": 166.0, "created": "10-05 13:00Z", "disp_body": 252.0, "status": "wick-tested at 31001.8, unfilled"},
+      {"kind": "bullish OB", "bot": 30726.1, "top": 30835.8, "created": "10-05 09:00Z", "status": "untested"}
     ],
-    "current_test": null,
-    "n_unmit_zones_total": 3
+    "n_unmit_zones_total": 3,
+    "crt": {"box_low": 31079.0, "box_high": 31181.1, "box_high_swept": true, "box_low_intact": true, "resolution": "bullish"}
   },
   "smt": {
-    "highs": {
-      "nas": "HH",
-      "us500": "HH",
-      "nas_vals": [
-        29734.2,
-        30820.4
-      ],
-      "us_vals": [
-        7758.1,
-        7785.0
-      ],
-      "divergence": false,
-      "type": "none"
-    },
-    "lows": {
-      "nas": "HL",
-      "us500": "LL",
-      "nas_vals": [
-        28756.7,
-        30100.8
-      ],
-      "us_vals": [
-        7650.3,
-        7616.9
-      ],
-      "divergence": true,
-      "type": "Bullish SMT"
-    },
-    "divergences": [
-      "Bullish SMT"
-    ]
+    "lows": {"nas": "HL", "us500": "LL", "nas_vals": [28756.7, 30100.8], "us_vals": [7650.3, 7616.9], "divergence": true, "type": "Bullish SMT"},
+    "us2000": {"last_swing_lows": [2830.3, 2772.9], "transition": "LL", "today_high_vs_mon": -1.5},
+    "divergences": ["Bullish SMT (NAS HL vs US500 LL + US2000 LL)"]
   },
-  "us500_last_price": 7793.8,
-  "orb_score": 63,
+  "smt_detail": {
+    "nas_vs_us500": "NAS held HL 30100.8 (Sep 28 session) while US500 made LL 7616.9 (Oct 1 session, below Sep 24-session low 7650.3) = bullish SMT for NAS100",
+    "nas_vs_us2000": "US2000 LL 2772.9 (Oct 1 session, swept Sep 16-session low 2830.3) while NAS held HL = confirms breadth divergence; US2000 today high 2859.4 < Mon 2860.9 while NAS +87.6 over Mon = NAS leads"
+  },
   "orb_breakdown": {
-    "htf_bias": "20/25 - D1 bullish HH+HL + breakout above prior range 30820; today swept Mon high 31137.7, low held; -5 for deep premium (98.5% of new range)",
+    "htf_bias": "20/25 - D1 bullish HH+HL + breakout above prior range 30820; today swept Mon high 31137.7, low held; -5 for deep premium (98.5% recent leg / 99.7% macro range)",
     "vwap": "7/15 - VWAP/volume-profile unavailable on MT5 CFD feed; neutral assumption, price above rising M15 structure assumed constructive",
     "volume": "8/20 - Mon tick_volume 264,778 = LOWEST of last 5 sessions (281,389-305,198, 80% of the 4-day avg) while posting the biggest daily body (+253) = negative divergence",
     "candle_close_timing": "8/15 - Mon closed strong (93% of range); analysis run 06:30 NY between KZs; no ORB-window close confirmed yet; NY AM KZ starts 08:30 NY",
-    "ict_crt_confluence": "12/15 - bullish SMT: NAS held HL 30100.8 while US500 made LL 7616.9 AND US2000 made LL 2772.9; US2000 also failed to take its Mon high (2859.4 vs 2860.9) while NAS extended +87.6 = NAS leads; H4 CRT box-high sweep 31181.1; unmitigated FVG path below; M15 HL sequence",
+    "ict_crt_confluence": "12/15 - bullish SMT: NAS held HL 30100.8 while US500 made LL 7616.9 AND US2000 made LL 2772.9; US2000 also failed to take its Mon high (2859.4 vs 2860.9) while NAS extended +87.6 = NAS leads; H4 CRT box-high sweep 31181.1; FVG path below (upper half already tested); M15 HL sequence",
     "range_width": "8/10 - today range 146.3 pts = 0.47% of price, healthy 0.3-1.5% band"
   },
-  "reasoning": "All 3 timeframes bullish and aligned: D1 breakout above prior dealing range high 30820.4 (HH+HL, 6 consecutive up closes, today 31225.3 is a fresh 200-bar high), H4 CRT consolidation box (31079.0-31181.1) resolved upward with box-high sweep and box low intact, M15 higher-low sequence into London expansion that swept the Asia high while the Asia low held. SMT breadth is bullish for NAS100: NAS held its HL (30100.8) while BOTH US500 (LL 7616.9) and US2000/RTY (LL 2772.9) made lower lows into Sep 30, and at the highs NAS extends +87.6 above its Mon high while US2000 fails to take its own (-1.5) and US500 is marginal (+1.1) - NAS100 is the strength leader. CAUTION: price sits at 98.5% of the new D1 range / 96.6% of the H4 leg (deep premium), Monday's rally ran on the lowest tick volume of the last 5 sessions, and NO Kill Zone is active at run time (06:30 NY - between London close and NY AM open). No entry confirmed - do NOT chase premium. Plan: during NY AM KZ (08:30-11:00 NY / 20:30-23:00 HKT) look for (a) retracement into the 31041-31096 H4 FVG with M15 bullish reaction for a continuation long, or (b) acceptance above 31225.3 for breakout continuation. Invalidation: M15 close below 31041 (FVG fail) or H4 close back below 30820 (failed breakout, would trap breakout buyers). Watch Wed/Thu for weekly-profile reversal risk after a Monday-extension week.",
-  "smt_detail": {
-    "nas_vs_us500": "NAS HL 30100.8 (Sep 27) vs US500 LL 7616.9 (Sep 30) = bullish SMT for NAS100",
-    "nas_vs_us2000": "US2000 LL 2772.9 (Sep 30, swept Sep 15 low 2830.3) while NAS held HL = confirms breadth divergence; US2000 today high 2859.4 < Mon 2860.9 while NAS +87.6 over Mon = NAS leads"
-  }
+  "kill_zone_status": "No KZ active at run time (06:30 NY - between London KZ close 05:00 and NY AM open 08:30). Next window: NY AM KZ 08:30-11:00 NY = 20:30-23:00 HKT. Waiting for Kill Zone.",
+  "reasoning": "All 3 timeframes bullish and aligned: D1 breakout above prior dealing range high 30820.4 (HH+HL, 6 consecutive up closes, today 31225.3 is a fresh 200-bar high), H4 CRT consolidation box (31079.0-31181.1) resolved upward with box-high sweep and box low intact, M15 higher-low sequence into London expansion that swept the Asia high while the Asia low held. SMT breadth is bullish for NAS100: NAS held its HL (30100.8, Sep 28 session) while BOTH US500 (LL 7616.9, Oct 1 session) and US2000/RTY (LL 2772.9) made lower lows, and at the highs NAS extends +87.6 above its Mon high while US2000 fails to take its own (-1.5) and US500 is marginal (+1.1) - NAS100 is the strength leader. CAUTION: price sits at 98.4% of the recent-leg range / 99.7% of the macro range (deep premium), Monday's rally ran on the lowest tick volume of the last 5 sessions, and NO Kill Zone is active at run time (06:30 NY - between London close and NY AM open). No entry confirmed - do NOT chase premium. Plan: during NY AM KZ (08:30-11:00 NY / 20:30-23:00 HKT) look for (a) retracement into the 31041-31096 H4 FVG (upper half already tested at 31079) with M15 bullish reaction for a continuation long, or (b) acceptance above 31225.3 for breakout continuation. Invalidation: M15 close below 31041 (FVG fail) or H4 close back below 30820 (failed breakout, would trap breakout buyers). Watch Wed/Thu for weekly-profile reversal risk after a Monday-extension week."
 }
