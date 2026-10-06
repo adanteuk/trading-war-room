@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-06",
+  "timestamp": "2026-10-06T11:08:45.328814+00:00",
+  "files": {
+    "merlin_research.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [],
+      "warns": [
+        "merlin: summary 279 chars > 200 (Discord 2000-char risk — v2.4 lesson)"
+      ],
+      "oks": [
+        "merlin: contract ok"
+      ]
+    },
+    "walker_ta.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [
+        "walker: entry='TBD - no active Kill Zone (06:30 NY, between London close and NY AM open); do NOT anticipate' must be exact float or 'TBD'/omitted"
+      ],
+      "warns": [
+        "walker: orb_breakdown invalid categories: pre_market_htf_bias=None, vwap_alignment=None, volume_confirmation=None, candle_close_timing=8/15 - Mon closed strong (93% of range); analysis run 06:30 NY between KZs; no ORB-window close confirmed yet; NY AM KZ starts 08:30 NY, ict_crt_confluence=12/15 - bullish SMT: NAS held HL 30100.8 while US500 made LL 7616.9 AND US2000 made LL 2772.9; US2000 also failed to take its Mon high (2859.4 vs 2860.9) while NAS extended +87.6 = NAS leads; H4 CRT box-high sweep 31181.1; FVG path below (upper half already tested); M15 HL sequence, range_width_volatility=None",
+        "walker: ml_regime missing (contract-mandatory from Phase 2)",
+        "walker: conditional_triggers missing (contract-mandatory)"
+      ],
+      "oks": []
+    },
+    "alfred_risk.json": {
+      "exists": false,
+      "status": "MISSING",
+      "fails": [],
+      "warns": [],
+      "oks": []
+    }
+  },
+  "totals": {
+    "fails": 1,
+    "warns": 4
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-06",
+  "timestamp": "2026-10-06T11:08:45.471302+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "bullish",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Bullish continuation day 5: D1 HH/HL intact, 5 straight bull candles, new ATH 31,230 swept Monday's 31,221 BSL. US500 confirms (no SMT). But price is in deep premium of the fresh 30,737-31,230 range with no Kill Zone active until NY open. Wait for discount retrace, do not chase.",
+  "final_decision": "NO_GO \u2014 GATE VETO",
+  "trade_params": {
+    "direction": "LONG",
+    "instrument": "NAS100",
+    "entry": "TBD - no active Kill Zone (06:30 NY, between London close and NY AM open); do NOT anticipate",
+    "stop_loss": "TBD",
+    "take_profit": "TBD",
+    "tier": "CONDITIONAL_GO",
+    "lot_size": "TBD x 0.5",
+    "lot_multiplier": 0.5,
+    "risk_pct": 1.0,
+    "session_window": "09:30-11:00 ET",
+    "close_before": "13:30 ET (pre-news)",
+    "note": "Reduced conviction \u2014 half size, tighter risk"
+  },
+  "reasoning": "DETERMINISTIC GATE VETO (overrides all LLM analysis): quant_gate: INPUT_FAILURE: missing file: alfred_risk.json; compliance_gate: KILL_ZONE: outside western kill zones\nPrior reasoning: TA: conf=60, ORB=63 \u2192 MODERATE CONVICTION\nAlfred: WAIT \u2014 reduced to 50% size\nRisk: N/A\nMerlin: ",
+  "alfred_veto": false,
+  "veto_reason": "",
+  "decision_id": "2026-10-06-NAS100-1",
+  "gates_summary": {
+    "quant": "VETO",
+    "compliance": "VETO",
+    "alfred": "NO_INPUT"
+  },
+  "veto_source": [
+    "quant_gate",
+    "compliance_gate"
+  ],
+  "gate_vetoes": [
+    [
+      "quant_gate",
+      [
+        "INPUT_FAILURE: missing file: alfred_risk.json"
+      ]
+    ],
+    [
+      "compliance_gate",
+      [
+        "KILL_ZONE: outside western kill zones"
+      ]
+    ]
+  ]
+}

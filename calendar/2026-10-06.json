@@ -1,0 +1,131 @@
+{
+  "hkt_date": "2026-10-06",
+  "fetched_at": "2026-10-06T09:00:24.000855+00:00",
+  "sources": [
+    "tradingview-internal:https://economic-calendar.tradingview.com/events?from=2026-10-05T00%3A00%3A00Z&t"
+  ],
+  "times_available": true,
+  "event_count": 15,
+  "events": [
+    {
+      "time_utc": "2026-10-05T05:00:00.000Z",
+      "currency": "JPY",
+      "impact": "high",
+      "name": "Consumer Confidence",
+      "importance": 1,
+      "country": "JP"
+    },
+    {
+      "time_utc": "2026-10-05T08:00:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-05T09:00:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-05T09:00:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Producer Price Inflation MoM",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-05T11:45:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-05T14:00:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Non Manufacturing PMI",
+      "importance": 1,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-10-05T14:15:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-06T06:35:00.000Z",
+      "currency": "JPY",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": 0,
+      "country": "JP"
+    },
+    {
+      "time_utc": "2026-10-06T09:10:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-06T11:40:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-06T13:00:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-06T13:00:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-06T13:05:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": 0,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-10-06T14:45:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": 0,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-10-06T23:00:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": 0,
+      "country": "US"
+    }
+  ]
+}

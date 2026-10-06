@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-06",
+  "timestamp": "2026-10-06T19:05:00+08:00",
+  "summary": "Bullish continuation day 5: D1 HH/HL intact, 5 straight bull candles, new ATH 31,230 swept Monday's 31,221 BSL. US500 confirms (no SMT). But price is in deep premium of the fresh 30,737-31,230 range with no Kill Zone active until NY open. Wait for discount retrace, do not chase.",
+  "bias": "Bullish",
+  "confidence": 68,
+  "key_levels": {
+    "support": [31157, 31096, 31041, 31002, 30836, 30737],
+    "resistance": [31230, 31500]
+  },
+  "ict_analysis": {
+    "daily_bias": "BULLISH Medium-High. D1 HH/HL clean; 5 consecutive bull closes, last body 68%. Script DR stale (price 155.7%) - re-anchored 30737->31230: price at 98% = deep premium. Demand in control, draw = 31,500 BSL above. SMT none (US500 HH too).",
+    "h4_context": "H4 script DR also stale (189.7%). Re-anchored 31079->31230, price 88% premium. Unmitigated bullish FVGs below: 31041-31096 (CE 31068) and 30836-31002 (CE 30919). Expected: purge CRT high 31230 -> reject or dip to FVG -> expand up. Invalidation: H4 close < 31002.",
+    "m15_status": "NO VALID ENTRY YET - no Kill Zone active (11:00 UTC; NY AM opens 21:30 HKT). Price pinned at highs 31221. Setup: NY session retrace into 31041-31096 FVG + M15 bullish OB engulfment in NY AM KZ. Chasing 31221 = poor R:R."
+  },
+  "risks": [
+    {"event": "ISM Services PMI Sep (10:00 ET)", "time": "22:00 HKT", "impact": "high"},
+    {"event": "Deep premium at ATH, 5 up-days", "time": "all session", "impact": "medium"},
+    {"event": "ADP weekly + Trade Balance", "time": "00:15 HKT", "impact": "medium"}
+  ],
+  "recommendation": "WAIT - bias bullish but L3 pending: no KZ active, price in deep premium at ATH. Longs only from discount FVG 31041-31096 (or 30836-31002) with M15 OB confirmation in NY AM KZ after 21:30 HKT. No chase at highs. Recent 3/3 correct bullish bias calls intact."
+}
