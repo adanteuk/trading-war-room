@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-08",
+  "timestamp": "2026-10-08T11:00:00+08:00",
+  "summary": "D1 structure bullish (HH/HL) but 2 consecutive bearish candles signal correction from Oct 5 high (31271.3). H4 bearish momentum with price in discount (1.2%). No M15 setup - no Kill Zone active. Wait for H4 range resolution.",
+  "bias": "Neutral",
+  "confidence": 45,
+  "key_levels": {
+    "support": [
+      "30917.2 (H4 DR low)",
+      "30835.8-31001.8 (H4 bullish FVG)",
+      "30100.8 (D1 DR low)"
+    ],
+    "resistance": [
+      "31044.4-31124.8 (H4 bearish FVG)",
+      "31145.7-31173.2 (H4 bearish FVG)",
+      "31241.3 (H4 DR high)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 BULLISH structure (HH/HL) but stale DR (price at 114% above 30820.4). 2 bearish D1 candles (Oct 6-7) show correction from 31271.3 peak. Oct 7 strong bearish (76% body). Macro bullish, short-term corrective.",
+    "h4_context": "H4 bearish DR: 31241.3-30917.2. Price at 30920.1 = 1.2% (discount). Multiple bearish FVGs overhead (31044-31125, 31145-31173). Bearish momentum: last 3 H4 candles all red. Expecting either bounce from discount or continuation lower.",
+    "m15_status": "NO VALID ENTRY. Bearish FVGs at 30938-30986 and 31048-31066 (price below both). No Kill Zone active (current ~11:00 UTC between London/NY). No OB formation. Layer 3 failure = mandatory WAIT."
+  },
+  "risks": [
+    {"event": "No Kill Zone active", "time": "11:00 UTC", "impact": "high"},
+    {"event": "Stale D1 DR (price above range)", "time": "all session", "impact": "medium"},
+    {"event": "Conflicting signals (D1 bullish vs H4 bearish)", "time": "all session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT. D1 macro bullish but short-term bearish correction. H4 in discount but no M15 setup (no KZ, no OB). Layer 3 failure = mandatory veto per ICT/CRT pipeline. Wait for London Close (14:00 UTC) or NY Open (13:30 UTC) Kill Zone for potential entry if H4 range resolves."
+}
