@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-09",
+  "timestamp": "2026-10-09T11:00:00+00:00",
+  "summary": "D1 structure BULLISH (HH/HL) with draw on BSL at 31386. Price in PREMIUM on both D1 (69%) and H4 (62.5%), approaching bearish FVG resistance at 31044-31124. Corrective pullback from 31386 to 30568 completed; now recovering. Wait for discount entry or breakout confirmation.",
+  "bias": "Bullish",
+  "confidence": 55,
+  "key_levels": {
+    "support": [30917, 30851, 30743, 30568],
+    "resistance": [31044, 31124, 31241, 31386]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 BULLISH (HH/HL). Swing high 31386 (Oct 5) > 30820 (Sep 22). Swing low 30568 (Oct 8) > 30100 (Sep 27). Price in PREMIUM 69.1%. Draw on BSL 31386. Last 3 daily biases were Bullish.",
+    "h4_context": "H4 DR 31241-30568. Price at 62.5% PREMIUM. Bearish FVG 31044-31124 overhead resistance. Bullish FVG 30917-30957 support below. Equilibrium 30904.",
+    "m15_status": "Bullish OB at 30912-30945 (formed 06:15 UTC London KZ). No KZ currently active (11:00 UTC between London close and NY open). No valid entry trigger yet."
+  },
+  "risks": [
+    {"event": "Price in premium zone", "time": "all session", "impact": "medium"},
+    {"event": "Bearish FVG 31044-31124 overhead", "time": "all session", "impact": "medium"},
+    {"event": "Friday profit-taking risk", "time": "NY session", "impact": "low"}
+  ],
+  "recommendation": "WAIT. D1 bias is Bullish but price in premium approaching resistance. Wait for: (1) pullback to H4 bullish FVG 30917-30957 for discount long entry, OR (2) displacement break above 31124 confirming continuation. No KZ active now for M15 entry."
+}

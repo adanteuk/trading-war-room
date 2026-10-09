@@ -1,0 +1,107 @@
+{
+  "hkt_date": "2026-10-09",
+  "fetched_at": "2026-10-09T09:00:25.953478+00:00",
+  "sources": [
+    "tradingview-internal:https://economic-calendar.tradingview.com/events?from=2026-10-08T00%3A00%3A00Z&t"
+  ],
+  "times_available": true,
+  "event_count": 12,
+  "events": [
+    {
+      "time_utc": "2026-10-08T06:00:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Balance of Trade",
+      "importance": 1,
+      "country": "DE"
+    },
+    {
+      "time_utc": "2026-10-08T08:30:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": 0,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-10-08T08:30:00.000Z",
+      "currency": "GBP",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": 0,
+      "country": "GB"
+    },
+    {
+      "time_utc": "2026-10-08T09:15:00.000Z",
+      "currency": "GBP",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "GB"
+    },
+    {
+      "time_utc": "2026-10-08T10:00:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-08T11:30:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": 0,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-08T12:15:00.000Z",
+      "currency": "GBP",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": 0,
+      "country": "GB"
+    },
+    {
+      "time_utc": "2026-10-08T17:40:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": 0,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-10-09T10:15:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-09T13:30:00.000Z",
+      "currency": "EUR",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": -1,
+      "country": "EU"
+    },
+    {
+      "time_utc": "2026-10-09T14:00:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Consumer Confidence",
+      "importance": 1,
+      "country": "US"
+    },
+    {
+      "time_utc": "2026-10-09T20:00:00.000Z",
+      "currency": "USD",
+      "impact": "high",
+      "name": "Interest Rate",
+      "importance": 0,
+      "country": "US"
+    }
+  ]
+}
