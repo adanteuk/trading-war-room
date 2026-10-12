@@ -1,0 +1,33 @@
+{
+ "timestamp": "2026-10-12T10:46:00+00:00",
+ "analysis_date": "2026-10-12",
+ "data_source": "Carson MT5 (Alfred) CFD via ZMQ tcp://192.168.11.173:5555; editor-verified re-fetch 10:46 UTC (06:46 NY) pre-market",
+ "symbol": "NAS100",
+ "bias": "bearish",
+ "confidence": 45,
+ "orb_score": 49,
+ "ict_profile": "Power of 3 Setup - Monday (Judas high 31080.0 in place; NY distribution watch)",
+ "entry": "TBD - waiting NY AM Kill Zone (08:30-11:00 NY); need M15 MSS + retest confirmation, no anticipation",
+ "sl": "Structural invalidation above Monday high 31080.0 (e.g. 31085-31100 zone) - set only once entry confirms in KZ",
+ "tp": "SSL ladder: 30731.7 (Friday low) -> 30568.2 (D1 range low 0%)",
+ "key_levels": {
+  "support": [
+   "30828.8",
+   "30771.4",
+   "30731.7",
+   "30568.2"
+  ],
+  "resistance": [
+   "30906.1-30947.3",
+   "30977.2",
+   "31045.9-31080.0",
+   "31386.3"
+  ]
+ },
+ "three_layer_analysis": {
+  "l1_daily": "D1 structure HH+HL bullish (SH 30820.4 Sep23 -> 31386.3 Oct6; SL 30100.8 Sep28 -> 30568.2 Oct8; no violations). Dealing range 30568.2-31386.3 (818.1pts); price 30875.9 at 37.6% = discount. Fibs from low: 25% 30772.7 / 50% 30977.2 / 62% 31075.4 / 70.5% 31145.0 / 79% 31214.5. SMT vs US500: none (both HH+HL). Today: gap +12.8 up, overnight BSL purge of Friday high 31045.9 -> 31080.0 (+34.1) then reversal; now -43.4 vs open at 30875.9 (session low 30828.8 in the 10:30 UTC bar; close@19% of day range). Friday candle: bullish +106.5, close@56%.",
+  "l2_h4_context": "H4 range 30771.4 (Oct 9 13:00 UTC) -> 31080.0 (Mon 21:00 UTC bar), width 308.6; price at 33.9% (still discount). Unmitigated bearish FVG 30906.1-30947.3 overhead, price below it. Prev H4 low 30848.3 purged (current H4 low 30828.8). Displacement down from 31080.0.",
+  "l3_m15_entry": "M15 LH+LL bearish (31035.0 03:45 -> HH 31050.1 04:45 -> LH 31004.9 07:45 -> LH 30906.1 09:15 UTC; LL 30996.9->30949.5->30945.3->30848.3->30828.8). Price ~106pts below session VWAP 30982.1, VWAP sloping down. RVOL 1.14 vs same-elapsed Friday (137,032 vs 120,274). Bearish FVGs stacked 30899-30931 / 30850-30864. Bullish OB 30957-30984 (07:15) violated -> bearish breaker. KZ INACTIVE at 06:46 NY - waiting for NY AM 08:30-11:00 NY (20:30-23:00 HKT). US equities OPEN today (Columbus Day, regular hours)."
+ },
+ "reasoning": "Conflict setup: D1 bullish HH+HL structure with price in discount (37.6%) vs intraday bearish momentum (LH+LL, below VWAP, lower third of day range). Overnight rally purged Friday buy-side liquidity (31045.9 -> 31080.0, +34.1pts) and failed - textbook manipulation leg of Monday Power of 3; NY session to confirm distribution or reclaim. Price bounced off session low 30828.8 but stays below the unmitigated bearish FVG 30906.1-30947.3. Bearish continuation needs acceptance below 30771.4 / 30731.7 -> target 30568.2 (D1 0%). Bullish reclaim: H4 close back above 30947.3 reopens 31080.0 retest. Invalidation above 31080.0. Confidence capped at 45 due to structure/momentum conflict + KZ inactive + pre-NY open. Entry TBD - waiting for NY AM Kill Zone and M15 market structure shift confirmation."
+}
