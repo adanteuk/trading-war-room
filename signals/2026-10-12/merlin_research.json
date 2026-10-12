@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-12",
+  "timestamp": "2026-10-12T11:10:00Z",
+  "summary": "Macro bullish (above all MAs, +DI>-DI, HH/HL from 9/15 low) but short-term corrective after Oct 8 bearish displacement (-434pts). Friday Oct 9 recovered (+0.64%). Bearish Inversion FVG 31,017-31,208 caps rallies; MT5 offline so Layer 3 unverifiable.",
+  "bias": "Bullish",
+  "confidence": 40,
+  "key_levels": {
+    "support": [30791, 30529, 30408, 30081],
+    "resistance": [31017, 31112, 31208, 31361]
+  },
+  "ict_analysis": {
+    "daily_bias": "Bullish macro: price above MA5/20/50/200 (+6% vs MA20, +18% vs MA200), +DI 25.8 > -DI 15.2, ADX(14) 20.4 = ranging. Oct 8 displacement closed below MA5/10/20; Friday bounce +0.64% partially repaired. Neutral-Bearish last call (10/9).",
+    "h4_context": "Bearish Inversion FVG 31,017-31,208 (CE 31,112) overhead from 10/8 close below CE — rally into this zone is short-biased. Bullish BB support 30,529-30,408 (REL confluence). Price ~30,900 = mild discount of 30,408-31,125 range.",
+    "m15_status": "NO VALID ENTRY - Alfred MT5 unreachable on both IPs (211/172), no live M15 bars. Cannot verify OB formation, CRT purge or Kill Zone timing. Layer 3 failure = mandatory veto."
+  },
+  "risks": [
+    {"event": "MT5 offline - no live OHLCV", "time": "all session", "impact": "high"},
+    {"event": "Columbus Day - bond market closed", "time": "all session", "impact": "medium"},
+    {"event": "Earnings season heavy week ahead", "time": "Oct 13-16", "impact": "medium"}
+  ],
+  "recommendation": "WAIT. Macro trend bullish but price sits under bearish Inversion FVG 31,017-31,208 and MT5 is offline (no M15 entry validation possible). No GO without Layer 3. Re-assess when MT5 returns: longs only on rejection/bounce at 30,529-30,791 demand zone; shorts only on rejection at 31,017-31,208."
+}

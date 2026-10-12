@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-12",
+  "timestamp": "2026-10-12T11:07:32.173066+00:00",
+  "files": {
+    "merlin_research.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [],
+      "warns": [
+        "merlin: summary 249 chars > 200 (Discord 2000-char risk — v2.4 lesson)"
+      ],
+      "oks": [
+        "merlin: contract ok"
+      ]
+    },
+    "walker_ta.json": {
+      "exists": true,
+      "status": "ok",
+      "fails": [
+        "walker: entry='TBD - waiting NY AM Kill Zone (08:30-11:00 NY); need M15 MSS + retest confirmation, no anticipation' must be exact float or 'TBD'/omitted",
+        "walker: sl='Structural invalidation above Monday high 31080.0 (e.g. 31085-31100 zone) - set only once entry confirms in KZ' must be exact float or 'TBD'/omitted",
+        "walker: tp='SSL ladder: 30731.7 (Friday low) -> 30568.2 (D1 range low 0%)' must be exact float or 'TBD'/omitted"
+      ],
+      "warns": [
+        "walker: orb_breakdown missing while orb_score>0 (warning 1 of 3 before quant-gate veto)",
+        "walker: ml_regime missing (contract-mandatory from Phase 2)",
+        "walker: conditional_triggers missing (contract-mandatory)"
+      ],
+      "oks": []
+    },
+    "alfred_risk.json": {
+      "exists": false,
+      "status": "MISSING",
+      "fails": [],
+      "warns": [],
+      "oks": []
+    }
+  },
+  "totals": {
+    "fails": 3,
+    "warns": 4
+  }
+}
