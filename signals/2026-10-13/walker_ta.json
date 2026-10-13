@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-13T18:40:00+08:00",
+  "asset": "NAS100 (Pepperstone CFD via Carson MT5)",
+  "report_session": "2026-10-13 (Tue), generated 06:40 NY pre-market",
+  "bias": "neutral",
+  "confidence": 45,
+  "orb_score": 49,
+  "ict_profile": "Classic Tuesday Low / Power of 3 (forming, unconfirmed)",
+  "entry": "TBD - awaiting NY AM Kill Zone (08:30-11:00 NY) confirmation",
+  "sl": "TBD",
+  "tp": "TBD",
+  "key_levels": {
+    "support": ["30402 (today's low, swept SSL)", "30406-30454 (M15 bullish OB)", "30369 (Sep 23 low)", "30100 (Sep 28 macro swing low)"],
+    "resistance": ["30563-30634 (H4 bearish FVG + Mon low)", "30673-30699 (CFD day open / Tue high)", "30740 (79% of D1 dealing range)", "30810-30895 (H4 bearish FVG cluster)"]
+  },
+  "three_layer_analysis": {
+    "l1_daily": "Macro D1 structure bullish (HH 30820.4 Sep 23 -> 31386.3 Oct 6; HL 30100.8 -> 30568.2) but the pullback from the Oct 6 ATH is bearish: LH sequence 31386 -> 31241 (Oct 8) -> 31080 (Oct 12) -> 30699 (today). Tuesday's session swept BELOW the Oct 8 swing low 30568.2, running to 30402.0 (22:45 NY), and price is currently still ~16 pts below that level (30552) - sweep NOT yet reclaimed. Dealing range (Oct 8 low -> Oct 6 high, 818 pts): price below 100%, deep discount; fibs as resistance overhead: 79%=30740, 70.5%=30809.5, 62%=30879, 50%=30977. Macro range (28756.7 Sep 16 -> 31386.3): equilibrium 30071.5 below price. Monday candle closed at 8% of its range (30669.1) - bearish momentum into today; today's live bar O=30673.1, price below CFD day open (-0.4%).",
+    "l2_h4_context": "H4 structure bearish (LH 31386 -> 31241 -> 31080; LL 30917 -> 30568 -> 30402 live). The nearest unfilled H4 bearish FVG sits directly overhead: 30563.0-30634.3 (from the Oct 12 17:00 NY bar); its upper boundary coincides with Monday's session low 30634.3 - reclaiming it is the first bullish requirement. Additional bearish FVGs above: 30701.6-30809.8 and 30797.7-30894.9 cluster. Current H4 bar (05:00 NY) hovering 30520-30568 inside compression. Overnight CRT reading: Monday was accumulation (30634-31080 range), Tuesday Asia purged below (30402 = manipulation leg, took Oct 8 SSL + Monday's 30499.9 H4 candle low), now re-accumulating - Power of 3 distribution leg pending confirmation.",
+    "l3_m15_entry": "Sweep low 30402.0 printed 22:45 NY (Asia session, not a Kill Zone). Recovery: higher lows since, price back above session VWAP 30483.5, currently 30530-30555. M15 bullish OB formed 23:00 NY: 30406.7-30453.7 (last down-close candle before displacement up); unfilled M15 bullish FVGs below: 30473.5-30491.6, 30460.5-30494.0, 30527.0-30542.2. Compression: avg M15 range last 8 bars 23.9 vs prior 16 bars 41.9 (ratio 0.57) - expansion imminent. No entry confirmed: price must first reclaim 30568.2 (Oct 8 swing low) / break above 30563 FVG lower bound with displacement during NY AM KZ. Kill zone status: London KZ ended 05:00 NY; NY AM KZ (08:30-11:00 NY) starts in ~2h - WAITING FOR KILL ZONE."
+  },
+  "smt_divergence": {
+    "pair": "NAS100 vs US500 (Carson MT5, matching D1/session lows)",
+    "finding": "NAS100 swept the Oct 8 swing low (30402.0 vs 30568.2, -166 pts) while US500 HELD above its Oct 8 swing low (today low 7789.1 vs 7732.4, +57 pts). US500 also only marginally broke Monday's low (7798.7 -> 7789.1) vs NAS100's deep sweep. NAS100 = weaker index taking liquidity; divergence favors a bullish realign/reversal IF NAS100 reclaims 30568.2.",
+    "timing_note": "Both lows printed 22:30-22:45 NY (Asia) - outside Kill Zones, so divergence is structural, not KZ-timed."
+  },
+  "orb_score_breakdown": {
+    "premarket_htf_bias_25": 13,
+    "vwap_alignment_15": 9,
+    "volume_confirmation_20": 8,
+    "candle_close_timing_15": 4,
+    "ict_crt_confluence_15": 8,
+    "range_width_volatility_10": 7,
+    "total": 49
+  },
+  "scenarios": {
+    "bullish_confirmation": "Reclaim + hold above 30568.2 with M15 displacement during NY AM KZ -> retest of 30563-30634 FVG from below -> targets 30673/30699, then 30740 (79% DR). Invalidation: loss of 30402.",
+    "bearish_continuation": "Rejection at 30563-30634 FVG during NY AM KZ + break of 30402 -> targets 30369 (Sep 23 low), then 30100 (Sep 28 macro SSL / below macro equilibrium)."
+  },
+  "reasoning": "Neutral 45/100. Tuesday's Asia-session purge to 30402 swept the Oct 8 swing low (30568.2) = major SSL raid at HTF discount, and US500's refusal to make a corresponding new swing low creates a valid SMT divergence - textbook Classic Tuesday Low / Power-of-3 manipulation setup. HOWEVER: price is still BELOW the swept level (30552 vs 30568.2), the H4 bearish FVG 30563-30634 caps immediately overhead, H4 structure remains LH+LL, and Monday closed at 8% of its range (bearish momentum). No reclaim = no confirmation = neutral bias, honest 45 confidence. ORB 49/100 (timing 4/15 - pre-NY-open, no range close yet; volume 8/20 - no NY RVOL yet). Waiting for NY AM Kill Zone (08:30-11:00 NY / 20:30-23:00 HKT) for the reclaim-retest sequence (long scenario) or FVG rejection (short scenario). Do NOT anticipate entries.",
+  "data_source": "Carson MT5 ZMQ bridge (192.168.11.173:5555), fetched 2026-10-13 18:30 HKT; NAS100 D1 200 / H4 500 / M15 300 bars; US500 same for SMT. Not Yahoo Finance.",
+  "supersedes": "earlier 18:31 HKT draft (no live-sweep/SMT data)"
+}
