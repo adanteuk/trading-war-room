@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-14",
+  "timestamp": "2026-10-14T19:00:00+08:00",
+  "summary": "Macro bullish structure (D1 HH/HL) but short-term bearish momentum (3 consecutive bearish closes). Price in discount zone (32.9% D1, 45.4% H4) — correct positioning for bullish continuation IF support holds. No Kill Zone active — wait for NY session or support test before entry.",
+  "bias": "Neutral",
+  "confidence": 45,
+  "key_levels": {
+    "support": [
+      "30385.7 (H4 Dealing Range low)",
+      "30100.8 (D1 Dealing Range low / FIB 0%)",
+      "30422.2 (D1 FIB 25%)"
+    ],
+    "resistance": [
+      "30563-30634 (H4 bearish FVG — immediate overhead)",
+      "30688.8 (H4 Dealing Range high)",
+      "30743.5 (D1 FIB 50% / equilibrium)",
+      "30897.8 (D1 FIB 62%)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "D1 structure BULLISH (HH/HL) but price at 32.9% = deep DISCOUNT. Recent 3 bearish closes (Oct 11-13) show short-term weakness. Macro trend up, short-term corrective pullback. Control: Demand in control at discount, but bearish momentum persists.",
+    "h4_context": "H4 price at 45.4% DISCOUNT (correct for bullish bias). 4 bearish FVGs overhead (30,563-30,947) form resistance wall. Most recent bearish FVG 30,563-30,634 is immediate overhead. H4 DR: 30,385.7-30,688.8. Wait for price to test 30,385.7 support and show rejection.",
+    "m15_status": "2 bearish OBs detected (09:00, 10:45 UTC). 1 bearish FVG 30,604-30,624. NO Kill Zone active (current 11:00 UTC). Layer 3 entry INVALID — must wait for NY KZ (13:30-16:00 UTC) or London KZ (06:00-09:00 UTC tomorrow). Price below bearish OBs = bearish short-term."
+  },
+  "risks": [
+    {
+      "event": "No Kill Zone active",
+      "time": "current",
+      "impact": "high"
+    },
+    {
+      "event": "Bearish H4 FVG overhead",
+      "time": "all session",
+      "impact": "medium"
+    },
+    {
+      "event": "3 consecutive D1 bearish closes",
+      "time": "Oct 11-13",
+      "impact": "medium"
+    }
+  ],
+  "recommendation": "WAIT — Macro bullish but short-term bearish with no Kill Zone active. Layer 3 entry invalid without KZ timing. Wait for NY session (13:30-16:00 UTC) for potential bullish OB formation at 30,385.7 support, OR wait for price to break above 30,563-30,634 bearish FVG with displacement to confirm bullish continuation. No trade until KZ + OB + displacement align."
+}

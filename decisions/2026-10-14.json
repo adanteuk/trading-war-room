@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-14",
+  "timestamp": "2026-10-14T11:03:50.372910+00:00",
+  "orchestrator": "Merlin",
+  "walker_position": "neutral",
+  "alfred_risk_status": "NO_INPUT",
+  "merlin_thesis": "Macro bullish structure (D1 HH/HL) but short-term bearish momentum (3 consecutive bearish closes). Price in discount zone (32.9% D1, 45.4% H4) \u2014 correct positioning for bullish continuation IF support holds. No Kill Zone active \u2014 wait for NY session or support test before entry.",
+  "final_decision": "NO_GO \u2014 GATE VETO",
+  "trade_params": {},
+  "reasoning": "DETERMINISTIC GATE VETO (overrides all LLM analysis): quant_gate: INPUT_FAILURE: missing file: alfred_risk.json; ORB_BREAKDOWN: orb_breakdown[pre_market_htf_bias]=-1 outside 0-25 \u2014 3 consecutive warnings; compliance_gate: KILL_ZONE: outside western kill zones\nPrior reasoning: TA confidence below GO threshold (conf=45 < 55, orb=47)",
+  "alfred_veto": false,
+  "veto_reason": "",
+  "decision_id": "2026-10-14-NAS100-1",
+  "gates_summary": {
+    "quant": "VETO",
+    "compliance": "VETO",
+    "alfred": "NO_INPUT"
+  },
+  "veto_source": [
+    "quant_gate",
+    "compliance_gate"
+  ],
+  "gate_vetoes": [
+    [
+      "quant_gate",
+      [
+        "INPUT_FAILURE: missing file: alfred_risk.json",
+        "ORB_BREAKDOWN: orb_breakdown[pre_market_htf_bias]=-1 outside 0-25 \u2014 3 consecutive warnings"
+      ]
+    ],
+    [
+      "compliance_gate",
+      [
+        "KILL_ZONE: outside western kill zones"
+      ]
+    ]
+  ]
+}
