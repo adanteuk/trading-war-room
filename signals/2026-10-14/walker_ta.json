@@ -4,13 +4,14 @@
   "symbol": "NAS100",
   "data_source": "Carson MT5 ZMQ bridge (Alfred) tcp://192.168.11.173:5555, v2.2",
   "report_context": "Wednesday 2026-10-14, US pre-market 06:30 NY (18:30 HKT). NY AM Kill Zone not yet active.",
-  "current_price": 30583.2,
+  "current_price": 30552.2,
+  "current_price_asof": "2026-10-14T18:45:00+08:00 (editor refetch; 18:30 analysis snapshot was 30583.2)",
   "bias": "neutral",
   "bias_detail": "Neutral with bullish lean for a discount corrective bounce; flips bearish below 30385.7 (Tuesday low)",
   "confidence": 45,
   "orb_score": 47,
   "orb_breakdown": {
-    "htf_bias": "14/25 - D1 bearish LH+LL since Oct 6 high; overnight inside day; flat open +0.07%; deep discount + bullish SMT counterbalance",
+    "htf_bias": "14/25 - D1 bearish swing structure (LH+LL) since Oct 6 high; overnight inside day; flat open +0.07%; deep discount + bullish SMT counterbalance",
     "vwap": "6/15 - tick volume only, pre-market, VWAP not reliably computable",
     "volume": "6/20 - pre-market, no breakout, no RVOL/CVD",
     "close_timing": "4/15 - no full close outside overnight range; Kill Zone inactive at 06:30 NY",
@@ -32,9 +33,11 @@
     "d1_low": 30385.7,
     "d1_low_date": "2026-10-13 sweep low",
     "range_pts": 1000.6,
+    "range_pct_of_high": 3.19,
     "fib": {"0%": 31386.3, "25%": 31136.2, "50%": 30886.0, "61.8%": 30767.9, "70.5%": 30680.9, "79%": 30595.8, "100%": 30385.7},
-    "fib_depth_pct": 80.3,
-    "zone": "deep discount, slightly below 79% OTE bound"
+    "fib_depth_pct": 83.4,
+    "fib_depth_note": "80.3% at 18:30 snapshot (30583.2), 83.4% at 18:45 editor refetch (30552.2)",
+    "zone": "deep discount, below 79% OTE bound"
   },
   "smt": {
     "pair": "NAS100 vs US500 (D1, matched lookback 2)",
@@ -44,9 +47,9 @@
     "caveat": "D1-level SMT; strongest when confirmed with KZ timing and intraday structure"
   },
   "three_layer_analysis": {
-    "l1_daily": "Bearish structure since Oct 6 high 31386.3: consecutive LH+LL, Mon Oct 12 bearish close at 8% of range, Tue Oct 13 LH+LL with 188-pt lower wick closing at 60% (rejection of the SSL sweep). Price 30583 = 80.3% fib depth (deep discount). SMT bullish vs US500. Overnight rally rejected at 70.5% fib (30681) without close reclaim.",
+    "l1_daily": "Bearish swing structure since Oct 6 high 31386.3: lower highs (31386.3 -> 31080.0) and lower lows (30568.2 -> 30385.7); day-to-day transitions mixed (Oct 9 printed HL 30731.7, Oct 12 printed HH 31080.0). Mon Oct 12 bearish close at 8% of range, Tue Oct 13 LH+LL with 188-pt lower wick closing at 60% (rejection of the SSL sweep). Price ~30552-30583 = 80-83% fib depth (deep discount). SMT bullish vs US500. Overnight rally rejected at 70.5% fib (30681) without close reclaim.",
     "l2_h4_context": "CRT frame: weekly high 31080 (Mon) / weekly low 30385.7 (Tue). Overnight session inside: H 30688.8 / L 30504.2. Unfilled bearish FVGs overhead: 30701.6-30809.8 and 30906.1-30947.3 = buy-side draw targets if reversal confirms. H4 price at 28.4% of Mon-Tue range (discount). US500 already reclaiming (+0.2% vs Tue close) while NAS100 flat - catch-up bounce thesis.",
     "l3_m15_entry": "Price compressed 30504-30689 overnight, no unfilled M15 FVGs, no confirmed OB. At 06:30 NY London KZ ended, NY AM KZ (08:30-11:00 NY) not started - Waiting for Kill Zone. Scenario A (bullish): sweep of 30504 then displacement up + M15 CHoCH in NY AM KZ -> long toward 30689 / FVG 30702-30810 / EQ 30886. Scenario B (bearish): break and close below 30385.7 -> continuation to 30101. No entry until confirmation; entries TBD."
   },
-  "reasoning": "D1 is structurally bearish (LH+LL below the Oct 6 swing high 31386.3), but price sits in the deepest discount quartile of the Oct 6-to-Oct 13 expansion leg (80.3% fib depth) after sweeping the Oct 8 swing low (30568.2) on Tuesday. That sweep came with a bullish SMT divergence (US500 held its own Oct 8 low at 7732.4 while NAS100 broke 30568.2) and Tuesday's candle printed a 188-pt lower wick closing mid-range - sell-side was taken, not continued. Overnight stayed inside Tuesday's range (H 30688.8 = wick rejection at the 70.5% fib; L 30504.2 above Tuesday's low). The ICT weekly profile forming is a Classic Tuesday Low: Wednesday must hold above 30385.7 and displace higher in the NY AM Kill Zone to confirm a Wednesday Reversal toward the unfilled H4 bearish FVGs (30702-30810) and equilibrium (30886). A clean break below 30385.7 invalidates the reversal read and flips the profile to Midweek Continuation targeting 30101 (Sep 28 SSL). Structure-vs-reversal conflict caps confidence at 45; no entry until a Kill Zone confirmation. Entries/SL/TP remain TBD."
+  "reasoning": "D1 is structurally bearish at swing level (LH 31386.3 -> 31080.0, LL 30568.2 -> 30385.7), but price sits in the deepest discount quartile of the Oct 6-to-Oct 13 expansion leg (80.3-83.4% fib depth) after sweeping the Oct 8 swing low (30568.2) on Tuesday. That sweep came with a bullish SMT divergence (US500 held its own Oct 8 low at 7732.4 while NAS100 broke 30568.2) and Tuesday's candle printed a 188-pt lower wick closing mid-range - sell-side was taken, not continued. Overnight stayed inside Tuesday's range (H 30688.8 = wick rejection at the 70.5% fib; L 30504.2 above Tuesday's low). The ICT weekly profile forming is a Classic Tuesday Low: Wednesday must hold above 30385.7 and displace higher in the NY AM Kill Zone to confirm a Wednesday Reversal toward the unfilled H4 bearish FVGs (30702-30810) and equilibrium (30886). A clean break below 30385.7 invalidates the reversal read and flips the profile to Midweek Continuation targeting 30101 (Sep 28 SSL). Structure-vs-reversal conflict caps confidence at 45; no entry until a Kill Zone confirmation. Entries/SL/TP remain TBD."
 }
