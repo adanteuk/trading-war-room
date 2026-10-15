@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-10-15T18:45:00+08:00",
+  "timestamp": "2026-10-15T18:50:00+08:00",
   "symbol": "NAS100",
   "data_source": "Pepperstone MT5 via Carson ZMQ (192.168.11.173:5555); Alfred 172 unreachable",
-  "current_price": 29642.1,
+  "current_price": 29624.4,
   "bias": "bearish",
   "confidence": 60,
-  "orb_score": 65,
+  "orb_score": 67,
   "ict_profile": "Mid-Week Continuation (Wed expansion low 29,877.0, Thu continuation lower; Thu Reversal watch if SSL 29,555 holds)",
   "entry": "TBD",
   "sl": "TBD",
@@ -17,9 +17,9 @@
   "three_layer_analysis": {
     "l1_daily": "D1 structure flipped bearish: Oct 14 displacement candle (O 30,593.6 / C 29,931.4, -2.10%, body 82% of range) swept the Sep 28 HL (30,100.8) AND Oct 8 SSL (30,568.2), closing below both. Effective structure now LH+LL (prior HH+HL invalidated). Dealing range (recent expansion): Oct 6 high 31,386.3 -> Oct 14 low 29,877.0 (1,509.3 pts); price 29,642.1 is trading BELOW the range low = extension into external range. Macro range Sep 16 low 28,756.7 -> Oct 6 high 31,386.3: price sits between 62% (29,755.9) and 70.5% (29,532.4) = deep discount. OHLC dynamics: price 303 pts BELOW today's open (29,945.4); open swept BSL above Aug 5 swing high 29,939.5 (high 29,957.8) then rejected - Judas-style. Today's forming D1 candle: bearish body 75%, close at 22% of range. SMT vs US500: bearish divergence confirmed at Oct 13 swing (NAS100 swept its Oct 8 SSL 30,385.7<30,568.2 while US500 held 7,787.5>7,732.4); NAS100 led lower Oct 14 (-2.10% vs -1.15%). No fresh SMT now - both indices making coincident lows.",
     "l2_h4_context": "H4 bearish LH sequence from 31,386.3 -> 30,688.8. Today's range-defining H4 CRT candle (Oct 14 21:00 UTC: H 29,957.8 / L 29,679.8) had its LOW purged during London (session low 29,555.2 at 04:15 NY) and price has NOT reclaimed the CRT low - trading 29,642 below 29,679.8. Unmitigated H4 bearish FVG 29,778.8-29,877.0 (mid 29,827.9) caps upside; D1 bearish FVG 29,957.8-30,385.7 looms above. Key battleground: reclaim of 29,679.8 = first sign of SSL-purge reversal; rejection there keeps distribution intact.",
-    "l3_m15_entry": "London KZ (02:00-05:00 NY) executed the SSL purge: low 29,555.2 at 04:15 NY, followed by feeble bounce to 29,700.0 (09:00 UTC) and fade back to 29,642 - lower-high sequence under the CRT low. M15 compression: avg range last 8 bars 41.9 vs prior 24 bars 53.4 (ratio 0.78) = expansion imminent. NY AM Kill Zone (08:30-11:00 NY / 20:30-23:00 HKT) NOT yet active - WAITING FOR KILL ZONE. No confirmed entry: need either (a) retrace into 29,778.8-29,877.0 FVG with M15 bearish OB rejection = short continuation, or (b) NY sweep of 29,555.2 SSL that reclaims 29,679.8 = short-term long scalp only against bearish HTF. Do not anticipate - confirm on price action."
+    "l3_m15_entry": "London KZ (02:00-05:00 NY) executed the SSL purge: low 29,555.2 at 04:15 NY, followed by feeble bounce to 29,700.0 (09:00 UTC) and fade back to 29,624 - lower-high sequence under the CRT low. M15 compression: avg range last 8 completed bars 46.3 vs prior 24 bars 53.4 (ratio 0.87) = expansion imminent. NY AM Kill Zone (08:30-11:00 NY / 20:30-23:00 HKT) NOT yet active - WAITING FOR KILL ZONE. No confirmed entry: need either (a) retrace into 29,778.8-29,877.0 FVG with M15 bearish OB rejection = short continuation, or (b) NY sweep of 29,555.2 SSL that reclaims 29,679.8 = short-term long scalp only against bearish HTF. Do not anticipate - confirm on price action."
   },
-  "reasoning": "HTF is decisively bearish after Wednesday's displacement day broke two structural lows; Thursday is tracking Mid-Week Continuation. Today's open swept BSL above the Aug 5 high (29,939.5 -> 29,957.8) and was rejected, classic Judas, and London purged the H4 CRT low / overnight SSL at 29,555.2. Price remains below both the daily open (-1.0%) and session VWAP (29,694), below an unmitigated H4 bearish FVG, and below the Oct dealing range entirely - sellers in control until 29,679.8 is reclaimed. Deep-discount location (62-70.5% of macro range) plus M15 compression (0.78) is the one caution: this is where violent short-covering rallies start, so confidence is capped at 60 despite clean bearish structure. ORB 65: strong HTF/VWAP/confluence alignment, but no NY-session close, no KZ confirmation yet, and no volume expansion on the bounce.",
+  "reasoning": "HTF is decisively bearish after Wednesday's displacement day broke two structural lows; Thursday is tracking Mid-Week Continuation. Today's open swept BSL above the Aug 5 high (29,939.5 -> 29,957.8) and was rejected, classic Judas, and London purged the H4 CRT low / overnight SSL at 29,555.2. Price remains below both the daily open (-1.1%) and session VWAP (29,693), below an unmitigated H4 bearish FVG, and below the Oct dealing range entirely - sellers in control until 29,679.8 is reclaimed. Deep-discount location (62-70.5% of macro range) plus M15 compression (0.87) is the one caution: this is where violent short-covering rallies start, so confidence is capped at 60 despite clean bearish structure. ORB 67: strong HTF/VWAP/confluence alignment, but no NY-session close, no KZ confirmation yet, and no volume expansion on the bounce.",
   "orb_breakdown": {
     "htf_bias": "21/25 - D1 LH+LL + below open; gap at open was flat (+14)",
     "vwap": "12/15 - 29,642 vs session VWAP 29,694, slope down",
@@ -27,6 +27,15 @@
     "close_timing": "5/15 - no NY close yet; NY AM KZ inactive (18:30 HKT)",
     "ict_confluence": "11/15 - confirmed bearish SMT Oct 13, Judas sweep at open, clean FVG path",
     "range_width": "9/10 - today's range 402.6 pts = 1.36% of price"
+  },
+  "editor_verification": {
+    "verdict": "13 verified, 2 corrected, 0 uncertain",
+    "method": "independent editor subagent re-fetched all symbols via Carson ZMQ + recomputed math",
+    "corrections": [
+      "ORB total 65 -> 67 (category scores 21+12+9+5+11+9)",
+      "M15 compression 0.78 (41.9, incl. seconds-old forming bar) -> 0.87 (46.3 vs 53.4, completed bars); conclusion unchanged"
+    ],
+    "live_refresh": "current price 29,642.1 -> 29,624.4 (editor's more current fetch); VWAP 29,694 -> 29,693"
   },
   "fib_recent_range": {"note": "Oct 6 high 31,386.3 -> Oct 14 low 29,877.0; 0% = low, 100% = high", "0%": 29877.0, "25%": 30254.3, "50%": 30631.7, "62%": 30812.8, "70.5%": 30941.1, "79%": 31069.3, "100%": 31386.3, "price_position": "below 0% - external range extension"},
   "fib_macro_range": {"note": "Sep 16 low 28,756.7 -> Oct 6 high 31,386.3; measured from high", "EQ_50%": 30071.5, "62%": 29755.9, "70.5%": 29532.4, "79%": 29308.9, "price_position": "between 62% and 70.5% - deep discount"}
