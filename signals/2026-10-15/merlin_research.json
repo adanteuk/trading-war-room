@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-15",
+  "timestamp": "2026-10-15T11:00:00Z",
+  "summary": "BEARISH bias after D1 MSS below 30,101 swing low. Price at 29,595 in extension territory below stale DR. 4 consecutive strong bearish D1 candles (82-87% body). Wait for NY KZ for short entry.",
+  "bias": "Bearish",
+  "confidence": 65,
+  "key_levels": {
+    "support": [
+      "29,555 (today's low)",
+      "29,100 (psychological)",
+      "28,873 (Aug 23 swing low)"
+    ],
+    "resistance": [
+      "29,778 (H4 FVG)",
+      "29,957 (H4 FVG)",
+      "30,101 (broken D1 swing low)"
+    ]
+  },
+  "ict_analysis": {
+    "daily_bias": "BEARISH. D1 MSS confirmed below 30,101 (Sep 27 swing low). Price at 29,595 is -39.3% below stale DR (30,101-31,386). 4 consecutive bearish candles with 82-87% bodies. Macro structure was HH/HL but now breaking down. Control: Supply in control after displacement below key support.",
+    "h4_context": "H4 DR stale (30,386-30,689), price at -260%. 6 unmitigated bearish FVGs: 29,779-29,877; 29,958-29,993; 30,107-30,340. Price in free-fall. Key level for short: 29,778-29,877 FVG (nearest unmitigated). Expected behavior: Price may retrace into 29,778 FVG then continue lower to 29,100.",
+    "m15_status": "M15 bearish FVG at 29,625-29,661. No Kill Zone active (11:00 UTC). No valid entry setup yet. Wait for NY KZ (13:30-16:00 UTC) for M15 OB formation at H4 key level. Layer 3 incomplete - no entry confirmation."
+  },
+  "risks": [
+    {"event": "NY session open", "time": "13:30 UTC", "impact": "high"},
+    {"event": "Macro uptrend intact", "time": "all session", "impact": "medium"},
+    {"event": "Deep correction vs reversal", "time": "all session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT. Bearish bias confirmed but no valid M15 entry (no KZ active, no OB formation). Wait for NY Kill Zone (13:30-16:00 UTC) for potential short entry at H4 FVG (29,778-29,877) with SL above 29,957, TP at 29,100. If price does not retrace into FVG, no trade."
+}
