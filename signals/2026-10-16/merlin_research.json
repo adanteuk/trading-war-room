@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-16",
+  "timestamp": "2026-10-16T19:05:00+08:00",
+  "summary": "Bearish macro structure (ATH 31,386 rejection, violated HLs) but Thu SSL sweep 29,423 + 81% wick hammer creates reversal potential. Inversion FVG 30,072-30,496 overhead caps upside. MT5 offline = no M15 validation.",
+  "bias": "Neutral",
+  "confidence": 35,
+  "key_levels": {
+    "support": ["29,867 (M15 bullish OB)", "29,763 (Fri low)", "29,684-29,743 (H4 bullish FVG)", "29,423.5 (Thu SSL sweep low)"],
+    "resistance": ["29,997-30,029 (Thu high / overnight high)", "30,033-30,264 (bearish H4 FVG)", "30,405 (50% retrace)", "30,640 (62% retrace)"]
+  },
+  "ict_analysis": {
+    "daily_bias": "Bearish structure: ATH 31,386 rejection, Oct-8 HL 30,568 violated. DR 31,386->29,423, price at 25.6% (discount). Thu hammer (81% lower wick) = SSL purge. ADX 15.46 < 25 = ranging. -DI > +DI bearish pressure.",
+    "h4_context": "Overnight rejected 4.1pts below bear H4 FVG 30,033. Open bull FVG 29,684-29,743 below. Bull H4 OB 29,763-29,932. CRT purge complete (swept prior H, closed inside). Inversion FVG 30,072-30,496 = key resistance.",
+    "m15_status": "NO VALID ENTRY — Alfred MT5 offline (both IPs timeout). Cannot verify M15 OB formation, compression, or CRT purge with live OHLCV. Mandatory Layer 3 veto applied."
+  },
+  "risks": [
+    {"event": "Alfred MT5 offline", "time": "all session", "impact": "high"},
+    {"event": "Thu/Fri weekly profile unconfirmed", "time": "all day", "impact": "medium"},
+    {"event": "Inversion FVG overhead resistance", "time": "NY session", "impact": "medium"}
+  ],
+  "recommendation": "WAIT — MT5 offline prevents Layer 3 M15 validation (mandatory veto). Walker confidence 45 and ORB 48 both below CONDITIONAL_GO thresholds (60/55). Structure vs momentum conflict: bearish HTF but Thu SSL sweep creates reversal potential. Wait for MT5 restoration + NY AM KZ (20:30-23:00 HKT) price action at 30,033 bear FVG or 29,763 support."
+}
